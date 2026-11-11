@@ -1,0 +1,23 @@
+{
+  "name": "ContentOS",
+  "version": "0.1.0",
+  "date": "2026-11-03",
+  "updateUrl": "https://video-edit-kit.vercel.app",
+  "notes": [
+    "Development baseline from VEK 1.0.78; integrations in progress",
+    "Integrated VEK 1.0.79 transitions, pixel effect and free Review 06 template"
+  ],
+  "releasedAt": "2026-11-03T03:10:48.584Z",
+  "upstream": {
+    "name": "Video Edit Kit",
+    "version": "1.0.79",
+    "date": "2026-11-04",
+    "features": [
+      "spin",
+      "zoomblur",
+      "glare",
+      "pixel",
+      "review-06"
+    ]
+  }
+}

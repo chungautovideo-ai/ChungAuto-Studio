@@ -1,0 +1,30 @@
+{
+  "workspace": "c5b496be-559d-42d6-abee-df8e54099dcc",
+  "sizes": [
+    {
+      "width": 1280,
+      "source": "workspace/content/2026-11-03/contentos-smoke-brandui-a-1280-1793747453622",
+      "destination": "workspace/content/2026-11-03/contentos-smoke-brandui-b-1280-1793747454529",
+      "storedVersion": 1,
+      "saveDefaultButton": true,
+      "applyButton": true,
+      "projectSaveReload": true,
+      "sourceLogoRemovedBeforeApply": true,
+      "bytesPreserved": true
+    },
+    {
+      "width": 1920,
+      "source": "workspace/content/2026-11-03/contentos-smoke-brandui-a-1920-1793747455817",
+      "destination": "workspace/content/2026-11-03/contentos-smoke-brandui-b-1920-1793747456489",
+      "storedVersion": 2,
+      "saveDefaultButton": true,
+      "applyButton": true,
+      "projectSaveReload": true,
+      "sourceLogoRemovedBeforeApply": true,
+      "bytesPreserved": true
+    }
+  ],
+  "noProviderCalls": true,
+  "pageErrors": [],
+  "limits": "Actual existing Brand buttons at two viewport sizes; synthetic assets only. No AI job/render or production throughput proof."
+}

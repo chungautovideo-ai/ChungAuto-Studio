@@ -1,0 +1,39 @@
+{
+  "project": "workspace/content/2026-11-03/contentos-smoke-itempatch-5",
+  "workspaceId": "0d3b5b70-00b5-44f4-913d-997a165456e1",
+  "syntheticGatewayOnly": true,
+  "actualReviseEndpoint": true,
+  "readVersionPatch": true,
+  "selectionDelivered": true,
+  "rejectedInvalidSelectionBeforeSave": true,
+  "siblingAndSourceAndMusicSettingsPreserved": true,
+  "audioInspected": true,
+  "audioClipInserted": true,
+  "previewRebuilt": true,
+  "autoExportFinal": true,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\contentos-smoke-itempatch-5\\renders\\contentos-smoke-itempatch-5-final.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  },
+  "limits": "No actual model, browser submission, OCR/pixel text check or real production footage.",
+  "synthetic880HzAudio": {
+    "before": 0.0029726441539697154,
+    "during": 0.14342382854888988,
+    "after": 0.0029867223982422697,
+    "detectedInExpectedWindow": true
+  }
+}

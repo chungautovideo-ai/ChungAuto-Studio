@@ -1,0 +1,38 @@
+{
+  "modules": [
+    {
+      "file": "editor/ui/app.js",
+      "sha256": "2be2fa1668f201cae4e5e124d6f8ad49297e13b20e16a8241e9d18779456927c"
+    },
+    {
+      "file": "editor/ui/contentos-shot-color.js",
+      "sha256": "3961ff569ad54b6f8b53a722ff37fdceeab5df0cff634b81a01978f69087f0b9"
+    }
+  ],
+  "package": {
+    "presets": 11,
+    "references": 5
+  },
+  "tests": {
+    "pass": 351,
+    "fail": 0,
+    "log": "workspace/logs/shot-color-recovery-suite.log"
+  },
+  "worker": {
+    "gateway": "synthetic",
+    "realMediaProcessing": true,
+    "rounds": 4,
+    "sequence": [
+      "HDR analysis rejected",
+      "normalize source CPU",
+      "reanalyze Rec709",
+      "stop without grade"
+    ],
+    "paidProvider": false
+  },
+  "dialog": {
+    "harness": "production module in VM with fake DOM",
+    "nativeBrowserVerified": false
+  },
+  "limits": "No fresh native UI/focus/UndoSave or real model/camera HDR quality/final render."
+}

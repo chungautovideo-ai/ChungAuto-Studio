@@ -1,0 +1,18 @@
+{
+  "realChrome": true,
+  "metadataAndLuts": "fixture",
+  "unknownBlocked": true,
+  "logRequiresMatchingLut": true,
+  "hdrReady": true,
+  "profileChangePreservesLook": true,
+  "invalidTechnicalRemoved": true,
+  "rec709IdentityBlocked": true,
+  "stabilizationAllowed": true,
+  "autoBatchAllowed": true,
+  "noConversionOrApply": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": []
+}

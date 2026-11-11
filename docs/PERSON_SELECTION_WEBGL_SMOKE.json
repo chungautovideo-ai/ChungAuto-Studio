@@ -1,0 +1,50 @@
+{
+  "actualWebGL": true,
+  "syntheticMasks": true,
+  "first": [
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "second": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "restored": [
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "sourceRate2": true,
+  "outOfRangeUnchanged": true,
+  "staleHashUnchanged": true,
+  "noAutomaticFallback": true
+}

@@ -1,0 +1,3296 @@
+{
+  "outputs": [
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-selected-final-baseline\\renders\\contentos-selected-final-baseline-final.mp4",
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-selected-final-lift\\renders\\contentos-selected-final-lift-final.mp4"
+  ],
+  "fingerprints": [
+    {
+      "bytes": 15956424,
+      "sha256": "1be99f4058cf3a566e62aa6f90b76e38846a7964d3b3b3173f52844bd441c0e3"
+    },
+    {
+      "bytes": 16232932,
+      "sha256": "bf26da3f2348e3ea204921c8281935536b3c4adef484c61ce2698cc034ed71e5"
+    }
+  ],
+  "totalDecodedFrames": 181,
+  "measuredFrames": 180,
+  "unmeasured": [
+    {
+      "frame": 180,
+      "time": 6,
+      "reason": "Insufficient safe mask interiors",
+      "counts": {
+        "person": 0,
+        "background": 32964
+      }
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "minimumPersonLumaGain": 9.572389771197821,
+    "maximumBackgroundAbsoluteDifference": 0.4757153744890209,
+    "maximumBackgroundChangedFraction": 0,
+    "worstBackgroundFrame": {
+      "frame": 93,
+      "time": 3.1,
+      "person": {
+        "count": 3285,
+        "lumaGain": 11.007175464231324,
+        "absoluteDifference": 11.827295788939528,
+        "changedOver8": 2418,
+        "changedFraction": 0.7360730593607306
+      },
+      "background": {
+        "count": 24055,
+        "lumaGain": 0.006605254624818125,
+        "absoluteDifference": 0.4757153744890209,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "frame": 0,
+      "time": 0,
+      "person": {
+        "count": 2119,
+        "lumaGain": 11.349579235488417,
+        "absoluteDifference": 12.099260657542887,
+        "changedOver8": 1604,
+        "changedFraction": 0.7569608305804625
+      },
+      "background": {
+        "count": 25369,
+        "lumaGain": -0.005023414403405732,
+        "absoluteDifference": 0.2005334594715308,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 1,
+      "time": 0.033333,
+      "person": {
+        "count": 2119,
+        "lumaGain": 11.3439781028787,
+        "absoluteDifference": 12.103193330187214,
+        "changedOver8": 1607,
+        "changedFraction": 0.758376592732421
+      },
+      "background": {
+        "count": 25369,
+        "lumaGain": -0.0035970278686586034,
+        "absoluteDifference": 0.2096916183793834,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 2,
+      "time": 0.066667,
+      "person": {
+        "count": 2063,
+        "lumaGain": 11.276044304411041,
+        "absoluteDifference": 12.06220714170304,
+        "changedOver8": 1575,
+        "changedFraction": 0.7634512845370819
+      },
+      "background": {
+        "count": 25199,
+        "lumaGain": 0.0003535378388031268,
+        "absoluteDifference": 0.2907919626440144,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 3,
+      "time": 0.1,
+      "person": {
+        "count": 2154,
+        "lumaGain": 11.320369266480945,
+        "absoluteDifference": 12.111730114515654,
+        "changedOver8": 1693,
+        "changedFraction": 0.7859795728876509
+      },
+      "background": {
+        "count": 25386,
+        "lumaGain": -0.0001461041518947328,
+        "absoluteDifference": 0.348105254864885,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 4,
+      "time": 0.133333,
+      "person": {
+        "count": 1959,
+        "lumaGain": 11.918726799387407,
+        "absoluteDifference": 12.69406159605242,
+        "changedOver8": 1638,
+        "changedFraction": 0.8361408882082695
+      },
+      "background": {
+        "count": 25834,
+        "lumaGain": 0.003852643802740563,
+        "absoluteDifference": 0.376945111093907,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 5,
+      "time": 0.166667,
+      "person": {
+        "count": 2064,
+        "lumaGain": 11.565933430232489,
+        "absoluteDifference": 12.352067183462525,
+        "changedOver8": 1634,
+        "changedFraction": 0.7916666666666666
+      },
+      "background": {
+        "count": 25557,
+        "lumaGain": 0.001539836444027087,
+        "absoluteDifference": 0.3942951050592822,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 6,
+      "time": 0.2,
+      "person": {
+        "count": 2214,
+        "lumaGain": 11.220187082204088,
+        "absoluteDifference": 12.033875338753386,
+        "changedOver8": 1750,
+        "changedFraction": 0.7904245709123758
+      },
+      "background": {
+        "count": 25441,
+        "lumaGain": -0.003779214653512035,
+        "absoluteDifference": 0.40289296804371033,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 7,
+      "time": 0.233333,
+      "person": {
+        "count": 2214,
+        "lumaGain": 11.242744263775931,
+        "absoluteDifference": 12.035230352303534,
+        "changedOver8": 1743,
+        "changedFraction": 0.7872628726287263
+      },
+      "background": {
+        "count": 25441,
+        "lumaGain": -0.005686254471129305,
+        "absoluteDifference": 0.41165834676309865,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 8,
+      "time": 0.266667,
+      "person": {
+        "count": 2017,
+        "lumaGain": 11.348218046603835,
+        "absoluteDifference": 12.174516608825005,
+        "changedOver8": 1620,
+        "changedFraction": 0.8031730292513634
+      },
+      "background": {
+        "count": 25885,
+        "lumaGain": 0.0010878655592041614,
+        "absoluteDifference": 0.41753911531775484,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 9,
+      "time": 0.3,
+      "person": {
+        "count": 2124,
+        "lumaGain": 10.932172222222187,
+        "absoluteDifference": 11.731167608286254,
+        "changedOver8": 1652,
+        "changedFraction": 0.7777777777777778
+      },
+      "background": {
+        "count": 25719,
+        "lumaGain": 0.0022474124188343295,
+        "absoluteDifference": 0.41716240911388647,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 10,
+      "time": 0.333333,
+      "person": {
+        "count": 2124,
+        "lumaGain": 10.967843408662826,
+        "absoluteDifference": 11.76349654739485,
+        "changedOver8": 1646,
+        "changedFraction": 0.7749529190207156
+      },
+      "background": {
+        "count": 25719,
+        "lumaGain": -0.005842093393988877,
+        "absoluteDifference": 0.43717355521858436,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 11,
+      "time": 0.366667,
+      "person": {
+        "count": 2332,
+        "lumaGain": 10.305754802744364,
+        "absoluteDifference": 11.17238421955404,
+        "changedOver8": 1720,
+        "changedFraction": 0.7375643224699828
+      },
+      "background": {
+        "count": 25684,
+        "lumaGain": -0.0011859134091263062,
+        "absoluteDifference": 0.4386388413019804,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 12,
+      "time": 0.4,
+      "person": {
+        "count": 2291,
+        "lumaGain": 10.09289140113479,
+        "absoluteDifference": 11.00567437800083,
+        "changedOver8": 1698,
+        "changedFraction": 0.7411610650371017
+      },
+      "background": {
+        "count": 25933,
+        "lumaGain": 0.0010768441753749916,
+        "absoluteDifference": 0.44701088702939973,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 13,
+      "time": 0.433333,
+      "person": {
+        "count": 2291,
+        "lumaGain": 10.064079877782552,
+        "absoluteDifference": 10.983267859741007,
+        "changedOver8": 1699,
+        "changedFraction": 0.7415975556525535
+      },
+      "background": {
+        "count": 25933,
+        "lumaGain": 0.004616951374696325,
+        "absoluteDifference": 0.451586781321096,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 14,
+      "time": 0.466667,
+      "person": {
+        "count": 2496,
+        "lumaGain": 9.948490544871717,
+        "absoluteDifference": 10.82946047008545,
+        "changedOver8": 1807,
+        "changedFraction": 0.7239583333333334
+      },
+      "background": {
+        "count": 25512,
+        "lumaGain": 0.00010669488867982804,
+        "absoluteDifference": 0.4426021741402749,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 15,
+      "time": 0.5,
+      "person": {
+        "count": 2390,
+        "lumaGain": 10.1953563179916,
+        "absoluteDifference": 11.041143654114348,
+        "changedOver8": 1819,
+        "changedFraction": 0.7610878661087866
+      },
+      "background": {
+        "count": 25800,
+        "lumaGain": -0.0000141317829457517,
+        "absoluteDifference": 0.454715762273908,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 16,
+      "time": 0.533333,
+      "person": {
+        "count": 2390,
+        "lumaGain": 10.163070711297031,
+        "absoluteDifference": 11.018828451882806,
+        "changedOver8": 1824,
+        "changedFraction": 0.7631799163179916
+      },
+      "background": {
+        "count": 25800,
+        "lumaGain": 0.005078379844961246,
+        "absoluteDifference": 0.44620155038759823,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 17,
+      "time": 0.566667,
+      "person": {
+        "count": 2363,
+        "lumaGain": 10.071403385526807,
+        "absoluteDifference": 10.96811962194946,
+        "changedOver8": 1788,
+        "changedFraction": 0.7566652560304697
+      },
+      "background": {
+        "count": 25717,
+        "lumaGain": -0.0005053466578527834,
+        "absoluteDifference": 0.45399281927648466,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 18,
+      "time": 0.6,
+      "person": {
+        "count": 2341,
+        "lumaGain": 10.24196001708666,
+        "absoluteDifference": 11.128007973800365,
+        "changedOver8": 1805,
+        "changedFraction": 0.7710380179410509
+      },
+      "background": {
+        "count": 25854,
+        "lumaGain": -0.005613212655681873,
+        "absoluteDifference": 0.4549650602098973,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 19,
+      "time": 0.633333,
+      "person": {
+        "count": 2223,
+        "lumaGain": 10.319118128654972,
+        "absoluteDifference": 11.173939121307537,
+        "changedOver8": 1686,
+        "changedFraction": 0.7584345479082322
+      },
+      "background": {
+        "count": 26070,
+        "lumaGain": -0.004467433831990814,
+        "absoluteDifference": 0.45402122490730396,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 20,
+      "time": 0.666667,
+      "person": {
+        "count": 2256,
+        "lumaGain": 10.091325265957444,
+        "absoluteDifference": 10.965573286052024,
+        "changedOver8": 1688,
+        "changedFraction": 0.74822695035461
+      },
+      "background": {
+        "count": 25924,
+        "lumaGain": 0.0007526076222805107,
+        "absoluteDifference": 0.4569639458931264,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 21,
+      "time": 0.7,
+      "person": {
+        "count": 2353,
+        "lumaGain": 9.925667828304285,
+        "absoluteDifference": 10.773055673608136,
+        "changedOver8": 1685,
+        "changedFraction": 0.7161070973225669
+      },
+      "background": {
+        "count": 25870,
+        "lumaGain": 0.0008183610359489697,
+        "absoluteDifference": 0.450161061718856,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 22,
+      "time": 0.733333,
+      "person": {
+        "count": 2353,
+        "lumaGain": 9.955559711007236,
+        "absoluteDifference": 10.778722198611698,
+        "changedOver8": 1712,
+        "changedFraction": 0.7275818104547387
+      },
+      "background": {
+        "count": 25870,
+        "lumaGain": -0.008699458832624627,
+        "absoluteDifference": 0.4501224069063315,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 23,
+      "time": 0.766667,
+      "person": {
+        "count": 2308,
+        "lumaGain": 9.851315424610046,
+        "absoluteDifference": 10.683708838821515,
+        "changedOver8": 1647,
+        "changedFraction": 0.7136048526863085
+      },
+      "background": {
+        "count": 25921,
+        "lumaGain": 0.004529153967825315,
+        "absoluteDifference": 0.4570554119568491,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 24,
+      "time": 0.8,
+      "person": {
+        "count": 2318,
+        "lumaGain": 9.804832441760121,
+        "absoluteDifference": 10.646678170836926,
+        "changedOver8": 1650,
+        "changedFraction": 0.7118205349439172
+      },
+      "background": {
+        "count": 25853,
+        "lumaGain": 0.003027524852048107,
+        "absoluteDifference": 0.46604520429608937,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 25,
+      "time": 0.833333,
+      "person": {
+        "count": 2318,
+        "lumaGain": 9.765951251078485,
+        "absoluteDifference": 10.58613747483467,
+        "changedOver8": 1599,
+        "changedFraction": 0.6898188093183779
+      },
+      "background": {
+        "count": 25853,
+        "lumaGain": -0.0036275325880942085,
+        "absoluteDifference": 0.4593535244136783,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 26,
+      "time": 0.866667,
+      "person": {
+        "count": 2353,
+        "lumaGain": 9.8270753931152,
+        "absoluteDifference": 10.586627000991694,
+        "changedOver8": 1605,
+        "changedFraction": 0.6821079473013175
+      },
+      "background": {
+        "count": 25758,
+        "lumaGain": -0.005555400263995668,
+        "absoluteDifference": 0.46003830525144807,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 27,
+      "time": 0.9,
+      "person": {
+        "count": 2327,
+        "lumaGain": 9.828841942415117,
+        "absoluteDifference": 10.64245810055869,
+        "changedOver8": 1612,
+        "changedFraction": 0.6927374301675978
+      },
+      "background": {
+        "count": 25798,
+        "lumaGain": -0.006056849368168058,
+        "absoluteDifference": 0.4615990903687688,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 28,
+      "time": 0.933333,
+      "person": {
+        "count": 2327,
+        "lumaGain": 9.873669015900305,
+        "absoluteDifference": 10.702048417132236,
+        "changedOver8": 1595,
+        "changedFraction": 0.685431886549205
+      },
+      "background": {
+        "count": 25798,
+        "lumaGain": -0.0012314908132413337,
+        "absoluteDifference": 0.4593379331731204,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 29,
+      "time": 0.966667,
+      "person": {
+        "count": 2479,
+        "lumaGain": 9.906754013715181,
+        "absoluteDifference": 10.740083366949069,
+        "changedOver8": 1736,
+        "changedFraction": 0.700282371924163
+      },
+      "background": {
+        "count": 25662,
+        "lumaGain": -0.0002801963993453325,
+        "absoluteDifference": 0.4666692645416111,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 30,
+      "time": 1,
+      "person": {
+        "count": 2510,
+        "lumaGain": 9.983508286852578,
+        "absoluteDifference": 10.840770252324067,
+        "changedOver8": 1752,
+        "changedFraction": 0.69800796812749
+      },
+      "background": {
+        "count": 25578,
+        "lumaGain": 0.008186003596841053,
+        "absoluteDifference": 0.4673286939296828,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 31,
+      "time": 1.033333,
+      "person": {
+        "count": 2510,
+        "lumaGain": 10.058185737051748,
+        "absoluteDifference": 10.913147410358588,
+        "changedOver8": 1754,
+        "changedFraction": 0.698804780876494
+      },
+      "background": {
+        "count": 25578,
+        "lumaGain": -0.00001822660098523933,
+        "absoluteDifference": 0.4599916594990532,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 32,
+      "time": 1.066667,
+      "person": {
+        "count": 2682,
+        "lumaGain": 9.947394556301246,
+        "absoluteDifference": 10.83818046234158,
+        "changedOver8": 1837,
+        "changedFraction": 0.6849366144668159
+      },
+      "background": {
+        "count": 25299,
+        "lumaGain": 0.0002446499861654678,
+        "absoluteDifference": 0.4743138727485961,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 33,
+      "time": 1.1,
+      "person": {
+        "count": 2647,
+        "lumaGain": 10.1624348318851,
+        "absoluteDifference": 11.042689837551979,
+        "changedOver8": 1859,
+        "changedFraction": 0.702304495655459
+      },
+      "background": {
+        "count": 25388,
+        "lumaGain": 0.002637387742240431,
+        "absoluteDifference": 0.4633816501234256,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 34,
+      "time": 1.133333,
+      "person": {
+        "count": 2228,
+        "lumaGain": 11.64194165170553,
+        "absoluteDifference": 12.52573309395573,
+        "changedOver8": 1722,
+        "changedFraction": 0.7728904847396768
+      },
+      "background": {
+        "count": 25476,
+        "lumaGain": 0.0008015936567749777,
+        "absoluteDifference": 0.4710184749044907,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 35,
+      "time": 1.166667,
+      "person": {
+        "count": 2466,
+        "lumaGain": 11.199141281427353,
+        "absoluteDifference": 12.040686672073544,
+        "changedOver8": 1822,
+        "changedFraction": 0.7388483373884833
+      },
+      "background": {
+        "count": 25202,
+        "lumaGain": -0.0016836600269819705,
+        "absoluteDifference": 0.4680316377007178,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 36,
+      "time": 1.2,
+      "person": {
+        "count": 2511,
+        "lumaGain": 11.261270808442793,
+        "absoluteDifference": 12.076596309571284,
+        "changedOver8": 1848,
+        "changedFraction": 0.7359617682198327
+      },
+      "background": {
+        "count": 25115,
+        "lumaGain": 0.007192498506868419,
+        "absoluteDifference": 0.4732497179640355,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 37,
+      "time": 1.233333,
+      "person": {
+        "count": 2511,
+        "lumaGain": 11.232183353245665,
+        "absoluteDifference": 12.074605071020857,
+        "changedOver8": 1865,
+        "changedFraction": 0.7427319792911191
+      },
+      "background": {
+        "count": 25115,
+        "lumaGain": -0.010185737607007736,
+        "absoluteDifference": 0.4678611719424053,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 38,
+      "time": 1.266667,
+      "person": {
+        "count": 2579,
+        "lumaGain": 11.509887243117433,
+        "absoluteDifference": 12.337727801473466,
+        "changedOver8": 1981,
+        "changedFraction": 0.7681271810779372
+      },
+      "background": {
+        "count": 25215,
+        "lumaGain": 0.001348007138607956,
+        "absoluteDifference": 0.46502743076211855,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 39,
+      "time": 1.3,
+      "person": {
+        "count": 2566,
+        "lumaGain": 11.238510522213527,
+        "absoluteDifference": 12.09093270979477,
+        "changedOver8": 1928,
+        "changedFraction": 0.7513639906469213
+      },
+      "background": {
+        "count": 25097,
+        "lumaGain": -0.005904896999641404,
+        "absoluteDifference": 0.4598159142527047,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 40,
+      "time": 1.333333,
+      "person": {
+        "count": 2566,
+        "lumaGain": 11.306526890101289,
+        "absoluteDifference": 12.142764354377798,
+        "changedOver8": 1932,
+        "changedFraction": 0.7529228371005456
+      },
+      "background": {
+        "count": 25097,
+        "lumaGain": -0.005689397139100294,
+        "absoluteDifference": 0.4646239258344334,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 41,
+      "time": 1.366667,
+      "person": {
+        "count": 2697,
+        "lumaGain": 11.37266978123834,
+        "absoluteDifference": 12.195525892967485,
+        "changedOver8": 2089,
+        "changedFraction": 0.7745643307378569
+      },
+      "background": {
+        "count": 24997,
+        "lumaGain": 0.0005651318158179009,
+        "absoluteDifference": 0.460935312237474,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 42,
+      "time": 1.4,
+      "person": {
+        "count": 2624,
+        "lumaGain": 11.472943140243846,
+        "absoluteDifference": 12.31542174796745,
+        "changedOver8": 1994,
+        "changedFraction": 0.7599085365853658
+      },
+      "background": {
+        "count": 24971,
+        "lumaGain": 0.0030791478114612953,
+        "absoluteDifference": 0.46138854404442925,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 43,
+      "time": 1.433333,
+      "person": {
+        "count": 2624,
+        "lumaGain": 11.53098727134142,
+        "absoluteDifference": 12.389862804878055,
+        "changedOver8": 2011,
+        "changedFraction": 0.7663871951219512
+      },
+      "background": {
+        "count": 24971,
+        "lumaGain": -0.002507660886628474,
+        "absoluteDifference": 0.4673154192196336,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 44,
+      "time": 1.466667,
+      "person": {
+        "count": 2703,
+        "lumaGain": 11.27468679245281,
+        "absoluteDifference": 12.149833518312999,
+        "changedOver8": 2013,
+        "changedFraction": 0.7447280799112098
+      },
+      "background": {
+        "count": 24720,
+        "lumaGain": 0.0010692637540453231,
+        "absoluteDifference": 0.4665992448759476,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 45,
+      "time": 1.5,
+      "person": {
+        "count": 2738,
+        "lumaGain": 11.540749233016742,
+        "absoluteDifference": 12.367543218894502,
+        "changedOver8": 2091,
+        "changedFraction": 0.7636961285609934
+      },
+      "background": {
+        "count": 24772,
+        "lumaGain": 0.004500492491522727,
+        "absoluteDifference": 0.46066795844771535,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 46,
+      "time": 1.533333,
+      "person": {
+        "count": 2738,
+        "lumaGain": 11.585285756026256,
+        "absoluteDifference": 12.425127830533137,
+        "changedOver8": 2104,
+        "changedFraction": 0.7684441197954711
+      },
+      "background": {
+        "count": 24772,
+        "lumaGain": -0.0009526400775068579,
+        "absoluteDifference": 0.4573712255772691,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 47,
+      "time": 1.566667,
+      "person": {
+        "count": 2756,
+        "lumaGain": 11.271258708272825,
+        "absoluteDifference": 12.11344944363805,
+        "changedOver8": 2061,
+        "changedFraction": 0.747822931785196
+      },
+      "background": {
+        "count": 24511,
+        "lumaGain": 0.0008637020113418312,
+        "absoluteDifference": 0.46377816762542645,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 48,
+      "time": 1.6,
+      "person": {
+        "count": 2753,
+        "lumaGain": 11.38908841264071,
+        "absoluteDifference": 12.243855188279383,
+        "changedOver8": 2084,
+        "changedFraction": 0.7569923719578642
+      },
+      "background": {
+        "count": 24518,
+        "lumaGain": 0.001270478831878591,
+        "absoluteDifference": 0.46064116159556223,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 49,
+      "time": 1.633333,
+      "person": {
+        "count": 2756,
+        "lumaGain": 11.510912046444066,
+        "absoluteDifference": 12.387760038703373,
+        "changedOver8": 2114,
+        "changedFraction": 0.7670537010159652
+      },
+      "background": {
+        "count": 24526,
+        "lumaGain": 0.0011320150044850292,
+        "absoluteDifference": 0.47454402131072393,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 50,
+      "time": 1.666667,
+      "person": {
+        "count": 2828,
+        "lumaGain": 11.401379773691604,
+        "absoluteDifference": 12.249292786421442,
+        "changedOver8": 2133,
+        "changedFraction": 0.7542432814710043
+      },
+      "background": {
+        "count": 24298,
+        "lumaGain": -0.00016447444234092798,
+        "absoluteDifference": 0.45353527039263125,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 51,
+      "time": 1.7,
+      "person": {
+        "count": 2861,
+        "lumaGain": 11.382030269136592,
+        "absoluteDifference": 12.233601304904957,
+        "changedOver8": 2166,
+        "changedFraction": 0.7570779447745544
+      },
+      "background": {
+        "count": 24233,
+        "lumaGain": -0.006078298188420778,
+        "absoluteDifference": 0.4552057112202413,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 52,
+      "time": 1.733333,
+      "person": {
+        "count": 2861,
+        "lumaGain": 11.427558476057273,
+        "absoluteDifference": 12.300943725969859,
+        "changedOver8": 2179,
+        "changedFraction": 0.7616218105557497
+      },
+      "background": {
+        "count": 24233,
+        "lumaGain": -0.00396819213469235,
+        "absoluteDifference": 0.4596899544698045,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 53,
+      "time": 1.766667,
+      "person": {
+        "count": 2946,
+        "lumaGain": 11.504794908350274,
+        "absoluteDifference": 12.315795428830032,
+        "changedOver8": 2234,
+        "changedFraction": 0.758316361167685
+      },
+      "background": {
+        "count": 24136,
+        "lumaGain": -0.004983062645011572,
+        "absoluteDifference": 0.4630151364490182,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 54,
+      "time": 1.8,
+      "person": {
+        "count": 2816,
+        "lumaGain": 11.437095525568122,
+        "absoluteDifference": 12.292021780302928,
+        "changedOver8": 2121,
+        "changedFraction": 0.7531960227272727
+      },
+      "background": {
+        "count": 24069,
+        "lumaGain": 0.000204512027919734,
+        "absoluteDifference": 0.46098023737311106,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 55,
+      "time": 1.833333,
+      "person": {
+        "count": 2816,
+        "lumaGain": 11.477329048295406,
+        "absoluteDifference": 12.31048768939385,
+        "changedOver8": 2141,
+        "changedFraction": 0.7602982954545454
+      },
+      "background": {
+        "count": 24069,
+        "lumaGain": 0.0011669117952553285,
+        "absoluteDifference": 0.4544019277909389,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 56,
+      "time": 1.866667,
+      "person": {
+        "count": 2878,
+        "lumaGain": 11.397774704655939,
+        "absoluteDifference": 12.222145008107432,
+        "changedOver8": 2184,
+        "changedFraction": 0.7588603196664351
+      },
+      "background": {
+        "count": 24070,
+        "lumaGain": -0.0005491067719152463,
+        "absoluteDifference": 0.45700041545492803,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 57,
+      "time": 1.9,
+      "person": {
+        "count": 2948,
+        "lumaGain": 11.40882951153321,
+        "absoluteDifference": 12.206241519674318,
+        "changedOver8": 2235,
+        "changedFraction": 0.7581411126187245
+      },
+      "background": {
+        "count": 24084,
+        "lumaGain": 0.00471396777943862,
+        "absoluteDifference": 0.4572053368764926,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 58,
+      "time": 1.933333,
+      "person": {
+        "count": 2948,
+        "lumaGain": 11.413415128900912,
+        "absoluteDifference": 12.258819538670226,
+        "changedOver8": 2253,
+        "changedFraction": 0.764246947082768
+      },
+      "background": {
+        "count": 24084,
+        "lumaGain": -0.0005030891878425437,
+        "absoluteDifference": 0.453108564468809,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 59,
+      "time": 1.966667,
+      "person": {
+        "count": 2951,
+        "lumaGain": 11.433470687902371,
+        "absoluteDifference": 12.232124703490241,
+        "changedOver8": 2244,
+        "changedFraction": 0.7604201965435445
+      },
+      "background": {
+        "count": 24091,
+        "lumaGain": 0.010057432236104774,
+        "absoluteDifference": 0.4684875402985944,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 60,
+      "time": 2,
+      "person": {
+        "count": 2999,
+        "lumaGain": 11.529711970656871,
+        "absoluteDifference": 12.325552962098431,
+        "changedOver8": 2306,
+        "changedFraction": 0.768922974324775
+      },
+      "background": {
+        "count": 24109,
+        "lumaGain": 0.0003632419428429456,
+        "absoluteDifference": 0.46997663389882455,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 61,
+      "time": 2.033333,
+      "person": {
+        "count": 2999,
+        "lumaGain": 11.428379726575518,
+        "absoluteDifference": 12.213071023674509,
+        "changedOver8": 2291,
+        "changedFraction": 0.7639213071023675
+      },
+      "background": {
+        "count": 24109,
+        "lumaGain": 0.005799701356339963,
+        "absoluteDifference": 0.460491932473353,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 62,
+      "time": 2.066667,
+      "person": {
+        "count": 3039,
+        "lumaGain": 11.376673313589967,
+        "absoluteDifference": 12.173521991883248,
+        "changedOver8": 2305,
+        "changedFraction": 0.7584731819677526
+      },
+      "background": {
+        "count": 24109,
+        "lumaGain": -0.0018537060848645697,
+        "absoluteDifference": 0.4568141911042971,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 63,
+      "time": 2.1,
+      "person": {
+        "count": 2934,
+        "lumaGain": 11.358802522153981,
+        "absoluteDifference": 12.149511474664813,
+        "changedOver8": 2206,
+        "changedFraction": 0.7518745739604635
+      },
+      "background": {
+        "count": 24169,
+        "lumaGain": 0.004391716661839541,
+        "absoluteDifference": 0.4616106031141863,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 64,
+      "time": 2.133333,
+      "person": {
+        "count": 2832,
+        "lumaGain": 11.496404661016939,
+        "absoluteDifference": 12.30590866290012,
+        "changedOver8": 2161,
+        "changedFraction": 0.7630649717514124
+      },
+      "background": {
+        "count": 24345,
+        "lumaGain": -0.00205300472376258,
+        "absoluteDifference": 0.4604504689532436,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 65,
+      "time": 2.166667,
+      "person": {
+        "count": 2952,
+        "lumaGain": 11.240382452574508,
+        "absoluteDifference": 12.069896115627722,
+        "changedOver8": 2230,
+        "changedFraction": 0.755420054200542
+      },
+      "background": {
+        "count": 24217,
+        "lumaGain": -0.004093661477474511,
+        "absoluteDifference": 0.4537308502291815,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 66,
+      "time": 2.2,
+      "person": {
+        "count": 2948,
+        "lumaGain": 11.205062415196691,
+        "absoluteDifference": 12.093057440072283,
+        "changedOver8": 2242,
+        "changedFraction": 0.7605156037991859
+      },
+      "background": {
+        "count": 24223,
+        "lumaGain": 0.00005839078561696481,
+        "absoluteDifference": 0.4522010761122376,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 67,
+      "time": 2.233333,
+      "person": {
+        "count": 2948,
+        "lumaGain": 11.09597591587509,
+        "absoluteDifference": 11.951040253278906,
+        "changedOver8": 2174,
+        "changedFraction": 0.737449118046133
+      },
+      "background": {
+        "count": 24223,
+        "lumaGain": -0.0039470503240721915,
+        "absoluteDifference": 0.4565357993092006,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 68,
+      "time": 2.266667,
+      "person": {
+        "count": 2869,
+        "lumaGain": 11.26140411293128,
+        "absoluteDifference": 12.135819681654363,
+        "changedOver8": 2149,
+        "changedFraction": 0.7490414778668526
+      },
+      "background": {
+        "count": 24346,
+        "lumaGain": 0.003126263041156648,
+        "absoluteDifference": 0.4681261808921447,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 69,
+      "time": 2.3,
+      "person": {
+        "count": 2996,
+        "lumaGain": 11.054349399198918,
+        "absoluteDifference": 11.911437472185106,
+        "changedOver8": 2259,
+        "changedFraction": 0.7540053404539386
+      },
+      "background": {
+        "count": 24294,
+        "lumaGain": -0.007112727422408832,
+        "absoluteDifference": 0.4578908372437645,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 70,
+      "time": 2.333333,
+      "person": {
+        "count": 2996,
+        "lumaGain": 11.000742857142804,
+        "absoluteDifference": 11.85380507343114,
+        "changedOver8": 2257,
+        "changedFraction": 0.7533377837116155
+      },
+      "background": {
+        "count": 24294,
+        "lumaGain": -0.0013472380011525377,
+        "absoluteDifference": 0.45819269504130394,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 71,
+      "time": 2.366667,
+      "person": {
+        "count": 3020,
+        "lumaGain": 10.921713377483407,
+        "absoluteDifference": 11.777152317880693,
+        "changedOver8": 2272,
+        "changedFraction": 0.752317880794702
+      },
+      "background": {
+        "count": 24334,
+        "lumaGain": 0.0023900304101257576,
+        "absoluteDifference": 0.45101504068381854,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 72,
+      "time": 2.4,
+      "person": {
+        "count": 2965,
+        "lumaGain": 10.790254772343967,
+        "absoluteDifference": 11.664755480606992,
+        "changedOver8": 2266,
+        "changedFraction": 0.7642495784148398
+      },
+      "background": {
+        "count": 24405,
+        "lumaGain": 0.00005771768080311844,
+        "absoluteDifference": 0.46270572970020346,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 73,
+      "time": 2.433333,
+      "person": {
+        "count": 2965,
+        "lumaGain": 10.47772391231025,
+        "absoluteDifference": 11.35053400786958,
+        "changedOver8": 2193,
+        "changedFraction": 0.739629005059022
+      },
+      "background": {
+        "count": 24405,
+        "lumaGain": -0.0011936652325343158,
+        "absoluteDifference": 0.45639554736051646,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 74,
+      "time": 2.466667,
+      "person": {
+        "count": 2990,
+        "lumaGain": 10.166517190635426,
+        "absoluteDifference": 11.107023411371266,
+        "changedOver8": 2234,
+        "changedFraction": 0.7471571906354515
+      },
+      "background": {
+        "count": 24333,
+        "lumaGain": -0.0058402827435992165,
+        "absoluteDifference": 0.4578555870628392,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 75,
+      "time": 2.5,
+      "person": {
+        "count": 2831,
+        "lumaGain": 9.947100105969582,
+        "absoluteDifference": 10.850700576945766,
+        "changedOver8": 2088,
+        "changedFraction": 0.7375485694101024
+      },
+      "background": {
+        "count": 24414,
+        "lumaGain": 0.0038910788891619885,
+        "absoluteDifference": 0.45224051773572765,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 76,
+      "time": 2.533333,
+      "person": {
+        "count": 2831,
+        "lumaGain": 9.798436806781991,
+        "absoluteDifference": 10.714588484634383,
+        "changedOver8": 2072,
+        "changedFraction": 0.7318968562345461
+      },
+      "background": {
+        "count": 24414,
+        "lumaGain": -0.008297435897435885,
+        "absoluteDifference": 0.4521722508942995,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 77,
+      "time": 2.566667,
+      "person": {
+        "count": 2953,
+        "lumaGain": 9.637301049779818,
+        "absoluteDifference": 10.51710125296313,
+        "changedOver8": 2138,
+        "changedFraction": 0.724009481882831
+      },
+      "background": {
+        "count": 24319,
+        "lumaGain": -0.000014161766520007224,
+        "absoluteDifference": 0.4426991241416214,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 78,
+      "time": 2.6,
+      "person": {
+        "count": 2942,
+        "lumaGain": 9.679952889191009,
+        "absoluteDifference": 10.56401540901882,
+        "changedOver8": 2165,
+        "changedFraction": 0.7358939496940856
+      },
+      "background": {
+        "count": 24366,
+        "lumaGain": -0.005829959780021311,
+        "absoluteDifference": 0.45693452625243114,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 79,
+      "time": 2.633333,
+      "person": {
+        "count": 2832,
+        "lumaGain": 9.801942796610087,
+        "absoluteDifference": 10.683733521657222,
+        "changedOver8": 2111,
+        "changedFraction": 0.745409604519774
+      },
+      "background": {
+        "count": 24507,
+        "lumaGain": 0.004727253437793275,
+        "absoluteDifference": 0.45223813604276814,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 80,
+      "time": 2.666667,
+      "person": {
+        "count": 2920,
+        "lumaGain": 9.617318150684909,
+        "absoluteDifference": 10.55947488584477,
+        "changedOver8": 2138,
+        "changedFraction": 0.7321917808219178
+      },
+      "background": {
+        "count": 24340,
+        "lumaGain": -0.0083693837304848,
+        "absoluteDifference": 0.45431388660641236,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 81,
+      "time": 2.7,
+      "person": {
+        "count": 2972,
+        "lumaGain": 9.57546063257062,
+        "absoluteDifference": 10.457155675190684,
+        "changedOver8": 2127,
+        "changedFraction": 0.7156796769851952
+      },
+      "background": {
+        "count": 24328,
+        "lumaGain": 0.0043528033541598045,
+        "absoluteDifference": 0.4582237202674611,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 82,
+      "time": 2.733333,
+      "person": {
+        "count": 2972,
+        "lumaGain": 9.572389771197821,
+        "absoluteDifference": 10.483176312247663,
+        "changedOver8": 2121,
+        "changedFraction": 0.7136608344549125
+      },
+      "background": {
+        "count": 24328,
+        "lumaGain": 0.0063356790529431484,
+        "absoluteDifference": 0.4549216266579024,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 83,
+      "time": 2.766667,
+      "person": {
+        "count": 3026,
+        "lumaGain": 10.044568671513513,
+        "absoluteDifference": 10.919475655430729,
+        "changedOver8": 2215,
+        "changedFraction": 0.7319894249834765
+      },
+      "background": {
+        "count": 24282,
+        "lumaGain": -0.010457268758751349,
+        "absoluteDifference": 0.4658732119814433,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 84,
+      "time": 2.8,
+      "person": {
+        "count": 3054,
+        "lumaGain": 10.058457760314306,
+        "absoluteDifference": 10.954813359528407,
+        "changedOver8": 2260,
+        "changedFraction": 0.7400130975769482
+      },
+      "background": {
+        "count": 24304,
+        "lumaGain": 0.0021754361421988237,
+        "absoluteDifference": 0.45958141321044976,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 85,
+      "time": 2.833333,
+      "person": {
+        "count": 3054,
+        "lumaGain": 10.189844073346418,
+        "absoluteDifference": 11.069526304300329,
+        "changedOver8": 2211,
+        "changedFraction": 0.7239685658153242
+      },
+      "background": {
+        "count": 24304,
+        "lumaGain": -0.0032678982883475806,
+        "absoluteDifference": 0.46414856265087157,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 86,
+      "time": 2.866667,
+      "person": {
+        "count": 3101,
+        "lumaGain": 10.394090357949025,
+        "absoluteDifference": 11.250241857465252,
+        "changedOver8": 2244,
+        "changedFraction": 0.7236375362786198
+      },
+      "background": {
+        "count": 24203,
+        "lumaGain": -0.0018472586043052214,
+        "absoluteDifference": 0.45691305485546274,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 87,
+      "time": 2.9,
+      "person": {
+        "count": 3165,
+        "lumaGain": 10.491476714060019,
+        "absoluteDifference": 11.339441811479615,
+        "changedOver8": 2279,
+        "changedFraction": 0.7200631911532386
+      },
+      "background": {
+        "count": 24060,
+        "lumaGain": 0.0013123524522028307,
+        "absoluteDifference": 0.4723469105015279,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 88,
+      "time": 2.933333,
+      "person": {
+        "count": 3165,
+        "lumaGain": 10.680313048973108,
+        "absoluteDifference": 11.497419694575974,
+        "changedOver8": 2281,
+        "changedFraction": 0.720695102685624
+      },
+      "background": {
+        "count": 24060,
+        "lumaGain": -0.0004753782211138773,
+        "absoluteDifference": 0.4706705458575832,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 89,
+      "time": 2.966667,
+      "person": {
+        "count": 3196,
+        "lumaGain": 10.77728742177714,
+        "absoluteDifference": 11.603358364622297,
+        "changedOver8": 2321,
+        "changedFraction": 0.7262202753441802
+      },
+      "background": {
+        "count": 24046,
+        "lumaGain": -0.0009065707394161075,
+        "absoluteDifference": 0.46790873048879017,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 90,
+      "time": 3,
+      "person": {
+        "count": 3214,
+        "lumaGain": 11.033048724331033,
+        "absoluteDifference": 11.851690520638794,
+        "changedOver8": 2368,
+        "changedFraction": 0.7367766023646546
+      },
+      "background": {
+        "count": 24057,
+        "lumaGain": -0.007028324396225622,
+        "absoluteDifference": 0.4692605062975468,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 91,
+      "time": 3.033333,
+      "person": {
+        "count": 3214,
+        "lumaGain": 11.042986869943975,
+        "absoluteDifference": 11.855320472930844,
+        "changedOver8": 2355,
+        "changedFraction": 0.7327317983820784
+      },
+      "background": {
+        "count": 24057,
+        "lumaGain": -0.000748040071496869,
+        "absoluteDifference": 0.46400908952349973,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 92,
+      "time": 3.066667,
+      "person": {
+        "count": 3283,
+        "lumaGain": 11.086999939080101,
+        "absoluteDifference": 11.902122042846898,
+        "changedOver8": 2465,
+        "changedFraction": 0.7508376484922327
+      },
+      "background": {
+        "count": 24041,
+        "lumaGain": 0.0024160226280104825,
+        "absoluteDifference": 0.4610318483701497,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 93,
+      "time": 3.1,
+      "person": {
+        "count": 3285,
+        "lumaGain": 11.007175464231324,
+        "absoluteDifference": 11.827295788939528,
+        "changedOver8": 2418,
+        "changedFraction": 0.7360730593607306
+      },
+      "background": {
+        "count": 24055,
+        "lumaGain": 0.006605254624818125,
+        "absoluteDifference": 0.4757153744890209,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 94,
+      "time": 3.133333,
+      "person": {
+        "count": 3256,
+        "lumaGain": 11.090154361179307,
+        "absoluteDifference": 11.891175266175145,
+        "changedOver8": 2429,
+        "changedFraction": 0.746007371007371
+      },
+      "background": {
+        "count": 24069,
+        "lumaGain": 0.005252307947982902,
+        "absoluteDifference": 0.46622903596604703,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 95,
+      "time": 3.166667,
+      "person": {
+        "count": 3238,
+        "lumaGain": 10.937467140209945,
+        "absoluteDifference": 11.747374922791774,
+        "changedOver8": 2350,
+        "changedFraction": 0.7257566399011736
+      },
+      "background": {
+        "count": 24079,
+        "lumaGain": 0.00010290294447443436,
+        "absoluteDifference": 0.46834724587123633,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 96,
+      "time": 3.2,
+      "person": {
+        "count": 3246,
+        "lumaGain": 10.911645656192213,
+        "absoluteDifference": 11.74276032039428,
+        "changedOver8": 2404,
+        "changedFraction": 0.74060382008626
+      },
+      "background": {
+        "count": 24067,
+        "lumaGain": -0.005636647691860192,
+        "absoluteDifference": 0.47115690918408615,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 97,
+      "time": 3.233333,
+      "person": {
+        "count": 3246,
+        "lumaGain": 10.836672951324672,
+        "absoluteDifference": 11.66153214212356,
+        "changedOver8": 2356,
+        "changedFraction": 0.7258163894023414
+      },
+      "background": {
+        "count": 24067,
+        "lumaGain": -0.00367678564008806,
+        "absoluteDifference": 0.46830376310577676,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 98,
+      "time": 3.266667,
+      "person": {
+        "count": 3185,
+        "lumaGain": 10.98512125588694,
+        "absoluteDifference": 11.822815279958085,
+        "changedOver8": 2346,
+        "changedFraction": 0.7365777080062794
+      },
+      "background": {
+        "count": 24100,
+        "lumaGain": -0.0005304232365145184,
+        "absoluteDifference": 0.4705670816044295,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 99,
+      "time": 3.3,
+      "person": {
+        "count": 3213,
+        "lumaGain": 10.861942110177408,
+        "absoluteDifference": 11.668119099491587,
+        "changedOver8": 2341,
+        "changedFraction": 0.7286025521319639
+      },
+      "background": {
+        "count": 24078,
+        "lumaGain": -0.0009861450286568613,
+        "absoluteDifference": 0.465251820472356,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 100,
+      "time": 3.333333,
+      "person": {
+        "count": 3213,
+        "lumaGain": 10.885942172424455,
+        "absoluteDifference": 11.706608569353575,
+        "changedOver8": 2329,
+        "changedFraction": 0.7248677248677249
+      },
+      "background": {
+        "count": 24078,
+        "lumaGain": 0.0029237810449372756,
+        "absoluteDifference": 0.4682005703685299,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 101,
+      "time": 3.366667,
+      "person": {
+        "count": 3183,
+        "lumaGain": 10.809070813697707,
+        "absoluteDifference": 11.624358571578078,
+        "changedOver8": 2312,
+        "changedFraction": 0.726358781024191
+      },
+      "background": {
+        "count": 24096,
+        "lumaGain": 0.0033451776228420127,
+        "absoluteDifference": 0.45963368747233674,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 102,
+      "time": 3.4,
+      "person": {
+        "count": 3156,
+        "lumaGain": 10.890546387832641,
+        "absoluteDifference": 11.731411068863437,
+        "changedOver8": 2313,
+        "changedFraction": 0.7328897338403042
+      },
+      "background": {
+        "count": 24143,
+        "lumaGain": 0.00013558381311355375,
+        "absoluteDifference": 0.4585456101837706,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 103,
+      "time": 3.433333,
+      "person": {
+        "count": 3156,
+        "lumaGain": 10.836487705956886,
+        "absoluteDifference": 11.692754541613752,
+        "changedOver8": 2317,
+        "changedFraction": 0.7341571609632446
+      },
+      "background": {
+        "count": 24143,
+        "lumaGain": 0.004095679907219476,
+        "absoluteDifference": 0.462301012025571,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 104,
+      "time": 3.466667,
+      "person": {
+        "count": 3164,
+        "lumaGain": 10.863302022755994,
+        "absoluteDifference": 11.703750526759288,
+        "changedOver8": 2307,
+        "changedFraction": 0.7291403286978508
+      },
+      "background": {
+        "count": 24132,
+        "lumaGain": 0.005283407923089693,
+        "absoluteDifference": 0.4657715895905866,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 105,
+      "time": 3.5,
+      "person": {
+        "count": 3139,
+        "lumaGain": 10.926074864606512,
+        "absoluteDifference": 11.760327068068253,
+        "changedOver8": 2281,
+        "changedFraction": 0.7266645428480408
+      },
+      "background": {
+        "count": 24152,
+        "lumaGain": 0.0036288671745611477,
+        "absoluteDifference": 0.4571188031357005,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 106,
+      "time": 3.533333,
+      "person": {
+        "count": 3139,
+        "lumaGain": 10.986889582669583,
+        "absoluteDifference": 11.823085908463312,
+        "changedOver8": 2289,
+        "changedFraction": 0.729213125199108
+      },
+      "background": {
+        "count": 24152,
+        "lumaGain": -0.0009224080821464012,
+        "absoluteDifference": 0.4625151816274708,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 107,
+      "time": 3.566667,
+      "person": {
+        "count": 3162,
+        "lumaGain": 10.983559013282647,
+        "absoluteDifference": 11.82827324478162,
+        "changedOver8": 2278,
+        "changedFraction": 0.7204301075268817
+      },
+      "background": {
+        "count": 24126,
+        "lumaGain": -0.00896106275387547,
+        "absoluteDifference": 0.464491972698891,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 108,
+      "time": 3.6,
+      "person": {
+        "count": 3159,
+        "lumaGain": 11.191749224438007,
+        "absoluteDifference": 12.043684710351227,
+        "changedOver8": 2315,
+        "changedFraction": 0.732826843937955
+      },
+      "background": {
+        "count": 24130,
+        "lumaGain": -0.00478917530045585,
+        "absoluteDifference": 0.46487083851360755,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 109,
+      "time": 3.633333,
+      "person": {
+        "count": 3159,
+        "lumaGain": 11.390590440012616,
+        "absoluteDifference": 12.240476944180525,
+        "changedOver8": 2357,
+        "changedFraction": 0.746122190566635
+      },
+      "background": {
+        "count": 24137,
+        "lumaGain": 0.005725848282719463,
+        "absoluteDifference": 0.46307881399235334,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 110,
+      "time": 3.666667,
+      "person": {
+        "count": 3190,
+        "lumaGain": 11.650760188087741,
+        "absoluteDifference": 12.413793103448226,
+        "changedOver8": 2424,
+        "changedFraction": 0.7598746081504703
+      },
+      "background": {
+        "count": 24103,
+        "lumaGain": 0.001890801974857895,
+        "absoluteDifference": 0.45273755687397743,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 111,
+      "time": 3.7,
+      "person": {
+        "count": 3204,
+        "lumaGain": 11.688820411984974,
+        "absoluteDifference": 12.444964627548874,
+        "changedOver8": 2472,
+        "changedFraction": 0.7715355805243446
+      },
+      "background": {
+        "count": 24093,
+        "lumaGain": -0.007077068028057915,
+        "absoluteDifference": 0.4573389227853204,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 112,
+      "time": 3.733333,
+      "person": {
+        "count": 3204,
+        "lumaGain": 11.421275280898833,
+        "absoluteDifference": 12.169163545568031,
+        "changedOver8": 2399,
+        "changedFraction": 0.7487515605493134
+      },
+      "background": {
+        "count": 24093,
+        "lumaGain": -0.0014740630058523265,
+        "absoluteDifference": 0.453963115151016,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 113,
+      "time": 3.766667,
+      "person": {
+        "count": 3121,
+        "lumaGain": 10.941283562960566,
+        "absoluteDifference": 11.723058848659624,
+        "changedOver8": 2236,
+        "changedFraction": 0.7164370394104453
+      },
+      "background": {
+        "count": 23977,
+        "lumaGain": -0.007336439087458836,
+        "absoluteDifference": 0.4495836287553408,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 114,
+      "time": 3.8,
+      "person": {
+        "count": 3272,
+        "lumaGain": 10.800695293398496,
+        "absoluteDifference": 11.574470252648698,
+        "changedOver8": 2310,
+        "changedFraction": 0.7059902200488998
+      },
+      "background": {
+        "count": 23816,
+        "lumaGain": 0.007397749412159864,
+        "absoluteDifference": 0.4555620871123095,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 115,
+      "time": 3.833333,
+      "person": {
+        "count": 3272,
+        "lumaGain": 10.778075366748045,
+        "absoluteDifference": 11.564180929095235,
+        "changedOver8": 2313,
+        "changedFraction": 0.7069070904645477
+      },
+      "background": {
+        "count": 23816,
+        "lumaGain": -0.00421749244205575,
+        "absoluteDifference": 0.45934105923189134,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 116,
+      "time": 3.866667,
+      "person": {
+        "count": 3218,
+        "lumaGain": 10.917664698570482,
+        "absoluteDifference": 11.697431116635483,
+        "changedOver8": 2320,
+        "changedFraction": 0.7209446861404599
+      },
+      "background": {
+        "count": 23655,
+        "lumaGain": -0.004267410695413231,
+        "absoluteDifference": 0.4603536954836934,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 117,
+      "time": 3.9,
+      "person": {
+        "count": 3130,
+        "lumaGain": 11.041488498402524,
+        "absoluteDifference": 11.84387646432366,
+        "changedOver8": 2229,
+        "changedFraction": 0.7121405750798722
+      },
+      "background": {
+        "count": 23526,
+        "lumaGain": -0.004988106775482464,
+        "absoluteDifference": 0.4512312618663063,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 118,
+      "time": 3.933333,
+      "person": {
+        "count": 3130,
+        "lumaGain": 10.959103322683662,
+        "absoluteDifference": 11.787113951011555,
+        "changedOver8": 2238,
+        "changedFraction": 0.7150159744408946
+      },
+      "background": {
+        "count": 23526,
+        "lumaGain": -0.008091583779648028,
+        "absoluteDifference": 0.45441922412083385,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 119,
+      "time": 3.966667,
+      "person": {
+        "count": 3127,
+        "lumaGain": 10.853693124400316,
+        "absoluteDifference": 11.680950858117361,
+        "changedOver8": 2223,
+        "changedFraction": 0.7109050207866965
+      },
+      "background": {
+        "count": 23287,
+        "lumaGain": 0.0005359556834285209,
+        "absoluteDifference": 0.4543736848885681,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 120,
+      "time": 4,
+      "person": {
+        "count": 3067,
+        "lumaGain": 10.963628105640614,
+        "absoluteDifference": 11.809368546896968,
+        "changedOver8": 2187,
+        "changedFraction": 0.7130746657971959
+      },
+      "background": {
+        "count": 23349,
+        "lumaGain": -0.011105726155295814,
+        "absoluteDifference": 0.45600810884120907,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 121,
+      "time": 4.033333,
+      "person": {
+        "count": 3067,
+        "lumaGain": 10.900219497880586,
+        "absoluteDifference": 11.728181719378206,
+        "changedOver8": 2186,
+        "changedFraction": 0.7127486142810564
+      },
+      "background": {
+        "count": 23349,
+        "lumaGain": 0.002309058203777465,
+        "absoluteDifference": 0.45105429211815184,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 122,
+      "time": 4.066667,
+      "person": {
+        "count": 3124,
+        "lumaGain": 10.846465813060105,
+        "absoluteDifference": 11.692701664532523,
+        "changedOver8": 2221,
+        "changedFraction": 0.7109475032010243
+      },
+      "background": {
+        "count": 23242,
+        "lumaGain": -0.009736933138284172,
+        "absoluteDifference": 0.4482402547113028,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 123,
+      "time": 4.1,
+      "person": {
+        "count": 3124,
+        "lumaGain": 10.810702496798884,
+        "absoluteDifference": 11.681498079385282,
+        "changedOver8": 2236,
+        "changedFraction": 0.7157490396927016
+      },
+      "background": {
+        "count": 23242,
+        "lumaGain": -0.0016597022631443298,
+        "absoluteDifference": 0.4419011559533058,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 124,
+      "time": 4.133333,
+      "person": {
+        "count": 3100,
+        "lumaGain": 10.862261870967671,
+        "absoluteDifference": 11.728279569892358,
+        "changedOver8": 2239,
+        "changedFraction": 0.7222580645161291
+      },
+      "background": {
+        "count": 23332,
+        "lumaGain": -0.00028547059831988877,
+        "absoluteDifference": 0.4453968798217083,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 125,
+      "time": 4.166667,
+      "person": {
+        "count": 3116,
+        "lumaGain": 10.784126315789397,
+        "absoluteDifference": 11.63949507916125,
+        "changedOver8": 2232,
+        "changedFraction": 0.7163029525032092
+      },
+      "background": {
+        "count": 23243,
+        "lumaGain": 0.001686004388418024,
+        "absoluteDifference": 0.44628490298154594,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 126,
+      "time": 4.2,
+      "person": {
+        "count": 3094,
+        "lumaGain": 10.708213445378101,
+        "absoluteDifference": 11.572721396250722,
+        "changedOver8": 2217,
+        "changedFraction": 0.7165481577246283
+      },
+      "background": {
+        "count": 23215,
+        "lumaGain": 0.005581089812621162,
+        "absoluteDifference": 0.4531983631272913,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 127,
+      "time": 4.233333,
+      "person": {
+        "count": 3094,
+        "lumaGain": 10.71883438914021,
+        "absoluteDifference": 11.57207498383961,
+        "changedOver8": 2200,
+        "changedFraction": 0.7110536522301228
+      },
+      "background": {
+        "count": 23215,
+        "lumaGain": 0.0008431703639888128,
+        "absoluteDifference": 0.44923540814129265,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 128,
+      "time": 4.266667,
+      "person": {
+        "count": 3151,
+        "lumaGain": 10.916185782291251,
+        "absoluteDifference": 11.753411615360069,
+        "changedOver8": 2245,
+        "changedFraction": 0.7124722310377658
+      },
+      "background": {
+        "count": 23251,
+        "lumaGain": 0.009713552105285794,
+        "absoluteDifference": 0.4489556004759665,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 129,
+      "time": 4.3,
+      "person": {
+        "count": 3198,
+        "lumaGain": 10.989474421513341,
+        "absoluteDifference": 11.80988117573474,
+        "changedOver8": 2291,
+        "changedFraction": 0.7163852407754847
+      },
+      "background": {
+        "count": 23217,
+        "lumaGain": 0.0013290692165223714,
+        "absoluteDifference": 0.4448464487229192,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 130,
+      "time": 4.333333,
+      "person": {
+        "count": 3198,
+        "lumaGain": 11.015796998123704,
+        "absoluteDifference": 11.842193037314845,
+        "changedOver8": 2322,
+        "changedFraction": 0.726078799249531
+      },
+      "background": {
+        "count": 23217,
+        "lumaGain": -0.0006388766851875861,
+        "absoluteDifference": 0.4435973640005218,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 131,
+      "time": 4.366667,
+      "person": {
+        "count": 3169,
+        "lumaGain": 10.893384474597596,
+        "absoluteDifference": 11.704007573366905,
+        "changedOver8": 2266,
+        "changedFraction": 0.7150520668980751
+      },
+      "background": {
+        "count": 23230,
+        "lumaGain": 0.00044432199741713404,
+        "absoluteDifference": 0.4449705840149273,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 132,
+      "time": 4.4,
+      "person": {
+        "count": 3262,
+        "lumaGain": 10.95442924586133,
+        "absoluteDifference": 11.772940936030952,
+        "changedOver8": 2378,
+        "changedFraction": 0.7290006131207848
+      },
+      "background": {
+        "count": 23166,
+        "lumaGain": -0.0020039627039627004,
+        "absoluteDifference": 0.4402284957840544,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 133,
+      "time": 4.433333,
+      "person": {
+        "count": 3262,
+        "lumaGain": 10.96414150827708,
+        "absoluteDifference": 11.753321070917565,
+        "changedOver8": 2363,
+        "changedFraction": 0.7244022072348253
+      },
+      "background": {
+        "count": 23166,
+        "lumaGain": -0.0010149184149184141,
+        "absoluteDifference": 0.4556390111945703,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 134,
+      "time": 4.466667,
+      "person": {
+        "count": 3283,
+        "lumaGain": 10.940706000609115,
+        "absoluteDifference": 11.774190273124084,
+        "changedOver8": 2410,
+        "changedFraction": 0.7340846786475784
+      },
+      "background": {
+        "count": 23154,
+        "lumaGain": -0.0011958883994126314,
+        "absoluteDifference": 0.4490944689182586,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 135,
+      "time": 4.5,
+      "person": {
+        "count": 3288,
+        "lumaGain": 10.917438199513272,
+        "absoluteDifference": 11.748986212489788,
+        "changedOver8": 2408,
+        "changedFraction": 0.732360097323601
+      },
+      "background": {
+        "count": 23103,
+        "lumaGain": 0.004686741981560845,
+        "absoluteDifference": 0.4504465509529814,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 136,
+      "time": 4.533333,
+      "person": {
+        "count": 3288,
+        "lumaGain": 10.942403102189713,
+        "absoluteDifference": 11.750912408759042,
+        "changedOver8": 2416,
+        "changedFraction": 0.7347931873479319
+      },
+      "background": {
+        "count": 23103,
+        "lumaGain": -0.0016704324113751467,
+        "absoluteDifference": 0.4552222655066476,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 137,
+      "time": 4.566667,
+      "person": {
+        "count": 3274,
+        "lumaGain": 10.901861820403079,
+        "absoluteDifference": 11.71024231317442,
+        "changedOver8": 2400,
+        "changedFraction": 0.7330482590103848
+      },
+      "background": {
+        "count": 23035,
+        "lumaGain": 0.004094985891035392,
+        "absoluteDifference": 0.4459011648940046,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 138,
+      "time": 4.6,
+      "person": {
+        "count": 3296,
+        "lumaGain": 10.889101031553299,
+        "absoluteDifference": 11.704490291262097,
+        "changedOver8": 2417,
+        "changedFraction": 0.7333131067961165
+      },
+      "background": {
+        "count": 23033,
+        "lumaGain": 0.006964607302565878,
+        "absoluteDifference": 0.4546664930027972,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 139,
+      "time": 4.633333,
+      "person": {
+        "count": 3227,
+        "lumaGain": 10.907655903315684,
+        "absoluteDifference": 11.725131701270465,
+        "changedOver8": 2359,
+        "changedFraction": 0.7310195227765727
+      },
+      "background": {
+        "count": 23084,
+        "lumaGain": -0.003479180384682046,
+        "absoluteDifference": 0.45210246635476453,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 140,
+      "time": 4.666667,
+      "person": {
+        "count": 3188,
+        "lumaGain": 10.916942095357513,
+        "absoluteDifference": 11.75784190715175,
+        "changedOver8": 2298,
+        "changedFraction": 0.7208281053952321
+      },
+      "background": {
+        "count": 22984,
+        "lumaGain": -0.005975687434737207,
+        "absoluteDifference": 0.4454983176702667,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 141,
+      "time": 4.7,
+      "person": {
+        "count": 3210,
+        "lumaGain": 10.826976261682164,
+        "absoluteDifference": 11.630010384215918,
+        "changedOver8": 2298,
+        "changedFraction": 0.7158878504672898
+      },
+      "background": {
+        "count": 22940,
+        "lumaGain": -0.0015659721011334021,
+        "absoluteDifference": 0.4500290613193855,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 142,
+      "time": 4.733333,
+      "person": {
+        "count": 3210,
+        "lumaGain": 10.821477881619876,
+        "absoluteDifference": 11.651713395638511,
+        "changedOver8": 2307,
+        "changedFraction": 0.7186915887850467
+      },
+      "background": {
+        "count": 22940,
+        "lumaGain": -0.004276163905841323,
+        "absoluteDifference": 0.45158384190642525,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 143,
+      "time": 4.766667,
+      "person": {
+        "count": 3216,
+        "lumaGain": 10.787042537313337,
+        "absoluteDifference": 11.63660862354882,
+        "changedOver8": 2321,
+        "changedFraction": 0.7217039800995025
+      },
+      "background": {
+        "count": 22999,
+        "lumaGain": -0.0003088482107917722,
+        "absoluteDifference": 0.4459469252286352,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 144,
+      "time": 4.8,
+      "person": {
+        "count": 3219,
+        "lumaGain": 10.807741596769057,
+        "absoluteDifference": 11.654136895516121,
+        "changedOver8": 2354,
+        "changedFraction": 0.7312830071450761
+      },
+      "background": {
+        "count": 22960,
+        "lumaGain": 0.006677317073170734,
+        "absoluteDifference": 0.4465156794425103,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 145,
+      "time": 4.833333,
+      "person": {
+        "count": 3219,
+        "lumaGain": 10.732969431500377,
+        "absoluteDifference": 11.562389976182956,
+        "changedOver8": 2330,
+        "changedFraction": 0.7238272755514135
+      },
+      "background": {
+        "count": 22960,
+        "lumaGain": 0.00413307491289198,
+        "absoluteDifference": 0.44036004645761057,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 146,
+      "time": 4.866667,
+      "person": {
+        "count": 3239,
+        "lumaGain": 10.77064421117622,
+        "absoluteDifference": 11.61942986518467,
+        "changedOver8": 2380,
+        "changedFraction": 0.734794689719049
+      },
+      "background": {
+        "count": 23003,
+        "lumaGain": 0.004109559622657926,
+        "absoluteDifference": 0.44162355634772493,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 147,
+      "time": 4.9,
+      "person": {
+        "count": 3207,
+        "lumaGain": 10.73997056439031,
+        "absoluteDifference": 11.584138862903993,
+        "changedOver8": 2333,
+        "changedFraction": 0.7274711568444029
+      },
+      "background": {
+        "count": 23142,
+        "lumaGain": 0.0006437732261688702,
+        "absoluteDifference": 0.4368824359749969,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 148,
+      "time": 4.933333,
+      "person": {
+        "count": 3207,
+        "lumaGain": 10.6459208606173,
+        "absoluteDifference": 11.52915497349537,
+        "changedOver8": 2297,
+        "changedFraction": 0.7162457125038977
+      },
+      "background": {
+        "count": 23142,
+        "lumaGain": 0.0038257194710915143,
+        "absoluteDifference": 0.43948952841874933,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 149,
+      "time": 4.966667,
+      "person": {
+        "count": 3180,
+        "lumaGain": 10.918357798742086,
+        "absoluteDifference": 11.762893081760913,
+        "changedOver8": 2274,
+        "changedFraction": 0.7150943396226415
+      },
+      "background": {
+        "count": 23291,
+        "lumaGain": 0.008423828946803456,
+        "absoluteDifference": 0.428362886952044,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 150,
+      "time": 5,
+      "person": {
+        "count": 3182,
+        "lumaGain": 10.827780578252565,
+        "absoluteDifference": 11.671694950764579,
+        "changedOver8": 2266,
+        "changedFraction": 0.7121307353865494
+      },
+      "background": {
+        "count": 23412,
+        "lumaGain": 0.004377020331453959,
+        "absoluteDifference": 0.42640526225867464,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 151,
+      "time": 5.033333,
+      "person": {
+        "count": 3182,
+        "lumaGain": 10.881635512256363,
+        "absoluteDifference": 11.727110831761891,
+        "changedOver8": 2271,
+        "changedFraction": 0.7137020741671904
+      },
+      "background": {
+        "count": 23412,
+        "lumaGain": 0.00027930975568082986,
+        "absoluteDifference": 0.4360299561478482,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 152,
+      "time": 5.066667,
+      "person": {
+        "count": 3176,
+        "lumaGain": 10.714270214105733,
+        "absoluteDifference": 11.571683459277846,
+        "changedOver8": 2287,
+        "changedFraction": 0.720088161209068
+      },
+      "background": {
+        "count": 23398,
+        "lumaGain": 0.006549773484913193,
+        "absoluteDifference": 0.4348519816508542,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 153,
+      "time": 5.1,
+      "person": {
+        "count": 3158,
+        "lumaGain": 10.67606390120322,
+        "absoluteDifference": 11.520160439096365,
+        "changedOver8": 2229,
+        "changedFraction": 0.7058264724509183
+      },
+      "background": {
+        "count": 23437,
+        "lumaGain": 0.00182110338353885,
+        "absoluteDifference": 0.42698866464706775,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 154,
+      "time": 5.133333,
+      "person": {
+        "count": 3170,
+        "lumaGain": 10.762644858044037,
+        "absoluteDifference": 11.60599369085163,
+        "changedOver8": 2266,
+        "changedFraction": 0.714826498422713
+      },
+      "background": {
+        "count": 23495,
+        "lumaGain": 0.004510193658225164,
+        "absoluteDifference": 0.43873164503085826,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 155,
+      "time": 5.166667,
+      "person": {
+        "count": 3165,
+        "lumaGain": 10.634157093206875,
+        "absoluteDifference": 11.493522906792958,
+        "changedOver8": 2247,
+        "changedFraction": 0.7099526066350711
+      },
+      "background": {
+        "count": 23475,
+        "lumaGain": -0.0023957231096911535,
+        "absoluteDifference": 0.4381256656017042,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 156,
+      "time": 5.2,
+      "person": {
+        "count": 3151,
+        "lumaGain": 10.745529546175726,
+        "absoluteDifference": 11.599598011213258,
+        "changedOver8": 2263,
+        "changedFraction": 0.7181847032688036
+      },
+      "background": {
+        "count": 23494,
+        "lumaGain": -0.00221471013875883,
+        "absoluteDifference": 0.42463323969240385,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 157,
+      "time": 5.233333,
+      "person": {
+        "count": 3151,
+        "lumaGain": 10.710471786734276,
+        "absoluteDifference": 11.559610705595981,
+        "changedOver8": 2241,
+        "changedFraction": 0.7112027927642018
+      },
+      "background": {
+        "count": 23494,
+        "lumaGain": 0.0032752873073976234,
+        "absoluteDifference": 0.4311739167447014,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 158,
+      "time": 5.266667,
+      "person": {
+        "count": 3118,
+        "lumaGain": 10.746171135343099,
+        "absoluteDifference": 11.607013042548509,
+        "changedOver8": 2210,
+        "changedFraction": 0.7087876844130853
+      },
+      "background": {
+        "count": 23480,
+        "lumaGain": -0.00209637989778534,
+        "absoluteDifference": 0.4300539466212389,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 159,
+      "time": 5.3,
+      "person": {
+        "count": 3121,
+        "lumaGain": 10.754287664210143,
+        "absoluteDifference": 11.617109900672753,
+        "changedOver8": 2261,
+        "changedFraction": 0.7244472925344441
+      },
+      "background": {
+        "count": 23512,
+        "lumaGain": 0.0009671061585573331,
+        "absoluteDifference": 0.4253005557445855,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 160,
+      "time": 5.333333,
+      "person": {
+        "count": 3121,
+        "lumaGain": 10.816987632169107,
+        "absoluteDifference": 11.670404784791083,
+        "changedOver8": 2238,
+        "changedFraction": 0.7170778596603653
+      },
+      "background": {
+        "count": 23512,
+        "lumaGain": -0.008088108200068028,
+        "absoluteDifference": 0.4181127367585358,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 161,
+      "time": 5.366667,
+      "person": {
+        "count": 3081,
+        "lumaGain": 10.901677377474838,
+        "absoluteDifference": 11.753651411879183,
+        "changedOver8": 2218,
+        "changedFraction": 0.7198961376176566
+      },
+      "background": {
+        "count": 23573,
+        "lumaGain": 0.000231985746404787,
+        "absoluteDifference": 0.4186427975508708,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 162,
+      "time": 5.4,
+      "person": {
+        "count": 3093,
+        "lumaGain": 10.896281280310305,
+        "absoluteDifference": 11.752451772820237,
+        "changedOver8": 2224,
+        "changedFraction": 0.7190430003233107
+      },
+      "background": {
+        "count": 23530,
+        "lumaGain": -0.0021496727581810406,
+        "absoluteDifference": 0.4288284459555197,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 163,
+      "time": 5.433333,
+      "person": {
+        "count": 3093,
+        "lumaGain": 10.923213255738677,
+        "absoluteDifference": 11.774113589826383,
+        "changedOver8": 2230,
+        "changedFraction": 0.720982864532816
+      },
+      "background": {
+        "count": 23530,
+        "lumaGain": -0.0004331151721206902,
+        "absoluteDifference": 0.43317750389573684,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 164,
+      "time": 5.466667,
+      "person": {
+        "count": 3088,
+        "lumaGain": 10.855445466321177,
+        "absoluteDifference": 11.704555267702832,
+        "changedOver8": 2166,
+        "changedFraction": 0.7014248704663213
+      },
+      "background": {
+        "count": 23419,
+        "lumaGain": 0.007526692002220414,
+        "absoluteDifference": 0.42916720042131207,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 165,
+      "time": 5.5,
+      "person": {
+        "count": 3107,
+        "lumaGain": 10.851938397167585,
+        "absoluteDifference": 11.669885205449987,
+        "changedOver8": 2225,
+        "changedFraction": 0.7161248793047956
+      },
+      "background": {
+        "count": 23459,
+        "lumaGain": 0.007174270002983944,
+        "absoluteDifference": 0.43806925558065934,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 166,
+      "time": 5.533333,
+      "person": {
+        "count": 3107,
+        "lumaGain": 10.905148310267096,
+        "absoluteDifference": 11.72953545756887,
+        "changedOver8": 2201,
+        "changedFraction": 0.708400386224654
+      },
+      "background": {
+        "count": 23459,
+        "lumaGain": 0.0017102604544098384,
+        "absoluteDifference": 0.43640678062435523,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 167,
+      "time": 5.566667,
+      "person": {
+        "count": 3151,
+        "lumaGain": 10.926497112027864,
+        "absoluteDifference": 11.727388130752107,
+        "changedOver8": 2206,
+        "changedFraction": 0.7000952078705173
+      },
+      "background": {
+        "count": 23408,
+        "lumaGain": -0.006903673957621355,
+        "absoluteDifference": 0.4259797220323551,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 168,
+      "time": 5.6,
+      "person": {
+        "count": 3145,
+        "lumaGain": 10.941686232114376,
+        "absoluteDifference": 11.744780074191752,
+        "changedOver8": 2235,
+        "changedFraction": 0.7106518282988871
+      },
+      "background": {
+        "count": 23495,
+        "lumaGain": 0.0025741391785486147,
+        "absoluteDifference": 0.4218060580265316,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 169,
+      "time": 5.633333,
+      "person": {
+        "count": 3127,
+        "lumaGain": 10.94782027502389,
+        "absoluteDifference": 11.743097750772742,
+        "changedOver8": 2217,
+        "changedFraction": 0.7089862488007675
+      },
+      "background": {
+        "count": 23840,
+        "lumaGain": 0.002570478187919473,
+        "absoluteDifference": 0.42174217002237185,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 170,
+      "time": 5.666667,
+      "person": {
+        "count": 3200,
+        "lumaGain": 10.959313499999919,
+        "absoluteDifference": 11.773124999999954,
+        "changedOver8": 2299,
+        "changedFraction": 0.7184375
+      },
+      "background": {
+        "count": 23793,
+        "lumaGain": 0.0014231916950363335,
+        "absoluteDifference": 0.4186105156978947,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 171,
+      "time": 5.7,
+      "person": {
+        "count": 3317,
+        "lumaGain": 11.130952426891689,
+        "absoluteDifference": 11.893679027233377,
+        "changedOver8": 2430,
+        "changedFraction": 0.7325896894784444
+      },
+      "background": {
+        "count": 23792,
+        "lumaGain": -0.005236936785474132,
+        "absoluteDifference": 0.40397332436673206,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 172,
+      "time": 5.733333,
+      "person": {
+        "count": 3317,
+        "lumaGain": 10.965366777208262,
+        "absoluteDifference": 11.760526580243145,
+        "changedOver8": 2422,
+        "changedFraction": 0.7301778715706964
+      },
+      "background": {
+        "count": 23792,
+        "lumaGain": 0.0013680648957632789,
+        "absoluteDifference": 0.4054444070836125,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 173,
+      "time": 5.766667,
+      "person": {
+        "count": 3094,
+        "lumaGain": 10.625115707821468,
+        "absoluteDifference": 11.393665158371013,
+        "changedOver8": 2198,
+        "changedFraction": 0.7104072398190046
+      },
+      "background": {
+        "count": 24037,
+        "lumaGain": -0.0033293422640096612,
+        "absoluteDifference": 0.4113380760216896,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 174,
+      "time": 5.8,
+      "person": {
+        "count": 3135,
+        "lumaGain": 10.33047559808604,
+        "absoluteDifference": 11.152897395002617,
+        "changedOver8": 2226,
+        "changedFraction": 0.7100478468899522
+      },
+      "background": {
+        "count": 24018,
+        "lumaGain": -0.0015008826713298398,
+        "absoluteDifference": 0.4147583756626985,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 175,
+      "time": 5.833333,
+      "person": {
+        "count": 3135,
+        "lumaGain": 10.243029218500688,
+        "absoluteDifference": 11.04699627857522,
+        "changedOver8": 2201,
+        "changedFraction": 0.70207336523126
+      },
+      "background": {
+        "count": 24018,
+        "lumaGain": -0.007251344824714788,
+        "absoluteDifference": 0.419921170233436,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 176,
+      "time": 5.866667,
+      "person": {
+        "count": 3210,
+        "lumaGain": 10.268618442367535,
+        "absoluteDifference": 11.134579439252253,
+        "changedOver8": 2277,
+        "changedFraction": 0.7093457943925233
+      },
+      "background": {
+        "count": 23999,
+        "lumaGain": -0.00042613442226759984,
+        "absoluteDifference": 0.42771226578885424,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 177,
+      "time": 5.9,
+      "person": {
+        "count": 3264,
+        "lumaGain": 10.172064031862705,
+        "absoluteDifference": 11.03410947712411,
+        "changedOver8": 2307,
+        "changedFraction": 0.7068014705882353
+      },
+      "background": {
+        "count": 24016,
+        "lumaGain": -0.01025101598934048,
+        "absoluteDifference": 0.43458527648234585,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 178,
+      "time": 5.933333,
+      "person": {
+        "count": 3264,
+        "lumaGain": 10.186701960784248,
+        "absoluteDifference": 11.056576797385501,
+        "changedOver8": 2305,
+        "changedFraction": 0.7061887254901961
+      },
+      "background": {
+        "count": 24016,
+        "lumaGain": -0.006840014990006654,
+        "absoluteDifference": 0.44274650233178103,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "frame": 179,
+      "time": 5.966667,
+      "person": {
+        "count": 3306,
+        "lumaGain": 10.175671082879546,
+        "absoluteDifference": 11.02359346642458,
+        "changedOver8": 2306,
+        "changedFraction": 0.6975196612220206
+      },
+      "background": {
+        "count": 23985,
+        "lumaGain": -0.0011650031269542917,
+        "absoluteDifference": 0.4548815231742095,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    }
+  ],
+  "scope": "Every decoded frame of two existing six-second QA final exports, same masks and smoothing, personLight 0 vs 30. Measures safe interiors at semantic-mask resolution, excludes 4-pixel boundary. Not a new render of current code, skin-tone/identity/occlusion/preview parity or production acceptance."
+}

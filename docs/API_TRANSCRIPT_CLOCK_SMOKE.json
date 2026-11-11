@@ -1,0 +1,43 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-clock",
+  "actualHttpRevise": true,
+  "syntheticGateway": true,
+  "noAutomaticRender": true,
+  "observations": [
+    {
+      "expected": "current",
+      "result": {
+        "words": [
+          {
+            "word": "Fixture",
+            "start": 0.1,
+            "end": 0.3,
+            "source": {
+              "src": "inputs/raw.mp4",
+              "start": 0.1,
+              "end": 0.3
+            }
+          }
+        ],
+        "offset": 0,
+        "total": 1,
+        "totalWords": 1,
+        "nextOffset": null,
+        "selection": {
+          "pagination": "offset trong tập từ đã lọc; khoảng thời gian giao nhau [start,end)"
+        },
+        "sha256": "343086e01c4fb643cab04c2ab8a1d43de050fa7caa1cc28c78af40f901465e15",
+        "timing": "giây timeline nguồn ảo; source chứa mốc trong file gốc, tốc độ qua timemap",
+        "sourceClockMatched": true,
+        "verification": "saved-transcript-not-revalidated-against-audio"
+      }
+    },
+    {
+      "expected": "stale",
+      "result": {
+        "error": "Nguồn hoặc điểm đọc đã đổi; nhận giọng lại trước khi đọc transcript cho AI."
+      }
+    }
+  ],
+  "limits": "Saved transcript source-clock/provenance guard, no source-byte checksum or actual paid model acceptance."
+}

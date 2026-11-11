@@ -1,0 +1,31 @@
+{
+  "newPid": 26768,
+  "checkedAt": "2026-11-05T15:51:10.9265558+07:00",
+  "dispatcher": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "tests": 406,
+  "oldPid": 20260
+}

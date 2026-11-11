@@ -1,0 +1,26 @@
+{
+  "source": "C:/Users/Admin/AppData/Local/Microsoft/Windows/Fonts",
+  "scope": "User-provided installed fonts, local ContentOS use; retain applicable font licenses for redistribution",
+  "files": [
+    {
+      "file": "panton-black.otf",
+      "sha256": "7fdcac2de0084e71facad674e656457c0ca305d634ba282a1a8dd34bd30a6e82"
+    },
+    {
+      "file": "utm-bebas.ttf",
+      "sha256": "3ea88f24c7c571c864b9e38b6af290a9749bf26220f45a68a4e674a5c8dde110"
+    },
+    {
+      "file": "panton-light.otf",
+      "sha256": "7bbe4300df6d78975fd2253b736f9af6e8a5dbcc9458704e15e7d52b53623db6"
+    },
+    {
+      "file": "panton-light-italic.otf",
+      "sha256": "6d3ac394cedfff1480a1166a023e7c49051d934d3a5d7790b543ca2b53e6064a"
+    },
+    {
+      "file": "panton-black-italic.otf",
+      "sha256": "6bb59ccf0569dca55438aeb51c9e70de02e79e51746c0d8c0c6ebdf3f4922a3a"
+    }
+  ]
+}

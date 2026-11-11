@@ -1,0 +1,28 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-person-hdr-4d22752a-76b1-477a-8a23-15ab777d0377",
+  "results": [
+    {
+      "transfer": "arib-std-b67",
+      "status": 422,
+      "code": "COLOR_NORMALIZATION_REQUIRED",
+      "inputProfile": null
+    },
+    {
+      "transfer": "smpte2084",
+      "status": 422,
+      "code": "COLOR_NORMALIZATION_REQUIRED",
+      "inputProfile": null
+    },
+    {
+      "transfer": "bt709",
+      "status": 200,
+      "code": null,
+      "inputProfile": "rec709"
+    }
+  ],
+  "projectMaskSourcesUnchanged": true,
+  "workspaceUnchanged": true,
+  "rendered": false,
+  "browserVerified": false,
+  "limits": "Synthetic metadata and masks, not real iPhone/Log footage or skin/normalization quality."
+}

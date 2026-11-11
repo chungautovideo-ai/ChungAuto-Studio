@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "tabs": 4,
+      "cards": 13,
+      "search": true,
+      "references": true,
+      "effects": true,
+      "nasIntake": true,
+      "homeStyleEntry": true,
+      "back": true,
+      "legacyAlias": true
+    },
+    {
+      "width": 1920,
+      "tabs": 4,
+      "cards": 64,
+      "search": true,
+      "references": true,
+      "effects": true,
+      "nasIntake": true,
+      "homeStyleEntry": true,
+      "back": true,
+      "legacyAlias": true
+    }
+  ],
+  "errors": [],
+  "readOnly": true
+}

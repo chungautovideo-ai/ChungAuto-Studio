@@ -1,0 +1,81 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-overlap",
+  "job": "workspace/content/_sua-video/20261105021322-583f98d6-contentos-qa-broll-overlap",
+  "startedAt": "2026-11-05T02:13:22.424Z",
+  "finishedAt": "2026-11-05T02:14:40.338Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "checks": [
+    {
+      "id": "b-den",
+      "projectAt": 15.31,
+      "outputStart": 14.79,
+      "outputEnd": 15.54,
+      "matchedWords": [
+        "đèn"
+      ],
+      "windows": [
+        {
+          "start": 14.790000000000001,
+          "end": 15.540000000000001
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b-man",
+      "projectAt": 16.06,
+      "outputStart": 15.54,
+      "outputEnd": 16.29,
+      "matchedWords": [
+        "màn"
+      ],
+      "windows": [
+        {
+          "start": 15.54,
+          "end": 16.29
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b-ghe",
+      "projectAt": 18.61,
+      "outputStart": 18.09,
+      "outputEnd": 19.14,
+      "matchedWords": [
+        "ghế",
+        "da"
+      ],
+      "windows": [
+        {
+          "start": 18.09,
+          "end": 19.14
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b-mau",
+      "projectAt": 20.7,
+      "outputStart": 20.18,
+      "outputEnd": 21.2,
+      "matchedWords": [
+        "đổi",
+        "màu"
+      ],
+      "windows": [
+        {
+          "start": 20.18,
+          "end": 21.2
+        }
+      ],
+      "valid": true
+    }
+  ],
+  "otherFieldsUnchanged": true,
+  "toolUsed": true,
+  "overlapReportSeen": true,
+  "rendered": false,
+  "limits": "Exact caption-token timing checks only; imported prior local transcript/copy QA, not listening, semantic/visual or full-quality acceptance."
+}

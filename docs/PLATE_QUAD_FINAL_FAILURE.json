@@ -1,0 +1,12 @@
+{
+  "exitCode": 3221226505,
+  "ok": false,
+  "snapshotId": "f508376e-510f-45ed-9379-0cd1093982a7",
+  "revision": "6cc371cfbabd211beb0d2ec67deacb8d77833ce6ef7a73a5cc1ac29dcc86dd5b",
+  "output": "renders/contentos-smoke-real-car-plate-final-2.mp4",
+  "attempts": 3,
+  "lastWorkerCount": 1,
+  "artifactNotFinalized": true,
+  "mainGeometryHttp": 200,
+  "mainTemplateVersion": 22
+}

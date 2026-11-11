@@ -1,0 +1,33 @@
+{
+  "runtime": {
+    "ready": true,
+    "command": "D:\\Edit tự động\\contentos\\tools\\sam2-python\\python.exe",
+    "args": [],
+    "source": "local",
+    "info": {
+      "ready": true,
+      "python": "3.12.10",
+      "torch": "2.6.0+cu124",
+      "transformersSam2": true,
+      "cuda": "12.4",
+      "device": "NVIDIA GeForce RTX 4070 Ti",
+      "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7"
+    }
+  },
+  "lockedWheels": 37,
+  "modelFiles": 5,
+  "isolatedPython": true,
+  "systemPythonModified": false,
+  "inference": {
+    "source": "workspace/cache/person-sam2-motion6.mp4",
+    "duration": 1,
+    "samples": 8,
+    "maskWidth": 144,
+    "maskHeight": 256,
+    "elapsedSeconds": 2.406,
+    "gpuPeakBytes": 477386752,
+    "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+    "requiresVisualReview": true
+  },
+  "limits": "Development Windows with existing NVIDIA driver. Portable Python and dependencies newly installed; not clean Windows, other five machines, full video, crossing/occlusion or render acceptance."
+}

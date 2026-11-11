@@ -1,0 +1,247 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-5/project.json",
+  "projectSHA256": "bb8314970b30dec65318a862261ec8c0d0f484f7156de53f536991cd2256ee62",
+  "checks": [
+    {
+      "id": "b-man",
+      "available": true,
+      "start": 9.07,
+      "end": 11.27,
+      "duration": 2.2,
+      "entrance": {
+        "type": "fade",
+        "custom": false,
+        "animationDuration": 0.3,
+        "entranceWithinShot": 0.3,
+        "settledDuration": 1.9,
+        "settledStart": 9.37,
+        "settledEnd": 11.27
+      },
+      "words": [
+        {
+          "text": "sản",
+          "outputStart": 9.07,
+          "outputEnd": 9.25
+        },
+        {
+          "text": "phẩm",
+          "outputStart": 9.25,
+          "outputEnd": 9.52
+        },
+        {
+          "text": "trước",
+          "outputStart": 9.52,
+          "outputEnd": 9.85
+        },
+        {
+          "text": "khi",
+          "outputStart": 9.85,
+          "outputEnd": 10.09
+        },
+        {
+          "text": "lắp",
+          "outputStart": 10.09,
+          "outputEnd": 10.23
+        },
+        {
+          "text": "đặt",
+          "outputStart": 10.23,
+          "outputEnd": 10.58
+        },
+        {
+          "text": "thì",
+          "outputStart": 10.58,
+          "outputEnd": 10.74
+        },
+        {
+          "text": "đều",
+          "outputStart": 10.74,
+          "outputEnd": 10.93
+        },
+        {
+          "text": "được",
+          "outputStart": 10.93,
+          "outputEnd": 11.09
+        },
+        {
+          "text": "bản",
+          "outputStart": 11.09,
+          "outputEnd": 11.25
+        },
+        {
+          "text": "thân",
+          "outputStart": 11.25,
+          "outputEnd": 11.45
+        }
+      ],
+      "truncated": false,
+      "nextWord": {
+        "text": "mình",
+        "outputStart": 11.45,
+        "outputEnd": 11.72
+      },
+      "captionDisabled": false,
+      "startsInsideWord": false,
+      "endsInsideWord": true
+    },
+    {
+      "id": "b-den",
+      "available": true,
+      "start": 14.02,
+      "end": 15.52,
+      "duration": 1.5,
+      "entrance": {
+        "type": "none",
+        "custom": false,
+        "animationDuration": 0,
+        "entranceWithinShot": 0,
+        "settledDuration": 1.5,
+        "settledStart": 14.02,
+        "settledEnd": 15.52
+      },
+      "words": [
+        {
+          "text": "Nên",
+          "outputStart": 13.72,
+          "outputEnd": 14.17
+        },
+        {
+          "text": "là",
+          "outputStart": 14.17,
+          "outputEnd": 14.71
+        },
+        {
+          "text": "từ",
+          "outputStart": 14.71,
+          "outputEnd": 14.77
+        },
+        {
+          "text": "đèn,",
+          "outputStart": 14.77,
+          "outputEnd": 15.52
+        }
+      ],
+      "truncated": false,
+      "nextWord": {
+        "text": "màn,",
+        "outputStart": 15.52,
+        "outputEnd": 16.27
+      },
+      "captionDisabled": false,
+      "startsInsideWord": true,
+      "endsInsideWord": false
+    },
+    {
+      "id": "b-ghe",
+      "available": true,
+      "start": 17.62,
+      "end": 19.12,
+      "duration": 1.5,
+      "entrance": {
+        "type": "fade",
+        "custom": false,
+        "animationDuration": 0.3,
+        "entranceWithinShot": 0.3,
+        "settledDuration": 1.2,
+        "settledStart": 17.92,
+        "settledEnd": 19.12
+      },
+      "words": [
+        {
+          "text": "bọc",
+          "outputStart": 17.62,
+          "outputEnd": 18.07
+        },
+        {
+          "text": "ghế",
+          "outputStart": 18.07,
+          "outputEnd": 18.52
+        },
+        {
+          "text": "da,",
+          "outputStart": 18.52,
+          "outputEnd": 19.12
+        }
+      ],
+      "truncated": false,
+      "nextWord": {
+        "text": "sàn",
+        "outputStart": 19.12,
+        "outputEnd": 19.57
+      },
+      "captionDisabled": false,
+      "startsInsideWord": false,
+      "endsInsideWord": false
+    },
+    {
+      "id": "b-mau",
+      "available": true,
+      "start": 20.16,
+      "end": 21.66,
+      "duration": 1.5,
+      "entrance": {
+        "type": "none",
+        "custom": false,
+        "animationDuration": 0,
+        "entranceWithinShot": 0,
+        "settledDuration": 1.5,
+        "settledStart": 20.16,
+        "settledEnd": 21.66
+      },
+      "words": [
+        {
+          "text": "đổi",
+          "outputStart": 20.16,
+          "outputEnd": 20.62
+        },
+        {
+          "text": "màu",
+          "outputStart": 20.62,
+          "outputEnd": 21.18
+        },
+        {
+          "text": "Chất",
+          "outputStart": 21.18,
+          "outputEnd": 21.38
+        },
+        {
+          "text": "lượng",
+          "outputStart": 21.38,
+          "outputEnd": 21.64
+        },
+        {
+          "text": "như",
+          "outputStart": 21.64,
+          "outputEnd": 21.8
+        }
+      ],
+      "truncated": false,
+      "nextWord": {
+        "text": "thế",
+        "outputStart": 21.8,
+        "outputEnd": 22.12
+      },
+      "captionDisabled": false,
+      "startsInsideWord": false,
+      "endsInsideWord": true
+    }
+  ],
+  "projectUnchanged": true,
+  "httpExactBytes": [
+    "ui/app.js",
+    "ui/contentos-broll-timing.js",
+    "ui/contentos-broll-editor-timing.js"
+  ],
+  "nativeBrowserVerified": false,
+  "scope": "Read-only saved Q2 timings against renderer report plus HTTP static. No visual/semantic/audio or pointer/focus/UndoSave acceptance.",
+  "suite": {
+    "passed": 394,
+    "failed": 0,
+    "log": "workspace/logs/broll-editor-timing-suite.log"
+  },
+  "skillPackage": {
+    "file": "workspace/exports/chungauto-creative-v50-broll-editor-timing.zip",
+    "presets": 11,
+    "references": 5
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dir": "workspace/content/2026-11-04/contentos-qa-sandbox-handoff",
+  "status": "done",
+  "completionState": "awaiting-review",
+  "actualMxc": true,
+  "noModel": true,
+  "liveUnchangedBeforeServer": true,
+  "serverValidatedCandidate": true,
+  "noRender": true,
+  "scope": "Synthetic fixture title edit via actual MXC CLI and normal HTTP completion validation; not full video quality or real model acceptance."
+}

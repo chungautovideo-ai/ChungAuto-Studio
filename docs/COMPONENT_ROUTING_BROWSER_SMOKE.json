@@ -1,0 +1,12 @@
+{
+  "saveReload": true,
+  "correctInspectorForBoth": true,
+  "textRows": 2,
+  "scope": "Editor QA only; not final render or real model validation",
+  "duplicateId": "same",
+  "visibilityUndo": true,
+  "project": "contentos-qa-component-routing-3",
+  "mobileInspector": true,
+  "graphicRows": 1,
+  "unitPassed": 315
+}

@@ -1,0 +1,86 @@
+{
+  "scratch": "D:\\Edit tự động\\contentos\\workspace\\cache\\plate-frame-clock-t6uexf",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\cache\\plate-frame-clock-t6uexf\\inputs\\privacy\\6646542c-e3c4-4434-8e99-cff9453b4997\\masked.mp4",
+  "result": {
+    "path": "inputs/privacy/6646542c-e3c4-4434-8e99-cff9453b4997/masked.mp4",
+    "duration": 1,
+    "provenance": {
+      "kind": "plate-privacy",
+      "method": "user-roi-optical-flow",
+      "source": "inputs/raw.mp4",
+      "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+      "from": 0.74,
+      "duration": 1,
+      "roi": [
+        0.021805555555555568,
+        0.681796875,
+        0.9665740740740741,
+        0.17442708333333334
+      ],
+      "rois": [
+        [
+          0.021805555555555568,
+          0.681796875,
+          0.9665740740740741,
+          0.17442708333333334
+        ]
+      ],
+      "quads": [
+        [
+          [
+            0.021805555555555568,
+            0.681796875
+          ],
+          [
+            0.9883796296296297,
+            0.681796875
+          ],
+          [
+            0.9883796296296297,
+            0.8562239583333333
+          ],
+          [
+            0.021805555555555568,
+            0.8562239583333333
+          ]
+        ]
+      ],
+      "sha256": "aa796f3695fc0d0dd7dceecbe2bfd6302b4facedcdc4e99f8ce891d8d393a459",
+      "frames": 30,
+      "requiresVisualReview": true
+    },
+    "mediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 1,
+      "hasAudio": true
+    },
+    "sourceMediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8.0247,
+      "hasAudio": true
+    }
+  },
+  "sampling": {
+    "method": "presentation-held-v1",
+    "requestedFrom": 0.74,
+    "firstSourceFrameTime": 0.734067,
+    "samplesRequested": 30,
+    "fps": 30
+  },
+  "frames": 30,
+  "sourceUnchanged": true,
+  "projectUnchanged": true,
+  "privacyReviewReceipt": false,
+  "contact": "docs/PLATE_FRAME_CLOCK_REAL_CONTACT.jpg",
+  "scope": "Real car QA copy, one second at unaligned0.74; OCR ROI is broad and needs manual correction. No full-clip privacy, all-plate coverage, final-render or UI acceptance.",
+  "contactViewed": true,
+  "visualNotes": "Four sampled frames show a solid mask over the principal plate, but OCR ROI is broad and obscures bumper detail. Manual ROI/quad correction and full-range review remain required.",
+  "skillPackage": {
+    "file": "workspace/exports/chungauto-creative-v50-plate-frame-clock.zip",
+    "bytes": 1636018,
+    "presets": 11,
+    "references": 5
+  }
+}

@@ -1,0 +1,13 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {execFileSync,spawn} from 'node:child_process';
+const dir=path.resolve('workspace/content/ContentOS-Smoke-CapLogo-'+Date.now());fs.mkdirSync(path.join(dir,'inputs'),{recursive:true});
+assert.equal(fs.existsSync('workspace/contentos/render-lock/owner.json'),false,'Another render owns the machine');
+fs.copyFileSync('tests/fixture.mp4',path.join(dir,'inputs/source.mp4'));
+execFileSync('ffmpeg',['-v','error','-f','lavfi','-i','color=c=red:s=160x80','-frames:v','1',path.join(dir,'inputs/logo.png')],{windowsHide:true});
+const project={title:'CapCut logo fixture',source:{video:'inputs/source.mp4',duration:1,width:360,height:640,hasAudio:false},segments:[{id:'s',in:0,out:1,keep:true}],audio:{autoSfx:false,sfxLevel:'tat'},watermark:{file:'inputs/logo.png',position:'top-right',heightPercent:5,marginPercent:4,opacity:1}};
+fs.writeFileSync(path.join(dir,'project.json'),JSON.stringify(project));
+const result=await new Promise((resolve,reject)=>{const child=spawn(process.execPath,['editor/tools/goi-capcut.mjs',dir,'--chu','sua'],{windowsHide:true});let log='';child.stdout.on('data',b=>log+=b);child.stderr.on('data',b=>log+=b);child.on('error',reject);child.on('close',code=>resolve({code,log}));});assert.equal(result.code,0,result.log);
+const output=path.join(dir,'renders','capcut-'+path.basename(dir)),manifest=JSON.parse(fs.readFileSync(path.join(output,'6-logo/vi-tri-logo.json')));
+assert.deepEqual(fs.readFileSync(path.join(output,manifest.file)),fs.readFileSync(path.join(dir,'inputs/logo.png')));assert.equal(manifest.x,845);assert.equal(manifest.y,43);assert.equal(manifest.duration,1);
+const pixel=[...execFileSync('ffmpeg',['-v','error','-ss','0.5','-i',path.join(output,'1-video-da-cat.mp4'),'-vf','crop=1:1:900:80,format=rgb24','-frames:v','1','-f','rawvideo','pipe:1'],{windowsHide:true})];assert.ok(!(pixel[0]>180&&pixel[1]<70&&pixel[2]<70),'Logo baked into base');
+assert.match(fs.readFileSync(path.join(output,'huong-dan.txt'),'utf8'),/6-logo\/vi-tri-logo.json/);assert.deepEqual(JSON.parse(fs.readFileSync(path.join(dir,'project.json'))),project);
+const evidence={project:dir,output,manifest,basePixel:pixel,originalLogoBytesPreserved:true,sourceProjectUnchanged:true,limits:'Actual synthetic package; no graphics layer in this fixture, no CapCut application import or whole-timeline proof.'};fs.writeFileSync('docs/CAPCUT_WATERMARK_RENDER_SMOKE.json',JSON.stringify(evidence,null,2)+'\n');console.log(evidence);

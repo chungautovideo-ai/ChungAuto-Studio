@@ -1,0 +1,58 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-2",
+  "inputs": [
+    {
+      "name": "den",
+      "source": "D:\\Edit tự động\\source\\broll\\broll_den.mp4",
+      "bytes": 97397160,
+      "duration": 8.0247,
+      "video": {
+        "codec_type": "video",
+        "width": 1728,
+        "height": 3072
+      },
+      "copySha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+      "sourceUnchanged": true
+    },
+    {
+      "name": "man",
+      "source": "D:\\Edit tự động\\source\\broll\\broll_manhinh.mp4",
+      "bytes": 227235827,
+      "duration": 43.093063,
+      "video": {
+        "codec_type": "video",
+        "width": 2160,
+        "height": 3840
+      },
+      "copySha256": "5b20e9c90c5552160857262d71b474afa0d517ea84764d83ee1a3396a6974bf0",
+      "sourceUnchanged": true
+    },
+    {
+      "name": "ghe",
+      "source": "D:\\Edit tự động\\source\\broll\\broll_gheda.mp4",
+      "bytes": 42372614,
+      "duration": 5.162667,
+      "video": {
+        "codec_type": "video",
+        "width": 1728,
+        "height": 3072
+      },
+      "copySha256": "319d21e3e95132fbcd003a1143478381002acfedc618388999447cf9ca6e9302",
+      "sourceUnchanged": true
+    },
+    {
+      "name": "mau",
+      "source": "D:\\Edit tự động\\source\\broll\\broll_danphim.mp4",
+      "bytes": 302260981,
+      "duration": 15.5155,
+      "video": {
+        "codec_type": "video",
+        "width": 3840,
+        "height": 2160
+      },
+      "copySha256": "625b458482f84067c9feb1d0d61a80ab4664b1d242ba36454d99924ae7a3f0eb",
+      "sourceUnchanged": true
+    }
+  ],
+  "scope": "Read-only probe and SHA source/copy; visual selection pending."
+}

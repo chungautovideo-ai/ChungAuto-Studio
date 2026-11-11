@@ -1,0 +1,56 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-exposure-2",
+  "realMediaPipe": true,
+  "syntheticDarkening": "Q2 flipped source eq brightness -0.25",
+  "summaries": [
+    {
+      "src": "inputs/raw.mp4",
+      "exposure": {
+        "version": 1,
+        "method": "display-luma-semantic-mask",
+        "person": {
+          "samples": 31,
+          "median": 0.6352941176470588,
+          "spread": 0.015686274509803977,
+          "highlight": 0.8431372549019608
+        },
+        "skin": {
+          "samples": 31,
+          "median": 0.5019607843137255,
+          "spread": 0.0431372549019608,
+          "highlight": 0.6901960784313725
+        }
+      }
+    },
+    {
+      "src": "inputs/second.mp4",
+      "exposure": {
+        "version": 1,
+        "method": "display-luma-semantic-mask",
+        "person": {
+          "samples": 31,
+          "median": 0.34509803921568627,
+          "spread": 0.019607843137254943,
+          "highlight": 0.5490196078431373
+        },
+        "skin": {
+          "samples": 31,
+          "median": 0.21176470588235294,
+          "spread": 0.03529411764705881,
+          "highlight": 0.4
+        }
+      }
+    }
+  ],
+  "applied": {
+    "src": "inputs/second.mp4",
+    "sha256": "1d5a03a1aeb68116965691e29a35c47796b3eac951e57f2ad73d17425d716ded",
+    "personLight": 0,
+    "bodyWhite": 25,
+    "bodySmooth": 0
+  },
+  "scanDoesNotApply": true,
+  "undoRedo": true,
+  "pageErrors": [],
+  "scope": "1s crop and artificially darkened copy; no full-video exposure quality acceptance"
+}

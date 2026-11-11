@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "sizes": [
+    {
+      "width": 1280,
+      "dialogFits": true
+    },
+    {
+      "width": 1920,
+      "dialogFits": true
+    }
+  ],
+  "created": {
+    "format": "9:16",
+    "independentMedia": true
+  },
+  "phoneHistory": {
+    "1280": {
+      "persistedSourceVisible": true,
+      "refresh": true,
+      "contentHashVerified": true,
+      "dialogFits": true
+    },
+    "1920": {
+      "persistedSourceVisible": true,
+      "refresh": true,
+      "contentHashVerified": true,
+      "dialogFits": true
+    }
+  },
+  "batch": {
+    "count": 2,
+    "deduplicated": true,
+    "reopenedAfterReload": true,
+    "dialogFits": true
+  }
+}

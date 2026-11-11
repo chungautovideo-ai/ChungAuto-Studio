@@ -1,0 +1,19 @@
+{
+  "realChrome": true,
+  "realVideo": true,
+  "trackerResponse": "fixture, no inference",
+  "localizedError": true,
+  "detailsCollapsed": true,
+  "shorterDuration": 2.875,
+  "focusDuration": true,
+  "clearsStaleCanvas": true,
+  "reloadAndRetry": true,
+  "unknownErrorPreserved": true,
+  "applyCalls": 0,
+  "widths": [
+    1280,
+    390
+  ],
+  "escape": true,
+  "pageErrors": []
+}

@@ -1,0 +1,30 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-preset",
+  "server": 5194,
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "textRows": 13,
+  "graphicRows": 2,
+  "selectedInspector": true,
+  "presetDisclosure": true,
+  "searchOneHook": true,
+  "insertAndUndo": true,
+  "keyboardInsertAndUndo": true,
+  "visibilityAndUndo": true,
+  "saveReopen": true,
+  "newErrorsAfterResizeGuard": 0,
+  "oldErrorRetained": "01:25:26Z resize before project load",
+  "screenshots": [
+    "USED_COMPONENTS_DESKTOP.png",
+    "USED_COMPONENTS_MOBILE.png"
+  ],
+  "limits": "No new drag-drop/empty-state or full mobile/video acceptance."
+}

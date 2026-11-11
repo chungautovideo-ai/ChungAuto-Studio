@@ -1,0 +1,80 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-timing",
+  "job": "workspace/content/_sua-video/20261105010552-7ea0c9e1-contentos-qa-broll-timing",
+  "startedAt": "2026-11-05T01:05:52.204Z",
+  "finishedAt": "2026-11-05T01:06:48.485Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "checks": [
+    {
+      "id": "b1",
+      "projectAt": 15.31,
+      "outputStart": 14.83,
+      "outputEnd": 15.58,
+      "matchedWords": [
+        "đèn"
+      ],
+      "windows": [
+        {
+          "start": 14.83,
+          "end": 15.58
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b2",
+      "projectAt": 16.06,
+      "outputStart": 15.58,
+      "outputEnd": 16.33,
+      "matchedWords": [
+        "màn"
+      ],
+      "windows": [
+        {
+          "start": 15.58,
+          "end": 16.33
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b3",
+      "projectAt": 18.61,
+      "outputStart": 18.13,
+      "outputEnd": 19.18,
+      "matchedWords": [
+        "ghế",
+        "da"
+      ],
+      "windows": [
+        {
+          "start": 18.13,
+          "end": 19.18
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b4",
+      "projectAt": 20.7,
+      "outputStart": 20.22,
+      "outputEnd": 21.24,
+      "matchedWords": [
+        "đổi",
+        "màu"
+      ],
+      "windows": [
+        {
+          "start": 20.22,
+          "end": 21.24
+        }
+      ],
+      "valid": true
+    }
+  ],
+  "otherFieldsUnchanged": true,
+  "toolUsed": true,
+  "rendered": false,
+  "limits": "Exact caption-token timing checks only; imported prior local transcript/copy QA, not listening, semantic/visual or full-quality acceptance."
+}

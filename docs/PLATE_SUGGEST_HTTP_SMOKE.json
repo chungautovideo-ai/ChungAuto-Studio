@@ -1,0 +1,8 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-plate-suggest-qa-xk6pvl",
+  "status": 200,
+  "proposals": 1,
+  "revisionConflict": 409,
+  "projectUnchanged": true,
+  "scope": "Real local OCR via actual HTTP in isolated server; one source frame only."
+}

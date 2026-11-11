@@ -1,0 +1,118 @@
+[
+  {
+    "screen": "oldstudio_modes_home",
+    "evidenceId": "ev_78556b399cf443838928961aef41dd24db051cc1c898c91463f76fbcf82e4ff6",
+    "confidence": "observed",
+    "steps": [
+      {
+        "id": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "loaded",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    }
+  },
+  {
+    "screen": "oldstudio_space",
+    "evidenceId": "ev_8f24a16280f33a751f28d4753e66a65d3bb56ec2d9d242a6467b0a278b038011",
+    "confidence": "observed",
+    "steps": [
+      {
+        "id": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "close_projects",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "space",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "settled",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    }
+  },
+  {
+    "screen": "oldstudio_space_settings",
+    "evidenceId": "ev_3cbdaef335cabf1659c6c38c86872462d3b56f8e233ee4cd266b20fb384495f2",
+    "confidence": "observed",
+    "steps": [
+      {
+        "id": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "close",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "space",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "settings",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "settled",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    }
+  }
+]

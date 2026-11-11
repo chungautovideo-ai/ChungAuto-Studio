@@ -1,0 +1,197 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-primaryplateprivacy-5",
+  "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-primaryplateprivacy-5\\renders\\contentos-smoke-primaryplateprivacy-5-final-2.mp4",
+  "duration": 0.5,
+  "width": 1920,
+  "height": 1080,
+  "audio": true,
+  "speed": 2,
+  "sourceRange": [
+    0.4,
+    1.4
+  ],
+  "checkedFrames": 15,
+  "checks": [
+    {
+      "frame": 0,
+      "maskCenter": [
+        92,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 1,
+      "maskCenter": [
+        94,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 2,
+      "maskCenter": [
+        96,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 3,
+      "maskCenter": [
+        98,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 4,
+      "maskCenter": [
+        100,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 5,
+      "maskCenter": [
+        102,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 6,
+      "maskCenter": [
+        104,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 7,
+      "maskCenter": [
+        106,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 8,
+      "maskCenter": [
+        108,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 9,
+      "maskCenter": [
+        110,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 10,
+      "maskCenter": [
+        112,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 11,
+      "maskCenter": [
+        114,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 12,
+      "maskCenter": [
+        116,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 13,
+      "maskCenter": [
+        118,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 14,
+      "maskCenter": [
+        120,
+        90
+      ],
+      "rgb": [
+        6,
+        12,
+        9
+      ]
+    }
+  ],
+  "scope": "Synthetic A-roll; known mask center all final frames. Not full-plate detection/real-footage certification."
+}

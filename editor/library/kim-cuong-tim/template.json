@@ -1,0 +1,1258 @@
+{
+  "id": "kim-cuong-tim",
+  "name": "Kim Cương Tím",
+  "version": 1,
+  "tier": "free",
+  "order": 75,
+  "isNew": true,
+  "web": true,
+  "date": "2026-10-30",
+  "tags": [
+    "Giáo dục"
+  ],
+  "industries": [
+    "Giáo dục"
+  ],
+  "description": "Chuyên gia chỉ ra 'N lý do / N sai lầm': chữ trắng phát sáng ở ngực, huy hiệu kim cương icon viền trắng phát sáng (1 sáng + 2 mờ chờ), bảng xanh đêm với số thứ tự cực lớn mờ + huy hiệu + tên mục, khung viền trắng phát sáng ôm người, danh sách nút kính viền trắng hiện lần lượt.",
+  "credit": "Phong cách tham khảo một video mẫu Before / After (studio đèn tím) — dựng lại hoàn toàn bằng HTML/CSS, không dùng hình / tiếng / lời của video gốc.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Kim Cương Tím",
+    "fontTitle": "Be Vietnam Pro",
+    "fontSub": "Be Vietnam Pro",
+    "fontLabel": "Be Vietnam Pro",
+    "c1": "#FFFFFF",
+    "c2": "#B9A6FF",
+    "c3": "#FFFFFF",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Inter Tight:wght@400;500;800"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 56,
+      "color": "#FFFFFF",
+      "active": "#B9A6FF",
+      "uppercase": false
+    },
+    "board": "radial-gradient(70% 60% at 50% 45%,#1d2350,#0a0d22 75%)",
+    "css": ".kc{position:absolute;left:0;right:0;top:var(--kc-y,1040px);display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1;pointer-events:none}\n.kc .n{font-family:\"Inter Tight\",sans-serif;font-weight:500;font-size:var(--kc-s,48px);color:#fff;text-shadow:0 0 12px rgba(255,255,255,.6)}\n.kc .l{font-family:\"Inter Tight\",sans-serif;font-weight:800;font-size:var(--kc-l,92px);color:#fff;letter-spacing:-.02em;text-shadow:0 0 10px rgba(255,255,255,.9),0 0 30px rgba(200,180,255,.7),0 3px 10px rgba(0,0,0,.3)}\n.kc-kc{position:absolute;left:50%;top:var(--kc-y,700px);width:var(--kc-d,240px);height:var(--kc-d,240px);margin-left:calc(var(--kc-d,240px) / -2);transform:rotate(45deg);border-radius:30px;\n  background:linear-gradient(135deg,#5b3ad8,#2a1680);border:6px solid #fff;box-shadow:0 0 18px rgba(255,255,255,.9),0 0 50px rgba(150,120,255,.7);display:flex;align-items:center;justify-content:center}\n.kc-kc i{transform:rotate(-45deg);font-style:normal;font-size:calc(var(--kc-d,240px) * .48);line-height:1}\n.kc-kc.mo{opacity:.35;border-color:rgba(255,255,255,.7)}\n.kc-bang{position:absolute;inset:0;background:radial-gradient(70% 60% at 50% 45%,#1d2350,#0a0d22 75%)}\n.kc-so{position:absolute;left:0;right:0;top:var(--kc-y,260px);text-align:center;font-family:\"Inter Tight\",sans-serif;font-weight:800;font-size:900px;line-height:1;color:rgba(120,130,190,.16)}\n.kc-ten{position:absolute;left:0;right:0;top:var(--kc-ty,1020px);text-align:center;font-family:\"Inter Tight\",sans-serif;font-weight:400;font-size:74px;color:#fff;text-shadow:0 0 14px rgba(255,255,255,.55)}\n.kc-khung{position:absolute;left:var(--kc-x,70px);right:var(--kc-x,70px);top:var(--kc-ky,90px);bottom:var(--kc-kb,110px);border:8px solid #fff;border-radius:12px;box-shadow:0 0 22px rgba(255,255,255,.9),0 0 60px rgba(180,160,255,.6),inset 0 0 22px rgba(255,255,255,.5)}\n.kc-ds{position:absolute;left:var(--kc-x,200px);right:var(--kc-x,200px);top:var(--kc-y,620px);display:flex;flex-direction:column;gap:32px}\n.kc-ds b{display:block;padding:24px 0;border-radius:12px;border:4px solid #fff;background:rgba(80,70,200,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);text-align:center;font-family:\"Inter Tight\",sans-serif;font-weight:400;font-size:62px;color:#fff;box-shadow:0 0 18px rgba(255,255,255,.7)}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1040,
+    "maxWords": 3,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "camera": {
+    "color": {
+      "brightness": 1.02,
+      "contrast": 1.08,
+      "saturate": 1.05,
+      "temp": -0.04,
+      "vignette": 0.25
+    }
+  },
+  "audio": {
+    "autoSfx": false,
+    "sfxVolume": 0.5,
+    "musicVolume": 0.08
+  },
+  "texts": {},
+  "scenes": {
+    "tIn": "none"
+  },
+  "brolls": {
+    "mode": "full",
+    "tIn": "none"
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "khung-sang",
+      "name": "Khung viền trắng phát sáng",
+      "desc": "Khung chữ nhật viền trắng phát sáng ôm người (nhấn câu quan trọng)",
+      "img": "fx/khung-sang.jpg",
+      "at": 0.1
+    },
+    {
+      "id": "ba-kim-cuong",
+      "name": "3 huy hiệu kim cương",
+      "desc": "1 huy hiệu kim cương icon sáng + 2 huy hiệu mờ dấu ? bên dưới, phủ tối nhẹ (mở đầu 'có 3 lý do')",
+      "img": "fx/ba-kim-cuong.jpg",
+      "at": 2.2
+    },
+    {
+      "id": "bang-so-3",
+      "name": "Bảng số + huy hiệu + tên mục",
+      "desc": "Bảng xanh đêm phủ kín, số thứ tự cực lớn mờ phía sau, huy hiệu kim cương icon ở giữa, tên mục bên dưới (mở mỗi ý)",
+      "img": "fx/bang-so-3.jpg",
+      "at": 4.55
+    },
+    {
+      "id": "chu-sang-4",
+      "name": "Chữ trắng phát sáng: con cần biết",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/chu-sang-4.jpg",
+      "at": 6.5
+    },
+    {
+      "id": "nut-kinh",
+      "name": "Danh sách nút kính viền trắng",
+      "desc": "3–4 nút kính tím viền trắng phát sáng xếp dọc, hiện lần lượt theo lời (liệt kê công cụ / kỹ năng)",
+      "img": "fx/nut-kinh.jpg",
+      "at": 8.8
+    },
+    {
+      "id": "bang-so-6",
+      "name": "Bảng số + huy hiệu + tên mục: thiếu phản hồi",
+      "desc": "Bảng xanh đêm phủ kín, số thứ tự cực lớn mờ phía sau, huy hiệu kim cương icon ở giữa, tên mục bên dưới (mở mỗi ý)",
+      "img": "fx/bang-so-6.jpg",
+      "at": 13.03
+    },
+    {
+      "id": "chu-sang-7",
+      "name": "Chữ trắng phát sáng: con cần · người chỉ ra",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/chu-sang-7.jpg",
+      "at": 14.35
+    },
+    {
+      "id": "chu-sang-8",
+      "name": "Chữ trắng phát sáng: sai ở đâu · sửa ngay",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/chu-sang-8.jpg",
+      "at": 16.98
+    },
+    {
+      "id": "ba-kim-cuong-9",
+      "name": "3 huy hiệu kim cương",
+      "desc": "1 huy hiệu kim cương icon sáng + 2 huy hiệu mờ dấu ? bên dưới, phủ tối nhẹ (mở đầu 'có 3 lý do')",
+      "img": "fx/ba-kim-cuong-9.jpg",
+      "at": 18.29
+    },
+    {
+      "id": "bang-so-10",
+      "name": "Bảng số + huy hiệu + tên mục: thiếu kiên trì",
+      "desc": "Bảng xanh đêm phủ kín, số thứ tự cực lớn mờ phía sau, huy hiệu kim cương icon ở giữa, tên mục bên dưới (mở mỗi ý)",
+      "img": "fx/bang-so-10.jpg",
+      "at": 19.81
+    },
+    {
+      "id": "chu-sang-11",
+      "name": "Chữ trắng phát sáng: mỗi ngày · một ít",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/chu-sang-11.jpg",
+      "at": 21.07
+    },
+    {
+      "id": "nut-kinh-12",
+      "name": "Danh sách nút kính viền trắng: mỗi ngày · một ít · đều đặn · khôn",
+      "desc": "3–4 nút kính tím viền trắng phát sáng xếp dọc, hiện lần lượt theo lời (liệt kê công cụ / kỹ năng)",
+      "img": "fx/nut-kinh-12.jpg",
+      "at": 22.32
+    },
+    {
+      "id": "chu-sang-13",
+      "name": "Chữ trắng phát sáng: vẫn hơn · học dồn",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/chu-sang-13.jpg",
+      "at": 23.58
+    },
+    {
+      "id": "ba-kim-cuong-14",
+      "name": "3 huy hiệu kim cương",
+      "desc": "1 huy hiệu kim cương icon sáng + 2 huy hiệu mờ dấu ? bên dưới, phủ tối nhẹ (mở đầu 'có 3 lý do')",
+      "img": "fx/ba-kim-cuong-14.jpg",
+      "at": 24.83
+    }
+  ],
+  "presets": [
+    {
+      "id": "khung-sang",
+      "group": "dohoa",
+      "name": "Khung viền trắng phát sáng",
+      "desc": "Khung chữ nhật viền trắng phát sáng ôm người (nhấn câu quan trọng)",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"kc-khung\"></div>",
+      "anim": [
+        {
+          "sel": ".kc-khung",
+          "from": {
+            "opacity": 0,
+            "scale": 1.1
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ]
+    },
+    {
+      "id": "ba-kim-cuong",
+      "group": "dohoa",
+      "name": "3 huy hiệu kim cương",
+      "desc": "1 huy hiệu kim cương icon sáng + 2 huy hiệu mờ dấu ? bên dưới, phủ tối nhẹ (mở đầu 'có 3 lý do')",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"kc-kc a\" style=\"--kc-y:620px\"><i>❓</i></div><div class=\"kc-kc mo b\" style=\"--kc-y:960px;--kc-d:170px;margin-left:-280px\"><i>❓</i></div><div class=\"kc-kc mo c\" style=\"--kc-y:960px;--kc-d:170px;margin-left:110px\"><i>❓</i></div>",
+      "anim": [
+        {
+          "sel": ".kc-kc.a",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4,
+            "rotation": 0
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "rotation": 45
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".kc-kc.b",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.3,
+          "dur": 0.15,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".kc-kc.c",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power1.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-kc.a i",
+          "label": "Icon 1",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc.b i",
+          "label": "Icon 2",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc.c i",
+          "label": "Icon 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "bang-so-3",
+      "group": "dohoa",
+      "name": "Bảng số + huy hiệu + tên mục",
+      "desc": "Bảng xanh đêm phủ kín, số thứ tự cực lớn mờ phía sau, huy hiệu kim cương icon ở giữa, tên mục bên dưới (mở mỗi ý)",
+      "dur": 1.8,
+      "bg": "board",
+      "sfx": "deep-hit",
+      "html": "<div class=\"kc-bang\"></div><div class=\"kc-so a\">1</div><div class=\"kc-kc b\" style=\"--kc-y:620px\"><i>🧭</i></div><div class=\"kc-ten c\">thiếu định hướng</div>",
+      "anim": [
+        {
+          "sel": ".kc-bang",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".kc-so",
+          "from": {
+            "opacity": 0,
+            "scale": 1.2
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.4,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-kc",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4,
+            "rotation": 0
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "rotation": 45
+          },
+          "at": 0.15,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".kc-ten",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-so",
+          "label": "Số",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc i",
+          "label": "Icon",
+          "words": false
+        },
+        {
+          "sel": ".kc-ten",
+          "label": "Tên mục",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-sang-4",
+      "group": "chu",
+      "name": "Chữ trắng phát sáng: con cần biết",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"kc\"><div class=\"n a\">con cần biết</div><div class=\"l b\">chính xác</div></div>",
+      "anim": [
+        {
+          "sel": ".kc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".kc .b",
+          "label": "Chữ sáng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nut-kinh",
+      "group": "dohoa",
+      "name": "Danh sách nút kính viền trắng",
+      "desc": "3–4 nút kính tím viền trắng phát sáng xếp dọc, hiện lần lượt theo lời (liệt kê công cụ / kỹ năng)",
+      "dur": 2.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"kc-ds\"><b class=\"a\">nghe chủ động</b><b class=\"b\">ghi chú</b><b class=\"c\">tóm tắt</b><b class=\"d\">tự kiểm tra</b></div>",
+      "anim": [
+        {
+          "sel": ".kc-ds .a",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-ds .b",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.35,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-ds .c",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.7,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-ds .d",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 1.05,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-ds .a",
+          "label": "Mục 1",
+          "words": false
+        },
+        {
+          "sel": ".kc-ds .b",
+          "label": "Mục 2",
+          "words": false
+        },
+        {
+          "sel": ".kc-ds .c",
+          "label": "Mục 3",
+          "words": false
+        },
+        {
+          "sel": ".kc-ds .d",
+          "label": "Mục 4",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "bang-so-6",
+      "group": "dohoa",
+      "name": "Bảng số + huy hiệu + tên mục: thiếu phản hồi",
+      "desc": "Bảng xanh đêm phủ kín, số thứ tự cực lớn mờ phía sau, huy hiệu kim cương icon ở giữa, tên mục bên dưới (mở mỗi ý)",
+      "dur": 1.8,
+      "bg": "board",
+      "sfx": "deep-hit",
+      "html": "<div class=\"kc-bang\"></div><div class=\"kc-so a\">2</div><div class=\"kc-kc b\" style=\"--kc-y:620px\"><i>💬</i></div><div class=\"kc-ten c\">thiếu phản hồi</div>",
+      "anim": [
+        {
+          "sel": ".kc-bang",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".kc-so",
+          "from": {
+            "opacity": 0,
+            "scale": 1.2
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.4,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-kc",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4,
+            "rotation": 0
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "rotation": 45
+          },
+          "at": 0.15,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".kc-ten",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-so",
+          "label": "Số",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc i",
+          "label": "Icon",
+          "words": false
+        },
+        {
+          "sel": ".kc-ten",
+          "label": "Tên mục",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-sang-7",
+      "group": "chu",
+      "name": "Chữ trắng phát sáng: con cần · người chỉ ra",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"kc\"><div class=\"n a\">con cần</div><div class=\"l b\">người chỉ ra</div></div>",
+      "anim": [
+        {
+          "sel": ".kc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".kc .b",
+          "label": "Chữ sáng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-sang-8",
+      "group": "chu",
+      "name": "Chữ trắng phát sáng: sai ở đâu · sửa ngay",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"kc\"><div class=\"n a\">sai ở đâu</div><div class=\"l b\">sửa ngay</div></div>",
+      "anim": [
+        {
+          "sel": ".kc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".kc .b",
+          "label": "Chữ sáng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ba-kim-cuong-9",
+      "group": "dohoa",
+      "name": "3 huy hiệu kim cương",
+      "desc": "1 huy hiệu kim cương icon sáng + 2 huy hiệu mờ dấu ? bên dưới, phủ tối nhẹ (mở đầu 'có 3 lý do')",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"kc-kc a\" style=\"--kc-y:620px\"><i>✅</i></div><div class=\"kc-kc mo b\" style=\"--kc-y:960px;--kc-d:170px;margin-left:-280px\"><i>✅</i></div><div class=\"kc-kc mo c\" style=\"--kc-y:960px;--kc-d:170px;margin-left:110px\"><i>✅</i></div>",
+      "anim": [
+        {
+          "sel": ".kc-kc.a",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4,
+            "rotation": 0
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "rotation": 45
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".kc-kc.b",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.3,
+          "dur": 0.15,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".kc-kc.c",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power1.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-kc.a i",
+          "label": "Icon 1",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc.b i",
+          "label": "Icon 2",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc.c i",
+          "label": "Icon 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "bang-so-10",
+      "group": "dohoa",
+      "name": "Bảng số + huy hiệu + tên mục: thiếu kiên trì",
+      "desc": "Bảng xanh đêm phủ kín, số thứ tự cực lớn mờ phía sau, huy hiệu kim cương icon ở giữa, tên mục bên dưới (mở mỗi ý)",
+      "dur": 1.8,
+      "bg": "board",
+      "sfx": "deep-hit",
+      "html": "<div class=\"kc-bang\"></div><div class=\"kc-so a\">3</div><div class=\"kc-kc b\" style=\"--kc-y:620px\"><i>🔥</i></div><div class=\"kc-ten c\">thiếu kiên trì</div>",
+      "anim": [
+        {
+          "sel": ".kc-bang",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".kc-so",
+          "from": {
+            "opacity": 0,
+            "scale": 1.2
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.4,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-kc",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4,
+            "rotation": 0
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "rotation": 45
+          },
+          "at": 0.15,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".kc-ten",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-so",
+          "label": "Số",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc i",
+          "label": "Icon",
+          "words": false
+        },
+        {
+          "sel": ".kc-ten",
+          "label": "Tên mục",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-sang-11",
+      "group": "chu",
+      "name": "Chữ trắng phát sáng: mỗi ngày · một ít",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"kc\"><div class=\"n a\">mỗi ngày</div><div class=\"l b\">một ít</div></div>",
+      "anim": [
+        {
+          "sel": ".kc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".kc .b",
+          "label": "Chữ sáng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nut-kinh-12",
+      "group": "dohoa",
+      "name": "Danh sách nút kính viền trắng: mỗi ngày · một ít · đều đặn · khôn",
+      "desc": "3–4 nút kính tím viền trắng phát sáng xếp dọc, hiện lần lượt theo lời (liệt kê công cụ / kỹ năng)",
+      "dur": 2.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"kc-ds\"><b class=\"a\">mỗi ngày</b><b class=\"b\">một ít</b><b class=\"c\">đều đặn</b><b class=\"d\">không dồn</b></div>",
+      "anim": [
+        {
+          "sel": ".kc-ds .a",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-ds .b",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.35,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-ds .c",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.7,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc-ds .d",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 1.05,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-ds .a",
+          "label": "Mục 1",
+          "words": false
+        },
+        {
+          "sel": ".kc-ds .b",
+          "label": "Mục 2",
+          "words": false
+        },
+        {
+          "sel": ".kc-ds .c",
+          "label": "Mục 3",
+          "words": false
+        },
+        {
+          "sel": ".kc-ds .d",
+          "label": "Mục 4",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-sang-13",
+      "group": "chu",
+      "name": "Chữ trắng phát sáng: vẫn hơn · học dồn",
+      "desc": "Dòng nhỏ + cụm chữ trắng đậm phát sáng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"kc\"><div class=\"n a\">vẫn hơn</div><div class=\"l b\">học dồn</div></div>",
+      "anim": [
+        {
+          "sel": ".kc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".kc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".kc .b",
+          "label": "Chữ sáng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ba-kim-cuong-14",
+      "group": "dohoa",
+      "name": "3 huy hiệu kim cương",
+      "desc": "1 huy hiệu kim cương icon sáng + 2 huy hiệu mờ dấu ? bên dưới, phủ tối nhẹ (mở đầu 'có 3 lý do')",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"kc-kc a\" style=\"--kc-y:620px\"><i>🏆</i></div><div class=\"kc-kc mo b\" style=\"--kc-y:960px;--kc-d:170px;margin-left:-280px\"><i>🏆</i></div><div class=\"kc-kc mo c\" style=\"--kc-y:960px;--kc-d:170px;margin-left:110px\"><i>🏆</i></div>",
+      "anim": [
+        {
+          "sel": ".kc-kc.a",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4,
+            "rotation": 0
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "rotation": 45
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".kc-kc.b",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.3,
+          "dur": 0.15,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".kc-kc.c",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power1.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".kc-kc.a i",
+          "label": "Icon 1",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc.b i",
+          "label": "Icon 2",
+          "words": false
+        },
+        {
+          "sel": ".kc-kc.c i",
+          "label": "Icon 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tram-toan",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "none",
+      "name": "Cảnh trám toàn khung",
+      "desc": "Cảnh minh hoạ phủ kín khung",
+      "dur": 1.5
+    },
+    {
+      "id": "tram-01",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 1: Sổ tay và tai nghe",
+      "desc": "Sổ tay và tai nghe, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/01.jpg"
+    },
+    {
+      "id": "tram-02",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 2: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/02.jpg"
+    },
+    {
+      "id": "tram-03",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 3: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/03.jpg"
+    },
+    {
+      "id": "tram-04",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 4: Sổ tay và tai nghe",
+      "desc": "Sổ tay và tai nghe, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/04.jpg"
+    },
+    {
+      "id": "tram-05",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 5: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/05.jpg"
+    },
+    {
+      "id": "tram-06",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 6: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/06.jpg"
+    },
+    {
+      "id": "tram-07",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 7: Sổ tay và tai nghe",
+      "desc": "Sổ tay và tai nghe, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/07.jpg"
+    },
+    {
+      "id": "tram-08",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 8: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/08.jpg"
+    },
+    {
+      "id": "tram-09",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 9: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/09.jpg"
+    },
+    {
+      "id": "tram-10",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 10: Sổ tay và tai nghe",
+      "desc": "Sổ tay và tai nghe, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/10.jpg"
+    },
+    {
+      "id": "tram-11",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 11: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/11.jpg"
+    },
+    {
+      "id": "tram-12",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 12: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.2 giây",
+      "dur": 1.2,
+      "img": "tram/12.jpg"
+    }
+  ]
+}

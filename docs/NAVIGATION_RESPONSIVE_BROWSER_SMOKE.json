@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "width": 1920,
+      "icons": true,
+      "mobile": false,
+      "metrics": {
+        "viewport": 1920,
+        "page": 1920,
+        "main": 1624,
+        "scroll": 1624
+      }
+    },
+    {
+      "width": 1280,
+      "icons": true,
+      "mobile": false,
+      "metrics": {
+        "viewport": 1280,
+        "page": 1280,
+        "main": 984,
+        "scroll": 984
+      }
+    },
+    {
+      "width": 820,
+      "icons": true,
+      "mobile": false,
+      "metrics": {
+        "viewport": 820,
+        "page": 820,
+        "main": 556,
+        "scroll": 556
+      }
+    },
+    {
+      "width": 600,
+      "icons": true,
+      "mobile": true,
+      "metrics": {
+        "viewport": 600,
+        "page": 600,
+        "main": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "width": 390,
+      "icons": true,
+      "mobile": true,
+      "metrics": {
+        "viewport": 390,
+        "page": 390,
+        "main": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "width": 320,
+      "icons": true,
+      "mobile": true,
+      "metrics": {
+        "viewport": 320,
+        "page": 320,
+        "main": 320,
+        "scroll": 320
+      }
+    }
+  ],
+  "errors": [],
+  "readOnly": true
+}

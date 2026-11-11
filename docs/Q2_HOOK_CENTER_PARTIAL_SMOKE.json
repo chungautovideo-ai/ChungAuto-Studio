@@ -1,0 +1,29 @@
+{
+  "project": "workspace/content/2026-11-05/qa-hook-center-993f22d0",
+  "hook": {
+    "label": "",
+    "title": "CHUNGAUTO|QUẬN 2",
+    "sub": "Có mấy mảng?",
+    "fx": "words",
+    "y": 1250,
+    "id": "t-a4373dd0-8c67-4263-aff8-8cc33514b46e",
+    "at": 0.72,
+    "dur": 3.3,
+    "minhHoa": "quận 2",
+    "apiPreset": {
+      "templateId": "chungauto-factory-quang-cao-v50",
+      "presetId": "ca-hook",
+      "templateHash": "7cdbca304997f5ac3f652d5dcdd11147b19c07bb2958110e18985088a80eb35e"
+    },
+    "size": 80,
+    "x": 0
+  },
+  "workerProjectUnchanged": true,
+  "cliSucceeded": false,
+  "exitCode": 3221226505,
+  "artifactDecoded": true,
+  "contact": "docs/Q2_HOOK_CENTER_PARTIAL_CONTACT.jpg",
+  "scope": "CLI reported Windows exit3221226505 after encoder validated artifact. Intermediate4.5s file decodes, but normal finalization/hash sidecar did not run. Not a successful export; inspect geometry only.",
+  "contactViewed": true,
+  "visualNotes": "Four sampled frames: hook centered and readable with x=0, no right-edge clipping. Not successful export or full-layout acceptance."
+}

@@ -1,0 +1,10 @@
+{
+  "version": 49,
+  "presetsUnchanged": true,
+  "presetCount": 11,
+  "referenceCount": 5,
+  "snapshotRoundtrip": true,
+  "zipRoundtrip": true,
+  "httpStatus": 200,
+  "scope": "Packaging, snapshot and HTTP catalog; no autonomous model execution or new edit-quality acceptance."
+}

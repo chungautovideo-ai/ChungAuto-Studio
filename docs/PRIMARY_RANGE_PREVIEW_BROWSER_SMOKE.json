@@ -1,0 +1,92 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "project": "workspace/content/2026-11-04/contentos-smoke-segfit-1280-1793751701495",
+      "appendSaveReload": true,
+      "duration": 3.5,
+      "selectedSourceInterval": [
+        0.5,
+        1.5
+      ],
+      "speed": 2,
+      "previewPixel": [
+        254,
+        0,
+        0
+      ],
+      "markedFromVideo": true
+    },
+    {
+      "width": 1920,
+      "project": "workspace/content/2026-11-04/contentos-smoke-segfit-1920-1793751705711",
+      "appendSaveReload": true,
+      "duration": 3.5,
+      "selectedSourceInterval": [
+        0.5,
+        1.5
+      ],
+      "speed": 2,
+      "previewPixel": [
+        254,
+        0,
+        0
+      ],
+      "markedFromVideo": true
+    }
+  ],
+  "syntheticSource": true,
+  "render": {
+    "running": false,
+    "byAi": true,
+    "quality": "final",
+    "progress": 100,
+    "ok": true,
+    "log": "fits the capture viewport (1280ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1280ms)\n  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (1/3 ready)\n@hf-progress {\"code\":\"start_browsers\",\"done\":1,\"total\":3,\"pct\":25}\n  ██████░░░░░░░░░░░░░░░░░░░  25%  Capturing frame 1/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":1,\"total\":105,\"pct\":25}\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:screenshot] pollHfReady complete (1406ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1409ms)\n[initSession:screenshot] applyVideoMetadataHints complete (1413ms)\n[initSession:screenshot] media + fonts + tailwind ready (1415ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1418ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1418ms)\n[initSession:screenshot] pollHfReady complete (1409ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1414ms)\n[initSession:screenshot] applyVideoMetadataHints complete (1419ms)\n[initSession:screenshot] media + fonts + tailwind ready (1422ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1429ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1429ms)\n  ███████░░░░░░░░░░░░░░░░░░  28%  Capturing frame 7/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":7,\"total\":105,\"pct\":28}\n  ████████░░░░░░░░░░░░░░░░░  32%  Capturing frame 17/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":17,\"total\":105,\"pct\":32}\n  █████████░░░░░░░░░░░░░░░░  37%  Capturing frame 29/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":29,\"total\":105,\"pct\":37}\n  ██████████░░░░░░░░░░░░░░░  43%  Capturing frame 41/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":41,\"total\":105,\"pct\":43}\n  ████████████░░░░░░░░░░░░░  48%  Capturing frame 54/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":54,\"total\":105,\"pct\":48}\n  █████████████░░░░░░░░░░░░  54%  Capturing frame 68/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":68,\"total\":105,\"pct\":54}\n  ██████████████░░░░░░░░░░░  58%  Capturing frame 78/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":78,\"total\":105,\"pct\":58}\n  ████████████████░░░░░░░░░  64%  Capturing frame 90/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":90,\"total\":105,\"pct\":64}\n  █████████████████░░░░░░░░  68%  Capturing frame 101/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":101,\"total\":105,\"pct\":68}\n  █████████████████░░░░░░░░  70%  Capturing frame 105/105 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":105,\"total\":105,\"pct\":70}\n[INFO] [Render:trace] {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"phase\":\"capture_disk\",\"status\":\"end\",\"elapsedMs\":11183,\"durationMs\":5990,\"stagePhase\":\"capturing\",\"needsAlpha\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":105,\"framesCompleted\":105,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████░░░░░░░  75%  Encoding video\n@hf-progress {\"code\":\"encode\",\"done\":0,\"total\":105,\"pct\":75}\n[INFO] [Render:trace] {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"phase\":\"encode\",\"status\":\"start\",\"elapsedMs\":11184,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":105,\"framesCompleted\":105,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render] Encoded frames while capturing {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"framesFed\":105,\"totalFrames\":105}\n  ██████████████████████░░░  90%  Encoding frame 105/105\n@hf-progress {\"code\":\"encode\",\"done\":105,\"total\":105,\"pct\":90}\n[INFO] [Render:trace] {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"phase\":\"encode\",\"status\":\"end\",\"elapsedMs\":11393,\"durationMs\":209,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":105,\"framesCompleted\":105,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":11394,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":105,\"framesCompleted\":105,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████████░░░  90%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":0,\"total\":3.5,\"pct\":90}\n  ████████████████████████░  99%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":3.5,\"total\":3.5,\"pct\":99}\n[INFO] [Render:trace] {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":11628,\"durationMs\":234,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":105,\"framesCompleted\":105,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"ee85ce4d-81b0-4599-a0f4-8a279844c290\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":11684,\"message\":\"artifact validated\",\"totalElapsedMs\":11674}\n  █████████████████████████  100%  Render complete\n\n◇  D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-segfit-1280-1793751701495\\work\\render-snapshots\\6e7bbe7a-2fb5-43ec-9d33-5ad5d3598454\\renders\\contentos-smoke-segfit-1280-1793751701495-final.mp4\n   2.3 MB · 3.5s video · rendered in 11.7s\n   screenshot capture · hardware gpu · compile 0.9s · extract 0.4s · audio 1.0s · probe 0.1s · setup 3.9s · capture 6.0s · encode 0.2s · assemble 0.2s\n   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?os=windows&src=cli\n\n  1 HyperFrames skill out of date or missing.\n  Run: npx hyperframes skills update\n\n",
+    "pid": 62984,
+    "startedAt": 1793751709670,
+    "jobDir": null,
+    "channels": [],
+    "snapshotId": "6e7bbe7a-2fb5-43ec-9d33-5ad5d3598454",
+    "revision": "8f492b75ffea1e28ab635524bd99b1af5b90d5b8842c6fd36bd5129bb1164e40",
+    "output": "renders/contentos-smoke-segfit-1280-1793751701495-final.mp4",
+    "saved": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-segfit-1280-1793751701495\\renders\\contentos-smoke-segfit-1280-1793751701495-final.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "3.500000"
+      }
+    },
+    "loudnorm": true,
+    "finishedAt": 1793751725247
+  },
+  "rangeOutputPixels": {
+    "before": [
+      0,
+      0,
+      254
+    ],
+    "after": [
+      253,
+      0,
+      0
+    ]
+  },
+  "pageErrors": [],
+  "limits": "Actual source preview scrub/mark/play-range/stale revision, editor save/reload1280/1920 and final render with time-changing color fixture. No codec/network/long-file or production benchmark."
+}

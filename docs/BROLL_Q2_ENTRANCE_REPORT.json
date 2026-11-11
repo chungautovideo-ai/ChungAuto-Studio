@@ -1,0 +1,208 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-overlap-2/project.json",
+  "report": {
+    "clock": "output",
+    "items": [
+      {
+        "id": "b-man",
+        "src": "inputs/man.mp4",
+        "projectAt": 16.06,
+        "outputStart": 15.52,
+        "outputEnd": 16.27,
+        "outputDuration": 0.75,
+        "mediaStart": 10,
+        "entrance": {
+          "type": "fade",
+          "custom": false,
+          "animationDuration": 0.3,
+          "entranceWithinShot": 0.3,
+          "settledDuration": 0.45,
+          "settledStart": 15.82,
+          "settledEnd": 16.27
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c18",
+              "text": "màn,",
+              "outputStart": 15.52,
+              "outputEnd": 16.27
+            }
+          ],
+          "truncated": false,
+          "totalWords": 1,
+          "nextWord": {
+            "captionId": "c19",
+            "text": "phim",
+            "outputStart": 16.27,
+            "outputEnd": 16.87
+          },
+          "startsInsideWord": false,
+          "endsInsideWord": false
+        },
+        "advisories": []
+      },
+      {
+        "id": "b-den",
+        "src": "inputs/den.mp4",
+        "projectAt": 14.56,
+        "outputStart": 14.02,
+        "outputEnd": 15.52,
+        "outputDuration": 1.5,
+        "mediaStart": 4,
+        "entrance": {
+          "type": "none",
+          "custom": false,
+          "animationDuration": 0,
+          "entranceWithinShot": 0,
+          "settledDuration": 1.5,
+          "settledStart": 14.02,
+          "settledEnd": 15.52
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c17",
+              "text": "Nên",
+              "outputStart": 13.72,
+              "outputEnd": 14.17
+            },
+            {
+              "captionId": "c17",
+              "text": "là",
+              "outputStart": 14.17,
+              "outputEnd": 14.71
+            },
+            {
+              "captionId": "c17",
+              "text": "từ",
+              "outputStart": 14.71,
+              "outputEnd": 14.77
+            },
+            {
+              "captionId": "c17",
+              "text": "đèn,",
+              "outputStart": 14.77,
+              "outputEnd": 15.52
+            }
+          ],
+          "truncated": false,
+          "totalWords": 4,
+          "nextWord": {
+            "captionId": "c18",
+            "text": "màn,",
+            "outputStart": 15.52,
+            "outputEnd": 16.27
+          },
+          "startsInsideWord": true,
+          "endsInsideWord": false
+        },
+        "advisories": []
+      },
+      {
+        "id": "b-ghe",
+        "src": "inputs/ghe.mp4",
+        "projectAt": 18.16,
+        "outputStart": 17.62,
+        "outputEnd": 19.12,
+        "outputDuration": 1.5,
+        "mediaStart": 1,
+        "entrance": {
+          "type": "fade",
+          "custom": false,
+          "animationDuration": 0.3,
+          "entranceWithinShot": 0.3,
+          "settledDuration": 1.2,
+          "settledStart": 17.92,
+          "settledEnd": 19.12
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c19",
+              "text": "bọc",
+              "outputStart": 17.62,
+              "outputEnd": 18.07
+            },
+            {
+              "captionId": "c20",
+              "text": "ghế",
+              "outputStart": 18.07,
+              "outputEnd": 18.52
+            },
+            {
+              "captionId": "c20",
+              "text": "da,",
+              "outputStart": 18.52,
+              "outputEnd": 19.12
+            }
+          ],
+          "truncated": false,
+          "totalWords": 3,
+          "nextWord": {
+            "captionId": "c21",
+            "text": "sàn",
+            "outputStart": 19.12,
+            "outputEnd": 19.57
+          },
+          "startsInsideWord": false,
+          "endsInsideWord": false
+        },
+        "advisories": []
+      },
+      {
+        "id": "b-mau",
+        "src": "inputs/mau.mp4",
+        "projectAt": 20.7,
+        "outputStart": 20.16,
+        "outputEnd": 21.18,
+        "outputDuration": 1.02,
+        "mediaStart": 4,
+        "entrance": {
+          "type": "none",
+          "custom": false,
+          "animationDuration": 0,
+          "entranceWithinShot": 0,
+          "settledDuration": 1.02,
+          "settledStart": 20.16,
+          "settledEnd": 21.18
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c22",
+              "text": "đổi",
+              "outputStart": 20.16,
+              "outputEnd": 20.62
+            },
+            {
+              "captionId": "c22",
+              "text": "màu",
+              "outputStart": 20.62,
+              "outputEnd": 21.18
+            }
+          ],
+          "truncated": false,
+          "totalWords": 2,
+          "nextWord": {
+            "captionId": "c22",
+            "text": "Chất",
+            "outputStart": 21.18,
+            "outputEnd": 21.38
+          },
+          "startsInsideWord": false,
+          "endsInsideWord": false
+        },
+        "advisories": []
+      }
+    ],
+    "total": 4,
+    "truncated": false,
+    "advisoryOnly": true,
+    "applied": false,
+    "visualReviewed": false,
+    "audioListened": false,
+    "notes": "projectAt là at trước cắt; các mốc output/settled là giây sau cắt. settled chỉ là thời gian sau hiệu ứng vào, không chứng minh chi tiết dễ đọc hoặc hình đúng lời. SHORT_INSERT (<0,6s) và hiệu ứng chiếm hơn nửa cảnh là gợi ý xem lại, không bắt kéo dài hoặc đổi hiệu ứng; giữ lựa chọn đã chốt. Lời từ caption có thể thiếu/sai. Không kiểm nguồn media."
+  },
+  "projectUnchanged": true
+}

@@ -1,0 +1,12 @@
+{
+  "actualRenderRenderBoxSource": true,
+  "measurementFromHTTPFixture": true,
+  "peakWarning": "synthetic UI case",
+  "silentAndNoAudioStates": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": [],
+  "scope": "Component render with real HTTP audio measurements; no in-app export or reload persistence tested here."
+}

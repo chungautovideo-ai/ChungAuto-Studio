@@ -1,0 +1,36 @@
+{
+  "currentWorkspace": true,
+  "helperPass": false,
+  "fullBroll": true,
+  "freshAsr": false,
+  "inputTranscriptMissing": false,
+  "dir": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-5",
+  "startedAt": "2026-11-05T05:00:54.863Z",
+  "finishedAt": "2026-11-05T05:05:19.032Z",
+  "status": "done",
+  "error": null,
+  "completionState": "awaiting-review",
+  "template": "chungauto-factory-quang-cao-v50",
+  "segments": 5,
+  "texts": 11,
+  "blocks": 3,
+  "brolls": 4,
+  "audio": {
+    "voice": 1,
+    "music": "kit:ambient-pad",
+    "musicVolume": 0.08,
+    "sfx": [],
+    "sfxVolume": 0.18,
+    "autoSfx": true,
+    "sfxLevel": "vua",
+    "duckSourceSpeech": true,
+    "duckLevel": 0.45,
+    "duckFade": 0.2
+  },
+  "helperMentions": {
+    "presets": true,
+    "timing": true
+  },
+  "scope": "Real local Codex worker with imported transcript/local copied assets; not autonomous ASR/NAS or full audiovisual acceptance.",
+  "sourceQA": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-4"
+}

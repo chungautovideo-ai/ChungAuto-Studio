@@ -1,0 +1,650 @@
+[
+  {
+    "id": "V01",
+    "name": "Cài portable/runtime, doctor, mở/đóng app, shortcut và chạy nền có cấu hình",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V02",
+    "name": "Home/danh sách/tìm video, import footage/tư liệu, tạo/mở/xóa dự án",
+    "status": "baseline-unverified",
+    "validationNote": "Partial baseline smoke only; see docs/BUILD_STATUS.md"
+  },
+  {
+    "id": "V03",
+    "name": "Chọn format 9:16/16:9, đổi khung và xử lý orientation",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V04",
+    "name": "Thư viện mẫu có poster/preview, chọn/cài/upload mẫu, template.json + SKILL.md",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V05",
+    "name": "Kho hiệu ứng cá nhân: lưu/tìm/tái dùng chữ/đồ họa/B-roll và ghép mẫu",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V06",
+    "name": "Editor timeline, chọn/kéo thả/tách/xóa/tua/phóng timeline, preview cùng build",
+    "status": "baseline-unverified",
+    "validationNote": "Partial baseline smoke only; see docs/BUILD_STATUS.md"
+  },
+  {
+    "id": "V07",
+    "name": "Chữ nhấn, style/animation/cue/preset và sửa nội dung/vị trí/thời gian",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V08",
+    "name": "Phụ đề theo lời, sửa dòng/từ/style/vị trí, bám time-map",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V09",
+    "name": "Cắt giữ/bỏ theo transcript, speed source/output mapping và bảo toàn mốc",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V10",
+    "name": "Zoom/camera/crop, tracking qua công cụ, tùy chỉnh khung hình",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V11",
+    "name": "Cảnh minh họa/B-roll/asset nhập ngoài, chế độ bố cục/chuyển động",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V12",
+    "name": "Đồ họa HTML/CSS/animation, layer/behind-person và matte khi cần",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V13",
+    "name": "Audio gốc/nhạc/SFX, volume, preset thư viện, voice cleanup",
+    "status": "baseline-unverified",
+    "validationNote": "Partial: opt-in narration-clip music ducking,68service tests, real8s synthetic HyperFrames MP4 RMS ratio0.2606 for0.25 setting, UI checkbox/save1280/1920. No smooth envelope/speech detection/loop-preview/listening verification; UI spec54."
+  },
+  {
+    "id": "V14",
+    "name": "Bộ lọc/màu da/làm đẹp face scan/điều chỉnh/VFX",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V15",
+    "name": "Brand font/màu/preset và khả năng thay nhận diện theo dự án",
+    "status": "baseline-unverified",
+    "validationNote": "Partial: workspace defaults and explicit AI-job brand snapshots; 65 service tests, actual HTTP session/inbox and synthetic gateway first-build/revise/final MP4, setup/chat browser payload at1280/1920. No real-agent or rendered brand visual verification; UI spec51 and BUILD_STATUS."
+  },
+  {
+    "id": "V16",
+    "name": "Undo/redo, save, lịch sử file, phục hồi và sửa tiếp",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V17",
+    "name": "Codex/Claude nhận việc theo phiên, CLI nền tùy chọn, status/progress/log/fail/done",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V18",
+    "name": "Nhờ AI sửa theo yêu cầu, context, kết quả/tóm tắt và nạp lại editor",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V19",
+    "name": "ASR local/transcript, proxy/xem nhẹ và quản lý dung lượng",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V20",
+    "name": "Stock B-roll có nguồn, AI B-roll theo skill/tài khoản tích hợp",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V21",
+    "name": "Cắt video dài thành clips, lựa chọn đoạn/hook và tạo dự án con",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V22",
+    "name": "Voice Vbee/ElevenLabs, preview/synth/clone theo quyền và gói",
+    "status": "baseline-unverified",
+    "validationNote": "Partial baseline smoke only; see docs/BUILD_STATUS.md"
+  },
+  {
+    "id": "V23",
+    "name": "Ảnh bìa, draft/final/progress/cancel, thư mục xuất và gói thành phần CapCut",
+    "status": "baseline-unverified",
+    "validationNote": "Partial: shared CapCut audio parser/mixer retains fades/rates/source offset; FFmpeg9 syntax fixed.71tests and actual synthetic package with measured AAC duck ramps pass; no CapCut app import/UI/overlay/full-version verification. UI spec56. Separate audio stems/manifest added;72tests and CAPCUT_STEMS_SMOKE real8s music/voice isolation pass. SFX/B-roll package/app import unverified; UI spec57."
+  },
+  {
+    "id": "V24",
+    "name": "Hồ sơ social, content theo kênh, đăng/lịch, trạng thái/link, phân tích kênh",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "V25",
+    "name": "Connections/account/integrations, thư viện/cập nhật có kiểm version và điều kiện gói",
+    "status": "baseline-unverified"
+  },
+  {
+    "id": "A01",
+    "name": "Dashboard",
+    "status": "planned"
+  },
+  {
+    "id": "A02",
+    "name": "Project",
+    "status": "planned"
+  },
+  {
+    "id": "A03",
+    "name": "Dọn dữ liệu",
+    "status": "planned"
+  },
+  {
+    "id": "A04",
+    "name": "Asset theo dự án",
+    "status": "partial",
+    "validationNote": "Phone/shared-folder media intake lands in VEK inputs; generic metadata CRUD and other source behavior remain."
+  },
+  {
+    "id": "A05",
+    "name": "Grade asset",
+    "status": "planned"
+  },
+  {
+    "id": "A06",
+    "name": "Editor",
+    "status": "planned"
+  },
+  {
+    "id": "A07",
+    "name": "Bảo toàn chỉnh sửa",
+    "status": "planned"
+  },
+  {
+    "id": "A08",
+    "name": "Handoff AI",
+    "status": "planned"
+  },
+  {
+    "id": "A09",
+    "name": "Export timeline",
+    "status": "planned"
+  },
+  {
+    "id": "A10",
+    "name": "Scene/render",
+    "status": "planned"
+  },
+  {
+    "id": "A11",
+    "name": "Render settings",
+    "status": "planned"
+  },
+  {
+    "id": "A12",
+    "name": "QC",
+    "status": "planned"
+  },
+  {
+    "id": "A13",
+    "name": "Review",
+    "status": "planned"
+  },
+  {
+    "id": "A14",
+    "name": "Auto-trim",
+    "status": "planned"
+  },
+  {
+    "id": "A15",
+    "name": "Auto-cut",
+    "status": "planned"
+  },
+  {
+    "id": "A16",
+    "name": "Short và biến thể",
+    "status": "planned"
+  },
+  {
+    "id": "A17",
+    "name": "Nguồn bài viết",
+    "status": "planned"
+  },
+  {
+    "id": "A18",
+    "name": "Text-to-video",
+    "status": "planned"
+  },
+  {
+    "id": "A19",
+    "name": "Narration",
+    "status": "planned"
+  },
+  {
+    "id": "A20",
+    "name": "Dịch video",
+    "status": "planned"
+  },
+  {
+    "id": "A21",
+    "name": "Lồng tiếng",
+    "status": "planned"
+  },
+  {
+    "id": "A22",
+    "name": "TTS",
+    "status": "planned"
+  },
+  {
+    "id": "A23",
+    "name": "Clone giọng",
+    "status": "planned"
+  },
+  {
+    "id": "A24",
+    "name": "Image project",
+    "status": "planned"
+  },
+  {
+    "id": "A25",
+    "name": "Image provider",
+    "status": "planned"
+  },
+  {
+    "id": "A26",
+    "name": "Gateway ảnh",
+    "status": "planned",
+    "validationNote": "Partial gateway integration: generated outputs fully probed/decoded before batch publication;66service tests + IMAGE_API_SMOKE actual synthetic HTTP malformed-batch rejection, dimensions/reference/attach/cover. No real provider or production verification; UI spec52. Request-bound cancel/close and gateway disconnect verified with local HTTP + browser fixtures;67tests, UI spec53. Provider-side/durable cancellation unverified."
+  },
+  {
+    "id": "A27",
+    "name": "Ảnh trong project",
+    "status": "planned"
+  },
+  {
+    "id": "A28",
+    "name": "Text AI",
+    "status": "planned"
+  },
+  {
+    "id": "A29",
+    "name": "Style Design",
+    "status": "planned"
+  },
+  {
+    "id": "A30",
+    "name": "Phong cách dựng",
+    "status": "planned"
+  },
+  {
+    "id": "A31",
+    "name": "Logo thư viện",
+    "status": "planned"
+  },
+  {
+    "id": "A32",
+    "name": "Nhạc/SFX",
+    "status": "planned"
+  },
+  {
+    "id": "A33",
+    "name": "Prompt library",
+    "status": "planned"
+  },
+  {
+    "id": "A34",
+    "name": "Skill library",
+    "status": "planned"
+  },
+  {
+    "id": "A35",
+    "name": "Phiên AI",
+    "status": "planned"
+  },
+  {
+    "id": "A36",
+    "name": "Theo dõi chi phí",
+    "status": "planned"
+  },
+  {
+    "id": "A37",
+    "name": "Thumbnail",
+    "status": "planned"
+  },
+  {
+    "id": "A38",
+    "name": "Publish pack",
+    "status": "partial",
+    "validationNote": "Local immutable publish ZIP implemented in existing per-channel draft dialog: selected verified final, reviewed drafts, covers, manifest/checksums and re-download. Actual render/API/browser1280+1920 verified; platform posting and full AIEV publish parity incomplete. See BUILD_STATUS and PUBLISH_PACK_API_SMOKE.json."
+  },
+  {
+    "id": "A39",
+    "name": "Connections",
+    "status": "planned"
+  },
+  {
+    "id": "A40",
+    "name": "Doctor/update",
+    "status": "planned"
+  },
+  {
+    "id": "A41",
+    "name": "Điện thoại/tunnel",
+    "status": "partial",
+    "validationNote": "LAN QR/session upload implemented and synthetic HTTP/file probe verified. Physical phone, tunnel and owner remote still incomplete; docs/BUILD_STATUS.md."
+  },
+  {
+    "id": "A42",
+    "name": "Media/reveal",
+    "status": "planned"
+  },
+  {
+    "id": "S01",
+    "name": "Project",
+    "status": "planned"
+  },
+  {
+    "id": "S02",
+    "name": "Timeline/composition",
+    "status": "planned"
+  },
+  {
+    "id": "S03",
+    "name": "Template",
+    "status": "planned"
+  },
+  {
+    "id": "S04",
+    "name": "Channel family",
+    "status": "planned"
+  },
+  {
+    "id": "S05",
+    "name": "Batch template",
+    "status": "planned"
+  },
+  {
+    "id": "S06",
+    "name": "Lessons",
+    "status": "planned"
+  },
+  {
+    "id": "S07",
+    "name": "Kit/genre",
+    "status": "planned"
+  },
+  {
+    "id": "S08",
+    "name": "Reference/style",
+    "status": "planned"
+  },
+  {
+    "id": "S09",
+    "name": "Intent/look",
+    "status": "planned"
+  },
+  {
+    "id": "S10",
+    "name": "Màu/proxy",
+    "status": "planned"
+  },
+  {
+    "id": "S11",
+    "name": "Edit transcript",
+    "status": "planned"
+  },
+  {
+    "id": "S12",
+    "name": "Tracking/reframe",
+    "status": "planned"
+  },
+  {
+    "id": "S13",
+    "name": "Multicam",
+    "status": "planned"
+  },
+  {
+    "id": "S14",
+    "name": "Quickedit",
+    "status": "planned"
+  },
+  {
+    "id": "S15",
+    "name": "Voice",
+    "status": "planned"
+  },
+  {
+    "id": "S16",
+    "name": "Nhạc AI",
+    "status": "planned"
+  },
+  {
+    "id": "S17",
+    "name": "Kho nhạc/SFX",
+    "status": "planned"
+  },
+  {
+    "id": "S18",
+    "name": "Image operations",
+    "status": "planned"
+  },
+  {
+    "id": "S19",
+    "name": "Design canvas",
+    "status": "planned"
+  },
+  {
+    "id": "S20",
+    "name": "Image assets",
+    "status": "planned"
+  },
+  {
+    "id": "S21",
+    "name": "Character/3D",
+    "status": "planned"
+  },
+  {
+    "id": "S22",
+    "name": "Flow bridge",
+    "status": "planned"
+  },
+  {
+    "id": "S23",
+    "name": "AI video",
+    "status": "planned"
+  },
+  {
+    "id": "S24",
+    "name": "AI fill",
+    "status": "planned"
+  },
+  {
+    "id": "S25",
+    "name": "HyperFrames registry",
+    "status": "planned"
+  },
+  {
+    "id": "S26",
+    "name": "HyperFrames output",
+    "status": "planned"
+  },
+  {
+    "id": "S27",
+    "name": "Thumbnail score",
+    "status": "planned"
+  },
+  {
+    "id": "S28",
+    "name": "Library",
+    "status": "planned"
+  },
+  {
+    "id": "S29",
+    "name": "CapCut catalog",
+    "status": "planned"
+  },
+  {
+    "id": "S30",
+    "name": "DAM core",
+    "status": "planned",
+    "validationNote": "Partial source picker integration: filename/type/current-folder and bounded recursive search, metadata/native preview, multi-file local copy with provenance and verified duplicate reuse. See BUILD_STATUS and UI spec63–67; not full DAM/index/rights or real NAS verification. Tag/declared-rights current-folder and bounded recursive filters verified with SOURCE_ANNOTATION_FILTER_BROWSER_SMOKE; stat-changed claim becomes effective unknown. See spec69."
+  },
+  {
+    "id": "S31",
+    "name": "DAM rights",
+    "status": "planned",
+    "validationNote": "Partial: versioned local/workspace source tags/notes/declared rights/evidence, stat-change warning and new-import snapshot;88tests and SOURCE_ANNOTATIONS_BROWSER_SMOKE. No verified rights/export gate/expiry/channel policy/sync. Tag/declared-rights current-folder and bounded recursive filters verified with SOURCE_ANNOTATION_FILTER_BROWSER_SMOKE; stat-changed claim becomes effective unknown. See spec69."
+  },
+  {
+    "id": "S32",
+    "name": "DAM doanh nghiệp",
+    "status": "planned"
+  },
+  {
+    "id": "S33",
+    "name": "DAM intake",
+    "status": "planned",
+    "validationNote": "Partial source picker integration: filename/type/current-folder and bounded recursive search, metadata/native preview, multi-file local copy with provenance and verified duplicate reuse. See BUILD_STATUS and UI spec63–67; not full DAM/index/rights or real NAS verification."
+  },
+  {
+    "id": "S34",
+    "name": "Field capture",
+    "status": "planned"
+  },
+  {
+    "id": "S35",
+    "name": "Creative/planner",
+    "status": "planned"
+  },
+  {
+    "id": "S36",
+    "name": "Lifecycle/storage",
+    "status": "planned"
+  },
+  {
+    "id": "S37",
+    "name": "DAM governance",
+    "status": "planned"
+  },
+  {
+    "id": "S38",
+    "name": "CMF riêng",
+    "status": "planned"
+  },
+  {
+    "id": "S39",
+    "name": "Google Drive",
+    "status": "planned"
+  },
+  {
+    "id": "S40",
+    "name": "LAN/NAS",
+    "status": "planned"
+  },
+  {
+    "id": "S41",
+    "name": "News/script",
+    "status": "planned"
+  },
+  {
+    "id": "S42",
+    "name": "News make",
+    "status": "planned"
+  },
+  {
+    "id": "S43",
+    "name": "Trends/campaigns",
+    "status": "planned"
+  },
+  {
+    "id": "S44",
+    "name": "Autopilot",
+    "status": "planned"
+  },
+  {
+    "id": "S45",
+    "name": "Repurpose",
+    "status": "planned"
+  },
+  {
+    "id": "S46",
+    "name": "QC/critic",
+    "status": "planned"
+  },
+  {
+    "id": "S47",
+    "name": "Duyệt",
+    "status": "planned"
+  },
+  {
+    "id": "S48",
+    "name": "Export",
+    "status": "planned"
+  },
+  {
+    "id": "S49",
+    "name": "NLE",
+    "status": "planned"
+  },
+  {
+    "id": "S50",
+    "name": "Publish/calendar",
+    "status": "planned"
+  },
+  {
+    "id": "S51",
+    "name": "Distribution",
+    "status": "planned"
+  },
+  {
+    "id": "S52",
+    "name": "Analytics",
+    "status": "planned"
+  },
+  {
+    "id": "S53",
+    "name": "Provider/settings",
+    "status": "planned"
+  },
+  {
+    "id": "S54",
+    "name": "System/admin",
+    "status": "planned"
+  },
+  {
+    "id": "S55",
+    "name": "Queue local",
+    "status": "planned"
+  },
+  {
+    "id": "S56",
+    "name": "Distributed workers",
+    "status": "planned"
+  },
+  {
+    "id": "S57",
+    "name": "Workflow",
+    "status": "planned"
+  },
+  {
+    "id": "S58",
+    "name": "Registry",
+    "status": "planned"
+  },
+  {
+    "id": "S59",
+    "name": "CDoc worker",
+    "status": "planned"
+  },
+  {
+    "id": "S60",
+    "name": "Jobs/live/markers",
+    "status": "planned"
+  }
+]

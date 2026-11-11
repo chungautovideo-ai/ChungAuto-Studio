@@ -1,0 +1,14 @@
+{
+  "actualActivityComponent": true,
+  "rows": "fixture",
+  "queueFilter": true,
+  "waitReason": true,
+  "activeProgress": 42,
+  "openProject": true,
+  "noUnsupportedActions": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": []
+}

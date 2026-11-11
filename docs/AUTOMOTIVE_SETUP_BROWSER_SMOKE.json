@@ -1,0 +1,196 @@
+{
+  "syntheticProject": "workspace/content/2026-11-04/contentos-smoke-pointer-6",
+  "sizes": [
+    {
+      "width": 1280,
+      "bounds": [
+        {
+          "left": 501,
+          "right": 801,
+          "width": 300
+        },
+        {
+          "left": 813,
+          "right": 1113,
+          "width": 300
+        },
+        {
+          "left": 501,
+          "right": 801,
+          "width": 300
+        },
+        {
+          "left": 813,
+          "right": 1113,
+          "width": 300
+        },
+        {
+          "left": 501,
+          "right": 801,
+          "width": 300
+        },
+        {
+          "left": 813,
+          "right": 1113,
+          "width": 300
+        }
+      ],
+      "collapsedByDefault": true,
+      "oneControl": true
+    },
+    {
+      "width": 1920,
+      "bounds": [
+        {
+          "left": 821,
+          "right": 1121,
+          "width": 300
+        },
+        {
+          "left": 1133,
+          "right": 1433,
+          "width": 300
+        },
+        {
+          "left": 821,
+          "right": 1121,
+          "width": 300
+        },
+        {
+          "left": 1133,
+          "right": 1433,
+          "width": 300
+        },
+        {
+          "left": 821,
+          "right": 1121,
+          "width": 300
+        },
+        {
+          "left": 1133,
+          "right": 1433,
+          "width": 300
+        }
+      ],
+      "collapsedByDefault": true,
+      "oneControl": true
+    },
+    {
+      "width": 820,
+      "bounds": [
+        {
+          "left": 357,
+          "right": 765,
+          "width": 408
+        },
+        {
+          "left": 357,
+          "right": 765,
+          "width": 408
+        },
+        {
+          "left": 357,
+          "right": 765,
+          "width": 408
+        },
+        {
+          "left": 357,
+          "right": 765,
+          "width": 408
+        },
+        {
+          "left": 357,
+          "right": 765,
+          "width": 408
+        },
+        {
+          "left": 357,
+          "right": 765,
+          "width": 408
+        }
+      ],
+      "collapsedByDefault": true,
+      "oneControl": true
+    },
+    {
+      "width": 600,
+      "bounds": [
+        {
+          "left": 75,
+          "right": 310,
+          "width": 235
+        },
+        {
+          "left": 322,
+          "right": 557,
+          "width": 235
+        },
+        {
+          "left": 75,
+          "right": 310,
+          "width": 235
+        },
+        {
+          "left": 322,
+          "right": 557,
+          "width": 235
+        },
+        {
+          "left": 75,
+          "right": 310,
+          "width": 235
+        },
+        {
+          "left": 322,
+          "right": 557,
+          "width": 235
+        }
+      ],
+      "collapsedByDefault": true,
+      "oneControl": true
+    },
+    {
+      "width": 390,
+      "bounds": [
+        {
+          "left": 75,
+          "right": 347,
+          "width": 272
+        },
+        {
+          "left": 75,
+          "right": 347,
+          "width": 272
+        },
+        {
+          "left": 75,
+          "right": 347,
+          "width": 272
+        },
+        {
+          "left": 75,
+          "right": 347,
+          "width": 272
+        },
+        {
+          "left": 75,
+          "right": 347,
+          "width": 272
+        },
+        {
+          "left": 75,
+          "right": 347,
+          "width": 272
+        }
+      ],
+      "collapsedByDefault": true,
+      "oneControl": true
+    }
+  ],
+  "submittedJobs": false,
+  "payloadChecked": true,
+  "optOutNull": true,
+  "sfxOverrideVisible": true,
+  "sfxKeepRestoresBase": true,
+  "pageErrors": []
+}

@@ -1,0 +1,37 @@
+{
+  "fullBroll": true,
+  "freshAsr": true,
+  "inputTranscriptMissing": true,
+  "transcript": {
+    "engine": "whisper.cpp",
+    "language": "vi",
+    "words": 423,
+    "createdAt": "2026-11-05T00:55:40.784Z"
+  },
+  "dir": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-2",
+  "startedAt": "2026-11-05T00:54:22.044Z",
+  "finishedAt": "2026-11-05T00:59:01.336Z",
+  "status": "done",
+  "error": null,
+  "completionState": "awaiting-review",
+  "template": "chungauto-factory-quang-cao-v50",
+  "segments": 5,
+  "texts": 12,
+  "blocks": 2,
+  "brolls": 4,
+  "audio": {
+    "voice": 1,
+    "music": "kit:ambient-pad",
+    "musicVolume": 0.1,
+    "sfx": [],
+    "sfxVolume": 0.25,
+    "autoSfx": true,
+    "sfxLevel": "vua",
+    "duckSourceSpeech": true,
+    "duckLevel": 0.45,
+    "duckFade": 0.22,
+    "musicFadeIn": 1.2,
+    "musicFadeOut": 2
+  },
+  "scope": "Real Codex worker with fresh Vietnamese local ASR and copied QA sources. Not NAS intake or full audiovisual acceptance."
+}

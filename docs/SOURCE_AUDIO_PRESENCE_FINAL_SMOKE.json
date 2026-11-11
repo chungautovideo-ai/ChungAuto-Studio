@@ -1,0 +1,48 @@
+{
+  "project": "workspace/content/2026-11-05/qa-in-e02b26",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-in-e02b26\\renders\\qa-in-e02b26-final.mp4",
+  "contact": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-in-e02b26\\contact.jpg",
+  "frames": [
+    {
+      "time": 0.3,
+      "r": 253,
+      "g": 0,
+      "b": 0
+    },
+    {
+      "time": 0.433333,
+      "r": 111,
+      "g": 0,
+      "b": 138
+    },
+    {
+      "time": 0.533333,
+      "r": 0,
+      "g": 0,
+      "b": 253
+    },
+    {
+      "time": 1.1,
+      "r": 0,
+      "g": 0,
+      "b": 253
+    },
+    {
+      "time": 1.2,
+      "r": 253,
+      "g": 0,
+      "b": 0
+    }
+  ],
+  "integrity": {
+    "bytes": 7541,
+    "sha256": "d99d9bed0b805210927fa2032fbf15b3c9b8a57685f08677ac09dd7a212ad94d"
+  },
+  "videoOnly": true,
+  "sourcesLackAudioMetadata": true,
+  "brollAudioVol": 1,
+  "outputAudio": false,
+  "projectUnchanged": true,
+  "browserVerified": false,
+  "scope": "Synthetic red/blue final validates transition timing and end visibility only; not real product readability, full editor UI or audio quality."
+}

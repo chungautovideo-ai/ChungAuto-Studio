@@ -1,0 +1,39 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-short-music-final-2",
+  "saved": "workspace/content/2026-11-05/contentos-qa-short-music-final-2/renders/contentos-qa-short-music-final-2-final.mp4",
+  "actualFinalArtifact": true,
+  "quality": "final",
+  "sourceMusicDuration": 1,
+  "totalDuration": 5,
+  "musicTags": 203,
+  "sourceBoundsValid": true,
+  "measurements": {
+    "afterFirstLoop": 0.2696908286090262,
+    "duringOutro": 0.16374804963154319,
+    "nearEnd": 0.009012399420994915
+  },
+  "sha256": "911fc91f4f6e41411b897ac2ef1543e31289954d2726bfc205583ce2505ba577",
+  "bytes": 159232,
+  "snapshotId": "a96f71ca-0656-44c2-bd99-4723a91ca79a",
+  "audioLoudness": {
+    "readOnly": true,
+    "stream": "first-audio-stream",
+    "method": "FFmpeg loudnorm input measurements",
+    "integratedLufs": -14.8,
+    "truePeakDbtp": -10.28,
+    "loudnessRangeLu": 2.3,
+    "thresholdLufs": -25.19,
+    "silent": false,
+    "reference": {
+      "integratedLufs": -14,
+      "truePeakDbtp": -1.5
+    },
+    "warnings": [],
+    "listened": false,
+    "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+  },
+  "integrityVerified": true,
+  "noPaidProvider": true,
+  "limits": "Synthetic tone final artifact and sampled RMS from saved render snapshot; not listening acceptance, real music transition quality or every preview/CapCut editor behavior.",
+  "actualHTTPFinalRender": true
+}

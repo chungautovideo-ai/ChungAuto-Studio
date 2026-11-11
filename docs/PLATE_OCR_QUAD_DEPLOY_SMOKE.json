@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-11-05T14:03:41.4445172+07:00",
+  "previousPID": 12560,
+  "newPID": 36212,
+  "dispatcherBefore": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "resourcesBefore": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "mediaWorkersBefore": 0,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "staticQuadHelper": true,
+  "scope": "Idle-verified backend restart for OCR quad validation; no project-context change or real UI acceptance"
+}

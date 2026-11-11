@@ -1,0 +1,16 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';import {spawn,execFileSync} from 'node:child_process';import {verifyArtifact} from '../src/services/artifact-integrity.mjs';
+const worker=JSON.parse(fs.readFileSync('docs/REAL_CODEX_BROLL_ENTRANCE_SMOKE.json'));assert.equal(worker.status,'done');const base=JSON.parse(fs.readFileSync(path.join(worker.project,'project.json'))),broll=base.brolls.find(b=>b.id==='b-man'),before=fs.readFileSync(path.join(worker.project,'project.json')),outputs=[];
+for(const duration of [.3,.1]){
+ const relative='workspace/content/2026-11-05/qa-screen-'+crypto.randomBytes(3).toString('hex'),dir=path.resolve(relative);fs.mkdirSync(path.join(dir,'inputs'),{recursive:true});
+ for(const src of [base.source.video,broll.src])fs.copyFileSync(path.join(worker.project,src),path.join(dir,src));
+ const p={title:'QA cảnh màn hình · fade '+duration,source:base.source,brand:base.brand,camera:base.camera,segments:[{id:'sample',in:broll.at-.5,out:broll.at+1.5}],brolls:[{...broll,tInDuration:duration}],captions:{enabled:false},audio:{voice:0,music:'',sfx:'tat'}};
+ const file=path.join(dir,'project.json');fs.writeFileSync(file,JSON.stringify(p,null,2));const frozen=fs.readFileSync(file),log=fs.createWriteStream(path.join(dir,'render.log')),child=spawn(process.execPath,['editor/tools/xuat-video.mjs',relative,'--quality','final'],{windowsHide:true,stdio:['ignore','pipe','pipe']});child.stdout.pipe(log);child.stderr.pipe(log);console.log('Rendering fade '+duration+' PID '+child.pid);
+ await new Promise((resolve,reject)=>{child.once('error',reject);child.once('close',code=>code===0?resolve():reject(Error('Render exit'+code+' '+dir+'/render.log')));});
+ const status=JSON.parse(fs.readFileSync(path.join(dir,'work/render.json'))),output=status.saved,integrity=verifyArtifact(output,status);assert.deepEqual(fs.readFileSync(file),frozen);const frames=[];
+ for(const time of [.55,.65,.85,1.1]){const jpg=path.join(dir,'frame-'+time+'.jpg');execFileSync('ffmpeg',['-nostdin','-v','error','-ss',String(time),'-i',output,'-frames:v','1','-vf','scale=270:480',jpg],{windowsHide:true});frames.push({time,file:jpg});}
+ outputs.push({project:relative,output,duration,integrity,frames});
+}
+assert.deepEqual(fs.readFileSync(path.join(worker.project,'project.json')),before);
+// Build the contact from the exact saved JPEGs rather than re-sampling another clock.
+const contact=path.resolve('docs/BROLL_ENTRANCE_PRODUCT_CONTACT.jpg'),args=['-nostdin','-v','error','-y'];for(const item of outputs)for(const f of item.frames)args.push('-i',f.file);args.push('-filter_complex','[0:v][1:v][2:v][3:v]hstack=inputs=4[a];[4:v][5:v][6:v][7:v]hstack=inputs=4[b];[a][b]vstack','-frames:v','1',contact);execFileSync('ffmpeg',args,{windowsHide:true,maxBuffer:1048576});
+const evidence={workerProject:worker.project,outputs,contact,workerProjectUnchanged:true,actualProductSources:true,secondsPerOutput:2,scope:'Two isolated final2s excerpts using real copied Q2 screen/A-roll; no captions/graphics/music/SFX and voice volume0. Sparse frames do not establish screen readability, action comprehension, full timeline or audio quality.'};fs.writeFileSync('docs/BROLL_ENTRANCE_PRODUCT_FINAL_SMOKE.json',JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify(evidence));

@@ -1,0 +1,4 @@
+# Nơi ContentOS tìm runtime/model (Node, FFmpeg, Whisper, Python, SAM2…) trước khi tải từ internet.
+# Mỗi dòng một thư mục gốc của một bản ContentOS đã cài đủ (cùng cấu trúc tools\, editor\node_modules…).
+# Dòng đầu tiên có đủ phần còn thiếu sẽ được dùng. Bản đang chạy tự bị bỏ qua.
+\\chungauto\Quay Dựng 2\STUDIO AI\contentos

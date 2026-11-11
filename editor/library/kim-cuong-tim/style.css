@@ -1,0 +1,15 @@
+/* Mẫu "Kim Cương Tím" — "N lý do / N sai lầm": chữ trắng phát sáng ở ngực, huy hiệu kim cương icon viền trắng phát sáng,
+   bảng xanh đêm với số cực lớn mờ + huy hiệu + tên mục, khung viền trắng phát sáng ôm người, danh sách nút kính viền trắng. Tiền tố kc-. */
+.kc{position:absolute;left:0;right:0;top:var(--kc-y,1040px);display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1;pointer-events:none}
+.kc .n{font-family:"Inter Tight",sans-serif;font-weight:500;font-size:var(--kc-s,48px);color:#fff;text-shadow:0 0 12px rgba(255,255,255,.6)}
+.kc .l{font-family:"Inter Tight",sans-serif;font-weight:800;font-size:var(--kc-l,92px);color:#fff;letter-spacing:-.02em;text-shadow:0 0 10px rgba(255,255,255,.9),0 0 30px rgba(200,180,255,.7),0 3px 10px rgba(0,0,0,.3)}
+.kc-kc{position:absolute;left:50%;top:var(--kc-y,700px);width:var(--kc-d,240px);height:var(--kc-d,240px);margin-left:calc(var(--kc-d,240px) / -2);transform:rotate(45deg);border-radius:30px;
+  background:linear-gradient(135deg,#5b3ad8,#2a1680);border:6px solid #fff;box-shadow:0 0 18px rgba(255,255,255,.9),0 0 50px rgba(150,120,255,.7);display:flex;align-items:center;justify-content:center}
+.kc-kc i{transform:rotate(-45deg);font-style:normal;font-size:calc(var(--kc-d,240px) * .48);line-height:1}
+.kc-kc.mo{opacity:.35;border-color:rgba(255,255,255,.7)}
+.kc-bang{position:absolute;inset:0;background:radial-gradient(70% 60% at 50% 45%,#1d2350,#0a0d22 75%)}
+.kc-so{position:absolute;left:0;right:0;top:var(--kc-y,260px);text-align:center;font-family:"Inter Tight",sans-serif;font-weight:800;font-size:900px;line-height:1;color:rgba(120,130,190,.16)}
+.kc-ten{position:absolute;left:0;right:0;top:var(--kc-ty,1020px);text-align:center;font-family:"Inter Tight",sans-serif;font-weight:400;font-size:74px;color:#fff;text-shadow:0 0 14px rgba(255,255,255,.55)}
+.kc-khung{position:absolute;left:var(--kc-x,70px);right:var(--kc-x,70px);top:var(--kc-ky,90px);bottom:var(--kc-kb,110px);border:8px solid #fff;border-radius:12px;box-shadow:0 0 22px rgba(255,255,255,.9),0 0 60px rgba(180,160,255,.6),inset 0 0 22px rgba(255,255,255,.5)}
+.kc-ds{position:absolute;left:var(--kc-x,200px);right:var(--kc-x,200px);top:var(--kc-y,620px);display:flex;flex-direction:column;gap:32px}
+.kc-ds b{display:block;padding:24px 0;border-radius:12px;border:4px solid #fff;background:rgba(80,70,200,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);text-align:center;font-family:"Inter Tight",sans-serif;font-weight:400;font-size:62px;color:#fff;box-shadow:0 0 18px rgba(255,255,255,.7)}

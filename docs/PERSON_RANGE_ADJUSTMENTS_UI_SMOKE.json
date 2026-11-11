@@ -1,0 +1,13 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-range-adjustments-5",
+  "previousRealMasks": true,
+  "noNewInference": true,
+  "twoRanges": true,
+  "globalUnchanged": true,
+  "selectionReadOnly": true,
+  "range45UndoRedoSaveReopen": true,
+  "resetKeepsMasks": true,
+  "explicitZero": true,
+  "pageErrors": [],
+  "scope": "Copied6s QA source and prior MediaPipe/SAM2 masks, same speaker; no new inference or multi-person acceptance"
+}

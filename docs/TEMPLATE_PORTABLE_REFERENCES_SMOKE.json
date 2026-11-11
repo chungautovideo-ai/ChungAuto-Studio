@@ -1,0 +1,12 @@
+{
+  "id": "qa-portable-9738265a-8293-40e8-a529-f758edaa7ca3",
+  "httpImport": true,
+  "referenceCount": 4,
+  "presets": 11,
+  "snapshotGuideReadable": true,
+  "missingReferenceRejectedBeforeOverwrite": true,
+  "artifact": "workspace/exports/chungauto-creative-v38.zip",
+  "artifactSha256": "12135370430d0c5c8914e3073f4a5b069c4ccdd83118d1d38ffa8afd7578fbdc",
+  "noUserProjectModified": true,
+  "externalAssetsBundled": false
+}

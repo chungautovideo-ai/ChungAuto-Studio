@@ -1,0 +1,27 @@
+{
+  "assets": [
+    {
+      "file": "editor/ui/app.js",
+      "status": 200,
+      "sha256": "c3444165d4e963a7002656d75ba0432020e525b068ed9e9071b67e8f6079f59d",
+      "matchesDisk": true
+    },
+    {
+      "file": "editor/ui/contentos-precision-range.js",
+      "status": 200,
+      "sha256": "929f36ea47db7cb2e14e81d555a237250e83404237fe53779107ca38b3c51edc",
+      "matchesDisk": true
+    }
+  ],
+  "skill": {
+    "file": "workspace/exports/chungauto-creative-v50-beauty-precision.zip",
+    "sha256": "ac876818a2c9b5cb3ae6c5cae5e95a2b4c2683c183da4d12c1158de57905d11c",
+    "presets": 11,
+    "references": 5,
+    "precisionScopeGuidance": true
+  },
+  "staticOnly": true,
+  "serverRestartRequired": false,
+  "browserVerified": false,
+  "limits": "HTTP bytes/syntax and unit state checks; no new browser layout, keyboard, actual Undo/Save/reopen or final-render acceptance."
+}

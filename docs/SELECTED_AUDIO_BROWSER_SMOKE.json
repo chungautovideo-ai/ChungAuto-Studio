@@ -1,0 +1,21 @@
+{
+  "project": "workspace/content/2026-11-03/contentos-smoke-itempatch-5",
+  "sizes": [
+    {
+      "width": 1280,
+      "studioSelectedPayload": true,
+      "omitSelection": true,
+      "spaceSelectionRetention": true,
+      "chatHeaderFits": true
+    },
+    {
+      "width": 1920,
+      "studioSelectedPayload": true,
+      "omitSelection": true,
+      "spaceSelectionRetention": true,
+      "chatHeaderFits": true
+    }
+  ],
+  "noProviderDispatched": true,
+  "pageErrors": []
+}

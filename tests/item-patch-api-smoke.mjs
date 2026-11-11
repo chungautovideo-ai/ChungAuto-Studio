@@ -1,0 +1,29 @@
+import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';import {spawn,execFileSync} from 'node:child_process';
+let patchCalls=0,selectionDelivered=false;
+const gateway=http.createServer(async(req,res)=>{let raw='';for await(const chunk of req)raw+=chunk;const body=JSON.parse(raw);const read=body.messages.find(m=>m.tool_call_id==='read-one'),patched=body.messages.find(m=>m.tool_call_id==='patch-one');let message;
+if(!read){const sent=JSON.parse(body.messages.find(m=>m.role==='user').content).context.selectedItem;assert.equal(sent.group,'texts');assert.equal(sent.id,'target');assert.equal(sent.version.length,64);assert.equal(sent.supported,true);assert.equal(JSON.stringify(sent).includes('FORGED'),false);selectionDelivered=true;}
+if(!read)message={tool_calls:[{id:'read-one',type:'function',function:{name:'read_edit_item',arguments:JSON.stringify({group:'texts',id:'target'})}}]};
+else if(!patched){const item=JSON.parse(read.content);assert.equal(item.id,'target');assert.equal(item.version.length,64);message={tool_calls:[{id:'patch-one',type:'function',function:{name:'patch_edit_item',arguments:JSON.stringify({group:'texts',id:'target',version:item.version,changes:{title:'PATCH VERIFIED'}})}}]};}
+else {const result=JSON.parse(patched.content);assert.equal(result.ok,true);patchCalls++;message={content:'Đã sửa đúng một thành phần.'};}
+res.setHeader('Content-Type','application/json');res.end(JSON.stringify({choices:[{finish_reason:message.tool_calls?'tool_calls':'stop',message}],usage:{total_tokens:10}}));});await new Promise(r=>gateway.listen(0,'127.0.0.1',r));
+const base='http://127.0.0.1:5196',server=spawn(process.execPath,['editor/server.mjs','--home','--port','5196'],{windowsHide:true,stdio:'ignore'}),delay=ms=>new Promise(r=>setTimeout(r,ms));
+async function call(url,body,headers={}){const r=await fetch(base+url,body?{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)}:{headers});const value=await r.json();assert.ok(r.ok,JSON.stringify(value));return value;}
+let previous,workspace;
+try{
+for(let i=0;i<60;i++){try{await call('/api/ping');break;}catch{await delay(100);}}
+previous=(await call('/api/v1/workspaces')).activeId;await call('/api/v1/workspaces',{name:'ContentOS-Smoke ItemPatch '+Date.now()});workspace=(await call('/api/v1/connections/llm')).workspaceId;
+await call('/api/v1/connections/llm',{workspaceId:workspace,baseUrl:'http://127.0.0.1:'+gateway.address().port+'/v1',model:'fixture-patch'});
+const upload=await fetch(base+'/api/new-project?file=fixture.mp4&name=ContentOS-Smoke-ItemPatch&noasr=1',{method:'POST',body:fs.readFileSync(new URL('./fixture.mp4',import.meta.url))});assert.ok(upload.ok);const created=await upload.json(),file=path.join(created.dir,'project.json'),project=JSON.parse(fs.readFileSync(file));
+project.texts=[{id:'target',title:'BEFORE',at:0,dur:1,x:0,y:400,size:80},{id:'sibling',title:'KEEP',at:1,dur:1,x:0,y:500,size:70}];project.audio={...project.audio,autoSfx:false,sfxLevel:'tat',music:'',sfx:[]};fs.writeFileSync(file,JSON.stringify(project,null,2)+'\n');
+const context=await call('/api/project');
+const beforeRejected=fs.readFileSync(file,'utf8');
+for(const selection of [{group:'texts',id:'missing'},{group:'texts',id:'target',version:'stale'}]){
+ const rejected=await fetch(base+'/api/ai-revise',{method:'POST',headers:{'Content-Type':'application/json','X-ContentOS-Project':created.dir,'X-ContentOS-Revision':context.revision},body:JSON.stringify({instruction:'Reject invalid selection',execution:{mode:'api',agent:'gateway'},context:{selection}})});
+ assert.equal(rejected.status,400);assert.equal(fs.readFileSync(file,'utf8'),beforeRejected);
+}
+const queued=await call('/api/ai-revise',{instruction:'Chỉ sửa target, giữ sibling.',context:{tab:'texts',item:{id:'target',title:'FORGED'}},completionMode:'auto-export',execution:{mode:'api',agent:'gateway'}},{'X-ContentOS-Project':created.dir,'X-ContentOS-Revision':context.revision});
+let state;for(let i=0;i<240;i++){state=JSON.parse(fs.readFileSync(path.join(queued.job.dir,'work/ai-job.json')));if(['exported','export-error'].includes(state.completionState)||state.status==='error')break;await delay(500);}
+assert.equal(state.completionState,'exported',JSON.stringify(state));assert.equal(patchCalls,1);const saved=JSON.parse(fs.readFileSync(file));assert.equal(saved.texts[0].title,'PATCH VERIFIED');assert.equal(saved.texts[0].x,project.texts[0].x);assert.deepEqual(saved.texts[1],project.texts[1]);assert.deepEqual(saved.audio,project.audio);assert.deepEqual(saved.source,project.source);
+assert.match(fs.readFileSync(path.join(created.dir,'index.html'),'utf8'),/PATCH.*VERIFIED/s);assert.ok(fs.existsSync(state.exportOutput));const probe=JSON.parse(execFileSync('ffprobe',['-v','error','-show_entries','format=duration:stream=codec_type,width,height','-of','json',state.exportOutput],{encoding:'utf8',windowsHide:true}));assert.ok(probe.streams.some(s=>s.codec_type==='video'&&s.width===1080&&s.height===1920));
+const proof={project:created.dir,workspaceId:workspace,syntheticGatewayOnly:true,actualReviseEndpoint:true,readVersionPatch:true,selectionDelivered,rejectedInvalidSelectionBeforeSave:true,siblingAndSourceAndAudioPreserved:true,previewRebuilt:true,autoExportFinal:true,output:state.exportOutput,probe,limits:'No actual model, browser submission, OCR/pixel text check or real production footage.'};fs.writeFileSync('docs/ITEM_PATCH_API_SMOKE.json',JSON.stringify(proof,null,2)+'\n');console.log(proof);
+}finally{if(workspace)await fetch(base+'/api/v1/connections/llm',{method:'DELETE',headers:{'Content-Type':'application/json'},body:JSON.stringify({workspaceId:workspace})}).catch(()=>{});if(previous)await call('/api/v1/workspaces/active',{id:previous});server.kill();gateway.closeAllConnections();await new Promise(r=>gateway.close(r));}

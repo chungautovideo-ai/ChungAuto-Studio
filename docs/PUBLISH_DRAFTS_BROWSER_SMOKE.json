@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "sizes": [
+    {
+      "width": 1280,
+      "dialogFits": true
+    },
+    {
+      "width": 1920,
+      "dialogFits": true
+    }
+  ],
+  "created": {
+    "format": "9:16",
+    "independentMedia": true
+  },
+  "publishDrafts": {
+    "savedPerChannel": true,
+    "dialogFits": true,
+    "aiFixturePreview": true,
+    "explicitSaveRequired": true,
+    "coverSelectionAndPreview": true,
+    "coverRetainedAfterGeneration": true
+  },
+  "batch": {
+    "count": 2,
+    "deduplicated": true,
+    "reopenedAfterReload": true,
+    "dialogFits": true
+  }
+}

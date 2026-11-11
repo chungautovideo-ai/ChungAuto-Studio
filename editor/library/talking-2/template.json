@@ -1,0 +1,955 @@
+{
+  "id": "talking-2",
+  "name": "Neon cam & kính sang trọng",
+  "version": 1,
+  "tier": "free",
+  "order": 5,
+  "isNew": true,
+  "date": "2026-10-23",
+  "tags": [
+    "Talking head",
+    "Chữ neon cam",
+    "Đồ hoạ kính",
+    "2 khung máy"
+  ],
+  "industries": [
+    "Video talking head",
+    "Thương hiệu cá nhân"
+  ],
+  "description": "Chữ cam phát sáng gõ dần theo lời, đồ hoạ ánh sáng quanh người (khung lục giác, vòng tia sáng, số kính khổng lồ sau đầu), thẻ vòm kính mờ, bong bóng câu hỏi, số 3D cam, vòm thương hiệu — xen kẽ khung gần / khung xa. Hợp quảng cáo dịch vụ, thương hiệu cá nhân, chuyên gia.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Neon cam & kính sang trọng",
+    "fontTitle": "Alexandria",
+    "fontSub": "Alexandria",
+    "fontLabel": "Alexandria",
+    "c1": "#FE9545",
+    "c2": "#FDC787",
+    "c3": "#F2763A",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Alexandria:wght@300;400;600;700;800",
+      "Josefin Sans:wght@400",
+      "Oswald:wght@500",
+      "Great Vibes"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 54,
+      "color": "#FFFFFF",
+      "active": "#FE9545",
+      "uppercase": false
+    },
+    "css": ".t2-txt{position:absolute;left:40px;right:40px;top:var(--t2-y,930px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}\n.t2-ttl{font-family:var(--f-title);font-weight:700;font-size:var(--t2-size,118px);line-height:1.25;letter-spacing:-.01em;white-space:nowrap;\n  background:linear-gradient(180deg,#FE9545 0%,#FFA75A 45%,#FDC787 100%);-webkit-background-clip:text;background-clip:text;color:transparent;\n  filter:drop-shadow(0 0 10px rgba(255,140,60,.75)) drop-shadow(0 0 34px rgba(255,120,40,.45))}\n.t2-sub{font-family:var(--f-sub);font-weight:300;font-size:var(--t2-sub,46px);line-height:1.3;color:rgba(255,255,255,.94);text-shadow:0 2px 10px rgba(0,0,0,.45);white-space:nowrap}\n.t2-sub b{font-weight:600}\n.t2-bar{display:inline-block;height:.13em;width:0;vertical-align:.18em;border-radius:.07em;background:linear-gradient(90deg,#FFB271,#FE9545)}\n.t2-type{clip-path:inset(-30% 0 -30% 0)}\n.t2-hex{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible}\n.t2-hex .glint{stroke:#FFF3E0;stroke-width:6;stroke-dasharray:.07 .93;filter:drop-shadow(0 0 8px #FFD2A6)}\n.t2-hex path,.t2-hex polygon{fill:none;stroke:#FF9A4A;stroke-width:4;filter:drop-shadow(0 0 6px #FF8A3D) drop-shadow(0 0 18px rgba(255,120,40,.7))}\n.t2-hex .dash{stroke:#fff;stroke-width:2;stroke-dasharray:6 10;opacity:.7;filter:none}\n.t2-hex circle{fill:#FFD2A6;filter:drop-shadow(0 0 6px #FF9A4A)}\n.t2-ring{position:absolute;left:150px;top:236px;width:780px;height:780px}\n.t2-ring svg{width:100%;height:100%;overflow:visible}\n.t2-ring .tk{fill:none;stroke:#FFE2C4;stroke-width:5;stroke-dasharray:3 26;filter:drop-shadow(0 0 5px #FF9A4A)}\n.t2-ring .ln{fill:none;stroke:#FF9A4A;stroke-width:2.5;opacity:.85;filter:drop-shadow(0 0 8px #FF8A3D)}\n.t2-ring .dt{fill:#FFF1E0;filter:drop-shadow(0 0 6px #FFB271)}\n.t2-icon{position:absolute;left:50%;top:var(--t2-iy,1560px);width:230px;height:230px;margin-left:-115px;color:#FFB271;filter:drop-shadow(0 0 12px rgba(255,140,60,.8))}\n.t2-icon svg{width:100%;height:100%}\n.t2-corner{position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.10);border:2px solid rgba(255,255,255,.35);\n  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 0 40px rgba(255,255,255,.12)}\n.t2-corner.tr{right:-190px;top:-190px}.t2-corner.bl{left:-190px;bottom:-110px}\n.t2-corner b{position:absolute;font-family:var(--f-title);font-weight:700;font-size:150px;line-height:1;color:#fff;text-shadow:0 0 22px rgba(255,255,255,.55)}\n.t2-corner.tr b{left:70px;bottom:60px}.t2-corner.bl b{right:90px;top:70px}\n.t2-3d{position:absolute;font-family:var(--f-title);font-weight:800;font-size:var(--t2-3ds,330px);line-height:1;letter-spacing:-.04em;color:#F38A3F;\n  background:linear-gradient(180deg,#FFB070 0%,#F2843A 55%,#C9601F 100%);-webkit-background-clip:text;background-clip:text;color:transparent;\n  filter:drop-shadow(5px 5px 0 #A8501B) drop-shadow(5px 5px 0 #8E4316) drop-shadow(8px 14px 18px rgba(0,0,0,.55))}\n.t2-ask{position:absolute;left:50%;top:var(--t2-ay,1060px);transform:translateX(-50%);min-width:560px;padding:40px 46px 30px;border-radius:70px;background:#fff;\n  box-shadow:0 0 0 10px rgba(255,255,255,.25),0 18px 50px rgba(0,0,0,.45);text-align:center;font-family:var(--f-sub);color:#1B1B1B}\n.t2-ask .q{position:absolute;left:50%;top:-50px;width:96px;height:96px;margin-left:-48px;border-radius:50%;background:#F07A3A;color:#fff;\n  font-family:var(--f-title);font-weight:700;font-size:58px;line-height:96px;box-shadow:0 0 0 8px rgba(240,122,58,.25)}\n.t2-ask .l1{font-weight:400;font-size:34px;white-space:nowrap}\n.t2-ask .l2{font-weight:700;font-size:40px;margin-top:4px;white-space:nowrap}\n.t2-arch{position:absolute;left:194px;width:692px;top:var(--t2-cy,1138px);height:900px;border-radius:346px 346px 0 0;\n  background:linear-gradient(180deg,rgba(255,255,255,.20),rgba(255,255,255,.08));border:2px solid rgba(255,255,255,.38);border-bottom:0;\n  -webkit-backdrop-filter:blur(18px) saturate(1.1);backdrop-filter:blur(18px) saturate(1.1);display:flex;flex-direction:column;align-items:center;padding-top:110px;gap:8px}\n.t2-arch.down{top:auto;bottom:var(--t2-cb,1290px);border-radius:0 0 346px 346px;border:2px solid rgba(255,255,255,.38);border-top:0;justify-content:flex-end;padding:0 0 230px}\n.t2-arch .s{font-family:var(--f-sub);font-weight:300;font-size:46px;color:#fff}\n.t2-arch .k{font-family:var(--f-title);font-weight:700;font-size:96px;line-height:1.2;white-space:nowrap;background:linear-gradient(180deg,#FE9545,#FDC787);\n  -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 10px rgba(255,140,60,.7))}\n.t2-arch .x{width:170px;height:170px;margin-top:100px;position:relative}\n.t2-arch .x::before,.t2-arch .x::after{content:\"\";position:absolute;left:50%;top:50%;width:190px;height:30px;margin:-15px 0 0 -95px;border-radius:15px;\n  background:#FF9A4A;box-shadow:0 0 18px rgba(255,140,60,.8)}\n.t2-arch .x::before{transform:rotate(45deg)}.t2-arch .x::after{transform:rotate(-45deg)}\n.t2-pill{display:inline-block;margin-top:34px;padding:16px 150px 22px;border-radius:70px;background:linear-gradient(180deg,rgba(40,30,24,.55),rgba(20,14,10,.55));\n  border:3px solid rgba(255,214,160,.75);box-shadow:0 0 22px rgba(255,170,90,.45),inset 0 0 18px rgba(255,214,160,.2);\n  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-family:var(--f-title);font-weight:600;font-size:66px;color:#fff;white-space:nowrap}\n.t2-brand{position:absolute;left:-420px;right:-420px;top:var(--t2-by,1426px);height:1400px;border-radius:50% 50% 0 0;\n  background:radial-gradient(120% 60% at 50% 0%,#FFA766 0%,#F57A35 45%,#E2672A 100%);box-shadow:0 -10px 50px rgba(255,120,40,.45);\n  display:flex;flex-direction:column;align-items:center;padding-top:150px}\n.t2-brand b{font-family:\"Josefin Sans\",var(--f-label);font-weight:400;font-size:var(--t2-bs,178px);line-height:1;letter-spacing:.02em;color:#fff;white-space:nowrap}\n.t2-brand i{display:block;width:620px;height:3px;margin-top:40px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent)}\n.t2-social{position:absolute;left:50%;top:var(--t2-sy,1024px);transform:translateX(-50%);height:90px;padding:0 34px;border-radius:16px;background:#F2763A;\n  display:flex;align-items:center;gap:18px;color:#fff;font-family:var(--f-label);font-weight:500;font-size:42px;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.35)}\n.t2-social::after{content:\"\";position:absolute;left:50%;bottom:-14px;margin-left:-14px;border:14px solid transparent;border-bottom:0;border-top-color:#F2763A}\n.t2-social svg{width:46px;height:46px}\n.t2-metal{position:absolute;left:130px;top:var(--t2-my,350px);font-family:\"Oswald\",var(--f-label);font-weight:500;font-size:250px;line-height:.86;letter-spacing:-.01em;\n  text-transform:lowercase;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(190,170,150,.18) 60%,rgba(255,230,200,.45));-webkit-background-clip:text;background-clip:text;color:transparent;\n  -webkit-text-stroke:2px rgba(255,240,225,.75);filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))}\n.t2-metal span{display:block}\n.t2-metal .m2{transform:scaleY(1.18);transform-origin:50% 0}\n.t2-frame{position:absolute;left:108px;top:350px;width:842px;height:580px}\n.t2-frame::before,.t2-frame::after{content:\"\";position:absolute;width:110px;height:110px;border:3px solid rgba(255,255,255,.8)}\n.t2-frame::before{right:0;top:0;border-left:0;border-bottom:0}.t2-frame::after{left:0;bottom:0;border-right:0;border-top:0}\n.t2-big{position:absolute;left:0;right:0;top:var(--t2-gy,170px);text-align:center;font-family:\"Oswald\",var(--f-title);font-weight:400;font-size:var(--t2-gs,800px);line-height:1;letter-spacing:-.02em;\n  color:rgba(255,255,255,.06);-webkit-text-stroke:5px rgba(255,236,215,.75);filter:drop-shadow(0 0 14px rgba(255,200,150,.35))}\n.t2-hand{position:absolute;left:0;right:0;top:var(--t2-hy,190px);text-align:center;font-family:\"Great Vibes\",cursive;font-size:var(--t2-hs,230px);line-height:1;color:#FF9A4A;\n  filter:drop-shadow(0 0 10px rgba(255,140,60,.8))}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1400,
+    "maxWords": 4,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "audio": {
+    "autoSfx": true,
+    "sfxVolume": 0.4,
+    "musicVolume": 0.05
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "chu-neon",
+      "name": "Chữ cam neon gõ dần",
+      "desc": "Tiêu đề cam phát sáng hiện như đang gõ, dòng phụ trắng gõ theo lời",
+      "img": "fx/chu-neon.jpg",
+      "at": 1.4
+    },
+    {
+      "id": "luc-giac",
+      "name": "Lục giác sáng sau đầu",
+      "desc": "Khung lục giác cam vẽ nét quanh đầu, vệt sáng chạy, nằm sau người",
+      "img": "fx/luc-giac.jpg",
+      "at": 1.6
+    },
+    {
+      "id": "vong-goc",
+      "name": "Vòng kính góc đếm số",
+      "desc": "2 vòng kính trượt vào từ 2 góc, số đếm lên",
+      "img": "fx/vong-goc.jpg",
+      "at": 2.9
+    },
+    {
+      "id": "so-3d",
+      "name": "Số khối 3D cam",
+      "desc": "Con số khối cam trượt vào từ mép khung",
+      "img": "fx/so-3d.jpg",
+      "at": 5.6
+    },
+    {
+      "id": "cau-hoi",
+      "name": "Bong bóng câu hỏi + vòng tia sáng",
+      "desc": "Bong bóng trắng có dấu ? cam, vòng tia sáng xoay quanh đầu",
+      "img": "fx/cau-hoi.jpg",
+      "at": 8.1
+    },
+    {
+      "id": "the-vom",
+      "name": "Thẻ vòm kính + dấu ✕",
+      "desc": "Thẻ kính mờ hình vòm trồi lên, chữ gõ dần, dấu ✕ cam phủ định",
+      "img": "fx/the-vom.jpg",
+      "at": 11.5
+    },
+    {
+      "id": "vien-kinh",
+      "name": "Viên kính từ khoá",
+      "desc": "Từ khoá cốt lõi trong viên kính viền vàng sáng",
+      "img": "fx/vien-kinh.jpg",
+      "at": 18.3
+    },
+    {
+      "id": "vom-thuong-hieu",
+      "name": "Vòm cam thương hiệu",
+      "desc": "Vòm cam trồi từ đáy khung với tên thương hiệu",
+      "img": "fx/vom-thuong-hieu.jpg",
+      "at": 19.3
+    },
+    {
+      "id": "anh-kim",
+      "name": "Chữ ánh kim + nhãn liên hệ",
+      "desc": "Chữ tiếng Anh ánh kim có khung góc, nhãn mạng xã hội cam",
+      "img": "fx/anh-kim.jpg",
+      "at": 22.8
+    },
+    {
+      "id": "so-kinh",
+      "name": "Số kính khổng lồ sau đầu",
+      "desc": "Con số viền kính khổng lồ sau người + chữ viết tay cam",
+      "img": "fx/so-kinh.jpg",
+      "at": 24.6
+    }
+  ],
+  "presets": [
+    {
+      "id": "k-a-txt",
+      "group": "chu",
+      "name": "Có những bác sĩ xây",
+      "desc": "Có những bác sĩ xây dựng khán giả chỉ trong 3 năm",
+      "dur": 3.05,
+      "html": "<div class=\"t2-txt\" style=\"--t2-y:880px;--t2-size:96px\"><div class=\"t2-ttl t2-type r0\">Có những bác sĩ</div><div class=\"t2-sub t2-type r1\">xây dựng khán giả chỉ trong 3 năm</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".r0",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.55,
+          "ease": "steps(11)",
+          "at": 0.17
+        },
+        {
+          "sel": ".r1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 1.1,
+          "ease": "steps(24)",
+          "at": 0.67
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-a-hex",
+      "group": "dohoa",
+      "name": "Lục giác",
+      "desc": "",
+      "dur": 3,
+      "html": "<svg class=\"t2-hex\" viewBox=\"0 0 1080 1920\"><polygon pathLength=\"1\" points=\"512,264 877,364 972,729 722,979 332,889 252,529\"/><polygon class=\"glint\" pathLength=\"1\" points=\"512,264 877,364 972,729 722,979 332,889 252,529\"/><path class=\"dash\" d=\"M547,397 L782,459 L837,689 L802,739\"/><circle cx=\"547\" cy=\"397\" r=\"6\"/><circle cx=\"782\" cy=\"459\" r=\"6\"/><circle cx=\"380\" cy=\"567\" r=\"6\"/></svg>",
+      "css": "",
+      "anim": [
+        {
+          "sel": "polygon",
+          "from": {
+            "strokeDasharray": "1",
+            "strokeDashoffset": 1
+          },
+          "to": {
+            "strokeDashoffset": 0
+          },
+          "dur": 0.7,
+          "ease": "power2.out",
+          "at": 0.05
+        },
+        {
+          "sel": ".glint",
+          "from": {
+            "strokeDashoffset": 0.1
+          },
+          "to": {
+            "strokeDashoffset": -0.6
+          },
+          "dur": 3,
+          "ease": "none",
+          "at": 0.05
+        },
+        {
+          "sel": ".dash,circle",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.4,
+          "stagger": 0.12,
+          "at": 0.05
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "behind",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-a-icon",
+      "group": "dohoa",
+      "name": "Huy hiệu",
+      "desc": "",
+      "dur": 1,
+      "html": "<div class=\"t2-icon\" style=\"--t2-iy:1500px\"><svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"56\" r=\"9\"/><path d=\"M33 86c2-11 9-16 17-16s15 5 17 16\"/><circle cx=\"24\" cy=\"62\" r=\"7\"/><path d=\"M10 88c1-8 6-12 13-12\"/><circle cx=\"76\" cy=\"62\" r=\"7\"/><path d=\"M90 88c-1-8-6-12-13-12\"/><path d=\"M50 6l16 6v12c0 10-7 16-16 19-9-3-16-9-16-19V12z\" fill=\"currentColor\" fill-opacity=\".25\"/><path d=\"M43 24l5 5 9-10\"/></svg></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-icon",
+          "from": {
+            "opacity": 0,
+            "y": 60,
+            "scale": 0.7
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "dur": 0.28,
+          "ease": "back.out(2)",
+          "at": 0.05
+        },
+        {
+          "sel": ".t2-icon",
+          "to": {
+            "opacity": 0,
+            "y": -40
+          },
+          "dur": 0.35,
+          "ease": "power1.in",
+          "at": 0.65
+        }
+      ],
+      "fields": [],
+      "sfx": "pop",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-a-num",
+      "group": "chu",
+      "name": "Số góc",
+      "desc": "1 1",
+      "dur": 1.26,
+      "html": "<div class=\"t2-corner tr\"><b class=\"n\">1</b></div><div class=\"t2-corner bl\"><b class=\"n\">1</b></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".tr",
+          "from": {
+            "x": 320,
+            "y": -320
+          },
+          "to": {
+            "x": 0,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "power3.out",
+          "at": 0.1
+        },
+        {
+          "sel": ".bl",
+          "from": {
+            "x": -320,
+            "y": 320
+          },
+          "to": {
+            "x": 0,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "power3.out",
+          "at": 0.1
+        },
+        {
+          "sel": ".n",
+          "count": [
+            1,
+            3
+          ],
+          "dur": 0.5,
+          "ease": "none",
+          "at": 0.1
+        }
+      ],
+      "fields": [],
+      "sfx": "whoosh",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-b-txt",
+      "group": "chu",
+      "name": "Còn bạn xây dựng chuyên",
+      "desc": "Còn bạn xây dựng chuyên môn suốt 20 năm",
+      "dur": 2.85,
+      "html": "<div class=\"t2-txt\" style=\"--t2-y:880px\"><div class=\"t2-ttl t2-type r0\">Còn bạn</div><div class=\"t2-sub t2-type r1\">xây dựng chuyên môn suốt 20 năm</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".r0",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.45,
+          "ease": "steps(5)",
+          "at": 0.09
+        },
+        {
+          "sel": ".r1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 1,
+          "ease": "steps(22)",
+          "at": 0.64
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-b-20",
+      "group": "chu",
+      "name": "Số 3D",
+      "desc": "20",
+      "dur": 0.89,
+      "html": "<div class=\"t2-3d\" style=\"left:30px;top:1180px\">20</div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-3d",
+          "from": {
+            "x": -400,
+            "opacity": 0
+          },
+          "to": {
+            "x": 0,
+            "opacity": 1
+          },
+          "dur": 0.32,
+          "ease": "power3.out",
+          "at": 0.05
+        }
+      ],
+      "fields": [],
+      "sfx": "boom",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-c-ring",
+      "group": "dohoa",
+      "name": "Vòng sáng",
+      "desc": "",
+      "dur": 3.05,
+      "html": "<div class=\"t2-ring\" style=\"left:389px;top:264px;width:712px;height:712px\"><svg viewBox=\"0 0 712 712\"><g class=\"rot\" style=\"transform-origin:356px 356px\"><circle class=\"tk\" cx=\"356\" cy=\"356\" r=\"330\" pathLength=\"360\"/><circle class=\"ln\" cx=\"356\" cy=\"356\" r=\"300\"/><circle class=\"dt\" cx=\"701.0\" cy=\"356.0\" r=\"5\"/><circle class=\"dt\" cx=\"620.3\" cy=\"577.8\" r=\"5\"/><circle class=\"dt\" cx=\"325.9\" cy=\"699.7\" r=\"5\"/><circle class=\"dt\" cx=\"57.2\" cy=\"528.5\" r=\"5\"/><circle class=\"dt\" cx=\"43.3\" cy=\"210.2\" r=\"5\"/><circle class=\"dt\" cx=\"296.1\" cy=\"16.2\" r=\"5\"/><circle class=\"dt\" cx=\"577.8\" cy=\"91.7\" r=\"5\"/></g></svg></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-ring",
+          "from": {
+            "opacity": 0,
+            "scale": 0.86
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.6,
+          "ease": "power2.out",
+          "at": 0.1
+        },
+        {
+          "sel": ".rot",
+          "from": {
+            "rotation": -25
+          },
+          "to": {
+            "rotation": 15
+          },
+          "dur": 3.05,
+          "ease": "none",
+          "at": 0.1
+        }
+      ],
+      "fields": [],
+      "sfx": "shimmer",
+      "layer": "behind",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-c-ask",
+      "group": "chu",
+      "name": "Câu hỏi",
+      "desc": "? Tại sao họ lại hiện diện online nhiều hơn bạn?",
+      "dur": 3,
+      "html": "<div class=\"t2-ask\" style=\"--t2-ay:1080px\"><div class=\"q\">?</div><div class=\"l1 t2-type\">Tại sao họ lại hiện diện</div><div class=\"l2 t2-type\">online nhiều hơn bạn?</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-ask",
+          "from": {
+            "opacity": 0,
+            "scale": 0.6
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.25,
+          "ease": "back.out(2)",
+          "at": 0.05
+        },
+        {
+          "sel": ".l1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 1,
+          "ease": "steps(12)",
+          "at": 0.07
+        },
+        {
+          "sel": ".l2",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.9,
+          "ease": "steps(10)",
+          "at": 0.92
+        }
+      ],
+      "fields": [],
+      "sfx": "pop",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-d-arch",
+      "group": "dohoa",
+      "name": "Thẻ vòm",
+      "desc": "Không hẳn vì họ có điều gì quan trọng hơn để nói",
+      "dur": 3.02,
+      "html": "<div class=\"t2-arch\" style=\"--t2-cy:1138px\"><div class=\"s t2-type\">Không hẳn vì</div><div class=\"k t2-type\">họ có điều gì</div><div class=\"s t2-type\">quan trọng hơn để nói</div><div class=\"x\"></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-arch",
+          "from": {
+            "y": 820
+          },
+          "to": {
+            "y": 0
+          },
+          "dur": 0.42,
+          "ease": "power3.out",
+          "at": 0.02
+        },
+        {
+          "sel": ".s:nth-child(1)",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.4,
+          "ease": "steps(6)",
+          "at": 0.14
+        },
+        {
+          "sel": ".k",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.5,
+          "ease": "steps(8)",
+          "at": 0.44
+        },
+        {
+          "sel": ".s:nth-child(3)",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.6,
+          "ease": "steps(12)",
+          "at": 1.35
+        },
+        {
+          "sel": ".x",
+          "from": {
+            "opacity": 0,
+            "scale": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.22,
+          "ease": "back.out(2.5)",
+          "at": 2.18
+        },
+        {
+          "sel": ".t2-arch",
+          "to": {
+            "y": 900
+          },
+          "dur": 0.25,
+          "ease": "power2.in",
+          "at": 2.77
+        }
+      ],
+      "fields": [],
+      "sfx": "boom",
+      "layer": "front",
+      "fx": "none",
+      "out": "none"
+    },
+    {
+      "id": "k-e-txt",
+      "group": "chu",
+      "name": "mà có thể vì họ",
+      "desc": "mà có thể vì họ biết cách xuất hiện",
+      "dur": 3.12,
+      "html": "<div class=\"t2-txt\" style=\"--t2-y:890px;--t2-size:84px\"><div class=\"t2-sub t2-type r0\">mà có thể vì họ</div><div class=\"t2-ttl t2-type r1\">biết cách xuất hiện</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".r0",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.5,
+          "ease": "steps(11)",
+          "at": 0.02
+        },
+        {
+          "sel": ".r1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.6,
+          "ease": "steps(14)",
+          "at": 1.01
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-f-txt",
+      "group": "chu",
+      "name": "Bạn đã có phần khó",
+      "desc": "Bạn đã có phần khó nhất kinh nghiệm",
+      "dur": 4.45,
+      "html": "<div class=\"t2-txt\" style=\"--t2-y:870px\"><div class=\"t2-ttl t2-type r0\">Bạn đã có</div><div class=\"t2-sub t2-type r1\">phần khó nhất</div><div class=\"t2-pill\">kinh nghiệm</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".r0",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.45,
+          "ease": "steps(6)",
+          "at": 0.11
+        },
+        {
+          "sel": ".r1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.5,
+          "ease": "steps(9)",
+          "at": 0.11
+        },
+        {
+          "sel": ".t2-pill",
+          "from": {
+            "opacity": 0,
+            "scale": 0.8
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.3,
+          "ease": "back.out(1.8)",
+          "at": 3.36
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-f-brand",
+      "group": "dohoa",
+      "name": "Vòm thương hiệu",
+      "desc": "AUTOSOCIAL",
+      "dur": 1.25,
+      "html": "<div class=\"t2-brand\" style=\"--t2-by:1426px;--t2-bs:128px\"><b>AUTOSOCIAL</b><i></i></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-brand",
+          "from": {
+            "y": 560
+          },
+          "to": {
+            "y": 0
+          },
+          "dur": 0.42,
+          "ease": "power3.out",
+          "at": 0.02
+        }
+      ],
+      "fields": [],
+      "sfx": "whoosh",
+      "layer": "front",
+      "fx": "none",
+      "out": "none"
+    },
+    {
+      "id": "k-g-txt",
+      "group": "chu",
+      "name": "Phần còn lại cứ để",
+      "desc": "Phần còn lại cứ để chúng tôi lo",
+      "dur": 1.64,
+      "html": "<div class=\"t2-txt\" style=\"--t2-y:230px;--t2-size:104px\"><div class=\"t2-ttl t2-type r0\">Phần còn lại</div><div class=\"t2-sub t2-type r1\">cứ để chúng tôi lo</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".r0",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.5,
+          "ease": "steps(9)",
+          "at": 0.11
+        },
+        {
+          "sel": ".r1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.6,
+          "ease": "steps(13)",
+          "at": 0.11
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-h-soc",
+      "group": "dohoa",
+      "name": "Nhãn liên hệ",
+      "desc": "thuonghieucuaban",
+      "dur": 1.9,
+      "html": "<div class=\"t2-social\" style=\"--t2-sy:1060px\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"#fff\"/></svg><span>thuonghieucuaban</span></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-social",
+          "from": {
+            "clipPath": "inset(40% 46% 40% 46% round 8px)"
+          },
+          "to": {
+            "clipPath": "inset(0% 0% 0% 0% round 16px)"
+          },
+          "dur": 0.35,
+          "ease": "power3.out",
+          "at": 0.15
+        },
+        {
+          "sel": ".t2-social",
+          "to": {
+            "clipPath": "inset(40% 46% 40% 46% round 8px)"
+          },
+          "dur": 0.15,
+          "ease": "power2.in",
+          "at": 1.75
+        }
+      ],
+      "fields": [],
+      "sfx": "whoosh",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-h-metal",
+      "group": "chu",
+      "name": "Chữ ánh kim",
+      "desc": "personal brand",
+      "dur": 0.89,
+      "html": "<div class=\"t2-frame\" style=\"top:150px\"></div><div class=\"t2-metal\" style=\"--t2-my:150px\"><span class=\"m1\">personal</span><span class=\"m2\">brand</span></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".m1",
+          "from": {
+            "clipPath": "inset(0% 100% 0% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(0% 0% 0% 0%)"
+          },
+          "dur": 0.4,
+          "ease": "steps(8)",
+          "at": 0.34
+        },
+        {
+          "sel": ".m2",
+          "from": {
+            "clipPath": "inset(0% 100% 0% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(0% 0% 0% 0%)"
+          },
+          "dur": 0.35,
+          "ease": "steps(5)",
+          "at": 0.82
+        },
+        {
+          "sel": ".t2-frame",
+          "from": {
+            "opacity": 0,
+            "scale": 1.08
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.3,
+          "at": 0.44
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-i-txt",
+      "group": "chu",
+      "name": "xứng tầm 20 năm của",
+      "desc": "xứng tầm 20 năm của bạn",
+      "dur": 1.8,
+      "html": "<div class=\"t2-txt\" style=\"--t2-y:990px\"><div class=\"t2-ttl t2-type r0\">xứng tầm</div><div class=\"t2-sub t2-type r1\">20 năm của bạn</div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".r0",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.45,
+          "ease": "steps(6)",
+          "at": 0.28
+        },
+        {
+          "sel": ".r1",
+          "from": {
+            "clipPath": "inset(-30% 100% -30% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-30% 0% -30% 0%)"
+          },
+          "dur": 0.5,
+          "ease": "steps(10)",
+          "at": 0.69
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "fade"
+    },
+    {
+      "id": "k-i-20",
+      "group": "chu",
+      "name": "Số kính sau người",
+      "desc": "20",
+      "dur": 1.75,
+      "html": "<div class=\"t2-big\" style=\"--t2-gy:120px;--t2-gs:800px\">20</div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-big",
+          "from": {
+            "opacity": 0,
+            "scale": 1.12,
+            "filter": "blur(14px)"
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "filter": "blur(0px)"
+          },
+          "dur": 0.45,
+          "ease": "power2.out",
+          "at": 0.46
+        }
+      ],
+      "fields": [],
+      "sfx": "shimmer",
+      "layer": "behind",
+      "fx": "none",
+      "out": "none"
+    },
+    {
+      "id": "k-i-year",
+      "group": "chu",
+      "name": "Chữ viết tay",
+      "desc": "năm",
+      "dur": 1.25,
+      "html": "<div class=\"t2-hand\" style=\"--t2-hy:150px\">năm</div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".t2-hand",
+          "from": {
+            "clipPath": "inset(-20% 100% -20% 0%)"
+          },
+          "to": {
+            "clipPath": "inset(-20% 0% -20% 0%)"
+          },
+          "dur": 0.6,
+          "ease": "power1.inOut",
+          "at": 0.48
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "none",
+      "out": "none"
+    },
+    {
+      "id": "ct-noi-phat-sang",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Khung nổi phát sáng",
+      "mode": "pip",
+      "frame": "glow",
+      "tIn": "zoom"
+    },
+    {
+      "id": "ct-polaroid",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Ảnh polaroid",
+      "mode": "pip",
+      "frame": "polaroid",
+      "tIn": "zoom"
+    },
+    {
+      "id": "ct-dien-thoai",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Màn hình điện thoại",
+      "mode": "pip",
+      "frame": "phone",
+      "tIn": "slide"
+    }
+  ]
+}

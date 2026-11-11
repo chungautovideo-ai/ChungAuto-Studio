@@ -1,0 +1,14 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
+import {personExposureReport} from '../src/services/person-exposure-report.mjs';import {runApiEditor} from '../src/services/api-editor.mjs';
+const proof=JSON.parse(fs.readFileSync('docs/PERSON_SELECTION_RANGES_UI_SMOKE.json')),dir=path.resolve(proof.project),file=path.join(dir,'project.json'),bytes=fs.readFileSync(file),project=JSON.parse(bytes),face=fs.readFileSync(path.join(dir,'work/face.json')),report=personExposureReport(dir,project);
+assert.equal(report.sources.length,1);const scope=report.sources[0].selectionScope;assert.deepEqual(scope.uncoveredUsedRanges,[{from:2,to:3},{from:5,to:6}]);assert.equal(scope.mode,'selected-ranges');assert.match(report.sources[0].measurementScope,/all people/);
+const cli=JSON.parse(execFileSync(process.execPath,['editor/tools/kiem-tra-nguoi.mjs',dir],{windowsHide:true,encoding:'utf8'}));assert.deepEqual(cli,report);
+let step=0;const result=await runApiEditor({project,config:{baseUrl:'https://example.test/v1',model:'fixture',apiKey:'fixture'},instruction:'Read person scope and change title only',personContext:candidate=>personExposureReport(dir,candidate),fetcher:async(url,options)=>{
+ const body=JSON.parse(options.body);step++;
+ if(step===2){const returned=JSON.parse(body.messages.find(m=>m.role==='tool').content);assert.deepEqual(returned.sources[0].selectionScope,scope);assert.ok(!JSON.stringify(returned).includes('"f"'));assert.match(returned.sources[0].measurementScope,/all people/);}
+ const message=step===1?{tool_calls:[{id:'read',type:'function',function:{name:'read_person_exposure',arguments:'{}'}}]}:step===2?{tool_calls:[{id:'title',type:'function',function:{name:'set_edit_fields',arguments:JSON.stringify({fields:{title:'QA reported scope'}})}}]}:{content:'Read scope; title changed only'};
+ return Response.json({choices:[{message,finish_reason:step<3?'tool_calls':'stop'}]});
+}});
+assert.deepEqual(result.project.camera,project.camera);assert.deepEqual(fs.readFileSync(file),bytes);assert.deepEqual(fs.readFileSync(path.join(dir,'work/face.json')),face);
+fs.writeFileSync('docs/PERSON_SELECTION_AI_SCOPE_SMOKE.json',JSON.stringify({project:proof.project,realMediaPipeAndSAM2SavedData:true,cliEqualsService:true,apiModelMock:true,noPaidRequest:true,scope,measurementScope:report.sources[0].measurementScope,reportBytes:Buffer.byteLength(JSON.stringify(report)),faceBytes:face.length,projectSha256:crypto.createHash('sha256').update(bytes).digest('hex'),projectAndFaceUnchanged:true,limits:'Byte counts, not model-token or latency benchmark; no AI scan/apply or real worker acceptance'},null,2));
+console.log('Real saved QA → service/CLI/mock model tool checked; project unchanged');

@@ -1,0 +1,34 @@
+{
+  "source": "D:/Edit tự động/source/DJI_0061_D.MP4",
+  "range": [
+    12,
+    14
+  ],
+  "processing": "full source field of view, scale540x960, no crop, silent proxy",
+  "project": "workspace/content/2026-11-04/contentos-smoke-smallface-5",
+  "runs": [
+    {
+      "enabled": false,
+      "ms": 3639,
+      "found": 12,
+      "samples": 31,
+      "search": {
+        "recovered": 0,
+        "smallFaceSearch": false
+      },
+      "bodyMask": false
+    },
+    {
+      "enabled": true,
+      "ms": 8717,
+      "found": 31,
+      "samples": 31,
+      "search": {
+        "recovered": 19,
+        "smallFaceSearch": true
+      },
+      "bodyMask": true
+    }
+  ],
+  "scope": "Single person, two seconds only; no full-video/person segmentation/quality claim."
+}

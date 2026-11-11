@@ -1,0 +1,33 @@
+{
+  "sourceExcerptFromUserReference": true,
+  "sourceTime": 19.2,
+  "duration": 1,
+  "result": {
+    "path": "inputs/privacy/dfb149fe-b0a5-426c-855a-4e41e3320415/masked.mp4",
+    "duration": 1,
+    "provenance": {
+      "kind": "plate-privacy",
+      "method": "user-roi-optical-flow",
+      "source": "inputs/source.mp4",
+      "sourceSha256": "31b0e1de444388ff968236a8122baaa20799af915d522bb16007364ed7c54dc7",
+      "from": 0,
+      "duration": 1,
+      "roi": [
+        0.5555555555555556,
+        0.7421875,
+        0.06481481481481481,
+        0.03125
+      ],
+      "sha256": "1a434d06b922196434c91e13c21b67f2c88d50dc2c33b45f29feafb66e76854d",
+      "frames": 30,
+      "requiresVisualReview": true
+    }
+  },
+  "requiresVisualReview": true,
+  "visualReview": {
+    "scope": "Viewed montage of all30frames of marked region on1second source excerpt",
+    "artifact": "docs/PLATE_REAL_Q2_ALL_FRAMES.jpg",
+    "observation": "Opaque moving mask covers marked plate in sampled source window; only this region/window reviewed",
+    "notFullVideoOrOtherPlates": true
+  }
+}

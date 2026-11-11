@@ -1,0 +1,19 @@
+{
+  "syntheticOnly": true,
+  "project": "workspace/content/2026-11-03/contentos-smoke-firstsources-10",
+  "note": "Dựng quảng cáo từ nguồn đã chọn\nA-roll: \"D:\\Edit tự động\\contentos\\tests\\fixture.mp4\"\nB-roll: \"D:\\Edit tự động\\contentos\\tests\\fixture.mp4\"",
+  "inspection": true,
+  "invalidExecutionRejected": true,
+  "sessionAgentPinned": true,
+  "legacyBackgroundCannotOverrideSession": true,
+  "otherAgentSkipped": true,
+  "missingSourceRejected": true,
+  "snapshotRoles": true,
+  "cliSelectedImport": true,
+  "checksumAndDedup": true,
+  "outsideSnapshotRejected": true,
+  "projectAndCandidateUnchangedByImport": true,
+  "originalSourceUnchanged": true,
+  "staleRevisionAndCancelledRejected": true,
+  "limits": "Synthetic local source only; real NAS networking, recursive catalog and autonomous shot choice not validated."
+}

@@ -1,0 +1,15 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "restarted": true,
+  "idleBefore": true,
+  "exactServerPidVerified": true,
+  "suitePassed": 240,
+  "doctorReport": "workspace/logs/vision-doctor.json",
+  "runtime": "tools/vision-python/Scripts/python.exe",
+  "opencv": "4.11.0",
+  "numpy": "2.2.6",
+  "localEnvironment": true,
+  "standalonePython": false,
+  "cleanMachineVerified": false,
+  "userProjectsModified": false
+}

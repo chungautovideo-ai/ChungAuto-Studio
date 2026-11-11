@@ -1,0 +1,318 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-7",
+  "sourceQA": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-5",
+  "status": "done",
+  "completion": "awaiting-review",
+  "projectSHA256": "21c77ba065115d3bb4fceef8f2cb96fc632fd4649c23f9622a94330d5917a98f",
+  "duration": 104.24,
+  "counts": {
+    "segments": 3,
+    "texts": 10,
+    "blocks": 5,
+    "brolls": 3
+  },
+  "sources": [
+    {
+      "name": "raw",
+      "sha256": "1cd0b69b9c9dcd82755432869a40bb4cbee492a2dc9e2e7ba27d6001cd667536",
+      "sameAsQAOriginal": true
+    },
+    {
+      "name": "den",
+      "sha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+      "sameAsQAOriginal": true
+    },
+    {
+      "name": "man",
+      "sha256": "5b20e9c90c5552160857262d71b474afa0d517ea84764d83ee1a3396a6974bf0",
+      "sameAsQAOriginal": true
+    },
+    {
+      "name": "ghe",
+      "sha256": "319d21e3e95132fbcd003a1143478381002acfedc618388999447cf9ca6e9302",
+      "sameAsQAOriginal": true
+    },
+    {
+      "name": "mau",
+      "sha256": "625b458482f84067c9feb1d0d61a80ab4664b1d242ba36454d99924ae7a3f0eb",
+      "sameAsQAOriginal": true
+    }
+  ],
+  "policy": {
+    "options": {
+      "color": "keep",
+      "beauty": "off",
+      "watermark": "off",
+      "cta": "off",
+      "music": "keep",
+      "sfx": "vua"
+    },
+    "snapshotHashVerified": true,
+    "outputAlreadyMatchesEnforcement": true,
+    "beautyAbsent": true,
+    "watermarkHidden": true,
+    "ctaEndCardDisabled": true
+  },
+  "transcript": {
+    "engine": "whisper.cpp",
+    "language": "vi",
+    "words": 423,
+    "createdAt": "2026-11-05T07:18:04.048Z"
+  },
+  "helpersSeen": {
+    "sample": true,
+    "timing": true,
+    "presets": true
+  },
+  "brollTiming": {
+    "clock": "output",
+    "items": [
+      {
+        "id": "b-screen",
+        "src": "inputs/man.mp4",
+        "projectAt": 9.55,
+        "outputStart": 8.95,
+        "outputEnd": 11.95,
+        "outputDuration": 3,
+        "mediaStart": 1,
+        "entrance": {
+          "type": "fade",
+          "custom": true,
+          "animationDuration": 0.15,
+          "entranceWithinShot": 0.15,
+          "settledDuration": 2.85,
+          "settledStart": 9.1,
+          "settledEnd": 11.95
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c11",
+              "text": "cái",
+              "outputStart": 8.95,
+              "outputEnd": 9.01
+            },
+            {
+              "captionId": "c11",
+              "text": "sản",
+              "outputStart": 9.01,
+              "outputEnd": 9.19
+            },
+            {
+              "captionId": "c11",
+              "text": "phẩm",
+              "outputStart": 9.19,
+              "outputEnd": 9.46
+            },
+            {
+              "captionId": "c11",
+              "text": "trước",
+              "outputStart": 9.46,
+              "outputEnd": 9.79
+            },
+            {
+              "captionId": "c12",
+              "text": "khi",
+              "outputStart": 9.79,
+              "outputEnd": 10.03
+            },
+            {
+              "captionId": "c12",
+              "text": "lắp",
+              "outputStart": 10.03,
+              "outputEnd": 10.17
+            },
+            {
+              "captionId": "c12",
+              "text": "đặt",
+              "outputStart": 10.17,
+              "outputEnd": 10.52
+            },
+            {
+              "captionId": "c12",
+              "text": "thì",
+              "outputStart": 10.52,
+              "outputEnd": 10.68
+            },
+            {
+              "captionId": "c13",
+              "text": "đều",
+              "outputStart": 10.68,
+              "outputEnd": 10.87
+            },
+            {
+              "captionId": "c13",
+              "text": "được",
+              "outputStart": 10.87,
+              "outputEnd": 11.03
+            },
+            {
+              "captionId": "c13",
+              "text": "bản",
+              "outputStart": 11.03,
+              "outputEnd": 11.19
+            },
+            {
+              "captionId": "c13",
+              "text": "thân",
+              "outputStart": 11.19,
+              "outputEnd": 11.39
+            },
+            {
+              "captionId": "c14",
+              "text": "mình",
+              "outputStart": 11.39,
+              "outputEnd": 11.66
+            },
+            {
+              "captionId": "c14",
+              "text": "nghiên",
+              "outputStart": 11.66,
+              "outputEnd": 11.97
+            }
+          ],
+          "truncated": false,
+          "totalWords": 14,
+          "nextWord": {
+            "captionId": "c14",
+            "text": "cứu",
+            "outputStart": 11.97,
+            "outputEnd": 12.12
+          },
+          "startsInsideWord": false,
+          "endsInsideWord": true
+        },
+        "advisories": []
+      },
+      {
+        "id": "b-light",
+        "src": "inputs/den.mp4",
+        "projectAt": 14.56,
+        "outputStart": 13.96,
+        "outputEnd": 15.46,
+        "outputDuration": 1.5,
+        "mediaStart": 3.5,
+        "entrance": {
+          "type": "none",
+          "custom": false,
+          "animationDuration": 0,
+          "entranceWithinShot": 0,
+          "settledDuration": 1.5,
+          "settledStart": 13.96,
+          "settledEnd": 15.46
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c17",
+              "text": "Nên",
+              "outputStart": 13.66,
+              "outputEnd": 14.11
+            },
+            {
+              "captionId": "c17",
+              "text": "là",
+              "outputStart": 14.11,
+              "outputEnd": 14.65
+            },
+            {
+              "captionId": "c17",
+              "text": "từ",
+              "outputStart": 14.65,
+              "outputEnd": 14.71
+            },
+            {
+              "captionId": "c17",
+              "text": "đèn,",
+              "outputStart": 14.71,
+              "outputEnd": 15.46
+            }
+          ],
+          "truncated": false,
+          "totalWords": 4,
+          "nextWord": {
+            "captionId": "c18",
+            "text": "màn,",
+            "outputStart": 15.46,
+            "outputEnd": 16.21
+          },
+          "startsInsideWord": true,
+          "endsInsideWord": false
+        },
+        "advisories": []
+      },
+      {
+        "id": "b-seat",
+        "src": "inputs/ghe.mp4",
+        "projectAt": 18.16,
+        "outputStart": 17.56,
+        "outputEnd": 19.06,
+        "outputDuration": 1.5,
+        "mediaStart": 1.5,
+        "entrance": {
+          "type": "none",
+          "custom": false,
+          "animationDuration": 0,
+          "entranceWithinShot": 0,
+          "settledDuration": 1.5,
+          "settledStart": 17.56,
+          "settledEnd": 19.06
+        },
+        "speechOverlap": {
+          "words": [
+            {
+              "captionId": "c19",
+              "text": "bọc",
+              "outputStart": 17.56,
+              "outputEnd": 18.01
+            },
+            {
+              "captionId": "c20",
+              "text": "ghế",
+              "outputStart": 18.01,
+              "outputEnd": 18.46
+            },
+            {
+              "captionId": "c20",
+              "text": "da,",
+              "outputStart": 18.46,
+              "outputEnd": 19.06
+            }
+          ],
+          "truncated": false,
+          "totalWords": 3,
+          "nextWord": {
+            "captionId": "c21",
+            "text": "sàn",
+            "outputStart": 19.06,
+            "outputEnd": 19.51
+          },
+          "startsInsideWord": false,
+          "endsInsideWord": false
+        },
+        "advisories": []
+      }
+    ],
+    "total": 3,
+    "truncated": false,
+    "advisoryOnly": true,
+    "applied": false,
+    "visualReviewed": false,
+    "audioListened": false,
+    "notes": "projectAt là at trước cắt; các mốc output/settled là giây sau cắt. settled chỉ là thời gian sau hiệu ứng vào, không chứng minh chi tiết dễ đọc hoặc hình đúng lời. SHORT_INSERT (<0,6s) và hiệu ứng chiếm hơn nửa cảnh là gợi ý xem lại, không bắt kéo dài hoặc đổi hiệu ứng; giữ lựa chọn đã chốt. Lời từ caption có thể thiếu/sai. Không kiểm nguồn media."
+  },
+  "audio": {
+    "voice": 1,
+    "music": "kit:ambient-pad",
+    "musicVolume": 0.1,
+    "sfx": [],
+    "sfxVolume": 0.25,
+    "autoSfx": true,
+    "sfxLevel": "vua",
+    "duckSourceSpeech": true
+  },
+  "rendered": false,
+  "visualReviewed": false,
+  "audioListened": false,
+  "limits": "Real CLI workflow, policy, hashes and timing only; footage correctness, continuous audiovisual quality, natural skin/color, all plates and NAS/multi-PC throughput remain unverified."
+}

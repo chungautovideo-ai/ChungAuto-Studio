@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-05T00:08:01.398Z",
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "skillFinishingHttp": true,
+  "dispatch": {
+    "active": 0,
+    "queued": 0
+  },
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "restartVerifiedPreviousPid": 12364,
+  "finalEvidence": "REAL_WORKER_V50_FINAL_SMOKE.json"
+}

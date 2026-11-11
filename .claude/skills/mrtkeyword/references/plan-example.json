@@ -1,0 +1,264 @@
+{
+ "_note": "Ví dụ đầy đủ (video liệt kê 10 keyword). Cue = TỪ ĐƯỢC NÓI trong đúng đoạn đó (hoặc \"+1.5\" giây sau đầu đoạn). n = số trên thanh '#n /effects …' (bỏ n với video thường). Đoạn = tên file trong clips/ (01, 02…) hoặc voice/ (vo_01…).",
+ "fix": [
+  [
+   "(?i)cloth",
+   "Claude"
+  ],
+  [
+   "(?i)real orbit",
+   "reel orbit"
+  ],
+  [
+   "(?i)let's sign",
+   "LED sign"
+  ],
+  [
+   "dây đầu",
+   "giây đầu"
+  ]
+ ],
+ "compounds": [
+  [
+   "từ",
+   "khóa"
+  ],
+  [
+   "text",
+   "behind"
+  ],
+  [
+   "glass",
+   "graph"
+  ],
+  [
+   "task",
+   "list"
+  ]
+ ],
+ "cover": {
+  "label": "· GÕ 1 TỪ LÀ XONG ·",
+  "line1": "TOP 10",
+  "line2": "KEYWORD",
+  "tag": "EDIT BẰNG CLAUDE",
+  "clip": "01",
+  "at": 5.6
+ },
+ "music": null,
+ "punch": {
+  "01": [
+   [
+    "cloth",
+    1.08
+   ],
+   [
+    "top",
+    1.0
+   ]
+  ]
+ },
+ "stickers": [
+  {
+   "seg": "01",
+   "from": "từ",
+   "to": "top",
+   "text": "GÕ *1 TỪ KHOÁ*\nCLAUDE TỰ EDIT",
+   "size": 100
+  },
+  {
+   "seg": "01",
+   "from": "top",
+   "to": "end",
+   "text": "TOP 10\n*KEYWORD*",
+   "size": 140
+  },
+  {
+   "seg": "12",
+   "from": "comment",
+   "to": "end",
+   "text": "COMMENT\n*CODE 100*",
+   "y": 170,
+   "size": 135,
+   "shake": true,
+   "rotate": -4
+  }
+ ],
+ "fx": [
+  {
+   "seg": "02",
+   "fx": "text-behind",
+   "n": 1,
+   "cues": {
+    "on": "text",
+    "w2": "chữ",
+    "w3": "phía"
+   },
+   "params": {
+    "rows": [
+     [
+      "TEXT",
+      "BEHIND"
+     ],
+     [
+      "CHỮ",
+      "THẬT TO"
+     ],
+     [
+      "SAU",
+      "LƯNG"
+     ]
+    ]
+   }
+  },
+  {
+   "seg": "03",
+   "fx": "locked-on",
+   "n": 2,
+   "cues": {
+    "on": "lock",
+    "lock": "khung"
+   },
+   "params": {}
+  },
+  {
+   "seg": "04",
+   "fx": "scribble",
+   "n": 3,
+   "cues": {
+    "ring": "khoanh",
+    "arrow": "nhấn"
+   },
+   "params": {}
+  },
+  {
+   "seg": "05",
+   "fx": "glass-graph",
+   "n": 4,
+   "cues": {
+    "card": "biểu",
+    "run": "chạy"
+   },
+   "params": {
+    "label": "DOANH THU / THÁNG",
+    "value": 650,
+    "unit": "TRIỆU",
+    "delta": "▲ 320%"
+   }
+  },
+  {
+   "seg": "06",
+   "fx": "reel-orbit",
+   "n": 5,
+   "cues": {
+    "on": "real"
+   },
+   "params": {}
+  },
+  {
+   "seg": "07",
+   "fx": "match-cut",
+   "n": 6,
+   "cues": {
+    "on": "nền",
+    "box": "khoanh"
+   },
+   "params": {
+    "masthead": "THE AI TIMES",
+    "sub": "SỐ ĐẶC BIỆT · CLAUDE TỰ EDIT VIDEO",
+    "word": "TỪ KHOÁ"
+   }
+  },
+  {
+   "seg": "08",
+   "fx": "task-list",
+   "n": 7,
+   "cues": {
+    "list": "danh",
+    "tick": "tích"
+   },
+   "params": {
+    "title": "VIỆC HÔM NAY",
+    "items": [
+     "Viết kịch bản",
+     "Tạo clip Flow",
+     "Chèn hiệu ứng",
+     "Xuất video 1080p"
+    ]
+   }
+  },
+  {
+   "seg": "09",
+   "fx": "messages",
+   "n": 8,
+   "cues": {
+    "n1": "thông",
+    "n2": "trượt",
+    "n3": "nhắc"
+   },
+   "params": {
+    "notes": [
+     {
+      "app": "Claude",
+      "mark": "✳",
+      "bg": "#D97757",
+      "msg": "Video đã dựng xong ✅"
+     },
+     {
+      "app": "Zalo",
+      "mark": "Z",
+      "bg": "#0068FF",
+      "msg": "Khách: Clip đẹp quá!"
+     },
+     {
+      "app": "TikTok",
+      "mark": "♪",
+      "bg": "#111",
+      "msg": "+12.000 lượt xem mới"
+     }
+    ]
+   }
+  },
+  {
+   "seg": "10",
+   "fx": "led-sign",
+   "n": 9,
+   "cues": {
+    "on": "chữ",
+    "bright": "phát",
+    "swap": "chốt"
+   },
+   "params": {
+    "text": "AI LÀM HẾT",
+    "text2": "CHỐT ĐƠN!"
+   }
+  },
+  {
+   "seg": "11",
+   "fx": "edit-timeline",
+   "n": 10,
+   "cues": {
+    "on": "edit",
+    "panel": "giao"
+   },
+   "params": {
+    "caps": [
+     "Số 10",
+     "Edit timeline",
+     "giao diện",
+     "dựng phim"
+    ]
+   }
+  },
+  {
+   "seg": "12",
+   "fx": "cta-circle",
+   "cues": {
+    "type": "code",
+    "send": "gửi"
+   },
+   "params": {
+    "code": "code 100"
+   }
+  }
+ ]
+}

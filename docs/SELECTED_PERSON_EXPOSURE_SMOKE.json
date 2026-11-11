@@ -1,0 +1,54 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-selected-exposure-qa-2",
+  "realSavedSAM2AndSemanticMasks": true,
+  "actualFFmpegHTTP": true,
+  "measuredFrames": 12,
+  "times": [
+    0.25,
+    0.75,
+    1.25,
+    1.75,
+    2.25,
+    2.75,
+    3.25,
+    3.75,
+    4.25,
+    4.75,
+    5.25,
+    5.75
+  ],
+  "exposure": {
+    "version": 1,
+    "method": "display-luma-semantic-mask",
+    "person": {
+      "samples": 12,
+      "median": 0.4235294117647059,
+      "spread": 0.027450980392156876,
+      "highlight": 0.8392156862745098
+    },
+    "skin": {
+      "samples": 12,
+      "median": 0.5254901960784314,
+      "spread": 0.06666666666666665,
+      "highlight": 0.7803921568627451
+    }
+  },
+  "suggestion": {
+    "available": true,
+    "personLight": 0,
+    "bodyWhite": 0,
+    "bodySmooth": 0,
+    "samples": 12,
+    "reason": "Không đề xuất nâng thêm từ số đo hiện có."
+  },
+  "staleRevisionRejected": true,
+  "browserMeasure": true,
+  "unscopedSuggestionHidden": true,
+  "readOnlyProjectFace": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": [],
+  "limits": "Saved short QA masks; not independent people/crossing or color quality acceptance. No model/render."
+}

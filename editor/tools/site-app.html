@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{SITE_NAME}} — Phần mềm dựng video</title>
+<meta name="description" content="Mở phần mềm dựng video AutoSocial ngay trên trình duyệt — video và AI chạy trên máy của bạn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+/* Bản web của phần mềm: đăng nhập tài khoản website → kiểm tra phần mềm trên máy (http://127.0.0.1:5173) → nhúng giao diện phần mềm.
+   Video, dự án, xuất video và AI (Claude Code / Codex) đều chạy trên máy người dùng — video không tải lên mạng. */
+:root{
+  --bg:#0a0a0b;--surface:#131315;--surface2:#1a1a1d;--surface3:#232327;--line:rgba(255,255,255,.07);--line2:rgba(255,255,255,.13);
+  --ink:#f5f5f6;--ink2:#c3c3c9;--muted:#7d7d85;--lime:#d8ff3e;--lime-ink:#0a0a0b;--lime-soft:rgba(216,255,62,.12);--warn:#ffb340;--bad:#ff5f6d;
+  --head:"Inter Tight",Inter,system-ui,sans-serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+a{color:inherit}
+button,input{font:inherit}
+button{cursor:pointer;border:0;background:none;color:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14px;border-radius:12px;padding:11px 18px;text-decoration:none;white-space:nowrap}
+.btn.lime{background:var(--lime);color:var(--lime-ink)}.btn.lime:hover{background:#e7ff80}
+.btn.dark{background:var(--surface2);border:1px solid var(--line2)}.btn.dark:hover{background:var(--surface3)}
+.btn.sm{padding:7px 12px;font-size:13px;border-radius:10px}
+/* thanh trên */
+.top{display:flex;align-items:center;gap:12px;padding:8px 14px;border-bottom:1px solid var(--line);background:var(--surface);min-height:48px;flex:none}
+.logo{display:flex;align-items:center;gap:9px;font:800 16px/1 var(--head);text-decoration:none}
+.logo i{width:24px;height:24px;border-radius:7px;background:var(--lime);display:grid;place-items:center}
+.logo i::after{content:"";width:9px;height:9px;border-radius:3px;background:var(--lime-ink)}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--ink2);background:var(--surface2);border:1px solid var(--line);padding:5px 11px;border-radius:999px}
+.chip b{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.chip.ok b{background:var(--lime)}.chip.warn b{background:var(--warn)}.chip.bad b{background:var(--bad)}
+.sp{flex:1}
+.me{font-size:13px;color:var(--muted)}
+/* nội dung */
+main{flex:1;position:relative;min-height:0}
+#frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:var(--bg)}
+.card{max-width:560px;margin:48px auto;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:20px}
+.card h1{font:900 26px/1.15 var(--head);margin:0 0 8px}
+.card p{color:var(--ink2);margin:0 0 14px}
+.card ol{margin:6px 0 16px;padding-left:20px;display:grid;gap:8px;color:var(--ink2);font-size:14px}
+.card ol b,.card p b{color:var(--ink)}
+.card code{background:var(--surface2);border:1px solid var(--line);padding:1px 6px;border-radius:6px;font-size:13px}
+.card .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.card hr{border:0;border-top:1px solid var(--line);margin:20px 0}
+.field{display:grid;gap:6px;margin-bottom:12px}
+.field label{font-size:13px;color:var(--ink2);font-weight:600}
+.field input{background:var(--surface2);border:1px solid var(--line2);color:var(--ink);border-radius:10px;padding:11px 12px;outline:none}
+.field input:focus{border-color:var(--lime)}
+.err{color:var(--bad);font-size:13px;min-height:18px;margin:4px 0 8px}
+.muted{color:var(--muted);font-size:13px}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line2);border-top-color:var(--lime);border-radius:50%;animation:sp 1s linear infinite;vertical-align:-2px;margin-right:8px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.tabs{display:flex;gap:6px;margin-bottom:16px}
+.tabs button{padding:7px 12px;border-radius:9px;font-weight:600;font-size:14px;color:var(--muted)}
+.tabs button.on{background:var(--surface2);color:var(--ink)}
+@media (max-width:640px){.card{margin:16px;padding:20px}.me{display:none}}
+</style>
+</head>
+<body>
+<div class="top">
+  <a class="logo" href="/"><i></i>{{SITE_NAME}}</a>
+  <span class="chip" id="stApp"><b></b><span>Đang kiểm tra phần mềm…</span></span>
+  <span class="chip" id="stAi" hidden><b></b><span></span></span>
+  <button class="btn dark sm" id="reAi" hidden title="Kiểm tra lại kết nối với Claude / Codex">↻ Kết nối lại</button>
+  <button class="btn dark sm" id="aiHint" hidden title="Bấm để chép câu này">Nhắn trong Claude / Codex: “kết nối phần mềm” — bấm để chép</button>
+  <span class="sp"></span>
+  <a class="btn dark sm" id="openTab" href="http://127.0.0.1:5173/" target="_blank" rel="noopener" hidden title="Mở phần mềm trong tab riêng">Mở tab riêng ↗</a>
+  <span class="me" id="me"></span>
+  <button class="btn dark sm" id="logout" hidden>Đăng xuất</button>
+</div>
+<main id="main"><div class="card"><span class="spin"></span>Đang mở…</div></main>
+<script>
+const LOCAL = "http://127.0.0.1:5173";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const isMac = /Mac/.test(navigator.platform), isSafari = /^((?!chrome|android|crios|edg).)*safari/i.test(navigator.userAgent);
+let ME = null, embedded = false, offline = false, timer = null, misses = 0;
+
+function chip(id, cls, text) { const c = $(id); c.hidden = false; c.className = "chip " + cls; c.querySelector("span").textContent = text; }
+
+// ---------- Tài khoản (dùng chung đăng nhập của website) ----------
+async function me() {
+  try { const r = await fetch("/api/me", { credentials: "include" }); if (r.ok) return (await r.json()).user; } catch {}
+  return null;
+}
+function showAuth(mode = "login") {
+  offline = false;
+  stop();
+  chip("#stApp", "", "Chưa đăng nhập");
+  $("#stAi").hidden = true; $("#logout").hidden = true; $("#openTab").hidden = true; $("#me").textContent = "";
+  aiButtons(null); $("#reAi").hidden = true;
+  $("#main").innerHTML = `<div class="card">
+    <h1>Mở phần mềm dựng video</h1>
+    <p>Đăng nhập tài khoản ${esc(document.title.split(" — ")[0])} để dùng phần mềm ngay trên trình duyệt. Video và AI chạy trên máy của bạn.</p>
+    <div class="tabs"><button data-m="login" class="${mode === "login" ? "on" : ""}">Đăng nhập</button><button data-m="register" class="${mode === "register" ? "on" : ""}">Tạo tài khoản</button></div>
+    <form id="auth">
+      ${mode === "register" ? `<div class="field"><label>Tên của bạn</label><input name="name" autocomplete="name"></div>` : ""}
+      <div class="field"><label>Email</label><input name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label>Mật khẩu${mode === "register" ? " (ít nhất 8 ký tự)" : ""}</label><input name="password" type="password" required autocomplete="${mode === "register" ? "new-password" : "current-password"}"></div>
+      <div class="err" id="err"></div>
+      ${mode === "login" ? `<p class="muted"><a href="/dang-nhap.html?mode=quen">Quên mật khẩu?</a></p>` : ""}
+      <button class="btn lime" style="width:100%">${mode === "register" ? "Tạo tài khoản" : "Đăng nhập"}</button>
+    </form></div>`;
+  $("#main").querySelectorAll("[data-m]").forEach((b) => (b.onclick = () => showAuth(b.dataset.m)));
+  $("#auth").onsubmit = async (e) => {
+    e.preventDefault();
+    const f = Object.fromEntries(new FormData(e.target));
+    $("#err").textContent = "";
+    try {
+      const r = await fetch(`/api/auth/${mode}`, { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.ok) return ($("#err").textContent = j.error || "Không đăng nhập được, thử lại.");
+      ME = j.user; start();
+    } catch { $("#err").textContent = "Mất kết nối mạng, thử lại."; }
+  };
+}
+$("#logout").onclick = async () => { try { await fetch("/api/auth/logout", { method: "POST", credentials: "include" }); } catch {} ME = null; embedded = false; showAuth(); };
+
+// ---------- Phần mềm trên máy ----------
+async function ping(ms = 4000) {
+  try {
+    const r = await fetch(LOCAL + "/api/ping", { signal: AbortSignal.timeout(ms), cache: "no-store" });
+    const j = await r.json();
+    return j && j.app === "autosocial" ? j : null;
+  } catch { return null; }
+}
+function aiChip(st) {
+  if (st.ai && st.ai.busy) return chip("#stAi", "ok", `${st.ai.agent === "codex" ? "Codex" : "Claude"} đang làm việc — việc mới sẽ xếp hàng`);
+  if (st.ai) return chip("#stAi", "ok", `${st.ai.agent === "codex" ? "Codex" : "Claude"} sẵn sàng nhận việc`);
+  chip("#stAi", "warn", "Chưa kết nối Claude / Codex — chỉnh tay vẫn dùng được");
+}
+function aiButtons(st) { // đang mở Claude / Codex mà lệnh chờ việc đã dừng: trang web không tự bật được, phải nhắn trong cửa sổ AI
+  $("#reAi").hidden = !!(st && st.ai);
+  if (!st || st.ai) $("#aiHint").hidden = true;
+}
+$("#reAi").onclick = async () => {
+  const b = $("#reAi"); b.disabled = true; b.textContent = "Đang kiểm tra…";
+  await tick();
+  b.disabled = false; b.textContent = "↻ Kết nối lại";
+  if (!b.hidden) $("#aiHint").hidden = false;
+};
+$("#aiHint").onclick = async () => {
+  const b = $("#aiHint");
+  try { await navigator.clipboard.writeText("kết nối phần mềm"); b.textContent = "Đã chép — dán vào Claude / Codex rồi gửi"; } catch { b.textContent = "Nhắn trong Claude / Codex: “kết nối phần mềm”"; }
+};
+// Chrome hỏi quyền "mạng cục bộ" (tên quyền khác nhau theo phiên bản); trình duyệt không hỗ trợ → không biết
+async function lnaState() {
+  for (const name of ["local-network-access", "loopback-network", "local-network"]) { try { return (await navigator.permissions.query({ name })).state; } catch {} }
+  return "";
+}
+async function reconnect() {
+  const b = $("#retry"), m = $("#retryMsg");
+  b.disabled = true; b.textContent = "Đang kết nối…"; m.textContent = "";
+  const st = await ping(8000);
+  if (st) { offline = false; misses = 0; return embed(st); }
+  b.disabled = false; b.textContent = "↻ Kết nối lại";
+  m.textContent = (await lnaState()) === "denied"
+    ? "Trình duyệt đang chặn trang web kết nối vào máy. Bấm biểu tượng ổ khoá cạnh địa chỉ trang → Cài đặt trang web → Mạng cục bộ → Cho phép, rồi tải lại trang."
+    : "Chưa kết nối được. Bấm “Mở phần mềm ↗”: nếu mở được thì phần mềm đang chạy, chỉ là trình duyệt chặn trang web này — dùng luôn tab đó, hoặc cho phép “Mạng cục bộ” ở biểu tượng ổ khoá cạnh địa chỉ trang rồi tải lại. Nếu không mở được thì phần mềm chưa chạy.";
+}
+function showOffline(first) {
+  if (offline) return; // đang hiện rồi: không vẽ lại kẻo mất dòng báo của nút Kết nối lại
+  offline = true;
+  chip("#stApp", "bad", "Máy này chưa chạy phần mềm");
+  $("#stAi").hidden = true; $("#openTab").hidden = true;
+  aiButtons(null); $("#reAi").hidden = true;
+  if (embedded) { embedded = false; }
+  $("#main").innerHTML = `<div class="card">
+    <h1>Máy này chưa chạy phần mềm ${esc(document.title.split(" — ")[0])}</h1>
+    <p>Trang web dùng phần mềm cài trên chính máy bạn — video, dự án và AI đều chạy trên máy, video không tải lên mạng.</p>
+    <div class="row"><button class="btn lime" id="retry">↻ Kết nối lại</button><a class="btn dark" href="${LOCAL}/" target="_blank" rel="noopener">Mở phần mềm ↗</a></div>
+    <p class="muted" id="retryMsg" style="margin-top:10px"></p>
+    <p><b>Đã cài rồi?</b> Mở lại phần mềm bằng một trong các cách:</p>
+    <ol>
+      <li>Bấm đúp biểu tượng <b>AutoSocial</b>, hoặc file <code>${isMac ? "Mo-Editor.command" : "Mo-Editor.bat"}</code> trong thư mục phần mềm.</li>
+      <li>Hoặc mở thư mục phần mềm bằng <b>Claude Code</b> / <b>Codex</b> rồi nhắn <code>mở phần mềm</code>.</li>
+    </ol>
+    <p class="muted">Để lần sau không phải mở lại: bật công tắc <b>“Luôn chạy nền”</b> ở góc dưới menu trái của phần mềm (tự chạy khi bật máy).</p>
+    <hr>
+    <p><b>Chưa cài?</b> 3 bước, AI tự cài cho bạn:</p>
+    <ol>
+      <li>Tải phần mềm (.zip) → giải nén vào một thư mục cố định (không để trong Downloads).</li>
+      <li>Mở thư mục đó bằng <b>Claude Code</b> (app Claude → tab Code) hoặc <b>Codex</b>, gõ <code>cài đặt</code> rồi đồng ý.</li>
+      <li>Cài xong phần mềm tự chạy nền và mở lại trang này.</li>
+    </ol>
+    <div class="row"><a class="btn lime" href="/api/release/download">Tải phần mềm (.zip)</a><a class="btn dark" href="/#tai-phan-mem">Xem hướng dẫn chi tiết</a></div>
+    <hr>
+    <p class="muted"><span class="spin"></span>Trang tự kết nối khi phần mềm chạy.${isSafari ? " <b>Safari</b> có thể chặn trang web kết nối vào máy — nếu đợi mãi không được, dùng <b>Chrome</b> hoặc mở thẳng <a href=\"" + LOCAL + "/\">" + LOCAL + "</a>." : " Trình duyệt hỏi <b>“cho phép truy cập ứng dụng / thiết bị trên mạng cục bộ”</b> → bấm <b>Cho phép</b>. Lỡ bấm Chặn: bấm biểu tượng ổ khoá cạnh địa chỉ trang → <b>Cài đặt trang web</b> → <b>Mạng cục bộ</b> (Local network access) → <b>Cho phép</b>, rồi tải lại trang."}</p>
+  </div>`;
+  $("#retry").onclick = reconnect;
+  // Chrome chặn / chưa cho trang web gọi vào máy: báo ngay, không đợi khách bấm Kết nối lại
+  lnaState().then((s) => {
+    const m = $("#retryMsg");
+    if (!m || m.textContent) return;
+    if (s === "denied") m.innerHTML = `<b style="color:#ff8a80">Chrome đang chặn trang này kết nối vào máy.</b> Bấm biểu tượng ổ khoá cạnh địa chỉ trang → <b>Cài đặt trang web</b> → <b>Mạng cục bộ</b> → <b>Cho phép</b>, rồi tải lại trang.`;
+    else if (s === "prompt") m.innerHTML = `<b>Chrome cần bạn cho phép trang này kết nối vào máy.</b> Tìm thông báo ở thanh địa chỉ (hoặc biểu tượng ổ khoá) → <b>Cho phép</b>, rồi bấm Kết nối lại.`;
+  });
+}
+// phần mềm ≥ 1.0.56 báo "đã hiện giao diện" (postMessage) — quá 8 giây không thấy: trình duyệt chặn nhúng → hướng dẫn mở tab riêng
+const newer = (a, b) => { const x = String(a).split(".").map(Number), y = String(b).split(".").map(Number); for (let i = 0; i < 3; i++) if ((x[i] || 0) !== (y[i] || 0)) return (x[i] || 0) > (y[i] || 0); return true; };
+let shown = false, waitT = null;
+addEventListener("message", (e) => { if (e.origin === LOCAL && e.data && e.data.app === "autosocial" && e.data.ready) { shown = true; clearTimeout(waitT); $("#blocked")?.remove(); } });
+// đăng nhập website một lần: phần mềm trên máy nhận luôn và tự nhớ, phần mềm bản cũ không báo email thì bỏ qua
+async function linkApp(st) {
+  if (!ME || st.email === undefined || st.email === ME.email) return;
+  try {
+    const j = await (await fetch("/api/auth/app-link", { method: "POST", credentials: "include" })).json();
+    if (j.token) await fetch(LOCAL + "/api/account/link", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ token: j.token }), signal: AbortSignal.timeout(10000) });
+  } catch {}
+}
+async function embed(st) {
+  offline = false;
+  chip("#stApp", "ok", `Phần mềm đang chạy · v${st.version}`);
+  aiChip(st); aiButtons(st);
+  $("#openTab").hidden = false;
+  if (embedded) return;
+  embedded = true; shown = false;
+  await linkApp(st);
+  $("#main").innerHTML = `<iframe id="frame" src="${LOCAL}/" allow="clipboard-read; clipboard-write; fullscreen; autoplay" title="Phần mềm dựng video"></iframe>`;
+  clearTimeout(waitT);
+  if (newer(st.version, "1.0.56")) waitT = setTimeout(() => { if (!shown && embedded) blocked(); }, 8000);
+}
+function blocked() {
+  const d = document.createElement("div");
+  d.id = "blocked";
+  d.style.cssText = "position:absolute;inset:0;background:var(--bg);overflow:auto";
+  d.innerHTML = `<div class="card">
+    <h1>Trình duyệt này chặn hiện phần mềm trong trang</h1>
+    <p>Phần mềm trên máy đang chạy bình thường, chỉ là trình duyệt không cho nhúng vào trang web${isSafari ? " (Safari hay chặn kiểu này)" : " (khung trình duyệt trong app Claude / Codex, hoặc cài đặt bảo mật của trình duyệt)"}.</p>
+    <div class="row"><a class="btn lime" href="${LOCAL}/" target="_blank" rel="noopener">Mở phần mềm trong tab riêng ↗</a></div>
+    <hr>
+    <p class="muted">Muốn dùng ngay trong trang này: mở <b>autosocial.topexpert.vn/app</b> bằng <b>Chrome</b> hoặc <b>Edge</b>. Khi được hỏi <b>“truy cập ứng dụng / thiết bị trên mạng cục bộ”</b> → bấm <b>Cho phép</b>.</p>
+  </div>`;
+  $("#main").append(d);
+}
+async function tick() {
+  const st = await ping();
+  if (st) { misses = 0; embed(st); }
+  else if (!embedded || ++misses >= 2) showOffline(); // đang nhúng: mất 2 lần liền (phần mềm khởi động lại khi cập nhật) mới báo
+}
+function stop() { clearInterval(timer); timer = null; }
+function start() {
+  $("#me").textContent = ME.email || "";
+  $("#logout").hidden = false;
+  stop();
+  tick();
+  timer = setInterval(tick, 5000);
+}
+(async () => { ME = await me(); ME ? start() : showAuth(); })();
+</script>
+</body>
+</html>

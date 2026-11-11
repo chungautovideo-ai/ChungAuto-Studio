@@ -1,0 +1,52 @@
+{
+  "synthetic": true,
+  "duration": 3,
+  "output": "workspace/cache/news-template-layout-20261105/renders/news-template-layout-20261105-nhap.mp4",
+  "frames": [
+    "docs/news-reference-20261105/layout-opening.jpg",
+    "docs/news-reference-20261105/layout-body.jpg"
+  ],
+  "render": {
+    "running": false,
+    "byAi": true,
+    "quality": "draft",
+    "progress": 100,
+    "ok": true,
+    "log": "\":\"render-options\",\"rawFps\":30}\n[initSession:screenshot] pollHfReady complete (1954ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1955ms)\n[initSession:screenshot] applyVideoMetadataHints complete (1957ms)\n[initSession:screenshot] media + fonts + tailwind ready (1958ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1959ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1959ms)\n  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (1/3 ready)\n@hf-progress {\"code\":\"start_browsers\",\"done\":1,\"total\":3,\"pct\":25}\n[initSession:screenshot] pollHfReady complete (1980ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1981ms)\n[initSession:screenshot] applyVideoMetadataHints complete (1983ms)\n[initSession:screenshot] media + fonts + tailwind ready (1984ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1986ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1986ms)\n  ██████░░░░░░░░░░░░░░░░░░░  26%  Capturing frame 1/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":1,\"total\":90,\"pct\":26}\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:screenshot] pollHfReady complete (2106ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (2107ms)\n[initSession:screenshot] applyVideoMetadataHints complete (2109ms)\n[initSession:screenshot] media + fonts + tailwind ready (2110ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (2111ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (2111ms)\n  ███████░░░░░░░░░░░░░░░░░░  31%  Capturing frame 12/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":12,\"total\":90,\"pct\":31}\n  █████████░░░░░░░░░░░░░░░░  37%  Capturing frame 24/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":24,\"total\":90,\"pct\":37}\n  ███████████░░░░░░░░░░░░░░  45%  Capturing frame 39/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":39,\"total\":90,\"pct\":45}\n  ████████████░░░░░░░░░░░░░  51%  Capturing frame 52/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":52,\"total\":90,\"pct\":51}\n  ██████████████░░░░░░░░░░░  57%  Capturing frame 64/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":64,\"total\":90,\"pct\":57}\n  ████████████████░░░░░░░░░  64%  Capturing frame 77/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":77,\"total\":90,\"pct\":64}\n  █████████████████░░░░░░░░  69%  Capturing frame 88/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":88,\"total\":90,\"pct\":69}\n  █████████████████░░░░░░░░  70%  Capturing frame 90/90 (3 workers)\n@hf-progress {\"code\":\"capture\",\"done\":90,\"total\":90,\"pct\":70}\n[INFO] [Render:trace] {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"phase\":\"capture_disk\",\"status\":\"end\",\"elapsedMs\":21912,\"durationMs\":6245,\"stagePhase\":\"capturing\",\"needsAlpha\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████░░░░░░░  75%  Encoding video\n@hf-progress {\"code\":\"encode\",\"done\":0,\"total\":90,\"pct\":75}\n[INFO] [Render:trace] {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"phase\":\"encode\",\"status\":\"start\",\"elapsedMs\":21912,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render] Encoded frames while capturing {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"framesFed\":90,\"totalFrames\":90}\n  ██████████████████████░░░  90%  Encoding frame 90/90\n@hf-progress {\"code\":\"encode\",\"done\":90,\"total\":90,\"pct\":90}\n[INFO] [Render:trace] {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"phase\":\"encode\",\"status\":\"end\",\"elapsedMs\":21943,\"durationMs\":31,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":21944,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████████░░░  90%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":0,\"total\":3,\"pct\":90}\n  ████████████████████████░  99%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":3,\"total\":3,\"pct\":99}\n[INFO] [Render:trace] {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":21986,\"durationMs\":42,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":3,\"forceScreenshot\":false,\"totalFrames\":90,\"framesCompleted\":90,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"5c41e9d3-c4ad-4895-9cba-6d67011dd5cb\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":22024,\"message\":\"artifact validated\",\"totalElapsedMs\":22022}\n  █████████████████████████  100%  Render complete\n\n◇  D:\\Edit tự động\\contentos\\workspace\\cache\\news-template-layout-20261105\\work\\render-snapshots\\8775cf02-b370-433e-b78d-17e6cd9312b2\\renders\\render.mp4\n   69.0 KB · 3.0s video · rendered in 22.1s\n   screenshot capture · hardware gpu · compile 0.8s · extract 9.6s · audio 0.0s · probe 0.1s · setup 5.2s · capture 6.2s · encode 0.0s · assemble 0.0s\n   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?os=windows&src=cli\n\n  1 HyperFrames skill out of date or missing.\n  Run: npx hyperframes skills update\n\n",
+    "pid": 72112,
+    "startedAt": 1793868686014,
+    "jobDir": null,
+    "channels": [],
+    "snapshotId": "8775cf02-b370-433e-b78d-17e6cd9312b2",
+    "revision": "cc58184f6fe0ff3796faee9c0499fb89613e7a6e4f052072f48ada4ecb192474",
+    "output": "renders/news-template-layout-20261105-nhap.mp4",
+    "launcher": "installed-cli",
+    "exitCode": 0,
+    "exitSignal": null,
+    "bytes": 70316,
+    "sha256": "0aeb6986c91c8d00efd55574dabc7e900569324965dbabc4e6aacb277faaf0e4",
+    "saved": "D:\\Edit tự động\\contentos\\workspace\\cache\\news-template-layout-20261105\\renders\\news-template-layout-20261105-nhap.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "3.000000"
+      }
+    },
+    "loudnorm": false,
+    "warnings": [
+      "Bản xuất không có track âm thanh; kiểm tra đây có phải video chủ đích không tiếng."
+    ],
+    "finishedAt": 1793868712606
+  },
+  "limits": "Synthetic background, layout QA only; no full-news audio/editor UX acceptance"
+}

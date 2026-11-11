@@ -1,0 +1,19 @@
+{
+  "readOnly": true,
+  "stream": "first-audio-stream",
+  "method": "FFmpeg loudnorm input measurements",
+  "integratedLufs": -14.75,
+  "truePeakDbtp": -1.27,
+  "loudnessRangeLu": 5,
+  "thresholdLufs": -24.96,
+  "silent": false,
+  "reference": {
+    "integratedLufs": -14,
+    "truePeakDbtp": -1.5
+  },
+  "warnings": [
+    "True peak vượt mức tham khảo -1.5 dBTP; AAC có thể tạo đỉnh cao hơn sau mã hóa, cần kiểm bản xuất."
+  ],
+  "listened": false,
+  "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+}

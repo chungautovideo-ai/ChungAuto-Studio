@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "live": {
+        "gradient": "linear-gradient(rgb(255, 243, 161) 0%, rgb(255, 146, 53) 50%, rgb(255, 63, 103) 100%)",
+        "stroke": "0px"
+      },
+      "css": {
+        "background": "linear-gradient(75deg, rgb(18, 238, 170) 0%, rgb(255, 146, 53) 50%, rgb(255, 63, 103) 100%)",
+        "stroke": "3px",
+        "shadow": "drop-shadow(rgba(0, 0, 0, 0.6) 0px 4px 8px)"
+      },
+      "save": true,
+      "undo": true,
+      "reload": true
+    },
+    {
+      "width": 1920,
+      "live": {
+        "gradient": "linear-gradient(rgb(255, 243, 161) 0%, rgb(255, 146, 53) 50%, rgb(255, 63, 103) 100%)",
+        "stroke": "0px"
+      },
+      "css": {
+        "background": "linear-gradient(75deg, rgb(18, 238, 170) 0%, rgb(255, 146, 53) 50%, rgb(255, 63, 103) 100%)",
+        "stroke": "3px",
+        "shadow": "drop-shadow(rgba(0, 0, 0, 0.6) 0px 4px 8px)"
+      },
+      "save": true,
+      "undo": true,
+      "reload": true
+    }
+  ],
+  "errors": [],
+  "syntheticProject": "workspace/content/2026-11-04/ca-paint-3"
+}

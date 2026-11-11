@@ -1,0 +1,34 @@
+/* Mẫu "Tổ Ong Vàng" — chữ vàng gõ dần, tổ ong icon phát sáng, thẻ điện thoại / nút xác nhận trên nền trắng. Tiền tố tv-. */
+.tv{position:absolute;inset:0;pointer-events:none}
+.tv .t{position:absolute;white-space:nowrap;line-height:1;font-family:"Be Vietnam Pro",sans-serif}
+.tv .n{font-weight:500;font-size:var(--tv-s,42px);color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.tv .v{font-weight:800;font-size:var(--tv-l,150px);letter-spacing:-.04em;background:linear-gradient(180deg,#FFF6A0 0%,#FFE135 45%,#F2B200 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(255,214,0,.55)) drop-shadow(0 4px 8px rgba(0,0,0,.35));padding-top:.15em}
+.tv-ong{position:absolute;left:var(--tv-x,240px);top:var(--tv-y,1160px);width:600px;height:420px}
+.tv-ong .o{position:absolute;width:170px;height:190px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:linear-gradient(180deg,#FFE94D,#F5B800);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;filter:drop-shadow(0 0 18px rgba(255,220,0,.85))}
+.tv-ong .o i{font-style:normal;font-size:60px;line-height:1}
+.tv-ong .o b{font-family:"Be Vietnam Pro",sans-serif;font-weight:700;font-size:26px;color:#3a2b00}
+.tv-ong .o:nth-child(1){left:120px;top:0}.tv-ong .o:nth-child(2){left:300px;top:0}.tv-ong .o:nth-child(3){left:30px;top:150px}.tv-ong .o:nth-child(4){left:210px;top:150px}.tv-ong .o:nth-child(5){left:390px;top:150px}
+.tv-tron{position:absolute;left:var(--tv-x,150px);top:var(--tv-y,1180px);width:230px;height:230px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#3a3a3a,#0d0d0d);border:6px solid #fff;display:flex;align-items:center;justify-content:center;font-size:120px;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.tv-tron b{position:absolute;right:-30px;top:60px;background:#E8463A;color:#fff;font-family:"Be Vietnam Pro",sans-serif;font-weight:800;font-size:24px;padding:4px 12px;border-radius:8px}
+.tv-trang{position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 45%,#ffffff,#ecebe8)}
+.tv-dt{position:absolute;left:50%;top:var(--tv-y,330px);width:560px;height:1120px;margin-left:-280px;border-radius:84px;background:#111;padding:20px;box-shadow:0 40px 80px rgba(0,0,0,.28)}
+.tv-dt .man{width:100%;height:100%;border-radius:66px;background:#fff;overflow:hidden;display:flex;flex-direction:column}
+.tv-dt .anh{height:46%;background:linear-gradient(160deg,#c9d6e3,#7f95ad);display:flex;align-items:center;justify-content:center;font-size:170px}
+.tv-dt .nd{padding:34px 36px;font-family:"Be Vietnam Pro",sans-serif}
+.tv-dt .ten{font-weight:800;font-size:56px;color:#7A1F12;line-height:1}
+.tv-dt .mo{font-size:30px;color:#555;margin-top:16px;line-height:1.3}
+.tv-dt .gia{display:inline-flex;align-items:center;gap:16px;margin-top:30px;padding:16px 30px;border-radius:999px;background:#7A1F12;color:#fff;font-weight:700;font-size:32px}
+.tv-nut{position:absolute;left:var(--tv-x,90px);right:var(--tv-x,90px);top:var(--tv-y,900px);font-family:"Be Vietnam Pro",sans-serif}
+.tv-nut .ten{font-weight:800;font-size:96px;color:#7A1F12;line-height:1}
+.tv-nut .mo{font-size:44px;color:#444;margin:24px 0 46px;line-height:1.35}
+.tv-nut .btn{display:flex;align-items:center;justify-content:space-between;padding:26px 30px 26px 54px;border-radius:999px;background:#111;color:#fff;font-weight:600;font-size:52px}
+.tv-nut .btn i{font-style:normal;width:84px;height:84px;border-radius:50%;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;font-size:48px}
+.tv-nut .btn s{text-decoration:none;opacity:.45}
+.tv-vien{position:absolute;left:0;right:0;top:var(--tv-y,820px);text-align:center;font-family:"Be Vietnam Pro",sans-serif;line-height:.9}
+.tv-vien .bg{font-weight:800;font-size:300px;color:transparent;-webkit-text-stroke:3px rgba(0,0,0,.18)}
+.tv-vien .a{position:absolute;left:0;right:0;top:70px;font-weight:500;font-size:56px;color:#555}
+.tv-vien .b{position:absolute;left:0;right:0;top:120px;font-weight:800;font-size:150px;color:#6d6d6d;letter-spacing:-.04em}
+.tv-emo{position:absolute;font-size:var(--tv-e,320px);line-height:1;filter:drop-shadow(0 12px 18px rgba(0,0,0,.25))}
+.tv-goc{position:absolute;left:0;top:0;width:640px;height:620px;clip-path:polygon(0 0,100% 0,72% 50%,100% 100%,0 100%);background:linear-gradient(160deg,#a9c4dd,#57789a);box-shadow:0 0 0 0}
+.tv-goc::after{content:"";position:absolute;inset:0;border-right:10px solid #fff}
+.tv-goc b{position:absolute;left:30px;bottom:150px;font-family:"Oswald",sans-serif;font-weight:700;font-size:72px;color:#fff;text-transform:uppercase;text-shadow:0 3px 10px rgba(0,0,0,.6)}

@@ -1,0 +1,9 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "catalogV18": true,
+  "presetCount": 11,
+  "templateHttp": 200,
+  "controlsHttp": 200,
+  "restartRequired": false,
+  "userProjectModified": false
+}

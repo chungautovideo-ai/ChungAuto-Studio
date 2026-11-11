@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "parentDiff": true,
+      "improvePrefillsRules": true,
+      "applySelected": true
+    },
+    {
+      "width": 1920,
+      "parentDiff": true,
+      "improvePrefillsRules": true,
+      "applySelected": true
+    },
+    {
+      "width": 390,
+      "parentDiff": true,
+      "improvePrefillsRules": true,
+      "applySelected": true
+    }
+  ],
+  "errors": [],
+  "readOnly": true
+}

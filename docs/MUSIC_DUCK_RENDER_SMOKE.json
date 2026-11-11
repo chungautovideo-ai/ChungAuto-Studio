@@ -1,0 +1,28 @@
+{
+  "syntheticOnly": true,
+  "engine": "HyperFrames 0.9.6",
+  "render": true,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "8.000000"
+    }
+  },
+  "beforeMusicRms": 0.04997388095678693,
+  "duringMusicRms": 0.013021637143607854,
+  "afterMusicRms": 0.04997671783421995,
+  "ratio": 0.26056885905795135,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\contentos-smoke-music-duck-render\\renders\\music-duck-qa.mp4",
+  "limits": "8-second draft, clip-based ducking only; no speech detection/listening/long-loop production benchmark."
+}

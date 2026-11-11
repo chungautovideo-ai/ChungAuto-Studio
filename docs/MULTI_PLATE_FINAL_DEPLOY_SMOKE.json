@@ -1,0 +1,23 @@
+{
+  "syntheticSource": true,
+  "output": "workspace\\content\\2026-11-05\\contentos-smoke-multi-plate-final\\renders\\contentos-smoke-multi-plate-final-final.mp4",
+  "exitCode": 0,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 15,
+  "duration": 0.5,
+  "audioStream": true,
+  "allFramesBothMaskCenters": true,
+  "sourceSpeed": 2,
+  "regions": 2,
+  "mainServerRestartedIdle": true,
+  "uiHttp": 200,
+  "templateHttp": 200,
+  "userProjectChanged": false,
+  "limitations": [
+    "synthetic centers do not prove all edges or real plate coverage",
+    "not a detector",
+    "not a production throughput benchmark"
+  ]
+}

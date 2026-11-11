@@ -1,0 +1,12 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-masked-api",
+  "calls": 3,
+  "syntheticLocalGateway": true,
+  "realSavedSAM2Camera": true,
+  "apiReadCameraOmitsRLE": true,
+  "httpReviseCompletionReview": true,
+  "cameraUnchanged": true,
+  "faceBytesUnchanged": true,
+  "noRender": true,
+  "noPaidProvider": true
+}

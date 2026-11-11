@@ -1,0 +1,58 @@
+{
+  "project": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-sfx-tail-497b0fa2",
+  "exitCode": 0,
+  "renderOk": true,
+  "log": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-sfx-tail-497b0fa2\\work\\sfx-export.log",
+  "sourceUnchanged": true,
+  "projectUnchanged": true,
+  "slotWarnings": [],
+  "audioListened": false,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-sfx-tail-497b0fa2\\renders\\qa-sfx-tail-497b0fa2-nhap.mp4",
+  "integrityVerified": true,
+  "audioLoudness": {
+    "readOnly": true,
+    "stream": "first-audio-stream",
+    "method": "FFmpeg loudnorm input measurements",
+    "integratedLufs": -15.57,
+    "truePeakDbtp": -1.5,
+    "loudnessRangeLu": 1.4,
+    "thresholdLufs": -26.81,
+    "silent": false,
+    "reference": {
+      "integratedLufs": -14,
+      "truePeakDbtp": -1.5
+    },
+    "warnings": [],
+    "listened": false,
+    "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+  },
+  "cues": [
+    {
+      "from": 0,
+      "to": 0.3,
+      "rms": 0.16847729976683778
+    },
+    {
+      "from": 1.5,
+      "to": 1.8,
+      "rms": 0.20108337236703894
+    },
+    {
+      "from": 2.85,
+      "to": 3,
+      "rms": 0.28285605258427277
+    }
+  ],
+  "quiet": [
+    {
+      "from": 0.6,
+      "to": 1,
+      "rms": 0
+    },
+    {
+      "from": 2,
+      "to": 2.4,
+      "rms": 0
+    }
+  ]
+}

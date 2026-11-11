@@ -1,0 +1,33 @@
+{
+  "nativeReactRender": true,
+  "version": "4.0.538",
+  "composition": "ContentOSTitleCard",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "0.600000"
+    }
+  },
+  "bytes": 49937,
+  "sha256": "ea02431699daf30d3b8486f769223bc5f974e68c6d4ef0806c0f670bcb13bd15",
+  "parameterCache": true,
+  "staleRevisionRejected": true,
+  "sharedLockReleased": true,
+  "mixedHyperFramesSnapshot": true,
+  "mixedFinalMp4": true,
+  "project": "D:\\Edit tự động\\contentos\\workspace\\cache\\remotion-smoke-945b1d4f-090c-4b22-8c87-4a458d6d7469",
+  "final": "renders/remotion-smoke-945b1d4f-090c-4b22-8c87-4a458d6d7469-final.mp4",
+  "limits": "Built-in title card only; no project UI, full AIEV composition migration or audio acceptance yet. Runtime locally reuses installed AIEV node_modules; clean installation not verified."
+}

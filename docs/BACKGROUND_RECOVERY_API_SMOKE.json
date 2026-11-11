@@ -1,0 +1,10 @@
+{
+  "actualServerRestart": true,
+  "waitingJobBytesPreserved": true,
+  "noProviderRequestBeforeExplicitResume": true,
+  "unpauseDoesNotReplay": true,
+  "explicitResumeAppliesToCorrectProject": true,
+  "duplicateResumeRejected": true,
+  "syntheticGatewayOnly": true,
+  "requests": 2
+}

@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "source": "real six-second QA video; review API fixture",
+  "rangeStop": true,
+  "replay": true,
+  "pauseOther": true,
+  "errorDisablesConfirmation": true,
+  "noAutomaticReceipt": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": []
+}

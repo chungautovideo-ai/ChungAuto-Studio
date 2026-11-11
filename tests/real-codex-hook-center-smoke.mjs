@@ -1,0 +1,42 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import crypto from 'node:crypto';import {spawn} from 'node:child_process';
+import {createWorkspaceStore} from '../src/services/workspaces.mjs';import {projectRevision} from '../src/services/project-revisions.mjs';
+import {brollTimingReport} from '../src/services/broll-timing-report.mjs';
+import {resolveTimeline} from '../editor/lib/build.mjs';import {captionPhraseSearch} from '../src/services/caption-phrase-search.mjs';
+assert.ok(process.argv.includes('--run-local-codex'),'Pass --run-local-codex to launch configured worker.');
+const root=process.cwd(),base='http://127.0.0.1:5193',delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+try{await fetch(base+'/api/ping',{signal:AbortSignal.timeout(1000)});throw Error('QA port occupied');}catch(error){if(error.message==='QA port occupied'||error.name==='TimeoutError')throw error;}
+const screenMode=process.argv.includes('--screen-phrase');
+const source=screenMode?'workspace/content/2026-11-05/qa-codex-hook-2d7c43':'workspace/content/2026-11-05/contentos-qa-real-codex-q2-7',relative='workspace/content/2026-11-05/qa-codex-'+(screenMode?'screen-':'hook-')+crypto.randomBytes(3).toString('hex'),dir=path.resolve(relative);
+const workspaceFile=path.join(root,'workspace/contentos/workspaces.json'),workspaceBefore=fs.readFileSync(workspaceFile),sourceBytes=fs.readFileSync(path.join(source,'project.json')),original=JSON.parse(sourceBytes);
+assert.equal(original.texts.find(t=>t.apiPreset?.presetId==='ca-hook').x,screenMode?0:540);
+for(const src of new Set([original.source.video,...original.brolls.map(b=>b.src)])){assert.ok(src.startsWith('inputs/')&&!src.includes('..'));fs.mkdirSync(path.dirname(path.join(dir,src)),{recursive:true});fs.copyFileSync(path.join(source,src),path.join(dir,src));}
+fs.mkdirSync(path.join(dir,'work'),{recursive:true});fs.copyFileSync(path.join(source,'work/transcript.json'),path.join(dir,'work/transcript.json'));
+original.workspaceId=createWorkspaceStore(root).active().id;const live=path.join(dir,'project.json');fs.writeFileSync(live,JSON.stringify(original,null,2));
+const serverLog=path.join(dir,'work/qa-server.log'),stream=fs.createWriteStream(serverLog),server=spawn(process.execPath,['editor/server.mjs',relative,'--port','5193'],{windowsHide:true,stdio:['ignore','pipe','pipe']});
+server.stdout.pipe(stream,{end:false});server.stderr.pipe(stream,{end:false});let jobDir;
+async function call(route,body,headers={}){const response=await fetch(base+route,body===undefined?{headers:{Connection:'close',...headers}}:{method:'POST',headers:{Connection:'close','Content-Type':'application/json',...headers},body:JSON.stringify(body)}),value=await response.json();assert.ok(response.ok,JSON.stringify(value));return value;}
+try{
+ let ready=false;for(let n=0;n<100;n++){if(server.exitCode!==null)throw Error('QA server exited');try{await call('/api/ping');ready=true;break;}catch{}await delay(100);}assert.ok(ready);
+ const instruction=screenMode?'Chỉ sửa cảnh trám id b-screen đang nằm ở câu giới thiệu chung: đưa cảnh vào đúng đoạn lời gọi tên màn hình, kết thúc trước khi chuyển sang phim. Dùng node editor/tools/kiem-ban-dung.mjs <việc> --claim ID --find "màn" để tìm nguyên văn và lấy mốc projectStart; không nhập mốc output vào at. Đọc cửa sổ hẹp trước/sau sửa để kiểm lời và thời gian sau hiệu ứng. Giữ nguyên src/mediaStart/speed/mode và mọi trường khác, không thêm/xóa cảnh hoặc đổi A-roll/chữ/nhạc/phụ đề. Chỉ được đổi at/dur/tIn/tInDuration/minhHoa của b-screen. Nếu đoạn liệt kê ngắn thì dùng như insert nhận diện màn, không coi là minh họa đầy đủ thao tác; chọn hiệu ứng vào đủ gọn để còn thấy hình, không kéo sang ý phim để bù thời lượng. Hình nguồn này đã kiểm là màn hình trên xe ở QA trước; không khảo sát/transcribe lại hoặc đọc renderer. Không gọi model phụ, không render/đăng. Chỉ sửa candidate, kiểm rồi hoàn tất claim ở review; báo rõ chưa xem/nghe liên tục.':'Chỉ sửa vị trí ngang của đúng text preset ca-hook có title CHUNGAUTO|QUẬN 2: đưa về chính giữa khung video để không bị cắt mép. Đọc danh mục bằng node editor/tools/chen-preset.mjs <việc> --claim ID và dùng mô tả textCoordinates để hiểu hệ tọa độ; đây chỉ là đọc, không thêm preset. Chỉ thay trường x của hook trên candidate; giữ y, size, title, sub, at, dur, apiPreset và mọi trường còn lại của toàn dự án. Không thêm/xóa chữ. Không đọc renderer hoặc chạy model/agent phụ, không khảo sát/transcribe lại, không render/đăng. Kiểm cấu trúc rồi hoàn tất đúng claim ở review. Báo rõ chưa kiểm hình/âm liên tục.';
+ const startedAt=new Date().toISOString(),queued=await call('/api/ai-revise',{instruction,execution:{mode:'cli',agent:'codex'},completionMode:'review'},{'X-ContentOS-Project':relative,'X-ContentOS-Revision':projectRevision(live)});
+ jobDir=queued.job.dir;console.log(JSON.stringify({project:relative,job:jobDir,startedAt,state:'submitted'}));
+ let state,last=0;const start=Date.now();while(true){state=JSON.parse(fs.readFileSync(path.join(jobDir,'work/ai-job.json')));if(['done','error','cancelled'].includes(state.status))break;if(Date.now()-start>15*60*1000)throw Error('Observation limit: preserve live worker/server.');if(Date.now()-last>30000){last=Date.now();console.log(JSON.stringify({state:state.status,elapsedSeconds:Math.round((Date.now()-start)/1000)}));}await delay(1000);}
+ assert.equal(state.status,'done',state.error);assert.equal(state.completionState,'awaiting-review');
+ const saved=JSON.parse(fs.readFileSync(live)),expected=structuredClone(original);let screenEvidence;
+ if(screenMode){
+  const before=brollTimingReport(original).items.find(b=>b.id==='b-screen'),after=brollTimingReport(saved).items.find(b=>b.id==='b-screen'),chosen=saved.brolls.find(b=>b.id==='b-screen'),comparison=expected.brolls.find(b=>b.id==='b-screen');
+  for(const key of ['at','dur','tIn','tInDuration','minhHoa']){if(Object.hasOwn(chosen,key))comparison[key]=chosen[key];else delete comparison[key];}
+  const timeline=resolveTimeline(saved),words=timeline.caps.flatMap(c=>c.words.map(w=>({text:w.w,outputStart:Math.round((c.start+w.s)*1000)/1000,outputEnd:Math.round((c.start+w.e)*1000)/1000}))).sort((a,b)=>a.outputStart-b.outputStart);
+  const phrase=captionPhraseSearch(words,[],'màn').matches[0],next=words.find(w=>w.outputStart>=phrase.outputEnd&&w.text.toLocaleLowerCase('vi')==='phim');
+  assert.ok(phrase&&next);assert.ok(after.outputStart>=phrase.outputStart-.001);assert.ok(after.outputStart<phrase.outputEnd);assert.ok(after.outputEnd<=next.outputStart+.001);assert.ok(after.entrance.settledDuration>0);
+  screenEvidence={before,after,wordWindow:phrase,nextTopic:next,onlyAllowedScreenFieldsChanged:true};
+ }else expected.texts.find(t=>t.apiPreset?.presetId==='ca-hook').x=0;
+ assert.deepEqual(saved,expected);
+ assert.deepEqual(fs.readFileSync(path.join(source,'project.json')),sourceBytes);assert.deepEqual(fs.readFileSync(workspaceFile),workspaceBefore);assert.equal(fs.existsSync(path.join(dir,'work/render.json')),false);
+ const log=fs.readFileSync(path.join(jobDir,'work/ai-run.log'),'utf8');assert.ok(log.includes(screenMode?'--find':'chen-preset.mjs'));assert.ok(log.includes(screenMode?'phraseSearch':'textCoordinates'));
+ const evidence={project:relative,job:jobDir,startedAt,finishedAt:new Date().toISOString(),status:state.status,completion:state.completionState,...(screenMode?{phraseSearchUsed:true,...screenEvidence}:{catalogRead:true,onlyHookXChanged:true,hookBefore:540,hookAfter:0}),sourceProjectAndWorkspaceUnchanged:true,rendered:false,visualReviewed:false,audioListened:false,scope:screenMode?'Real Codex revision using literal caption search and prior visual source choice; not first-build source selection, semantic matching, continuous review or token benchmark.':'Real Codex revision from catalog coordinate guidance on QA copy; not first-build layout, full audiovisual review, token benchmark or render acceptance.'};
+ fs.writeFileSync(screenMode?'docs/REAL_CODEX_SCREEN_PHRASE_SMOKE.json':'docs/REAL_CODEX_HOOK_CENTER_SMOKE.json',JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify(evidence));
+}finally{
+ const file=jobDir&&path.join(jobDir,'work/ai-job.json'),job=file&&fs.existsSync(file)?JSON.parse(fs.readFileSync(file)):null;
+ if(!job||['done','error','cancelled'].includes(job.status)){server.kill();await new Promise(resolve=>server.exitCode!==null?resolve():server.once('exit',resolve));stream.end();}else console.error('Preserve live worker/server job '+jobDir+' PID '+server.pid);
+}

@@ -1,0 +1,11 @@
+{
+  "created": {
+    "id": "22417cb8-02c2-428b-aac1-6fd63c3e5bcc",
+    "status": "queued",
+    "revision": "7ac5779d7d10d3a9641783672e5a5d8dcc97dab470b255e49c29a9e62a313f8d"
+  },
+  "dedup": true,
+  "staleRejected": true,
+  "cancelRetry": true,
+  "projectUnchanged": true
+}

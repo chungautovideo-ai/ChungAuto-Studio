@@ -1,0 +1,94 @@
+{
+  "project": "workspace/content/2026-11-05/qa-entrance-52d50c",
+  "job": "workspace/content/_sua-video/20261105060735-ddbd7c6b-qa-entrance-52d50c",
+  "startedAt": "2026-11-05T06:07:35.620Z",
+  "finishedAt": "2026-11-05T06:08:25.801Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "before": {
+    "id": "b-man",
+    "src": "inputs/man.mp4",
+    "projectAt": 16.06,
+    "outputStart": 15.52,
+    "outputEnd": 16.27,
+    "outputDuration": 0.75,
+    "mediaStart": 10,
+    "entrance": {
+      "type": "fade",
+      "custom": false,
+      "animationDuration": 0.3,
+      "entranceWithinShot": 0.3,
+      "settledDuration": 0.45,
+      "settledStart": 15.82,
+      "settledEnd": 16.27
+    },
+    "speechOverlap": {
+      "words": [
+        {
+          "captionId": "c18",
+          "text": "màn,",
+          "outputStart": 15.52,
+          "outputEnd": 16.27
+        }
+      ],
+      "truncated": false,
+      "totalWords": 1,
+      "nextWord": {
+        "captionId": "c19",
+        "text": "phim",
+        "outputStart": 16.27,
+        "outputEnd": 16.87
+      },
+      "startsInsideWord": false,
+      "endsInsideWord": false
+    },
+    "advisories": []
+  },
+  "after": {
+    "id": "b-man",
+    "src": "inputs/man.mp4",
+    "projectAt": 16.06,
+    "outputStart": 15.52,
+    "outputEnd": 16.27,
+    "outputDuration": 0.75,
+    "mediaStart": 10,
+    "entrance": {
+      "type": "fade",
+      "custom": true,
+      "animationDuration": 0.1,
+      "entranceWithinShot": 0.1,
+      "settledDuration": 0.65,
+      "settledStart": 15.62,
+      "settledEnd": 16.27
+    },
+    "speechOverlap": {
+      "words": [
+        {
+          "captionId": "c18",
+          "text": "màn,",
+          "outputStart": 15.52,
+          "outputEnd": 16.27
+        }
+      ],
+      "truncated": false,
+      "totalWords": 1,
+      "nextWord": {
+        "captionId": "c19",
+        "text": "phim",
+        "outputStart": 16.27,
+        "outputEnd": 16.87
+      },
+      "startsInsideWord": false,
+      "endsInsideWord": false
+    },
+    "advisories": []
+  },
+  "onlyRequestedFieldChanged": true,
+  "sourceProjectAndWorkspaceUnchanged": true,
+  "cliToolMentioned": true,
+  "entranceReportMentioned": true,
+  "rendered": false,
+  "visualReviewed": false,
+  "audioListened": false,
+  "scope": "Real local Codex exact-field edit on copied QA; imported transcript and prior source choice. Does not prove new source selection, real-product readability, full preview or token efficiency."
+}

@@ -1,0 +1,51 @@
+{
+  "fixture": "Real six-second speaker proxy plus synthetic moving rectangle; not actual human occlusion.",
+  "actualCUDA": true,
+  "fullRangeRejected": true,
+  "failedOutputsAbsent": true,
+  "failures": [
+    "shot guard at2.500s with sudden cover",
+    "mask area-change at3.000s with moving cover"
+  ],
+  "shorterDuration": 2.875,
+  "ranges": [
+    {
+      "from": 0,
+      "end": 2.875,
+      "frames": 23
+    },
+    {
+      "from": 4.5,
+      "end": 6,
+      "frames": 12
+    }
+  ],
+  "times": [
+    0,
+    2.75,
+    2.875,
+    3,
+    3.5,
+    4.499,
+    4.5,
+    5.875,
+    6
+  ],
+  "semanticSelectedPixelCounts": [
+    5124,
+    2996,
+    0,
+    0,
+    0,
+    0,
+    6735,
+    6192,
+    0
+  ],
+  "elapsedSeconds": [
+    2.016,
+    1.359
+  ],
+  "requiresVisualReview": true,
+  "scope": "Artifact replay and shared mask helper; not new UI apply/Undo/Save/final or identity verification."
+}

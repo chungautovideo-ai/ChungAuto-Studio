@@ -1,0 +1,17 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "project": "workspace/content/2026-11-03/contentos-smoke-segfit-1280-1793748883434",
+      "inspectorEditSaveReload": true
+    },
+    {
+      "width": 1920,
+      "project": "workspace/content/2026-11-03/contentos-smoke-segfit-1920-1793748884868",
+      "inspectorEditSaveReload": true
+    }
+  ],
+  "syntheticSource": true,
+  "pageErrors": [],
+  "limits": "Actual clip inspector edit/save/reload at two viewports; no direct audio preview listening or production benchmark."
+}

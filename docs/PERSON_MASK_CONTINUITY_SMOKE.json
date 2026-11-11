@@ -1,0 +1,15 @@
+{
+  "actualSAM2CUDAInference": true,
+  "frames": 48,
+  "elapsedSeconds": 3.859,
+  "gpuPeakBytes": 612740096,
+  "maskGuard": {
+    "method": "adjacent-overlap-area-centroid-v1",
+    "identityVerified": false
+  },
+  "identicalMasksToPriorQA": true,
+  "maximumAreaRatio": 1.055168,
+  "maximumCentroidDistance": 0.020195,
+  "resultSha256": "3940e3a3426cbabfa61462e7912327de46461aebf212dcd51b00ea9b914cc0ce",
+  "scope": "One person walking/gesturing for six seconds. Synthetic relocation/area-change guards also checked; no actual multiple-person occlusion acceptance."
+}

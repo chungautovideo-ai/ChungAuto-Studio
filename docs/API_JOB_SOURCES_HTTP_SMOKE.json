@@ -1,0 +1,19 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-api-jobsources-5",
+  "filteredQuery": "BROLL",
+  "selectedIndex": 1,
+  "firstBuild": false,
+  "actualHTTPWorker": true,
+  "syntheticLocalGateway": true,
+  "calls": 5,
+  "listAttachInspectSet": true,
+  "imported": "inputs/library/8e5c0253-04b3-4327-a334-162a533a80e8.mp4",
+  "provenanceRole": "broll",
+  "sha256": "a13a0463f9d7c28f759e95c9c8e6f380f007c286e8123adf6bfee0f94960433d",
+  "completionAwaitingReview": true,
+  "sourceFixtureLocalDirectory": true,
+  "noActualNAS": true,
+  "noPaidProvider": true,
+  "noRender": true,
+  "limits": "Synthetic directory/media and model responses; not actual NAS availability, model choice quality or throughput."
+}

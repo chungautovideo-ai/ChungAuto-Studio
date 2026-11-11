@@ -1,0 +1,67 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-smoke-candidate-check-4",
+  "httpJobAndClaim": true,
+  "actualCLI": true,
+  "report": {
+    "ok": true,
+    "candidateRevision": "ffc73c734aac9b6374a37c995b9ec334646f4d1ced3c73e8ae49ec2815efa8a0",
+    "duration": 0.6,
+    "counts": {
+      "segments": 1,
+      "texts": 0,
+      "blocks": 0,
+      "brolls": 0,
+      "captions": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "timelineResolved": true,
+    "htmlBuilt": false,
+    "applied": false,
+    "rendered": false,
+    "visualReviewed": false,
+    "audioListened": false,
+    "limits": "Chỉ kiểm cấu trúc timeline/đồ họa theo lời; không chạy build HTML. Không xác minh media, hình khớp nội dung, chính tả ASR, bố cục, chuyển động, mix hoặc quyền tư liệu. Xem/nghe preview trước kết luận chất lượng."
+  },
+  "timingWindow": {
+    "clock": "output",
+    "from": 0,
+    "to": 0.4,
+    "words": [],
+    "wordsTruncated": false,
+    "brolls": [],
+    "brollsTruncated": false,
+    "segments": [
+      {
+        "id": "s1",
+        "projectIn": 0,
+        "projectOut": 0.6,
+        "outputStart": 0,
+        "outputEnd": 0.6,
+        "rate": 1,
+        "src": "inputs/raw.mp4",
+        "mediaStart": 0
+      }
+    ],
+    "segmentsTruncated": false,
+    "notes": "projectStart/projectEnd là mốc gốc của từ trên timeline dự án trước cắt; có thể dùng projectStart làm at, không dùng outputStart. outputStart/outputEnd là mốc sau cắt/tốc độ; dur là giây phát đầu ra. mediaStart là clock riêng trong file B-roll. Lời lấy từ caption candidate, có thể sai/thiếu; không phải transcript đã duyệt hoặc kiểm hình khớp nghĩa."
+  },
+  "wordAnchors": [
+    {
+      "captionId": "word",
+      "text": "đèn",
+      "projectStart": 0.3,
+      "projectEnd": 0.5,
+      "outputStart": 0.05,
+      "outputEnd": 0.15
+    }
+  ],
+  "invalidWindowRejected": true,
+  "allFilesUnchanged": true,
+  "wrongClaimRejected": true,
+  "invalidGraphicRejected": true,
+  "terminalRejected": true,
+  "completionAwaitingReview": true,
+  "noRender": true,
+  "scope": "Synthetic short QA through first-build endpoint/CLI/completion; no actual model or visual/audio quality acceptance."
+}

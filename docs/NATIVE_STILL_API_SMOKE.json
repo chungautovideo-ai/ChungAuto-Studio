@@ -1,0 +1,26 @@
+{
+  "workspaceId": "20483e61-6b32-4881-8611-a9cc687402b5",
+  "sourceImage": "f2cf1434-ab8b-427a-a097-7f7c7b823195",
+  "results": [
+    {
+      "kind": "poster",
+      "imageId": "e29a5e58-f914-420c-919d-4908b3ac4c53",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "sourceInputPreserved": true,
+      "idempotency": true
+    },
+    {
+      "kind": "thumbnail",
+      "imageId": "912d7820-9a8f-401d-9806-c64cfc5d47bb",
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceInputPreserved": true,
+      "idempotency": true
+    }
+  ]
+}

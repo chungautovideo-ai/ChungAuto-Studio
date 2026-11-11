@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "tabs": 4,
+      "imageConfig": true,
+      "browser": true,
+      "back": true,
+      "voiceConfig": true,
+      "voiceAllowedFormFixture": true,
+      "llmConfig": true,
+      "legacyAlias": true,
+      "readOnlyRequests": 20,
+      "noVoiceDiscovery": true
+    },
+    {
+      "width": 1920,
+      "tabs": 4,
+      "imageConfig": true,
+      "browser": true,
+      "back": true,
+      "voiceConfig": true,
+      "voiceAllowedFormFixture": true,
+      "llmConfig": true,
+      "legacyAlias": true,
+      "readOnlyRequests": 35,
+      "noVoiceDiscovery": true
+    }
+  ],
+  "errors": [],
+  "readOnly": true
+}

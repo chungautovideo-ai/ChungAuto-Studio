@@ -1,0 +1,12 @@
+{
+  "cliReadOnly": true,
+  "claimedCandidateUnchanged": true,
+  "wrongClaimRejected": true,
+  "suggestApplyRejected": true,
+  "apiRealLocalOcr": true,
+  "gateway": "fixture",
+  "apiRounds": 3,
+  "liveUnchanged": true,
+  "sourceHash": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+  "scope": "Real CLI and local OCR/API tool with mock gateway; no provider model, tracking or auto-export."
+}

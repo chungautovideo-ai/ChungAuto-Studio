@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+import {normalizeSourceZoom} from '../editor/lib/source-zoom.js';import {convertAievProject} from '../src/services/aiev-project-adapter.mjs';import {makeTimemap,mergeContiguous} from '../editor/lib/timemap.js';import {buildHtml} from '../editor/lib/build.mjs';import {applyEditorFields} from '../src/services/api-editor.mjs';
+test('AIEV scene zoom keys use output-relative time independently of scene speed',()=>{
+ const zoom={origin:'50% 38%',keys:[{frame:30,scale:2,ease:'linear'},{frame:0,scale:1}]},p=convertAievProject({width:1080,height:1920,fps:30,scenes:[{srcVideo:'source.mp4',from:0,to:2,speed:2,zoom},{srcVideo:'source.mp4',from:2,to:3,zoom}]});assert.deepEqual(p.segments[0].motionZoom.keys.map(k=>k.time),[0,1]);assert.equal(mergeContiguous(makeTimemap(p).segs,p).length,2);
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'cos-motion-'));try{const html=buildHtml(p,dir);assert.match(html,/id="source-zoom-0"/);assert.match(html,/"sourceZooms":\[/);assert.equal(applyEditorFields(p,{segments:p.segments}).segments[0].motionZoom.keys[1].scale,2);}finally{fs.rmSync(dir,{recursive:true,force:true});}
+ for(const v of [{keys:[]},{origin:'url(x)',keys:[{time:0,scale:1},{time:1,scale:2}]},{keys:[{time:0,scale:1},{time:0,scale:2}]},{keys:[{time:0,scale:1},{time:1,scale:11}]}])assert.throws(()=>normalizeSourceZoom(v));
+});

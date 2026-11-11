@@ -1,0 +1,30 @@
+{
+  "dir": "workspace/content/2026-11-04/contentos-smoke-shotcolor-3",
+  "results": [
+    {
+      "width": 1280,
+      "previewThreeFrames": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true
+    },
+    {
+      "width": 1920,
+      "previewThreeFrames": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true
+    },
+    {
+      "width": 390,
+      "previewThreeFrames": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true
+    }
+  ],
+  "errors": []
+}

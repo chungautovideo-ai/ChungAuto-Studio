@@ -1,0 +1,15 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+import {verifyArtifact} from '../src/services/artifact-integrity.mjs';
+assert.ok(process.argv.includes('--render-local'),'Pass --render-local for isolated QA excerpt.');
+const source='workspace/content/2026-11-05/contentos-qa-real-codex-q2-7',file=path.join(source,'project.json'),bytes=fs.readFileSync(file),p=JSON.parse(bytes),hook=p.texts.find(t=>t.apiPreset?.presetId==='ca-hook');assert.equal(hook.x,540);
+const dir='workspace/content/2026-11-05/qa-hook-center-'+crypto.randomUUID().slice(0,8);fs.mkdirSync(path.join(dir,'inputs'),{recursive:true});fs.mkdirSync(path.join(dir,'work'));
+fs.copyFileSync(path.join(source,p.source.video),path.join(dir,p.source.video));fs.copyFileSync(path.join(source,'work/transcript.json'),path.join(dir,'work/transcript.json'));
+const before=structuredClone(hook);hook.x=0;
+p.segments=p.segments.filter(s=>s.keep!==false&&s.in<5.1).map(s=>({...s,out:Math.min(s.out,5.1)}));
+for(const key of ['texts','blocks','brolls','zooms','scenes','vfx'])p[key]=(p[key]||[]).filter(item=>item.at<5.1);
+fs.writeFileSync(path.join(dir,'project.json'),JSON.stringify(p,null,2));
+execFileSync(process.execPath,['editor/tools/xuat-video.mjs',dir,'--quality','draft'],{windowsHide:true,timeout:300000,stdio:'pipe'});
+const state=JSON.parse(fs.readFileSync(path.join(dir,'work/render.json')));assert.equal(state.ok,true);verifyArtifact(state.saved,JSON.parse(fs.readFileSync(state.saved+'.json')));
+const contact='docs/Q2_HOOK_CENTER_CONTACT.jpg';execFileSync('ffmpeg',['-nostdin','-v','error','-y','-i',state.saved,'-vf','fps=1,scale=270:480,tile=4x1','-frames:v','1',contact],{windowsHide:true});
+assert.deepEqual(fs.readFileSync(file),bytes);const evidence={project:dir,workerProject:source,workerProjectUnchanged:true,scope:'4.5-second isolated QA excerpt, only hook x changes from540 to0 within that excerpt. Not a repaired full worker output or model behavior acceptance.',hookBefore:before,hookAfter:hook,output:state.saved,contact,visualReviewed:false};
+fs.writeFileSync('docs/Q2_HOOK_CENTER_SMOKE.json',JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify(evidence));

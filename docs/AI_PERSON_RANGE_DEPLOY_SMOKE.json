@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-05T00:27:40.034Z",
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "previousPidVerified": 4760,
+  "resourcesIdleBeforeRestart": true,
+  "backendRestarted": true,
+  "realCodexEvidence": "REAL_CODEX_PERSON_RANGE_SMOKE.json",
+  "scope": "Main ping after backend restart; range API/session/model behavior tested on separate QA server."
+}

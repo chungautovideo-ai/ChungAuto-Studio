@@ -1,0 +1,84 @@
+{
+  "source": "D:/Edit tự động/source/DJI_0061_D.MP4",
+  "sourceRange": [
+    12,
+    14
+  ],
+  "sourceUnchangedStat": true,
+  "sample": "540x960 SDR proxy extracted from real Q2 footage; not full 10bit original processing benchmark",
+  "project": "workspace\\content\\2026-11-04\\contentos-skin-q2-proof",
+  "amount": 0.15,
+  "result": {
+    "path": "inputs/color/9dd66b4a-5531-4f57-8534-bedf0faee2e2/normalized.mp4",
+    "duration": 2.002,
+    "provenance": {
+      "kind": "color-normalization",
+      "source": "inputs/q2-sample.mp4",
+      "sourceSha256": "516b0fa592817a35d5d5a3755896d351458c7860c43a6b170e9a45f3b9495676",
+      "from": 0,
+      "duration": 2,
+      "input": "rec709",
+      "output": "rec709",
+      "encoder": "h264_nvenc",
+      "stabilize": "off",
+      "skinLift": {
+        "amount": 0.15,
+        "algorithm": "soft-ycbcr-lut33-v1",
+        "lutSha256": "62d748fa75a9d4d10521576e2ca8fae560b45e52d51915b767eb91230c0c933e"
+      },
+      "technicalLut": null,
+      "lookLut": null,
+      "sha256": "1a12213707441ddfae1605e224c5065b88d4f7528fd3a676d56cacf39cb52d97"
+    },
+    "mediaInfo": {
+      "width": 540,
+      "height": 960,
+      "duration": 2.002,
+      "hasAudio": true,
+      "colorMetadata": {
+        "primaries": "bt709",
+        "transfer": "bt709",
+        "matrix": "bt709",
+        "range": "tv",
+        "pixelFormat": "yuv420p",
+        "make": "",
+        "model": "",
+        "dolbyVision": false
+      }
+    },
+    "warnings": [
+      "Metadata ghi Rec.709; nếu máy quay ghi Log với tag này, chọn đúng profile và LUT kỹ thuật.",
+      "Nâng sáng theo sắc màu gần da; không nhận diện mặt. Ghế da, nội thất và sơn cùng màu có thể bị ảnh hưởng; cần xem toàn đoạn."
+    ],
+    "encoder": "h264_nvenc",
+    "stabilize": "off"
+  },
+  "metadata": {
+    "name": "normalized.mp4",
+    "kind": "video",
+    "bytes": 1492954,
+    "mtimeMs": 1793808178862.3018,
+    "duration": 2.002,
+    "width": 540,
+    "height": 960,
+    "displayWidth": 540,
+    "displayHeight": 960,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30000/1001",
+    "hasAudio": true,
+    "sampleRate": 48000,
+    "channels": 2,
+    "colorMetadata": {
+      "primaries": "bt709",
+      "transfer": "bt709",
+      "matrix": "bt709",
+      "range": "tv",
+      "pixelFormat": "yuv420p",
+      "make": "",
+      "model": "",
+      "dolbyVision": false
+    }
+  },
+  "scope": "Technical and visual comparison only; no aesthetic acceptance or face segmentation claim"
+}

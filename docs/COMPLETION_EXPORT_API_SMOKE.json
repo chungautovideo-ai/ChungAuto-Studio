@@ -1,0 +1,40 @@
+{
+  "syntheticOnly": true,
+  "manualNoRender": true,
+  "autoFinalMp4": true,
+  "editorWaitCancellable": true,
+  "waitsForSharedRenderLock": true,
+  "waitingPreservesRenderStatus": true,
+  "duplicateCompletionRejected": true,
+  "oneSnapshotPerReviseExport": true,
+  "firstBuildCandidateIsolated": true,
+  "firstBuildManualConflictPreserved": true,
+  "firstBuildManual": true,
+  "firstBuildTokenAndRevisionChecked": true,
+  "firstBuildCliCompletionAndAutoFinal": true,
+  "firstBuildOutput": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-completion-6\\renders\\contentos-smoke-completion-6-final-2.mp4",
+  "revision": "a99c05137beab7879fe3d92f1da5d1afaa1d29258fb2a4e545fa9af3b86d6e6e",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-completion-6\\renders\\contentos-smoke-completion-6-final.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  },
+  "limits": "First-build project JSON staged; generated media still uses project inputs. Durable restart/retry, asset staging and production validation incomplete."
+}

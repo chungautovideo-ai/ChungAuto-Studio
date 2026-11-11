@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng nhập — {{SITE_NAME}}</title>
+<meta name="description" content="Đăng nhập hoặc tạo tài khoản {{SITE_NAME}} để tải mẫu edit video và phần mềm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b;--surface:#141416;--surface2:#1b1b1e;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);
+  --ink:#f5f5f6;--ink2:#c3c3c9;--muted:#7d7d85;--lime:#d8ff3e;--lime-ink:#0a0a0b;--danger:#ff5b6b;--ok:#3ee08a;
+  --head:"Inter Tight",Inter,system-ui,sans-serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+/* Cột trái: video mẫu chạy nền */
+.show{position:relative;overflow:hidden;border-right:1px solid var(--line);background:#000}
+.show video,.show img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.show::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.2),rgba(10,10,11,.92) 85%)}
+.show .txt{position:absolute;left:48px;right:48px;bottom:48px;z-index:2}
+.show h2{font:900 44px/1.02 var(--head);margin:0 0 14px;text-transform:uppercase;letter-spacing:-.01em}
+.show h2 span{color:var(--lime);display:block}
+.show ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;color:var(--ink2)}
+.show li::before{content:"✓";color:var(--lime);font-weight:800;margin-right:10px}
+/* Cột phải: form */
+.side{display:flex;flex-direction:column;padding:28px 48px}
+.logo{display:inline-flex;align-items:center;gap:10px;font:800 18px/1 var(--head);text-decoration:none}
+.logo i{width:26px;height:26px;border-radius:8px;background:var(--lime);display:inline-grid;place-items:center}
+.logo i::after{content:"";width:0;height:0;border-left:8px solid var(--lime-ink);border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.top a.back{color:var(--muted);text-decoration:none;font-size:14px}
+.top a.back:hover{color:var(--ink)}
+.box{width:100%;max-width:400px;margin:auto;padding:40px 0}
+.box h1{font:800 32px/1.1 var(--head);margin:0 0 8px}
+.box .lead{color:var(--muted);margin:0 0 26px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px;margin-bottom:22px}
+.tabs button{border:0;background:none;color:var(--muted);font:600 14px var(--sans);padding:10px;border-radius:9px;cursor:pointer}
+.tabs button.on{background:var(--surface2);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line2)}
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-size:13px;color:var(--ink2)}
+.field{position:relative}
+input{width:100%;height:46px;border-radius:11px;border:1px solid var(--line2);background:var(--surface);color:var(--ink);font:15px var(--sans);padding:0 14px;outline:none;transition:border-color .15s}
+input:focus{border-color:var(--lime)}
+input.bad{border-color:var(--danger)}
+.eye{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--muted);font:600 12px var(--sans);cursor:pointer;padding:6px 8px}
+.eye:hover{color:var(--ink)}
+.meter{height:4px;border-radius:2px;background:var(--surface2);overflow:hidden;margin-top:2px}
+.meter i{display:block;height:100%;width:0;background:var(--danger);transition:width .2s,background .2s}
+.small{font-size:12px;color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.row label{display:flex;align-items:center;gap:8px;color:var(--ink2)}
+.row input[type=checkbox]{width:16px;height:16px;accent-color:var(--lime)}
+.btn{height:48px;border:0;border-radius:12px;background:var(--lime);color:var(--lime-ink);font:800 15px var(--head);cursor:pointer;transition:filter .15s,transform .1s}
+.btn:hover{filter:brightness(1.05)}
+.btn:active{transform:scale(.99)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.msg{font-size:13px;min-height:18px}
+.msg.err{color:var(--danger)}
+.msg.ok{color:var(--ok)}
+.note{margin-top:22px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:13px;color:var(--ink2)}
+.note b{color:var(--ink)}
+.switch{text-align:center;color:var(--muted);font-size:14px;margin-top:18px}
+.switch a{color:var(--lime);text-decoration:none;font-weight:600;cursor:pointer}
+.foot{color:var(--muted);font-size:12px;text-align:center}
+.hide{display:none!important}
+@media (max-width:900px){
+  .wrap{grid-template-columns:1fr}
+  .show{display:none}
+  .side{padding:20px 16px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="show" aria-hidden="true">
+    <!--SHOWCASE-->
+    <div class="txt">
+      <h2>Quay xong thả vào<span>ra video triệu view</span></h2>
+      <ul>
+        <li>AI tự cắt, thêm phụ đề và hiệu ứng</li>
+        <li>Chỉnh tay từng chi tiết như CapCut</li>
+        <li>Thư viện mẫu edit theo ngành nghề</li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="side">
+    <div class="top">
+      <a class="logo" href="./"><i></i>{{SITE_NAME}}</a>
+      <a class="back" href="./">← Về trang chủ</a>
+    </div>
+
+    <div class="box">
+      <h1 id="title">Chào mừng trở lại</h1>
+      <p class="lead" id="lead">Đăng nhập để tải mẫu edit và phần mềm.</p>
+
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-mode="login" class="on">Đăng nhập</button>
+        <button type="button" role="tab" data-mode="register">Đăng ký</button>
+      </div>
+
+      <form id="form" novalidate>
+        <label class="hide" id="nameRow">Tên của bạn
+          <input name="name" autocomplete="name" placeholder="Nguyễn Văn A" maxlength="80">
+        </label>
+        <label>Email
+          <input name="email" type="email" autocomplete="email" placeholder="ban@email.com" required>
+        </label>
+        <label>Mật khẩu
+          <span class="field">
+            <input name="password" type="password" autocomplete="current-password" placeholder="Mật khẩu" required>
+            <button type="button" class="eye" id="eye">Hiện</button>
+          </span>
+          <span class="meter hide" id="meter"><i></i></span>
+          <span class="small hide" id="pwHint">Ít nhất 8 ký tự. Nên có chữ hoa, số hoặc ký hiệu.</span>
+        </label>
+        <label class="hide" id="pw2Row">Nhập lại mật khẩu
+          <input name="password2" type="password" autocomplete="new-password" placeholder="Nhập lại mật khẩu">
+        </label>
+        <div class="row" id="loginRow">
+          <span class="small">Dùng chung cho website và phần mềm</span>
+          <a href="?mode=quen" id="forgotLink" class="small" style="text-decoration:none">Quên mật khẩu?</a>
+        </div>
+        <label class="row hide" id="termsRow" style="justify-content:flex-start">
+          <input type="checkbox" name="terms"> <span>Tôi đồng ý với điều khoản sử dụng</span>
+        </label>
+        <button class="btn" id="submit">Đăng nhập</button>
+        <div class="msg" id="msg" role="alert"></div>
+      </form>
+
+      <form id="pwForm" class="hide" novalidate>
+        <label id="pwEmail">Email tài khoản
+          <input name="email" type="email" autocomplete="email" placeholder="ban@email.com">
+        </label>
+        <label id="pwNew" class="hide">Mật khẩu mới (ít nhất 8 ký tự)
+          <input name="password" type="password" autocomplete="new-password" placeholder="Mật khẩu mới">
+        </label>
+        <label id="pwNew2" class="hide">Nhập lại mật khẩu mới
+          <input name="password2" type="password" autocomplete="new-password" placeholder="Nhập lại mật khẩu mới">
+        </label>
+        <button class="btn" id="pwBtn">Gửi liên kết đặt lại</button>
+        <div class="msg" id="pwMsg" role="alert"></div>
+        <div class="switch" style="margin-top:0"><a data-mode="login">← Quay lại đăng nhập</a></div>
+      </form>
+
+      <div class="switch" id="switch">Chưa có tài khoản? <a data-mode="register">Đăng ký</a></div>
+      <div class="note hide" id="offline"><b>Hệ thống tài khoản đang bảo trì.</b> Bạn vẫn xem được thư viện mẫu. Vui lòng quay lại sau ít phút.</div>
+    </div>
+
+    <div class="foot">© {{YEAR}} {{SITE_NAME}}</div>
+  </main>
+</div>
+
+<script>
+(function () {
+  var $ = function (s) { return document.querySelector(s); };
+  var form = $("#form"), msg = $("#msg"), btn = $("#submit");
+  var qs = new URLSearchParams(location.search);
+  var next = qs.get("next") || "./";
+  if (!/^(\.\/|\/(?!\/)|#)/.test(next)) next = "./"; // chỉ cho quay về trang trong website
+  if (next.charAt(0) === "#") next = "./" + next;
+  var mode = qs.get("mode") === "register" || location.pathname.indexOf("dang-ky") >= 0 ? "register" : "login";
+
+  // Quên mật khẩu: nhập email → mail có liên kết /dang-nhap#reset=<mã> → đặt mật khẩu mới
+  var resetToken = (/^#reset=([a-f0-9]{64})$/.exec(location.hash) || [])[1] || "";
+  if (location.hash.indexOf("#reset=") === 0) history.replaceState(null, "", location.pathname);
+  var pwForm = $("#pwForm"), pwMsg = $("#pwMsg"), pwBtn = $("#pwBtn");
+  function showPw(reset) {
+    form.classList.add("hide"); $("#switch").classList.add("hide"); document.querySelector(".tabs").classList.add("hide");
+    pwForm.classList.remove("hide");
+    $("#title").textContent = reset ? "Đặt mật khẩu mới" : "Quên mật khẩu";
+    $("#lead").textContent = reset ? "Nhập mật khẩu mới cho tài khoản của bạn." : "Nhập email tài khoản, chúng tôi sẽ gửi liên kết đặt lại mật khẩu.";
+    document.title = (reset ? "Đặt mật khẩu mới" : "Quên mật khẩu") + " — {{SITE_NAME}}";
+    $("#pwEmail").classList.toggle("hide", reset);
+    $("#pwNew").classList.toggle("hide", !reset); $("#pwNew2").classList.toggle("hide", !reset);
+    pwBtn.textContent = reset ? "Lưu mật khẩu mới" : "Gửi liên kết đặt lại";
+    pwMsg.textContent = ""; pwMsg.className = "msg";
+  }
+  $("#forgotLink").onclick = function (e) { e.preventDefault(); pwForm.email.value = form.email.value.trim(); showPw(false); };
+  pwForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var bad = function (t) { pwMsg.textContent = t; pwMsg.className = "msg err"; };
+    var email = pwForm.email.value.trim(), pw = pwForm.password.value;
+    if (resetToken) {
+      if (pw.length < 8) return bad("Mật khẩu cần ít nhất 8 ký tự.");
+      if (pw !== pwForm.password2.value) return bad("Hai mật khẩu chưa khớp.");
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return bad("Email chưa đúng định dạng.");
+    pwBtn.disabled = true;
+    try {
+      var r = await fetch(resetToken ? "/api/auth/reset" : "/api/auth/forgot", { method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin",
+        body: JSON.stringify(resetToken ? { token: resetToken, password: pw } : { email: email }) });
+      var j = await r.json().catch(function () { return {}; });
+      if (!r.ok || j.ok === false) throw new Error(j.error || "Không kết nối được máy chủ. Thử lại sau.");
+      if (resetToken) {
+        resetToken = ""; pwForm.reset(); setMode("login");
+        msg.textContent = "Đã đổi mật khẩu. Hãy đăng nhập bằng mật khẩu mới."; msg.className = "msg ok";
+      } else {
+        pwMsg.textContent = "Nếu email này có tài khoản, liên kết đặt lại đã được gửi. Hãy kiểm tra hộp thư, cả mục Spam. Liên kết dùng được trong 30 phút."; pwMsg.className = "msg ok";
+      }
+    } catch (err) { bad(err.message); }
+    pwBtn.disabled = false;
+  });
+
+  function setMode(m) {
+    pwForm.classList.add("hide"); form.classList.remove("hide"); $("#switch").classList.remove("hide"); document.querySelector(".tabs").classList.remove("hide");
+    mode = m;
+    var reg = m === "register";
+    document.querySelectorAll(".tabs button").forEach(function (b) { b.classList.toggle("on", b.dataset.mode === m); });
+    $("#title").textContent = reg ? "Tạo tài khoản" : "Chào mừng trở lại";
+    $("#lead").textContent = reg ? "Email đã được kích hoạt gói Basic dùng được ngay. Chưa kích hoạt: mua gói Basic / Pro / Premium ở Bảng giá." : "Đăng nhập để tải mẫu edit và phần mềm.";
+    document.title = (reg ? "Đăng ký" : "Đăng nhập") + " — {{SITE_NAME}}";
+    ["#nameRow", "#pw2Row", "#termsRow", "#meter", "#pwHint"].forEach(function (s) { $(s).classList.toggle("hide", !reg); });
+    $("#loginRow").classList.toggle("hide", reg);
+    form.password.autocomplete = reg ? "new-password" : "current-password";
+    btn.textContent = reg ? "Tạo tài khoản" : "Đăng nhập";
+    $("#switch").innerHTML = reg ? 'Đã có tài khoản? <a data-mode="login">Đăng nhập</a>' : 'Chưa có tài khoản? <a data-mode="register">Đăng ký</a>';
+    msg.textContent = ""; msg.className = "msg";
+    form.querySelectorAll("input").forEach(function (i) { i.classList.remove("bad"); });
+    history.replaceState(null, "", "?mode=" + m + (qs.get("next") ? "&next=" + encodeURIComponent(next) : ""));
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-mode]");
+    if (t) { e.preventDefault(); setMode(t.dataset.mode); }
+  });
+  $("#eye").onclick = function () {
+    var p = form.password, show = p.type === "password";
+    p.type = show ? "text" : "password"; form.password2.type = p.type;
+    this.textContent = show ? "Ẩn" : "Hiện";
+  };
+  form.password.addEventListener("input", function () {
+    var v = this.value, s = 0;
+    if (v.length >= 8) s++;
+    if (/[A-Z]/.test(v) && /[a-z]/.test(v)) s++;
+    if (/\d/.test(v)) s++;
+    if (/[^\w\s]/.test(v) || v.length >= 12) s++;
+    var bar = $("#meter i");
+    bar.style.width = (v ? Math.max(15, s * 25) : 0) + "%";
+    bar.style.background = s <= 1 ? "var(--danger)" : s === 2 ? "#ffb020" : "var(--ok)";
+  });
+  form.addEventListener("input", function (e) { e.target.classList.remove("bad"); if (msg.className.indexOf("err") >= 0) msg.textContent = ""; });
+
+  function fail(text, field) {
+    msg.textContent = text; msg.className = "msg err";
+    if (field) { form[field].classList.add("bad"); form[field].focus(); }
+  }
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var reg = mode === "register";
+    var email = form.email.value.trim(), pw = form.password.value;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return fail("Email chưa đúng định dạng.", "email");
+    if (!pw) return fail("Nhập mật khẩu.", "password");
+    if (reg) {
+      if (pw.length < 8) return fail("Mật khẩu cần ít nhất 8 ký tự.", "password");
+      if (pw !== form.password2.value) return fail("Hai mật khẩu chưa khớp.", "password2");
+      if (!form.terms.checked) return fail("Hãy đồng ý với điều khoản sử dụng.");
+    }
+    btn.disabled = true; btn.textContent = reg ? "Đang tạo tài khoản…" : "Đang đăng nhập…";
+    try {
+      var body = { email: email, password: pw };
+      if (reg) body.name = form.name.value.trim();
+      var r = await fetch("/api/auth/" + (reg ? "register" : "login"), {
+        method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin", body: JSON.stringify(body),
+      });
+      var j = await r.json().catch(function () { return {}; });
+      if (!r.ok || j.ok === false) throw new Error(j.error || "Không kết nối được máy chủ. Thử lại sau.");
+      msg.textContent = reg ? "Đã tạo tài khoản. Đang chuyển trang…" : "Đăng nhập thành công. Đang chuyển trang…";
+      msg.className = "msg ok";
+      setTimeout(function () { location.href = next; }, 600);
+    } catch (err) {
+      fail(err.message);
+      btn.disabled = false; btn.textContent = reg ? "Tạo tài khoản" : "Đăng nhập";
+    }
+  });
+
+  setMode(mode);
+  if (resetToken) showPw(true);
+  else if (qs.get("mode") === "quen") showPw(false);
+  // Đã đăng nhập → về trang trước; máy chủ tài khoản chưa sẵn sàng → báo bảo trì
+  fetch("/api/config", { credentials: "same-origin" }).then(function (r) { return r.json(); }).then(function (c) {
+    if (c.ok === false) throw 0;
+    if (resetToken) return;
+    return fetch("/api/me", { credentials: "same-origin" }).then(function (r) { if (r.ok) location.replace(next); });
+  }).catch(function () { $("#offline").classList.remove("hide"); btn.disabled = true; });
+})();
+</script>
+</body>
+</html>

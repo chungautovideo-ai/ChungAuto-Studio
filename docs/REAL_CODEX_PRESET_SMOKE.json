@@ -1,0 +1,26 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-preset",
+  "job": "workspace/content/_sua-video/20261105011816-d8565240-contentos-qa-real-codex-preset",
+  "startedAt": "2026-11-05T01:18:16.208Z",
+  "finishedAt": "2026-11-05T01:19:12.400Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "modelTested": true,
+  "helperUsed": true,
+  "exactlyOneTextAdded": true,
+  "existingFieldsUnchanged": true,
+  "added": {
+    "id": "t-4131a6d3-2f18-429b-a0e8-cd1139b10ba6",
+    "title": "NÂNG CẤP XE",
+    "sub": "Chọn đúng nhu cầu",
+    "at": 3,
+    "dur": 2,
+    "apiPreset": {
+      "templateId": "chungauto-factory-quang-cao-v50",
+      "presetId": "ca-hook",
+      "templateHash": "7cdbca304997f5ac3f652d5dcdd11147b19c07bb2958110e18985088a80eb35e"
+    }
+  },
+  "rendered": false,
+  "limits": "Targeted real Codex insertion only; no measured token benchmark, continuous video/audio review or final render acceptance."
+}

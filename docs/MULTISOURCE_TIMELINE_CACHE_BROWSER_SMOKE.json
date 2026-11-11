@@ -1,0 +1,54 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "perSourceFilmstripColors": [
+        [
+          0,
+          0,
+          254
+        ],
+        [
+          254,
+          0,
+          0
+        ]
+      ],
+      "waveformCanvases": 2
+    },
+    {
+      "width": 1280,
+      "dir": "workspace/content/2026-11-03/import-aiev-a5004309154b1984",
+      "importedFromSettings": true,
+      "inspectorTrimSaveReload": true,
+      "removedSourceRetained": true
+    },
+    {
+      "width": 1920,
+      "perSourceFilmstripColors": [
+        [
+          0,
+          0,
+          254
+        ],
+        [
+          254,
+          0,
+          0
+        ]
+      ],
+      "waveformCanvases": 2
+    },
+    {
+      "width": 1920,
+      "dir": "workspace/content/2026-11-03/import-aiev-233cc9d1780abcd1",
+      "importedFromSettings": true,
+      "inspectorTrimSaveReload": true,
+      "removedSourceRetained": true
+    }
+  ],
+  "syntheticSource": true,
+  "workspaceId": "96e65818-e7cb-42d7-93d4-f64ad531b5ae",
+  "sourceUnchanged": true,
+  "pageErrors": []
+}

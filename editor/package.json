@@ -1,0 +1,13 @@
+{
+  "name": "hyperframe-video-editor",
+  "private": true,
+  "type": "module",
+  "description": "Editor chỉnh tay cho project video HyperFrames",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.137.0",
+    "qrcode": "1.5.4"
+  }
+}

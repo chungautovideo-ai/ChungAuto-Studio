@@ -1,0 +1,28 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-remotionapi-6",
+  "workerRender": true,
+  "activityTracking": true,
+  "waitCancellation": true,
+  "unchangedProject": true,
+  "previewBytes": true,
+  "latestJob": true,
+  "staleRevisionRejected": true,
+  "sharedLockReleased": true,
+  "terminalHistoryAfterRestart": true,
+  "result": {
+    "path": "inputs/remotion/3461bd10143cba0ec852a2c5a7b3b98661502d6a4142b0c50027c417276d83c4/scene.mp4",
+    "props": {
+      "title": "Cảnh chữ ContentOS",
+      "subtitle": "Worker độc lập",
+      "background": "#101014",
+      "color": "#ffffff",
+      "accent": "#d3f53c",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationInFrames": 18
+    },
+    "cached": false,
+    "sha256": "8133c70872ee2d446360c29a60d41f921ac5e501c3b7a27b195ced38fc5be924"
+  }
+}

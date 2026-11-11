@@ -1,0 +1,32 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-render-audio-status-4",
+  "actualHTTPRender": true,
+  "renderOK": true,
+  "finalizingObserved": true,
+  "finalizingCancelRejected": true,
+  "pingDuringFinalizing": true,
+  "silentVideoLoudnormFalse": false,
+  "audioLoudness": {
+    "readOnly": true,
+    "stream": "first-audio-stream",
+    "method": "FFmpeg loudnorm input measurements",
+    "integratedLufs": -13.98,
+    "truePeakDbtp": -12.72,
+    "loudnessRangeLu": 0,
+    "thresholdLufs": -23.98,
+    "silent": false,
+    "reference": {
+      "integratedLufs": -14,
+      "truePeakDbtp": -1.5
+    },
+    "warnings": [],
+    "listened": false,
+    "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+  },
+  "warningInStatusAndSidecar": true,
+  "integrityPreservedAfterClose": true,
+  "sha256": "96cfeda6d45d8a414ea3a2337c022b3a600e1dac445904876d765743f64e2f41",
+  "bytes": 23937,
+  "noProvider": true,
+  "scope": "0.6-second synthetic tone through HTTP render/normalization/final measurement/sidecar; not mix quality."
+}

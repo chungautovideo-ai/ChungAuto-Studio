@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-05T00:35:50.714Z",
+  "source": "workspace/content/2026-11-05/contentos-qa-real-codex-q2",
+  "actualLocalWhisper": true,
+  "language": "vi",
+  "words": 423,
+  "createdAt": "2026-11-05T00:34:31.165Z",
+  "importedTranscript": false,
+  "qualityNotes": [
+    "ASR ghi Trung Auto trong khi brief là ChungAuto; cần nghe/đối chiếu tên riêng, không coi transcript là bản lời đã duyệt.",
+    "Có cụm thông số và địa chỉ chưa đối chiếu độc lập, không xác nhận tính đúng của tuyên bố."
+  ],
+  "scope": "Fresh Vietnamese human speech recognition, no manual ground truth accuracy or full audio acceptance."
+}

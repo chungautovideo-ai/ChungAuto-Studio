@@ -1,0 +1,19 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-cli-5",
+  "httpStageClaimActualCLICompletion": true,
+  "realSavedSAM2Camera": true,
+  "dryRunLeavesCandidateUnchanged": true,
+  "liveUnchangedUntilCompletion": true,
+  "sourceBodyWhite": 20,
+  "otherCameraAndMasksUnchanged": true,
+  "faceBytesUnchanged": true,
+  "reopenedViaHTTP": true,
+  "completionAwaitingReview": true,
+  "browserReopenedAt20": true,
+  "manualChange25Undo20Redo25SaveReopen": true,
+  "masksPreservedAfterBrowserSave": true,
+  "pageErrors": [],
+  "noModelCalls": true,
+  "noRender": true,
+  "scope": "CLI plumbing and browser edits with real saved masks; not final visual acceptance or autonomous model quality."
+}

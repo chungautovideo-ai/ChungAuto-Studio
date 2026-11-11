@@ -1,0 +1,21 @@
+{
+  "file": "D:\\Edit t\u1ef1 \u0111\u1ed9ng\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-shotcolor-2\\renders\\contentos-smoke-shotcolor-2-final.mp4",
+  "format": [
+    1920,
+    1080
+  ],
+  "sourceGrayRgb": [
+    48,
+    48,
+    48
+  ],
+  "renderedCenterRgb": [
+    57,
+    57,
+    57
+  ],
+  "appliedColor": {
+    "brightness": 0.18
+  },
+  "scope": "Synthetic SDR gray; verifies source color reaches real HyperFrames final, not real-footage aesthetic quality."
+}

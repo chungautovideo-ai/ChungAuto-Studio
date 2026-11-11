@@ -1,0 +1,1283 @@
+{
+  "id": "cam-hung-xanh",
+  "name": "Cảm Hứng Xanh",
+  "version": 1,
+  "tier": "free",
+  "order": 76,
+  "isNew": true,
+  "web": true,
+  "date": "2026-10-30",
+  "tags": [
+    "Giáo dục"
+  ],
+  "industries": [
+    "Giáo dục"
+  ],
+  "description": "Chia sẻ truyền cảm hứng học tập: mở đầu chữ xoay 3D trên nền đen, chữ nghiêng mỏng + chữ đậm trắng hiện theo lời, bảng xanh dương rực với vòng tròn đồng tâm mảnh, ô vuông trắng và ảnh minh hoạ, chữ to mờ nhoè trên cảnh trám, kết bằng chữ viết tay trắng lớn phát sáng, chớp trắng.",
+  "credit": "Phong cách tham khảo một video mẫu Raw / Edited truyền cảm hứng — dựng lại hoàn toàn bằng HTML/CSS, không dùng hình / tiếng / lời của video gốc.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Cảm Hứng Xanh",
+    "fontTitle": "Be Vietnam Pro",
+    "fontSub": "Be Vietnam Pro",
+    "fontLabel": "Be Vietnam Pro",
+    "c1": "#FFFFFF",
+    "c2": "#2A5BFF",
+    "c3": "#FFFFFF",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Inter Tight:wght@400;500;700;800",
+      "Great Vibes"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 56,
+      "color": "#FFFFFF",
+      "active": "#2A5BFF",
+      "uppercase": false
+    },
+    "board": "radial-gradient(90% 70% at 50% 40%,#2a5bff,#1238d6 60%,#0b28a8)",
+    "css": ".ch{position:absolute;left:var(--ch-x,0px);right:0;top:var(--ch-y,1060px);display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1;pointer-events:none}\n.ch .n{font-family:\"Inter Tight\",sans-serif;font-weight:400;font-size:var(--ch-s,46px);color:#fff;letter-spacing:-.01em;text-shadow:0 2px 10px rgba(0,0,0,.55)}\n.ch .d{font-family:\"Inter Tight\",sans-serif;font-weight:700;font-size:var(--ch-m,72px);color:#fff;letter-spacing:-.03em;text-shadow:0 3px 12px rgba(0,0,0,.5)}\n.ch .tay{font-family:\"Great Vibes\",cursive;font-size:var(--ch-l,150px);color:#fff;text-shadow:0 0 14px rgba(255,255,255,.6),0 4px 12px rgba(0,0,0,.4);margin:-20px 0}\n.ch-den{position:absolute;inset:0;background:radial-gradient(70% 50% at 50% 45%,#2a2a2c,#050506)}\n.ch-3d{position:absolute;left:0;right:0;top:var(--ch-y,820px);display:flex;justify-content:center;align-items:flex-end;gap:20px;perspective:900px;font-family:\"Inter Tight\",sans-serif;color:#fff}\n.ch-3d .a{font-weight:500;font-size:60px;transform:rotateY(38deg);opacity:.75}\n.ch-3d .b{font-weight:700;font-size:140px;letter-spacing:-.04em;transform:rotateY(-14deg)}\n.ch-xanh{position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 40%,#2a5bff,#1238d6 60%,#0b28a8)}\n.ch-vong{position:absolute;left:50%;top:var(--ch-vy,980px);width:0;height:0}\n.ch-vong i{position:absolute;border:3px solid rgba(255,255,255,.85);border-radius:50%;transform:translate(-50%,-50%)}\n.ch-vong i:nth-child(1){width:360px;height:360px}.ch-vong i:nth-child(2){width:720px;height:720px}.ch-vong i:nth-child(3){width:1180px;height:1180px}\n.ch-vuong{position:absolute;width:30px;height:30px;background:#fff;box-shadow:0 0 12px rgba(255,255,255,.8)}\n.ch-anh{position:absolute;left:var(--ch-ax,560px);top:var(--ch-ay,160px);width:440px;height:520px;border-radius:30px;background:linear-gradient(160deg,#f2f5ff,#b8c7ff);display:flex;align-items:center;justify-content:center;font-size:220px;box-shadow:0 20px 40px rgba(0,0,0,.25)}\n.ch-xanh~.ch .n,.ch-xanh~.ch .d{text-shadow:none}\n.ch-mo{position:absolute;left:0;right:0;top:var(--ch-y,1100px);text-align:center;font-family:\"Inter Tight\",sans-serif;font-weight:800;font-size:var(--ch-l,220px);color:#fff;letter-spacing:-.05em;text-shadow:0 0 30px rgba(255,255,255,.8);filter:blur(1px)}\n.ch-chop{position:absolute;inset:0;background:#fff}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1060,
+    "maxWords": 3,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "camera": {
+    "color": {
+      "brightness": 1,
+      "contrast": 1.1,
+      "saturate": 1.05,
+      "temp": 0.06,
+      "vignette": 0.3
+    }
+  },
+  "audio": {
+    "autoSfx": false,
+    "sfxVolume": 0.5,
+    "musicVolume": 0.08
+  },
+  "texts": {},
+  "scenes": {
+    "tIn": "none"
+  },
+  "brolls": {
+    "mode": "full",
+    "tIn": "none"
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "mo-3d",
+      "name": "Mở đầu chữ xoay 3D",
+      "desc": "Nền đen, chữ nhỏ xoay nghiêng + chữ đậm lớn xoay 3D (câu mở đầu đầy cảm hứng)",
+      "img": "fx/mo-3d.jpg",
+      "at": 0.05
+    },
+    {
+      "id": "nho-dam-2",
+      "name": "Chữ mỏng + chữ đậm: có thể bạn đang · hơi lạc lối",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/nho-dam-2.jpg",
+      "at": 1.8
+    },
+    {
+      "id": "nho-dam-3",
+      "name": "Chữ mỏng + chữ đậm: chưa rõ mình · đang đi về đâu",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/nho-dam-3.jpg",
+      "at": 3.8
+    },
+    {
+      "id": "bang-xanh-vong",
+      "name": "Bảng xanh + vòng tròn đồng tâm",
+      "desc": "Bảng xanh dương rực phủ kín, 3 vòng tròn trắng mảnh đồng tâm, ô vuông trắng, ảnh minh hoạ góc trên, chữ mỏng + chữ viết tay (câu chuyển ý)",
+      "img": "fx/bang-xanh-vong.jpg",
+      "at": 5.35
+    },
+    {
+      "id": "ket-tay",
+      "name": "Kết: chữ viết tay lớn",
+      "desc": "Dòng nhỏ trên + chữ viết tay trắng lớn phát sáng + dòng đậm nhỏ dưới (câu kết truyền cảm hứng)",
+      "img": "fx/ket-tay.jpg",
+      "at": 7.75
+    },
+    {
+      "id": "nho-dam-7",
+      "name": "Chữ mỏng + chữ đậm: không ai · đi nhanh ngay",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/nho-dam-7.jpg",
+      "at": 11.83
+    },
+    {
+      "id": "chu-mo-8",
+      "name": "Chữ to mờ nhoè: từ đầu",
+      "desc": "1 từ trắng rất đậm phát sáng hơi nhoè giữa khung (đặt trên cảnh trám, nhấn 1 từ)",
+      "img": "fx/chu-mo-8.jpg",
+      "at": 13.57
+    },
+    {
+      "id": "bang-xanh-vong-9",
+      "name": "Bảng xanh + vòng tròn đồng tâm: mỗi bước nhỏ · là nền móng",
+      "desc": "Bảng xanh dương rực phủ kín, 3 vòng tròn trắng mảnh đồng tâm, ô vuông trắng, ảnh minh hoạ góc trên, chữ mỏng + chữ viết tay (câu chuyển ý)",
+      "img": "fx/bang-xanh-vong-9.jpg",
+      "at": 15.32
+    },
+    {
+      "id": "ket-tay-10",
+      "name": "Kết: chữ viết tay lớn: mỗi bước nhỏ · nền móng · cho ngày",
+      "desc": "Dòng nhỏ trên + chữ viết tay trắng lớn phát sáng + dòng đậm nhỏ dưới (câu kết truyền cảm hứng)",
+      "img": "fx/ket-tay-10.jpg",
+      "at": 17.06
+    },
+    {
+      "id": "nho-dam-11",
+      "name": "Chữ mỏng + chữ đậm: vậy nên · đừng so sánh",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/nho-dam-11.jpg",
+      "at": 19
+    },
+    {
+      "id": "chu-mo-12",
+      "name": "Chữ to mờ nhoè: người khác",
+      "desc": "1 từ trắng rất đậm phát sáng hơi nhoè giữa khung (đặt trên cảnh trám, nhấn 1 từ)",
+      "img": "fx/chu-mo-12.jpg",
+      "at": 20.28
+    },
+    {
+      "id": "ket-tay-13",
+      "name": "Kết: chữ viết tay lớn: hãy so với · chính bạn · hôm qua",
+      "desc": "Dòng nhỏ trên + chữ viết tay trắng lớn phát sáng + dòng đậm nhỏ dưới (câu kết truyền cảm hứng)",
+      "img": "fx/ket-tay-13.jpg",
+      "at": 21.56
+    },
+    {
+      "id": "mo-3d-14",
+      "name": "Mở đầu chữ xoay 3D: hôm nay · tốt hơn",
+      "desc": "Nền đen, chữ nhỏ xoay nghiêng + chữ đậm lớn xoay 3D (câu mở đầu đầy cảm hứng)",
+      "img": "fx/mo-3d-14.jpg",
+      "at": 22.85
+    },
+    {
+      "id": "bang-xanh-vong-15",
+      "name": "Bảng xanh + vòng tròn đồng tâm: mỗi ngày · một chút",
+      "desc": "Bảng xanh dương rực phủ kín, 3 vòng tròn trắng mảnh đồng tâm, ô vuông trắng, ảnh minh hoạ góc trên, chữ mỏng + chữ viết tay (câu chuyển ý)",
+      "img": "fx/bang-xanh-vong-15.jpg",
+      "at": 24.13
+    }
+  ],
+  "presets": [
+    {
+      "id": "mo-3d",
+      "group": "chu",
+      "name": "Mở đầu chữ xoay 3D",
+      "desc": "Nền đen, chữ nhỏ xoay nghiêng + chữ đậm lớn xoay 3D (câu mở đầu đầy cảm hứng)",
+      "dur": 1.6,
+      "bg": "board",
+      "sfx": "whoosh",
+      "html": "<div class=\"ch-den\"></div><div class=\"ch-3d\"><span class=\"a\">mọi thứ</span><span class=\"b\">rồi sẽ ổn</span></div>",
+      "anim": [
+        {
+          "sel": ".ch-den",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch-3d .a",
+          "from": {
+            "opacity": 0,
+            "rotationY": 80
+          },
+          "to": {
+            "opacity": 0.75,
+            "rotationY": 38
+          },
+          "at": 0.05,
+          "dur": 0.4,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch-3d .b",
+          "from": {
+            "opacity": 0,
+            "rotationY": -70
+          },
+          "to": {
+            "opacity": 1,
+            "rotationY": -14
+          },
+          "at": 0.25,
+          "dur": 0.45,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-3d .a",
+          "label": "Chữ nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ch-3d .b",
+          "label": "Chữ lớn",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nho-dam-2",
+      "group": "chu",
+      "name": "Chữ mỏng + chữ đậm: có thể bạn đang · hơi lạc lối",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ch\"><div class=\"n a\">có thể bạn đang</div><div class=\"d b\">hơi lạc lối</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nho-dam-3",
+      "group": "chu",
+      "name": "Chữ mỏng + chữ đậm: chưa rõ mình · đang đi về đâu",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ch\"><div class=\"n a\">chưa rõ mình</div><div class=\"d b\">đang đi về đâu</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chop-trang",
+      "group": "dohoa",
+      "name": "Chớp trắng",
+      "desc": "Chớp trắng 3 khung ở điểm cắt",
+      "dur": 0.3,
+      "bg": "face",
+      "sfx": "whoosh",
+      "out": "none",
+      "html": "<div class=\"ch-chop\"></div>",
+      "preview": "<div class=\"ch-chop\" style=\"opacity:.7\"></div>",
+      "anim": [
+        {
+          "sel": ".ch-chop",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 0.95
+          },
+          "at": 0,
+          "dur": 0.05
+        },
+        {
+          "sel": ".ch-chop",
+          "to": {
+            "opacity": 0
+          },
+          "at": 0.1,
+          "dur": 0.18
+        }
+      ]
+    },
+    {
+      "id": "bang-xanh-vong",
+      "group": "dohoa",
+      "name": "Bảng xanh + vòng tròn đồng tâm",
+      "desc": "Bảng xanh dương rực phủ kín, 3 vòng tròn trắng mảnh đồng tâm, ô vuông trắng, ảnh minh hoạ góc trên, chữ mỏng + chữ viết tay (câu chuyển ý)",
+      "dur": 2.4,
+      "bg": "board",
+      "sfx": "shimmer",
+      "html": "<div class=\"ch-xanh\"></div><div class=\"ch-vong\"><i></i><i></i><i></i></div><div class=\"ch-vuong\" style=\"left:140px;top:300px\"></div><div class=\"ch-vuong\" style=\"left:860px;top:1500px\"></div><div class=\"ch-anh a\">🧗</div><div class=\"ch\" style=\"--ch-y:1260px\"><div class=\"n b\">nếu bạn vẫn</div><div class=\"tay c\">kiên trì mỗi ngày</div></div>",
+      "anim": [
+        {
+          "sel": ".ch-xanh",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch-vong i",
+          "from": {
+            "opacity": 0,
+            "scale": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.6,
+          "stagger": 0.12,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch-vuong",
+          "from": {
+            "opacity": 0,
+            "scale": 1.35
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.3,
+          "dur": 0.15,
+          "ease": "back.out(1.8)"
+        },
+        {
+          "sel": ".ch-anh",
+          "from": {
+            "opacity": 0,
+            "x": 300
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.2,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .c",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.6,
+          "dur": 0.4,
+          "ease": "power1.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-anh",
+          "label": "Ảnh / icon",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .c",
+          "label": "Chữ viết tay",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ket-tay",
+      "group": "chu",
+      "name": "Kết: chữ viết tay lớn",
+      "desc": "Dòng nhỏ trên + chữ viết tay trắng lớn phát sáng + dòng đậm nhỏ dưới (câu kết truyền cảm hứng)",
+      "dur": 2.2,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"ch\"><div class=\"n a\">bởi vì bạn vẫn đang</div><div class=\"tay b\">tiến từng bước</div><div class=\"d c\" style=\"--ch-m:56px\">đúng hướng</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.25,
+          "dur": 0.5,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch .c",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.7,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ viết tay",
+          "words": false
+        },
+        {
+          "sel": ".ch .c",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nho-dam-7",
+      "group": "chu",
+      "name": "Chữ mỏng + chữ đậm: không ai · đi nhanh ngay",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ch\"><div class=\"n a\">không ai</div><div class=\"d b\">đi nhanh ngay</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-mo-8",
+      "group": "chu",
+      "name": "Chữ to mờ nhoè: từ đầu",
+      "desc": "1 từ trắng rất đậm phát sáng hơi nhoè giữa khung (đặt trên cảnh trám, nhấn 1 từ)",
+      "dur": 1,
+      "bg": "face",
+      "sfx": "deep-hit",
+      "html": "<div class=\"ch-mo a\">từ đầu</div>",
+      "anim": [
+        {
+          "sel": ".ch-mo",
+          "from": {
+            "opacity": 0,
+            "scale": 1.3,
+            "filter": "blur(10px)"
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "filter": "blur(1px)"
+          },
+          "at": 0,
+          "dur": 0.3,
+          "ease": "power2.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-mo",
+          "label": "Từ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "bang-xanh-vong-9",
+      "group": "dohoa",
+      "name": "Bảng xanh + vòng tròn đồng tâm: mỗi bước nhỏ · là nền móng",
+      "desc": "Bảng xanh dương rực phủ kín, 3 vòng tròn trắng mảnh đồng tâm, ô vuông trắng, ảnh minh hoạ góc trên, chữ mỏng + chữ viết tay (câu chuyển ý)",
+      "dur": 2.4,
+      "bg": "board",
+      "sfx": "shimmer",
+      "html": "<div class=\"ch-xanh\"></div><div class=\"ch-vong\"><i></i><i></i><i></i></div><div class=\"ch-vuong\" style=\"left:140px;top:300px\"></div><div class=\"ch-vuong\" style=\"left:860px;top:1500px\"></div><div class=\"ch-anh a\">🧱</div><div class=\"ch\" style=\"--ch-y:1260px\"><div class=\"n b\">mỗi bước nhỏ</div><div class=\"tay c\">là nền móng</div></div>",
+      "anim": [
+        {
+          "sel": ".ch-xanh",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch-vong i",
+          "from": {
+            "opacity": 0,
+            "scale": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.6,
+          "stagger": 0.12,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch-vuong",
+          "from": {
+            "opacity": 0,
+            "scale": 1.35
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.3,
+          "dur": 0.15,
+          "ease": "back.out(1.8)"
+        },
+        {
+          "sel": ".ch-anh",
+          "from": {
+            "opacity": 0,
+            "x": 300
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.2,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .c",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.6,
+          "dur": 0.4,
+          "ease": "power1.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-anh",
+          "label": "Ảnh / icon",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .c",
+          "label": "Chữ viết tay",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ket-tay-10",
+      "group": "chu",
+      "name": "Kết: chữ viết tay lớn: mỗi bước nhỏ · nền móng · cho ngày",
+      "desc": "Dòng nhỏ trên + chữ viết tay trắng lớn phát sáng + dòng đậm nhỏ dưới (câu kết truyền cảm hứng)",
+      "dur": 2.2,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"ch\"><div class=\"n a\">mỗi bước nhỏ</div><div class=\"tay b\">nền móng</div><div class=\"d c\" style=\"--ch-m:56px\">cho ngày mai</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.25,
+          "dur": 0.5,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch .c",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.7,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ viết tay",
+          "words": false
+        },
+        {
+          "sel": ".ch .c",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nho-dam-11",
+      "group": "chu",
+      "name": "Chữ mỏng + chữ đậm: vậy nên · đừng so sánh",
+      "desc": "Dòng chữ mỏng trắng + cụm chữ đậm trắng ở ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ch\"><div class=\"n a\">vậy nên</div><div class=\"d b\">đừng so sánh</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-mo-12",
+      "group": "chu",
+      "name": "Chữ to mờ nhoè: người khác",
+      "desc": "1 từ trắng rất đậm phát sáng hơi nhoè giữa khung (đặt trên cảnh trám, nhấn 1 từ)",
+      "dur": 1,
+      "bg": "face",
+      "sfx": "deep-hit",
+      "html": "<div class=\"ch-mo a\">người khác</div>",
+      "anim": [
+        {
+          "sel": ".ch-mo",
+          "from": {
+            "opacity": 0,
+            "scale": 1.3,
+            "filter": "blur(10px)"
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "filter": "blur(1px)"
+          },
+          "at": 0,
+          "dur": 0.3,
+          "ease": "power2.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-mo",
+          "label": "Từ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ket-tay-13",
+      "group": "chu",
+      "name": "Kết: chữ viết tay lớn: hãy so với · chính bạn · hôm qua",
+      "desc": "Dòng nhỏ trên + chữ viết tay trắng lớn phát sáng + dòng đậm nhỏ dưới (câu kết truyền cảm hứng)",
+      "dur": 2.2,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"ch\"><div class=\"n a\">hãy so với</div><div class=\"tay b\">chính bạn</div><div class=\"d c\" style=\"--ch-m:56px\">hôm qua</div></div>",
+      "anim": [
+        {
+          "sel": ".ch .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.25,
+          "dur": 0.5,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch .c",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.7,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ viết tay",
+          "words": false
+        },
+        {
+          "sel": ".ch .c",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "mo-3d-14",
+      "group": "chu",
+      "name": "Mở đầu chữ xoay 3D: hôm nay · tốt hơn",
+      "desc": "Nền đen, chữ nhỏ xoay nghiêng + chữ đậm lớn xoay 3D (câu mở đầu đầy cảm hứng)",
+      "dur": 1.6,
+      "bg": "board",
+      "sfx": "whoosh",
+      "html": "<div class=\"ch-den\"></div><div class=\"ch-3d\"><span class=\"a\">hôm nay</span><span class=\"b\">tốt hơn</span></div>",
+      "anim": [
+        {
+          "sel": ".ch-den",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch-3d .a",
+          "from": {
+            "opacity": 0,
+            "rotationY": 80
+          },
+          "to": {
+            "opacity": 0.75,
+            "rotationY": 38
+          },
+          "at": 0.05,
+          "dur": 0.4,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch-3d .b",
+          "from": {
+            "opacity": 0,
+            "rotationY": -70
+          },
+          "to": {
+            "opacity": 1,
+            "rotationY": -14
+          },
+          "at": 0.25,
+          "dur": 0.45,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-3d .a",
+          "label": "Chữ nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ch-3d .b",
+          "label": "Chữ lớn",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "bang-xanh-vong-15",
+      "group": "dohoa",
+      "name": "Bảng xanh + vòng tròn đồng tâm: mỗi ngày · một chút",
+      "desc": "Bảng xanh dương rực phủ kín, 3 vòng tròn trắng mảnh đồng tâm, ô vuông trắng, ảnh minh hoạ góc trên, chữ mỏng + chữ viết tay (câu chuyển ý)",
+      "dur": 2.4,
+      "bg": "board",
+      "sfx": "shimmer",
+      "html": "<div class=\"ch-xanh\"></div><div class=\"ch-vong\"><i></i><i></i><i></i></div><div class=\"ch-vuong\" style=\"left:140px;top:300px\"></div><div class=\"ch-vuong\" style=\"left:860px;top:1500px\"></div><div class=\"ch-anh a\">🌱</div><div class=\"ch\" style=\"--ch-y:1260px\"><div class=\"n b\">mỗi ngày</div><div class=\"tay c\">một chút</div></div>",
+      "anim": [
+        {
+          "sel": ".ch-xanh",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ch-vong i",
+          "from": {
+            "opacity": 0,
+            "scale": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.6,
+          "stagger": 0.12,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch-vuong",
+          "from": {
+            "opacity": 0,
+            "scale": 1.35
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.3,
+          "dur": 0.15,
+          "ease": "back.out(1.8)"
+        },
+        {
+          "sel": ".ch-anh",
+          "from": {
+            "opacity": 0,
+            "x": 300
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.2,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ch .c",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0.6,
+          "dur": 0.4,
+          "ease": "power1.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ch-anh",
+          "label": "Ảnh / icon",
+          "words": false
+        },
+        {
+          "sel": ".ch .b",
+          "label": "Chữ mỏng",
+          "words": false
+        },
+        {
+          "sel": ".ch .c",
+          "label": "Chữ viết tay",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tram-toan",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "none",
+      "name": "Cảnh trám toàn khung",
+      "desc": "Cảnh minh hoạ cảm hứng (núi, đồng cỏ…) phủ kín khung, đặt chữ to mờ lên trên",
+      "dur": 1.5
+    },
+    {
+      "id": "tram-01",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 1: Đường núi lúc bình minh",
+      "desc": "Đường núi lúc bình minh, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/01.jpg"
+    },
+    {
+      "id": "tram-02",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 2: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/02.jpg"
+    },
+    {
+      "id": "tram-03",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 3: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/03.jpg"
+    },
+    {
+      "id": "tram-04",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 4: Đường núi lúc bình minh",
+      "desc": "Đường núi lúc bình minh, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/04.jpg"
+    },
+    {
+      "id": "tram-05",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 5: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/05.jpg"
+    },
+    {
+      "id": "tram-06",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 6: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/06.jpg"
+    },
+    {
+      "id": "tram-07",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 7: Đường núi lúc bình minh",
+      "desc": "Đường núi lúc bình minh, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/07.jpg"
+    },
+    {
+      "id": "tram-08",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 8: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/08.jpg"
+    },
+    {
+      "id": "tram-09",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 9: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/09.jpg"
+    },
+    {
+      "id": "tram-10",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 10: Đường núi lúc bình minh",
+      "desc": "Đường núi lúc bình minh, phủ kín khung, 1 giây",
+      "dur": 1,
+      "img": "tram/10.jpg"
+    }
+  ]
+}

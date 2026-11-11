@@ -1,0 +1,15 @@
+{
+  "realEndpoint": true,
+  "twoIndependentProjects": true,
+  "sourceBytesPreserved": true,
+  "duplicateSubmissionReusesTask": true,
+  "activityOutputs": true,
+  "twoFirstBuildJobs": true,
+  "distinctCandidatesAndBriefs": true,
+  "dispatchRetryDoesNotDuplicate": true,
+  "twoInboxSessionsClaimDistinctJobs": true,
+  "sessionContactCliAndActivity": true,
+  "dispatchRecoveryEndpoint": true,
+  "manualReviewNoRender": true,
+  "noModelCalled": true
+}

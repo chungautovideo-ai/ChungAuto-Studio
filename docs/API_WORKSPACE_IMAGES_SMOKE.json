@@ -1,0 +1,21 @@
+{
+  "actualReviseEndpoint": true,
+  "syntheticGatewayOnly": true,
+  "steps": [
+    "list_workspace_images",
+    "attach_workspace_image",
+    "inspect_media",
+    "set_edit_fields"
+  ],
+  "imageId": "77cffb93-fca9-4a58-9c35-b6930636926c",
+  "src": "inputs/library/7f6be7d8-9cd1-4047-9194-e4c71382e082.png",
+  "project": "workspace/content/2026-11-04/contentos-smoke-api-workspaceimage",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-api-workspaceimage\\renders\\contentos-smoke-api-workspaceimage-final.mp4",
+  "pixel": [
+    252,
+    0,
+    0
+  ],
+  "autoExport": true,
+  "limits": "Local imported synthetic image and gateway; no paid model/image generation/browser chat submission. Imported file remains if later candidate fails."
+}

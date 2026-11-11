@@ -1,0 +1,103 @@
+{
+  "renderer": "actual WebGL",
+  "syntheticLandmarks": true,
+  "twoSources": true,
+  "speed2SourceClock": true,
+  "missingSampleUnchanged": true,
+  "unscannedSourceUnchanged": true,
+  "canvasMovesWithSourceWrapper": true,
+  "before": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "left": [
+    [
+      174,
+      126,
+      102,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "speed": [
+    174,
+    126,
+    102,
+    255
+  ],
+  "rightPixel": [
+    174,
+    126,
+    102,
+    255
+  ],
+  "body": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "person": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      200,
+      133,
+      102,
+      255
+    ],
+    [
+      200,
+      132,
+      102,
+      255
+    ]
+  ],
+  "bodyWithoutFace": true,
+  "backgroundAndClothesProtectedForSkin": true
+}

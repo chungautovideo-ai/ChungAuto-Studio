@@ -1,0 +1,39 @@
+{
+  "syntheticLocalPaths": true,
+  "noConfiguredNasRoot": true,
+  "staleWorkspaceRejected": true,
+  "outsideSelectionRejected": true,
+  "sizes": [
+    {
+      "width": 1280,
+      "pastedPathsToSetup": true,
+      "metadataVisible": true,
+      "sixPreviewFramesDecoded": true,
+      "projectLocalSurveyPreserved": true,
+      "requestRestoredOnReopen": true,
+      "requestAndSourceSnapshotPreserved": true,
+      "bounds": {
+        "left": 341,
+        "right": 1219
+      }
+    },
+    {
+      "width": 1920,
+      "pastedPathsToSetup": true,
+      "metadataVisible": true,
+      "sixPreviewFramesDecoded": true,
+      "projectLocalSurveyPreserved": true,
+      "requestRestoredOnReopen": true,
+      "requestAndSourceSnapshotPreserved": true,
+      "bounds": {
+        "left": 633,
+        "right": 1567
+      }
+    }
+  ],
+  "projects": [
+    "workspace/content/2026-11-03/nas-01d65eb3-3ec7-4dd8-a182-e3c14a556300",
+    "workspace/content/2026-11-03/nas-d8a49361-e4f3-4ab1-8e07-fe9124e52ec9"
+  ],
+  "pageErrors": []
+}

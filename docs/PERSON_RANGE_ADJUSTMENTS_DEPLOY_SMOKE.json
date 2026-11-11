@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-05T00:18:42.809Z",
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "uiHttp": true,
+  "skillReferenceHttp": true,
+  "previousPidVerified": 64252,
+  "resourcesIdleBeforeRestart": true,
+  "scope": "Main code/ref HTTP after safe restart. UI interaction checked on QA server before deploy."
+}

@@ -1,0 +1,29 @@
+{
+  "fixtureOnly": true,
+  "launcher": "installed-cli",
+  "exitCode": 0,
+  "saved": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\contentos-smoke-narration-render\\renders\\contentos-smoke-narration-render-nhap-11.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  },
+  "snapshotId": "60374227-ea8f-453d-b1e7-5a7ad09acb9e",
+  "revision": "2df2661a7809b508c9c4b85ed815e16d7661d38a80bd048c5e77e4a166050bbc"
+}

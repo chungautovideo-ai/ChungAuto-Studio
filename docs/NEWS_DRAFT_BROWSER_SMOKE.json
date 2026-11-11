@@ -1,0 +1,23 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "noAutomaticCall": true,
+      "unsavedChangesBlocked": true,
+      "explicitApiDraft": true,
+      "draftRequiresApproval": true,
+      "usageVisible": true,
+      "reopenHistoryWithoutReplay": true
+    },
+    {
+      "width": 1920,
+      "noAutomaticCall": true,
+      "unsavedChangesBlocked": true,
+      "explicitApiDraft": true,
+      "draftRequiresApproval": true,
+      "usageVisible": true,
+      "reopenHistoryWithoutReplay": true
+    }
+  ],
+  "fixtureOnly": true
+}

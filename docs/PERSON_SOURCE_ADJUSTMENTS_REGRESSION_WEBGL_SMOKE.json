@@ -1,0 +1,14 @@
+{
+  "actualWebGL": true,
+  "syntheticMasks": true,
+  "brushed": [
+    176,
+    126,
+    100,
+    255
+  ],
+  "sourceAndHashBound": true,
+  "rangeBound": true,
+  "seekDeterministic": true,
+  "outsideBackgroundUnchanged": true
+}

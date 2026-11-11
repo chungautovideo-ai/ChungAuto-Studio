@@ -1,0 +1,95 @@
+{
+  "project": "workspace/content/2026-11-05/qa-audio-8c8208",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-audio-8c8208\\renders\\qa-audio-8c8208-final.mp4",
+  "integrity": {
+    "bytes": 80066,
+    "sha256": "ce8e1550d967aa537800cabfd07584d3ebd94b0a64b193c27cb7254793eaa914"
+  },
+  "seconds": 4,
+  "windows": [
+    {
+      "from": 0.25,
+      "to": 0.75,
+      "rms": 0,
+      "amplitudes": {
+        "440": 0,
+        "660": 0,
+        "880": 0
+      }
+    },
+    {
+      "from": 1.2,
+      "to": 1.5,
+      "rms": 0.32660119578755964,
+      "amplitudes": {
+        "440": 0.4599400335021014,
+        "660": 0.0010796094868315267,
+        "880": 0.0005456347318831329
+      }
+    },
+    {
+      "from": 1.7,
+      "to": 1.9,
+      "rms": 0.3717770846747777,
+      "amplitudes": {
+        "440": 0.469092201864133,
+        "660": 0.000042883336959383365,
+        "880": 0.2370945737987389
+      }
+    },
+    {
+      "from": 2.2,
+      "to": 2.4,
+      "rms": 0.16765404557152722,
+      "amplitudes": {
+        "440": 0.000013293281708292948,
+        "660": 0.00002334764802310936,
+        "880": 0.23704546191670275
+      }
+    },
+    {
+      "from": 2.75,
+      "to": 2.95,
+      "rms": 0,
+      "amplitudes": {
+        "440": 0,
+        "660": 0,
+        "880": 0
+      }
+    },
+    {
+      "from": 3.25,
+      "to": 3.75,
+      "rms": 0.33472870303625174,
+      "amplitudes": {
+        "440": 0.00000849696042264329,
+        "660": 0.4732917616897096,
+        "880": 0.000007462702562298047
+      }
+    }
+  ],
+  "brollToVoiceRatio": 0.5054327760225922,
+  "projectAndSourcesUnchanged": true,
+  "loudness": {
+    "readOnly": true,
+    "stream": "first-audio-stream",
+    "method": "FFmpeg loudnorm input measurements",
+    "integratedLufs": -11.36,
+    "truePeakDbtp": -1.5,
+    "loudnessRangeLu": 2.7,
+    "thresholdLufs": -21.65,
+    "silent": false,
+    "reference": {
+      "integratedLufs": -14,
+      "truePeakDbtp": -1.5
+    },
+    "warnings": [
+      "Loudness nằm ngoài khoảng tham khảo -16 đến -12 LUFS; nghe và chọn mức theo kênh."
+    ],
+    "listened": false,
+    "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+  },
+  "listened": false,
+  "browserVerified": false,
+  "scope": "Synthetic tones prove source retention, silence, overlap gain and timing in final AAC; not voice intelligibility, music/SFX quality, real-product editorial quality or human listening acceptance."
+}

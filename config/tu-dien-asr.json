@@ -1,0 +1,37 @@
+{
+ "_ghiChu": "Từ điển sửa chữ sau nhận giọng (Whisper) tiếng Việt. goiY: câu từ vựng đưa vào --prompt để Whisper viết đúng. sua: [mẫu, thay bằng] — regex không phân biệt hoa thường, tự khớp trọn từ. boCau: câu Whisper hay bịa khi im lặng/nhạc, bị xoá. Chỉ thêm quy tắc chắc chắn; cụm có nghĩa khác (vd 'trong ô tô', 'dùng chung ô tô') thì đừng thêm.",
+ "goiY": "Chung Auto độ xe ô tô: đèn bi LED, mâm, lốp, pô, phim cách nhiệt, bọc ghế da, sàn da, trần sao, đổi màu, dán PPF, camera 360, cốp điện, VinFast, Lexus, Mercedes.",
+ "sua": [
+  [
+   "(?:Trung|Chun|Trúng|Chúng|Trùng|Trong)[ -]?Auto|(?:Trung|Chun|Trúng|Chúng|Trùng)[ -]?Ô-?tô|Chung[ -]?(?:Ôtô|Oto)",
+   "Chung Auto"
+  ],
+  [
+   "Vin[ -]?Fast",
+   "VinFast"
+  ],
+  [
+   "bi[ -]?(?:LED|lét|let|lẹt)",
+   "bi LED"
+  ],
+  [
+   "pi[ -]?pi[ -]?ép|P\\.P\\.F\\.?",
+   "PPF"
+  ],
+  [
+   "cam[ -]?ra 360",
+   "camera 360"
+  ],
+  [
+   "size[ -]?shot",
+   "sai sót"
+  ]
+ ],
+ "boCau": [
+  "Hãy subscribe cho kênh Ghiền Mì Gõ(?:[.,]? để không bỏ lỡ những video hấp dẫn)?[.!]?",
+  "Ghiền Mì Gõ",
+  "Subtitles? by [\\p{L}\\p{N} .]+",
+  "Vietsub(?: by)? [\\p{L}\\p{N} .]+",
+  "La La School"
+ ]
+}

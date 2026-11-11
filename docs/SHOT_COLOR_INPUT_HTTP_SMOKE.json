@@ -1,0 +1,33 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-hdr-analysis-da20fe9d-2f37-4803-949b-1bcfe01de12d",
+  "serverPid": 41996,
+  "results": [
+    {
+      "profile": "hlg",
+      "hdrRejected": true,
+      "noMutationBeforeApply": true,
+      "appliedViaHttp": true,
+      "normalizedProfile": "rec709",
+      "samples": 3,
+      "staleRevisionRejected": true,
+      "derived": "inputs/color/9ff75e3e-0704-4ed6-bc28-287d319697e5/normalized.mp4"
+    },
+    {
+      "profile": "pq",
+      "hdrRejected": true,
+      "noMutationBeforeApply": true,
+      "appliedViaHttp": true,
+      "normalizedProfile": "rec709",
+      "samples": 3,
+      "staleRevisionRejected": true,
+      "derived": "inputs/color/465a9cbb-b709-4420-8c6e-53d269ceb925/normalized.mp4"
+    }
+  ],
+  "restoreAndReopenHttp": true,
+  "originalSourcesPreserved": true,
+  "workspaceUnchanged": true,
+  "noPaidProvider": true,
+  "noExport": true,
+  "browserVerified": false,
+  "limits": "HTTP and synthetic tagged HLG/PQ media only; not native UI Undo/focus, real camera HDR/Log, color quality or final render."
+}

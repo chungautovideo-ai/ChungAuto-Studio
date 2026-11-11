@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import http from 'node:http';
+import {createModelRoutingStore} from '../src/services/model-routing.mjs';
+import {createNewsService} from '../src/services/news.mjs';
+import {createNewsDrafter} from '../src/services/news-drafting.mjs';
+import {createPublishDrafter} from '../src/services/publish-drafting.mjs';
+import {createNewsTasks} from '../src/services/news-tasks.mjs';
+import {createTaskStore} from '../src/services/tasks.mjs';
+import {projectRevision} from '../src/services/project-revisions.mjs';
+test('news and publish HTTP requests use shared task routing; queued news pins policy before worker starts',async t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'cos-draft-routing-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const routing=createModelRoutingStore(root),news=createNewsService(root),tasks=createTaskStore(root),models=[];
+ const gateway=http.createServer(async(req,res)=>{
+  let raw='';for await(const chunk of req)raw+=chunk;const request=JSON.parse(raw);models.push(request.model);
+  const content=request.model==='publish-rule'?JSON.stringify({title:'Title',caption:'Caption',hashtags:'#qa',tags:'qa',comment:'Chủ kênh hỏi ý kiến'}):'Tin có nguồn [1].';
+  res.setHeader('Content-Type','application/json');res.end(JSON.stringify({choices:[{finish_reason:'stop',message:{content}}],usage:{total_tokens:10}}));
+ });await new Promise(resolve=>gateway.listen(0,'127.0.0.1',resolve));
+ t.after(async()=>{gateway.closeAllConnections();await new Promise(resolve=>gateway.close(resolve));});
+ const config={baseUrl:'http://127.0.0.1:'+gateway.address().port+'/v1',model:'default-model'},connections={get:()=>({...config}),status:()=>({...config})};
+ routing.save('one',{enabled:true,models:{'news-draft':'news-rule','publish-draft':'publish-rule'}});
+ const source=news.save('one',{title:'Tin',script:'Nháp',sources:[{url:'https://example.com/news',excerpt:'Có dữ kiện.'}]});
+ const draft=createNewsDrafter({news,connections,routing});
+ const worker=createNewsTasks({tasks,news,connections,routing,draft});
+ const task=worker.enqueue('one',{id:source.id,idempotencyKey:'routing-one'});assert.equal(task.snapshot.modelSelection.model,'news-rule');
+ routing.save('one',{enabled:true,models:{'news-draft':'changed-after-queue','publish-draft':'publish-rule'}});
+ for(let i=0;i<100&&tasks.get(task.id,'one').status==='running';i++)await new Promise(resolve=>setTimeout(resolve,10));
+ assert.equal(tasks.get(task.id,'one').status,'succeeded');const generated=news.list('one').entries.at(-1);assert.equal(generated.aiGeneration.model,'news-rule');assert.equal(generated.aiGeneration.routing.task,'news-draft');
+ const dir='workspace/content/2026-11-04/fixture',folder=path.join(root,dir);fs.mkdirSync(folder,{recursive:true});const file=path.join(folder,'project.json');fs.writeFileSync(file,JSON.stringify({workspaceId:'one',title:'QA',texts:[{title:'Dữ kiện'}]}));
+ const publish=createPublishDrafter({root,connections,routing,fetcherFor:()=>fetch});
+ const result=await publish('one',{dir,revision:projectRevision(file),expectedVersion:null,platform:'youtube'});assert.equal(result.generation.model,'publish-rule');assert.equal(result.generation.routing.source,'workspace-rule');assert.equal(result.saved,false);
+ assert.deepEqual(models,['news-rule','publish-rule']);assert.equal(fs.existsSync(path.join(folder,'work/publish-drafts.json')),false);
+});

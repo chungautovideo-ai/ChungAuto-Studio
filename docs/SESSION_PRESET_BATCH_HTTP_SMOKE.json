@@ -1,0 +1,15 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-smoke-cli-preset-3",
+  "firstBuildCLI": true,
+  "reviseCLI": true,
+  "batchCount": 2,
+  "presets": 11,
+  "catalogBytes": 3057,
+  "snapshotTemplateBytes": 14659,
+  "dryRunUnchanged": true,
+  "liveUnchangedUntilCompletion": true,
+  "replayRejected": true,
+  "wrongClaimRejected": true,
+  "noRender": true,
+  "modelTested": false
+}

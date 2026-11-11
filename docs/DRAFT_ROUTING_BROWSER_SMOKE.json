@@ -1,0 +1,18 @@
+{
+  "workspaceId": "ab700829-f69c-400f-85a9-35e0f3b3c46c",
+  "sizes": [
+    {
+      "width": 1280,
+      "saved": true,
+      "reloaded": true
+    },
+    {
+      "width": 1920,
+      "saved": true,
+      "reloaded": true
+    }
+  ],
+  "directDialogEntry": true,
+  "noProviderCalls": true,
+  "pageErrors": []
+}

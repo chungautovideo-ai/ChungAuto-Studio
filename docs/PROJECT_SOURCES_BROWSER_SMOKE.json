@@ -1,0 +1,38 @@
+{
+  "syntheticLocalShare": true,
+  "staleWorkspaceRejected": true,
+  "pathEscapeRejected": true,
+  "invalidVideoRejected": true,
+  "projects": [
+    "workspace/content/2026-11-03/nas-79d76d7c-57c7-4125-b000-20a0ee379fea",
+    "workspace/content/2026-11-03/nas-424d5a94-e7ec-467f-821f-273c9ed683be"
+  ],
+  "sizes": [
+    {
+      "width": 1280,
+      "newProjectToSetup": true,
+      "importedSourceHistory": true,
+      "retainedRightsVisible": true,
+      "sourceAnnotationSaved": true,
+      "importedRightsSnapshot": true,
+      "multiFolderSelection": true,
+      "twoRealImports": true,
+      "perFileResults": true,
+      "selectionClearedAfterSuccess": true
+    },
+    {
+      "width": 1920,
+      "newProjectToSetup": true,
+      "importedSourceHistory": true,
+      "retainedRightsVisible": true,
+      "sourceAnnotationSaved": true,
+      "importedRightsSnapshot": true,
+      "multiFolderSelection": true,
+      "twoRealImports": true,
+      "perFileResults": true,
+      "selectionClearedAfterSuccess": true
+    }
+  ],
+  "pageErrors": [],
+  "originalSourceUnchanged": true
+}

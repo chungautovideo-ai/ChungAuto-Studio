@@ -1,0 +1,10 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-references",
+  "template": "chungauto-factory-quang-cao-v38",
+  "referenceCount": 4,
+  "presets": 11,
+  "pinnedPersonReviewGuide": true,
+  "inboxUsesPinnedSkill": true,
+  "noAgentDispatched": true,
+  "noUserProjectModified": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "chungauto-factory-quang-cao-v50",
+  "artifact": "workspace/exports/chungauto-creative-v50-broll-editorial.zip",
+  "sha256": "78c71ca8930663c58f71a4e911001d5de25ad168052968b361ad76645ea560bb",
+  "presets": 11,
+  "references": 5,
+  "packageParsed": 1,
+  "snapshotRoundtrip": true,
+  "modelUsePending": true,
+  "modelUsedShortInsertRule": true,
+  "outputClockRuleModelTested": false
+}

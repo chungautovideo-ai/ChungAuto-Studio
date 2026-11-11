@@ -1,0 +1,35 @@
+{
+  "project": "workspace/content/2026-11-05/qa-codex-screen-85251d/project.json",
+  "sha256": "842cd62c89a2e4d45aefb145fd8e30726c2e586b3a81b71c3545b4f614c96060",
+  "projectUnchanged": true,
+  "phrase": "màn",
+  "matches": [
+    {
+      "outputStart": 15.46,
+      "outputEnd": 16.21,
+      "outputDuration": 0.75,
+      "words": [
+        {
+          "captionId": "c18",
+          "text": "màn,",
+          "projectStart": 16.06,
+          "projectEnd": 16.81,
+          "outputStart": 15.46,
+          "outputEnd": 16.21
+        }
+      ],
+      "context": "là từ đèn, màn, phim hay là",
+      "brolls": []
+    }
+  ],
+  "httpExactBytes": [
+    "ui/contentos-broll-timing.js",
+    "ui/contentos-broll-editor-timing.js",
+    "ui/contentos-caption-phrase-search.js",
+    "lib/timemap.js",
+    "lib/broll-transition.js"
+  ],
+  "nativeBrowserVerified": false,
+  "mobileVerified": false,
+  "scope": "Saved QA source/output anchor check and production static HTTP bytes only; does not establish browser controls, focus or responsive layout."
+}

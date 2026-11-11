@@ -1,0 +1,13 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-source-adjustments-4",
+  "realMediaPipe": true,
+  "twoSources": true,
+  "global": 15,
+  "source": 45,
+  "selectionNoMutation": true,
+  "undoRedo": true,
+  "reopen": true,
+  "resetToGlobal": true,
+  "pageErrors": [],
+  "scope": "Two1s Q2 crop/flip sources; no full video or individual person tracking acceptance"
+}

@@ -1,0 +1,21 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';
+import {acquireRenderLock,renderLockStatus} from '../src/services/render-lock.mjs';
+const root=process.cwd(),base='http://127.0.0.1:5199',delay=ms=>new Promise(r=>setTimeout(r,ms));
+const startServer=()=>spawn(process.execPath,['editor/server.mjs','--home','--port','5199'],{windowsHide:true,stdio:'ignore'});let server=startServer(),held,headers;
+const call=async(url,method='GET',body)=>{const response=await fetch(base+url,{method,headers:{'Content-Type':'application/json',...headers},...(body?{body:JSON.stringify(body)}:{})});const result=await response.json();assert.ok(response.ok,JSON.stringify(result));return result;};
+const wait=async id=>{for(let i=0;i<240;i++){const job=await call('/api/remotion-scenes/'+id);if(['succeeded','failed','cancelled'].includes(job.status))return job;await delay(250);}throw new Error('Worker timeout');};
+try{
+ for(let i=0;i<80;i++){try{await call('/api/ping');break;}catch{await delay(100);}}
+ const response=await fetch(base+'/api/new-project?file=fixture.mp4&name=ContentOS-Smoke-RemotionAPI&noasr=1',{method:'POST',body:fs.readFileSync(new URL('./fixture.mp4',import.meta.url))});assert.ok(response.ok);const created=await response.json(),context=await call('/api/project');headers={'X-ContentOS-Project':created.dir,'X-ContentOS-Revision':context.revision};
+ const projectFile=path.join(root,created.dir,'project.json'),before=fs.readFileSync(projectFile),scene={title:'Cảnh chữ ContentOS',subtitle:'Worker độc lập',duration:0.6};
+ held=acquireRenderLock(root,{projectDir:path.resolve(created.dir),kind:'remotion-wait-fixture'});
+ const waiting=await call('/api/remotion-scenes','POST',{scene});for(let i=0;i<40;i++){if((await call('/api/remotion-scenes/'+waiting.id)).phase.includes('chờ lượt render'))break;await delay(100);}const activity=(await call('/api/v1/activity')).entries.find(row=>row.taskId===waiting.id);assert.equal(activity.kind,'remotion-scene');assert.equal(activity.runtime,'queued');assert.equal(activity.waitReason,'remotion-render');assert.equal(activity.progress,null);await call('/api/remotion-scenes/'+waiting.id,'DELETE');const cancelled=await wait(waiting.id);assert.equal(cancelled.status,'cancelled');held.release();held=null;
+ const started=await call('/api/remotion-scenes','POST',{scene}),result=await wait(started.id);assert.equal(result.status,'succeeded',JSON.stringify(result));assert.ok(fs.existsSync(path.join(root,created.dir,result.result.path)));assert.deepEqual(fs.readFileSync(projectFile),before);assert.equal(renderLockStatus(root),null);
+ const latest=await call('/api/remotion-scenes');assert.equal(latest.job.id,started.id);const preview=await fetch(base+'/p/'+result.result.path);assert.equal(preview.status,200);assert.ok((await preview.arrayBuffer()).byteLength>32);
+ const bad=await fetch(base+'/api/remotion-scenes/'+started.id,{headers:{...headers,'X-ContentOS-Revision':'stale'}});assert.equal(bad.status,409);
+ const stopped=new Promise(resolve=>server.once('close',resolve));server.kill();await stopped;server=startServer();
+ for(let i=0;i<80;i++){try{await call('/api/ping');break;}catch{await delay(100);}}
+ headers=undefined;await call('/api/open','POST',{dir:created.dir});headers={'X-ContentOS-Project':created.dir,'X-ContentOS-Revision':context.revision};const recovered=await call('/api/remotion-scenes/'+started.id);assert.equal(recovered.status,'succeeded');assert.equal(recovered.result.sha256,result.result.sha256);assert.equal((await call('/api/remotion-scenes/'+waiting.id)).status,'cancelled');
+ assert.ok((await call('/api/v1/activity')).entries.some(row=>row.taskId===started.id&&row.status==='succeeded'));assert.deepEqual(fs.readFileSync(projectFile),before);
+ fs.writeFileSync('docs/REMOTION_API_SMOKE.json',JSON.stringify({project:created.dir,workerRender:true,activityTracking:true,waitCancellation:true,unchangedProject:true,previewBytes:true,latestJob:true,staleRevisionRejected:true,sharedLockReleased:true,terminalHistoryAfterRestart:true,result:result.result},null,2));console.log('PASS Remotion worker API, wait cancellation, preview, unchanged project, stale revision and history after server restart.');
+}finally{held?.release();server.kill();}

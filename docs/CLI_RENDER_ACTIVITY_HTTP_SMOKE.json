@@ -1,0 +1,33 @@
+{
+  "projects": [
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-queue-qa-a-lk7clC",
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-queue-qa-b-LRAZgU"
+  ],
+  "pids": [
+    46824,
+    9204
+  ],
+  "exitCodes": [
+    0,
+    0
+  ],
+  "observedLockOwners": [
+    46824,
+    9204
+  ],
+  "waitingObserved": true,
+  "statusUntouchedWhileWaiting": true,
+  "pingResponsive": true,
+  "activityQueued": true,
+  "activityRunning": true,
+  "activityProgress": true,
+  "activityTerminal": true,
+  "distinctSnapshots": true,
+  "outputs": [
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-queue-qa-a-lk7clC\\renders\\contentos-queue-qa-a-lk7clC-nhap.mp4",
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-queue-qa-b-LRAZgU\\renders\\contentos-queue-qa-b-LRAZgU-nhap.mp4"
+  ],
+  "integrityVerified": true,
+  "audioMeasured": true,
+  "scope": "Two short QA CLI exports launched concurrently, serialized by real cross-process lock. Imported synthetic source; not concurrent autonomous AI edits, queue fairness, crash recovery or production throughput."
+}

@@ -1,0 +1,22 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "workspaceId": "96904b4c-96eb-445a-b74d-4acbc62a4498",
+      "selectedOnly": true,
+      "duplicatesExcluded": true,
+      "wrongWorkspaceRejected": true,
+      "stalePreviewRejected": true
+    },
+    {
+      "width": 1920,
+      "workspaceId": "620dfb81-fa95-4ef4-b3ba-5859d78c2218",
+      "selectedOnly": true,
+      "duplicatesExcluded": true,
+      "wrongWorkspaceRejected": true,
+      "stalePreviewRejected": true
+    }
+  ],
+  "sourceUnchanged": true,
+  "pageErrors": []
+}

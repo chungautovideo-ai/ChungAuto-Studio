@@ -1,0 +1,10 @@
+{
+  "systemPathEmpty": true,
+  "localEnvironment": true,
+  "python": "3.12.10",
+  "lxml": "6.0.2",
+  "graphicInserted": true,
+  "inputUnchanged": true,
+  "rendered": false,
+  "scope": "Local embedded CPython already installed; downloaded and SHA-verified lxml wheel, actual HTML insertion with empty PATH. Not a fresh Windows/6-machine setup test."
+}

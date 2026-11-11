@@ -1,0 +1,26 @@
+{
+  "dir": "workspace/content/2026-11-04/contentos-smoke-publishpack",
+  "workspaceId": "20483e61-6b32-4881-8611-a9cc687402b5",
+  "revision": "2217837e832c73005217b605c00c6d7bd3edad94761ccff0344c8ff464ff4c60",
+  "packId": "94170dc6-13eb-4ed7-b875-9edb9a29e600",
+  "video": "renders/contentos-smoke-publishpack-final.mp4",
+  "actualFinalRender": true,
+  "download": true,
+  "perChannelCover": true,
+  "selectedChannelsOnly": true,
+  "archiveTamperRejected": true,
+  "staleRevisionRejected": true,
+  "unchangedProject": true,
+  "files": [
+    "video.mp4",
+    "channels/01-youtube/cover.jpg",
+    "channels/01-youtube/content.json",
+    "channels/01-youtube/title.txt",
+    "channels/01-youtube/caption.txt",
+    "channels/01-youtube/hashtags.txt",
+    "channels/01-youtube/tags.txt",
+    "channels/01-youtube/comment.txt",
+    "manifest.json",
+    "README.txt"
+  ]
+}

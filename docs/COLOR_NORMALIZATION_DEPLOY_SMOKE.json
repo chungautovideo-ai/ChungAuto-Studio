@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "idleChecks": {
+    "remotionWorker": false,
+    "dispatchActive": 0,
+    "queued": 0,
+    "renderLock": null,
+    "asrLock": null
+  },
+  "restarted": true,
+  "catalog": "chungauto-factory-quang-cao-v13",
+  "colorManagementHttp": 200,
+  "colorNormalizationUiHttp": 200,
+  "suitePassed": 226,
+  "paidProviderCalls": false,
+  "posting": false
+}

@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "realDialog": true,
+      "savedFinalAndDrafts": true,
+      "selectedChannelOnly": true,
+      "zipDownload": true,
+      "coverIncluded": true,
+      "unsavedGuard": true
+    },
+    {
+      "width": 1920,
+      "realDialog": true,
+      "savedFinalAndDrafts": true,
+      "selectedChannelOnly": true,
+      "zipDownload": true,
+      "coverIncluded": true,
+      "unsavedGuard": true
+    }
+  ],
+  "errors": []
+}

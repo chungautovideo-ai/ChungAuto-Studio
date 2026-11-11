@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanh toán — {{SITE_NAME}}</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b;--surface:#141416;--surface2:#1b1b1e;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);
+  --ink:#f5f5f6;--ink2:#c3c3c9;--muted:#7d7d85;--lime:#d8ff3e;--lime-ink:#0a0a0b;--danger:#ff5b6b;--ok:#3ee08a;--warn:#ffb020;
+  --head:"Inter Tight",Inter,system-ui,sans-serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 32px;border-bottom:1px solid var(--line)}
+.logo{display:inline-flex;align-items:center;gap:10px;font:800 18px/1 var(--head);text-decoration:none}
+.logo i{width:26px;height:26px;border-radius:8px;background:var(--lime);display:inline-grid;place-items:center}
+.logo i::after{content:"";border-left:8px solid var(--lime-ink);border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+header a.back{color:var(--muted);text-decoration:none;font-size:14px}
+main{max-width:1040px;margin:0 auto;padding:36px 24px 60px}
+h1{font:800 30px/1.1 var(--head);margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:22px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.pay{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:center}
+.qrbox{background:#fff;border-radius:16px;padding:10px;position:relative}
+.qrbox img{display:block;width:100%;height:auto;border-radius:8px}
+.qrbox .done{position:absolute;inset:0;border-radius:16px;background:rgba(10,10,11,.88);display:none;place-items:center;text-align:center;color:var(--ok);font:800 18px/1.3 var(--head)}
+.qrbox.paid .done{display:grid}
+.steps{margin:0;padding:0 0 0 18px;color:var(--ink2);font-size:14px;display:grid;gap:6px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.kv div:last-child{grid-column:1/-1}
+.kv div{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface2)}
+.kv small{color:var(--muted);font-size:12px;display:block}
+.kv b{font-size:15px;word-break:break-all}
+.kv b.code{color:var(--lime);font:800 18px var(--head);letter-spacing:.04em}
+.copy{border:1px solid var(--line2);background:none;color:var(--ink2);border-radius:8px;padding:6px 10px;font:600 12px var(--sans);cursor:pointer;flex:none}
+.copy:hover{color:var(--ink);border-color:var(--ink2)}
+.status{display:flex;align-items:center;gap:12px;margin-top:20px;padding:14px 16px;border-radius:14px;border:1px solid var(--line2);background:var(--surface2);font-size:14px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--warn);flex:none;animation:pulse 1.4s infinite}
+.status.paid{border-color:rgba(62,224,138,.5)}
+.status.paid .dot{background:var(--ok);animation:none}
+.status.bad .dot{background:var(--danger);animation:none}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.sum h3{margin:0 0 14px;font:800 18px var(--head)}
+.plan{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.plan b{font:800 22px var(--head)}
+.badge{display:inline-block;font:800 11px/1 var(--head);text-transform:uppercase;letter-spacing:.06em;padding:5px 8px;border-radius:6px;background:var(--lime);color:var(--lime-ink);margin-left:8px;vertical-align:middle}
+.badge.premium{background:#ff3d8b;color:#fff}
+.line{display:flex;justify-content:space-between;color:var(--ink2);font-size:14px;margin:8px 0}
+.total{display:flex;justify-content:space-between;font:800 20px var(--head);margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.perks{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;color:var(--ink2);font-size:14px}
+.perks li::before{content:"✓";color:var(--lime);font-weight:800;margin-right:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 20px;border-radius:12px;border:0;background:var(--lime);color:var(--lime-ink);font:800 15px var(--head);text-decoration:none;cursor:pointer}
+.btn.dark{background:var(--surface2);color:var(--ink);border:1px solid var(--line2)}
+.ok-box{text-align:center;padding:40px 24px}
+.ok-box .big{width:72px;height:72px;border-radius:50%;background:rgba(62,224,138,.15);color:var(--ok);display:grid;place-items:center;font-size:36px;margin:0 auto 18px}
+.ok-box h2{font:800 28px var(--head);margin:0 0 8px}
+.ok-box p{color:var(--ink2);margin:0 0 24px}
+.ok-box .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.err{color:var(--danger)}
+.muted{color:var(--muted);font-size:13px}
+.hide{display:none!important}
+.claim{max-width:480px;margin:0 auto}
+.claim .big{width:64px;height:64px;border-radius:50%;background:rgba(62,224,138,.15);color:var(--ok);display:grid;place-items:center;font-size:30px;margin:0 auto 14px}
+.claim h2{margin:0 0 6px;font:800 24px var(--head);text-align:center}
+.claim>p{margin:0 0 18px;text-align:center;color:var(--ink2)}
+.claim label{display:block;margin-bottom:12px;font-size:14px;color:var(--ink2)}
+.claim input{display:block;width:100%;height:46px;margin-top:6px;padding:0 14px;border-radius:12px;border:1px solid var(--line2);background:var(--surface2);color:var(--ink);font:15px var(--sans)}
+.claim input:focus{outline:0;border-color:var(--lime)}
+.claim .err{min-height:22px;margin:0 0 8px;font-size:14px}
+.claim .btn{width:100%}
+.claim small{display:block;margin-top:12px;text-align:center;color:var(--muted);font-size:13px}
+.secure{font-size:13px;color:var(--ink2)}
+.hero{text-align:center;max-width:640px;margin:0 auto 28px}
+.eyebrow{display:inline-block;margin-bottom:10px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+.hero h1{font-size:clamp(26px,4vw,38px);text-wrap:balance}
+.phone-tip{display:none;margin:10px 0 0;font-size:13px;color:var(--ink2)}
+.hero h1>span{color:var(--lime)}
+.hero .lead{margin:0}
+.deadline{display:inline-block;margin-top:14px;padding:7px 14px;border-radius:999px;background:rgba(216,255,62,.08);border:1px solid rgba(216,255,62,.3);font-size:14px;color:var(--ink2)}
+.deadline[hidden]{display:none}
+.deadline b{color:var(--lime);font-variant-numeric:tabular-nums}
+#payCard{border-color:rgba(216,255,62,.32)}
+.card h2,.card h3{margin:0 0 14px;font:800 19px var(--head)}
+.side{display:grid;gap:16px}
+.kv .wide{grid-column:1/-1}
+.kv div:last-child{grid-column:1/-1}
+.wide-btn{width:100%;margin-top:14px}
+.line.save{color:var(--lime)}
+.block{margin-top:36px}
+.block>h2{margin:0 0 16px;font:800 22px var(--head);text-align:center}
+.next{list-style:none;counter-reset:n;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.next li{counter-increment:n;padding:18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.next li::before{content:counter(n);display:grid;place-items:center;width:28px;height:28px;margin-bottom:10px;border-radius:50%;background:var(--lime);color:var(--lime-ink);font-weight:800;font-size:14px}
+.next b{display:block;margin-bottom:4px}
+.next span{font-size:14px;color:var(--ink2)}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.trust div{padding:14px 16px;border-radius:14px;border:1px solid var(--line)}
+.trust b{display:block;font-size:14px;margin-bottom:2px}
+.trust span{font-size:13px;color:var(--muted)}
+.faq{max-width:760px;margin:0 auto;display:grid;gap:10px}
+.faq details{border-radius:14px;background:var(--surface);border:1px solid var(--line);padding:14px 18px}
+.faq summary{cursor:pointer;font-weight:700}
+.faq p{margin:10px 0 0;color:var(--ink2);font-size:14px}
+.final{margin-top:36px;padding:26px;text-align:center;border-radius:20px;background:var(--surface);border:1px solid rgba(216,255,62,.32)}
+.final p{margin:0 0 14px;font-weight:700}
+@media (max-width:860px){
+  .grid,.next,.trust{grid-template-columns:1fr}
+  .pay{grid-template-columns:1fr}
+  .secure{font-size:12px}
+  .phone-tip{display:block}
+  .kv{grid-template-columns:1fr}
+  .qrbox{max-width:280px;margin:0 auto}
+  header{padding:14px 16px}
+  main{padding:24px 16px 48px}
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="./"><i></i>{{SITE_NAME}}</a>
+  <span class="secure">🔒 Thanh toán chuyển khoản an toàn</span>
+</header>
+<main>
+  <div id="loading" class="muted">Đang tạo đơn thanh toán…</div>
+
+  <section id="checkout" class="hide">
+    <div class="hero">
+      <span class="eyebrow">Bước cuối cùng</span>
+      <h1>Chỉ còn 1 bước để bắt đầu với <span>gói <span id="planName"></span></span></h1>
+      <p class="lead">Quét mã QR bên dưới. Hệ thống tự nhận khi tiền về, thường dưới 1 phút.</p>
+      <div class="deadline" id="deadline" data-end="2026-11-30T23:59:59+07:00" hidden>Ưu đãi còn <b id="deadlineLeft"></b></div>
+    </div>
+    <div class="grid">
+      <div class="card" id="payCard">
+        <h2>Quét QR để thanh toán</h2>
+        <div class="pay">
+          <div class="qrbox" id="qrbox"><img id="qr" alt="Mã QR chuyển khoản"><div class="done">✓ Đã nhận tiền</div></div>
+          <ol class="steps">
+            <li>Mở app ngân hàng, chọn <b>Quét QR</b></li>
+            <li>Quét mã, số tiền và nội dung đã điền sẵn</li>
+            <li>Xác nhận chuyển khoản, giữ nguyên trang này</li>
+          </ol>
+        </div>
+        <p class="phone-tip">Đang xem trên điện thoại? Chụp màn hình mã QR rồi chọn ảnh trong app ngân hàng, hoặc sao chép thông tin bên dưới.</p>
+        <div class="kv">
+          <div><span><small>Ngân hàng</small><b id="bank"></b></span></div>
+          <div><span><small>Chủ tài khoản</small><b id="holder"></b></span></div>
+          <div><span><small>Số tài khoản</small><b id="acc"></b></span><button class="copy" data-copy="acc">Sao chép</button></div>
+          <div><span><small>Số tiền</small><b id="amount"></b></span><button class="copy" data-copy="amountRaw">Sao chép</button></div>
+          <div class="wide"><span><small>Nội dung chuyển khoản (bắt buộc)</small><b class="code" id="code"></b></span><button class="copy" data-copy="code">Sao chép</button></div>
+        </div>
+        <div class="status" id="status"><span class="dot"></span><span id="statusText">Đang chờ bạn chuyển khoản…</span></div>
+        <button class="btn wide-btn" id="paidBtn" type="button">Tôi đã chuyển khoản</button>
+        <p class="muted" style="margin:12px 0 0">Chuyển khoản tay thì ghi <b>đúng nội dung</b> ở trên để hệ thống nhận ra đơn của bạn.</p>
+      </div>
+
+      <aside class="side">
+        <div class="card sum">
+          <h3>Đơn hàng của bạn</h3>
+          <div class="plan"><span>Gói <b id="sumPlan"></b><span class="badge" id="sumBadge"></span></span><span class="muted" id="sumDays"></span></div>
+          <div class="line"><span>Mã đơn</span><span id="sumCode"></span></div>
+          <div class="line" id="sumEmailRow"><span>Tài khoản</span><span id="sumEmail"></span></div>
+          <div class="line" id="sumListRow" style="display:none"><span>Giá niêm yết</span><span><s id="sumList"></s></span></div>
+          <div class="line save" id="sumSaveRow" style="display:none"><span>Bạn tiết kiệm</span><span id="sumSave"></span></div>
+          <div class="total"><span>Tổng thanh toán <small id="sumDeal" style="font-weight:600;font-size:12px;color:#d8ff3e"></small></span><span id="sumTotal"></span></div>
+          <p class="muted" style="margin:10px 0 0">Trả 1 lần, không phí ẩn. Gói AI (ChatGPT hoặc Claude) bạn trả riêng cho hãng AI.</p>
+        </div>
+        <div class="card">
+          <h3>Bạn nhận được ngay</h3>
+          <ul class="perks" id="perks"></ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="block">
+      <h2>Sau khi thanh toán</h2>
+      <ol class="next">
+        <li><b id="next1T">Tạo tài khoản, gói tự kích hoạt</b><span id="next1">Tiền về là trang này tự chuyển sang bước tạo tài khoản, không cần gửi ảnh chuyển khoản.</span></li>
+        <li><b>Tải phần mềm</b><span>Tải ngay trên website bằng tài khoản của bạn.</span></li>
+        <li><b>Để AI cài đặt</b><span>Mở thư mục bằng Claude Code hoặc Codex, gõ “cài đặt”. AI lo phần còn lại.</span></li>
+      </ol>
+    </div>
+
+    <div class="trust">
+      <div><b>Chuyển khoản trực tiếp</b><span>Thanh toán qua app ngân hàng của bạn, website không nhận thông tin thẻ.</span></div>
+      <div><b>Kích hoạt tự động</b><span>Hệ thống nhận ra đơn theo nội dung chuyển khoản.</span></div>
+      <div><b>Video nằm trên máy bạn</b><span>Dựng và xuất ngay trên máy, video không tải lên mạng.</span></div>
+    </div>
+
+    <div class="block">
+      <h2>Trước khi thanh toán</h2>
+      <div class="faq">
+        <details open><summary>Chuyển khoản xong bao lâu thì dùng được?</summary><p>Thường dưới 1 phút. Trang này tự cập nhật khi tiền về, bạn chỉ cần giữ nguyên trang.</p></details>
+        <details><summary>Tôi không biết edit video thì sao?</summary><p>Không sao. AI dựng sẵn theo mẫu, bạn chỉ duyệt và nhắn điều muốn đổi, hoặc kéo thả nếu thích tự chỉnh.</p></details>
+        <details><summary>Tôi có cần mua thêm gì không?</summary><p>Bạn cần một gói ChatGPT (dùng Codex) hoặc Claude (dùng Claude Code). Không phải trả thêm tiền token khi dùng phần mềm.</p></details>
+        <details><summary>Máy tôi có chạy được không?</summary><p>Máy Windows hoặc macOS thông thường là dùng được. Lần đầu, AI tự cài các thành phần cần thiết, khoảng 1 GB.</p></details>
+        <details><summary>Lỡ chuyển thiếu hoặc sai nội dung thì sao?</summary><p>Chuyển thiếu: trang này báo số còn thiếu, bạn chuyển thêm với cùng nội dung. Sai nội dung: <a href="{{CONTACT_URL}}" target="_blank" rel="noopener">liên hệ hỗ trợ</a> kèm mã đơn.</p></details>
+        <details><summary>Gói dùng được bao lâu?</summary><p>Trọn 1 năm kể từ ngày kích hoạt, gồm cập nhật phần mềm và mẫu mới trong năm.</p></details>
+      </div>
+    </div>
+
+    <div class="final">
+      <p>Quét mã là xong. Tiền về là bạn bắt đầu được ngay.</p>
+      <button class="btn" type="button" id="toQr">Quay lại mã QR</button>
+    </div>
+  </section>
+
+  <section id="info" class="card claim hide">
+    <h2>Thông tin của bạn</h2>
+    <p>Để hỗ trợ bạn khi kích hoạt gói. Chỉ cần điền một lần.</p>
+    <form id="infoForm" novalidate>
+      <label>Họ và tên<input name="name" autocomplete="name" maxlength="80" required placeholder="Nhập họ tên của bạn"></label>
+      <label>Số điện thoại<input name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="15" required placeholder="Nhập số điện thoại"></label>
+      <p class="err" id="infoErr"></p>
+      <button class="btn" type="submit">Tiếp tục thanh toán</button>
+    </form>
+  </section>
+
+  <section id="claim" class="card claim hide">
+    <div class="big">✓</div>
+    <h2>Đã nhận tiền</h2>
+    <p>Tạo tài khoản để kích hoạt gói <b id="claimPlan"></b>.</p>
+    <form id="claimForm" novalidate>
+      <label>Email<input name="email" type="email" autocomplete="email" required placeholder="ban@email.com"></label>
+      <label>Mật khẩu<input name="password" type="password" autocomplete="new-password" required placeholder="Ít nhất 8 ký tự"></label>
+      <p class="err" id="claimErr"></p>
+      <button class="btn" type="submit">Tạo tài khoản và kích hoạt gói</button>
+      <small>Đã có tài khoản? Nhập đúng email và mật khẩu đó, gói sẽ cộng vào tài khoản của bạn. Tạo tài khoản nghĩa là bạn đồng ý với điều khoản sử dụng.</small>
+    </form>
+  </section>
+
+  <section id="success" class="card ok-box hide">
+    <div class="big">✓</div>
+    <h2>Thanh toán thành công</h2>
+    <p id="okText">Gói của bạn đã được kích hoạt.</p>
+    <div class="acts"><a class="btn" href="./#tai-phan-mem">Tải phần mềm ngay</a><a class="btn dark" href="./#thu-vien">Xem thư viện mẫu</a></div>
+  </section>
+
+  <section id="error" class="card hide"><p class="err" id="errText"></p><a class="btn dark" href="./#bang-gia">Quay lại bảng giá</a></section>
+</main>
+
+<script>
+(function () {
+  var $ = function (s) { return document.querySelector(s); };
+  var qs = new URLSearchParams(location.search);
+  var PERKS = {
+    pro: ["Toàn bộ mẫu edit theo ngành và mẫu mới trong năm", "AI edit video, phụ đề tiếng Việt, kho hiệu ứng", "Phân tích kênh đối thủ để chọn hướng đi", "AI viết nội dung từng kênh và đăng tự động", "Tạo mẫu riêng từ video bạn thích", "Cập nhật phần mềm trong 1 năm"],
+    premium: ["Mở khoá toàn bộ mẫu Pro và Premium", "Tạo mẫu edit từ video mẫu bằng AI", "Mạng xã hội + Đăng tự động bằng AI", "Mẫu mới ra được dùng ngay", "Tải phần mềm và cập nhật trong 1 năm"],
+  };
+  var money = function (n) { return Number(n || 0).toLocaleString("vi-VN") + "đ"; };
+  var vals = {}, orderId = qs.get("order"), key = qs.get("key") || "", timer = null, orderUrl = function () { return "/api/orders/" + encodeURIComponent(orderId) + (key ? "?key=" + encodeURIComponent(key) : ""); };
+
+  async function api(p, body) {
+    var r = await fetch(p, { method: body ? "POST" : "GET", headers: { "Content-Type": "application/json" }, credentials: "same-origin", body: body ? JSON.stringify(body) : undefined });
+    var j = await r.json().catch(function () { return {}; });
+    if (r.status === 401) { location.href = "dang-nhap.html?next=" + encodeURIComponent("./thanh-toan.html" + location.search); throw new Error("401"); }
+    if (!r.ok || j.ok === false) throw new Error(j.error || "Không kết nối được máy chủ.");
+    return j;
+  }
+  function fail(t) { $("#loading").classList.add("hide"); $("#checkout").classList.add("hide"); $("#error").classList.remove("hide"); $("#errText").textContent = t; }
+
+  function show(j) {
+    var o = j.order, pay = j.payment;
+    if (j.needInfo) return askInfo(j);
+    if (j.claim) return claim(j);
+    if (o.status === "paid") return success(j);
+    if (o.status === "cancelled") return fail("Đơn " + o.code + " đã bị huỷ. Tạo đơn mới ở bảng giá.");
+    $("#loading").classList.add("hide"); $("#info").classList.add("hide"); $("#checkout").classList.remove("hide");
+    var name = (j.plan && j.plan.name) || o.plan;
+    $("#planName").textContent = name; $("#sumPlan").textContent = name;
+    $("#sumBadge").textContent = o.plan; $("#sumBadge").className = "badge " + o.plan;
+    $("#sumDays").textContent = j.plan && j.plan.days ? j.plan.days + " ngày" : "";
+    $("#sumCode").textContent = o.code; $("#sumEmail").textContent = o.email;
+    if (j.guest) $("#sumEmailRow").style.display = "none";
+    else { $("#next1T").textContent = "Gói tự kích hoạt"; $("#next1").textContent = "Trang này tự báo thành công, không cần gửi ảnh chuyển khoản."; }
+    $("#sumTotal").textContent = money(o.amount); $("#amount").textContent = money(pay.amount);
+    var lp = j.plan && j.plan.listPrice;
+    if (lp > o.amount) { $("#sumList").textContent = money(lp); $("#sumListRow").style.display = ""; $("#sumDeal").textContent = "· ưu đãi -" + Math.round((1 - o.amount / lp) * 100) + "%"; $("#sumSave").textContent = money(lp - o.amount); $("#sumSaveRow").style.display = ""; }
+    $("#code").textContent = pay.content;
+    $("#perks").innerHTML = (PERKS[o.plan] || []).map(function (p) { return "<li>" + p + "</li>"; }).join("");
+    if (pay.configured && pay.qr) {
+      $("#qr").src = pay.qr; $("#bank").textContent = pay.bankName; $("#acc").textContent = pay.accountNo; $("#holder").textContent = pay.accountName;
+    } else {
+      $("#qrbox").classList.add("hide");
+      $("#bank").textContent = "Chưa cấu hình tài khoản nhận tiền"; $("#acc").textContent = "—"; $("#holder").textContent = "—";
+      $("#statusText").textContent = "Website chưa cấu hình thanh toán. Liên hệ chúng tôi kèm mã đơn.";
+      $("#status").classList.add("bad");
+    }
+    vals = { acc: pay.accountNo, amountRaw: String(pay.amount), code: pay.content };
+    var paidSoFar = (o.payments || []).reduce(function (s, x) { return s + (Number(x.amount) || 0); }, 0);
+    if (paidSoFar > 0 && paidSoFar < o.amount) $("#statusText").textContent = "Đã nhận " + money(paidSoFar) + " — còn thiếu " + money(o.amount - paidSoFar) + ". Chuyển thêm phần còn lại với cùng nội dung.";
+  }
+  function askInfo(j) {
+    if (!$("#info").classList.contains("hide")) return;
+    $("#loading").classList.add("hide"); $("#info").classList.remove("hide");
+    $("#infoForm").name.value = j.order.name || (j.user && j.user.name) || "";
+    $("#infoForm").phone.value = j.order.phone || "";
+  }
+  $("#infoForm").onsubmit = async function (e) {
+    e.preventDefault();
+    var f = this, b = f.querySelector("button"), err = $("#infoErr");
+    err.textContent = ""; b.disabled = true; b.textContent = "Đang lưu…";
+    try {
+      await api("/api/orders/" + encodeURIComponent(orderId) + "/contact", { name: f.name.value, phone: f.phone.value });
+      show(await api(orderUrl()));
+    } catch (x) { if (x.message !== "401") err.textContent = x.message; }
+    b.disabled = false; b.textContent = "Tiếp tục thanh toán";
+  };
+  // tiền về: tự chuyển sang tạo tài khoản, xong thì gói được kích hoạt
+  function claim(j) {
+    clearInterval(timer);
+    if (!$("#claim").classList.contains("hide")) return;
+    $("#loading").classList.add("hide"); $("#checkout").classList.add("hide"); $("#claim").classList.remove("hide");
+    $("#claimPlan").textContent = (j.plan && j.plan.name) || j.order.plan;
+    $("#claimForm").email.value = j.order.email || "";
+    scrollTo(0, 0);
+    ($("#claimForm").email.value ? $("#claimForm").password : $("#claimForm").email).focus();
+  }
+  $("#claimForm").onsubmit = async function (e) {
+    e.preventDefault();
+    var f = this, b = f.querySelector("button"), err = $("#claimErr");
+    err.textContent = "";
+    if (f.password.value.length < 8) { err.textContent = "Mật khẩu cần ít nhất 8 ký tự."; return; }
+    b.disabled = true; b.textContent = "Đang kích hoạt…";
+    try {
+      var r = await fetch("/api/orders/" + encodeURIComponent(orderId) + "/claim", { method: "POST", headers: { "Content-Type": "application/json" }, credentials: "same-origin", body: JSON.stringify({ key: key, email: f.email.value, password: f.password.value }) });
+      var j = await r.json().catch(function () { return {}; });
+      if (!r.ok || !j.ok) throw new Error(j.error || "Chưa kích hoạt được, thử lại sau ít phút.");
+      $("#claim").classList.add("hide");
+      success(j);
+    } catch (x) { err.textContent = x.message; b.disabled = false; b.textContent = "Tạo tài khoản và kích hoạt gói"; }
+  };
+  function success(j) {
+    clearInterval(timer);
+    $("#qrbox").classList.add("paid"); $("#status").classList.add("paid"); $("#statusText").textContent = "Đã nhận tiền — gói đã được kích hoạt.";
+    setTimeout(function () {
+      $("#loading").classList.add("hide"); $("#checkout").classList.add("hide"); $("#success").classList.remove("hide");
+      var u = j.user || {};
+      $("#okText").textContent = "Gói " + ((j.plan && j.plan.name) || j.order.plan) + " đã được kích hoạt cho " + j.order.email +
+        (u.planExpires ? ", dùng đến " + new Date(u.planExpires).toLocaleDateString("vi-VN") : "") + ".";
+    }, 1200);
+  }
+  async function poll() {
+    try { show(await api(orderUrl())); } catch (e) {}
+  }
+
+  // khách từ trang đăng ký sang: luôn bắt đầu ở đầu trang
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  scrollTo(0, 0);
+  // hạn ưu đãi cố định, cùng hạn với landing; hết hạn thì ẩn
+  (function () {
+    var box = $("#deadline"), end = Date.parse(box.dataset.end);
+    var tick = function () {
+      var t = Math.floor((end - Date.now()) / 1000);
+      if (t <= 0) { box.hidden = true; clearInterval(iv); return; }
+      var p = function (n) { return String(n).padStart(2, "0"); };
+      box.hidden = false;
+      $("#deadlineLeft").textContent = Math.floor(t / 86400) + " ngày " + p(Math.floor(t / 3600) % 24) + ":" + p(Math.floor(t / 60) % 60) + ":" + p(t % 60);
+    };
+    var iv = setInterval(tick, 1000); tick();
+  })();
+  $("#toQr").onclick = function () { $("#payCard").scrollIntoView({ behavior: "smooth", block: "start" }); };
+  // chỉ kiểm tra lại đơn: gói vẫn kích hoạt theo tiền về thật, nút này không tự xác nhận
+  $("#paidBtn").onclick = async function () {
+    var b = this; b.disabled = true; b.textContent = "Đang kiểm tra…";
+    await poll();
+    if (document.getElementById("checkout").classList.contains("hide")) return;
+    if (!$("#status").classList.contains("paid")) $("#statusText").textContent = "Chưa thấy tiền về. Thường mất dưới 1 phút, trang sẽ tự cập nhật.";
+    b.disabled = false; b.textContent = "Tôi đã chuyển khoản";
+  };
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]");
+    if (!b) return;
+    navigator.clipboard.writeText(vals[b.dataset.copy] || "").then(function () { var t = b.textContent; b.textContent = "Đã chép"; setTimeout(function () { b.textContent = t; }, 1200); });
+  });
+
+  (async function start() {
+    try {
+      if (!orderId) {
+        var plan = qs.get("plan");
+        if (plan !== "pro" && plan !== "premium") return fail("Chưa chọn gói. Chọn gói ở bảng giá.");
+        var c = await api("/api/orders", { plan: plan });
+        orderId = c.order.id;
+        history.replaceState(null, "", "?order=" + encodeURIComponent(orderId));
+      }
+      var j = await api(orderUrl());
+      show(j);
+      if (j.order.status === "pending") timer = setInterval(poll, 4000);
+      document.addEventListener("visibilitychange", function () { if (!document.hidden) poll(); });
+    } catch (e) { if (e.message !== "401") fail(e.message); }
+  })();
+})();
+</script>
+</body>
+</html>

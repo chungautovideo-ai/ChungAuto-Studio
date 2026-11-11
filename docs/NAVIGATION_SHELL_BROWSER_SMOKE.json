@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "groups": 6,
+      "projectDeepLink": true,
+      "library": true,
+      "imageTool": true,
+      "newsTool": true,
+      "back": true,
+      "settingsRefresh": true
+    },
+    {
+      "width": 1920,
+      "groups": 6,
+      "projectDeepLink": true,
+      "library": true,
+      "imageTool": true,
+      "newsTool": true,
+      "back": true,
+      "settingsRefresh": true
+    }
+  ],
+  "errors": [],
+  "readOnly": true
+}

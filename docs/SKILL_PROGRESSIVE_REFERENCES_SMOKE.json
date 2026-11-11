@@ -1,0 +1,13 @@
+{
+  "version": 38,
+  "presets": 11,
+  "references": 4,
+  "entryUtf8Bytes": 6443,
+  "parentEntryUtf8Bytes": 19176,
+  "unitSuite": "269/269",
+  "sessionHttpEvidence": "docs/SKILL_REFERENCES_SESSION_SMOKE.json",
+  "reviewEvidence": "docs/PERSON_SELECTION_REVIEW_SMOKE.json",
+  "live5180TemplateEndpointVerified": true,
+  "realModelRun": false,
+  "tokenLatencyBenchmark": false
+}

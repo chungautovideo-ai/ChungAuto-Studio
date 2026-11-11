@@ -1,0 +1,3478 @@
+{
+  "sourceQA": "workspace/content/2026-11-05/contentos-selected-final-baseline",
+  "projects": [
+    "workspace/content/2026-11-05/qa-skin-f54c98ad-base",
+    "workspace/content/2026-11-05/qa-skin-f54c98ad-skin"
+  ],
+  "outputs": [
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-skin-f54c98ad-base\\renders\\qa-skin-f54c98ad-base-final.mp4",
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-skin-f54c98ad-skin\\renders\\qa-skin-f54c98ad-skin-final.mp4"
+  ],
+  "projectHashes": [
+    "8630f53310ccc845a158a7737e69dd996d0b2f97ab578f2f628016b3380da8f2",
+    "337bd450e0a03813398bc1e0e69f2e3a1f7a0e69ebc818cbb71730af8b58aed1"
+  ],
+  "sourceAndQAUnchanged": true,
+  "skinLift": {
+    "baseline": 0,
+    "adjusted": 30
+  },
+  "otherBeautyLevels": 0,
+  "actualFinalRender": true,
+  "totalFrames": 181,
+  "measuredFrames": 180,
+  "unmeasured": [],
+  "inactive": [
+    {
+      "frame": 180,
+      "time": 6,
+      "meanAbsoluteDifference": 0.4621853298611111
+    }
+  ],
+  "failures": [],
+  "inactiveFailures": [],
+  "summary": {
+    "minimumSkinLumaGain": 8.455604166666674,
+    "maximumClothesHairDifference": 0.40936639118457246,
+    "maximumBackgroundDifference": 0.47120948538575236
+  },
+  "contact": "docs/SKIN_ONLY_FINAL_CONTACT.png",
+  "comparisons": [
+    {
+      "frame": 0,
+      "time": 0,
+      "skin": {
+        "count": 220,
+        "lumaGain": 11.960707272727278,
+        "absoluteDifference": 12.195454545454535
+      },
+      "clothesAndHair": {
+        "count": 2622,
+        "lumaGain": 0.00880755148741418,
+        "absoluteDifference": 0.14403763030765343
+      },
+      "background": {
+        "count": 28214,
+        "lumaGain": -0.000804855745374634,
+        "absoluteDifference": 0.1336334207603813
+      }
+    },
+    {
+      "frame": 1,
+      "time": 0.033333,
+      "skin": {
+        "count": 220,
+        "lumaGain": 11.95606636363637,
+        "absoluteDifference": 12.177272727272717
+      },
+      "clothesAndHair": {
+        "count": 2622,
+        "lumaGain": 0.004044698703279936,
+        "absoluteDifference": 0.1503941011950167
+      },
+      "background": {
+        "count": 28214,
+        "lumaGain": -0.000172573899482524,
+        "absoluteDifference": 0.13814654663169812
+      }
+    },
+    {
+      "frame": 2,
+      "time": 0.066667,
+      "skin": {
+        "count": 232,
+        "lumaGain": 11.90652068965517,
+        "absoluteDifference": 12.287356321839077
+      },
+      "clothesAndHair": {
+        "count": 2678,
+        "lumaGain": -0.01543472740851381,
+        "absoluteDifference": 0.25168035847647513
+      },
+      "background": {
+        "count": 28067,
+        "lumaGain": 0.00012829301314711282,
+        "absoluteDifference": 0.2064108502274293
+      }
+    },
+    {
+      "frame": 3,
+      "time": 0.1,
+      "skin": {
+        "count": 219,
+        "lumaGain": 11.817207305936078,
+        "absoluteDifference": 12.161339421613395
+      },
+      "clothesAndHair": {
+        "count": 2658,
+        "lumaGain": 0.0050783295711061,
+        "absoluteDifference": 0.2985954351642836
+      },
+      "background": {
+        "count": 28219,
+        "lumaGain": -0.00006498458485417296,
+        "absoluteDifference": 0.2862964669194461
+      }
+    },
+    {
+      "frame": 4,
+      "time": 0.133333,
+      "skin": {
+        "count": 199,
+        "lumaGain": 11.446909547738692,
+        "absoluteDifference": 11.95979899497487
+      },
+      "clothesAndHair": {
+        "count": 2362,
+        "lumaGain": 0.03578966977138017,
+        "absoluteDifference": 0.29607677109793973
+      },
+      "background": {
+        "count": 28665,
+        "lumaGain": 0.001259905808477244,
+        "absoluteDifference": 0.3305889877318449
+      }
+    },
+    {
+      "frame": 5,
+      "time": 0.166667,
+      "skin": {
+        "count": 221,
+        "lumaGain": 11.367853393665152,
+        "absoluteDifference": 11.678733031674215
+      },
+      "clothesAndHair": {
+        "count": 2591,
+        "lumaGain": -0.01717020455422615,
+        "absoluteDifference": 0.3292165187186419
+      },
+      "background": {
+        "count": 28371,
+        "lumaGain": -0.001820506855591974,
+        "absoluteDifference": 0.36645400820086516
+      }
+    },
+    {
+      "frame": 6,
+      "time": 0.2,
+      "skin": {
+        "count": 233,
+        "lumaGain": 11.380262660944194,
+        "absoluteDifference": 11.855507868383402
+      },
+      "clothesAndHair": {
+        "count": 2743,
+        "lumaGain": 0.015127378782355101,
+        "absoluteDifference": 0.34098918459108013
+      },
+      "background": {
+        "count": 28242,
+        "lumaGain": -0.0037976064018129104,
+        "absoluteDifference": 0.37935226494818974
+      }
+    },
+    {
+      "frame": 7,
+      "time": 0.233333,
+      "skin": {
+        "count": 233,
+        "lumaGain": 11.439865236051498,
+        "absoluteDifference": 11.861230329041495
+      },
+      "clothesAndHair": {
+        "count": 2743,
+        "lumaGain": 0.009012613926358012,
+        "absoluteDifference": 0.34670069267225667
+      },
+      "background": {
+        "count": 28242,
+        "lumaGain": 0.0009079172863111549,
+        "absoluteDifference": 0.40150603120648126
+      }
+    },
+    {
+      "frame": 8,
+      "time": 0.266667,
+      "skin": {
+        "count": 179,
+        "lumaGain": 10.8438748603352,
+        "absoluteDifference": 11.37988826815643
+      },
+      "clothesAndHair": {
+        "count": 2562,
+        "lumaGain": 0.008076971116315381,
+        "absoluteDifference": 0.32188394483476473
+      },
+      "background": {
+        "count": 28649,
+        "lumaGain": -0.00288130126705993,
+        "absoluteDifference": 0.40665759130627194
+      }
+    },
+    {
+      "frame": 9,
+      "time": 0.3,
+      "skin": {
+        "count": 206,
+        "lumaGain": 11.14958155339806,
+        "absoluteDifference": 11.55663430420712
+      },
+      "clothesAndHair": {
+        "count": 2718,
+        "lumaGain": 0.002742457689477554,
+        "absoluteDifference": 0.34216335540838877
+      },
+      "background": {
+        "count": 28454,
+        "lumaGain": 0.0006662824207492792,
+        "absoluteDifference": 0.4172934092453352
+      }
+    },
+    {
+      "frame": 10,
+      "time": 0.333333,
+      "skin": {
+        "count": 206,
+        "lumaGain": 11.238330097087376,
+        "absoluteDifference": 11.629449838187702
+      },
+      "clothesAndHair": {
+        "count": 2718,
+        "lumaGain": 0.023194996320824106,
+        "absoluteDifference": 0.34682364483688954
+      },
+      "background": {
+        "count": 28454,
+        "lumaGain": -0.0024159063752020814,
+        "absoluteDifference": 0.4300156978515066
+      }
+    },
+    {
+      "frame": 11,
+      "time": 0.366667,
+      "skin": {
+        "count": 198,
+        "lumaGain": 11.008418181818193,
+        "absoluteDifference": 11.410774410774415
+      },
+      "clothesAndHair": {
+        "count": 2854,
+        "lumaGain": -0.003059074982480717,
+        "absoluteDifference": 0.32153702405979945
+      },
+      "background": {
+        "count": 28430,
+        "lumaGain": -0.004319324657052428,
+        "absoluteDifference": 0.4281275647789932
+      }
+    },
+    {
+      "frame": 12,
+      "time": 0.4,
+      "skin": {
+        "count": 189,
+        "lumaGain": 10.856164021164021,
+        "absoluteDifference": 11.308641975308648
+      },
+      "clothesAndHair": {
+        "count": 2802,
+        "lumaGain": -0.01024375446109921,
+        "absoluteDifference": 0.3172733761598855
+      },
+      "background": {
+        "count": 28671,
+        "lumaGain": -0.0019116877681280623,
+        "absoluteDifference": 0.43151616616093236
+      }
+    },
+    {
+      "frame": 13,
+      "time": 0.433333,
+      "skin": {
+        "count": 189,
+        "lumaGain": 10.739425396825398,
+        "absoluteDifference": 11.202821869488542
+      },
+      "clothesAndHair": {
+        "count": 2802,
+        "lumaGain": 0.0038354746609564594,
+        "absoluteDifference": 0.34273138234594275
+      },
+      "background": {
+        "count": 28671,
+        "lumaGain": 0.0022101635799239806,
+        "absoluteDifference": 0.43998000302279777
+      }
+    },
+    {
+      "frame": 14,
+      "time": 0.466667,
+      "skin": {
+        "count": 208,
+        "lumaGain": 10.870765384615384,
+        "absoluteDifference": 11.3926282051282
+      },
+      "clothesAndHair": {
+        "count": 2974,
+        "lumaGain": 0.002860860793544053,
+        "absoluteDifference": 0.3618022864828513
+      },
+      "background": {
+        "count": 28260,
+        "lumaGain": 0.007167409766454372,
+        "absoluteDifference": 0.4447629157820264
+      }
+    },
+    {
+      "frame": 15,
+      "time": 0.5,
+      "skin": {
+        "count": 183,
+        "lumaGain": 10.318281967213126,
+        "absoluteDifference": 10.903460837887062
+      },
+      "clothesAndHair": {
+        "count": 2843,
+        "lumaGain": 0.007206753429475917,
+        "absoluteDifference": 0.34470629616602155
+      },
+      "background": {
+        "count": 28528,
+        "lumaGain": -0.0018146382501402166,
+        "absoluteDifference": 0.447992615442142
+      }
+    },
+    {
+      "frame": 16,
+      "time": 0.533333,
+      "skin": {
+        "count": 183,
+        "lumaGain": 10.081512568306014,
+        "absoluteDifference": 10.726775956284147
+      },
+      "clothesAndHair": {
+        "count": 2843,
+        "lumaGain": 0.002523953570172353,
+        "absoluteDifference": 0.34763747215382823
+      },
+      "background": {
+        "count": 28528,
+        "lumaGain": -0.005142442512619176,
+        "absoluteDifference": 0.4464736399327001
+      }
+    },
+    {
+      "frame": 17,
+      "time": 0.566667,
+      "skin": {
+        "count": 207,
+        "lumaGain": 9.793682125603873,
+        "absoluteDifference": 10.444444444444446
+      },
+      "clothesAndHair": {
+        "count": 2916,
+        "lumaGain": -0.0017405349794238705,
+        "absoluteDifference": 0.3379058070416099
+      },
+      "background": {
+        "count": 28406,
+        "lumaGain": 0.004306794339224111,
+        "absoluteDifference": 0.45018658029994296
+      }
+    },
+    {
+      "frame": 18,
+      "time": 0.6,
+      "skin": {
+        "count": 203,
+        "lumaGain": 9.493647290640396,
+        "absoluteDifference": 10.129720853858787
+      },
+      "clothesAndHair": {
+        "count": 2861,
+        "lumaGain": -0.0031412792729814823,
+        "absoluteDifference": 0.339275311662589
+      },
+      "background": {
+        "count": 28540,
+        "lumaGain": 0.0010375613174491982,
+        "absoluteDifference": 0.45391263723429587
+      }
+    },
+    {
+      "frame": 19,
+      "time": 0.633333,
+      "skin": {
+        "count": 178,
+        "lumaGain": 8.770248314606745,
+        "absoluteDifference": 9.576779026217233
+      },
+      "clothesAndHair": {
+        "count": 2723,
+        "lumaGain": 0.0010301138450238678,
+        "absoluteDifference": 0.3348023013832777
+      },
+      "background": {
+        "count": 28762,
+        "lumaGain": 0.0030400806619845324,
+        "absoluteDifference": 0.454372667640179
+      }
+    },
+    {
+      "frame": 20,
+      "time": 0.666667,
+      "skin": {
+        "count": 177,
+        "lumaGain": 9.204143502824857,
+        "absoluteDifference": 9.817325800376649
+      },
+      "clothesAndHair": {
+        "count": 2850,
+        "lumaGain": 0.009550456140350893,
+        "absoluteDifference": 0.36561403508771906
+      },
+      "background": {
+        "count": 28586,
+        "lumaGain": 0.0033371510529629773,
+        "absoluteDifference": 0.45395181790620537
+      }
+    },
+    {
+      "frame": 21,
+      "time": 0.7,
+      "skin": {
+        "count": 184,
+        "lumaGain": 8.758913043478264,
+        "absoluteDifference": 9.398550724637682
+      },
+      "clothesAndHair": {
+        "count": 2924,
+        "lumaGain": 0.002267441860465109,
+        "absoluteDifference": 0.37163702690378425
+      },
+      "background": {
+        "count": 28526,
+        "lumaGain": 0.006992456005048027,
+        "absoluteDifference": 0.44794222814275464
+      }
+    },
+    {
+      "frame": 22,
+      "time": 0.733333,
+      "skin": {
+        "count": 184,
+        "lumaGain": 8.829590217391308,
+        "absoluteDifference": 9.538043478260867
+      },
+      "clothesAndHair": {
+        "count": 2924,
+        "lumaGain": 0.018539945280437762,
+        "absoluteDifference": 0.3691290469676233
+      },
+      "background": {
+        "count": 28526,
+        "lumaGain": 0.0005164201079716779,
+        "absoluteDifference": 0.46530650400804446
+      }
+    },
+    {
+      "frame": 23,
+      "time": 0.766667,
+      "skin": {
+        "count": 192,
+        "lumaGain": 8.455604166666674,
+        "absoluteDifference": 9.124999999999996
+      },
+      "clothesAndHair": {
+        "count": 2855,
+        "lumaGain": -0.009763012259194383,
+        "absoluteDifference": 0.3729130180969049
+      },
+      "background": {
+        "count": 28592,
+        "lumaGain": -0.0015662073307218828,
+        "absoluteDifference": 0.4547076105204315
+      }
+    },
+    {
+      "frame": 24,
+      "time": 0.8,
+      "skin": {
+        "count": 199,
+        "lumaGain": 8.591650251256283,
+        "absoluteDifference": 9.329983249581241
+      },
+      "clothesAndHair": {
+        "count": 2900,
+        "lumaGain": -0.013737931034482787,
+        "absoluteDifference": 0.3766666666666663
+      },
+      "background": {
+        "count": 28501,
+        "lumaGain": -0.000790870495772083,
+        "absoluteDifference": 0.4539606797422367
+      }
+    },
+    {
+      "frame": 25,
+      "time": 0.833333,
+      "skin": {
+        "count": 199,
+        "lumaGain": 8.683069346733669,
+        "absoluteDifference": 9.3249581239531
+      },
+      "clothesAndHair": {
+        "count": 2900,
+        "lumaGain": 0.017486896551724133,
+        "absoluteDifference": 0.37724137931034396
+      },
+      "background": {
+        "count": 28501,
+        "lumaGain": -0.0031130907687449377,
+        "absoluteDifference": 0.4599487737272413
+      }
+    },
+    {
+      "frame": 26,
+      "time": 0.866667,
+      "skin": {
+        "count": 195,
+        "lumaGain": 8.919341538461543,
+        "absoluteDifference": 9.570940170940174
+      },
+      "clothesAndHair": {
+        "count": 2945,
+        "lumaGain": -0.0031694397283531226,
+        "absoluteDifference": 0.36434634974533
+      },
+      "background": {
+        "count": 28423,
+        "lumaGain": 0.004354353868346041,
+        "absoluteDifference": 0.45261466652593835
+      }
+    },
+    {
+      "frame": 27,
+      "time": 0.9,
+      "skin": {
+        "count": 198,
+        "lumaGain": 9.15518585858586,
+        "absoluteDifference": 9.789562289562284
+      },
+      "clothesAndHair": {
+        "count": 2904,
+        "lumaGain": 0.01336611570247936,
+        "absoluteDifference": 0.3867079889807154
+      },
+      "background": {
+        "count": 28500,
+        "lumaGain": 0.0019284982456140292,
+        "absoluteDifference": 0.4656842105263212
+      }
+    },
+    {
+      "frame": 28,
+      "time": 0.933333,
+      "skin": {
+        "count": 198,
+        "lumaGain": 9.755338383838385,
+        "absoluteDifference": 10.232323232323234
+      },
+      "clothesAndHair": {
+        "count": 2904,
+        "lumaGain": 0.013836707988980694,
+        "absoluteDifference": 0.36111111111111077
+      },
+      "background": {
+        "count": 28500,
+        "lumaGain": 0.001062996491228062,
+        "absoluteDifference": 0.46355555555556105
+      }
+    },
+    {
+      "frame": 29,
+      "time": 0.966667,
+      "skin": {
+        "count": 239,
+        "lumaGain": 9.720706276150638,
+        "absoluteDifference": 10.306834030683405
+      },
+      "clothesAndHair": {
+        "count": 2991,
+        "lumaGain": 0.004471949180875949,
+        "absoluteDifference": 0.3674356402540945
+      },
+      "background": {
+        "count": 28337,
+        "lumaGain": -0.003694307795461743,
+        "absoluteDifference": 0.4656926750655834
+      }
+    },
+    {
+      "frame": 30,
+      "time": 1,
+      "skin": {
+        "count": 172,
+        "lumaGain": 10.651803488372094,
+        "absoluteDifference": 11.180232558139538
+      },
+      "clothesAndHair": {
+        "count": 3030,
+        "lumaGain": 0.004870297029702964,
+        "absoluteDifference": 0.3722772277227714
+      },
+      "background": {
+        "count": 28328,
+        "lumaGain": -0.0011237362327026223,
+        "absoluteDifference": 0.46434622987857027
+      }
+    },
+    {
+      "frame": 31,
+      "time": 1.033333,
+      "skin": {
+        "count": 172,
+        "lumaGain": 10.64988372093024,
+        "absoluteDifference": 11.211240310077514
+      },
+      "clothesAndHair": {
+        "count": 3030,
+        "lumaGain": -0.014872541254125396,
+        "absoluteDifference": 0.3668866886688661
+      },
+      "background": {
+        "count": 28328,
+        "lumaGain": 0.0026217311493928253,
+        "absoluteDifference": 0.4578979572625477
+      }
+    },
+    {
+      "frame": 32,
+      "time": 1.066667,
+      "skin": {
+        "count": 260,
+        "lumaGain": 10.714671538461532,
+        "absoluteDifference": 11.176923076923076
+      },
+      "clothesAndHair": {
+        "count": 3135,
+        "lumaGain": 0.022555917065390733,
+        "absoluteDifference": 0.35300372142477376
+      },
+      "background": {
+        "count": 28038,
+        "lumaGain": 0.0013244311291818285,
+        "absoluteDifference": 0.46212283329767184
+      }
+    },
+    {
+      "frame": 33,
+      "time": 1.1,
+      "skin": {
+        "count": 298,
+        "lumaGain": 10.689228187919468,
+        "absoluteDifference": 11.224832214765101
+      },
+      "clothesAndHair": {
+        "count": 3111,
+        "lumaGain": 0.009216072002571529,
+        "absoluteDifference": 0.35015536269152386
+      },
+      "background": {
+        "count": 28092,
+        "lumaGain": -0.001264260287626357,
+        "absoluteDifference": 0.46252788456975225
+      }
+    },
+    {
+      "frame": 34,
+      "time": 1.133333,
+      "skin": {
+        "count": 270,
+        "lumaGain": 11.14297925925926,
+        "absoluteDifference": 11.613580246913587
+      },
+      "clothesAndHair": {
+        "count": 2893,
+        "lumaGain": 0.011622813688212923,
+        "absoluteDifference": 0.3545339324806998
+      },
+      "background": {
+        "count": 28192,
+        "lumaGain": 0.0022016174801362046,
+        "absoluteDifference": 0.46361852062051323
+      }
+    },
+    {
+      "frame": 35,
+      "time": 1.166667,
+      "skin": {
+        "count": 275,
+        "lumaGain": 11.284992727272716,
+        "absoluteDifference": 11.728484848484849
+      },
+      "clothesAndHair": {
+        "count": 3055,
+        "lumaGain": -0.013346775777414097,
+        "absoluteDifference": 0.3397708674304419
+      },
+      "background": {
+        "count": 27898,
+        "lumaGain": -0.005698487346763158,
+        "absoluteDifference": 0.461884961884964
+      }
+    },
+    {
+      "frame": 36,
+      "time": 1.2,
+      "skin": {
+        "count": 311,
+        "lumaGain": 11.471242443729896,
+        "absoluteDifference": 11.881028938906752
+      },
+      "clothesAndHair": {
+        "count": 3037,
+        "lumaGain": 0.0003932828449127402,
+        "absoluteDifference": 0.3502359784875415
+      },
+      "background": {
+        "count": 27802,
+        "lumaGain": 0.00001169700021579576,
+        "absoluteDifference": 0.46737644773757736
+      }
+    },
+    {
+      "frame": 37,
+      "time": 1.233333,
+      "skin": {
+        "count": 311,
+        "lumaGain": 11.426621221864956,
+        "absoluteDifference": 11.814576634512331
+      },
+      "clothesAndHair": {
+        "count": 3037,
+        "lumaGain": 0.006836878498518256,
+        "absoluteDifference": 0.3701020744155416
+      },
+      "background": {
+        "count": 27802,
+        "lumaGain": -0.0002528235378749448,
+        "absoluteDifference": 0.4655180682444973
+      }
+    },
+    {
+      "frame": 38,
+      "time": 1.266667,
+      "skin": {
+        "count": 302,
+        "lumaGain": 11.477917218543036,
+        "absoluteDifference": 11.827814569536438
+      },
+      "clothesAndHair": {
+        "count": 3078,
+        "lumaGain": -0.0025806367771280068,
+        "absoluteDifference": 0.34502923976608074
+      },
+      "background": {
+        "count": 27924,
+        "lumaGain": 0.003022561237645021,
+        "absoluteDifference": 0.46085804326028557
+      }
+    },
+    {
+      "frame": 39,
+      "time": 1.3,
+      "skin": {
+        "count": 305,
+        "lumaGain": 11.318165901639343,
+        "absoluteDifference": 11.763934426229515
+      },
+      "clothesAndHair": {
+        "count": 3116,
+        "lumaGain": 0.010358921694480093,
+        "absoluteDifference": 0.3569747539580654
+      },
+      "background": {
+        "count": 27813,
+        "lumaGain": -0.0018362851903786048,
+        "absoluteDifference": 0.4664485432471702
+      }
+    },
+    {
+      "frame": 40,
+      "time": 1.333333,
+      "skin": {
+        "count": 305,
+        "lumaGain": 11.452476065573775,
+        "absoluteDifference": 11.865573770491798
+      },
+      "clothesAndHair": {
+        "count": 3116,
+        "lumaGain": 0.0006775353016688074,
+        "absoluteDifference": 0.3675652545999141
+      },
+      "background": {
+        "count": 27813,
+        "lumaGain": 0.0034126559522525673,
+        "absoluteDifference": 0.4665444216733233
+      }
+    },
+    {
+      "frame": 41,
+      "time": 1.366667,
+      "skin": {
+        "count": 280,
+        "lumaGain": 11.280305000000002,
+        "absoluteDifference": 11.669047619047616
+      },
+      "clothesAndHair": {
+        "count": 3165,
+        "lumaGain": -0.004272669826224323,
+        "absoluteDifference": 0.3659820958399158
+      },
+      "background": {
+        "count": 27776,
+        "lumaGain": 0.0011223286290322596,
+        "absoluteDifference": 0.4684379800307277
+      }
+    },
+    {
+      "frame": 42,
+      "time": 1.4,
+      "skin": {
+        "count": 255,
+        "lumaGain": 11.3599874509804,
+        "absoluteDifference": 11.752941176470591
+      },
+      "clothesAndHair": {
+        "count": 3150,
+        "lumaGain": 0.012813396825396832,
+        "absoluteDifference": 0.3450793650793656
+      },
+      "background": {
+        "count": 27860,
+        "lumaGain": -0.0025329935391242018,
+        "absoluteDifference": 0.45762144053601683
+      }
+    },
+    {
+      "frame": 43,
+      "time": 1.433333,
+      "skin": {
+        "count": 255,
+        "lumaGain": 11.382533333333333,
+        "absoluteDifference": 11.792156862745093
+      },
+      "clothesAndHair": {
+        "count": 3150,
+        "lumaGain": -0.00829060317460316,
+        "absoluteDifference": 0.3647619047619044
+      },
+      "background": {
+        "count": 27860,
+        "lumaGain": 0.0036163603732950467,
+        "absoluteDifference": 0.4695262024407815
+      }
+    },
+    {
+      "frame": 44,
+      "time": 1.466667,
+      "skin": {
+        "count": 260,
+        "lumaGain": 11.447423076923082,
+        "absoluteDifference": 11.966666666666669
+      },
+      "clothesAndHair": {
+        "count": 3305,
+        "lumaGain": 0.004830196671709506,
+        "absoluteDifference": 0.3718608169440245
+      },
+      "background": {
+        "count": 27613,
+        "lumaGain": 0.000727012638974398,
+        "absoluteDifference": 0.46418957254433735
+      }
+    },
+    {
+      "frame": 45,
+      "time": 1.5,
+      "skin": {
+        "count": 257,
+        "lumaGain": 11.285501945525294,
+        "absoluteDifference": 11.726329442282758
+      },
+      "clothesAndHair": {
+        "count": 3267,
+        "lumaGain": 0.005246831955922887,
+        "absoluteDifference": 0.3646566676869709
+      },
+      "background": {
+        "count": 27669,
+        "lumaGain": -0.0023330658860096077,
+        "absoluteDifference": 0.4642138614815669
+      }
+    },
+    {
+      "frame": 46,
+      "time": 1.533333,
+      "skin": {
+        "count": 257,
+        "lumaGain": 11.39910428015564,
+        "absoluteDifference": 11.753566796368359
+      },
+      "clothesAndHair": {
+        "count": 3267,
+        "lumaGain": 0.00598726660544844,
+        "absoluteDifference": 0.37128864401591677
+      },
+      "background": {
+        "count": 27669,
+        "lumaGain": 0.00035380389605696715,
+        "absoluteDifference": 0.4568289421374147
+      }
+    },
+    {
+      "frame": 47,
+      "time": 1.566667,
+      "skin": {
+        "count": 272,
+        "lumaGain": 11.273722794117653,
+        "absoluteDifference": 11.780637254901974
+      },
+      "clothesAndHair": {
+        "count": 3325,
+        "lumaGain": 0.013443488721804543,
+        "absoluteDifference": 0.35619047619047567
+      },
+      "background": {
+        "count": 27443,
+        "lumaGain": -0.0036539882665889453,
+        "absoluteDifference": 0.4633482733909119
+      }
+    },
+    {
+      "frame": 48,
+      "time": 1.6,
+      "skin": {
+        "count": 271,
+        "lumaGain": 11.358519557195578,
+        "absoluteDifference": 11.831488314883158
+      },
+      "clothesAndHair": {
+        "count": 3318,
+        "lumaGain": 0.00347233273056058,
+        "absoluteDifference": 0.336749045609805
+      },
+      "background": {
+        "count": 27455,
+        "lumaGain": -0.005283955563649631,
+        "absoluteDifference": 0.45691737995508447
+      }
+    },
+    {
+      "frame": 49,
+      "time": 1.633333,
+      "skin": {
+        "count": 270,
+        "lumaGain": 11.362428888888887,
+        "absoluteDifference": 11.864197530864207
+      },
+      "clothesAndHair": {
+        "count": 3315,
+        "lumaGain": 0.01261858220211161,
+        "absoluteDifference": 0.3664152840623433
+      },
+      "background": {
+        "count": 27473,
+        "lumaGain": -0.0037222436574090756,
+        "absoluteDifference": 0.4681323481236204
+      }
+    },
+    {
+      "frame": 50,
+      "time": 1.666667,
+      "skin": {
+        "count": 266,
+        "lumaGain": 11.454755639097753,
+        "absoluteDifference": 11.954887218045116
+      },
+      "clothesAndHair": {
+        "count": 3390,
+        "lumaGain": 0.013916991150442473,
+        "absoluteDifference": 0.35063913470993074
+      },
+      "background": {
+        "count": 27274,
+        "lumaGain": 0.0038012099435359792,
+        "absoluteDifference": 0.4634939258390235
+      }
+    },
+    {
+      "frame": 51,
+      "time": 1.7,
+      "skin": {
+        "count": 291,
+        "lumaGain": 11.6230295532646,
+        "absoluteDifference": 12.080183276059568
+      },
+      "clothesAndHair": {
+        "count": 3413,
+        "lumaGain": 0.0064067975388221645,
+        "absoluteDifference": 0.35101084090243223
+      },
+      "background": {
+        "count": 27223,
+        "lumaGain": 0.003853036035705094,
+        "absoluteDifference": 0.4627582069083798
+      }
+    },
+    {
+      "frame": 52,
+      "time": 1.733333,
+      "skin": {
+        "count": 291,
+        "lumaGain": 11.671009621993132,
+        "absoluteDifference": 12.10538373424972
+      },
+      "clothesAndHair": {
+        "count": 3413,
+        "lumaGain": 0.008397421623205382,
+        "absoluteDifference": 0.34505322785428205
+      },
+      "background": {
+        "count": 27223,
+        "lumaGain": 0.004042309811556392,
+        "absoluteDifference": 0.4665295277277865
+      }
+    },
+    {
+      "frame": 53,
+      "time": 1.766667,
+      "skin": {
+        "count": 320,
+        "lumaGain": 11.82017062500001,
+        "absoluteDifference": 12.138541666666674
+      },
+      "clothesAndHair": {
+        "count": 3455,
+        "lumaGain": 0.002074674384949349,
+        "absoluteDifference": 0.34278822961890876
+      },
+      "background": {
+        "count": 27129,
+        "lumaGain": -0.0006377308415348878,
+        "absoluteDifference": 0.4583041517687154
+      }
+    },
+    {
+      "frame": 54,
+      "time": 1.8,
+      "skin": {
+        "count": 326,
+        "lumaGain": 11.851504294478529,
+        "absoluteDifference": 12.262781186094074
+      },
+      "clothesAndHair": {
+        "count": 3445,
+        "lumaGain": -0.015058229317851975,
+        "absoluteDifference": 0.33884857281083675
+      },
+      "background": {
+        "count": 27073,
+        "lumaGain": 0.003287385956488012,
+        "absoluteDifference": 0.4586980878858453
+      }
+    },
+    {
+      "frame": 55,
+      "time": 1.833333,
+      "skin": {
+        "count": 326,
+        "lumaGain": 11.901277300613488,
+        "absoluteDifference": 12.220858895705515
+      },
+      "clothesAndHair": {
+        "count": 3445,
+        "lumaGain": -0.006495907111756152,
+        "absoluteDifference": 0.33720367682631786
+      },
+      "background": {
+        "count": 27073,
+        "lumaGain": -0.0025489749935359816,
+        "absoluteDifference": 0.4556815523461329
+      }
+    },
+    {
+      "frame": 56,
+      "time": 1.866667,
+      "skin": {
+        "count": 324,
+        "lumaGain": 12.018860493827162,
+        "absoluteDifference": 12.389917695473253
+      },
+      "clothesAndHair": {
+        "count": 3488,
+        "lumaGain": 0.005558772935779837,
+        "absoluteDifference": 0.353402140672783
+      },
+      "background": {
+        "count": 27065,
+        "lumaGain": 0.00714145205985588,
+        "absoluteDifference": 0.4590676765810777
+      }
+    },
+    {
+      "frame": 57,
+      "time": 1.9,
+      "skin": {
+        "count": 320,
+        "lumaGain": 11.927030624999997,
+        "absoluteDifference": 12.305208333333335
+      },
+      "clothesAndHair": {
+        "count": 3468,
+        "lumaGain": 0.0075701845444059845,
+        "absoluteDifference": 0.3524605920799691
+      },
+      "background": {
+        "count": 27084,
+        "lumaGain": 0.0028087874760006027,
+        "absoluteDifference": 0.4585240978683654
+      }
+    },
+    {
+      "frame": 58,
+      "time": 1.933333,
+      "skin": {
+        "count": 320,
+        "lumaGain": 11.938041874999998,
+        "absoluteDifference": 12.382291666666669
+      },
+      "clothesAndHair": {
+        "count": 3468,
+        "lumaGain": -0.0015866782006920398,
+        "absoluteDifference": 0.3423683198769697
+      },
+      "background": {
+        "count": 27084,
+        "lumaGain": 0.004306985674198797,
+        "absoluteDifference": 0.4573179737114254
+      }
+    },
+    {
+      "frame": 59,
+      "time": 1.966667,
+      "skin": {
+        "count": 324,
+        "lumaGain": 11.90920802469134,
+        "absoluteDifference": 12.317901234567907
+      },
+      "clothesAndHair": {
+        "count": 3475,
+        "lumaGain": -0.003289151079136691,
+        "absoluteDifference": 0.34359712230215844
+      },
+      "background": {
+        "count": 27086,
+        "lumaGain": -0.001626079893672014,
+        "absoluteDifference": 0.4610622954047682
+      }
+    },
+    {
+      "frame": 60,
+      "time": 2,
+      "skin": {
+        "count": 317,
+        "lumaGain": 11.922570977917976,
+        "absoluteDifference": 12.288117770767618
+      },
+      "clothesAndHair": {
+        "count": 3469,
+        "lumaGain": -0.007127760161429801,
+        "absoluteDifference": 0.35581819928893976
+      },
+      "background": {
+        "count": 27113,
+        "lumaGain": 0.00038458304134547845,
+        "absoluteDifference": 0.4567673563727205
+      }
+    },
+    {
+      "frame": 61,
+      "time": 2.033333,
+      "skin": {
+        "count": 317,
+        "lumaGain": 11.745013249211349,
+        "absoluteDifference": 12.110410094637228
+      },
+      "clothesAndHair": {
+        "count": 3469,
+        "lumaGain": -0.0017432113000864472,
+        "absoluteDifference": 0.3710963774382626
+      },
+      "background": {
+        "count": 27113,
+        "lumaGain": -0.0038803673514550053,
+        "absoluteDifference": 0.4600990914567509
+      }
+    },
+    {
+      "frame": 62,
+      "time": 2.066667,
+      "skin": {
+        "count": 320,
+        "lumaGain": 12.035546875,
+        "absoluteDifference": 12.446875000000004
+      },
+      "clothesAndHair": {
+        "count": 3484,
+        "lumaGain": -0.01324156142365097,
+        "absoluteDifference": 0.366915422885572
+      },
+      "background": {
+        "count": 27111,
+        "lumaGain": 0.0028901847958393355,
+        "absoluteDifference": 0.4688256919085764
+      }
+    },
+    {
+      "frame": 63,
+      "time": 2.1,
+      "skin": {
+        "count": 323,
+        "lumaGain": 11.975227863777087,
+        "absoluteDifference": 12.383900928792576
+      },
+      "clothesAndHair": {
+        "count": 3444,
+        "lumaGain": 0.017846631823461093,
+        "absoluteDifference": 0.35181958962446813
+      },
+      "background": {
+        "count": 27166,
+        "lumaGain": -0.0009822425090186327,
+        "absoluteDifference": 0.4606616113278902
+      }
+    },
+    {
+      "frame": 64,
+      "time": 2.133333,
+      "skin": {
+        "count": 311,
+        "lumaGain": 11.752751125401929,
+        "absoluteDifference": 12.169346195069677
+      },
+      "clothesAndHair": {
+        "count": 3336,
+        "lumaGain": -0.001994724220623501,
+        "absoluteDifference": 0.3643085531574738
+      },
+      "background": {
+        "count": 27337,
+        "lumaGain": 0.00035538647254635037,
+        "absoluteDifference": 0.46620575288681476
+      }
+    },
+    {
+      "frame": 65,
+      "time": 2.166667,
+      "skin": {
+        "count": 315,
+        "lumaGain": 11.84975238095237,
+        "absoluteDifference": 12.240211640211648
+      },
+      "clothesAndHair": {
+        "count": 3441,
+        "lumaGain": 0.0036004068584713795,
+        "absoluteDifference": 0.36423520294487943
+      },
+      "background": {
+        "count": 27205,
+        "lumaGain": -0.003366800220547689,
+        "absoluteDifference": 0.46262329228696314
+      }
+    },
+    {
+      "frame": 66,
+      "time": 2.2,
+      "skin": {
+        "count": 319,
+        "lumaGain": 11.88548338557994,
+        "absoluteDifference": 12.281086729362588
+      },
+      "clothesAndHair": {
+        "count": 3440,
+        "lumaGain": 0.007350581395348841,
+        "absoluteDifference": 0.34554263565891463
+      },
+      "background": {
+        "count": 27203,
+        "lumaGain": -0.0047334632209682734,
+        "absoluteDifference": 0.46923746155449214
+      }
+    },
+    {
+      "frame": 67,
+      "time": 2.233333,
+      "skin": {
+        "count": 319,
+        "lumaGain": 11.5193868338558,
+        "absoluteDifference": 11.952978056426339
+      },
+      "clothesAndHair": {
+        "count": 3440,
+        "lumaGain": 0.009455930232558127,
+        "absoluteDifference": 0.34069767441860355
+      },
+      "background": {
+        "count": 27203,
+        "lumaGain": -0.004734705730985526,
+        "absoluteDifference": 0.45980222769548235
+      }
+    },
+    {
+      "frame": 68,
+      "time": 2.266667,
+      "skin": {
+        "count": 307,
+        "lumaGain": 11.658708794788277,
+        "absoluteDifference": 12.141150922909878
+      },
+      "clothesAndHair": {
+        "count": 3350,
+        "lumaGain": 0.013707044776119403,
+        "absoluteDifference": 0.36437810945273574
+      },
+      "background": {
+        "count": 27317,
+        "lumaGain": -0.0003217337189296076,
+        "absoluteDifference": 0.4601042086124691
+      }
+    },
+    {
+      "frame": 69,
+      "time": 2.3,
+      "skin": {
+        "count": 312,
+        "lumaGain": 11.556711538461554,
+        "absoluteDifference": 11.990384615384608
+      },
+      "clothesAndHair": {
+        "count": 3359,
+        "lumaGain": 0.007148198868710911,
+        "absoluteDifference": 0.3553636995137439
+      },
+      "background": {
+        "count": 27259,
+        "lumaGain": -0.0023939763014050636,
+        "absoluteDifference": 0.4613033004390049
+      }
+    },
+    {
+      "frame": 70,
+      "time": 2.333333,
+      "skin": {
+        "count": 312,
+        "lumaGain": 11.32054615384615,
+        "absoluteDifference": 11.807692307692298
+      },
+      "clothesAndHair": {
+        "count": 3359,
+        "lumaGain": -0.0067152128609705404,
+        "absoluteDifference": 0.3362111739605032
+      },
+      "background": {
+        "count": 27259,
+        "lumaGain": -0.0038175941890751857,
+        "absoluteDifference": 0.46044731403696093
+      }
+    },
+    {
+      "frame": 71,
+      "time": 2.366667,
+      "skin": {
+        "count": 325,
+        "lumaGain": 11.479749538461547,
+        "absoluteDifference": 12.043076923076923
+      },
+      "clothesAndHair": {
+        "count": 3254,
+        "lumaGain": -0.0020662569145666987,
+        "absoluteDifference": 0.34111862323294356
+      },
+      "background": {
+        "count": 27289,
+        "lumaGain": -0.0013706914874125026,
+        "absoluteDifference": 0.4603197869715564
+      }
+    },
+    {
+      "frame": 72,
+      "time": 2.4,
+      "skin": {
+        "count": 317,
+        "lumaGain": 11.377038485804423,
+        "absoluteDifference": 11.913774973711886
+      },
+      "clothesAndHair": {
+        "count": 3147,
+        "lumaGain": 0.013079313632030498,
+        "absoluteDifference": 0.35176358436606153
+      },
+      "background": {
+        "count": 27354,
+        "lumaGain": -0.004031520070190837,
+        "absoluteDifference": 0.4596280860812642
+      }
+    },
+    {
+      "frame": 73,
+      "time": 2.433333,
+      "skin": {
+        "count": 317,
+        "lumaGain": 10.877857413249211,
+        "absoluteDifference": 11.421661409043116
+      },
+      "clothesAndHair": {
+        "count": 3147,
+        "lumaGain": -0.00791998728948206,
+        "absoluteDifference": 0.35028069060480793
+      },
+      "background": {
+        "count": 27354,
+        "lumaGain": -0.004117489215471196,
+        "absoluteDifference": 0.4597255733469861
+      }
+    },
+    {
+      "frame": 74,
+      "time": 2.466667,
+      "skin": {
+        "count": 321,
+        "lumaGain": 10.767091588785043,
+        "absoluteDifference": 11.201453790238839
+      },
+      "clothesAndHair": {
+        "count": 3066,
+        "lumaGain": -0.009551989562948459,
+        "absoluteDifference": 0.35181561208958373
+      },
+      "background": {
+        "count": 27295,
+        "lumaGain": -0.00007827074555779151,
+        "absoluteDifference": 0.46233131831227364
+      }
+    },
+    {
+      "frame": 75,
+      "time": 2.5,
+      "skin": {
+        "count": 327,
+        "lumaGain": 10.72157003058104,
+        "absoluteDifference": 11.15290519877676
+      },
+      "clothesAndHair": {
+        "count": 2933,
+        "lumaGain": 0.008368360040913734,
+        "absoluteDifference": 0.3622002500284115
+      },
+      "background": {
+        "count": 27382,
+        "lumaGain": 0.002852246001022583,
+        "absoluteDifference": 0.45752684245125086
+      }
+    },
+    {
+      "frame": 76,
+      "time": 2.533333,
+      "skin": {
+        "count": 327,
+        "lumaGain": 10.532741896024461,
+        "absoluteDifference": 11.02344546381244
+      },
+      "clothesAndHair": {
+        "count": 2933,
+        "lumaGain": 0.0033052165018752156,
+        "absoluteDifference": 0.35413115126718847
+      },
+      "background": {
+        "count": 27382,
+        "lumaGain": 0.0010000000000000122,
+        "absoluteDifference": 0.4541182772137464
+      }
+    },
+    {
+      "frame": 77,
+      "time": 2.566667,
+      "skin": {
+        "count": 337,
+        "lumaGain": 10.521522848664695,
+        "absoluteDifference": 10.962413452027695
+      },
+      "clothesAndHair": {
+        "count": 2962,
+        "lumaGain": 0.008814517218095884,
+        "absoluteDifference": 0.36495611073598805
+      },
+      "background": {
+        "count": 27299,
+        "lumaGain": 0.005321923879995563,
+        "absoluteDifference": 0.4562193975359378
+      }
+    },
+    {
+      "frame": 78,
+      "time": 2.6,
+      "skin": {
+        "count": 336,
+        "lumaGain": 10.41255000000001,
+        "absoluteDifference": 10.88392857142857
+      },
+      "clothesAndHair": {
+        "count": 2947,
+        "lumaGain": 0.009287410926365798,
+        "absoluteDifference": 0.3584436149756809
+      },
+      "background": {
+        "count": 27334,
+        "lumaGain": -0.0028495500109753337,
+        "absoluteDifference": 0.4545864735006542
+      }
+    },
+    {
+      "frame": 79,
+      "time": 2.633333,
+      "skin": {
+        "count": 330,
+        "lumaGain": 10.51104666666667,
+        "absoluteDifference": 11.097979797979805
+      },
+      "clothesAndHair": {
+        "count": 2842,
+        "lumaGain": -0.016441731175228715,
+        "absoluteDifference": 0.3563218390804596
+      },
+      "background": {
+        "count": 27470,
+        "lumaGain": 0.0015050236621769147,
+        "absoluteDifference": 0.45629171217085857
+      }
+    },
+    {
+      "frame": 80,
+      "time": 2.666667,
+      "skin": {
+        "count": 348,
+        "lumaGain": 10.508517816091954,
+        "absoluteDifference": 11.025862068965523
+      },
+      "clothesAndHair": {
+        "count": 2936,
+        "lumaGain": -0.01749713896457766,
+        "absoluteDifference": 0.34831970935513074
+      },
+      "background": {
+        "count": 27317,
+        "lumaGain": 0.003971709924222995,
+        "absoluteDifference": 0.4549913972983907
+      }
+    },
+    {
+      "frame": 81,
+      "time": 2.7,
+      "skin": {
+        "count": 356,
+        "lumaGain": 10.607027528089896,
+        "absoluteDifference": 11.158239700374535
+      },
+      "clothesAndHair": {
+        "count": 2944,
+        "lumaGain": 0.007552377717391313,
+        "absoluteDifference": 0.3572237318840568
+      },
+      "background": {
+        "count": 27292,
+        "lumaGain": 0.001950813425179534,
+        "absoluteDifference": 0.4570936538179737
+      }
+    },
+    {
+      "frame": 82,
+      "time": 2.733333,
+      "skin": {
+        "count": 356,
+        "lumaGain": 10.810508426966287,
+        "absoluteDifference": 11.371722846441955
+      },
+      "clothesAndHair": {
+        "count": 2944,
+        "lumaGain": -0.0014374320652173985,
+        "absoluteDifference": 0.36820652173912966
+      },
+      "background": {
+        "count": 27292,
+        "lumaGain": 0.0018280668327714865,
+        "absoluteDifference": 0.4596585079876941
+      }
+    },
+    {
+      "frame": 83,
+      "time": 2.766667,
+      "skin": {
+        "count": 356,
+        "lumaGain": 11.129545505617987,
+        "absoluteDifference": 11.55243445692884
+      },
+      "clothesAndHair": {
+        "count": 3044,
+        "lumaGain": -0.019109395532194484,
+        "absoluteDifference": 0.3810775295663598
+      },
+      "background": {
+        "count": 27245,
+        "lumaGain": -0.001320315654248484,
+        "absoluteDifference": 0.4621153728512923
+      }
+    },
+    {
+      "frame": 84,
+      "time": 2.8,
+      "skin": {
+        "count": 429,
+        "lumaGain": 11.566105827505817,
+        "absoluteDifference": 11.962703962703964
+      },
+      "clothesAndHair": {
+        "count": 3025,
+        "lumaGain": 0.004721586776859505,
+        "absoluteDifference": 0.3631955922865001
+      },
+      "background": {
+        "count": 27256,
+        "lumaGain": -0.0011430217199882658,
+        "absoluteDifference": 0.4590793464436034
+      }
+    },
+    {
+      "frame": 85,
+      "time": 2.833333,
+      "skin": {
+        "count": 429,
+        "lumaGain": 11.941031701631701,
+        "absoluteDifference": 12.240870240870244
+      },
+      "clothesAndHair": {
+        "count": 3025,
+        "lumaGain": -0.004734677685950408,
+        "absoluteDifference": 0.40936639118457246
+      },
+      "background": {
+        "count": 27256,
+        "lumaGain": 0.0037094658056941888,
+        "absoluteDifference": 0.4603267782017483
+      }
+    },
+    {
+      "frame": 86,
+      "time": 2.866667,
+      "skin": {
+        "count": 446,
+        "lumaGain": 12.020947533632288,
+        "absoluteDifference": 12.32436472346786
+      },
+      "clothesAndHair": {
+        "count": 3107,
+        "lumaGain": -0.019791631799163177,
+        "absoluteDifference": 0.3485677502413896
+      },
+      "background": {
+        "count": 27170,
+        "lumaGain": 0.007135539197644462,
+        "absoluteDifference": 0.4606551343393502
+      }
+    },
+    {
+      "frame": 87,
+      "time": 2.9,
+      "skin": {
+        "count": 416,
+        "lumaGain": 11.939697115384613,
+        "absoluteDifference": 12.293269230769234
+      },
+      "clothesAndHair": {
+        "count": 3167,
+        "lumaGain": -0.003655131038838015,
+        "absoluteDifference": 0.374276391958741
+      },
+      "background": {
+        "count": 27040,
+        "lumaGain": -0.002899489644970406,
+        "absoluteDifference": 0.45597879684418646
+      }
+    },
+    {
+      "frame": 88,
+      "time": 2.933333,
+      "skin": {
+        "count": 416,
+        "lumaGain": 12.065228365384614,
+        "absoluteDifference": 12.415865384615387
+      },
+      "clothesAndHair": {
+        "count": 3167,
+        "lumaGain": -0.023898958004420615,
+        "absoluteDifference": 0.3638564361646136
+      },
+      "background": {
+        "count": 27040,
+        "lumaGain": 0.00030078402366864735,
+        "absoluteDifference": 0.4649531558185463
+      }
+    },
+    {
+      "frame": 89,
+      "time": 2.966667,
+      "skin": {
+        "count": 397,
+        "lumaGain": 12.056574811083122,
+        "absoluteDifference": 12.319899244332499
+      },
+      "clothesAndHair": {
+        "count": 3183,
+        "lumaGain": -0.009989883757461506,
+        "absoluteDifference": 0.3736516912765729
+      },
+      "background": {
+        "count": 27017,
+        "lumaGain": -0.0033568790021097686,
+        "absoluteDifference": 0.47120948538575236
+      }
+    },
+    {
+      "frame": 90,
+      "time": 3,
+      "skin": {
+        "count": 399,
+        "lumaGain": 12.238001503759392,
+        "absoluteDifference": 12.616541353383456
+      },
+      "clothesAndHair": {
+        "count": 3185,
+        "lumaGain": 0.014731616954474098,
+        "absoluteDifference": 0.35112506541077926
+      },
+      "background": {
+        "count": 27028,
+        "lumaGain": -0.002878792363474931,
+        "absoluteDifference": 0.4607690789798305
+      }
+    },
+    {
+      "frame": 91,
+      "time": 3.033333,
+      "skin": {
+        "count": 399,
+        "lumaGain": 12.15673483709274,
+        "absoluteDifference": 12.470342522974098
+      },
+      "clothesAndHair": {
+        "count": 3185,
+        "lumaGain": -0.011950266875981183,
+        "absoluteDifference": 0.35143903715332164
+      },
+      "background": {
+        "count": 27028,
+        "lumaGain": -0.004021407429332546,
+        "absoluteDifference": 0.4593014651472597
+      }
+    },
+    {
+      "frame": 92,
+      "time": 3.066667,
+      "skin": {
+        "count": 384,
+        "lumaGain": 12.261164583333327,
+        "absoluteDifference": 12.438368055555557
+      },
+      "clothesAndHair": {
+        "count": 3200,
+        "lumaGain": -0.0036834999999999967,
+        "absoluteDifference": 0.34499999999999886
+      },
+      "background": {
+        "count": 27013,
+        "lumaGain": 0.00257499722355902,
+        "absoluteDifference": 0.4690087488740038
+      }
+    },
+    {
+      "frame": 93,
+      "time": 3.1,
+      "skin": {
+        "count": 389,
+        "lumaGain": 12.181193830334186,
+        "absoluteDifference": 12.430162810625538
+      },
+      "clothesAndHair": {
+        "count": 3192,
+        "lumaGain": 0.021335902255639062,
+        "absoluteDifference": 0.3675856307435248
+      },
+      "background": {
+        "count": 27025,
+        "lumaGain": 0.001879518963922303,
+        "absoluteDifference": 0.45882207832254757
+      }
+    },
+    {
+      "frame": 94,
+      "time": 3.133333,
+      "skin": {
+        "count": 389,
+        "lumaGain": 12.188100257069395,
+        "absoluteDifference": 12.46101113967438
+      },
+      "clothesAndHair": {
+        "count": 3179,
+        "lumaGain": -0.01685492293173955,
+        "absoluteDifference": 0.35755478662053003
+      },
+      "background": {
+        "count": 27044,
+        "lumaGain": 0.006433338263570495,
+        "absoluteDifference": 0.4645146181531381
+      }
+    },
+    {
+      "frame": 95,
+      "time": 3.166667,
+      "skin": {
+        "count": 374,
+        "lumaGain": 12.185190374331553,
+        "absoluteDifference": 12.458110516934044
+      },
+      "clothesAndHair": {
+        "count": 3212,
+        "lumaGain": 0.00019632627646326708,
+        "absoluteDifference": 0.3837691988376914
+      },
+      "background": {
+        "count": 27054,
+        "lumaGain": -0.0034519405633177897,
+        "absoluteDifference": 0.4649220078361885
+      }
+    },
+    {
+      "frame": 96,
+      "time": 3.2,
+      "skin": {
+        "count": 371,
+        "lumaGain": 12.175178975741241,
+        "absoluteDifference": 12.45193171608266
+      },
+      "clothesAndHair": {
+        "count": 3223,
+        "lumaGain": 0.007675581756127824,
+        "absoluteDifference": 0.3790464370669146
+      },
+      "background": {
+        "count": 27042,
+        "lumaGain": -0.001011789068855852,
+        "absoluteDifference": 0.4592115967753942
+      }
+    },
+    {
+      "frame": 97,
+      "time": 3.233333,
+      "skin": {
+        "count": 371,
+        "lumaGain": 12.16863611859839,
+        "absoluteDifference": 12.399820305480667
+      },
+      "clothesAndHair": {
+        "count": 3223,
+        "lumaGain": 0.011877071051815102,
+        "absoluteDifference": 0.3669459096080248
+      },
+      "background": {
+        "count": 27042,
+        "lumaGain": -0.00022630722579688997,
+        "absoluteDifference": 0.4668293765254108
+      }
+    },
+    {
+      "frame": 98,
+      "time": 3.266667,
+      "skin": {
+        "count": 379,
+        "lumaGain": 12.287395778364123,
+        "absoluteDifference": 12.491644678979775
+      },
+      "clothesAndHair": {
+        "count": 3210,
+        "lumaGain": 0.019701806853582537,
+        "absoluteDifference": 0.36884735202492147
+      },
+      "background": {
+        "count": 27060,
+        "lumaGain": -0.0031165114560236466,
+        "absoluteDifference": 0.45836412909584195
+      }
+    },
+    {
+      "frame": 99,
+      "time": 3.3,
+      "skin": {
+        "count": 381,
+        "lumaGain": 12.311000524934368,
+        "absoluteDifference": 12.573053368328965
+      },
+      "clothesAndHair": {
+        "count": 3215,
+        "lumaGain": 0.0010082115085536586,
+        "absoluteDifference": 0.38455158113011956
+      },
+      "background": {
+        "count": 27040,
+        "lumaGain": -0.0007353180473372829,
+        "absoluteDifference": 0.45982495069034074
+      }
+    },
+    {
+      "frame": 100,
+      "time": 3.333333,
+      "skin": {
+        "count": 381,
+        "lumaGain": 12.233012073490807,
+        "absoluteDifference": 12.52843394575678
+      },
+      "clothesAndHair": {
+        "count": 3215,
+        "lumaGain": -0.006622519440124418,
+        "absoluteDifference": 0.37791601866251967
+      },
+      "background": {
+        "count": 27040,
+        "lumaGain": -0.0036748446745562126,
+        "absoluteDifference": 0.45883875739645763
+      }
+    },
+    {
+      "frame": 101,
+      "time": 3.366667,
+      "skin": {
+        "count": 372,
+        "lumaGain": 12.243727956989234,
+        "absoluteDifference": 12.569892473118273
+      },
+      "clothesAndHair": {
+        "count": 3212,
+        "lumaGain": 0.013731444582814443,
+        "absoluteDifference": 0.3680987961809875
+      },
+      "background": {
+        "count": 27065,
+        "lumaGain": -0.0012080546831701522,
+        "absoluteDifference": 0.46446209741979777
+      }
+    },
+    {
+      "frame": 102,
+      "time": 3.4,
+      "skin": {
+        "count": 379,
+        "lumaGain": 12.32879472295514,
+        "absoluteDifference": 12.642919964819704
+      },
+      "clothesAndHair": {
+        "count": 3193,
+        "lumaGain": -0.01036166614469151,
+        "absoluteDifference": 0.36611337300344465
+      },
+      "background": {
+        "count": 27104,
+        "lumaGain": -0.004773620129870136,
+        "absoluteDifference": 0.46449478551751866
+      }
+    },
+    {
+      "frame": 103,
+      "time": 3.433333,
+      "skin": {
+        "count": 379,
+        "lumaGain": 12.267713984168866,
+        "absoluteDifference": 12.462620932277925
+      },
+      "clothesAndHair": {
+        "count": 3193,
+        "lumaGain": -0.0015072345756341904,
+        "absoluteDifference": 0.37404739534398124
+      },
+      "background": {
+        "count": 27104,
+        "lumaGain": 0.002245498819362458,
+        "absoluteDifference": 0.46100206611570776
+      }
+    },
+    {
+      "frame": 104,
+      "time": 3.466667,
+      "skin": {
+        "count": 377,
+        "lumaGain": 12.308439257294426,
+        "absoluteDifference": 12.52608311229002
+      },
+      "clothesAndHair": {
+        "count": 3200,
+        "lumaGain": -0.013467874999999997,
+        "absoluteDifference": 0.36124999999999935
+      },
+      "background": {
+        "count": 27091,
+        "lumaGain": 0.0007096305045956236,
+        "absoluteDifference": 0.45802419007543416
+      }
+    },
+    {
+      "frame": 105,
+      "time": 3.5,
+      "skin": {
+        "count": 360,
+        "lumaGain": 12.390343333333325,
+        "absoluteDifference": 12.57129629629631
+      },
+      "clothesAndHair": {
+        "count": 3167,
+        "lumaGain": 0.014222860751499852,
+        "absoluteDifference": 0.3671192506051986
+      },
+      "background": {
+        "count": 27110,
+        "lumaGain": -0.0021780007377351376,
+        "absoluteDifference": 0.4642075494897411
+      }
+    },
+    {
+      "frame": 106,
+      "time": 3.533333,
+      "skin": {
+        "count": 360,
+        "lumaGain": 12.50148999999999,
+        "absoluteDifference": 12.748148148148143
+      },
+      "clothesAndHair": {
+        "count": 3167,
+        "lumaGain": 0.0091311019892643,
+        "absoluteDifference": 0.3681717713924843
+      },
+      "background": {
+        "count": 27110,
+        "lumaGain": 0.0008870232386573339,
+        "absoluteDifference": 0.46762572236567734
+      }
+    },
+    {
+      "frame": 107,
+      "time": 3.566667,
+      "skin": {
+        "count": 376,
+        "lumaGain": 12.608256382978707,
+        "absoluteDifference": 12.863475177304958
+      },
+      "clothesAndHair": {
+        "count": 3117,
+        "lumaGain": 0.005632274623034954,
+        "absoluteDifference": 0.3732221152817873
+      },
+      "background": {
+        "count": 27085,
+        "lumaGain": 0.0018144212663836277,
+        "absoluteDifference": 0.4597501692203609
+      }
+    },
+    {
+      "frame": 108,
+      "time": 3.6,
+      "skin": {
+        "count": 375,
+        "lumaGain": 12.644126399999987,
+        "absoluteDifference": 12.981333333333335
+      },
+      "clothesAndHair": {
+        "count": 3107,
+        "lumaGain": 0.010438751206952035,
+        "absoluteDifference": 0.36337302864499504
+      },
+      "background": {
+        "count": 27087,
+        "lumaGain": -0.0033523018422121405,
+        "absoluteDifference": 0.4663245591366157
+      }
+    },
+    {
+      "frame": 109,
+      "time": 3.633333,
+      "skin": {
+        "count": 375,
+        "lumaGain": 12.510766933333315,
+        "absoluteDifference": 12.743111111111125
+      },
+      "clothesAndHair": {
+        "count": 3098,
+        "lumaGain": 0.004366042608134287,
+        "absoluteDifference": 0.3631375080697221
+      },
+      "background": {
+        "count": 27100,
+        "lumaGain": -0.003480605166051671,
+        "absoluteDifference": 0.4668388683886914
+      }
+    },
+    {
+      "frame": 110,
+      "time": 3.666667,
+      "skin": {
+        "count": 393,
+        "lumaGain": 12.519383206106859,
+        "absoluteDifference": 12.759117896522469
+      },
+      "clothesAndHair": {
+        "count": 3022,
+        "lumaGain": 0.012691131700860368,
+        "absoluteDifference": 0.36465916611515536
+      },
+      "background": {
+        "count": 27071,
+        "lumaGain": -0.0009607476635514176,
+        "absoluteDifference": 0.45452082794627363
+      }
+    },
+    {
+      "frame": 111,
+      "time": 3.7,
+      "skin": {
+        "count": 414,
+        "lumaGain": 12.42595217391305,
+        "absoluteDifference": 12.657004830917879
+      },
+      "clothesAndHair": {
+        "count": 3004,
+        "lumaGain": 0.001427030625832244,
+        "absoluteDifference": 0.34409675987572075
+      },
+      "background": {
+        "count": 27062,
+        "lumaGain": 0.0034894242849752427,
+        "absoluteDifference": 0.45568201414037507
+      }
+    },
+    {
+      "frame": 112,
+      "time": 3.733333,
+      "skin": {
+        "count": 414,
+        "lumaGain": 11.990762318840574,
+        "absoluteDifference": 12.422705314009663
+      },
+      "clothesAndHair": {
+        "count": 3004,
+        "lumaGain": 0.010104660452729706,
+        "absoluteDifference": 0.3585219707057246
+      },
+      "background": {
+        "count": 27062,
+        "lumaGain": 0.002992210479639354,
+        "absoluteDifference": 0.4502993126893871
+      }
+    },
+    {
+      "frame": 113,
+      "time": 3.766667,
+      "skin": {
+        "count": 413,
+        "lumaGain": 11.9818033898305,
+        "absoluteDifference": 12.36077481840192
+      },
+      "clothesAndHair": {
+        "count": 3166,
+        "lumaGain": 0.02415552747946935,
+        "absoluteDifference": 0.35754895767529926
+      },
+      "background": {
+        "count": 26963,
+        "lumaGain": -0.004051062567221752,
+        "absoluteDifference": 0.45860376565417427
+      }
+    },
+    {
+      "frame": 114,
+      "time": 3.8,
+      "skin": {
+        "count": 424,
+        "lumaGain": 11.836599528301889,
+        "absoluteDifference": 12.235849056603767
+      },
+      "clothesAndHair": {
+        "count": 3374,
+        "lumaGain": 0.006044339063426194,
+        "absoluteDifference": 0.35052361193440007
+      },
+      "background": {
+        "count": 26806,
+        "lumaGain": -0.00320870700589422,
+        "absoluteDifference": 0.45862866522420953
+      }
+    },
+    {
+      "frame": 115,
+      "time": 3.833333,
+      "skin": {
+        "count": 424,
+        "lumaGain": 11.416484433962273,
+        "absoluteDifference": 11.827044025157237
+      },
+      "clothesAndHair": {
+        "count": 3374,
+        "lumaGain": -0.007375400118553658,
+        "absoluteDifference": 0.3487453072515311
+      },
+      "background": {
+        "count": 26806,
+        "lumaGain": 0.0025774080429754433,
+        "absoluteDifference": 0.4620980377527478
+      }
+    },
+    {
+      "frame": 116,
+      "time": 3.866667,
+      "skin": {
+        "count": 392,
+        "lumaGain": 11.301379591836728,
+        "absoluteDifference": 11.72448979591836
+      },
+      "clothesAndHair": {
+        "count": 3473,
+        "lumaGain": -0.007520126691621076,
+        "absoluteDifference": 0.32450331125827797
+      },
+      "background": {
+        "count": 26671,
+        "lumaGain": -0.003895332008548634,
+        "absoluteDifference": 0.46387462037419447
+      }
+    },
+    {
+      "frame": 117,
+      "time": 3.9,
+      "skin": {
+        "count": 361,
+        "lumaGain": 11.092671468144045,
+        "absoluteDifference": 11.599261311172663
+      },
+      "clothesAndHair": {
+        "count": 3513,
+        "lumaGain": 0.0006065471107315669,
+        "absoluteDifference": 0.3173925419869053
+      },
+      "background": {
+        "count": 26676,
+        "lumaGain": -0.0019504498425550964,
+        "absoluteDifference": 0.45385365122207955
+      }
+    },
+    {
+      "frame": 118,
+      "time": 3.933333,
+      "skin": {
+        "count": 361,
+        "lumaGain": 10.852178947368424,
+        "absoluteDifference": 11.325023084025862
+      },
+      "clothesAndHair": {
+        "count": 3513,
+        "lumaGain": -0.0018857386848847042,
+        "absoluteDifference": 0.317297656324129
+      },
+      "background": {
+        "count": 26676,
+        "lumaGain": -0.001053576248313104,
+        "absoluteDifference": 0.4561028639976052
+      }
+    },
+    {
+      "frame": 119,
+      "time": 3.966667,
+      "skin": {
+        "count": 429,
+        "lumaGain": 10.810897902097908,
+        "absoluteDifference": 11.271950271950283
+      },
+      "clothesAndHair": {
+        "count": 3572,
+        "lumaGain": -0.01414708846584545,
+        "absoluteDifference": 0.3051511758118693
+      },
+      "background": {
+        "count": 26458,
+        "lumaGain": 0.005641401466475169,
+        "absoluteDifference": 0.4553506185904731
+      }
+    },
+    {
+      "frame": 120,
+      "time": 4,
+      "skin": {
+        "count": 407,
+        "lumaGain": 10.715104176904179,
+        "absoluteDifference": 11.174447174447188
+      },
+      "clothesAndHair": {
+        "count": 3573,
+        "lumaGain": -0.013098460677301974,
+        "absoluteDifference": 0.3198059520477643
+      },
+      "background": {
+        "count": 26517,
+        "lumaGain": -0.005012512727684113,
+        "absoluteDifference": 0.45204962854018294
+      }
+    },
+    {
+      "frame": 121,
+      "time": 4.033333,
+      "skin": {
+        "count": 407,
+        "lumaGain": 10.35744619164619,
+        "absoluteDifference": 10.84275184275184
+      },
+      "clothesAndHair": {
+        "count": 3573,
+        "lumaGain": -0.015503218583823159,
+        "absoluteDifference": 0.31112976956805566
+      },
+      "background": {
+        "count": 26517,
+        "lumaGain": 0.0024305766112305126,
+        "absoluteDifference": 0.44302397204309474
+      }
+    },
+    {
+      "frame": 122,
+      "time": 4.066667,
+      "skin": {
+        "count": 433,
+        "lumaGain": 10.452159353348723,
+        "absoluteDifference": 11.010777521170112
+      },
+      "clothesAndHair": {
+        "count": 3613,
+        "lumaGain": 0.005540824799335722,
+        "absoluteDifference": 0.32014023433896044
+      },
+      "background": {
+        "count": 26423,
+        "lumaGain": -0.006228391931272019,
+        "absoluteDifference": 0.45095812991207745
+      }
+    },
+    {
+      "frame": 123,
+      "time": 4.1,
+      "skin": {
+        "count": 433,
+        "lumaGain": 10.33617690531178,
+        "absoluteDifference": 10.904541955350272
+      },
+      "clothesAndHair": {
+        "count": 3613,
+        "lumaGain": -0.00911298090229726,
+        "absoluteDifference": 0.31063751268567186
+      },
+      "background": {
+        "count": 26423,
+        "lumaGain": -0.005884108541800735,
+        "absoluteDifference": 0.44692124285660356
+      }
+    },
+    {
+      "frame": 124,
+      "time": 4.133333,
+      "skin": {
+        "count": 411,
+        "lumaGain": 10.17391824817519,
+        "absoluteDifference": 10.639091646390908
+      },
+      "clothesAndHair": {
+        "count": 3572,
+        "lumaGain": 0.0008190369540873424,
+        "absoluteDifference": 0.31280328480776354
+      },
+      "background": {
+        "count": 26493,
+        "lumaGain": -0.001405609028800056,
+        "absoluteDifference": 0.4509870531838648
+      }
+    },
+    {
+      "frame": 125,
+      "time": 4.166667,
+      "skin": {
+        "count": 413,
+        "lumaGain": 10.089181113801446,
+        "absoluteDifference": 10.493946731234876
+      },
+      "clothesAndHair": {
+        "count": 3610,
+        "lumaGain": 0.00032099722991689954,
+        "absoluteDifference": 0.3201292705447824
+      },
+      "background": {
+        "count": 26402,
+        "lumaGain": -0.0059138171350655005,
+        "absoluteDifference": 0.44644345125369606
+      }
+    },
+    {
+      "frame": 126,
+      "time": 4.2,
+      "skin": {
+        "count": 417,
+        "lumaGain": 9.987927098321345,
+        "absoluteDifference": 10.474020783373302
+      },
+      "clothesAndHair": {
+        "count": 3617,
+        "lumaGain": -0.014452916781863405,
+        "absoluteDifference": 0.3215371855128548
+      },
+      "background": {
+        "count": 26377,
+        "lumaGain": 0.00013820373810516316,
+        "absoluteDifference": 0.4569764062124888
+      }
+    },
+    {
+      "frame": 127,
+      "time": 4.233333,
+      "skin": {
+        "count": 417,
+        "lumaGain": 10.20913525179856,
+        "absoluteDifference": 10.611510791366909
+      },
+      "clothesAndHair": {
+        "count": 3617,
+        "lumaGain": -0.0010591650539120852,
+        "absoluteDifference": 0.33084508340245067
+      },
+      "background": {
+        "count": 26377,
+        "lumaGain": -0.00021750009477954478,
+        "absoluteDifference": 0.44533747835867415
+      }
+    },
+    {
+      "frame": 128,
+      "time": 4.266667,
+      "skin": {
+        "count": 391,
+        "lumaGain": 9.991434271099754,
+        "absoluteDifference": 10.52003410059676
+      },
+      "clothesAndHair": {
+        "count": 3674,
+        "lumaGain": -0.007511377245508985,
+        "absoluteDifference": 0.3201778261658491
+      },
+      "background": {
+        "count": 26400,
+        "lumaGain": -0.002019583333333333,
+        "absoluteDifference": 0.4458080808080864
+      }
+    },
+    {
+      "frame": 129,
+      "time": 4.3,
+      "skin": {
+        "count": 390,
+        "lumaGain": 10.038977948717951,
+        "absoluteDifference": 10.510256410256416
+      },
+      "clothesAndHair": {
+        "count": 3717,
+        "lumaGain": 0.005743018563357553,
+        "absoluteDifference": 0.32194422024930436
+      },
+      "background": {
+        "count": 26359,
+        "lumaGain": 0.0012712166622406062,
+        "absoluteDifference": 0.44586921608053176
+      }
+    },
+    {
+      "frame": 130,
+      "time": 4.333333,
+      "skin": {
+        "count": 390,
+        "lumaGain": 10.223217948717956,
+        "absoluteDifference": 10.742735042735042
+      },
+      "clothesAndHair": {
+        "count": 3717,
+        "lumaGain": -0.003722033898305091,
+        "absoluteDifference": 0.33055331360416024
+      },
+      "background": {
+        "count": 26359,
+        "lumaGain": -0.0026700178307219736,
+        "absoluteDifference": 0.4465773865978764
+      }
+    },
+    {
+      "frame": 131,
+      "time": 4.366667,
+      "skin": {
+        "count": 392,
+        "lumaGain": 10.038040306122456,
+        "absoluteDifference": 10.551020408163271
+      },
+      "clothesAndHair": {
+        "count": 3733,
+        "lumaGain": 0.004889097240825062,
+        "absoluteDifference": 0.3178855254933463
+      },
+      "background": {
+        "count": 26347,
+        "lumaGain": 0.0014797813792841604,
+        "absoluteDifference": 0.4518667526979691
+      }
+    },
+    {
+      "frame": 132,
+      "time": 4.4,
+      "skin": {
+        "count": 385,
+        "lumaGain": 10.223908051948056,
+        "absoluteDifference": 10.67705627705628
+      },
+      "clothesAndHair": {
+        "count": 3740,
+        "lumaGain": 0.006190106951871656,
+        "absoluteDifference": 0.3158645276292328
+      },
+      "background": {
+        "count": 26262,
+        "lumaGain": 0.007275721574899094,
+        "absoluteDifference": 0.45994212169675497
+      }
+    },
+    {
+      "frame": 133,
+      "time": 4.433333,
+      "skin": {
+        "count": 385,
+        "lumaGain": 10.452276883116886,
+        "absoluteDifference": 10.87272727272728
+      },
+      "clothesAndHair": {
+        "count": 3740,
+        "lumaGain": 0.013125240641711234,
+        "absoluteDifference": 0.3176470588235298
+      },
+      "background": {
+        "count": 26262,
+        "lumaGain": 0.003897052775873907,
+        "absoluteDifference": 0.45245348158302784
+      }
+    },
+    {
+      "frame": 134,
+      "time": 4.466667,
+      "skin": {
+        "count": 408,
+        "lumaGain": 10.352631372549022,
+        "absoluteDifference": 10.80555555555555
+      },
+      "clothesAndHair": {
+        "count": 3733,
+        "lumaGain": -0.0003552638628449053,
+        "absoluteDifference": 0.3352977944459335
+      },
+      "background": {
+        "count": 26234,
+        "lumaGain": 0.005397042006556381,
+        "absoluteDifference": 0.45382582399430915
+      }
+    },
+    {
+      "frame": 135,
+      "time": 4.5,
+      "skin": {
+        "count": 410,
+        "lumaGain": 10.493329268292683,
+        "absoluteDifference": 10.909756097560978
+      },
+      "clothesAndHair": {
+        "count": 3741,
+        "lumaGain": -0.007972788024592364,
+        "absoluteDifference": 0.31756214915797915
+      },
+      "background": {
+        "count": 26199,
+        "lumaGain": 0.009447505629985897,
+        "absoluteDifference": 0.44934285023601434
+      }
+    },
+    {
+      "frame": 136,
+      "time": 4.533333,
+      "skin": {
+        "count": 410,
+        "lumaGain": 10.658819024390247,
+        "absoluteDifference": 11.04471544715447
+      },
+      "clothesAndHair": {
+        "count": 3741,
+        "lumaGain": 0.0015667468591285712,
+        "absoluteDifference": 0.32923460750244976
+      },
+      "background": {
+        "count": 26199,
+        "lumaGain": 0.001516225810145417,
+        "absoluteDifference": 0.456251510871917
+      }
+    },
+    {
+      "frame": 137,
+      "time": 4.566667,
+      "skin": {
+        "count": 419,
+        "lumaGain": 10.611834844868737,
+        "absoluteDifference": 10.992840095465398
+      },
+      "clothesAndHair": {
+        "count": 3746,
+        "lumaGain": 0.012547624132407901,
+        "absoluteDifference": 0.3327104466987007
+      },
+      "background": {
+        "count": 26146,
+        "lumaGain": 0.0016126214334888681,
+        "absoluteDifference": 0.4528544837961245
+      }
+    },
+    {
+      "frame": 138,
+      "time": 4.6,
+      "skin": {
+        "count": 422,
+        "lumaGain": 10.802304739336487,
+        "absoluteDifference": 11.196682464454959
+      },
+      "clothesAndHair": {
+        "count": 3763,
+        "lumaGain": 0.0031750199309061823,
+        "absoluteDifference": 0.3339534059704144
+      },
+      "background": {
+        "count": 26142,
+        "lumaGain": 0.001873942315048584,
+        "absoluteDifference": 0.4623594216203849
+      }
+    },
+    {
+      "frame": 139,
+      "time": 4.633333,
+      "skin": {
+        "count": 392,
+        "lumaGain": 10.64173928571429,
+        "absoluteDifference": 11.035714285714276
+      },
+      "clothesAndHair": {
+        "count": 3756,
+        "lumaGain": 0.006329126730564429,
+        "absoluteDifference": 0.3217074902378416
+      },
+      "background": {
+        "count": 26242,
+        "lumaGain": -0.0026398521454157357,
+        "absoluteDifference": 0.45526255620760825
+      }
+    },
+    {
+      "frame": 140,
+      "time": 4.666667,
+      "skin": {
+        "count": 433,
+        "lumaGain": 10.71980692840647,
+        "absoluteDifference": 11.166281755196305
+      },
+      "clothesAndHair": {
+        "count": 3753,
+        "lumaGain": -0.014084305888622443,
+        "absoluteDifference": 0.3055333510969003
+      },
+      "background": {
+        "count": 26160,
+        "lumaGain": 0.0006900382262996947,
+        "absoluteDifference": 0.449260958205916
+      }
+    },
+    {
+      "frame": 141,
+      "time": 4.7,
+      "skin": {
+        "count": 449,
+        "lumaGain": 10.677394654788419,
+        "absoluteDifference": 11.089829250185609
+      },
+      "clothesAndHair": {
+        "count": 3745,
+        "lumaGain": -0.0003731375166889155,
+        "absoluteDifference": 0.3350244770805509
+      },
+      "background": {
+        "count": 26119,
+        "lumaGain": -0.0006804471840422702,
+        "absoluteDifference": 0.45559426726393576
+      }
+    },
+    {
+      "frame": 142,
+      "time": 4.733333,
+      "skin": {
+        "count": 449,
+        "lumaGain": 10.692967037861903,
+        "absoluteDifference": 11.185597624350416
+      },
+      "clothesAndHair": {
+        "count": 3745,
+        "lumaGain": -0.0009642189586114812,
+        "absoluteDifference": 0.3353805073431241
+      },
+      "background": {
+        "count": 26119,
+        "lumaGain": -0.002268578429495762,
+        "absoluteDifference": 0.4481284377911391
+      }
+    },
+    {
+      "frame": 143,
+      "time": 4.766667,
+      "skin": {
+        "count": 417,
+        "lumaGain": 10.609880575539574,
+        "absoluteDifference": 11.054356514788177
+      },
+      "clothesAndHair": {
+        "count": 3755,
+        "lumaGain": -0.0035011451398135915,
+        "absoluteDifference": 0.33865956502441114
+      },
+      "background": {
+        "count": 26187,
+        "lumaGain": -0.0007496085844121132,
+        "absoluteDifference": 0.45045251460649016
+      }
+    },
+    {
+      "frame": 144,
+      "time": 4.8,
+      "skin": {
+        "count": 429,
+        "lumaGain": 10.573679720279717,
+        "absoluteDifference": 11.048174048174053
+      },
+      "clothesAndHair": {
+        "count": 3757,
+        "lumaGain": 0.0016899121639606066,
+        "absoluteDifference": 0.33022801880933395
+      },
+      "background": {
+        "count": 26154,
+        "lumaGain": -0.003853529096887679,
+        "absoluteDifference": 0.43561214345798305
+      }
+    },
+    {
+      "frame": 145,
+      "time": 4.833333,
+      "skin": {
+        "count": 429,
+        "lumaGain": 10.560682517482517,
+        "absoluteDifference": 10.925407925407928
+      },
+      "clothesAndHair": {
+        "count": 3757,
+        "lumaGain": 0.00006691509182858737,
+        "absoluteDifference": 0.3308490817141336
+      },
+      "background": {
+        "count": 26154,
+        "lumaGain": -0.001963409038770367,
+        "absoluteDifference": 0.44473757997502256
+      }
+    },
+    {
+      "frame": 146,
+      "time": 4.866667,
+      "skin": {
+        "count": 437,
+        "lumaGain": 10.274394050343249,
+        "absoluteDifference": 10.762013729977124
+      },
+      "clothesAndHair": {
+        "count": 3733,
+        "lumaGain": 0.0025024912938655264,
+        "absoluteDifference": 0.32333244039646336
+      },
+      "background": {
+        "count": 26194,
+        "lumaGain": 0.0017271894326945066,
+        "absoluteDifference": 0.4430276653686615
+      }
+    },
+    {
+      "frame": 147,
+      "time": 4.9,
+      "skin": {
+        "count": 423,
+        "lumaGain": 9.983140425531916,
+        "absoluteDifference": 10.53033884948779
+      },
+      "clothesAndHair": {
+        "count": 3721,
+        "lumaGain": -0.0010542864821284608,
+        "absoluteDifference": 0.34014153901281036
+      },
+      "background": {
+        "count": 26307,
+        "lumaGain": -0.0012781541034705586,
+        "absoluteDifference": 0.4384130966409472
+      }
+    },
+    {
+      "frame": 148,
+      "time": 4.933333,
+      "skin": {
+        "count": 423,
+        "lumaGain": 9.481576359338069,
+        "absoluteDifference": 10.108747044917262
+      },
+      "clothesAndHair": {
+        "count": 3721,
+        "lumaGain": 0.0031537221177102893,
+        "absoluteDifference": 0.3593120128997582
+      },
+      "background": {
+        "count": 26307,
+        "lumaGain": 0.0027309081233131698,
+        "absoluteDifference": 0.4346625106118803
+      }
+    },
+    {
+      "frame": 149,
+      "time": 4.966667,
+      "skin": {
+        "count": 424,
+        "lumaGain": 9.352064150943411,
+        "absoluteDifference": 10.00943396226415
+      },
+      "clothesAndHair": {
+        "count": 3682,
+        "lumaGain": 0.015803693644758275,
+        "absoluteDifference": 0.3466413181242073
+      },
+      "background": {
+        "count": 26441,
+        "lumaGain": -0.0013550849060171687,
+        "absoluteDifference": 0.43575003466838425
+      }
+    },
+    {
+      "frame": 150,
+      "time": 5,
+      "skin": {
+        "count": 387,
+        "lumaGain": 9.364842377260981,
+        "absoluteDifference": 9.99052540913006
+      },
+      "clothesAndHair": {
+        "count": 3694,
+        "lumaGain": 0.009157661072008673,
+        "absoluteDifference": 0.3550803104132828
+      },
+      "background": {
+        "count": 26536,
+        "lumaGain": -0.0016382348507687637,
+        "absoluteDifference": 0.43570997889659613
+      }
+    },
+    {
+      "frame": 151,
+      "time": 5.033333,
+      "skin": {
+        "count": 387,
+        "lumaGain": 9.676156589147295,
+        "absoluteDifference": 10.24031007751938
+      },
+      "clothesAndHair": {
+        "count": 3694,
+        "lumaGain": -0.009040335679480255,
+        "absoluteDifference": 0.3357697166576431
+      },
+      "background": {
+        "count": 26536,
+        "lumaGain": -0.0006997060596924849,
+        "absoluteDifference": 0.439943221786758
+      }
+    },
+    {
+      "frame": 152,
+      "time": 5.066667,
+      "skin": {
+        "count": 395,
+        "lumaGain": 9.98634329113924,
+        "absoluteDifference": 10.514767932489466
+      },
+      "clothesAndHair": {
+        "count": 3662,
+        "lumaGain": -0.004373293282359352,
+        "absoluteDifference": 0.3267795375933005
+      },
+      "background": {
+        "count": 26499,
+        "lumaGain": -0.008092116683648452,
+        "absoluteDifference": 0.4367334616400638
+      }
+    },
+    {
+      "frame": 153,
+      "time": 5.1,
+      "skin": {
+        "count": 406,
+        "lumaGain": 9.896952709359608,
+        "absoluteDifference": 10.416256157635468
+      },
+      "clothesAndHair": {
+        "count": 3645,
+        "lumaGain": 0.005524060356652955,
+        "absoluteDifference": 0.33122999542752557
+      },
+      "background": {
+        "count": 26530,
+        "lumaGain": -0.0013396381454956695,
+        "absoluteDifference": 0.4269883151149668
+      }
+    },
+    {
+      "frame": 154,
+      "time": 5.133333,
+      "skin": {
+        "count": 399,
+        "lumaGain": 10.000068170426063,
+        "absoluteDifference": 10.557226399331661
+      },
+      "clothesAndHair": {
+        "count": 3634,
+        "lumaGain": 0.010640671436433685,
+        "absoluteDifference": 0.33938726839111993
+      },
+      "background": {
+        "count": 26572,
+        "lumaGain": -0.002241299111847034,
+        "absoluteDifference": 0.441831000050182
+      }
+    },
+    {
+      "frame": 155,
+      "time": 5.166667,
+      "skin": {
+        "count": 403,
+        "lumaGain": 9.99507344913151,
+        "absoluteDifference": 10.532671629445815
+      },
+      "clothesAndHair": {
+        "count": 3637,
+        "lumaGain": 0.0056752818256805004,
+        "absoluteDifference": 0.3316836220328109
+      },
+      "background": {
+        "count": 26520,
+        "lumaGain": -0.0038196229260935,
+        "absoluteDifference": 0.44092508798391106
+      }
+    },
+    {
+      "frame": 156,
+      "time": 5.2,
+      "skin": {
+        "count": 404,
+        "lumaGain": 10.151491584158421,
+        "absoluteDifference": 10.694719471947188
+      },
+      "clothesAndHair": {
+        "count": 3641,
+        "lumaGain": 0.007930678385059049,
+        "absoluteDifference": 0.32646708779639244
+      },
+      "background": {
+        "count": 26534,
+        "lumaGain": 0.004848752543905917,
+        "absoluteDifference": 0.4314087585739067
+      }
+    },
+    {
+      "frame": 157,
+      "time": 5.233333,
+      "skin": {
+        "count": 404,
+        "lumaGain": 10.153527227722778,
+        "absoluteDifference": 10.61963696369637
+      },
+      "clothesAndHair": {
+        "count": 3641,
+        "lumaGain": -0.00911359516616316,
+        "absoluteDifference": 0.31667124416369075
+      },
+      "background": {
+        "count": 26534,
+        "lumaGain": 0.010230632396170954,
+        "absoluteDifference": 0.4280294464963222
+      }
+    },
+    {
+      "frame": 158,
+      "time": 5.266667,
+      "skin": {
+        "count": 406,
+        "lumaGain": 10.174656157635479,
+        "absoluteDifference": 10.675697865353042
+      },
+      "clothesAndHair": {
+        "count": 3632,
+        "lumaGain": -0.0076885462555066056,
+        "absoluteDifference": 0.33516886930983875
+      },
+      "background": {
+        "count": 26530,
+        "lumaGain": 0.0011281794195250408,
+        "absoluteDifference": 0.4261339364241773
+      }
+    },
+    {
+      "frame": 159,
+      "time": 5.3,
+      "skin": {
+        "count": 403,
+        "lumaGain": 10.244328535980152,
+        "absoluteDifference": 10.758478081058723
+      },
+      "clothesAndHair": {
+        "count": 3620,
+        "lumaGain": 0.00582906077348066,
+        "absoluteDifference": 0.32836095764272616
+      },
+      "background": {
+        "count": 26555,
+        "lumaGain": 0.001601415929203546,
+        "absoluteDifference": 0.4238373187723601
+      }
+    },
+    {
+      "frame": 160,
+      "time": 5.333333,
+      "skin": {
+        "count": 403,
+        "lumaGain": 10.305084367245666,
+        "absoluteDifference": 10.809760132340774
+      },
+      "clothesAndHair": {
+        "count": 3620,
+        "lumaGain": -0.0024291712707182364,
+        "absoluteDifference": 0.35349907918968665
+      },
+      "background": {
+        "count": 26555,
+        "lumaGain": 0.004597717943890068,
+        "absoluteDifference": 0.42541894181886836
+      }
+    },
+    {
+      "frame": 161,
+      "time": 5.366667,
+      "skin": {
+        "count": 396,
+        "lumaGain": 10.373417676767687,
+        "absoluteDifference": 10.757575757575752
+      },
+      "clothesAndHair": {
+        "count": 3583,
+        "lumaGain": -0.006421936924365066,
+        "absoluteDifference": 0.334263652432784
+      },
+      "background": {
+        "count": 26604,
+        "lumaGain": 0.001934821831303566,
+        "absoluteDifference": 0.4214153260161404
+      }
+    },
+    {
+      "frame": 162,
+      "time": 5.4,
+      "skin": {
+        "count": 388,
+        "lumaGain": 10.516158762886608,
+        "absoluteDifference": 10.945876288659784
+      },
+      "clothesAndHair": {
+        "count": 3600,
+        "lumaGain": 0.0020136666666666697,
+        "absoluteDifference": 0.3399074074074069
+      },
+      "background": {
+        "count": 26608,
+        "lumaGain": 0.003931779915814781,
+        "absoluteDifference": 0.4334034876728818
+      }
+    },
+    {
+      "frame": 163,
+      "time": 5.433333,
+      "skin": {
+        "count": 388,
+        "lumaGain": 10.582226288659808,
+        "absoluteDifference": 10.982817869415808
+      },
+      "clothesAndHair": {
+        "count": 3600,
+        "lumaGain": -0.015182277777777772,
+        "absoluteDifference": 0.3187962962962957
+      },
+      "background": {
+        "count": 26608,
+        "lumaGain": 0.0004219708358388433,
+        "absoluteDifference": 0.4396797955502121
+      }
+    },
+    {
+      "frame": 164,
+      "time": 5.466667,
+      "skin": {
+        "count": 395,
+        "lumaGain": 10.893171139240504,
+        "absoluteDifference": 11.294514767932494
+      },
+      "clothesAndHair": {
+        "count": 3628,
+        "lumaGain": -0.0039058985667034174,
+        "absoluteDifference": 0.33755972069092294
+      },
+      "background": {
+        "count": 26509,
+        "lumaGain": -0.00002190954015617154,
+        "absoluteDifference": 0.4350346423227364
+      }
+    },
+    {
+      "frame": 165,
+      "time": 5.5,
+      "skin": {
+        "count": 391,
+        "lumaGain": 10.91075498721228,
+        "absoluteDifference": 11.378516624040914
+      },
+      "clothesAndHair": {
+        "count": 3639,
+        "lumaGain": -0.006466831547128326,
+        "absoluteDifference": 0.3416689566730787
+      },
+      "background": {
+        "count": 26535,
+        "lumaGain": -0.006172549462973441,
+        "absoluteDifference": 0.4392563281200981
+      }
+    },
+    {
+      "frame": 166,
+      "time": 5.533333,
+      "skin": {
+        "count": 391,
+        "lumaGain": 11.030714578005117,
+        "absoluteDifference": 11.431372549019606
+      },
+      "clothesAndHair": {
+        "count": 3639,
+        "lumaGain": -0.0033113492717779416,
+        "absoluteDifference": 0.3489969771915355
+      },
+      "background": {
+        "count": 26535,
+        "lumaGain": -0.005865400414546861,
+        "absoluteDifference": 0.4315432447710613
+      }
+    },
+    {
+      "frame": 167,
+      "time": 5.566667,
+      "skin": {
+        "count": 411,
+        "lumaGain": 11.205019951338206,
+        "absoluteDifference": 11.5750202757502
+      },
+      "clothesAndHair": {
+        "count": 3692,
+        "lumaGain": -0.003344095341278447,
+        "absoluteDifference": 0.3411881545684363
+      },
+      "background": {
+        "count": 26453,
+        "lumaGain": 0.0036147355687445736,
+        "absoluteDifference": 0.43467029574465627
+      }
+    },
+    {
+      "frame": 168,
+      "time": 5.6,
+      "skin": {
+        "count": 389,
+        "lumaGain": 11.281414910025703,
+        "absoluteDifference": 11.66066838046274
+      },
+      "clothesAndHair": {
+        "count": 3707,
+        "lumaGain": -0.0008326949015376308,
+        "absoluteDifference": 0.3237118964121931
+      },
+      "background": {
+        "count": 26520,
+        "lumaGain": -0.0034401734539969983,
+        "absoluteDifference": 0.43069381598793577
+      }
+    },
+    {
+      "frame": 169,
+      "time": 5.633333,
+      "skin": {
+        "count": 336,
+        "lumaGain": 11.010232738095242,
+        "absoluteDifference": 11.499007936507937
+      },
+      "clothesAndHair": {
+        "count": 3699,
+        "lumaGain": 0.0037886455798864563,
+        "absoluteDifference": 0.35595205911507594
+      },
+      "background": {
+        "count": 26827,
+        "lumaGain": 0.0011413128564505882,
+        "absoluteDifference": 0.4232676035337567
+      }
+    },
+    {
+      "frame": 170,
+      "time": 5.666667,
+      "skin": {
+        "count": 377,
+        "lumaGain": 11.32081909814325,
+        "absoluteDifference": 11.731211317418214
+      },
+      "clothesAndHair": {
+        "count": 3609,
+        "lumaGain": 0.004872873372125241,
+        "absoluteDifference": 0.34284658723561445
+      },
+      "background": {
+        "count": 26758,
+        "lumaGain": -0.0005471410419313864,
+        "absoluteDifference": 0.42500685153350193
+      }
+    },
+    {
+      "frame": 171,
+      "time": 5.7,
+      "skin": {
+        "count": 395,
+        "lumaGain": 11.500419240506334,
+        "absoluteDifference": 11.785654008438815
+      },
+      "clothesAndHair": {
+        "count": 3497,
+        "lumaGain": -0.000031627108950531384,
+        "absoluteDifference": 0.3478219426174813
+      },
+      "background": {
+        "count": 26756,
+        "lumaGain": -0.0027923306921811618,
+        "absoluteDifference": 0.41831115762196863
+      }
+    },
+    {
+      "frame": 172,
+      "time": 5.733333,
+      "skin": {
+        "count": 395,
+        "lumaGain": 11.227627341772138,
+        "absoluteDifference": 11.745991561181427
+      },
+      "clothesAndHair": {
+        "count": 3497,
+        "lumaGain": 0.026587074635401744,
+        "absoluteDifference": 0.36945953674578313
+      },
+      "background": {
+        "count": 26756,
+        "lumaGain": -0.0007229107489909142,
+        "absoluteDifference": 0.4221856779787718
+      }
+    },
+    {
+      "frame": 173,
+      "time": 5.766667,
+      "skin": {
+        "count": 365,
+        "lumaGain": 11.447186301369866,
+        "absoluteDifference": 11.858447488584476
+      },
+      "clothesAndHair": {
+        "count": 3140,
+        "lumaGain": 0.006507515923566878,
+        "absoluteDifference": 0.34840764331210106
+      },
+      "background": {
+        "count": 27013,
+        "lumaGain": 0.003065871987561541,
+        "absoluteDifference": 0.4199582916867195
+      }
+    },
+    {
+      "frame": 174,
+      "time": 5.8,
+      "skin": {
+        "count": 412,
+        "lumaGain": 11.868430097087376,
+        "absoluteDifference": 12.265372168284784
+      },
+      "clothesAndHair": {
+        "count": 3190,
+        "lumaGain": 0.006566269592476493,
+        "absoluteDifference": 0.32539184952978034
+      },
+      "background": {
+        "count": 26988,
+        "lumaGain": 0.0008212835334222428,
+        "absoluteDifference": 0.42828911615038906
+      }
+    },
+    {
+      "frame": 175,
+      "time": 5.833333,
+      "skin": {
+        "count": 412,
+        "lumaGain": 11.419351456310677,
+        "absoluteDifference": 11.78964401294497
+      },
+      "clothesAndHair": {
+        "count": 3190,
+        "lumaGain": -0.005557742946708459,
+        "absoluteDifference": 0.3319749216300936
+      },
+      "background": {
+        "count": 26988,
+        "lumaGain": -0.0013721950496516939,
+        "absoluteDifference": 0.4226199298453655
+      }
+    },
+    {
+      "frame": 176,
+      "time": 5.866667,
+      "skin": {
+        "count": 424,
+        "lumaGain": 11.663604245283008,
+        "absoluteDifference": 12.084905660377352
+      },
+      "clothesAndHair": {
+        "count": 3190,
+        "lumaGain": 0.008960000000000003,
+        "absoluteDifference": 0.34326018808777364
+      },
+      "background": {
+        "count": 26983,
+        "lumaGain": 0.0023768965645035826,
+        "absoluteDifference": 0.44148785037493266
+      }
+    },
+    {
+      "frame": 177,
+      "time": 5.9,
+      "skin": {
+        "count": 422,
+        "lumaGain": 11.673777725118477,
+        "absoluteDifference": 11.909162717219594
+      },
+      "clothesAndHair": {
+        "count": 3207,
+        "lumaGain": -0.019135952603679417,
+        "absoluteDifference": 0.3268890967674866
+      },
+      "background": {
+        "count": 26986,
+        "lumaGain": -0.00028700807826279436,
+        "absoluteDifference": 0.44125348946367726
+      }
+    },
+    {
+      "frame": 178,
+      "time": 5.933333,
+      "skin": {
+        "count": 422,
+        "lumaGain": 11.791477251184823,
+        "absoluteDifference": 12.054502369668239
+      },
+      "clothesAndHair": {
+        "count": 3207,
+        "lumaGain": -0.007456251948861867,
+        "absoluteDifference": 0.3451824134705328
+      },
+      "background": {
+        "count": 26986,
+        "lumaGain": 0.00552719187726971,
+        "absoluteDifference": 0.4508387064897893
+      }
+    },
+    {
+      "frame": 179,
+      "time": 5.966667,
+      "skin": {
+        "count": 438,
+        "lumaGain": 11.66947031963469,
+        "absoluteDifference": 11.965753424657544
+      },
+      "clothesAndHair": {
+        "count": 3245,
+        "lumaGain": -0.003490724191063176,
+        "absoluteDifference": 0.3198767334360553
+      },
+      "background": {
+        "count": 26961,
+        "lumaGain": 0.0030423648974444726,
+        "absoluteDifference": 0.46202539470593856
+      }
+    }
+  ],
+  "scope": "All decoded frames at144x256 mask resolution on darkened six-second real-person QA proxy with saved semantic and SAM2 masks. Safe interiors exclude2px boundary; encoded differences tolerated up to mean RGB1. This tests isolation relative to saved labels, not semantic correctness, natural skin tone, occlusion, UI or full production quality.",
+  "contactViewed": true,
+  "visualNotes": "Four top-row baseline/bottom-row skin30 frames: face/visible hand skin lift is subtle; clothing/background appear similar. Small contact cannot establish natural skin tone, leg/finger accuracy or temporal edges.",
+  "ui": {
+    "label": "Sáng da toàn thân",
+    "staticHTTPMatches": true,
+    "sha256": "37c266a63eaf1406f3c2cef6d733d06d69928b9267c4c307cbd93767887661de",
+    "componentAndTemplateTests": 10,
+    "browserVerified": false
+  },
+  "skillPackage": {
+    "file": "workspace/exports/chungauto-creative-v50-skin-isolation.zip",
+    "bytes": 1635718,
+    "presets": 11,
+    "references": 5
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "withoutOpenProject": true,
+  "staleWorkspaceRejected": true,
+  "invalidModeRejected": true,
+  "sizes": [
+    {
+      "width": 1280,
+      "bothModesSaved": true,
+      "bounds": {
+        "left": 316,
+        "right": 966,
+        "width": 650
+      }
+    },
+    {
+      "width": 1920,
+      "bothModesSaved": true,
+      "bounds": {
+        "left": 612,
+        "right": 1262,
+        "width": 650
+      }
+    }
+  ],
+  "restoredAfterReload": true,
+  "pageErrors": []
+}

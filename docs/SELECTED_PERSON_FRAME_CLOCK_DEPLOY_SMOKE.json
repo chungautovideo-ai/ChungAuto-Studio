@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-11-05T13:25:27.3989484+07:00",
+  "previousPID": 21284,
+  "newPID": 12560,
+  "dispatcherBefore": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "resourcesBefore": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "mediaWorkersBefore": 0,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "scope": "Selected-person frame presentation clock; read-only measurement, no renderer/UI change",
+  "mainQAProbe": {
+    "status": 409,
+    "code": "PROJECT_CONTEXT_CONFLICT",
+    "projectContextChanged": false,
+    "measurementNotRun": true
+  }
+}

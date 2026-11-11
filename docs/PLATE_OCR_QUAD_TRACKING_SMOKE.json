@@ -1,0 +1,201 @@
+{
+  "cases": [
+    {
+      "name": "raw-ocr",
+      "dir": "D:\\Edit tự động\\contentos\\workspace\\cache\\plate-quad-track-GTJWZk",
+      "from": 0.74,
+      "duration": 1,
+      "quads": [
+        [
+          [
+            0.01995370370370369,
+            0.7232031250000002
+          ],
+          [
+            0.9744907407407407,
+            0.6873177083333333
+          ],
+          [
+            0.9902314814814817,
+            0.8148177083333334
+          ],
+          [
+            0.035694444444444445,
+            0.8507031249999998
+          ]
+        ]
+      ],
+      "result": {
+        "path": "inputs/privacy/279c2ad5-ae11-49a4-855c-d65726663101/masked.mp4",
+        "duration": 1,
+        "provenance": {
+          "kind": "plate-privacy",
+          "method": "user-roi-optical-flow",
+          "source": "inputs/raw.mp4",
+          "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+          "from": 0.74,
+          "duration": 1,
+          "roi": [
+            0.01995370370370369,
+            0.6873177083333333,
+            0.970277777777778,
+            0.1633854166666665
+          ],
+          "rois": [
+            [
+              0.01995370370370369,
+              0.6873177083333333,
+              0.970277777777778,
+              0.1633854166666665
+            ]
+          ],
+          "quads": [
+            [
+              [
+                0.01995370370370369,
+                0.7232031250000002
+              ],
+              [
+                0.9744907407407407,
+                0.6873177083333333
+              ],
+              [
+                0.9902314814814817,
+                0.8148177083333334
+              ],
+              [
+                0.035694444444444445,
+                0.8507031249999998
+              ]
+            ]
+          ],
+          "sha256": "181e7c213c5ee8d9d37b90621c0190b9c95375af9913cf9fedccf4a8880f51ea",
+          "frames": 30,
+          "requiresVisualReview": true
+        },
+        "mediaInfo": {
+          "width": 1728,
+          "height": 3072,
+          "duration": 1,
+          "hasAudio": true
+        },
+        "sourceMediaInfo": {
+          "width": 1728,
+          "height": 3072,
+          "duration": 8.0247,
+          "hasAudio": true
+        }
+      },
+      "frames": 30,
+      "sampling": {
+        "method": "presentation-held-v1",
+        "requestedFrom": 0.74,
+        "firstSourceFrameTime": 0.734067,
+        "samplesRequested": 30,
+        "fps": 30
+      },
+      "contact": "docs/PLATE_QUAD_TRACK_RAW_OCR.jpg"
+    },
+    {
+      "name": "previously-reviewed-manual",
+      "dir": "D:\\Edit tự động\\contentos\\workspace\\cache\\plate-quad-track-IZILZ9",
+      "from": 0,
+      "duration": 2,
+      "quads": [
+        [
+          [
+            0.041666666666666664,
+            0.7515625
+          ],
+          [
+            0.9583333333333334,
+            0.715625
+          ],
+          [
+            0.9638888888888889,
+            0.81875
+          ],
+          [
+            0.05,
+            0.8578125
+          ]
+        ]
+      ],
+      "result": {
+        "path": "inputs/privacy/007c4e55-3bbd-4f79-9666-55d1ae10adf0/masked.mp4",
+        "duration": 2,
+        "provenance": {
+          "kind": "plate-privacy",
+          "method": "user-roi-optical-flow",
+          "source": "inputs/raw.mp4",
+          "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+          "from": 0,
+          "duration": 2,
+          "roi": [
+            0.041666666666666664,
+            0.715625,
+            0.9222222222222223,
+            0.14218750000000002
+          ],
+          "rois": [
+            [
+              0.041666666666666664,
+              0.715625,
+              0.9222222222222223,
+              0.14218750000000002
+            ]
+          ],
+          "quads": [
+            [
+              [
+                0.041666666666666664,
+                0.7515625
+              ],
+              [
+                0.9583333333333334,
+                0.715625
+              ],
+              [
+                0.9638888888888889,
+                0.81875
+              ],
+              [
+                0.05,
+                0.8578125
+              ]
+            ]
+          ],
+          "sha256": "85bb2516cc7c38048da9a5567f3f82a2c88640fdef53bbe682a990e2bb200a75",
+          "frames": 60,
+          "requiresVisualReview": true
+        },
+        "mediaInfo": {
+          "width": 1728,
+          "height": 3072,
+          "duration": 2,
+          "hasAudio": true
+        },
+        "sourceMediaInfo": {
+          "width": 1728,
+          "height": 3072,
+          "duration": 8.0247,
+          "hasAudio": true
+        }
+      },
+      "frames": 60,
+      "sampling": {
+        "method": "presentation-held-v1",
+        "requestedFrom": 0,
+        "firstSourceFrameTime": 0,
+        "samplesRequested": 60,
+        "fps": 30
+      },
+      "contact": "docs/PLATE_QUAD_TRACK_PREVIOUSLY_REVIEWED_MANUAL.jpg"
+    }
+  ],
+  "sourceAndProjectUnchanged": true,
+  "noReviewReceipt": true,
+  "scope": "Real local optical flow on QA copies: raw OCR and previously manually corrected quad. No automatic correction, full clip/privacy/final/UI acceptance.",
+  "contactsViewed": true,
+  "visualNotes": "Four sampled times per output: black region follows front bumper, raw OCR broader than prior manually corrected quad. Not continuous/full-frame privacy or aesthetics acceptance."
+}

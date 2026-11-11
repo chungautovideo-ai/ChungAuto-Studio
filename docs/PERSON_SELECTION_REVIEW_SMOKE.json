@@ -1,0 +1,18 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-ranges-7",
+  "realMediaPipe": true,
+  "realSAM2": true,
+  "reviewTwoRanges": true,
+  "toggleChangesCanvas": true,
+  "seekLastSample": true,
+  "noTrackingPosts": true,
+  "projectFaceBytesUnchanged": true,
+  "escapeCloses": true,
+  "sourceErrorDisablesReview": true,
+  "staleReloadClearsCanvas": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "scope": "Two saved 2-second ranges on one 6-second speaker; not multiple people or occlusion"
+}

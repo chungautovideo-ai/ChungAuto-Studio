@@ -1,0 +1,14 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {spawn,execFileSync} from 'node:child_process';
+const source=path.resolve('workspace/content/2026-11-03/contentos-smoke-music-duck-smooth-render'),dir=path.resolve('workspace/content/2026-11-03/contentos-smoke-capcut-stems');
+fs.mkdirSync(path.join(dir,'inputs'),{recursive:true});for(const name of ['source.mp4','music.wav','narration.wav'])fs.copyFileSync(path.join(source,'inputs',name),path.join(dir,'inputs',name));
+fs.writeFileSync(path.join(dir,'project.json'),fs.readFileSync(path.join(source,'project.json')));
+const child=spawn(process.execPath,['editor/tools/goi-capcut.mjs',dir,'--chu','sua'],{windowsHide:true,stdio:['ignore','pipe','pipe']});let log='';child.stdout.on('data',d=>log+=d);child.stderr.on('data',d=>log+=d);const code=await new Promise((ok,no)=>{child.on('error',no);child.on('close',ok);});assert.equal(code,0,log);
+const folder=path.join(dir,'renders/capcut-'+path.basename(dir)),manifest=JSON.parse(fs.readFileSync(path.join(folder,'audio-tracks.json')));assert.deepEqual(manifest.tracks.map(t=>t.kind),['music','narration']);
+const pcm=file=>execFileSync('ffmpeg',['-nostdin','-v','error','-i',path.join(folder,file),'-ac','1','-ar','16000','-f','f32le','pipe:1'],{windowsHide:true});
+function amplitude(bytes,freq,start,end){let a=0,b=0,n=0;for(let i=Math.floor(start*16000);i<end*16000;i++){const x=bytes.readFloatLE(i*4),angle=2*Math.PI*freq*i/16000;a+=x*Math.cos(angle);b+=x*Math.sin(angle);n++;}return 2*Math.hypot(a,b)/n;}
+const music=pcm(manifest.tracks[0].file),voice=pcm(manifest.tracks[1].file),musicTone=amplitude(music,880,3.6,4.4),musicLeak=amplitude(music,440,3.6,4.4),voiceTone=amplitude(voice,440,3.6,4.4),voiceLeak=amplitude(voice,880,3.6,4.4);
+assert.ok(musicTone>.005&&musicLeak<musicTone*.05);assert.ok(voiceTone>.02&&voiceLeak<voiceTone*.05);assert.ok(amplitude(voice,440,1,2)<voiceTone*.02);
+const before=amplitude(music,880,2,2.6),ratio=musicTone/before;assert.ok(ratio>.2&&ratio<.3);
+for(const t of manifest.tracks){assert.equal(t.start,0);const probe=JSON.parse(execFileSync('ffprobe',['-v','error','-show_entries','format=duration','-of','json',path.join(folder,t.file)],{encoding:'utf8',windowsHide:true}));assert.ok(Math.abs(Number(probe.format.duration)-8)<.1);}
+assert.match(fs.readFileSync(path.join(folder,'huong-dan.txt'),'utf8'),/thuyet-minh.m4a/);
+const result={syntheticOnly:true,actualToolExit0:true,package:folder,manifestKinds:manifest.tracks.map(t=>t.kind),musicTone,musicLeak,voiceTone,voiceLeak,musicDuckRatio:ratio,separateTracksDuration8s:true,instructions:true,limits:'No actual CapCut import; SFX/B-roll grouping unit-tested only, no package render for those stems.'};fs.writeFileSync('docs/CAPCUT_STEMS_SMOKE.json',JSON.stringify(result,null,2)+'\n');console.log(result);

@@ -1,0 +1,278 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-5",
+  "status": "done",
+  "completion": "awaiting-review",
+  "duration": 106.28999999999999,
+  "counts": {
+    "segments": 2,
+    "brolls": 4,
+    "blocks": 3,
+    "texts": 11
+  },
+  "audio": {
+    "voice": 1,
+    "music": "kit:ambient-pad",
+    "musicVolume": 0.08,
+    "sfx": [],
+    "sfxVolume": 0.18,
+    "autoSfx": true,
+    "sfxLevel": "vua",
+    "duckSourceSpeech": true,
+    "duckLevel": 0.45,
+    "duckFade": 0.2
+  },
+  "brolls": [
+    {
+      "id": "b-man",
+      "src": "inputs/man.mp4",
+      "projectAt": 9.61,
+      "outputStart": 9.07,
+      "outputEnd": 11.27,
+      "mediaStart": 10,
+      "minhHoa": "sản phẩm",
+      "fixtureProduct": "màn hình",
+      "exactPhraseWindows": [
+        {
+          "from": 15.52,
+          "to": 16.27
+        }
+      ],
+      "overlapsExactPhrase": false,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "sản",
+            "outputStart": 9.07,
+            "outputEnd": 9.25
+          },
+          {
+            "text": "phẩm",
+            "outputStart": 9.25,
+            "outputEnd": 9.52
+          },
+          {
+            "text": "trước",
+            "outputStart": 9.52,
+            "outputEnd": 9.85
+          },
+          {
+            "text": "khi",
+            "outputStart": 9.85,
+            "outputEnd": 10.09
+          },
+          {
+            "text": "lắp",
+            "outputStart": 10.09,
+            "outputEnd": 10.23
+          },
+          {
+            "text": "đặt",
+            "outputStart": 10.23,
+            "outputEnd": 10.58
+          },
+          {
+            "text": "thì",
+            "outputStart": 10.58,
+            "outputEnd": 10.74
+          },
+          {
+            "text": "đều",
+            "outputStart": 10.74,
+            "outputEnd": 10.93
+          },
+          {
+            "text": "được",
+            "outputStart": 10.93,
+            "outputEnd": 11.09
+          },
+          {
+            "text": "bản",
+            "outputStart": 11.09,
+            "outputEnd": 11.25
+          },
+          {
+            "text": "thân",
+            "outputStart": 11.25,
+            "outputEnd": 11.45
+          }
+        ],
+        "truncated": false,
+        "totalWords": 11,
+        "nextWord": {
+          "text": "mình",
+          "outputStart": 11.45,
+          "outputEnd": 11.72
+        },
+        "startsInsideWord": false,
+        "endsInsideWord": true
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    },
+    {
+      "id": "b-den",
+      "src": "inputs/den.mp4",
+      "projectAt": 14.56,
+      "outputStart": 14.02,
+      "outputEnd": 15.52,
+      "mediaStart": 4,
+      "minhHoa": "đèn",
+      "fixtureProduct": "đèn",
+      "exactPhraseWindows": [
+        {
+          "from": 14.77,
+          "to": 15.52
+        }
+      ],
+      "overlapsExactPhrase": true,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "Nên",
+            "outputStart": 13.72,
+            "outputEnd": 14.17
+          },
+          {
+            "text": "là",
+            "outputStart": 14.17,
+            "outputEnd": 14.71
+          },
+          {
+            "text": "từ",
+            "outputStart": 14.71,
+            "outputEnd": 14.77
+          },
+          {
+            "text": "đèn,",
+            "outputStart": 14.77,
+            "outputEnd": 15.52
+          }
+        ],
+        "truncated": false,
+        "totalWords": 4,
+        "nextWord": {
+          "text": "màn,",
+          "outputStart": 15.52,
+          "outputEnd": 16.27
+        },
+        "startsInsideWord": true,
+        "endsInsideWord": false
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    },
+    {
+      "id": "b-ghe",
+      "src": "inputs/ghe.mp4",
+      "projectAt": 18.16,
+      "outputStart": 17.62,
+      "outputEnd": 19.12,
+      "mediaStart": 1,
+      "minhHoa": "bọc ghế da",
+      "fixtureProduct": "ghế da",
+      "exactPhraseWindows": [
+        {
+          "from": 18.07,
+          "to": 19.12
+        }
+      ],
+      "overlapsExactPhrase": true,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "bọc",
+            "outputStart": 17.62,
+            "outputEnd": 18.07
+          },
+          {
+            "text": "ghế",
+            "outputStart": 18.07,
+            "outputEnd": 18.52
+          },
+          {
+            "text": "da,",
+            "outputStart": 18.52,
+            "outputEnd": 19.12
+          }
+        ],
+        "truncated": false,
+        "totalWords": 3,
+        "nextWord": {
+          "text": "sàn",
+          "outputStart": 19.12,
+          "outputEnd": 19.57
+        },
+        "startsInsideWord": false,
+        "endsInsideWord": false
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    },
+    {
+      "id": "b-mau",
+      "src": "inputs/mau.mp4",
+      "projectAt": 20.7,
+      "outputStart": 20.16,
+      "outputEnd": 21.66,
+      "mediaStart": 4,
+      "minhHoa": "đổi màu",
+      "fixtureProduct": "đổi màu",
+      "exactPhraseWindows": [
+        {
+          "from": 20.16,
+          "to": 21.18
+        }
+      ],
+      "overlapsExactPhrase": true,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "đổi",
+            "outputStart": 20.16,
+            "outputEnd": 20.62
+          },
+          {
+            "text": "màu",
+            "outputStart": 20.62,
+            "outputEnd": 21.18
+          },
+          {
+            "text": "Chất",
+            "outputStart": 21.18,
+            "outputEnd": 21.38
+          },
+          {
+            "text": "lượng",
+            "outputStart": 21.38,
+            "outputEnd": 21.64
+          },
+          {
+            "text": "như",
+            "outputStart": 21.64,
+            "outputEnd": 21.8
+          }
+        ],
+        "truncated": false,
+        "totalWords": 5,
+        "nextWord": {
+          "text": "thế",
+          "outputStart": 21.8,
+          "outputEnd": 22.12
+        },
+        "startsInsideWord": false,
+        "endsInsideWord": true
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    }
+  ],
+  "reportedTotalTokens": 209379,
+  "tokenLimits": "CLI total only; no billed/cached breakdown or controlled comparison. Not proof of token reduction.",
+  "helpersSeen": {
+    "timing": true,
+    "media": true,
+    "presets": true
+  },
+  "rendered": false,
+  "limits": "Saved first-build QA and caption word clocks only. No continuous visual listening, asset content verification, native UI, color/person/plate coverage or production throughput acceptance."
+}

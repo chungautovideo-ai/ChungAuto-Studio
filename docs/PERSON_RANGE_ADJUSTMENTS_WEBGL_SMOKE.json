@@ -1,0 +1,18 @@
+{
+  "actualWebGL": true,
+  "syntheticMasks": true,
+  "rangeZero": [
+    157,
+    104,
+    80,
+    255
+  ],
+  "rangeLift": [
+    171,
+    119,
+    94,
+    255
+  ],
+  "sourceClockAndSeek": true,
+  "scope": "Shader scalar selection on synthetic source/masks; not semantic tracking quality."
+}

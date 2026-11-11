@@ -1,0 +1,70 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "project": "workspace/content/2026-11-04/contentos-smoke-segfit-1280-1793753182874",
+      "appendSaveReload": true,
+      "duration": 4
+    },
+    {
+      "width": 1920,
+      "project": "workspace/content/2026-11-04/contentos-smoke-segfit-1920-1793753185832",
+      "appendSaveReload": true,
+      "duration": 4
+    }
+  ],
+  "syntheticSource": true,
+  "render": {
+    "running": false,
+    "byAi": true,
+    "quality": "final",
+    "progress": 100,
+    "ok": true,
+    "log": ")\n[initSession:screenshot] GSAP proxy flush complete (973ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:screenshot] pollHfReady complete (1209ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1210ms)\n[initSession:screenshot] applyVideoMetadataHints complete (1212ms)\n[initSession:screenshot] media + fonts + tailwind ready (1213ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1215ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1215ms)\n  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (1/2 ready)\n@hf-progress {\"code\":\"start_browsers\",\"done\":1,\"total\":2,\"pct\":25}\n  ██████░░░░░░░░░░░░░░░░░░░  26%  Capturing frame 1/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":1,\"total\":75,\"pct\":26}\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:screenshot] pollHfReady complete (1394ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1395ms)\n[initSession:screenshot] applyVideoMetadataHints complete (1397ms)\n[initSession:screenshot] media + fonts + tailwind ready (1398ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1401ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1401ms)\n  ███████░░░░░░░░░░░░░░░░░░  30%  Capturing frame 9/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":9,\"total\":75,\"pct\":30}\n  █████████░░░░░░░░░░░░░░░░  36%  Capturing frame 18/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":18,\"total\":75,\"pct\":36}\n  ██████████░░░░░░░░░░░░░░░  41%  Capturing frame 27/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":27,\"total\":75,\"pct\":41}\n  ███████████░░░░░░░░░░░░░░  47%  Capturing frame 36/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":36,\"total\":75,\"pct\":47}\n  █████████████░░░░░░░░░░░░  52%  Capturing frame 45/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":45,\"total\":75,\"pct\":52}\n  ██████████████░░░░░░░░░░░  57%  Capturing frame 53/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":53,\"total\":75,\"pct\":57}\n  ███████████████░░░░░░░░░░  62%  Capturing frame 61/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":61,\"total\":75,\"pct\":62}\n  ████████████████░░░░░░░░░  66%  Capturing frame 68/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":68,\"total\":75,\"pct\":66}\n  █████████████████░░░░░░░░  69%  Capturing frame 73/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":73,\"total\":75,\"pct\":69}\n  █████████████████░░░░░░░░  70%  Capturing frame 75/75 (2 workers)\n@hf-progress {\"code\":\"capture\",\"done\":75,\"total\":75,\"pct\":70}\n[INFO] [Render:trace] {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"phase\":\"capture_disk\",\"status\":\"end\",\"elapsedMs\":11890,\"durationMs\":6306,\"stagePhase\":\"capturing\",\"needsAlpha\":false,\"workerCount\":2,\"forceScreenshot\":false,\"totalFrames\":75,\"framesCompleted\":75,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"phase\":\"encode\",\"status\":\"start\",\"elapsedMs\":11891,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":2,\"forceScreenshot\":false,\"totalFrames\":75,\"framesCompleted\":75,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render] Encoded frames while capturing {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"framesFed\":75,\"totalFrames\":75}\n  ██████████████████░░░░░░░  75%  Encoding video\n@hf-progress {\"code\":\"encode\",\"done\":0,\"total\":75,\"pct\":75}\n  ██████████████████████░░░  90%  Encoding frame 75/75\n@hf-progress {\"code\":\"encode\",\"done\":75,\"total\":75,\"pct\":90}\n[INFO] [Render:trace] {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"phase\":\"encode\",\"status\":\"end\",\"elapsedMs\":12464,\"durationMs\":572,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":2,\"forceScreenshot\":false,\"totalFrames\":75,\"framesCompleted\":75,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":12465,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":2,\"forceScreenshot\":false,\"totalFrames\":75,\"framesCompleted\":75,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████████░░░  90%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":0,\"total\":2.5,\"pct\":90}\n  ████████████████████████░  99%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":2.5,\"total\":2.5,\"pct\":99}\n[INFO] [Render:trace] {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":12513,\"durationMs\":47,\"stagePhase\":\"capturing\",\"hasAudio\":false,\"workerCount\":2,\"forceScreenshot\":false,\"totalFrames\":75,\"framesCompleted\":75,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"19763bba-e27c-4b5b-9b70-679fe81043e4\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":12565,\"message\":\"artifact validated\",\"totalElapsedMs\":12555}\n  █████████████████████████  100%  Render complete\n\n◇  D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-segfit-1280-1793753182874\\work\\render-snapshots\\83d878c0-e9e4-4735-990c-ae6ed8321313\\renders\\contentos-smoke-segfit-1280-1793753182874-final.mp4\n   47.2 KB · 2.5s video · rendered in 12.6s\n   screenshot capture · hardware gpu · compile 0.9s · extract 0.4s · audio 0.0s · probe 0.1s · setup 4.2s · capture 6.3s · encode 0.6s · assemble 0.0s\n   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?os=windows&src=cli\n\n  1 HyperFrames skill out of date or missing.\n  Run: npx hyperframes skills update\n\n",
+    "pid": 36828,
+    "startedAt": 1793753188459,
+    "jobDir": null,
+    "channels": [],
+    "snapshotId": "83d878c0-e9e4-4735-990c-ae6ed8321313",
+    "revision": "2c773eba2cb881bc75167b199353ef9c91efe6c0416bf0a0c1fce3127bcfe56f",
+    "output": "renders/contentos-smoke-segfit-1280-1793753182874-final.mp4",
+    "saved": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-segfit-1280-1793753182874\\renders\\contentos-smoke-segfit-1280-1793753182874-final.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "2.500000"
+      }
+    },
+    "loudnorm": true,
+    "finishedAt": 1793753204904
+  },
+  "pixels": [
+    [
+      0,
+      0,
+      254
+    ],
+    [
+      253,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      254
+    ]
+  ],
+  "pageErrors": [],
+  "limits": "Actual playhead insertion splits speed2 primary at source1.5/output0.75, preserves source/audio clock, moves anchor and renders2.5s blue/red/blue; synthetic local only."
+}

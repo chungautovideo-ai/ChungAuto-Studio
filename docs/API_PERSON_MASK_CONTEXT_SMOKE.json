@@ -1,0 +1,17 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-motion",
+  "realSavedSAM2": true,
+  "selectionSamples": 48,
+  "originalMinifiedChars": 134876,
+  "projectedChars": 1576,
+  "requestBodyChars": [
+    5223,
+    7790,
+    8036
+  ],
+  "cameraUnchanged": true,
+  "projectFaceBytesUnchanged": true,
+  "syntheticGatewayOnly": true,
+  "noPaidProvider": true,
+  "noLiveWrite": true
+}

@@ -1,0 +1,87 @@
+{
+  "sourceQA": "workspace/content/2026-11-04/contentos-selected-exposure-qa-4",
+  "projects": [
+    "workspace/content/2026-11-05/contentos-selected-final-baseline",
+    "workspace/content/2026-11-05/contentos-selected-final-lift"
+  ],
+  "outputs": [
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-selected-final-baseline\\renders\\contentos-selected-final-baseline-final.mp4",
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-selected-final-lift\\renders\\contentos-selected-final-lift-final.mp4"
+  ],
+  "actualFinalRender": true,
+  "seconds": 6.006,
+  "personLightBaseline": 0,
+  "personLightLift": 30,
+  "bodySmoothBoth": 17,
+  "comparisons": [
+    {
+      "time": 0.5,
+      "person": {
+        "count": 2390,
+        "lumaGain": 10.1953563179916,
+        "absoluteDifference": 11.041143654114348,
+        "changedOver8": 1819,
+        "changedFraction": 0.7610878661087866
+      },
+      "background": {
+        "count": 25800,
+        "lumaGain": -0.0000141317829457517,
+        "absoluteDifference": 0.454715762273908,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "time": 2,
+      "person": {
+        "count": 2999,
+        "lumaGain": 11.529711970656871,
+        "absoluteDifference": 12.325552962098431,
+        "changedOver8": 2306,
+        "changedFraction": 0.768922974324775
+      },
+      "background": {
+        "count": 24109,
+        "lumaGain": 0.0003632419428429456,
+        "absoluteDifference": 0.46997663389882455,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "time": 3.5,
+      "person": {
+        "count": 3139,
+        "lumaGain": 10.926074864606512,
+        "absoluteDifference": 11.760327068068253,
+        "changedOver8": 2281,
+        "changedFraction": 0.7266645428480408
+      },
+      "background": {
+        "count": 24152,
+        "lumaGain": 0.0036288671745611477,
+        "absoluteDifference": 0.4571188031357005,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    },
+    {
+      "time": 5,
+      "person": {
+        "count": 3182,
+        "lumaGain": 10.827780578252565,
+        "absoluteDifference": 11.671694950764579,
+        "changedOver8": 2266,
+        "changedFraction": 0.7121307353865494
+      },
+      "background": {
+        "count": 23412,
+        "lumaGain": 0.004377020331453959,
+        "absoluteDifference": 0.42640526225867464,
+        "changedOver8": 0,
+        "changedFraction": 0
+      }
+    }
+  ],
+  "scope": "Four decoded H264 frames downscaled to mask resolution; safe interiors exclude 4-pixel mask boundary, slight cover crop/resampling and codec differences remain. Not all-frame identity/privacy/skin-tone or full production acceptance."
+}

@@ -1,0 +1,31 @@
+{
+  "sizes": [
+    {
+      "reopenedAfterReload": true,
+      "oldCoverPreserved": true,
+      "overflowBlocked": true,
+      "width": 1280,
+      "project": "workspace/content/2026-11-04/contentos-smoke-imagecover-1280-1793755539068",
+      "settingsImport": true,
+      "sharedLibrary": true,
+      "reused": false,
+      "coverTextEdited": true,
+      "cover": "workspace\\content\\2026-11-04\\contentos-smoke-imagecover-1280-1793755539068\\renders\\anh-bia-1.jpg"
+    },
+    {
+      "reopenedAfterReload": true,
+      "oldCoverPreserved": true,
+      "overflowBlocked": true,
+      "width": 1920,
+      "project": "workspace/content/2026-11-04/contentos-smoke-imagecover-1920-1793755542584",
+      "settingsImport": true,
+      "sharedLibrary": true,
+      "reused": true,
+      "coverTextEdited": true,
+      "cover": "workspace\\content\\2026-11-04\\contentos-smoke-imagecover-1920-1793755542584\\renders\\anh-bia-1.jpg"
+    }
+  ],
+  "syntheticSource": true,
+  "sourceUnchanged": true,
+  "pageErrors": []
+}

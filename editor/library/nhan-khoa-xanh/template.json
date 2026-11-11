@@ -1,0 +1,1147 @@
+{
+  "id": "nhan-khoa-xanh",
+  "name": "Nhãn Khoa Xanh",
+  "version": 1,
+  "tier": "free",
+  "order": 72,
+  "isNew": true,
+  "web": true,
+  "date": "2026-11-02",
+  "tags": [
+    "Giáo dục"
+  ],
+  "industries": [
+    "Giáo dục"
+  ],
+  "description": "Chuyên gia (y tế, khoa học, giáo dục) ngồi bàn giải thích: từ khoá chữ viết tay xanh ngọc phát sáng chồng chữ nhỏ trắng, chữ viết tay đỏ cho điều gây sốc, nhãn viên thuốc xanh cho câu thường, icon nét trắng phát sáng, ô icon trắng bo góc, nửa trên khung là ảnh minh hoạ cắt sóng, chia đôi trước / sau, chớp trắng.",
+  "credit": "Phong cách tham khảo một video mẫu Before / Edit — dựng lại hoàn toàn bằng HTML/CSS, không dùng hình / tiếng / lời của video gốc.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Nhãn Khoa Xanh",
+    "fontTitle": "Be Vietnam Pro",
+    "fontSub": "Be Vietnam Pro",
+    "fontLabel": "Be Vietnam Pro",
+    "c1": "#FFFFFF",
+    "c2": "#4FE3D8",
+    "c3": "#FFFFFF",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Be Vietnam Pro:wght@500;600;700",
+      "Dancing Script:wght@700"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 56,
+      "color": "#FFFFFF",
+      "active": "#4FE3D8",
+      "uppercase": false
+    },
+    "css": ".nk{position:absolute;inset:0;pointer-events:none}\n.nk .t{position:absolute;white-space:nowrap;line-height:1}\n.nk .n{font-family:\"Be Vietnam Pro\",sans-serif;font-weight:500;font-size:var(--nk-s,46px);color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.45)}\n.nk .tay{font-family:\"Dancing Script\",cursive;font-weight:700;font-size:var(--nk-l,160px);color:#E9FFFD;text-shadow:0 0 10px #4FE3D8,0 0 30px rgba(40,210,200,.75),0 4px 10px rgba(0,0,0,.25)}\n.nk .tay.do{color:#FFE1E1;text-shadow:0 0 10px #FF4F5E,0 0 30px rgba(255,60,80,.7),0 4px 10px rgba(0,0,0,.25)}\n.nk-vien{position:absolute;left:0;right:0;top:var(--nk-y,1220px);text-align:center}\n.nk-vien span{display:inline-block;padding:12px 28px;border-radius:14px;background:#26C6C1;color:#fff;font-family:\"Be Vietnam Pro\",sans-serif;font-weight:600;font-size:var(--nk-s,44px);box-shadow:0 6px 16px rgba(0,0,0,.25)}\n.nk-ic{position:absolute;left:var(--nk-x,700px);top:var(--nk-y,880px);font-size:var(--nk-e,150px);line-height:1;filter:drop-shadow(0 0 12px rgba(255,255,255,.9)) drop-shadow(0 6px 10px rgba(0,0,0,.25))}\n.nk-o{position:absolute;left:50%;top:var(--nk-y,300px);width:330px;height:330px;margin-left:-165px;border-radius:40px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:190px;box-shadow:0 18px 40px rgba(0,0,0,.25)}\n.nk-song{position:absolute;left:0;right:0;top:0;height:var(--nk-h,780px);background:linear-gradient(160deg,#e6e2dc,#b9b2a8);display:flex;align-items:center;justify-content:center;font-size:300px;\n  clip-path:polygon(0 0,100% 0,100% 82%,85% 88%,65% 80%,45% 92%,25% 84%,0 90%)}\n.nk-song::after{content:\"\";position:absolute;left:0;right:0;bottom:0;height:100%;clip-path:inherit;box-shadow:inset 0 -10px 0 #8FF3EC}\n.nk-doi{position:absolute;left:0;right:0;top:0;height:var(--nk-h,900px);display:flex}\n.nk-doi .o{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;font-size:230px;background:linear-gradient(160deg,#d9d2c4,#a89c86)}\n.nk-doi .o:nth-child(2){background:linear-gradient(160deg,#f4f4f2,#d9dcdc)}\n.nk-doi .o b{font-family:\"Be Vietnam Pro\",sans-serif;font-weight:700;font-size:40px;color:#333;background:rgba(255,255,255,.85);padding:8px 20px;border-radius:12px}\n.nk-doi .vach{position:absolute;left:50%;top:0;bottom:0;width:8px;margin-left:-4px;background:#fff;box-shadow:0 0 18px rgba(255,255,255,.9)}\n.nk-chop{position:absolute;inset:0;background:#fff}\n.nk-mo{position:absolute;inset:0;backdrop-filter:blur(36px);-webkit-backdrop-filter:blur(36px);background:rgba(255,255,255,.12)}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1220,
+    "maxWords": 3,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "camera": {
+    "color": {
+      "brightness": 1.04,
+      "contrast": 1.04,
+      "saturate": 1.02,
+      "temp": -0.02,
+      "vignette": 0.1
+    }
+  },
+  "audio": {
+    "autoSfx": false,
+    "sfxVolume": 0.5,
+    "musicVolume": 0.08
+  },
+  "texts": {},
+  "scenes": {
+    "tIn": "none"
+  },
+  "brolls": {
+    "mode": "full",
+    "tIn": "none"
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "tay-xanh-1",
+      "name": "Chữ viết tay xanh ngọc: nếu con đang học · Thuộc lòng",
+      "desc": "Chữ nhỏ trắng phía trên + từ khoá chữ viết tay rất lớn xanh ngọc phát sáng, ngang ngực trái (thuật ngữ chính)",
+      "img": "fx/tay-xanh-1.jpg",
+      "at": 0.05
+    },
+    {
+      "id": "icon-net-2",
+      "name": "Icon nét phát sáng",
+      "desc": "1 icon trắng phát sáng bật cạnh người khi nhắc đối tượng (răng, sách, não…)",
+      "img": "fx/icon-net-2.jpg",
+      "at": 2.3
+    },
+    {
+      "id": "tay-do",
+      "name": "Chữ viết tay đỏ + chữ nhỏ",
+      "desc": "Chữ nhỏ trắng 2 bên + từ chữ viết tay đỏ phát sáng (điều gây sốc / cảnh báo)",
+      "img": "fx/tay-do.jpg",
+      "at": 5.1
+    },
+    {
+      "id": "anh-song",
+      "name": "Ảnh minh hoạ cắt sóng",
+      "desc": "Nửa trên khung là ảnh minh hoạ, mép dưới cắt sóng viền xanh, người vẫn thấy ở dưới (giới thiệu sản phẩm / chủ đề)",
+      "img": "fx/anh-song.jpg",
+      "at": 6.7
+    },
+    {
+      "id": "vien-xanh-6",
+      "name": "Nhãn viên thuốc xanh: chưa hiểu bản chất",
+      "desc": "1 dòng chữ trắng trên nhãn xanh ngọc bo góc giữa ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/vien-xanh-6.jpg",
+      "at": 9.3
+    },
+    {
+      "id": "chia-doi-7",
+      "name": "Chia đôi trước / sau: §A · lúc đầu · rồi lại tụt",
+      "desc": "Nửa trên chia 2 ô trước / sau có nhãn, vạch trắng giữa trượt vào (so sánh)",
+      "img": "fx/chia-doi-7.jpg",
+      "at": 11.68
+    },
+    {
+      "id": "tay-xanh-8",
+      "name": "Chữ viết tay xanh ngọc: hãy thử · Cách này",
+      "desc": "Chữ nhỏ trắng phía trên + từ khoá chữ viết tay rất lớn xanh ngọc phát sáng, ngang ngực trái (thuật ngữ chính)",
+      "img": "fx/tay-xanh-8.jpg",
+      "at": 14.08
+    },
+    {
+      "id": "o-icon-trang-9",
+      "name": "Ô icon trắng bo góc",
+      "desc": "Ô vuông trắng bo góc có icon lớn nổi trên đầu (khái niệm / chất)",
+      "img": "fx/o-icon-trang-9.jpg",
+      "at": 15.36
+    },
+    {
+      "id": "vien-xanh-10",
+      "name": "Nhãn viên thuốc xanh: gập sách lại",
+      "desc": "1 dòng chữ trắng trên nhãn xanh ngọc bo góc giữa ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/vien-xanh-10.jpg",
+      "at": 16.64
+    },
+    {
+      "id": "tay-do-11",
+      "name": "Chữ viết tay đỏ + chữ nhỏ: rồi tự · Viết ra · những gì con nh",
+      "desc": "Chữ nhỏ trắng 2 bên + từ chữ viết tay đỏ phát sáng (điều gây sốc / cảnh báo)",
+      "img": "fx/tay-do-11.jpg",
+      "at": 17.91
+    },
+    {
+      "id": "icon-net-12",
+      "name": "Icon nét phát sáng",
+      "desc": "1 icon trắng phát sáng bật cạnh người khi nhắc đối tượng (răng, sách, não…)",
+      "img": "fx/icon-net-12.jpg",
+      "at": 19.19
+    },
+    {
+      "id": "tay-xanh-13",
+      "name": "Chữ viết tay xanh ngọc: não bộ · Ghi nhớ",
+      "desc": "Chữ nhỏ trắng phía trên + từ khoá chữ viết tay rất lớn xanh ngọc phát sáng, ngang ngực trái (thuật ngữ chính)",
+      "img": "fx/tay-xanh-13.jpg",
+      "at": 20.67
+    },
+    {
+      "id": "anh-song-14",
+      "name": "Ảnh minh hoạ cắt sóng",
+      "desc": "Nửa trên khung là ảnh minh hoạ, mép dưới cắt sóng viền xanh, người vẫn thấy ở dưới (giới thiệu sản phẩm / chủ đề)",
+      "img": "fx/anh-song-14.jpg",
+      "at": 21.87
+    },
+    {
+      "id": "vien-xanh-15",
+      "name": "Nhãn viên thuốc xanh: tự nhớ lại",
+      "desc": "1 dòng chữ trắng trên nhãn xanh ngọc bo góc giữa ngực, đổi theo lời (thay phụ đề)",
+      "img": "fx/vien-xanh-15.jpg",
+      "at": 23.06
+    },
+    {
+      "id": "chia-doi-16",
+      "name": "Chia đôi trước / sau: đọc lại",
+      "desc": "Nửa trên chia 2 ô trước / sau có nhãn, vạch trắng giữa trượt vào (so sánh)",
+      "img": "fx/chia-doi-16.jpg",
+      "at": 24.26
+    },
+    {
+      "id": "tay-do-17",
+      "name": "Chữ viết tay đỏ + chữ nhỏ: không phải · Đọc đi · đọc lại",
+      "desc": "Chữ nhỏ trắng 2 bên + từ chữ viết tay đỏ phát sáng (điều gây sốc / cảnh báo)",
+      "img": "fx/tay-do-17.jpg",
+      "at": 25.45
+    },
+    {
+      "id": "mo-lia",
+      "name": "Mờ lia chuyển cảnh",
+      "desc": "Khung nhoè lướt qua giữa 2 cảnh",
+      "img": "fx/mo-lia.jpg",
+      "at": 14.08
+    }
+  ],
+  "presets": [
+    {
+      "id": "tay-xanh-1",
+      "group": "chu",
+      "name": "Chữ viết tay xanh ngọc: nếu con đang học · Thuộc lòng",
+      "desc": "Chữ nhỏ trắng phía trên + từ khoá chữ viết tay rất lớn xanh ngọc phát sáng, ngang ngực trái (thuật ngữ chính)",
+      "dur": 1.8,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"nk\"><div class=\"t n a\" style=\"left:330px;top:1090px\">nếu con đang học</div><div class=\"t tay b\" style=\"left:90px;top:1120px\">Thuộc lòng</div></div>",
+      "anim": [
+        {
+          "sel": ".nk .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk .b",
+          "from": {
+            "opacity": 0,
+            "clipPath": "inset(0 100% 0 0)"
+          },
+          "to": {
+            "opacity": 1,
+            "clipPath": "inset(0 0% 0 0)"
+          },
+          "at": 0.15,
+          "dur": 0.6,
+          "ease": "power2.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk .a",
+          "label": "Chữ nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nk .b",
+          "label": "Chữ viết tay",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "icon-net-2",
+      "group": "dohoa",
+      "name": "Icon nét phát sáng",
+      "desc": "1 icon trắng phát sáng bật cạnh người khi nhắc đối tượng (răng, sách, não…)",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nk-ic a\">🤯</div>",
+      "anim": [
+        {
+          "sel": ".nk-ic",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-ic",
+          "label": "Icon",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tay-do",
+      "group": "chu",
+      "name": "Chữ viết tay đỏ + chữ nhỏ",
+      "desc": "Chữ nhỏ trắng 2 bên + từ chữ viết tay đỏ phát sáng (điều gây sốc / cảnh báo)",
+      "dur": 1.8,
+      "bg": "face",
+      "sfx": "deep-hit",
+      "html": "<div class=\"nk\"><div class=\"t n a\" style=\"left:600px;top:1060px\">và điều</div><div class=\"t tay do b\" style=\"left:300px;top:1090px;--nk-l:150px\">Bất ngờ</div><div class=\"t n c\" style=\"left:420px;top:1260px\">là gì không?</div></div>",
+      "anim": [
+        {
+          "sel": ".nk .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk .b",
+          "from": {
+            "opacity": 0,
+            "clipPath": "inset(0 100% 0 0)"
+          },
+          "to": {
+            "opacity": 1,
+            "clipPath": "inset(0 0% 0 0)"
+          },
+          "at": 0.15,
+          "dur": 0.55,
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".nk .c",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.7,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk .a",
+          "label": "Chữ trên",
+          "words": false
+        },
+        {
+          "sel": ".nk .b",
+          "label": "Chữ đỏ",
+          "words": false
+        },
+        {
+          "sel": ".nk .c",
+          "label": "Chữ dưới",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chop-trang",
+      "group": "dohoa",
+      "name": "Chớp trắng",
+      "desc": "Chớp trắng 5 khung ở điểm cắt",
+      "dur": 0.3,
+      "bg": "face",
+      "sfx": "whoosh",
+      "out": "none",
+      "html": "<div class=\"nk-chop\"></div>",
+      "preview": "<div class=\"nk-chop\" style=\"opacity:.7\"></div>",
+      "anim": [
+        {
+          "sel": ".nk-chop",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 0.95
+          },
+          "at": 0,
+          "dur": 0.05
+        },
+        {
+          "sel": ".nk-chop",
+          "to": {
+            "opacity": 0
+          },
+          "at": 0.1,
+          "dur": 0.18
+        }
+      ]
+    },
+    {
+      "id": "anh-song",
+      "group": "dohoa",
+      "name": "Ảnh minh hoạ cắt sóng",
+      "desc": "Nửa trên khung là ảnh minh hoạ, mép dưới cắt sóng viền xanh, người vẫn thấy ở dưới (giới thiệu sản phẩm / chủ đề)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "whoosh",
+      "html": "<div class=\"nk-song a\">📚</div>",
+      "anim": [
+        {
+          "sel": ".nk-song",
+          "from": {
+            "y": -800
+          },
+          "to": {
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.35,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-song",
+          "label": "Ảnh / icon",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "vien-xanh-6",
+      "group": "chu",
+      "name": "Nhãn viên thuốc xanh: chưa hiểu bản chất",
+      "desc": "1 dòng chữ trắng trên nhãn xanh ngọc bo góc giữa ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nk-vien\"><span class=\"a\">chưa hiểu bản chất</span></div>",
+      "anim": [
+        {
+          "sel": ".nk-vien span",
+          "from": {
+            "opacity": 0,
+            "scaleX": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scaleX": 1
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-vien span",
+          "label": "Dòng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chia-doi-7",
+      "group": "dohoa",
+      "name": "Chia đôi trước / sau: §A · lúc đầu · rồi lại tụt",
+      "desc": "Nửa trên chia 2 ô trước / sau có nhãn, vạch trắng giữa trượt vào (so sánh)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "swish",
+      "html": "<div class=\"nk-doi\"><div class=\"o a\">😊<b>lúc đầu</b></div><div class=\"o b\">😩<b>rồi lại tụt</b></div><div class=\"vach\"></div></div>",
+      "anim": [
+        {
+          "sel": ".nk-doi .a",
+          "from": {
+            "opacity": 0,
+            "x": -540
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk-doi .b",
+          "from": {
+            "opacity": 0,
+            "x": 540
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.15,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk-doi .vach",
+          "from": {
+            "scaleY": 0
+          },
+          "to": {
+            "scaleY": 1
+          },
+          "at": 0.3,
+          "dur": 0.25
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-doi .a b",
+          "label": "Nhãn trái",
+          "words": false
+        },
+        {
+          "sel": ".nk-doi .b b",
+          "label": "Nhãn phải",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tay-xanh-8",
+      "group": "chu",
+      "name": "Chữ viết tay xanh ngọc: hãy thử · Cách này",
+      "desc": "Chữ nhỏ trắng phía trên + từ khoá chữ viết tay rất lớn xanh ngọc phát sáng, ngang ngực trái (thuật ngữ chính)",
+      "dur": 1.8,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"nk\"><div class=\"t n a\" style=\"left:330px;top:1090px\">hãy thử</div><div class=\"t tay b\" style=\"left:90px;top:1120px\">Cách này</div></div>",
+      "anim": [
+        {
+          "sel": ".nk .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk .b",
+          "from": {
+            "opacity": 0,
+            "clipPath": "inset(0 100% 0 0)"
+          },
+          "to": {
+            "opacity": 1,
+            "clipPath": "inset(0 0% 0 0)"
+          },
+          "at": 0.15,
+          "dur": 0.6,
+          "ease": "power2.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk .a",
+          "label": "Chữ nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nk .b",
+          "label": "Chữ viết tay",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "o-icon-trang-9",
+      "group": "dohoa",
+      "name": "Ô icon trắng bo góc",
+      "desc": "Ô vuông trắng bo góc có icon lớn nổi trên đầu (khái niệm / chất)",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nk-o a\">📖</div>",
+      "anim": [
+        {
+          "sel": ".nk-o",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-o",
+          "label": "Icon",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "vien-xanh-10",
+      "group": "chu",
+      "name": "Nhãn viên thuốc xanh: gập sách lại",
+      "desc": "1 dòng chữ trắng trên nhãn xanh ngọc bo góc giữa ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nk-vien\"><span class=\"a\">gập sách lại</span></div>",
+      "anim": [
+        {
+          "sel": ".nk-vien span",
+          "from": {
+            "opacity": 0,
+            "scaleX": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scaleX": 1
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-vien span",
+          "label": "Dòng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tay-do-11",
+      "group": "chu",
+      "name": "Chữ viết tay đỏ + chữ nhỏ: rồi tự · Viết ra · những gì con nh",
+      "desc": "Chữ nhỏ trắng 2 bên + từ chữ viết tay đỏ phát sáng (điều gây sốc / cảnh báo)",
+      "dur": 1.8,
+      "bg": "face",
+      "sfx": "deep-hit",
+      "html": "<div class=\"nk\"><div class=\"t n a\" style=\"left:600px;top:1060px\">rồi tự</div><div class=\"t tay do b\" style=\"left:300px;top:1090px;--nk-l:150px\">Viết ra</div><div class=\"t n c\" style=\"left:420px;top:1260px\">những gì con nhớ</div></div>",
+      "anim": [
+        {
+          "sel": ".nk .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk .b",
+          "from": {
+            "opacity": 0,
+            "clipPath": "inset(0 100% 0 0)"
+          },
+          "to": {
+            "opacity": 1,
+            "clipPath": "inset(0 0% 0 0)"
+          },
+          "at": 0.15,
+          "dur": 0.55,
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".nk .c",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.7,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk .a",
+          "label": "Chữ trên",
+          "words": false
+        },
+        {
+          "sel": ".nk .b",
+          "label": "Chữ đỏ",
+          "words": false
+        },
+        {
+          "sel": ".nk .c",
+          "label": "Chữ dưới",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "icon-net-12",
+      "group": "dohoa",
+      "name": "Icon nét phát sáng",
+      "desc": "1 icon trắng phát sáng bật cạnh người khi nhắc đối tượng (răng, sách, não…)",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nk-ic a\">✍️</div>",
+      "anim": [
+        {
+          "sel": ".nk-ic",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-ic",
+          "label": "Icon",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tay-xanh-13",
+      "group": "chu",
+      "name": "Chữ viết tay xanh ngọc: não bộ · Ghi nhớ",
+      "desc": "Chữ nhỏ trắng phía trên + từ khoá chữ viết tay rất lớn xanh ngọc phát sáng, ngang ngực trái (thuật ngữ chính)",
+      "dur": 1.8,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"nk\"><div class=\"t n a\" style=\"left:330px;top:1090px\">não bộ</div><div class=\"t tay b\" style=\"left:90px;top:1120px\">Ghi nhớ</div></div>",
+      "anim": [
+        {
+          "sel": ".nk .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk .b",
+          "from": {
+            "opacity": 0,
+            "clipPath": "inset(0 100% 0 0)"
+          },
+          "to": {
+            "opacity": 1,
+            "clipPath": "inset(0 0% 0 0)"
+          },
+          "at": 0.15,
+          "dur": 0.6,
+          "ease": "power2.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk .a",
+          "label": "Chữ nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nk .b",
+          "label": "Chữ viết tay",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "anh-song-14",
+      "group": "dohoa",
+      "name": "Ảnh minh hoạ cắt sóng",
+      "desc": "Nửa trên khung là ảnh minh hoạ, mép dưới cắt sóng viền xanh, người vẫn thấy ở dưới (giới thiệu sản phẩm / chủ đề)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "whoosh",
+      "html": "<div class=\"nk-song a\">🧠</div>",
+      "anim": [
+        {
+          "sel": ".nk-song",
+          "from": {
+            "y": -800
+          },
+          "to": {
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.35,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-song",
+          "label": "Ảnh / icon",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "vien-xanh-15",
+      "group": "chu",
+      "name": "Nhãn viên thuốc xanh: tự nhớ lại",
+      "desc": "1 dòng chữ trắng trên nhãn xanh ngọc bo góc giữa ngực, đổi theo lời (thay phụ đề)",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nk-vien\"><span class=\"a\">tự nhớ lại</span></div>",
+      "anim": [
+        {
+          "sel": ".nk-vien span",
+          "from": {
+            "opacity": 0,
+            "scaleX": 0.3
+          },
+          "to": {
+            "opacity": 1,
+            "scaleX": 1
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-vien span",
+          "label": "Dòng",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chia-doi-16",
+      "group": "dohoa",
+      "name": "Chia đôi trước / sau: đọc lại",
+      "desc": "Nửa trên chia 2 ô trước / sau có nhãn, vạch trắng giữa trượt vào (so sánh)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "swish",
+      "html": "<div class=\"nk-doi\"><div class=\"o a\">📖<b>đọc lại</b></div><div class=\"o b\">🧠<b>tự nhớ</b></div><div class=\"vach\"></div></div>",
+      "anim": [
+        {
+          "sel": ".nk-doi .a",
+          "from": {
+            "opacity": 0,
+            "x": -540
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk-doi .b",
+          "from": {
+            "opacity": 0,
+            "x": 540
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.15,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk-doi .vach",
+          "from": {
+            "scaleY": 0
+          },
+          "to": {
+            "scaleY": 1
+          },
+          "at": 0.3,
+          "dur": 0.25
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk-doi .a b",
+          "label": "Nhãn trái",
+          "words": false
+        },
+        {
+          "sel": ".nk-doi .b b",
+          "label": "Nhãn phải",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tay-do-17",
+      "group": "chu",
+      "name": "Chữ viết tay đỏ + chữ nhỏ: không phải · Đọc đi · đọc lại",
+      "desc": "Chữ nhỏ trắng 2 bên + từ chữ viết tay đỏ phát sáng (điều gây sốc / cảnh báo)",
+      "dur": 1.8,
+      "bg": "face",
+      "sfx": "deep-hit",
+      "html": "<div class=\"nk\"><div class=\"t n a\" style=\"left:600px;top:1060px\">không phải</div><div class=\"t tay do b\" style=\"left:300px;top:1090px;--nk-l:150px\">Đọc đi</div><div class=\"t n c\" style=\"left:420px;top:1260px\">đọc lại</div></div>",
+      "anim": [
+        {
+          "sel": ".nk .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nk .b",
+          "from": {
+            "opacity": 0,
+            "clipPath": "inset(0 100% 0 0)"
+          },
+          "to": {
+            "opacity": 1,
+            "clipPath": "inset(0 0% 0 0)"
+          },
+          "at": 0.15,
+          "dur": 0.55,
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".nk .c",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.7,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nk .a",
+          "label": "Chữ trên",
+          "words": false
+        },
+        {
+          "sel": ".nk .b",
+          "label": "Chữ đỏ",
+          "words": false
+        },
+        {
+          "sel": ".nk .c",
+          "label": "Chữ dưới",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "mo-lia",
+      "group": "dohoa",
+      "name": "Mờ lia chuyển cảnh",
+      "desc": "Khung nhoè lướt qua giữa 2 cảnh",
+      "dur": 0.6,
+      "bg": "face",
+      "sfx": "whoosh",
+      "out": "none",
+      "html": "<div class=\"nk-mo\"></div>",
+      "anim": [
+        {
+          "sel": ".nk-mo",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.2
+        },
+        {
+          "sel": ".nk-mo",
+          "to": {
+            "opacity": 0
+          },
+          "at": 0.35,
+          "dur": 0.22
+        }
+      ]
+    },
+    {
+      "id": "tram-toan",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "none",
+      "name": "Cảnh trám toàn khung",
+      "desc": "Cảnh minh hoạ phủ kín khung",
+      "dur": 1.5
+    },
+    {
+      "id": "tram-01",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 1: Dụng cụ thí nghiệm",
+      "desc": "Dụng cụ thí nghiệm, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/01.jpg"
+    },
+    {
+      "id": "tram-02",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 2: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/02.jpg"
+    },
+    {
+      "id": "tram-03",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 3: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/03.jpg"
+    },
+    {
+      "id": "tram-04",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 4: Dụng cụ thí nghiệm",
+      "desc": "Dụng cụ thí nghiệm, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/04.jpg"
+    },
+    {
+      "id": "tram-05",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 5: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/05.jpg"
+    },
+    {
+      "id": "tram-06",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 6: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/06.jpg"
+    },
+    {
+      "id": "tram-07",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 7: Dụng cụ thí nghiệm",
+      "desc": "Dụng cụ thí nghiệm, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/07.jpg"
+    },
+    {
+      "id": "tram-08",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 8: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/08.jpg"
+    },
+    {
+      "id": "tram-09",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 9: Cảnh minh hoạ học tập",
+      "desc": "Cảnh minh hoạ học tập, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/09.jpg"
+    },
+    {
+      "id": "tram-10",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 10: Dụng cụ thí nghiệm",
+      "desc": "Dụng cụ thí nghiệm, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/10.jpg"
+    }
+  ]
+}

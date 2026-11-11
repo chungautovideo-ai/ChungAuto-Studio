@@ -1,0 +1,27 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-facesources-11",
+  "detector": "Real MediaPipe on Q2 cropped720x960 source12–13s scaled360x480 and flipped copy",
+  "tracks": [
+    {
+      "src": "inputs/raw.mp4",
+      "samples": 16,
+      "found": 16,
+      "sha256": "6e89a31dde611cbede1782ec2fb3426717af4faf3119e038b006699b034e05b7"
+    },
+    {
+      "src": "inputs/second.mp4",
+      "samples": 16,
+      "found": 16,
+      "sha256": "6974d074e5e0e7fdd15276305d60843e84f4f94f9f032f8d2d4aed76cf480a76"
+    }
+  ],
+  "sourceBound": true,
+  "scanDoesNotEnablePreset": true,
+  "whiteSaved": true,
+  "bodyMaskSaved": true,
+  "bodyWhiteSaved": 25,
+  "maskPreviewWithoutProjectMutation": true,
+  "reopen": true,
+  "pageErrors": [],
+  "scope": "Initial uncropped360x640 detector attempt did not detect every source. Two-source A-roll scan and editor using larger face crop. Not whole-body/multi-person or full-video benchmark."
+}

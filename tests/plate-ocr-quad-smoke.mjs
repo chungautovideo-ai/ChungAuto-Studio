@@ -1,0 +1,12 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';
+import {suggestPlateRegions} from '../src/services/plate-suggestions.mjs';
+import {plateSuggestionGeometry} from '../editor/lib/plate-regions.js';
+assert.ok(process.argv.includes('--run-local'),'Use --run-local for local OCR on QA copy.');
+const prior=JSON.parse(fs.readFileSync('docs/PLATE_FRAME_CLOCK_OCR_SMOKE.json'));
+const source=path.join(prior.sourceQA,'inputs/raw.mp4'),hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex'),before=hash(source);
+const dir=fs.mkdtempSync(path.resolve('workspace/cache/plate-ocr-quad-'));fs.mkdirSync(path.join(dir,'inputs'));const copied=path.join(dir,'inputs/raw.mp4');fs.copyFileSync(source,copied);
+const project={source:{video:'inputs/raw.mp4'},segments:[{in:0,out:2}],brolls:[{id:'qa',src:'inputs/raw.mp4',at:0,dur:1,mediaStart:.74}]},snapshot=structuredClone(project);
+const result=await suggestPlateRegions(process.cwd(),dir,project,{brollId:'qa'});plateSuggestionGeometry(result.proposals);
+assert.equal(hash(source),before);assert.equal(hash(copied),before);assert.deepEqual(project,snapshot);assert.equal(result.requiresVisualReview,true);
+const evidence={scratch:dir,result,sourceAndProjectUnchanged:true,quadCount:result.proposals.filter(p=>p.quad).length,scope:'Actual local RapidOCR service on real-car QA copy. Geometry and read-only guards only; not UI, tracked output, physical plate outline or privacy acceptance.'};
+fs.writeFileSync('docs/PLATE_OCR_QUAD_SMOKE.json',JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify(evidence));

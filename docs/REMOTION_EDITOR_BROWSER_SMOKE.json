@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "actualEntry": true,
+      "actualWorkerCache": true,
+      "preview": true,
+      "explicitAddAndSave": true,
+      "reeditParameters": true,
+      "replaceWithoutDuplicate": true,
+      "undoReplacement": true
+    },
+    {
+      "width": 1920,
+      "actualEntry": true,
+      "actualWorkerCache": true,
+      "preview": true,
+      "explicitAddAndSave": true,
+      "reeditParameters": true,
+      "replaceWithoutDuplicate": true,
+      "undoReplacement": true
+    }
+  ],
+  "errors": [],
+  "fixtureProject": "workspace/content/2026-11-04/contentos-smoke-remotionapi-6"
+}

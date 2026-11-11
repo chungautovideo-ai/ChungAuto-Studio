@@ -1,0 +1,75 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-overlap-2",
+  "job": "workspace/content/_sua-video/20261105050949-8cc3afe4-contentos-qa-broll-overlap-2",
+  "startedAt": "2026-11-05T05:09:49.420Z",
+  "finishedAt": "2026-11-05T05:10:55.835Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "checks": [
+    {
+      "id": "b-man",
+      "projectAt": 16.06,
+      "outputStart": 15.52,
+      "outputEnd": 16.27,
+      "matchedWords": [
+        "màn"
+      ],
+      "windows": [
+        {
+          "start": 15.52,
+          "end": 16.27
+        }
+      ],
+      "valid": true
+    },
+    {
+      "id": "b-mau",
+      "projectAt": 20.7,
+      "outputStart": 20.16,
+      "outputEnd": 21.18,
+      "matchedWords": [
+        "đổi",
+        "màu"
+      ],
+      "windows": [
+        {
+          "start": 20.16,
+          "end": 21.18
+        }
+      ],
+      "valid": true
+    }
+  ],
+  "otherFieldsUnchanged": true,
+  "toolUsed": true,
+  "samplerCalled": true,
+  "samplerImageOpened": true,
+  "overlapReportSeen": true,
+  "rendered": false,
+  "limits": "Exact caption-token timing checks only; imported prior local transcript/copy QA, not listening, semantic/visual or full-quality acceptance.",
+  "imageAudit": {
+    "sessionFile": "C:/Users/Admin/.codex/sessions/2026/11/05/rollout-2026-11-05T12-09-51-01a1aa1d-0697-71c0-95eb-5808aaa067ee.jsonl",
+    "viewImageCalls": 1,
+    "imageBlocks": 3,
+    "frames": [
+      {
+        "name": "1b470b17-f55d-4561-bc21-085d8df5ed97.jpg",
+        "sha256": "5a4188c646ee6ebb75245db068901a78346465cd5cf84ba19dfb25682ff53f4b",
+        "delivered": true
+      },
+      {
+        "name": "47564ade-9ea4-4cac-b31d-75c04440df86.jpg",
+        "sha256": "af7af6955a61f1ce1fa3b1c00dcacbce32215572b06db0cb43e01157832e38e5",
+        "delivered": true
+      },
+      {
+        "name": "c03d112b-6720-4113-b7a3-f726519d82eb.jpg",
+        "sha256": "b782f332ac62ad7be612618fe8eaead2425b25b73549cbac8644407025e0b3bc",
+        "delivered": true
+      }
+    ],
+    "allDelivered": true,
+    "limits": "Verifies exact sampled JPEG bytes delivered to the model, not comprehension, continuous viewing, audio or editorial quality."
+  },
+  "evidenceRecheckedAt": "2026-11-05T05:17:07.814Z"
+}

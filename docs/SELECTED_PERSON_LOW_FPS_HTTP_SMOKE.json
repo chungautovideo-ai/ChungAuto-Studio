@@ -1,0 +1,58 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-person-hdr-b7f54b5e-a175-4e16-92b2-2007a4d44b60",
+  "lowFps": true,
+  "results": [
+    {
+      "transfer": "arib-std-b67",
+      "status": 422,
+      "code": "COLOR_NORMALIZATION_REQUIRED",
+      "inputProfile": null,
+      "frameTimes": [],
+      "tailFrames": []
+    },
+    {
+      "transfer": "smpte2084",
+      "status": 422,
+      "code": "COLOR_NORMALIZATION_REQUIRED",
+      "inputProfile": null,
+      "frameTimes": [],
+      "tailFrames": []
+    },
+    {
+      "transfer": "bt709",
+      "status": 200,
+      "code": null,
+      "inputProfile": "rec709",
+      "frameTimes": [
+        {
+          "requestedTime": 0.041666666666666664,
+          "decodedFrameTime": 0
+        },
+        {
+          "requestedTime": 0.2916666666666667,
+          "decodedFrameTime": 0.25
+        },
+        {
+          "requestedTime": 0.5416666666666666,
+          "decodedFrameTime": 0.5
+        },
+        {
+          "requestedTime": 0.7916666666666666,
+          "decodedFrameTime": 0.75
+        }
+      ],
+      "tailFrames": [
+        {
+          "requestedTime": 0.7916666666666666,
+          "decodedFrameTime": 0.75
+        }
+      ]
+    }
+  ],
+  "savedScanMetadataVerified": true,
+  "projectMaskSourcesUnchanged": true,
+  "workspaceUnchanged": true,
+  "rendered": false,
+  "browserVerified": false,
+  "limits": "Synthetic metadata and masks, not real iPhone/Log footage or skin/normalization quality."
+}

@@ -1,0 +1,222 @@
+{
+  "id": "talking-head-vang-cao-cap",
+  "name": "Talking head vàng cao cấp",
+  "version": 1,
+  "tags": [
+    "Talking head",
+    "Chia sẻ kiến thức",
+    "Thương hiệu cá nhân"
+  ],
+  "industries": [
+    "Video talking head"
+  ],
+  "description": "Chữ Anton vàng gradient căn giữa, hiện đúng nhịp lời nói, cảnh minh hoạ nền đen có diễn giải (quy trình, trước–sau), zoom nhấn ý, SFX nhẹ. Hợp video chia sẻ kiến thức, góc nhìn chuyên gia, thương hiệu cá nhân.",
+  "brand": {
+    "fontTitle": "Anton",
+    "fontSub": "Montserrat",
+    "fontLabel": "Montserrat",
+    "c1": "#FFF1A1",
+    "c2": "#F6E96B",
+    "c3": "#EED33F",
+    "sub": "#FAF8F0",
+    "caption": {
+      "style": "pill",
+      "size": 58,
+      "color": "#FFFFFF",
+      "active": "#F6E96B",
+      "uppercase": false
+    }
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1450,
+    "maxWords": 4,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "audio": {
+    "autoSfx": true,
+    "sfxVolume": 0.45,
+    "musicVolume": 0.08
+  },
+  "texts": {
+    "fxCycle": [
+      "words",
+      "marker",
+      "type",
+      "slide",
+      "mask"
+    ],
+    "y": 1330
+  },
+  "scenes": {
+    "tIn": "fade"
+  },
+  "skill": "SKILL.md",
+  "tier": "free",
+  "order": 1,
+  "isNew": true,
+  "date": "2026-10-22",
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "chu-vang",
+      "name": "Chữ vàng hiện từng từ",
+      "desc": "Tiêu đề Anton vàng gradient, từng từ hiện theo giọng nói, căn giữa ngang ngực",
+      "at": 1,
+      "img": "fx/chu-vang.jpg"
+    },
+    {
+      "id": "marker",
+      "name": "Marker nhấn từ khoá",
+      "desc": "Vệt sáng quét dưới từ quan trọng như “kinh nghiệm”",
+      "at": 13.8,
+      "img": "fx/marker.jpg"
+    },
+    {
+      "id": "quy-trinh",
+      "name": "Cảnh quy trình",
+      "desc": "Nền đen, các bước hiện lần lượt đúng lúc bạn nói tới",
+      "at": 8,
+      "img": "fx/quy-trinh.jpg"
+    },
+    {
+      "id": "truoc-sau",
+      "name": "Cảnh trước – sau",
+      "desc": "Hai thẻ đối chiếu, thẻ sau sáng lên khi bạn nói tới",
+      "at": 21,
+      "img": "fx/truoc-sau.jpg"
+    },
+    {
+      "id": "go-chu",
+      "name": "Gõ chữ",
+      "desc": "Chữ hiện từng ký tự như đang gõ, đúng dấu tiếng Việt",
+      "at": 37.4,
+      "img": "fx/go-chu.jpg"
+    },
+    {
+      "id": "mask",
+      "name": "Reveal mask",
+      "desc": "Chữ được mở ra từ dưới lên, gọn và sang",
+      "at": 64.7,
+      "img": "fx/mask.jpg"
+    },
+    {
+      "id": "truot",
+      "name": "Trượt ngắn",
+      "desc": "Tiêu đề và chữ phụ trượt nhẹ vào khung",
+      "at": 70.9,
+      "img": "fx/truot.jpg"
+    },
+    {
+      "id": "cta",
+      "name": "Kêu gọi cuối video",
+      "desc": "Câu hỏi kéo bình luận, chữ phụ trắng ấm nghiêng",
+      "at": 78.4,
+      "img": "fx/cta.jpg"
+    }
+  ],
+  "presets": [
+    {
+      "id": "t-t1",
+      "kind": "texts",
+      "group": "chu",
+      "name": "Chữ nhấn · hiện từng từ",
+      "desc": "3 BƯỚC · Edit video bằng ChatGPT? · tự động, đăng mạng xã hội",
+      "dur": 1.9,
+      "text": {
+        "label": "3 BƯỚC",
+        "title": "Edit video|bằng *ChatGPT?*",
+        "sub": "tự động, đăng mạng xã hội",
+        "fx": "words",
+        "y": 1330
+      }
+    },
+    {
+      "id": "t-t2",
+      "kind": "texts",
+      "group": "chu",
+      "name": "Chữ nhấn · marker nhấn từ",
+      "desc": "BƯỚC 1 · Quay video · điện thoại + mic là đủ",
+      "dur": 3,
+      "text": {
+        "label": "BƯỚC 1",
+        "title": "Quay *video*",
+        "sub": "điện thoại + mic là đủ",
+        "fx": "marker",
+        "y": 1330
+      }
+    },
+    {
+      "id": "t-t3",
+      "kind": "texts",
+      "group": "chu",
+      "name": "Chữ nhấn · gõ chữ",
+      "desc": "Có gì trong đầu nói luôn · không cần chuẩn bị content",
+      "dur": 2.3,
+      "text": {
+        "title": "Có gì trong đầu|*nói luôn*",
+        "sub": "không cần chuẩn bị content",
+        "fx": "type",
+        "y": 960
+      }
+    },
+    {
+      "id": "t-t4",
+      "kind": "texts",
+      "group": "chu",
+      "name": "Chữ nhấn · trượt ngắn",
+      "desc": "Đi làm việc khác · trong lúc ChatGPT edit",
+      "dur": 2.1,
+      "text": {
+        "title": "Đi làm *việc khác*",
+        "sub": "trong lúc ChatGPT edit",
+        "fx": "slide",
+        "y": 960
+      }
+    },
+    {
+      "id": "t-t5",
+      "kind": "texts",
+      "group": "chu",
+      "name": "Chữ nhấn · reveal mask",
+      "desc": "BƯỚC 3 · Kiểm tra & đăng tải",
+      "dur": 1.6,
+      "text": {
+        "label": "BƯỚC 3",
+        "title": "Kiểm tra|& *đăng tải*",
+        "fx": "mask",
+        "y": 1330
+      }
+    },
+    {
+      "id": "ct-chia-doi",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Chia đôi mờ dần",
+      "mode": "split",
+      "frame": "",
+      "tIn": "fade"
+    },
+    {
+      "id": "ct-toan-man",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Toàn màn hình",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade"
+    },
+    {
+      "id": "ct-noi-phat-sang",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Khung nổi viền vàng",
+      "mode": "pip",
+      "frame": "glow",
+      "tIn": "zoom"
+    }
+  ]
+}

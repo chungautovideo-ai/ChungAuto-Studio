@@ -1,0 +1,1213 @@
+{
+  "id": "the-anh-noi",
+  "name": "Thẻ Ảnh Nổi",
+  "version": 1,
+  "tier": "free",
+  "order": 101,
+  "isNew": true,
+  "web": true,
+  "date": "2026-10-30",
+  "tags": [
+    "Công nghệ"
+  ],
+  "industries": [
+    "Công nghệ"
+  ],
+  "description": "Bảng kem sáng với thẻ ảnh 3D nghiêng bay lên lần lượt, chữ nhỏ + chữ to ở ngực, viên kính xếp dọc. Hợp giải thích lợi ích AI, sản phẩm công nghệ.",
+  "credit": "Phong cách tham khảo một video mẫu — dựng lại hoàn toàn bằng HTML/CSS, không dùng hình / tiếng / lời của video gốc.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Thẻ Ảnh Nổi",
+    "fontTitle": "Inter",
+    "fontSub": "Inter",
+    "fontLabel": "Inter",
+    "c1": "#FFFFFF",
+    "c2": "#3C6FE0",
+    "c3": "#FFFFFF",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Inter:wght@500;600;700"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 56,
+      "color": "#FFFFFF",
+      "active": "#3C6FE0",
+      "uppercase": false
+    },
+    "board": "radial-gradient(90% 70% at 40% 30%,#F4F1E8,#E2DED0)",
+    "css": ".ta-bang{position:absolute;inset:0;background:radial-gradient(90% 70% at 40% 30%,#F4F1E8,#E2DED0)}\n.ta-the{position:absolute;left:var(--x,200px);top:var(--y,300px);width:var(--w,680px);height:var(--h,400px);border-radius:26px;display:flex;align-items:center;justify-content:center;font-size:170px;background:var(--bg,linear-gradient(135deg,#1B2A4A,#3C6FE0));box-shadow:30px 40px 50px rgba(50,40,20,.38);transform:perspective(1400px) rotateY(-18deg) rotateX(6deg)}\n.ta-nho{position:absolute;left:0;right:0;top:calc(var(--y,300px) + 0px);}\n.ta-chu{position:absolute;left:0;right:0;top:var(--ta-y,1040px);text-align:center;font-family:\"Inter\",sans-serif;color:#fff;line-height:1.02;text-shadow:0 3px 14px rgba(0,0,0,.6)}\n.ta-chu .a{display:block;font-weight:500;font-size:44px}\n.ta-chu .b{display:block;font-weight:700;font-size:96px;letter-spacing:-.03em}\n.ta-vien{position:absolute;left:0;right:0;top:var(--ta-y,1120px);display:flex;flex-direction:column;align-items:center;gap:26px}\n.ta-vien span{width:560px;padding:20px 0;text-align:center;border-radius:999px;background:rgba(40,50,40,.5);border:2px solid rgba(255,255,255,.75);font-family:\"Inter\",sans-serif;font-weight:600;font-size:50px;color:#fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}\n.ta-tu{position:absolute;left:150px;right:150px;top:var(--ta-y,1400px);padding:14px 10px 20px;border-radius:24px;background:rgba(10,20,30,.7);text-align:center;font-family:\"Inter\",sans-serif;font-weight:700;font-size:72px;color:#fff;text-shadow:0 3px 12px rgba(0,0,0,.7)}\n.ta-chop{position:absolute;inset:0;background:#fff}\n.ta-vat{position:absolute;left:50%;top:var(--ta-y,1200px);width:380px;height:380px;margin-left:-190px;border-radius:40px;display:flex;align-items:center;justify-content:center;font-size:230px;background:radial-gradient(circle,rgba(255,255,255,.3),rgba(255,255,255,0) 70%);filter:drop-shadow(0 26px 30px rgba(0,0,0,.5))}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1040,
+    "maxWords": 3,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "camera": {
+    "color": {
+      "brightness": 1.02,
+      "contrast": 1.06,
+      "saturate": 1.02,
+      "temp": 0,
+      "vignette": 0.12
+    }
+  },
+  "audio": {
+    "autoSfx": false,
+    "sfxVolume": 0.5,
+    "musicVolume": 0.08
+  },
+  "texts": {},
+  "scenes": {
+    "tIn": "none"
+  },
+  "brolls": {
+    "mode": "full",
+    "tIn": "none"
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "chu-nguc",
+      "name": "Chữ nhỏ + chữ to",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "img": "fx/chu-nguc.jpg",
+      "at": 0.1
+    },
+    {
+      "id": "ba-the",
+      "name": "3 thẻ ảnh 3D",
+      "desc": "Phủ kín bảng kem, 3 thẻ 3D nghiêng bay lên lần lượt (3 ý)",
+      "img": "fx/ba-the.jpg",
+      "at": 2
+    },
+    {
+      "id": "hai-vien-4",
+      "name": "2 viên kính: Chi phí, tốc độ",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "img": "fx/hai-vien-4.jpg",
+      "at": 3.9
+    },
+    {
+      "id": "tu-giua-5",
+      "name": "Từ đơn: cải thiện mỗi ngày",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "img": "fx/tu-giua-5.jpg",
+      "at": 7.3
+    },
+    {
+      "id": "chu-nguc-6",
+      "name": "Chữ nhỏ + chữ to: công việc · lặp lại",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "img": "fx/chu-nguc-6.jpg",
+      "at": 9.48
+    },
+    {
+      "id": "hai-vien-7",
+      "name": "2 viên kính: Nhập liệu · Kiểm tra lỗi",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "img": "fx/hai-vien-7.jpg",
+      "at": 10.96
+    },
+    {
+      "id": "tu-giua-8",
+      "name": "Từ đơn: tự động hoá đầu tiên",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "img": "fx/tu-giua-8.jpg",
+      "at": 12.44
+    },
+    {
+      "id": "ba-the-9",
+      "name": "3 thẻ ảnh 3D",
+      "desc": "Phủ kín bảng kem, 3 thẻ 3D nghiêng bay lên lần lượt (3 ý)",
+      "img": "fx/ba-the-9.jpg",
+      "at": 14.12
+    },
+    {
+      "id": "tu-giua-10",
+      "name": "Từ đơn: không nghỉ",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "img": "fx/tu-giua-10.jpg",
+      "at": 16.25
+    },
+    {
+      "id": "hai-vien-11",
+      "name": "2 viên kính: Tốc độ · Chính xác",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "img": "fx/hai-vien-11.jpg",
+      "at": 18.37
+    },
+    {
+      "id": "ba-the-12",
+      "name": "3 thẻ ảnh 3D",
+      "desc": "Phủ kín bảng kem, 3 thẻ 3D nghiêng bay lên lần lượt (3 ý)",
+      "img": "fx/ba-the-12.jpg",
+      "at": 20.7
+    },
+    {
+      "id": "chu-nguc-13",
+      "name": "Chữ nhỏ + chữ to: con người · vẫn cần",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "img": "fx/chu-nguc-13.jpg",
+      "at": 22.06
+    },
+    {
+      "id": "vat-noi-14",
+      "name": "Vật thể nổi 3D ở ngực",
+      "desc": "1 vật / icon lớn nổi trước ngực người nói",
+      "img": "fx/vat-noi-14.jpg",
+      "at": 23.43
+    },
+    {
+      "id": "chu-nguc-15",
+      "name": "Chữ nhỏ + chữ to: hãy học · dùng AI",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "img": "fx/chu-nguc-15.jpg",
+      "at": 24.99
+    },
+    {
+      "id": "hai-vien-16",
+      "name": "2 viên kính: Biết dùng AI · Đi trước",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "img": "fx/hai-vien-16.jpg",
+      "at": 26.69
+    },
+    {
+      "id": "tu-giua-17",
+      "name": "Từ đơn: bắt đầu từ hôm nay",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "img": "fx/tu-giua-17.jpg",
+      "at": 28.38
+    }
+  ],
+  "presets": [
+    {
+      "id": "chu-nguc",
+      "group": "chu",
+      "name": "Chữ nhỏ + chữ to",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-chu\"><span class=\"a\">nếu bạn đang lo</span><span class=\"b\">AI thay thế</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-chu .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-chu .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-chu .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ta-chu .b",
+          "label": "Dòng to",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ba-the",
+      "group": "dohoa",
+      "name": "3 thẻ ảnh 3D",
+      "desc": "Phủ kín bảng kem, 3 thẻ 3D nghiêng bay lên lần lượt (3 ý)",
+      "dur": 2.8,
+      "bg": "board",
+      "sfx": "whoosh",
+      "html": "<div class=\"ta-bang\"></div><div class=\"ta-the a\" style=\"--x:240px;--y:260px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#1B2A4A,#3C6FE0)\">💰</div><div class=\"ta-the b\" style=\"--x:240px;--y:740px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#0E3B36,#19C8A0)\">⚡</div><div class=\"ta-the c\" style=\"--x:240px;--y:1220px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#4A1B3A,#E03C7A)\">🎯</div>",
+      "anim": [
+        {
+          "sel": ".ta-bang",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ta-the.a",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 0.1,
+          "dur": 0.45,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-the.b",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 0.7,
+          "dur": 0.45,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-the.c",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 1.3,
+          "dur": 0.45,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-the.a",
+          "label": "Ảnh / icon 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-the.b",
+          "label": "Ảnh / icon 2",
+          "words": false
+        },
+        {
+          "sel": ".ta-the.c",
+          "label": "Ảnh / icon 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chop-trang",
+      "group": "dohoa",
+      "name": "Chớp trắng",
+      "desc": "Chớp trắng 5 khung",
+      "dur": 0.3,
+      "bg": "face",
+      "sfx": "whoosh",
+      "out": "none",
+      "html": "<div class=\"ta-chop\"></div>",
+      "preview": "<div class=\"ta-chop\" style=\"opacity:.7\"></div>",
+      "anim": [
+        {
+          "sel": ".ta-chop",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 0.95
+          },
+          "at": 0,
+          "dur": 0.05
+        },
+        {
+          "sel": ".ta-chop",
+          "to": {
+            "opacity": 0
+          },
+          "at": 0.1,
+          "dur": 0.18
+        }
+      ]
+    },
+    {
+      "id": "hai-vien-4",
+      "group": "dohoa",
+      "name": "2 viên kính: Chi phí, tốc độ",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"ta-vien\"><span class=\"a\">Chi phí, tốc độ</span><span class=\"b\">Độ chính xác</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-vien .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-vien .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-vien .a",
+          "label": "Ý 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-vien .b",
+          "label": "Ý 2",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-giua-5",
+      "group": "chu",
+      "name": "Từ đơn: cải thiện mỗi ngày",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-tu\">cải thiện mỗi ngày</div>",
+      "anim": [
+        {
+          "sel": ".ta-tu",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-tu",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-6",
+      "group": "chu",
+      "name": "Chữ nhỏ + chữ to: công việc · lặp lại",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-chu\"><span class=\"a\">công việc</span><span class=\"b\">lặp lại</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-chu .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-chu .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-chu .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ta-chu .b",
+          "label": "Dòng to",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "hai-vien-7",
+      "group": "dohoa",
+      "name": "2 viên kính: Nhập liệu · Kiểm tra lỗi",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"ta-vien\"><span class=\"a\">Nhập liệu</span><span class=\"b\">Kiểm tra lỗi</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-vien .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-vien .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-vien .a",
+          "label": "Ý 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-vien .b",
+          "label": "Ý 2",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-giua-8",
+      "group": "chu",
+      "name": "Từ đơn: tự động hoá đầu tiên",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-tu\">tự động hoá đầu tiên</div>",
+      "anim": [
+        {
+          "sel": ".ta-tu",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-tu",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ba-the-9",
+      "group": "dohoa",
+      "name": "3 thẻ ảnh 3D",
+      "desc": "Phủ kín bảng kem, 3 thẻ 3D nghiêng bay lên lần lượt (3 ý)",
+      "dur": 2.8,
+      "bg": "board",
+      "sfx": "whoosh",
+      "html": "<div class=\"ta-bang\"></div><div class=\"ta-the a\" style=\"--x:240px;--y:260px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#1B2A4A,#3C6FE0)\">🤖</div><div class=\"ta-the b\" style=\"--x:240px;--y:740px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#0E3B36,#19C8A0)\">🏭</div><div class=\"ta-the c\" style=\"--x:240px;--y:1220px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#4A1B3A,#E03C7A)\">🎯</div>",
+      "anim": [
+        {
+          "sel": ".ta-bang",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ta-the.a",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 0.1,
+          "dur": 0.45,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-the.b",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 0.7,
+          "dur": 0.45,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-the.c",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 1.3,
+          "dur": 0.45,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-the.a",
+          "label": "Ảnh / icon 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-the.b",
+          "label": "Ảnh / icon 2",
+          "words": false
+        },
+        {
+          "sel": ".ta-the.c",
+          "label": "Ảnh / icon 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-giua-10",
+      "group": "chu",
+      "name": "Từ đơn: không nghỉ",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-tu\">không nghỉ</div>",
+      "anim": [
+        {
+          "sel": ".ta-tu",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-tu",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "hai-vien-11",
+      "group": "dohoa",
+      "name": "2 viên kính: Tốc độ · Chính xác",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"ta-vien\"><span class=\"a\">Tốc độ</span><span class=\"b\">Chính xác</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-vien .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-vien .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-vien .a",
+          "label": "Ý 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-vien .b",
+          "label": "Ý 2",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "ba-the-12",
+      "group": "dohoa",
+      "name": "3 thẻ ảnh 3D",
+      "desc": "Phủ kín bảng kem, 3 thẻ 3D nghiêng bay lên lần lượt (3 ý)",
+      "dur": 2.8,
+      "bg": "board",
+      "sfx": "whoosh",
+      "html": "<div class=\"ta-bang\"></div><div class=\"ta-the a\" style=\"--x:240px;--y:260px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#1B2A4A,#3C6FE0)\">🎨</div><div class=\"ta-the b\" style=\"--x:240px;--y:740px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#0E3B36,#19C8A0)\">❤️</div><div class=\"ta-the c\" style=\"--x:240px;--y:1220px;--w:660px;--h:390px;--bg:linear-gradient(135deg,#4A1B3A,#E03C7A)\">🧠</div>",
+      "anim": [
+        {
+          "sel": ".ta-bang",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.1,
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".ta-the.a",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 0.1,
+          "dur": 0.45,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-the.b",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 0.7,
+          "dur": 0.45,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-the.c",
+          "from": {
+            "opacity": 0,
+            "y": 120,
+            "rotationX": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "rotationX": 6
+          },
+          "at": 1.3,
+          "dur": 0.45,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-the.a",
+          "label": "Ảnh / icon 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-the.b",
+          "label": "Ảnh / icon 2",
+          "words": false
+        },
+        {
+          "sel": ".ta-the.c",
+          "label": "Ảnh / icon 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-13",
+      "group": "chu",
+      "name": "Chữ nhỏ + chữ to: con người · vẫn cần",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-chu\"><span class=\"a\">con người</span><span class=\"b\">vẫn cần</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-chu .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-chu .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-chu .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ta-chu .b",
+          "label": "Dòng to",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "vat-noi-14",
+      "group": "dohoa",
+      "name": "Vật thể nổi 3D ở ngực",
+      "desc": "1 vật / icon lớn nổi trước ngực người nói",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"ta-vat\">🧠</div>",
+      "anim": [
+        {
+          "sel": ".ta-vat",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-vat",
+          "label": "Vật",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-15",
+      "group": "chu",
+      "name": "Chữ nhỏ + chữ to: hãy học · dùng AI",
+      "desc": "Dòng nhỏ + dòng to trắng ở ngực",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-chu\"><span class=\"a\">hãy học</span><span class=\"b\">dùng AI</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-chu .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-chu .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-chu .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".ta-chu .b",
+          "label": "Dòng to",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "hai-vien-16",
+      "group": "dohoa",
+      "name": "2 viên kính: Biết dùng AI · Đi trước",
+      "desc": "2 viên kính xếp dọc ở bụng (2 ý)",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"ta-vien\"><span class=\"a\">Biết dùng AI</span><span class=\"b\">Đi trước</span></div>",
+      "anim": [
+        {
+          "sel": ".ta-vien .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".ta-vien .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.4,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-vien .a",
+          "label": "Ý 1",
+          "words": false
+        },
+        {
+          "sel": ".ta-vien .b",
+          "label": "Ý 2",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-giua-17",
+      "group": "chu",
+      "name": "Từ đơn: bắt đầu từ hôm nay",
+      "desc": "1 cụm trắng đậm ở bụng, trên cảnh minh hoạ",
+      "dur": 1.2,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"ta-tu\">bắt đầu từ hôm nay</div>",
+      "anim": [
+        {
+          "sel": ".ta-tu",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".ta-tu",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tram-toan",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "none",
+      "name": "Cảnh trám toàn khung",
+      "desc": "Cảnh minh hoạ phủ kín khung",
+      "dur": 1.5
+    },
+    {
+      "id": "tram-01",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 1: Nhà máy thông minh",
+      "desc": "Nhà máy thông minh, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/01.jpg"
+    },
+    {
+      "id": "tram-02",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 2: Quét bảng mạch",
+      "desc": "Quét bảng mạch, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/02.jpg"
+    },
+    {
+      "id": "tram-03",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 3: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/03.jpg"
+    },
+    {
+      "id": "tram-04",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 4: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/04.jpg"
+    },
+    {
+      "id": "tram-05",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 5: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/05.jpg"
+    },
+    {
+      "id": "tram-06",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 6: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/06.jpg"
+    },
+    {
+      "id": "tram-07",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 7: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/07.jpg"
+    },
+    {
+      "id": "tram-08",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 8: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/08.jpg"
+    },
+    {
+      "id": "tram-09",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 9: Nhà máy thông minh",
+      "desc": "Nhà máy thông minh, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/09.jpg"
+    },
+    {
+      "id": "tram-10",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 10: Quét bảng mạch",
+      "desc": "Quét bảng mạch, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/10.jpg"
+    },
+    {
+      "id": "tram-11",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 11: Nhà máy thông minh",
+      "desc": "Nhà máy thông minh, phủ kín khung, 1.4 giây",
+      "dur": 1.4,
+      "img": "tram/11.jpg"
+    }
+  ]
+}

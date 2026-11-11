@@ -1,0 +1,1139 @@
+{
+  "id": "ngoc-chanh",
+  "name": "Ngọc Chanh",
+  "version": 1,
+  "tier": "free",
+  "order": 100,
+  "isNew": true,
+  "web": true,
+  "date": "2026-10-30",
+  "tags": [
+    "Công nghệ"
+  ],
+  "industries": [
+    "Công nghệ"
+  ],
+  "description": "Chữ gradient xanh ngọc – chanh rất đậm trên đầu người, chữ trắng ở ngực, danh sách viên kính có số hiện dần, nhãn icon, ánh xanh dưới sàn. Hợp video Web3, sản phẩm số, liệt kê lợi ích.",
+  "credit": "Phong cách tham khảo một video mẫu — dựng lại hoàn toàn bằng HTML/CSS, không dùng hình / tiếng / lời của video gốc.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Ngọc Chanh",
+    "fontTitle": "Be Vietnam Pro",
+    "fontSub": "Be Vietnam Pro",
+    "fontLabel": "Be Vietnam Pro",
+    "c1": "#FFFFFF",
+    "c2": "#19C8C0",
+    "c3": "#FFFFFF",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Be Vietnam Pro:wght@500;700;800;900"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 56,
+      "color": "#FFFFFF",
+      "active": "#19C8C0",
+      "uppercase": false
+    },
+    "css": ".nc-tren{position:absolute;left:0;right:0;top:var(--nc-y,170px);text-align:center;font-family:\"Be Vietnam Pro\",sans-serif;line-height:1}\n.nc-tren .a{display:block;font-weight:500;font-size:46px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.65)}\n.nc-tren .b{display:block;font-weight:900;font-size:150px;letter-spacing:-.04em;padding-top:14px;background:linear-gradient(90deg,#19C8C0,#B8F23A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 4px 10px rgba(0,0,0,.55))}\n.nc-sau{position:absolute;left:0;right:0;top:var(--nc-y,150px);text-align:center;font-family:\"Be Vietnam Pro\",sans-serif;font-weight:900;font-size:170px;letter-spacing:-.04em;line-height:1;padding-top:16px;background:linear-gradient(90deg,#0FA8A0,#7FCB12);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap;filter:drop-shadow(0 4px 8px rgba(0,40,30,.55))}\n.nc-nguc{position:absolute;left:0;right:0;top:var(--nc-y,960px);text-align:center;font-family:\"Be Vietnam Pro\",sans-serif;color:#fff;text-shadow:0 3px 12px rgba(0,0,0,.7);line-height:1.05}\n.nc-nguc .a{display:block;font-weight:500;font-size:42px}\n.nc-nguc .b{display:block;font-weight:800;font-size:82px;letter-spacing:-.02em}\n.nc-ds{position:absolute;left:70px;top:var(--nc-y,1160px);display:flex;flex-direction:column;gap:18px}\n.nc-mu{display:flex;align-items:center;gap:20px;width:520px;padding:14px 26px 14px 16px;border-radius:18px;background:rgba(8,20,18,.72);border:2px solid rgba(120,240,190,.55);font-family:\"Be Vietnam Pro\",sans-serif;font-weight:700;font-size:44px;color:#fff}\n.nc-mu i{width:62px;height:62px;flex:none;border-radius:50%;background:#14B86E;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:38px;font-weight:800}\n.nc-nhan{position:absolute;left:0;right:0;top:var(--nc-y,1230px);display:flex;justify-content:center;align-items:center;gap:26px}\n.nc-ic{width:170px;height:170px;border-radius:30px;background:#2FC95A;display:flex;align-items:center;justify-content:center;font-size:104px;box-shadow:0 12px 26px rgba(0,0,0,.4)}\n.nc-tx{padding:14px 40px;border-radius:14px;background:rgba(8,12,10,.86);color:#fff;font-family:\"Be Vietnam Pro\",sans-serif;font-weight:800;font-size:52px;letter-spacing:.04em;text-transform:uppercase}\n.nc-san{position:absolute;left:0;right:0;bottom:0;height:560px;background:radial-gradient(60% 70% at 50% 100%,rgba(46,235,90,.75),rgba(46,235,90,0) 72%)}\n.nc-chop{position:absolute;inset:0;background:#E6FFD0}\n.nc-mo{position:absolute;inset:0;backdrop-filter:blur(36px);-webkit-backdrop-filter:blur(36px);background:rgba(200,255,230,.12)}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 960,
+    "maxWords": 3,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "camera": {
+    "color": {
+      "brightness": 1.03,
+      "contrast": 1.08,
+      "saturate": 1.08,
+      "temp": 0,
+      "vignette": 0.18
+    }
+  },
+  "audio": {
+    "autoSfx": false,
+    "sfxVolume": 0.5,
+    "musicVolume": 0.08
+  },
+  "texts": {},
+  "scenes": {
+    "tIn": "none"
+  },
+  "brolls": {
+    "mode": "full",
+    "tIn": "none"
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "tu-sau",
+      "name": "Từ gradient sau người",
+      "desc": "Từ gradient lớn sau đầu người; cần tách nền",
+      "img": "fx/tu-sau.jpg",
+      "at": 0.15
+    },
+    {
+      "id": "tu-tren-2",
+      "name": "Từ gradient trên đầu: hãy",
+      "desc": "Dòng trắng nhỏ + từ gradient xanh ngọc – chanh rất đậm phía trên đầu",
+      "img": "fx/tu-tren-2.jpg",
+      "at": 2.3
+    },
+    {
+      "id": "chu-nguc-3",
+      "name": "Chữ ở ngực: tài sản số · thay đổi mọi thứ",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "img": "fx/chu-nguc-3.jpg",
+      "at": 3.4
+    },
+    {
+      "id": "danh-sach",
+      "name": "Danh sách có số",
+      "desc": "3 viên kính có số tròn xanh hiện dần ở góc trái dưới (liệt kê)",
+      "img": "fx/danh-sach.jpg",
+      "at": 7.05
+    },
+    {
+      "id": "anh-san",
+      "name": "Ánh xanh dưới sàn",
+      "desc": "Ánh xanh lá phát sáng từ đáy khung",
+      "img": "fx/anh-san.jpg",
+      "at": 10.2
+    },
+    {
+      "id": "tu-tren-7",
+      "name": "Từ gradient trên đầu: với Web3 · dữ liệu",
+      "desc": "Dòng trắng nhỏ + từ gradient xanh ngọc – chanh rất đậm phía trên đầu",
+      "img": "fx/tu-tren-7.jpg",
+      "at": 11.78
+    },
+    {
+      "id": "chu-nguc-8",
+      "name": "Chữ ở ngực: là của · chính bạn",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "img": "fx/chu-nguc-8.jpg",
+      "at": 14.46
+    },
+    {
+      "id": "nhan-icon-9",
+      "name": "Nhãn icon: Không khoá",
+      "desc": "Ô icon xanh + nhãn chữ hoa tối ở bụng",
+      "img": "fx/nhan-icon-9.jpg",
+      "at": 17.14
+    },
+    {
+      "id": "tu-sau-10",
+      "name": "Từ gradient sau người: Ví số",
+      "desc": "Từ gradient lớn sau đầu người; cần tách nền",
+      "img": "fx/tu-sau-10.jpg",
+      "at": 20.02
+    },
+    {
+      "id": "chu-nguc-11",
+      "name": "Chữ ở ngực: một ví · đăng nhập tất cả",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "img": "fx/chu-nguc-11.jpg",
+      "at": 21.78
+    },
+    {
+      "id": "nhan-icon-12",
+      "name": "Nhãn icon: Nghìn ứng dụng",
+      "desc": "Ô icon xanh + nhãn chữ hoa tối ở bụng",
+      "img": "fx/nhan-icon-12.jpg",
+      "at": 23.54
+    },
+    {
+      "id": "danh-sach-13",
+      "name": "Danh sách có số: Tạo ví · Giữ khoá · Học mỗi ngày",
+      "desc": "3 viên kính có số tròn xanh hiện dần ở góc trái dưới (liệt kê)",
+      "img": "fx/danh-sach-13.jpg",
+      "at": 27.25
+    },
+    {
+      "id": "tu-tren-14",
+      "name": "Từ gradient trên đầu: bắt đầu · đơn giản",
+      "desc": "Dòng trắng nhỏ + từ gradient xanh ngọc – chanh rất đậm phía trên đầu",
+      "img": "fx/tu-tren-14.jpg",
+      "at": 28.68
+    },
+    {
+      "id": "nhan-icon-15",
+      "name": "Nhãn icon: Thử ngay",
+      "desc": "Ô icon xanh + nhãn chữ hoa tối ở bụng",
+      "img": "fx/nhan-icon-15.jpg",
+      "at": 30.1
+    },
+    {
+      "id": "chu-nguc-16",
+      "name": "Chữ ở ngực: hãy · bắt đầu hôm nay",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "img": "fx/chu-nguc-16.jpg",
+      "at": 31.53
+    },
+    {
+      "id": "mo-lia",
+      "name": "Mờ lia chuyển cảnh",
+      "desc": "Khung nhoè lướt qua giữa 2 cảnh",
+      "img": "fx/mo-lia.jpg",
+      "at": 11.78
+    }
+  ],
+  "presets": [
+    {
+      "id": "tu-sau",
+      "group": "chu",
+      "layer": "behind",
+      "name": "Từ gradient sau người",
+      "desc": "Từ gradient lớn sau đầu người; cần tách nền",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "whoosh",
+      "html": "<div class=\"nc-sau\">Web3</div>",
+      "anim": [
+        {
+          "sel": ".nc-sau",
+          "from": {
+            "opacity": 0,
+            "y": 40
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.3,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-sau",
+          "label": "Từ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-tren-2",
+      "group": "chu",
+      "name": "Từ gradient trên đầu: hãy",
+      "desc": "Dòng trắng nhỏ + từ gradient xanh ngọc – chanh rất đậm phía trên đầu",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-tren\"><span class=\"a\">hãy</span><span class=\"b\">nhớ</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-tren .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-tren .b",
+          "from": {
+            "opacity": 0,
+            "scale": 1.35
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "back.out(1.8)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-tren .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-tren .b",
+          "label": "Từ khoá",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-3",
+      "group": "chu",
+      "name": "Chữ ở ngực: tài sản số · thay đổi mọi thứ",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nc-nguc\"><span class=\"a\">tài sản số</span><span class=\"b\">thay đổi mọi thứ</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-nguc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.12,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-nguc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chop-xanh",
+      "group": "dohoa",
+      "name": "Chớp xanh",
+      "desc": "Chớp xanh nhạt",
+      "dur": 0.3,
+      "bg": "face",
+      "sfx": "whoosh",
+      "out": "none",
+      "html": "<div class=\"nc-chop\"></div>",
+      "preview": "<div class=\"nc-chop\" style=\"opacity:.7\"></div>",
+      "anim": [
+        {
+          "sel": ".nc-chop",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 0.95
+          },
+          "at": 0,
+          "dur": 0.05
+        },
+        {
+          "sel": ".nc-chop",
+          "to": {
+            "opacity": 0
+          },
+          "at": 0.1,
+          "dur": 0.18
+        }
+      ]
+    },
+    {
+      "id": "danh-sach",
+      "group": "dohoa",
+      "name": "Danh sách có số",
+      "desc": "3 viên kính có số tròn xanh hiện dần ở góc trái dưới (liệt kê)",
+      "dur": 3,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-ds\"><div class=\"nc-mu a\"><i>1</i><span>Sở hữu</span></div><div class=\"nc-mu b\"><i>2</i><span>Minh bạch</span></div><div class=\"nc-mu c\"><i>3</i><span>Tự do</span></div></div>",
+      "anim": [
+        {
+          "sel": ".nc-mu.a",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-mu.b",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.8,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-mu.c",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 1.6,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-mu.a span",
+          "label": "Mục 1",
+          "words": false
+        },
+        {
+          "sel": ".nc-mu.b span",
+          "label": "Mục 2",
+          "words": false
+        },
+        {
+          "sel": ".nc-mu.c span",
+          "label": "Mục 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "anh-san",
+      "group": "dohoa",
+      "name": "Ánh xanh dưới sàn",
+      "desc": "Ánh xanh lá phát sáng từ đáy khung",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "shimmer",
+      "html": "<div class=\"nc-san\"></div>",
+      "preview": "<div class=\"nc-san\" style=\"height:900px\"></div><div class=\"nc-nguc\" style=\"--nc-y:1500px\"><span class=\"b\">Ánh xanh</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-san",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.3,
+          "ease": "power1.out"
+        }
+      ]
+    },
+    {
+      "id": "tu-tren-7",
+      "group": "chu",
+      "name": "Từ gradient trên đầu: với Web3 · dữ liệu",
+      "desc": "Dòng trắng nhỏ + từ gradient xanh ngọc – chanh rất đậm phía trên đầu",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-tren\"><span class=\"a\">với Web3</span><span class=\"b\">dữ liệu</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-tren .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-tren .b",
+          "from": {
+            "opacity": 0,
+            "scale": 1.35
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "back.out(1.8)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-tren .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-tren .b",
+          "label": "Từ khoá",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-8",
+      "group": "chu",
+      "name": "Chữ ở ngực: là của · chính bạn",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nc-nguc\"><span class=\"a\">là của</span><span class=\"b\">chính bạn</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-nguc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.12,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-nguc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nhan-icon-9",
+      "group": "dohoa",
+      "name": "Nhãn icon: Không khoá",
+      "desc": "Ô icon xanh + nhãn chữ hoa tối ở bụng",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-nhan\"><div class=\"nc-ic\">🔓</div><div class=\"nc-tx\">Không khoá</div></div>",
+      "anim": [
+        {
+          "sel": ".nc-ic",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".nc-tx",
+          "from": {
+            "opacity": 0,
+            "x": 120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.15,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-ic",
+          "label": "Icon",
+          "words": false
+        },
+        {
+          "sel": ".nc-tx",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-sau-10",
+      "group": "chu",
+      "layer": "behind",
+      "name": "Từ gradient sau người: Ví số",
+      "desc": "Từ gradient lớn sau đầu người; cần tách nền",
+      "dur": 2,
+      "bg": "face",
+      "sfx": "whoosh",
+      "html": "<div class=\"nc-sau\">Ví số</div>",
+      "anim": [
+        {
+          "sel": ".nc-sau",
+          "from": {
+            "opacity": 0,
+            "y": 40
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.3,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-sau",
+          "label": "Từ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-11",
+      "group": "chu",
+      "name": "Chữ ở ngực: một ví · đăng nhập tất cả",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nc-nguc\"><span class=\"a\">một ví</span><span class=\"b\">đăng nhập tất cả</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-nguc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.12,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-nguc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nhan-icon-12",
+      "group": "dohoa",
+      "name": "Nhãn icon: Nghìn ứng dụng",
+      "desc": "Ô icon xanh + nhãn chữ hoa tối ở bụng",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-nhan\"><div class=\"nc-ic\">📱</div><div class=\"nc-tx\">Nghìn ứng dụng</div></div>",
+      "anim": [
+        {
+          "sel": ".nc-ic",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".nc-tx",
+          "from": {
+            "opacity": 0,
+            "x": 120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.15,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-ic",
+          "label": "Icon",
+          "words": false
+        },
+        {
+          "sel": ".nc-tx",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "danh-sach-13",
+      "group": "dohoa",
+      "name": "Danh sách có số: Tạo ví · Giữ khoá · Học mỗi ngày",
+      "desc": "3 viên kính có số tròn xanh hiện dần ở góc trái dưới (liệt kê)",
+      "dur": 3,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-ds\"><div class=\"nc-mu a\"><i>1</i><span>Tạo ví</span></div><div class=\"nc-mu b\"><i>2</i><span>Giữ khoá</span></div><div class=\"nc-mu c\"><i>3</i><span>Học mỗi ngày</span></div></div>",
+      "anim": [
+        {
+          "sel": ".nc-mu.a",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-mu.b",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.8,
+          "dur": 0.25,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-mu.c",
+          "from": {
+            "opacity": 0,
+            "x": -120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 1.6,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-mu.a span",
+          "label": "Mục 1",
+          "words": false
+        },
+        {
+          "sel": ".nc-mu.b span",
+          "label": "Mục 2",
+          "words": false
+        },
+        {
+          "sel": ".nc-mu.c span",
+          "label": "Mục 3",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "tu-tren-14",
+      "group": "chu",
+      "name": "Từ gradient trên đầu: bắt đầu · đơn giản",
+      "desc": "Dòng trắng nhỏ + từ gradient xanh ngọc – chanh rất đậm phía trên đầu",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-tren\"><span class=\"a\">bắt đầu</span><span class=\"b\">đơn giản</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-tren .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-tren .b",
+          "from": {
+            "opacity": 0,
+            "scale": 1.35
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0.15,
+          "dur": 0.15,
+          "ease": "back.out(1.8)"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-tren .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-tren .b",
+          "label": "Từ khoá",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "nhan-icon-15",
+      "group": "dohoa",
+      "name": "Nhãn icon: Thử ngay",
+      "desc": "Ô icon xanh + nhãn chữ hoa tối ở bụng",
+      "dur": 1.6,
+      "bg": "face",
+      "sfx": "pop",
+      "html": "<div class=\"nc-nhan\"><div class=\"nc-ic\">🚀</div><div class=\"nc-tx\">Thử ngay</div></div>",
+      "anim": [
+        {
+          "sel": ".nc-ic",
+          "from": {
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "at": 0,
+          "dur": 0.2,
+          "ease": "back.out(2)"
+        },
+        {
+          "sel": ".nc-tx",
+          "from": {
+            "opacity": 0,
+            "x": 120
+          },
+          "to": {
+            "opacity": 1,
+            "x": 0
+          },
+          "at": 0.15,
+          "dur": 0.25,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-ic",
+          "label": "Icon",
+          "words": false
+        },
+        {
+          "sel": ".nc-tx",
+          "label": "Chữ",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "chu-nguc-16",
+      "group": "chu",
+      "name": "Chữ ở ngực: hãy · bắt đầu hôm nay",
+      "desc": "Dòng nhỏ + dòng đậm trắng ở ngực",
+      "dur": 1.4,
+      "bg": "face",
+      "sfx": "none",
+      "html": "<div class=\"nc-nguc\"><span class=\"a\">hãy</span><span class=\"b\">bắt đầu hôm nay</span></div>",
+      "anim": [
+        {
+          "sel": ".nc-nguc .a",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0,
+          "dur": 0.15,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "from": {
+            "opacity": 0,
+            "y": 22
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.12,
+          "dur": 0.15,
+          "ease": "power3.out"
+        }
+      ],
+      "fields": [
+        {
+          "sel": ".nc-nguc .a",
+          "label": "Dòng nhỏ",
+          "words": false
+        },
+        {
+          "sel": ".nc-nguc .b",
+          "label": "Dòng đậm",
+          "words": false
+        }
+      ]
+    },
+    {
+      "id": "mo-lia",
+      "group": "dohoa",
+      "name": "Mờ lia chuyển cảnh",
+      "desc": "Khung nhoè lướt qua giữa 2 cảnh",
+      "dur": 0.6,
+      "bg": "face",
+      "sfx": "whoosh",
+      "out": "none",
+      "html": "<div class=\"nc-mo\"></div>",
+      "anim": [
+        {
+          "sel": ".nc-mo",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 1
+          },
+          "at": 0,
+          "dur": 0.2
+        },
+        {
+          "sel": ".nc-mo",
+          "to": {
+            "opacity": 0
+          },
+          "at": 0.35,
+          "dur": 0.22
+        }
+      ]
+    },
+    {
+      "id": "tram-toan",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "none",
+      "name": "Cảnh trám toàn khung",
+      "desc": "Cảnh minh hoạ phủ kín khung",
+      "dur": 1.5
+    },
+    {
+      "id": "tram-01",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 1: Ví số trên điện thoại",
+      "desc": "Ví số trên điện thoại, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/01.jpg"
+    },
+    {
+      "id": "tram-02",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 2: Token xanh quay quanh khối",
+      "desc": "Token xanh quay quanh khối, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/02.jpg"
+    },
+    {
+      "id": "tram-03",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 3: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/03.jpg"
+    },
+    {
+      "id": "tram-04",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 4: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/04.jpg"
+    },
+    {
+      "id": "tram-05",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 5: Cảnh minh hoạ trong video",
+      "desc": "Cảnh minh hoạ trong video, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/05.jpg"
+    },
+    {
+      "id": "tram-06",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 6: Ví số trên điện thoại",
+      "desc": "Ví số trên điện thoại, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/06.jpg"
+    },
+    {
+      "id": "tram-07",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 7: Token xanh quay quanh khối",
+      "desc": "Token xanh quay quanh khối, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/07.jpg"
+    },
+    {
+      "id": "tram-08",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 8: Ví số trên điện thoại",
+      "desc": "Ví số trên điện thoại, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/08.jpg"
+    },
+    {
+      "id": "tram-09",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 9: Token xanh quay quanh khối",
+      "desc": "Token xanh quay quanh khối, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/09.jpg"
+    },
+    {
+      "id": "tram-10",
+      "group": "canhtram",
+      "kind": "brolls",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade",
+      "name": "Cảnh trám 10: Ví số trên điện thoại",
+      "desc": "Ví số trên điện thoại, phủ kín khung, 1.6 giây",
+      "dur": 1.6,
+      "img": "tram/10.jpg"
+    }
+  ]
+}

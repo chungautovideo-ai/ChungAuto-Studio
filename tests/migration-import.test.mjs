@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {importVekProject} from '../src/services/migration-import.mjs';
+import {previewMigration} from '../src/services/migration-preview.mjs';
+
+test('VEK migration builds independent editable project, keeps source, excludes jobs and publication',async t=>{
+ const base=fs.mkdtempSync(path.join(os.tmpdir(),'cos-migration-import-'));t.after(()=>fs.rmSync(base,{recursive:true,force:true}));
+ const root=path.join(base,'contentos'),source=path.join(base,'video-edit-kit/workspace/content/2026-11-04/source');
+ fs.mkdirSync(root);fs.mkdirSync(path.join(source,'inputs'),{recursive:true});fs.mkdirSync(path.join(source,'work'));
+ fs.copyFileSync(new URL('./fixture.mp4',import.meta.url),path.join(source,'inputs/source.mp4'));
+ fs.writeFileSync(path.join(source,'inputs/secret.env'),'excluded');
+ fs.writeFileSync(path.join(source,'work/ai-job.json'),'{"status":"waiting"}');
+ fs.writeFileSync(path.join(source,'work/publish-drafts.json'),'{"entries":[]}');
+ fs.writeFileSync(path.join(source,'work/transcript.json'),'{"words":[]}');
+ const project={title:'ContentOS-Smoke-Migration',format:'9:16',workspaceId:'old',source:{video:'inputs/source.mp4',duration:1,width:360,height:640,hasAudio:false},segments:[{id:'s',in:0,out:1,keep:true}],audio:{autoSfx:false,sfxLevel:'tat'},captions:{lines:[]}};
+ const sourceFile=path.join(source,'project.json');fs.writeFileSync(sourceFile,JSON.stringify(project));
+ let active='new';const store={active:()=>({id:active})};
+ const entry=previewMigration(root,'new').sources[0].entries[0],body={workspaceId:'new',id:entry.id,metadataHash:entry.metadataHash};
+ await assert.rejects(importVekProject(root,store,{...body,workspaceId:'old'}),/Workspace/);
+ await assert.rejects(importVekProject(root,store,{...body,metadataHash:'stale'}),/nguồn đã đổi/);
+ const imported=await importVekProject(root,store,body),target=path.join(root,imported.dir),copy=JSON.parse(fs.readFileSync(path.join(target,'project.json'),'utf8'));
+ assert.equal(copy.workspaceId,'new');assert.deepEqual(copy.segments,project.segments);assert.equal(copy.contentos.migration.sourceRevision,entry.metadataHash);
+ assert.ok(fs.existsSync(path.join(target,'index.html')));assert.ok(fs.existsSync(path.join(target,'work/transcript.json')));
+ for(const relative of ['work/ai-job.json','work/publish-drafts.json','inputs/secret.env'])assert.equal(fs.existsSync(path.join(target,relative)),false);
+ assert.deepEqual(fs.readFileSync(path.join(target,'inputs/source.mp4')),fs.readFileSync(path.join(source,'inputs/source.mp4')));
+ const origin=JSON.parse(fs.readFileSync(path.join(target,'work/migration-origin.json')));assert.ok(origin.assets.every(a=>/^[a-f0-9]{64}$/.test(a.sha256)));
+ fs.writeFileSync(path.join(target,'inputs/source.mp4'),'changed target');assert.notEqual(fs.readFileSync(path.join(source,'inputs/source.mp4'),'utf8'),'changed target');
+ assert.deepEqual(JSON.parse(fs.readFileSync(sourceFile)),project);
+ const controller=new AbortController();controller.abort();await assert.rejects(importVekProject(root,store,body,{signal:controller.signal}));
+ fs.writeFileSync(sourceFile,JSON.stringify({...project,source:{...project.source,video:'../../escape.mp4'}}));
+ const changed=previewMigration(root,'new').sources[0].entries[0];await assert.rejects(importVekProject(root,store,{...body,metadataHash:changed.metadataHash}));
+ assert.equal(fs.readdirSync(path.join(root,'workspace/content/_intake')).length,0);
+});

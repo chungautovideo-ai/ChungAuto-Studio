@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-04T19:36:00.619Z",
+  "suite": {
+    "passed": 254,
+    "failed": 0,
+    "log": "workspace/logs/agent-login-suite.log"
+  },
+  "realCodexProbe": {
+    "exitCode": 0,
+    "stdoutBytes": 0,
+    "stderrBytes": 24,
+    "parsedLoggedIn": true
+  },
+  "connectionUI": [
+    {
+      "id": "claude",
+      "ten": "Claude Code",
+      "coMay": true,
+      "dangNhap": false
+    },
+    {
+      "id": "codex",
+      "ten": "Codex",
+      "coMay": true,
+      "dangNhap": true
+    }
+  ],
+  "modelCalled": false,
+  "priorWorkerAttempt": "docs/REAL_WORKER_Q2_EXECUTION.json",
+  "scope": "Read-only authentication probes and unit/service suite; no autonomous editing acceptance."
+}

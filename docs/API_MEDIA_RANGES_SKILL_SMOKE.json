@@ -1,0 +1,9 @@
+{
+  "file": "workspace/exports/chungauto-creative-v50-api-media-check.zip",
+  "sha256": "e744f7432ea16d9897b0011d2caacd21c07a6c8012dae47a1645a601a1b01998",
+  "presets": 11,
+  "references": 5,
+  "zipParsed": true,
+  "apiMediaGuidance": true,
+  "realModelTested": false
+}

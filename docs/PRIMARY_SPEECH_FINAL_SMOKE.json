@@ -1,0 +1,11 @@
+{
+  "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-primaryspeech-3\\renders\\contentos-smoke-primaryspeech-3-final-2.mp4",
+  "rmsWindows": {
+    "before": 6104.973401934962,
+    "speech": 1214.9698879584766,
+    "after": 5669.015774539631,
+    "outro": 5674.351848017901
+  },
+  "speechGainRatio": 0.19901313371380028,
+  "scope": "Synthetic transcript1–2s with constant sine music and silent audio source; source3s+outro2s. Checks mixed audio level, not perceptual quality/real ASR."
+}

@@ -1,0 +1,9 @@
+{
+  "fixtureOnly": true,
+  "downloadBytes": 64,
+  "largeDownloadBytes": 33554432,
+  "concurrentPingSucceeded": true,
+  "invalidIndexRejected": true,
+  "mismatchedMetadataRejected": true,
+  "sameSizeReplacementRejected": true
+}

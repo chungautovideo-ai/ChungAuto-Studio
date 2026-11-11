@@ -1,0 +1,9 @@
+{
+  "file": "workspace/exports/chungauto-creative-v50-audio-media-check.zip",
+  "sha256": "7728e9cb595a2b298026833cea42d2e8e39f81c8dd0533059ba1c4ad185a9aac",
+  "presets": 11,
+  "references": 5,
+  "zipParsed": true,
+  "audioGuidance": true,
+  "realModelTested": false
+}

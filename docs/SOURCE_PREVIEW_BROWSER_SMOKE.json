@@ -1,0 +1,38 @@
+{
+  "syntheticLocalShare": true,
+  "staleWorkspaceRejected": true,
+  "pathEscapeRejected": true,
+  "invalidVideoRejected": true,
+  "projects": [
+    "workspace/content/2026-11-03/nas-9ccba721-98ff-4aac-8900-cbc63a1cacdf",
+    "workspace/content/2026-11-03/nas-1f491495-edbe-49de-94e8-328505f2562c"
+  ],
+  "sizes": [
+    {
+      "width": 1280,
+      "videoPreviewLoaded": true,
+      "byteRangeVerified": true,
+      "staleWorkspaceRejectedOnPreview": true,
+      "previewClosed": true,
+      "metadataBeforeImport": true,
+      "filteredImageAudioVideo": true,
+      "newProjectToSetup": true,
+      "editableProject": true,
+      "checksumProvenance": true
+    },
+    {
+      "width": 1920,
+      "videoPreviewLoaded": true,
+      "byteRangeVerified": true,
+      "staleWorkspaceRejectedOnPreview": true,
+      "previewClosed": true,
+      "metadataBeforeImport": true,
+      "filteredImageAudioVideo": true,
+      "newProjectToSetup": true,
+      "editableProject": true,
+      "checksumProvenance": true
+    }
+  ],
+  "pageErrors": [],
+  "originalSourceUnchanged": true
+}

@@ -1,0 +1,13 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "templateInCatalog": "chungauto-factory-quang-cao-v10",
+  "helperStatus": 200,
+  "uiStatus": 200,
+  "suite": {
+    "passed": 218,
+    "failed": 0
+  },
+  "mainRestartedAfterIdleChecks": true,
+  "paidProviderCalls": false,
+  "posting": false
+}

@@ -1,0 +1,10 @@
+{
+  "executionPinned": true,
+  "chatSourceSnapshot": true,
+  "historyAndDuplicateGuard": true,
+  "otherAgentSkipped": true,
+  "selectedImportCliAndDedup": true,
+  "cliCompletion": true,
+  "duplicateRejected": true,
+  "conflictPreservesManualAndCandidate": true
+}

@@ -1,0 +1,9 @@
+{
+  "file": "workspace/exports/chungauto-creative-v50-person-runtime.zip",
+  "sha256": "ea0c22bf5460c779c92f817fcf3b2b3a460138a4687784d8ad5f9f7645c6b436",
+  "presets": 11,
+  "references": 5,
+  "zipParsed": true,
+  "runtimeGuidance": true,
+  "modelWorkerTested": false
+}

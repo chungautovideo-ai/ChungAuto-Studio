@@ -1,0 +1,13 @@
+{
+  "mobile": {
+    "received": true,
+    "editorSeesAsset": true,
+    "revoked": true,
+    "media": "inputs/phone/8b85b755-b444-4570-98f5-b5b41df9f817.mp4"
+  },
+  "storage": {
+    "attached": "inputs/library/0e55eb0f-84e0-4349-b1b9-0c6245c8eb5f.mp4",
+    "repeatSkipped": true
+  },
+  "time": "2026-11-03T14:34:41.944Z"
+}

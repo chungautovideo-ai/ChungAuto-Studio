@@ -1,0 +1,29 @@
+{
+  "project": "workspace\\content\\2026-11-05\\contentos-qa-range-adjustments-3",
+  "baseline": "D:\\Edit t\u1ef1 \u0111\u1ed9ng\\contentos\\workspace\\content\\2026-11-05\\contentos-qa-range-adjustments-3\\renders\\contentos-qa-range-adjustments-3-final.mp4",
+  "output": "D:\\Edit t\u1ef1 \u0111\u1ed9ng\\contentos\\workspace\\content\\2026-11-05\\contentos-qa-range-adjustments-3\\renders\\contentos-qa-range-adjustments-3-final-2.mp4",
+  "rows": [
+    {
+      "time": 0.5,
+      "meanRgbDifference": 4.444263117283951,
+      "changedOver8": 67402
+    },
+    {
+      "time": 2.5,
+      "meanRgbDifference": 1.0573540380658437,
+      "changedOver8": 23
+    },
+    {
+      "time": 3.5,
+      "meanRgbDifference": 1.067318029835391,
+      "changedOver8": 25
+    },
+    {
+      "time": 5.5,
+      "meanRgbDifference": 1.0333108281893004,
+      "changedOver8": 11
+    }
+  ],
+  "sha256": "88d2b42db00a483605ac51a3cc634eacba10723ed6be561c8bb92100cdc93b76",
+  "scope": "Four decoded final frames on copied6s QA with prior real semantic/SAM2 masks; first range personLight40, second explicit0, global0. Not full-video tracking or multi-person acceptance."
+}

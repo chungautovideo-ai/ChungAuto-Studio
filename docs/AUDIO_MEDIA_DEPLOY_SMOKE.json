@@ -1,0 +1,26 @@
+{
+  "beforePid": 34664,
+  "afterPid": 17236,
+  "exactCommand": true,
+  "workers": 0,
+  "active": 0,
+  "queued": 0,
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  }
+}

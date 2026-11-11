@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "id": "chu-dong-bat-dong-san",
+      "title": "Chữ động bất động sản",
+      "video": true,
+      "disabled": true,
+      "note": "Đang xem mẫu thư viện VEK · Chưa cài trên máy. Tải và áp mẫu cần quyền PRO của nhà cung cấp; xem trước không thay mẫu đang chọn."
+    },
+    {
+      "width": 1280,
+      "id": "thu-vien-hieu-ung-premium",
+      "title": "Thư viện hiệu ứng Premium",
+      "video": true,
+      "disabled": true,
+      "note": "Đang xem mẫu thư viện VEK · Chưa cài trên máy. Tải và áp mẫu cần quyền PREMIUM của nhà cung cấp; xem trước không thay mẫu đang chọn."
+    },
+    {
+      "width": 1920,
+      "id": "chu-dong-bat-dong-san",
+      "title": "Chữ động bất động sản",
+      "video": true,
+      "disabled": true,
+      "note": "Đang xem mẫu thư viện VEK · Chưa cài trên máy. Tải và áp mẫu cần quyền PRO của nhà cung cấp; xem trước không thay mẫu đang chọn."
+    },
+    {
+      "width": 1920,
+      "id": "thu-vien-hieu-ung-premium",
+      "title": "Thư viện hiệu ứng Premium",
+      "video": true,
+      "disabled": true,
+      "note": "Đang xem mẫu thư viện VEK · Chưa cài trên máy. Tải và áp mẫu cần quyền PREMIUM của nhà cung cấp; xem trước không thay mẫu đang chọn."
+    }
+  ],
+  "errors": [],
+  "entitlementUnchanged": true
+}

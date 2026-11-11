@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-05T07:48:58.3231085Z",
+  "oldPid": 36212,
+  "newPid": 40256,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "dispatcher": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "preRestartResources": "render/asr/personTracking idle; active/queued=0; no media workers",
+  "codeVerification": "397 tests; fresh CLI SFX export verified; backend loading confirmed by new process"
+}

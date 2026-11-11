@@ -1,0 +1,18 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-dialog-5",
+  "realMediaPipe": true,
+  "realSAM2": true,
+  "anchoredSuggestions": true,
+  "ambiguousAutoRejected": true,
+  "negativePointPreserved": true,
+  "suggestionNoWrite": true,
+  "uiTrackApplyUndoRedoSave": true,
+  "clearAfterSeekRetracks": true,
+  "cancelRunningTaskNoWrite": true,
+  "reopen": true,
+  "selectionSamples": 8,
+  "foregroundLeft": 63529,
+  "foregroundRight": 0,
+  "pageErrors": [],
+  "scope": "1s duplicated person; not independent people or occlusion benchmark"
+}

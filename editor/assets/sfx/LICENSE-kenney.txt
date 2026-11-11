@@ -1,0 +1,65 @@
+Toàn bộ tiếng hiệu ứng trong thư mục này là bản thu giấy phép Creative Commons Zero (CC0) — dùng tự do cho mọi mục đích,
+kể cả thương mại, không bắt buộc ghi nguồn. https://creativecommons.org/publicdomain/zero/1.0/
+Đã cắt khoảng lặng, chuẩn hoá đỉnh −3 dBFS, 44,1 kHz stereo. Vài tiếng được ghép / đảo ngược / thêm vang từ bản gốc (ghi chú bên dưới).
+
+Nguồn:
+  Kenney (www.kenney.nl): Interface Sounds, UI Audio, Impact Sounds, Digital Audio, RPG Audio, Casino Audio, Sci-Fi Sounds
+  OpenGameArt.org (CC0): "Swishes Sound Pack", "Wind, hit, time morph" (qubodup)
+
+Bật / bấm
+  pop ← Interface/pluck_001 · glass-pop ← Interface/drop_002 · tap ← Interface/drop_001 · drop ← Interface/drop_003
+  bong ← Interface/bong_001 · blip ← Interface/select_001 · select ← Interface/select_002 · click ← UI Audio/click1
+  toggle ← Interface/toggle_001 · switch ← Interface/switch_002 · open ← Interface/open_001 · close ← Interface/close_001
+  scroll ← Interface/scroll_001 · keys: xem phần Bổ sung
+  tick ← Interface/tick_004 · mau-tick ← Interface/tick_001 · mau-tick-2 ← Interface/tick_002
+Lướt
+  whoosh ← OGA qubodup-megaswosh1 · whoosh-2 ← OGA qubodup-megaswosh2 · soft-whoosh ← OGA qubodup swosh_22 (lọc mềm)
+  swish ← OGA swishes/swish-3 · swish-2 ← OGA swishes/swish-7 · downlift ← OGA qubodup-slomo1
+  silk-swish ← RPG/cloth1 · card-slide ← Casino/card-slide-1 · knife ← RPG/knifeSlice
+Giấy
+  paper ← Interface/scratch_004 · page-flip ← RPG/bookFlip1 · book-close ← RPG/bookClose
+Chuông
+  ping ← Interface/glass_001 · crystal-ting ← Interface/glass_004 · mau-ding ← Interface/confirmation_001
+  chime ← Interface/confirmation_002 · lux-chime ← Interface/confirmation_004 · confirm ← Interface/confirmation_003
+  question ← Interface/question_001 · error ← Interface/error_004 · bell ← Impact/impactBell_heavy_000 · level-up ← Digital/threeTone1
+Lấp lánh
+  sparkle ← Interface/glass_006 + vang · shimmer ← Interface/glass_005 + vang · airy-sparkle ← Interface/confirmation_003 + vang
+  coin ← RPG/handleCoins
+Dâng
+  riser ← Sci-Fi/lowFrequency_explosion_000 đảo ngược · mau-swell ← Sci-Fi/lowFrequency_explosion_001 đảo ngược
+  reveal-swell ← Impact/impactBell_heavy_000 đảo ngược + bản thuận · power-up ← Digital/powerUp1
+Nhấn
+  mau-knock ← Impact/impactWood_light_000 · wood ← Impact/impactWood_heavy_000 · metal ← Impact/impactMetal_light_000
+  glass-hit ← Impact/impactGlass_light_000 · thud ← Impact/impactSoft_medium_000 · mau-hit ← Impact/impactPunch_medium_000
+  deep-hit ← Impact/impactPunch_heavy_000 · boom ← Impact/impactSoft_heavy_002 · impact-boom ← Sci-Fi/lowFrequency_explosion_001
+  explosion ← Sci-Fi/explosionCrunch_000
+Số / khác
+  glitch ← Interface/glitch_001–004 + Sci-Fi/computerNoise_000 ghép · zap ← Digital/zap1 · laser ← Sci-Fi/laserSmall_000
+  dice ← Casino/dice-throw-1
+
+Bổ sung (OpenGameArt.org, tất cả CC0):
+  keys ← "Keyboard Soundpack #1" (inconsequentialist) human_vel-010, 1,3s đầu · typing ← human_vel-009, 3s đầu · keystroke ← keypress-005
+  shutter ← "Camera" photo · page-turn ← "10 Book Page Flips" (starninjas) book_flip.4
+  bubble ← "bubbles 'pop'" · pop-2 ← "3 Pop Sounds" pop2 · pop-soft ← "Pop sounds" pop5
+  plop / gong / spring / slam ← "100 CC0 SFX" plop_01 / gong_01 / spring_01 / slam_01
+  magic / magic-2 / magic-3 ← "Magic Spell SFX" magical_1 / magical_3 / magical_6
+  gem / coins / spell / blade ← "80 CC0 RPG SFX" item_gem_01 / item_coins_01 / spell_01 / blade_01
+  glass-break ← "75 CC0 breaking / falling / hit sfx" bfh1_glass_breaking_01
+  bell-ding ← "Bell dings/chimes" bell_ding2 · soft-bell ← "Pleasing Bell Sound Effect" · kalimba ← "Kalimba Two-Notes"
+  ding-deep / chimes / negative ← "UI Sound Effects (Button Clicks, User Feedback, Notifications)" ding_deep / chimes / negative_sound
+  mystery ← "Mystery Sting"
+
+Bổ sung 27/10/2026 — 46 tiếng (thay các loại tiếng Mixkit của repo video-shotcraft bằng bản thu CC0 cùng loại):
+  Kenney (CC0): zoom-in ← Digital/phaserUp1 · zoom-out ← Digital/phaserDown1 · shutter-2 ← RPG/metalClick · beep ← Digital/tone1
+    countdown ← Digital/tone1 ×3 + highUp (ghép) · clock-spin ← RPG/beltHandle2 · scan / compute / glitch-2 ← Sci-Fi/computerNoise_001 / 002 / 003
+    power-down ← Digital/phaserDown2 · data-blip ← Digital/pepSound2 · latch ← RPG/metalLatch · door-scifi ← Sci-Fi/doorOpen_000
+    paper-slide ← Casino/card-shove-1 · hum ← Sci-Fi/spaceEngineLow_000 · force-field ← Sci-Fi/forceField_001 · laser-2 ← Sci-Fi/laserRetro_001
+    rollover ← UI Audio/rollover2 · maximize / minimize / back ← Interface/maximize_002 / minimize_002 / back_002
+  OpenGameArt.org (CC0):
+    "100 CC0 SFX": static ← noise_01 · splash ← splash_02 · glass-clink ← glass_02 · unlock ← key_open_01 · machine ← machine_01 · crumple ← paper_02
+    "75 CC0 breaking / falling / hit sfx": metal-hit ← bfh1_metal_hit_02 · stomp ← bfh1_hit_05 · rock-hit ← bfh1_rock_hit_01
+    "80 CC0 RPG SFX": lock ← lock_01 · chain ← chain_01
+    "40 CC0 water / splash / slime SFX": water-drop ← bubble_01 · bubble-2 ← bubble_03
+    "Applause in a large hall or church": applause · "Heartbeat (single sound)": heartbeat · "Vinyl": vinyl, rewind (đảo ngược)
+    "Typewriter sounds": typewriter ← typewriter1 · typewriter-2 ← typewriter2 · "Pencil Sounds": pencil, erase
+    "drawing with chalk": chalk · "Scissors": scissors · "various scissors": snip ← hair_scissors_01 · "Equipment Clicks II": staple

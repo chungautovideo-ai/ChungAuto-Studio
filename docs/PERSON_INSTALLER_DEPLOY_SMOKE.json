@@ -1,0 +1,39 @@
+{
+  "runtime": {
+    "ready": true,
+    "info": {
+      "ready": true,
+      "python": "3.12.10",
+      "torch": "2.6.0+cu124",
+      "transformersSam2": true,
+      "cuda": "12.4",
+      "device": "NVIDIA GeForce RTX 4070 Ti",
+      "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7"
+    },
+    "detail": "SAM2 CUDA local sẵn sàng.",
+    "help": null
+  },
+  "beforePid": 30152,
+  "exactCommand": true,
+  "active": 0,
+  "queued": 0,
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "workers": 0,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  }
+}

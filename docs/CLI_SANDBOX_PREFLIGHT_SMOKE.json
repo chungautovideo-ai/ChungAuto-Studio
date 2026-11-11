@@ -1,0 +1,11 @@
+{
+  "actualCLI": true,
+  "modelCalled": false,
+  "elapsedMs": 283,
+  "result": {
+    "checked": true,
+    "ready": false,
+    "errorCode": "CLI_EXEC_UNAVAILABLE",
+    "message": "Codex đã khởi động nhưng môi trường CLI không tạo được tiến trình chạy lệnh. Mở Codex tại thư mục ContentOS, kiểm tra chạy lệnh được rồi giao lại việc; có thể dùng phiên chat đang hoạt động. Không cần đăng nhập lại chỉ vì lỗi này. Xem work/ai-run.log để đối chiếu."
+  }
+}

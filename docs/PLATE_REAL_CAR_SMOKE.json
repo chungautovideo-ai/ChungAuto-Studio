@@ -1,0 +1,119 @@
+{
+  "project": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-smoke-real-car-plate",
+  "source": "D:/Edit tự động/source/broll/broll_den.mp4",
+  "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+  "sourceBytesUnchanged": true,
+  "elapsedMs": 11633,
+  "result": {
+    "path": "inputs/privacy/7ff4efd2-6358-49e0-9249-1574eb0fd367/masked.mp4",
+    "duration": 8,
+    "provenance": {
+      "kind": "plate-privacy",
+      "method": "user-roi-optical-flow",
+      "source": "inputs/raw.mp4",
+      "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+      "from": 0,
+      "duration": 8,
+      "roi": [
+        0.035,
+        0.735,
+        0.935,
+        0.112
+      ],
+      "rois": [
+        [
+          0.035,
+          0.735,
+          0.935,
+          0.112
+        ]
+      ],
+      "sha256": "aa0256edb88274072b87947f80aef60e89c5a0c7b6bb3b9a2c3fc9345fb77265",
+      "frames": 240,
+      "requiresVisualReview": true
+    },
+    "mediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8,
+      "hasAudio": true
+    },
+    "sourceMediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8.0247,
+      "hasAudio": true
+    }
+  },
+  "reviewed": false,
+  "firstResult": {
+    "path": "inputs/privacy/38b20691-064a-4f7c-bf32-0ffc4d2a3f77/masked.mp4",
+    "duration": 8,
+    "provenance": {
+      "kind": "plate-privacy",
+      "method": "user-roi-optical-flow",
+      "source": "inputs/raw.mp4",
+      "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+      "from": 0,
+      "duration": 8,
+      "roi": [
+        0.025,
+        0.71,
+        0.95,
+        0.15
+      ],
+      "rois": [
+        [
+          0.025,
+          0.71,
+          0.95,
+          0.15
+        ]
+      ],
+      "sha256": "b0363f81c11441c3af4c8198f034806eed402d0758a50101c6ae99a9210530de",
+      "frames": 240,
+      "requiresVisualReview": true
+    },
+    "mediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8,
+      "hasAudio": true
+    },
+    "sourceMediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8.0247,
+      "hasAudio": true
+    }
+  },
+  "refinedRoi": true,
+  "refinedElapsedMs": 9999,
+  "final": {
+    "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-smoke-real-car-plate\\renders\\contentos-smoke-real-car-plate-final.mp4",
+    "exitCode": 0,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "frames": 240,
+    "duration": 8,
+    "audioStream": true
+  },
+  "visualSampling": {
+    "sourceContact": "docs/PLATE_REAL_SOURCE_CONTACT.png",
+    "maskedContact": "docs/PLATE_REAL_REFINED_CONTACT.png",
+    "finalContact": "docs/PLATE_REAL_FINAL_40.png",
+    "finalSamplesViewed": 40,
+    "samplingFps": 5,
+    "notFullPlayback": true,
+    "assessment": "Marked main plate appears covered in sampled final frames; source ROI was manually seeded. Plate borders may remain visible. This does not prove every plate/edge/frame."
+  },
+  "reviewReceiptWritten": false,
+  "limitations": [
+    "one continuous real shot only",
+    "no automatic detector or cut recovery",
+    "no listening acceptance",
+    "no production throughput claim",
+    "visual sampling is not full playback"
+  ]
+}

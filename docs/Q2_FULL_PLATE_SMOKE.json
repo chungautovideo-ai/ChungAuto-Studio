@@ -1,0 +1,66 @@
+{
+  "result": {
+    "path": "inputs/privacy/43e44760-6ab7-4b61-a200-6a5b5e7bade2/masked.mp4",
+    "duration": 1.1,
+    "provenance": {
+      "kind": "plate-privacy",
+      "method": "user-roi-optical-flow",
+      "source": "inputs/den.mp4",
+      "sourceSha256": "0df50ba6feb4977ff54915c7d99a193c85858762db63003043c881e89e1b9f6e",
+      "from": 0,
+      "duration": 1.1,
+      "roi": [
+        0.28888888888888886,
+        0.6791666666666667,
+        0.5037037037037038,
+        0.08124999999999993
+      ],
+      "rois": [
+        [
+          0.28888888888888886,
+          0.6791666666666667,
+          0.5037037037037038,
+          0.08124999999999993
+        ]
+      ],
+      "quads": [
+        [
+          [
+            0.28888888888888886,
+            0.6875
+          ],
+          [
+            0.7814814814814814,
+            0.6791666666666667
+          ],
+          [
+            0.7925925925925926,
+            0.75
+          ],
+          [
+            0.29259259259259257,
+            0.7604166666666666
+          ]
+        ]
+      ],
+      "sha256": "3bab587ba1c5a76cfccaca3d3fc1ad5560b640e584b354c2d8a8ee56ecff9a3e",
+      "frames": 33,
+      "requiresVisualReview": true
+    },
+    "mediaInfo": {
+      "width": 304,
+      "height": 540,
+      "duration": 1.1,
+      "hasAudio": false
+    },
+    "sourceMediaInfo": {
+      "width": 304,
+      "height": 540,
+      "duration": 1.1011,
+      "hasAudio": false
+    }
+  },
+  "reviewed": false,
+  "seed": "Manual corners after viewing exact first frame",
+  "limits": "One visible front plate in selected1.1s B-roll only; not detector/whole-project privacy approval."
+}

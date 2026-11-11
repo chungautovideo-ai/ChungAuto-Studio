@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "homeCards": true,
+      "selection": "ChungAuto · Quảng cáo & Review 9:16",
+      "sameShelf": true,
+      "filterPreserved": true,
+      "returnFromEffects": true,
+      "quickButton": true
+    },
+    {
+      "width": 1920,
+      "homeCards": true,
+      "selection": "ChungAuto · Quảng cáo & Review 9:16",
+      "sameShelf": true,
+      "filterPreserved": true,
+      "returnFromEffects": true,
+      "quickButton": true
+    }
+  ],
+  "errors": [],
+  "readOnly": true
+}

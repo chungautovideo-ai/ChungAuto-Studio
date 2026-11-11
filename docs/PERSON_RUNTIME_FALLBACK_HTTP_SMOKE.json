@@ -1,0 +1,33 @@
+{
+  "runtime": {
+    "ready": true,
+    "source": "local",
+    "fallback": false,
+    "attempts": [],
+    "probeElapsedMs": 4076,
+    "info": {
+      "ready": true,
+      "python": "3.12.10",
+      "torch": "2.6.0+cu124",
+      "transformersSam2": true,
+      "cuda": "12.4",
+      "device": "NVIDIA GeForce RTX 4070 Ti",
+      "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7"
+    },
+    "detail": "SAM2 CUDA local sẵn sàng.",
+    "help": null
+  },
+  "uiSha256": "39cac33d91094b141e880e36a736a46bbc60cb16823b06adaa48803b8960af95",
+  "tests": {
+    "pass": 352,
+    "fail": 0,
+    "log": "workspace/logs/person-runtime-fallback-suite.log"
+  },
+  "package": {
+    "presets": 11,
+    "references": 5
+  },
+  "browserVerified": false,
+  "inferenceVerified": false,
+  "limits": "Readiness uses CUDA tensor and model hash; not inference, mask acceptance or clean Windows/six-PC installation."
+}

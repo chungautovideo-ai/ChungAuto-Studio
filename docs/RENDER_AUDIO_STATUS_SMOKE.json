@@ -1,0 +1,12 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-render-audio-status",
+  "actualHTTPRender": true,
+  "renderOK": true,
+  "silentVideoLoudnormFalse": true,
+  "warningInStatusAndSidecar": true,
+  "integrityPreservedAfterClose": true,
+  "sha256": "3d7a0dae93b53e862c122572b065d4b84f337091579d35bdb23f063d94bf94f8",
+  "bytes": 7916,
+  "noProvider": true,
+  "scope": "0.6-second synthetic video without audio; not mix quality or normalization failure with audio."
+}

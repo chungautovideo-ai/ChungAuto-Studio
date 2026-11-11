@@ -1,0 +1,9 @@
+{
+  "frameTime": 0.4,
+  "leftMeanDiff": 2.411219778806585,
+  "rightMeanDiff": 1.046007265946502,
+  "leftChangedOver8": 86735,
+  "rightChangedOver8": 280,
+  "initialMeanRatio3CheckPassed": false,
+  "scope": "Decoded H264 final comparison; global codec differences present, significant changed pixels concentrate left. Not exact background preservation or full-video acceptance"
+}

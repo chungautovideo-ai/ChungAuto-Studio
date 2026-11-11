@@ -1,0 +1,148 @@
+{
+  "referenceJob": "D:\\ChungAutoVideoFactory\\jobs\\CREATIVE_Q2_3MANG",
+  "counts": {
+    "events": 34,
+    "brollEvents": 9,
+    "creativeLayers": 34,
+    "creativeTypes": {
+      "STACK": 6,
+      "KEYWORD": 2,
+      "CUTOUT": 1,
+      "FLASH": 1,
+      "LIGHT_LEAK": 3,
+      "CHAPTER": 3,
+      "PROGRESS": 3,
+      "STAT": 3,
+      "GRID": 1,
+      "STICKER": 3,
+      "SPLIT": 1,
+      "TITLE2": 2,
+      "INSET": 1,
+      "MAPPIN": 1,
+      "CALLOUT": 1,
+      "DATECARD": 1,
+      "CTA": 1
+    },
+    "sfxCues": 72,
+    "gradeClips": 22
+  },
+  "templateV3Unchanged": true,
+  "newTemplate": "chungauto-factory-quang-cao-v4",
+  "version": 4,
+  "parentId": "chungauto-factory-quang-cao",
+  "skillBytes": 11416,
+  "presetsUnchanged": true,
+  "referenceFinalProbe": {
+    "duration": 105.333333,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "bytes": 220338545
+  },
+  "currentFinalFramesExtracted": true,
+  "fullVideoWatched": false,
+  "auditoryReview": false,
+  "historicalQcNotRerun": true,
+  "newVideoRendered": false,
+  "referenceFileHashes": {
+    "job.json": "5db0836f46232b9f88606cacf2f1e07f08a5d06e3e7b67f8173fdb77e8173d4b",
+    "state.json": "388231838168463acabf275b85b4cbeb7859272f772b2a8857cf8742b173a9e0",
+    "05_plan/edit-plan.json": "b1b80725a92610104626b1a75d40b2a4abcf90acaffb32c4f0470a8572f26c3d",
+    "13_qc/qc-report.json": "5664dd261679c41c0cc14dffc3cd9bb56ca9c808cb646c69a03ceae1c16c1615",
+    "13_qc/manual-tasks.json": "4054680af25d54cb78024c5a75f2093c991c07d5cfce421453eafaab78fd9064",
+    "13_qc/visual-review.json": "5127957e1accd6b88efa6e50f7c6ec1b149cb9797a8d1a310252e2005290e567"
+  },
+  "assessment": {
+    "scope": "automatic-edit-only-not-all-127-features",
+    "method": "engineering-estimate-weighted-0-to-4-not-production-acceptance",
+    "score": 59.25,
+    "roundedRange": "55–60%",
+    "items": [
+      {
+        "name": "Nhập A/B-roll và quản lý nguồn",
+        "weight": 10,
+        "scoreOutOf4": 3,
+        "weightedPoints": 7.5
+      },
+      {
+        "name": "Giao AI/candidate/review",
+        "weight": 15,
+        "scoreOutOf4": 3,
+        "weightedPoints": 11.25
+      },
+      {
+        "name": "Timeline/chữ/phụ đề/sửa tay",
+        "weight": 12,
+        "scoreOutOf4": 3,
+        "weightedPoints": 9.0
+      },
+      {
+        "name": "Chọn B-roll và hoạt họa theo ý",
+        "weight": 15,
+        "scoreOutOf4": 2,
+        "weightedPoints": 7.5
+      },
+      {
+        "name": "Màu tự động theo shot",
+        "weight": 8,
+        "scoreOutOf4": 2,
+        "weightedPoints": 4.0
+      },
+      {
+        "name": "Che biển số theo dõi và kiểm cuối",
+        "weight": 7,
+        "scoreOutOf4": 0,
+        "weightedPoints": 0.0
+      },
+      {
+        "name": "Watermark/outro/CTA tùy chọn theo job",
+        "weight": 7,
+        "scoreOutOf4": 2,
+        "weightedPoints": 3.5
+      },
+      {
+        "name": "Nhạc/SFX/mix theo nội dung",
+        "weight": 10,
+        "scoreOutOf4": 2.5,
+        "weightedPoints": 6.25
+      },
+      {
+        "name": "Mẫu/skill/preset dùng lại",
+        "weight": 6,
+        "scoreOutOf4": 3,
+        "weightedPoints": 4.5
+      },
+      {
+        "name": "Preview/final/revision",
+        "weight": 5,
+        "scoreOutOf4": 3,
+        "weightedPoints": 3.75
+      },
+      {
+        "name": "Nhiều việc/khôi phục",
+        "weight": 3,
+        "scoreOutOf4": 2,
+        "weightedPoints": 1.5
+      },
+      {
+        "name": "Nghiệm thu nguồn thật/năng suất",
+        "weight": 2,
+        "scoreOutOf4": 1,
+        "weightedPoints": 0.5
+      }
+    ]
+  },
+  "validation": {
+    "skillCreatorQuickValidate": "passed with python -X utf8",
+    "httpTemplateVersion": 4,
+    "httpSkillMatchesDiskNormalizedNewlines": true,
+    "catalogInstalled": true,
+    "newUiControlsAdded": false,
+    "oldTemplateNotAutoSelectedOrChanged": true,
+    "noPaidAiCalls": true,
+    "noSourceJobWrites": true
+  },
+  "skillPhysicalBytes": 11487
+}

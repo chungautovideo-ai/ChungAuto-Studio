@@ -1,0 +1,12 @@
+{
+  "examined": 154,
+  "unique": 139,
+  "technical": 7,
+  "unclassified": 132,
+  "rejected": [
+    {
+      "relative": "AppleLog-LUTs-v1.0/AppleLogToLin-v1.0.cube",
+      "error": "LUT chỉ nhận bảng3D2–65, domain0–1, không script/1D."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "syntheticOnly": true,
+  "actualToolExit0": true,
+  "package": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\contentos-smoke-capcut-stems\\renders\\capcut-contentos-smoke-capcut-stems",
+  "manifestKinds": [
+    "music",
+    "narration"
+  ],
+  "musicTone": 0.012463065586785121,
+  "musicLeak": 2.6955295372540668e-8,
+  "voiceTone": 0.09993505958253789,
+  "voiceLeak": 1.8515115439178778e-7,
+  "musicDuckRatio": 0.24939876127127558,
+  "separateTracksDuration8s": true,
+  "instructions": true,
+  "limits": "No actual CapCut import; SFX/B-roll grouping unit-tested only, no package render for those stems."
+}

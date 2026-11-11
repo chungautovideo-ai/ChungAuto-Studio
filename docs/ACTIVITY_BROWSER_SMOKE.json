@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "actualRows": 19,
+      "actualEndpoint": true,
+      "fixtureStatusFilters": true,
+      "fixtureCancel": true,
+      "outputLink": true,
+      "waitingReasonsFixture": true,
+      "batchEditReopenRetry": true,
+      "sessionContactFixture": true,
+      "batchEditModelPicker": true,
+      "batchEditNetworkPartialRetry": true,
+      "back": true
+    },
+    {
+      "width": 1920,
+      "actualRows": 19,
+      "actualEndpoint": true,
+      "fixtureStatusFilters": true,
+      "fixtureCancel": true,
+      "outputLink": true,
+      "waitingReasonsFixture": true,
+      "batchEditReopenRetry": true,
+      "sessionContactFixture": true,
+      "batchEditModelPicker": true,
+      "batchEditNetworkPartialRetry": true,
+      "back": true
+    }
+  ],
+  "errors": [],
+  "actualEndpointReadOnly": true,
+  "mutationIntercepted": true
+}

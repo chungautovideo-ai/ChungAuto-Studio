@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "id": "chungauto-factory-quang-cao-v48",
+  "version": 48,
+  "presets": 11,
+  "references": [
+    "references/color.md",
+    "references/person.md",
+    "references/plate.md",
+    "references/finishing.md"
+  ]
+}

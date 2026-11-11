@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "response": "fixture",
+  "realSourceFrame": true,
+  "noAutomaticRegionChange": true,
+  "explicitUse": true,
+  "noApplyOrMaskRequest": true,
+  "errorKeepsManual": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": []
+}

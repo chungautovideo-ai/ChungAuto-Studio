@@ -1,0 +1,23 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "noAutoModelFetch": true,
+      "explicitDiscoveryPayload": true,
+      "selectedModelSave": true,
+      "explicitVisionPermission": true,
+      "usageAndDailyPolicy": true,
+      "noSecretEcho": true
+    },
+    {
+      "width": 1920,
+      "noAutoModelFetch": true,
+      "explicitDiscoveryPayload": true,
+      "selectedModelSave": true,
+      "explicitVisionPermission": true,
+      "usageAndDailyPolicy": true,
+      "noSecretEcho": true
+    }
+  ],
+  "fixtureOnly": true
+}

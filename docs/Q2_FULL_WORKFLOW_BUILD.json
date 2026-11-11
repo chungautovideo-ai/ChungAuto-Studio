@@ -1,0 +1,30 @@
+{
+  "dir": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-q2-full-workflow",
+  "duration": 103.64,
+  "words": 420,
+  "brolls": 4,
+  "blocks": 3,
+  "texts": 4,
+  "qc": {
+    "loi": [],
+    "canh": [],
+    "so": 3
+  },
+  "limits": "QA by this agent with imported Factory ASR and explicit editorial decisions; not autonomous worker benchmark. No beauty/grade/logo/endCard applied. CTA overlay present. Local only, plates in sources not globally reviewed. Proxy540x960.",
+  "rejectedFootage": {
+    "path": "inputs/vinfast.mp4",
+    "source": "D:/Edit tự động/source/broll/broll_vinfast.mp4",
+    "range": [
+      3,
+      6
+    ],
+    "observation": "Ford vehicle seen in exact interval; rejected for VinFast claim",
+    "evidence": "docs/Q2_FULL_VINFAST_CONTACT.png"
+  },
+  "preprocess": {
+    "attempt": "h264_nvenc on10bit DJI input rejected No capable devices found",
+    "completed": "libx264/yuv420p CPU proxy540x960",
+    "limits": "One failed conversion does not establish GPU hardware absence"
+  },
+  "cutPolicy": "Remove0–0.6leading gap,72.86–78.14retake,109.52–end outro chatter only; retain other source intervals. Existing Factory rough cuts not blindly copied."
+}

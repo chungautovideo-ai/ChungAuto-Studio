@@ -1,0 +1,23 @@
+{
+  "ui": {
+    "file": "editor/ui/contentos-person-selection.js",
+    "staticHTTPMatches": true,
+    "sha256": "a06b9d7dd406af3de55bc28f8933017427b7461bf48f13725d23ff595328b5ca"
+  },
+  "productionCallbackVM": true,
+  "manualTouchUndo": true,
+  "suggestionBatchUndo": true,
+  "clearUndo": true,
+  "staleAndSeekFailurePreserveHistory": true,
+  "rangeChangeClearsHistory": true,
+  "historyLimit": 64,
+  "browserVerified": false,
+  "inferenceRun": false,
+  "projectWrites": false,
+  "skill": {
+    "file": "workspace/exports/chungauto-creative-v50-person-prompt-undo.zip",
+    "bytes": 1635943,
+    "presets": 11,
+    "references": 5
+  }
+}

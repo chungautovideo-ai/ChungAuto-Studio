@@ -1,0 +1,19 @@
+{
+  "pid": 41928,
+  "active": 0,
+  "queued": 0,
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "workers": 0,
+  "exactCommand": true
+}

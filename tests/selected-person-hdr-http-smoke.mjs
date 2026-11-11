@@ -1,0 +1,21 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';import {spawn,execFileSync} from 'node:child_process';
+import {createWorkspaceStore} from '../src/services/workspaces.mjs';import {convertAievProject} from '../src/services/aiev-project-adapter.mjs';import {projectRevision} from '../src/services/project-revisions.mjs';
+const root=process.cwd(),base='http://127.0.0.1:5192',relative='workspace/content/2026-11-05/contentos-qa-person-hdr-'+crypto.randomUUID(),dir=path.join(root,relative),hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+try{await fetch(base+'/api/ping',{signal:AbortSignal.timeout(1000)});throw Error('QA port occupied');}catch(e){if(e.message==='QA port occupied'||e.name==='TimeoutError')throw e;}
+const workspaceFile=path.join(root,'workspace/contentos/workspaces.json'),workspaceBefore=fs.readFileSync(workspaceFile);fs.mkdirSync(path.join(dir,'inputs'),{recursive:true});fs.mkdirSync(path.join(dir,'work'));
+const tracks=[],selections=[],sources=[];
+for(const transfer of ['arib-std-b67','smpte2084','bt709']){
+ const src='inputs/'+transfer+'.mp4',file=path.join(dir,src),hdr=transfer!=='bt709';execFileSync('ffmpeg',['-v','error','-f','lavfi','-i','color=c=gray:s=32x32:r=30:d=1','-c:v','libx264','-x264-params',`colorprim=${hdr?'bt2020':'bt709'}:transfer=${transfer}:colormatrix=${hdr?'bt2020nc':'bt709'}`,'-pix_fmt','yuv420p',file],{windowsHide:true});
+ const stat=fs.statSync(file),sha256=hash(fs.readFileSync(file));sources.push({src,sha256,transfer});tracks.push({src,fingerprint:{size:stat.size,mtimeMs:stat.mtimeMs,sha256},fps:4,idx:[1],f:Array(4).fill(null),skin:{w:8,h:8,f:Array.from({length:4},()=>[64,2])}});selections.push({src,sha256,method:'sam2.1-tiny-point-prompt',from:0,fps:4,w:8,h:8,f:Array.from({length:4},()=>[64,1])});
+}
+const project=convertAievProject({width:1080,height:1920,scenes:sources.map(s=>({srcVideo:s.src,from:0,to:1}))});project.workspaceId=createWorkspaceStore(root).active().id;project.camera.beauty={personSelections:selections};const projectFile=path.join(dir,'project.json'),faceFile=path.join(dir,'work/face.json');fs.writeFileSync(projectFile,JSON.stringify(project));fs.writeFileSync(faceFile,JSON.stringify({v:2,tracks}));const before=fs.readFileSync(projectFile),faceBefore=fs.readFileSync(faceFile);
+const server=spawn(process.execPath,['editor/server.mjs',relative,'--port','5192'],{windowsHide:true,stdio:'ignore'});let inFlight=false;
+try{
+ let ready=false;for(let i=0;i<80;i++){if(server.exitCode!==null)throw Error('QA server exited');try{if((await fetch(base+'/api/ping')).ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,100));}assert.ok(ready);
+ const results=[];
+ for(const source of sources){inFlight=true;const response=await fetch(base+'/api/person-exposure/selected',{method:'POST',headers:{Connection:'close','Content-Type':'application/json','X-ContentOS-Project':relative,'X-ContentOS-Revision':projectRevision(projectFile)},body:JSON.stringify({src:source.src,sha256:source.sha256})}),value=await response.json();inFlight=false;
+  if(source.transfer==='bt709'){assert.equal(response.status,200,JSON.stringify(value));assert.equal(value.inputColor.profile,'rec709');assert.equal(value.times.length,4);}else{assert.equal(response.status,422,JSON.stringify(value));assert.equal(value.code,'COLOR_NORMALIZATION_REQUIRED');}
+  results.push({transfer:source.transfer,status:response.status,code:value.code||null,inputProfile:value.inputColor?.profile||null});assert.deepEqual(fs.readFileSync(projectFile),before);assert.deepEqual(fs.readFileSync(faceFile),faceBefore);assert.equal(hash(fs.readFileSync(path.join(dir,source.src))),source.sha256);
+ }
+ assert.deepEqual(fs.readFileSync(workspaceFile),workspaceBefore);const evidence={project:relative,results,projectMaskSourcesUnchanged:true,workspaceUnchanged:true,rendered:false,browserVerified:false,limits:'Synthetic metadata and masks, not real iPhone/Log footage or skin/normalization quality.'};fs.writeFileSync('docs/SELECTED_PERSON_HDR_HTTP_SMOKE.json',JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify(evidence));
+}finally{if(inFlight)console.error('Unresolved request, preserve server PID '+server.pid);else{server.kill();await new Promise(r=>server.exitCode!==null?r():server.once('exit',r));}}

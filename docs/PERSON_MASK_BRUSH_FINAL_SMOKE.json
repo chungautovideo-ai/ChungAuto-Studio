@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "exitCode": 0,
+  "launcher": "installed-cli",
+  "snapshotId": "3d4b3bc1-15ac-4f3b-bbdb-5f99b29eecc5",
+  "output": "renders/contentos-smoke-brush-2-final.mp4",
+  "scope": "1 second QA, silent, real Q2 crop and mirrored B-roll; not full-production acceptance"
+}

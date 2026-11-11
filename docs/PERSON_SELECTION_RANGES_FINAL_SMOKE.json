@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "time": 0.5,
+      "meanRgbDifference": 1.4007664609053498,
+      "changedOver8": 6118
+    },
+    {
+      "time": 2.5,
+      "meanRgbDifference": 0.5983076131687243,
+      "changedOver8": 0
+    },
+    {
+      "time": 3.5,
+      "meanRgbDifference": 1.8498688271604937,
+      "changedOver8": 9857
+    },
+    {
+      "time": 5.5,
+      "meanRgbDifference": 0.5677366255144033,
+      "changedOver8": 0
+    }
+  ],
+  "checks": {
+    "firstRangeVisible": true,
+    "secondRangeVisible": true,
+    "gapSmall": true,
+    "afterSmall": true
+  },
+  "width": 1920,
+  "height": 1080,
+  "duration": "6.000000",
+  "sha256": "ef0b20ec93b65c49937686685f989b1cfc217d3d88f93332f21b0ba13c7a469b",
+  "output": "D:\\Edit t\u1ef1 \u0111\u1ed9ng\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-person-ranges\\renders\\contentos-smoke-person-ranges-final-4.mp4",
+  "baseline": "D:\\Edit t\u1ef1 \u0111\u1ed9ng\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-person-ranges\\renders\\contentos-smoke-person-ranges-final-5.mp4",
+  "scope": "Four decoded final frames at480x270; not every frame, identity or full mask quality acceptance."
+}

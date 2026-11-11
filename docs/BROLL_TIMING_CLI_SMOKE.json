@@ -1,0 +1,119 @@
+{
+  "project": "workspace/content/2026-11-05/qa-broll-check-ac05c4",
+  "actualCLI": true,
+  "syntheticClaim": true,
+  "missingMediaIntentionallyNotProbed": true,
+  "report": {
+    "timing": {
+      "clock": "output",
+      "from": 0.5,
+      "to": 0.9,
+      "words": [
+        {
+          "captionId": "cap",
+          "text": "màn",
+          "projectStart": 2,
+          "projectEnd": 2.5,
+          "outputStart": 0.5,
+          "outputEnd": 0.75
+        },
+        {
+          "captionId": "cap",
+          "text": "phim",
+          "projectStart": 2.5,
+          "projectEnd": 2.9,
+          "outputStart": 0.75,
+          "outputEnd": 0.95
+        }
+      ],
+      "wordsTruncated": false,
+      "brolls": [
+        {
+          "id": "screen",
+          "src": "inputs/missing-detail.mp4",
+          "projectAt": 2,
+          "outputStart": 0.5,
+          "outputEnd": 0.9,
+          "outputDuration": 0.4,
+          "entrance": {
+            "type": "slide",
+            "custom": false,
+            "animationDuration": 0.45,
+            "entranceWithinShot": 0.4,
+            "settledDuration": 0,
+            "settledStart": 0.9,
+            "settledEnd": 0.9
+          },
+          "advisories": [
+            "ENTRANCE_COVERS_SHOT",
+            "SHORT_INSERT"
+          ],
+          "speechOverlap": {
+            "words": [
+              {
+                "captionId": "cap",
+                "text": "màn",
+                "projectStart": 2,
+                "projectEnd": 2.5,
+                "outputStart": 0.5,
+                "outputEnd": 0.75
+              },
+              {
+                "captionId": "cap",
+                "text": "phim",
+                "projectStart": 2.5,
+                "projectEnd": 2.9,
+                "outputStart": 0.75,
+                "outputEnd": 0.95
+              }
+            ],
+            "truncated": false,
+            "totalWords": 2,
+            "startsInsideWord": false,
+            "endsInsideWord": true
+          },
+          "mediaStart": 0,
+          "speed": 1
+        }
+      ],
+      "brollsTruncated": false,
+      "segments": [
+        {
+          "id": "s",
+          "projectIn": 1,
+          "projectOut": 3,
+          "outputStart": 0,
+          "outputEnd": 1,
+          "rate": 2,
+          "src": "inputs/missing.mp4",
+          "mediaStart": 1
+        }
+      ],
+      "segmentsTruncated": false,
+      "notes": "projectStart/projectEnd là mốc gốc của từ trên timeline dự án trước cắt; có thể dùng projectStart làm at, không dùng outputStart. outputStart/outputEnd là mốc sau cắt/tốc độ; dur là giây phát đầu ra. mediaStart là clock riêng trong file B-roll. entrance.settledDuration chỉ là thời gian sau hiệu ứng, không chứng minh dễ đọc; advisories chỉ gợi ý xem lại, không ép kéo dài/đổi hiệu ứng. Lời lấy từ caption candidate, có thể sai/thiếu; không phải transcript đã duyệt hoặc kiểm hình khớp nghĩa."
+    },
+    "ok": true,
+    "candidateRevision": "1643df60c9e89ce9d4e7faf4a15edb54d677df8a298ed28f93bd0a65524fd094",
+    "duration": 1,
+    "counts": {
+      "segments": 1,
+      "texts": 0,
+      "blocks": 0,
+      "brolls": 1,
+      "captions": 1
+    },
+    "errors": [],
+    "warnings": [],
+    "timelineResolved": true,
+    "htmlBuilt": false,
+    "applied": false,
+    "rendered": false,
+    "visualReviewed": false,
+    "audioListened": false,
+    "limits": "Chỉ kiểm cấu trúc timeline/đồ họa theo lời; không chạy build HTML. Không xác minh media, hình khớp nội dung, chính tả ASR, bố cục, chuyển động, mix hoặc quyền tư liệu. Xem/nghe preview trước kết luận chất lượng."
+  },
+  "filesUnchanged": true,
+  "wrongClaimRejected": true,
+  "rendered": false,
+  "visualReviewed": false
+}

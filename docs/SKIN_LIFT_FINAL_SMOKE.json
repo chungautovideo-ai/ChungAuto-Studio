@@ -1,0 +1,30 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-skin-q2-proof",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-skin-q2-proof\\renders\\contentos-skin-q2-proof-final.mp4",
+  "ok": true,
+  "exitCode": 0,
+  "exitSignal": null,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "2.000000"
+    }
+  },
+  "scope": "Two seconds of actual Q2 source, 540x960 proxy processed with optional skin chroma lift15%, rendered to full portrait. Not full-length original 10bit benchmark or human aesthetic approval.",
+  "retry": "First attempt wrote HF artifact but process did not report success. Retried after adding exit diagnostics; exit0, artifact verified and finalized."
+}

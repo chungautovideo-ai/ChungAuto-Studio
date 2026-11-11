@@ -1,0 +1,59 @@
+# Khoá / bí mật — KHÔNG BAO GIỜ đưa lên git
+.env
+.env.*
+!.env.example
+.mcp.json
+.codex/config.toml
+.claude/settings.local.json
+.vercel/
+cloud/config.json
+cloud/data/
+cloud/*.local.txt
+editor/.account.json
+config/*.local.json
+
+# Dữ liệu & video của người dùng
+workspace/
+editor/templates/
+editor/brands/
+
+# Video / ảnh mẫu thư viện (chưa có quyền dùng footage) — web dùng ảnh bìa tạm
+editor/library/*/preview.mp4
+editor/library/*/poster.jpg
+!editor/library/chu-dong-bat-dong-san/preview.mp4
+!editor/library/chu-dong-bat-dong-san/poster.jpg
+
+# Chrome headless shell (binary lớn >100MB)
+engines/hyperframes/chrome/
+
+# File sinh ra
+node_modules/
+site/
+.history/
+.editor-cache/
+.hyperframes/
+tools/whisper/
+*.log
+.DS_Store
+Thumbs.db
+!editor/library/talking-head-vang-cao-cap/preview.mp4
+!editor/library/talking-head-vang-cao-cap/poster.jpg
+tools/node/
+tools/ffmpeg/
+tools/yt-dlp/
+tools/whisper/
+tools/vision-python/
+tools/vision-embedded/
+tools/tmp-render/
+tools/.setup-done.json
+editor/goi-tai.json
+!editor/library/fnb01/preview.mp4
+!editor/library/fnb01/poster.jpg
+!editor/library/review-02/preview.mp4
+!editor/library/review-02/poster.jpg
+!editor/library/review-03/preview.mp4
+!editor/library/review-03/poster.jpg
+!editor/library/review-04/preview.mp4
+!editor/library/review-04/poster.jpg
+!editor/library/fnb-02/preview.mp4
+!editor/library/fnb-02/poster.jpg

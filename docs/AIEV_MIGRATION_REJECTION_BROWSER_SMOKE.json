@@ -1,0 +1,18 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "wrongOrderExplained": true,
+      "importUnavailable": true
+    },
+    {
+      "width": 1920,
+      "wrongOrderExplained": true,
+      "importUnavailable": true
+    }
+  ],
+  "syntheticSource": true,
+  "workspaceId": "2e0ba2af-5cc5-415a-b59b-6f9b75f6c356",
+  "sourceUnchanged": true,
+  "pageErrors": []
+}

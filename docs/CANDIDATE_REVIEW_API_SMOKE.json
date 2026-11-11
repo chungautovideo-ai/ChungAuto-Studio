@@ -1,0 +1,13 @@
+{
+  "syntheticOnly": true,
+  "project": "workspace/content/2026-11-03/contentos-smoke-candidatereview-3",
+  "conflictStatus": true,
+  "manualAndAiChanges": true,
+  "staleRevisionRejected": true,
+  "staleCandidateRejected": true,
+  "explicitApplyWithHistory": true,
+  "duplicateRejected": true,
+  "keepManualUnchanged": true,
+  "noAutomaticRender": true,
+  "browserFixture": "workspace/content/2026-11-03/contentos-smoke-candidatereview-3"
+}

@@ -1,0 +1,45 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+import {giongApi} from '../editor/lib/giong-api.mjs';import {createConnectionStore} from '../src/services/connections.mjs';
+import {execFileSync} from 'node:child_process';import {createStorageService} from '../src/services/storage.mjs';
+import crypto from 'node:crypto';
+import {attachVoiceResult,voiceAssetContext} from '../src/services/voice-intake.mjs';
+test('voice workspace uses encrypted connections, validates audio and isolates/imports results through shared storage',async()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'contentos-voice-'));
+ try{
+  const connections=createConnectionStore(root,{secretDir:path.join(root,'secrets')});
+  let reject=false;
+  const fetcher=async(url,options)=>{assert.ok(url.startsWith('https://api.elevenlabs.io/'));if(reject)return new Response('{}',{status:401});assert.equal(options.headers['xi-api-key'],'fixture-voice-key');return new Response(JSON.stringify({voices:[{voice_id:'fixture',name:'Fixture',category:'premade'}]}),{headers:{'content-type':'application/json'}});};
+  const voice=giongApi({root,workspaceId:'one',configStore:connections.voiceConfig('one'),fetcher});
+  await voice.ketNoi({ncc:'elevenlabs',key:'fixture-voice-key'});
+  assert.equal(voice.trangThai().ketNoi.elevenlabs,'••••-key');
+  assert.equal(fs.readFileSync(path.join(root,'secrets/voice/one.json'),'utf8').includes('fixture-voice-key'),false);
+  assert.equal(fs.existsSync(path.join(root,'workspace/contentos/voice/one/ket-noi.json')),false);
+  reject=true;await assert.rejects(voice.ketNoi({ncc:'elevenlabs',key:'invalid'}));assert.equal(connections.voiceConfig('one').read().elevenlabs.key,'fixture-voice-key');
+  const other=giongApi({root,workspaceId:'two',configStore:connections.voiceConfig('two'),fetcher});assert.equal(other.trangThai().ketNoi.elevenlabs,'');
+  const fixture=path.join(root,'fixture.mp3');execFileSync('ffmpeg',['-nostdin','-v','error','-f','lavfi','-i','sine=frequency=440:duration=0.3',fixture],{windowsHide:true});
+  let invalid=false;
+  const generator=giongApi({root,workspaceId:'one',configStore:connections.voiceConfig('one'),fetcher:async()=>new Response(invalid?'{}':fs.readFileSync(fixture))});
+  const result=await generator.tao({ncc:'elevenlabs',ma:'fixture',text:'Kiểm tra voice'});assert.ok(result.duration>0);assert.equal(result.workspaceId,'one');assert.equal(generator.trangThai().kq.length,1);assert.equal(other.trangThai().kq.length,0);
+  const narration={workspaceId:'one',scriptId:'approved-story',version:2,scriptHash:'script-hash',textHash:crypto.createHash('sha256').update('Bản tin đã duyệt').digest('hex')};
+  const cited=await generator.tao({ncc:'elevenlabs',ma:'fixture',text:'Bản tin đã duyệt',narration});assert.deepEqual(cited.narration,narration);assert.equal(cited.textHash,narration.textHash);
+  await assert.rejects(generator.tao({ncc:'elevenlabs',ma:'fixture',text:'Đã đổi',narration}),/khớp/);
+  await assert.rejects(generator.tao({ncc:'elevenlabs',ma:'fixture',text:'x'.repeat(5001)}),/5.000/);
+  await assert.rejects(generator.tao({ncc:'elevenlabs',ma:'fixture',text:'Bản tin đã duyệt',narration:{...narration,workspaceId:'two'}}),/khớp/);
+  invalid=true;await assert.rejects(generator.tao({ncc:'elevenlabs',ma:'fixture',text:'Invalid response'}));assert.equal(generator.trangThai().kq.length,2);
+  const dir='workspace/content/2026-11-03/voice-qa';fs.mkdirSync(path.join(root,dir),{recursive:true});fs.writeFileSync(path.join(root,dir,'project.json'),JSON.stringify({workspaceId:'one'}));
+  const storage=createStorageService(root,{active:()=>({id:'one'})}),file=generator.fileKq(result.id),sources=[{status:'ready',kind:'file',path:file,role:'voice',files:[{path:file}]}];
+  const imported=await storage.attachSelected(dir,sources,file);assert.equal(imported.asset.sha256,result.sha256);assert.equal(imported.asset.source.role,'voice');assert.equal((await storage.attachSelected(dir,sources,file)).duplicate,true);
+  let bound={id:narration.scriptId,hash:narration.scriptHash,payload:{script:'Bản tin đã duyệt'}};const news={projectBrief:()=>bound};
+  const narrationImported=await attachVoiceResult(root,storage,news,{workspaceId:'one',dir,id:cited.id,expectedNewsId:narration.scriptId});assert.equal(narrationImported.voice.narration.scriptId,narration.scriptId);
+  assert.equal(voiceAssetContext(path.join(root,dir),narrationImported.asset.path,bound).status,'match');
+  assert.equal(voiceAssetContext(path.join(root,dir),narrationImported.asset.path,{...bound,id:'other'}).status,'different-script');
+  assert.equal(voiceAssetContext(path.join(root,dir),narrationImported.asset.path,null).status,'no-script');
+  const importedFile=path.join(root,dir,narrationImported.asset.path),beforeBytes=fs.readFileSync(importedFile);fs.appendFileSync(importedFile,'tamper');assert.throws(()=>voiceAssetContext(path.join(root,dir),narrationImported.asset.path,bound),/thay đổi/);fs.writeFileSync(importedFile,beforeBytes);
+  await attachVoiceResult(root,storage,news,{workspaceId:'one',dir,id:cited.id,expectedNewsId:narration.scriptId});assert.equal(JSON.parse(fs.readFileSync(path.join(root,dir,'work/voice-assets.json'))).entries.length,1);
+  bound={...bound,id:'other'};await assert.rejects(attachVoiceResult(root,storage,news,{workspaceId:'one',dir,id:cited.id,expectedNewsId:narration.scriptId}),/khớp/);
+  bound={id:narration.scriptId,hash:narration.scriptHash,payload:{script:'Bản tin đã duyệt'}};
+  fs.appendFileSync(generator.fileKq(cited.id),'changed');await assert.rejects(attachVoiceResult(root,storage,news,{workspaceId:'one',dir,id:cited.id,expectedNewsId:narration.scriptId}),/đã đổi/);
+  voice.boKetNoi('elevenlabs');assert.equal(voice.trangThai().ketNoi.elevenlabs,'');assert.equal(other.trangThai().kq.length,0);
+  assert.throws(()=>giongApi({root,workspaceId:'../escape'}));
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});

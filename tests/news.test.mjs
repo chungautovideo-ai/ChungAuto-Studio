@@ -1,0 +1,26 @@
+import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import test from 'node:test';import assert from 'node:assert/strict';
+import {createNewsService} from '../src/services/news.mjs';
+test('news draft/approval and immutable cited versions remain workspace scoped',t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'cos-news-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));const service=createNewsService(root);
+ const body={title:'Tin thử',script:'Nội dung đã đọc.',sources:[{url:'https://example.com/news',excerpt:'Trích nguyên văn đã đọc.'}]};
+ const draft=service.save('one',body);assert.equal(draft.status,'draft');assert.throws(()=>service.brief('one',draft.id),/Duyệt/);
+ const approved=service.save('one',{...body,parentId:draft.id,approved:true});assert.equal(approved.version,2);assert.equal(service.brief('one',approved.id).payload.script,body.script);
+ const updated=service.save('one',{...body,script:'Nội dung sửa.',parentId:approved.id});assert.equal(updated.status,'draft');assert.equal(service.brief('one',approved.id).payload.script,body.script);
+ assert.throws(()=>service.save('one',{...body,parentId:approved.id}),/mới hơn/);assert.throws(()=>service.brief('two',approved.id),/workspace/);
+ for(const invalid of [{...body,sources:[]},{...body,sources:[{url:'file:///secret',excerpt:'x'}]},{...body,sources:[{url:'https://user:secret@example.com',excerpt:'x'}]},{...body,script:''}])assert.throws(()=>service.save('one',invalid));
+ assert.equal(service.list('one').entries.length,3);assert.deepEqual(service.list('two').entries,[]);
+ const articleId='11111111-1111-4111-8111-111111111111',folder=path.join(root,'workspace/contentos/news-articles/one');fs.mkdirSync(folder,{recursive:true});
+ fs.writeFileSync(path.join(folder,articleId+'.json'),JSON.stringify({workspaceId:'one',article:{url:body.sources[0].url,text:body.sources[0].excerpt,title:'Nguồn thử',warnings:[]},facts:{count:1,facts:[{id:'F1',text:body.sources[0].excerpt,cite:'đoạn 1'}]}}));
+ const cited={...body,sources:[{...body.sources[0],articleId}],approved:true};const citedSaved=service.save('one',cited);assert.equal(service.brief('one',citedSaved.id).payload.sources[0].evidence.facts.count,1);
+ assert.throws(()=>service.save('two',cited),/workspace/);
+ assert.throws(()=>service.save('one',{...cited,sources:[{...cited.sources[0],url:'https://example.com/other'}]}),/khớp/);
+ assert.throws(()=>service.save('one',{...cited,sources:[{...cited.sources[0],excerpt:'Nội dung tự thay'}]}),/đổi/);
+ const projectDir=path.join(root,'workspace/content/day/project');fs.mkdirSync(projectDir,{recursive:true});fs.writeFileSync(path.join(projectDir,'project.json'),JSON.stringify({workspaceId:'one'}));
+ const relative=path.relative(root,projectDir);assert.equal(service.projectBrief('one',relative),null);
+ assert.equal(service.bindProject('one',relative,approved.id,null).id,approved.id);
+ assert.equal(service.projectBrief('one',relative).payload.script,body.script);
+ assert.throws(()=>service.bindProject('one',relative,citedSaved.id,null),/đã đổi/);
+ assert.throws(()=>service.bindProject('one',relative,draft.id,approved.id),/Duyệt/);
+ assert.throws(()=>service.projectBrief('two',relative),/workspace/);
+ assert.equal(service.bindProject('one',relative,'',approved.id),null);assert.equal(service.projectBrief('one',relative),null);
+});

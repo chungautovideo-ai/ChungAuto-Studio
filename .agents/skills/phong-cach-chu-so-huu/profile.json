@@ -1,0 +1,124 @@
+{
+  "learnedAt": "2026-11-06T06:41:58.789Z",
+  "projects": [
+    "1029 (1)"
+  ],
+  "profile": {
+    "projects": 1,
+    "minutes": 1.6,
+    "canvas": "1080x1920",
+    "shot": {
+      "avg": 48.3,
+      "median": 46.7,
+      "under2s": 0,
+      "perMinute": 2.5
+    },
+    "textsPerMinute": 1.9,
+    "captions": true,
+    "captionsPerMinute": 25.5,
+    "captionTemplates": [
+      [
+        "逐词显色黄色",
+        41
+      ],
+      [
+        "SIMPLE VLOG EN - SIMPLE STORY",
+        1
+      ]
+    ],
+    "captionFonts": [
+      [
+        "iCielPanton-Black",
+        41
+      ]
+    ],
+    "captionColors": [
+      [
+        "#ffdc00",
+        41
+      ]
+    ],
+    "fonts": [
+      [
+        "iCielPanton-BlackItalic",
+        1
+      ],
+      [
+        "Gontserrat-Black",
+        1
+      ]
+    ],
+    "textColors": [
+      [
+        "#ff0000",
+        1
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#ffffffff",
+        1
+      ]
+    ],
+    "textAnims": [
+      [
+        "Manifest (in)",
+        2
+      ],
+      [
+        "Mini Zoom (in)",
+        1
+      ],
+      [
+        "Slide Right (in)",
+        1
+      ],
+      [
+        "Camera Flash (in)",
+        1
+      ],
+      [
+        "Fade Out (out)",
+        1
+      ]
+    ],
+    "transitionsPerMinute": 0,
+    "transitions": [],
+    "transitionAvg": 0,
+    "effects": [],
+    "stickersPerMinute": 0,
+    "stickers": [],
+    "overlayClipsPerMinute": 3.7,
+    "soundsPerMinute": 3.7,
+    "sounds": [
+      [
+        "Swish",
+        2
+      ],
+      [
+        "I'm surprised, den sounds when I emphasize it! sound of(863204)",
+        1
+      ],
+      [
+        "click (camera shutter sound single shot)(1111055)",
+        1
+      ],
+      [
+        "Shutter Sound of the Camera",
+        1
+      ],
+      [
+        "UI Prompt",
+        1
+      ]
+    ],
+    "musicVolumeDb": -20,
+    "speedChangesPerMinute": 2.5,
+    "keyframesPerMinute": 0,
+    "colorAdjust": [],
+    "vocalEnhance": false,
+    "denoise": false
+  }
+}

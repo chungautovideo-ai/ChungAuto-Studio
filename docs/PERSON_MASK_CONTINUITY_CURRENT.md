@@ -1,0 +1,9 @@
+# Liên tục vùng người khi tracking · 05/11/2026
+
+Rà code person-track.py cho thấy đã có guard cắt cảnh RGB/histogram và object logit/diện tích tuyệt đối, nhưng chưa phát hiện mask nhảy vùng khi score còn dương. Bổ sung person_mask_guard.py kiểm giữa hai mẫu: overlap nhỏ hơn 5% diện tích vùng nhỏ và tâm di chuyển trên 20% tọa độ khung chuẩn hóa, hoặc tỷ lệ diện tích trên 4 lần thì từ chối toàn kết quả của lượt. Báo mốc nguồn, đề nghị chia khoảng/chọn lại; không tự sửa live project, không áp mask dở. Không đổi schema selection, renderer, endpoint hay UI; lỗi dùng đường hiển thị hiện có. Không yêu cầu restart vì Python được đọc khi tạo tác vụ mới.
+
+Đây là heuristic liên tục, không xác minh danh tính. Chuyển động nhanh/ra khỏi khung có thể bị từ chối nhầm; nhiều người chồng nhau có thể không bị phát hiện. Người dùng vẫn cần xem mask toàn khoảng. Không suy đã phục hồi che khuất/cắt cảnh.
+
+Kiểm tests/person-mask-guard-smoke.py: 7 trường hợp tổng hợp gồm nhảy vị trí, co/phình diện tích, mask rỗng/sai kích thước và chuyển động có overlap; 47 chuyển tiếp từ mask SAM2 QA thật trước đây đều qua. Chạy lại person-track.py thật với CUDA trên proxy6s/48mẫu cùng điểm chọn, giữ khóa person-tracking trong lúc chạy: 3,859s, peak GPU612740096 byte, mask khớp toàn bộ bản trước; không đo throughput video production. PERSON_MASK_CONTINUITY_SMOKE.json và workspace/logs/person-mask-continuity-inference.log. Không xuất lại vì không đổi renderer và masks giữ nguyên; kiểm final6s trước đó xem SELECTED_PERSON_EXPOSURE_CURRENT.md.
+
+Node tests person-tracking/person-selection: 5/5 qua. Creative v47 parent46 giữ nguyên11preset/4references, bổ sung hướng dẫn chia khoảng/chọn lại mà không nới scope hoặc bỏ mask. quick_validate và đóng ZIP qua: workspace/exports/chungauto-creative-v47.zip (1628164 byte). Snapshot job cũ giữ nguyên. Chưa kiểm actual failure branch bằng video nhiều người thật hoặc che khuất; synthetic failures không thay nghiệm thu đó.

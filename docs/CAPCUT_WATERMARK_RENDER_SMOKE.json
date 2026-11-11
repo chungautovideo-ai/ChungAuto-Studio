@@ -1,0 +1,32 @@
+{
+  "project": "D:\\Edit tự động\\contentos\\workspace\\content\\ContentOS-Smoke-CapLogo-1793746985900",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\ContentOS-Smoke-CapLogo-1793746985900\\renders\\capcut-ContentOS-Smoke-CapLogo-1793746985900",
+  "manifest": {
+    "schemaVersion": 1,
+    "start": 0,
+    "duration": 1,
+    "frame": {
+      "width": 1080,
+      "height": 1920
+    },
+    "source": {
+      "width": 160,
+      "height": 80
+    },
+    "width": 192,
+    "height": 96,
+    "x": 845,
+    "y": 43,
+    "opacity": 1,
+    "position": "top-right",
+    "file": "6-logo/logo.png"
+  },
+  "basePixel": [
+    89,
+    169,
+    238
+  ],
+  "originalLogoBytesPreserved": true,
+  "sourceProjectUnchanged": true,
+  "limits": "Actual synthetic package; no graphics layer in this fixture, no CapCut application import or whole-timeline proof."
+}

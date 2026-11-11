@@ -1,0 +1,24 @@
+{
+  "spaceStudioSwitch": true,
+  "narrationAddedAndReloaded": false,
+  "sharedVoiceToolEntry": true,
+  "voiceEntitlementPreserved": true,
+  "imageConnectionDialog": true,
+  "coverImageToolEntry": true,
+  "imageToolUnconfiguredState": true,
+  "waitingJobRecoveredAfterReload": true,
+  "cancelledJobInHistory": true,
+  "executionChoiceRestored": true,
+  "cliModelDraftRestored": true,
+  "chatSourceCard": true,
+  "sharedIntakeDialog": true,
+  "draftPreserved": true,
+  "reloadRestored": true,
+  "desktop1280": {
+    "chatWidth": 562.5,
+    "previewWidth": 687.5,
+    "overlap": false,
+    "height": 660.15625
+  },
+  "pageErrors": []
+}

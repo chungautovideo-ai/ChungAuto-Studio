@@ -1,0 +1,570 @@
+[
+  {
+    "screen": "vek_home_e",
+    "evidenceId": "ev_2e1c968d716c4d02eed87cd02ac4cdc3540b89faf873ef4683ade69c5198a46e",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_actual_editor",
+    "evidenceId": "ev_eee36f6bbd1932826445aa050ed48c9b9c6fc720fca45e2eff8f493a1ba568e1",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "setup",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open_editor",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_screen_Kho hiệu ứng của tôi",
+    "evidenceId": "ev_bf7d4365beab88e38175a231c2dab9981fbbd0b8e7687d9e9eb3a532a49439bf",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_screen_Mạng xã hội PRO",
+    "evidenceId": "ev_0de6eacf0305004489c0cf079b488b673499102fff5b62ac25d697e434903429",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_screen_Tích hợp PRO",
+    "evidenceId": "ev_51af79cd5afc9bae63c6e07293e6f559e7d87f8ec3c43e1bebea493bcc5a12a4",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_screen_Kết nối AI",
+    "evidenceId": "ev_b7fb9d4329ce3c49f12f460f51f750485755454e26ae3b074cd70677c58956cb",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_screen_Giọng nói AI PREMIUM",
+    "evidenceId": "ev_490fdbb5dfffa103a3869eb075c0a626c3d47cb49c7f8cd59c7fb76d6f74deca",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_screen_Cắt clip ngắn",
+    "evidenceId": "ev_c244119813698fc171f9f382d89e6a26dc36375cb7722ca29f1832b33d6fc697",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "open",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_detail_Cảnh trám",
+    "evidenceId": "ev_822fc2afefcab01af4d0b8dd79cfa108a1b6b75b8e284117fad8dc25735acb3e",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "setup",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "editor",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "inspect",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "settled",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_detail_Ảnh bìa",
+    "evidenceId": "ev_b0e1a2245fa87dc9a816495034b18d2381b1763f1f4c2bbdebbf40eaba3e0ef0",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "setup",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "editor",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "inspect",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "settled",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "screen": "vek_detail_Xuất video",
+    "evidenceId": "ev_b13bd6c1c312ce41d1e9c0934fcc837b0228777f82b9594101cce871010412f9",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "steps": [
+      {
+        "step": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "setup",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "editor",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "inspect",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step": "settled",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "renderer": "actual Chrome WebGL beauty.js",
+  "landmarks": "synthetic ellipse; not real detector benchmark",
+  "sameSkinColorAcrossFrame": true,
+  "before": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "after": [
+    [
+      174,
+      126,
+      102,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "backgroundUnchanged": true,
+  "missingFaceUnchanged": true,
+  "scope": "face-only whitening; not whole-person segmentation or final video validation"
+}

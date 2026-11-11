@@ -1,0 +1,52 @@
+{
+  "synthetic": true,
+  "sizes": [
+    {
+      "width": 1280,
+      "dialogFits": true
+    },
+    {
+      "width": 1920,
+      "dialogFits": true
+    }
+  ],
+  "created": {
+    "format": "9:16",
+    "independentMedia": true
+  },
+  "csvFile": {
+    "utf8FileRead": true,
+    "valuesPreviewed": true
+  },
+  "csv": {
+    "uiSubmitted": true,
+    "textReplacedInIndependentProjects": true,
+    "sourcePreserved": true
+  },
+  "render": {
+    "count": 2,
+    "outputs": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "duration": 1,
+        "revision": "a07323080fc0d5e763718ea8b544b9ce57287de81269b89edd50c6f35307e30e"
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "duration": 1,
+        "revision": "8c6d4af5741ac15da7deada9c2dff9bb62e761a8f78e3e650ceca8fd61e47952"
+      }
+    ],
+    "idempotent": true,
+    "triggeredFromUI": true,
+    "downloadVerified": true
+  },
+  "batch": {
+    "count": 2,
+    "deduplicated": true,
+    "reopenedAfterReload": true,
+    "dialogFits": true
+  }
+}

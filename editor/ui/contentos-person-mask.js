@@ -1,0 +1,40 @@
+import {normalizePersonMaskEdits,applyPersonMaskEdits} from '/lib/person-mask-edits.js';
+
+export async function openPersonMaskDialog({sources,edits=[],request=fetch,mediaUrl,validate=()=>{},onApply}={}){
+ const dialog=document.createElement('dialog');dialog.setAttribute('aria-label','Sửa vùng người và da');
+ dialog.style.cssText='width:min(820px,96vw);max-height:92dvh;overflow:auto;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:20px';
+ dialog.innerHTML=`<h2>Sửa vùng người và da</h2><p class="help">Vẽ trên khung nguồn. Nét cọ cố định trong khoảng chọn, chưa tự bám chuyển động; dùng khoảng ngắn cho tay/người di chuyển.</p>
+ <label>Nguồn đã quét<select data-source aria-label="Nguồn sửa vùng"></select></label>
+ <div class="btns" style="display:flex;flex-wrap:wrap;gap:12px;margin:12px 0"><label>Giây xem<input data-time aria-label="Giây xem vùng" type="number" min="0" step="0.01" value="0"></label><button class="outline" data-load>Lấy khung</button></div>
+ <canvas data-canvas aria-label="Vẽ sửa vùng người và da" style="display:block;max-width:100%;max-height:42dvh;margin:auto;touch-action:none;cursor:crosshair"></canvas>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:12px 0"><label>Cọ<select data-mode aria-label="Loại cọ vùng"><option value="skin">Thêm vùng da</option><option value="person">Thêm vùng người</option><option value="erase">Xóa vùng chỉnh</option></select></label><label>Cỡ cọ · % cạnh ngắn<input data-radius aria-label="Cỡ cọ vùng" type="number" min="0.3" max="25" step="0.5" value="3"></label><label>Từ giây nguồn<input data-from aria-label="Vùng từ giây" type="number" min="0" step="0.01" value="0"></label><label>Đến giây nguồn<input data-to aria-label="Vùng đến giây" type="number" min="0" step="0.01" value="0.067"></label></div>
+ <p class="help">Da có màu xanh lá; phần người còn lại màu xanh dương. Cọ thêm không tự nâng sáng hoặc bật làm đẹp. Bản xem tại đây dùng vùng quét gốc và nét cọ; kiểm lại hiệu ứng/thu viền trong Studio.</p>
+ <p data-status role="status">Đang tải…</p><div class="btns" style="display:flex;gap:12px;flex-wrap:wrap"><button class="outline" data-undo>Bỏ nét cuối</button><button class="outline" data-reset>Xóa nét nguồn này</button><button class="primary" data-apply>Áp dụng vào bản dựng</button><button class="outline" data-close>Hủy</button></div>`;
+ document.body.append(dialog);dialog.showModal();const q=s=>dialog.querySelector(s),video=document.createElement('video'),canvas=q('[data-canvas]'),ctx=canvas.getContext('2d'),controller=new AbortController();video.preload='auto';video.muted=true;video.playsInline=true;
+ let draft=normalizePersonMaskEdits(edits),sample=null,image=null,loading=false,generation=0,stroke=null,closed=false;
+ const choices=[...new Set(sources||[])];for(const src of choices){const o=document.createElement('option');o.value=src;o.textContent=src;q('[data-source]').append(o);}
+ const status=text=>q('[data-status]').textContent=text;
+ const controls=()=>{q('[data-apply]').disabled=loading||!sample;q('[data-load]').disabled=loading;q('[data-undo]').disabled=loading||!draft.length;q('[data-reset]').disabled=loading||!draft.some(s=>s.src===q('[data-source]').value);};
+ function draw(){if(!image||!sample)return;ctx.drawImage(image,0,0,canvas.width,canvas.height);const pixels=new Uint8Array(sample.w*sample.h*4);let i=0;for(let r=0;r<sample.runs.length;r+=2)for(let n=0;n<sample.runs[r];n++){pixels[i++]=sample.runs[r+1]>0?255:0;pixels[i++]=sample.runs[r+1]===2?255:0;pixels[i++]=0;pixels[i++]=255;}
+  applyPersonMaskEdits(pixels,sample.w,sample.h,draft,sample.src,sample.sha256,sample.time);
+  const layer=document.createElement('canvas');layer.width=sample.w;layer.height=sample.h;const data=new ImageData(sample.w,sample.h);for(let n=0;n<pixels.length;n+=4){data.data[n]=40;data.data[n+1]=pixels[n+1]?255:100;data.data[n+2]=pixels[n+1]?80:255;data.data[n+3]=pixels[n]?110:0;}layer.getContext('2d').putImageData(data,0,0);ctx.drawImage(layer,0,0,canvas.width,canvas.height);controls();
+ }
+ async function load(){const serial=++generation;loading=true;sample=null;controls();status('Đang lấy khung và vùng nhận diện…');try{
+  validate();const src=q('[data-source]').value,time=Number(q('[data-time]').value);if(!src||!Number.isFinite(time)||time<0)throw new Error('Chọn nguồn và mốc giây hợp lệ.');
+  const response=await request('/api/face?'+new URLSearchParams({sample:src,time}),{signal:controller.signal}),data=await response.json();if(!response.ok)throw new Error(data.error||'Không đọc được vùng quét.');validate();if(serial!==generation||closed)return;
+  const wait=event=>new Promise((resolve,reject)=>{const done=error=>{clearTimeout(timer);video.removeEventListener(event,ok);video.removeEventListener('error',bad);controller.signal.removeEventListener('abort',bad);error?reject(error):resolve();},ok=()=>done(),bad=()=>done(new Error('Không mở được video nguồn hoặc đã hủy.')),timer=setTimeout(()=>done(new Error('Lấy khung quá thời gian.')),15000);video.addEventListener(event,ok,{once:true});video.addEventListener('error',bad,{once:true});controller.signal.addEventListener('abort',bad,{once:true});});
+  const url=mediaUrl(src);if(video.getAttribute('src')!==url){const ready=wait('loadeddata');video.src=url;await ready;}if(Math.abs(video.currentTime-time)>.001){const sought=wait('seeked');video.currentTime=time;await sought;}
+  validate();if(serial!==generation||closed)return;sample={...data,time};const scale=Math.min(1,720/video.videoWidth);canvas.width=Math.round(video.videoWidth*scale);canvas.height=Math.round(video.videoHeight*scale);canvas.style.width='min(100%, '+Math.round(340*video.videoWidth/video.videoHeight)+'px)';canvas.style.height='auto';image=document.createElement('canvas');image.width=canvas.width;image.height=canvas.height;image.getContext('2d').drawImage(video,0,0,image.width,image.height);draw();status('Kéo cọ trên ảnh. Có '+draft.filter(s=>s.src===src).length+' nét ở nguồn này.');
+ }catch(error){if(!closed)status(error.message);}finally{if(serial===generation){loading=false;controls();}}}
+ const point=e=>{const r=canvas.getBoundingClientRect();return [Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))];};
+ canvas.onpointerdown=e=>{if(loading||!sample)return;try{const next={src:sample.src,sha256:sample.sha256,from:Number(q('[data-from]').value),to:Number(q('[data-to]').value),mode:q('[data-mode]').value,radius:Number(q('[data-radius]').value)/100,points:[point(e)]};normalizePersonMaskEdits([...draft,next]);if(Number(q('[data-time]').value)<next.from||Number(q('[data-time]').value)>=next.to)throw new Error('Giây xem phải nằm trong khoảng áp dụng để kiểm nét cọ.');draft.push(next);stroke=next;canvas.setPointerCapture(e.pointerId);draw();}catch(error){status(error.message);}};
+ canvas.onpointermove=e=>{if(!stroke)return;const p=point(e),last=stroke.points.at(-1);if(Math.hypot(p[0]-last[0],p[1]-last[1])<.002)return;try{const updated={...stroke,points:[...stroke.points,p]};normalizePersonMaskEdits([...draft.slice(0,-1),updated]);stroke.points.push(p);draw();}catch(error){stroke=null;status(error.message);}};
+ canvas.onpointerup=canvas.onpointercancel=()=>stroke=null;
+ q('[data-load]').onclick=load;q('[data-source]').onchange=()=>{q('[data-time]').value='0';q('[data-from]').value='0';q('[data-to]').value='.067';load();};
+ q('[data-time]').oninput=()=>{sample=null;stroke=null;controls();status('Bấm Lấy khung tại giây mới trước khi vẽ.');};
+ q('[data-from]').oninput=q('[data-to]').oninput=()=>draw();
+ q('[data-undo]').onclick=()=>{draft.pop();draw();};q('[data-reset]').onclick=()=>{draft=draft.filter(s=>s.src!==q('[data-source]').value);draw();};
+ q('[data-close]').onclick=()=>dialog.close();q('[data-apply]').onclick=()=>{try{validate();onApply(normalizePersonMaskEdits(draft));dialog.close();}catch(error){status(error.message);}};
+ dialog.addEventListener('close',()=>{closed=true;controller.abort();video.pause();video.removeAttribute('src');video.load();dialog.remove();});
+ await load();return dialog;
+}

@@ -1,0 +1,20 @@
+{
+  "workspaceId": "4feecf08-525b-45d9-bcf7-3c2f55523d16",
+  "project": "workspace/content/2026-11-03/contentos-smoke-realasr-3",
+  "syntheticSpeech": "Windows System.Speech, English",
+  "actualHttpEndpoint": true,
+  "streamedProgress": true,
+  "cancelledThenRetried": true,
+  "cancelArtifactsCleaned": true,
+  "progressEvents": 4,
+  "engine": "whisper.cpp",
+  "model": "ggml-large-v3-turbo-q5_0.bin",
+  "language": "en",
+  "wordCount": 17,
+  "text": "welcome to contentos. this is a local speech recognition test. we create videos using narration and pictures.",
+  "elapsedMs": 7936,
+  "projectPreserved": true,
+  "mappedToOutputWords": 7,
+  "noProviderCalls": true,
+  "limits": "Local English synthetic speech only. Does not validate Vietnamese accuracy, long audio, real voice provider or caption render."
+}

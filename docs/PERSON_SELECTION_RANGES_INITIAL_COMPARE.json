@@ -1,0 +1,23 @@
+{
+  "checkPassed": false,
+  "rows": [
+    {
+      "time": 0.5,
+      "changedOver8": 7207
+    },
+    {
+      "time": 2.5,
+      "changedOver8": 7051
+    },
+    {
+      "time": 3.5,
+      "changedOver8": 7016
+    },
+    {
+      "time": 5.5,
+      "changedOver8": 6926
+    }
+  ],
+  "resolvedCause": "Real GSAP timeline had duration0 without graphics, so source-bound mask stayed at time0 through final. runtime now contains full E.total clock tween. Near-zero bodyWhite caused unstable shader logarithm and was separately fixed.",
+  "initialHypothesisNotConfirmed": "Different raster path was initially suspected. Actual root was a zero-duration GSAP clock; zero still embeds beauty for scanned body sources."
+}

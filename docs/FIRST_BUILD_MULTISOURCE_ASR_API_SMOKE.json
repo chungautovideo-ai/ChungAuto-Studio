@@ -1,0 +1,38 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-firstasr-3",
+  "actualFirstBuildEndpoint": true,
+  "actualLocalWhisper": true,
+  "multipleSources": true,
+  "syntheticEnglishSpeech": true,
+  "syntheticGateway": true,
+  "noAutomaticRender": true,
+  "preparation": {
+    "state": "recognized",
+    "words": 22
+  },
+  "wordsSeenByModel": [
+    "Welcome",
+    "to",
+    "the",
+    "video",
+    "studio",
+    "the",
+    "camera",
+    "is",
+    "ready",
+    "for",
+    "action",
+    "Welcome",
+    "to",
+    "the",
+    "video",
+    "studio",
+    "the",
+    "camera",
+    "is",
+    "ready",
+    "for",
+    "action"
+  ],
+  "limits": "Explicit en recognition of synthetic English only; no Vietnamese quality or actual paid model acceptance."
+}

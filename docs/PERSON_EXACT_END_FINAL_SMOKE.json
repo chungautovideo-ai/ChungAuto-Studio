@@ -1,0 +1,41 @@
+{
+  "projects": [
+    "workspace\\content\\2026-11-05\\contentos-exact-end-baseline-uyMwy4",
+    "workspace\\content\\2026-11-05\\contentos-exact-end-lift-XzXZIE"
+  ],
+  "outputs": [
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-exact-end-baseline-uyMwy4\\renders\\contentos-exact-end-baseline-uyMwy4-final.mp4",
+    "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-exact-end-lift-XzXZIE\\renders\\contentos-exact-end-lift-XzXZIE-final.mp4"
+  ],
+  "currentFinalRender": true,
+  "requestedEnd": 0.96,
+  "sampleCoverageEnd": 1,
+  "comparisons": [
+    {
+      "time": 0,
+      "activePixels": 4767,
+      "meanAbsoluteDifference": 1.3980305989583333,
+      "changedFraction": 0.0780978732638889
+    },
+    {
+      "time": 0.5,
+      "activePixels": 4657,
+      "meanAbsoluteDifference": 1.6093569155092593,
+      "changedFraction": 0.08341471354166667
+    },
+    {
+      "time": 0.9333333333333333,
+      "activePixels": 4822,
+      "meanAbsoluteDifference": 1.6937934027777777,
+      "changedFraction": 0.0834689670138889
+    },
+    {
+      "time": 0.9666666666666667,
+      "activePixels": 0,
+      "meanAbsoluteDifference": 0.5387641059027778,
+      "changedFraction": 0
+    }
+  ],
+  "sourceUnchanged": true,
+  "limits": "One-second QA with saved real masks and artificially dark source. Measures rendered correction on/off near fractional endpoint, not newly inferred masks, skin-tone, native UI, occlusion, identity or full production quality."
+}

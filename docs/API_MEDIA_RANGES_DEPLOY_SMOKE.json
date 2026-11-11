@@ -1,0 +1,26 @@
+{
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "queued": 0,
+  "workers": 0,
+  "active": 0,
+  "beforePid": 56288,
+  "afterPid": 34664,
+  "exactCommand": true
+}

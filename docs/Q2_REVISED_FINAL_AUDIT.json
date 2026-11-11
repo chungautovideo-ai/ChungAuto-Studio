@@ -1,0 +1,207 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-overlap-2",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\renders\\contentos-qa-broll-overlap-2-final.mp4",
+  "integrity": {
+    "bytes": 351592604,
+    "sha256": "897630f0bb191e9c16967f7a2f6654d7baac6a1ac9701f5a0bb1879a7e334edb"
+  },
+  "snapshotId": "780e2eb1-341b-4b6a-afca-8c34f3fb44b2",
+  "revision": "02ac63a3eeb97c8aab2e253c8a1155c8f71564425def2911a300164fa41a8f87",
+  "duration": "106.300000",
+  "audioLoudness": {
+    "readOnly": true,
+    "stream": "first-audio-stream",
+    "method": "FFmpeg loudnorm input measurements",
+    "integratedLufs": -15.18,
+    "truePeakDbtp": -1.73,
+    "loudnessRangeLu": 4.8,
+    "thresholdLufs": -25.52,
+    "silent": false,
+    "reference": {
+      "integratedLufs": -14,
+      "truePeakDbtp": -1.5
+    },
+    "warnings": [],
+    "listened": false,
+    "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+  },
+  "audioHeadroom": {
+    "method": "measured AAC gain attenuation",
+    "attempts": [
+      {
+        "gainDb": -0.37999999999999995,
+        "beforeDbtp": -1.32,
+        "afterDbtp": -1.73
+      }
+    ],
+    "targetDbtp": -1.5,
+    "marginDb": 0.2
+  },
+  "warnings": [],
+  "contact": "docs/Q2_REVISED_FINAL_CONTACT.jpg",
+  "frames": [
+    {
+      "time": 0.5,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\00.jpg",
+      "brolls": []
+    },
+    {
+      "time": 3,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\01.jpg",
+      "brolls": []
+    },
+    {
+      "time": 13.9,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\02.jpg",
+      "brolls": []
+    },
+    {
+      "time": 14.5,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\03.jpg",
+      "brolls": [
+        "b-den"
+      ]
+    },
+    {
+      "time": 15.45,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\04.jpg",
+      "brolls": [
+        "b-den"
+      ]
+    },
+    {
+      "time": 15.6,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\05.jpg",
+      "brolls": [
+        "b-man"
+      ]
+    },
+    {
+      "time": 15.95,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\06.jpg",
+      "brolls": [
+        "b-man"
+      ]
+    },
+    {
+      "time": 16.2,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\07.jpg",
+      "brolls": [
+        "b-man"
+      ]
+    },
+    {
+      "time": 16.35,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\08.jpg",
+      "brolls": []
+    },
+    {
+      "time": 18.2,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\09.jpg",
+      "brolls": [
+        "b-ghe"
+      ]
+    },
+    {
+      "time": 19.3,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\10.jpg",
+      "brolls": []
+    },
+    {
+      "time": 20.05,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\11.jpg",
+      "brolls": []
+    },
+    {
+      "time": 20.5,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\12.jpg",
+      "brolls": [
+        "b-mau"
+      ]
+    },
+    {
+      "time": 21.1,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\13.jpg",
+      "brolls": [
+        "b-mau"
+      ]
+    },
+    {
+      "time": 21.3,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\14.jpg",
+      "brolls": []
+    },
+    {
+      "time": 40,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\15.jpg",
+      "brolls": []
+    },
+    {
+      "time": 70,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\16.jpg",
+      "brolls": []
+    },
+    {
+      "time": 100,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\17.jpg",
+      "brolls": []
+    },
+    {
+      "time": 105.8,
+      "path": "workspace\\content\\2026-11-05\\contentos-qa-broll-overlap-2\\work\\final-audit-LoNvcx\\18.jpg",
+      "brolls": []
+    }
+  ],
+  "brolls": [
+    {
+      "id": "b-man",
+      "start": 15.52,
+      "end": 16.27,
+      "mediaStart": 10
+    },
+    {
+      "id": "b-den",
+      "start": 14.02,
+      "end": 15.52,
+      "mediaStart": 4
+    },
+    {
+      "id": "b-ghe",
+      "start": 17.62,
+      "end": 19.12,
+      "mediaStart": 1
+    },
+    {
+      "id": "b-mau",
+      "start": 20.16,
+      "end": 21.18,
+      "mediaStart": 4
+    }
+  ],
+  "visualReviewed": true,
+  "listened": false,
+  "limits": "Full final render integrity plus sparse decoded frames. No continuous visual/audio review, color/person/plate acceptance or production throughput proof.",
+  "visualReviewScope": "19 sparse final-frame samples plus one source frame at 4.5s; no continuous viewing.",
+  "observations": [
+    {
+      "subject": "b-man",
+      "finding": "Screen is visible in final frames at15.6/15.95/16.2; entry frame15.6 mixes presenter and screen due fade. 0.75s insert does not prove interface readability or complete operation."
+    },
+    {
+      "subject": "b-den",
+      "finding": "Final samples show front of a Ford vehicle with headlights; suitable for installation appearance, not a night beam performance comparison."
+    },
+    {
+      "subject": "b-ghe",
+      "finding": "Final sample18.2 shows seat/headrest; supports upholstery appearance, not powered-seat operation."
+    },
+    {
+      "subject": "b-mau",
+      "finding": "Final split and source4.5 show worker applying film. Insufficient context to certify body color-change rather than window-film work; do not use filename as proof."
+    },
+    {
+      "subject": "caption",
+      "finding": "Caption/highlight and sparse title frames are visible. No listening/ASR accuracy or continuous motion acceptance."
+    }
+  ]
+}

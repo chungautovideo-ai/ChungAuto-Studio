@@ -1,0 +1,39 @@
+{
+  "dir": "workspace/content/2026-11-04/contentos-smoke-colornormalization-4",
+  "results": [
+    {
+      "width": 1280,
+      "detectHlg": true,
+      "libraryVisible": true,
+      "previewVideo": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true,
+      "encoder": "h264_nvenc"
+    },
+    {
+      "width": 1920,
+      "detectHlg": true,
+      "libraryVisible": true,
+      "previewVideo": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true,
+      "encoder": "h264_nvenc"
+    },
+    {
+      "width": 390,
+      "detectHlg": true,
+      "libraryVisible": true,
+      "previewVideo": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true,
+      "encoder": "h264_nvenc"
+    }
+  ],
+  "errors": []
+}

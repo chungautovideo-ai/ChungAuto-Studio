@@ -1,0 +1,9 @@
+# Creative v19 · Người và da trên B-roll
+
+Bộ lọc→Làm đẹp dùng cùng thanh camera.beauty cho cả video A-roll/B-roll đã quét, không tự bật preset. Nút quét lấy nguồn video đang dùng, bỏ ảnh/hidden và gộp trùng; hash/revision/workspace và giới hạn40nguồn/20phút/4triệuruns giữ nguyên. Nguồn mới/normalize/che biển cần quét lại. Không chọn riêng từng người hoặc cọ sửa.
+
+Mỗi B-roll đã có track có canvas WebGL riêng, source clock=mediaStart+(output-start)*speed, geometry/objectFit/position/filter/rotate/border/shadow/opacity/zIndex theo video. Che video/ảnh injected gốc khi canvas hoạt động để không nhân đôi alpha; hết cảnh hoặc lỗi upload trả ảnh gốc. Không thêm canvas cho B-roll chưa quét. A-roll/matte giữ đường cũ. Mask15fps/256 chưa temporal smoothing và còn sai số viền. Quét toàn file có thể tốn thời gian/memory ở nhiều nguồn; chưa benchmark dự án dài.
+
+UX trước code: cuối AUTOMOTIVE_EDIT_IMPLEMENTATION_2026-11-04.md. BROLL_PERSON_BROWSER_SMOKE.json: real MediaPipe2nguồn Q2crop, A-roll và B-rollpip bản lật,1giây; quét không bật preset, lưu bodyWhite25/mask, Save/reopen, previewmask không đổi project; ảnh1280/390 và BROLL_PERSON_MASK_PREVIEW.png. BROLL_BEAUTY_CLOCK_SMOKE.json actualWebGL tổng hợp xác minh mask độc lập theo source/speed2, vị trí240px/z30/opacity.4, hết cảnhẩn. tests/face-tracks kiểmBroll/dedupe/image/hidden/stale.
+
+Final riêng workspace/content/2026-11-04/contentos-smoke-facesources-12/renders/contentos-smoke-facesources-12-final.mp4: renderexit0,1s1080x1920/30fps, silentproxy, BROLL_PERSON_FINAL.png đã xem có A-roll và khung B-roll giữ bo góc. Đây không phải nghiệm thu toànvideo/âm thanh/chuyển cảnhmọi loại. Suite242/242 ở workspace/logs/broll-person-suite.log. Skillv19 riêng parentv18 giữ11preset, quy tắcA/B-roll và quick_validate qua. Main5180 restart idle/exactPID, endpointtemplatev19 xác minh. Không sửa dự án thật người dùng. Những giới hạn tài liệuPERSON_SKIN_CURRENT về chưaB-roll được thay trong phạm vi này.

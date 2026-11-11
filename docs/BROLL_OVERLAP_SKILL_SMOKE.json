@@ -1,0 +1,11 @@
+{
+  "id": "chungauto-factory-quang-cao-v50",
+  "file": "workspace/exports/chungauto-creative-v50-speech-overlap.zip",
+  "sha256": "d89e0eeac14c09c25da6f374b8ef36261ee7d49405f1b6eb9d178c3a3cb173ab",
+  "presets": 11,
+  "references": 5,
+  "zipParsed": true,
+  "speechOverlapGuidance": true,
+  "realCodexTimingEvidence": "REAL_CODEX_BROLL_OVERLAP_SMOKE.json",
+  "fullVideoAccepted": false
+}

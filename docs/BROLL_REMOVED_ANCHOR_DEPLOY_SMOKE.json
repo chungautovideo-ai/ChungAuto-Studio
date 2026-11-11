@@ -1,0 +1,30 @@
+{
+  "oldPid": 40256,
+  "newPid": 20260,
+  "preRestartDispatcher": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "preRestartResources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  },
+  "mediaWorkers": 0,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  }
+}

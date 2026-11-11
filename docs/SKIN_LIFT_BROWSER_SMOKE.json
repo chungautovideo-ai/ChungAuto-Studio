@@ -1,0 +1,48 @@
+{
+  "dir": "workspace/content/2026-11-04/contentos-smoke-skinlift-3",
+  "results": [
+    {
+      "width": 1280,
+      "defaultOff": true,
+      "rejectInvalidStrength": true,
+      "savedSkinLift": 0.2,
+      "detectHlg": true,
+      "libraryVisible": true,
+      "previewVideo": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true,
+      "encoder": "h264_nvenc"
+    },
+    {
+      "width": 1920,
+      "defaultOff": true,
+      "rejectInvalidStrength": true,
+      "savedSkinLift": 0.2,
+      "detectHlg": true,
+      "libraryVisible": true,
+      "previewVideo": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true,
+      "encoder": "h264_nvenc"
+    },
+    {
+      "width": 390,
+      "defaultOff": true,
+      "rejectInvalidStrength": true,
+      "savedSkinLift": 0.2,
+      "detectHlg": true,
+      "libraryVisible": true,
+      "previewVideo": true,
+      "noMutationBeforeApply": true,
+      "save": true,
+      "undo": true,
+      "reopen": true,
+      "encoder": "h264_nvenc"
+    }
+  ],
+  "errors": []
+}

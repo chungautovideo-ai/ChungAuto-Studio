@@ -1,0 +1,11 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-exact-end-http-3ZJfj9",
+  "serverPid": 56924,
+  "saveReopenEnd": 0.88,
+  "invalidEndRejected": true,
+  "staleRevisionRejected": true,
+  "restoredEnd": 0.96,
+  "workspaceUnchanged": true,
+  "browserVerified": false,
+  "scope": "Real HTTP PUT/GET and schema/build on isolated QA project; not native UI Undo/focus or new inference."
+}

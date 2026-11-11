@@ -1,0 +1,15 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
+import {createApiPresets} from '../src/services/api-presets.mjs';
+import {readHTMLItem,patchHTMLItem} from '../src/services/html-item-patch.mjs';
+import {buildHtml} from '../editor/lib/build.mjs';
+const dir=path.resolve('workspace/content/2026-11-05/contentos-qa-html-api'),template=JSON.parse(fs.readFileSync('editor/templates/chungauto-factory-quang-cao-v50/template.json'));
+if(fs.existsSync(dir))throw Error('QA already exists');fs.mkdirSync(path.join(dir,'inputs'),{recursive:true});fs.mkdirSync(path.join(dir,'work'));
+fs.copyFileSync('workspace/cache/face-q2-sample.mp4',path.join(dir,'inputs/raw.mp4'));
+let project=JSON.parse(fs.readFileSync('workspace/content/2026-11-05/contentos-qa-component-routing-3/project.json'));
+project.title='QA HTML API';project.texts=[];project.blocks=[];project.zooms=[];
+project=await createApiPresets(template).insert(project,{presetId:'ca-stat',at:0,dur:1,values:{0:'400m²',1:'Không gian dịch vụ'},minhHoa:'xưởng'});
+const original=structuredClone(project),block=project.blocks[0],read=await readHTMLItem(project,{id:block.id});
+project=(await patchHTMLItem(project,{id:block.id,version:read.version,values:{0:'600m²',1:'Xưởng nâng cấp xe'},properties:{name:'Thông số xưởng'}})).project;
+const after=await readHTMLItem(project,{id:block.id});assert.equal(after.fields[0].value,'600m²');assert.equal(after.fields[1].value,'Xưởng nâng cấp xe');assert.equal(project.blocks[0].css,block.css);assert.deepEqual(project.blocks[0].anim,block.anim);
+fs.writeFileSync(path.join(dir,'project.json'),JSON.stringify(project,null,2));fs.writeFileSync(path.join(dir,'index.html'),buildHtml(project,dir));
+fs.writeFileSync('docs/HTML_API_PREVIEW_SMOKE.json',JSON.stringify({project:dir,preset:'ca-stat',before:(await readHTMLItem(original,{id:block.id})).fields,after:after.fields,cssAndAnimationUnchanged:true,build:true,scope:'Direct adapter on QA, not paid API/model or final render.'},null,2)+'\n');console.log(dir);

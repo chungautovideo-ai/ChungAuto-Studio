@@ -1,0 +1,12 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-motion",
+  "realMediaPipe": true,
+  "realSAM2": true,
+  "uiTrackApplyUndoRedoSave": true,
+  "clearAfterSeekRetracks": true,
+  "cancelRunningTaskNoWrite": true,
+  "reopen": true,
+  "selectionSamples": 48,
+  "pageErrors": [],
+  "scope": "6s real full-body walking/gesturing speaker,4positive/1negative; not independent people or occlusion benchmark"
+}

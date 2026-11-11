@@ -1,0 +1,28 @@
+{
+  "syntheticLocalShare": true,
+  "staleWorkspaceRejected": true,
+  "pathEscapeRejected": true,
+  "invalidVideoRejected": true,
+  "projects": [
+    "workspace/content/2026-11-03/nas-d0c37509-51c7-4aad-a25f-72feb70b79b4",
+    "workspace/content/2026-11-03/nas-9da47e19-cdca-4a56-8392-6ab14a074ac9"
+  ],
+  "sizes": [
+    {
+      "width": 1280,
+      "filteredImageAudioVideo": true,
+      "newProjectToSetup": true,
+      "editableProject": true,
+      "checksumProvenance": true
+    },
+    {
+      "width": 1920,
+      "filteredImageAudioVideo": true,
+      "newProjectToSetup": true,
+      "editableProject": true,
+      "checksumProvenance": true
+    }
+  ],
+  "pageErrors": [],
+  "originalSourceUnchanged": true
+}

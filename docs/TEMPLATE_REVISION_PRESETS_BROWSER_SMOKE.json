@@ -1,0 +1,15 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-templaterevision-3",
+  "template": "custom-2ac6adc2-098d-433b-988c-f917228315b3",
+  "presets": 11,
+  "parentUnchanged": true,
+  "projectUnchangedUntilApply": true,
+  "defaultRevision": true,
+  "scopeHintChanges": true,
+  "audioMixSaved": 0.04,
+  "privateMusicNotCopied": true,
+  "parentRulesRetained": true,
+  "applySaveReopen": true,
+  "presetEndpointItems": 11,
+  "errors": []
+}

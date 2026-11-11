@@ -1,0 +1,15 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-smoke-person-cli",
+  "httpStageClaimActualCLICompletion": true,
+  "realSavedSAM2Camera": true,
+  "dryRunLeavesCandidateUnchanged": true,
+  "liveUnchangedUntilCompletion": true,
+  "rangeBodyWhite": 20,
+  "otherRangesAndSourceDefaultsUnchanged": true,
+  "faceBytesUnchanged": true,
+  "reopenedViaHTTP": true,
+  "completionAwaitingReview": true,
+  "noModelCalls": true,
+  "noRender": true,
+  "scope": "Actual CLI on copied source/prior masks through normal completion, not model decision or new inference acceptance."
+}

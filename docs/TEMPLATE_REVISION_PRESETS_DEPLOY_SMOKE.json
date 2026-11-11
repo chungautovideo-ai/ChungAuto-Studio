@@ -1,0 +1,19 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "idleBeforeRestart": {
+    "active": 0,
+    "queued": 0,
+    "render": null,
+    "asr": null,
+    "remotionWorker": false
+  },
+  "template25": true,
+  "uiScopeHint": true,
+  "mobileFormCss": true,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  }
+}

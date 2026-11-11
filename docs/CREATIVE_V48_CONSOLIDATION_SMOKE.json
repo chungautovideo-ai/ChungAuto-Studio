@@ -1,0 +1,24 @@
+{
+  "parent": "chungauto-factory-quang-cao-v47",
+  "template": "chungauto-factory-quang-cao-v48",
+  "presetsUnchanged": true,
+  "presetCount": 11,
+  "files": {
+    "SKILL.md": {
+      "beforeBytes": 8556,
+      "afterBytes": 7150,
+      "sha256": "f69780efdfb36ac5af4887924347e512ce647c3ee51ccaeb4f2f47376f67f9d3"
+    },
+    "references/person.md": {
+      "beforeBytes": 14831,
+      "afterBytes": 7104,
+      "sha256": "774dda16d55b3661efa8b970669e790bf6ba93cc18aa4c623cc720250cdc6a60"
+    },
+    "references/finishing.md": {
+      "beforeBytes": 2642,
+      "afterBytes": 3320,
+      "sha256": "3a4f7fe911fc62d2c4d04fa177a422596a265f2e9da22eef7ceecb1583c693d1"
+    }
+  },
+  "scope": "Content/byte comparison, not model performance or semantic equivalence proof."
+}

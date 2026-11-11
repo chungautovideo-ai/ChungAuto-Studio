@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@400;500;600;700&family=Anton&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="/ui/app.css">
+<link rel="stylesheet" href="/ui/contentos-layout.css">
+<script src="/hf/player.js"></script>
+<link rel="stylesheet" href="/ui/fonts/fonts.css">
+</head>
+<body>
+  <header class="top">
+    <a class="ghost icon home-btn" href="/home" title="Về màn Dự án (mở / tạo dự án khác)"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 2.5v11"/></svg></a>
+    <div class="title-block">
+      <h1 id="projName">video</h1>
+      <div class="meta"><span class="status" id="status">Đã lưu</span> · <span id="meta"></span></div>
+    </div>
+    <div class="actions">
+      <div class="cos-layout-switch" role="group" aria-label="Chế độ làm việc">
+        <button id="btnSpace" aria-pressed="false" title="Giao việc AI và xem trước">Space</button>
+        <button id="btnStudio" aria-pressed="true" title="Chỉnh tay với timeline VEK">Studio</button>
+      </div>
+      <button class="outline" id="btnCapcut" title="Xuất gói để chỉnh tiếp trong CapCut">Bản sửa CapCut</button>
+      <button class="outline lib-btn" id="btnLibrary" title="Xem và tải các mẫu video edit"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="1.5" y="2.5" width="5" height="11" rx="1.2"/><rect x="9.5" y="2.5" width="5" height="11" rx="1.2"/></svg><span>Thư viện</span></button>
+      <button class="ghost icon" id="btnUndo" title="Hoàn tác (Ctrl+Z)"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3L2.5 6l3 3"/><path d="M2.5 6h7a4 4 0 010 8H7"/></svg></button>
+      <button class="ghost icon" id="btnRedo" title="Làm lại (Ctrl+Y)"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 3l3 3-3 3"/><path d="M13.5 6h-7a4 4 0 000 8H9"/></svg></button>
+      <button class="ghost icon" id="vFocus" title="Chỉ xem video (phím F)"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></button>
+      <button class="outline" id="btnCover" title="Tạo ảnh bìa: khung hình đẹp + chữ tiêu đề lớn">Ảnh bìa</button>
+      <button class="outline" id="btnDraft" title="Dựng nhanh bản xem thử (chất lượng thấp)">Dựng nháp</button>
+      <button class="primary export-btn" id="btnFinal" aria-label="Xuất video" title="Xuất video"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v8M4.5 6.5L8 10l3.5-3.5M2.5 13.5h11"/></svg><span>Xuất video</span></button>
+      <div class="more">
+        <button class="ghost icon" id="btnMore" title="Thêm" aria-haspopup="true" aria-expanded="false">⋯</button>
+        <div class="more-menu" id="moreMenu" role="menu">
+          <button class="ghost mobile-only" id="btnDraftM" role="menuitem">Dựng nháp</button>
+          <button class="ghost mobile-only" id="btnCapcutM" role="menuitem">Bản sửa CapCut</button>
+          <button class="ghost mobile-only" id="btnLibraryM" role="menuitem">Thư viện mẫu dựng</button>
+          <button class="ghost mobile-only" id="btnCoverM" role="menuitem">Tạo ảnh bìa</button>
+          <a class="ghost" href="/home" role="menuitem" id="btnNewProject"><span class="mi"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 1.5H4a1 1 0 00-1 1v11a1 1 0 001 1h8a1 1 0 001-1V5z"/><path d="M8 7.5v4M6 9.5h4"/></svg>Dự án mới…</span></a>
+          <button class="ghost" id="btnOpenFile" role="menuitem"><span class="mi"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 4.5a1 1 0 011-1h3.2l1.5 1.5h6.3a1 1 0 011 1v6.5a1 1 0 01-1 1h-11a1 1 0 01-1-1z"/></svg>Mở dự án…</span> <kbd>Ctrl+O</kbd></button>
+          <button class="ghost" id="btnSave" role="menuitem"><span class="mi"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 2.5h8.5l2.5 2.5v8.5h-11z"/><path d="M5 2.5v3h5v-3M5 13.5v-4h6v4"/></svg>Lưu</span> <kbd>Ctrl+S</kbd></button>
+          <button class="ghost" id="btnSaveAs" role="menuitem"><span class="mi"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 13.5h-5v-11h8.5l2.5 2.5v2.5"/><path d="M5 2.5v3h5v-3M11.5 9.5v5M9 12h5"/></svg>Lưu thành…</span> <kbd>Ctrl+Shift+S</kbd></button>
+          <button class="ghost" id="btnHistory" role="menuitem"><span class="mi"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8a5.5 5.5 0 105.5-5.5A5.6 5.6 0 004 4.3"/><path d="M3.5 1.8v2.7h2.7M8 5v3.2l2 1.3"/></svg>Lịch sử bản lưu</span></button>
+          <label class="ghost chk" role="menuitem"><input type="checkbox" id="showSafe" checked> Vùng an toàn TikTok / Reels</label>
+          <a class="ghost" href="/home" role="menuitem"><span class="mi"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 2.5v11"/></svg>Dự án khác</span></a>
+          <div class="more-foot"><span id="acctChip"></span><span class="muted" id="appVersion"></span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="rail" id="rail" aria-label="Công cụ chỉnh sửa">
+      <div class="rail-tabs" id="tabs"></div>
+      </nav>
+
+    <div class="drawer" id="drawer">
+      <div class="drawer-head"><b id="drawerTitle"></b><button class="ghost icon" id="drawerClose" title="Đóng (Esc)" aria-label="Đóng"><span class="x-desk">✕</span><span class="x-mob">‹</span></button></div>
+      <div class="drawer-body">
+        <nav class="submenu" id="submenu" aria-label="Mục con"></nav>
+        <section class="board">
+          <div class="board-head">
+            <div class="hint" id="boardHint"></div>
+            <div class="board-tools">
+              <input id="search" placeholder="Tìm…">
+              <div id="listActions" class="list-actions"></div>
+            </div>
+          </div>
+          <div class="cards" id="list"></div>
+        </section>
+        <aside class="detail" id="inspector"></aside>
+      </div>
+    </div>
+
+    <section class="preview">
+      <div class="stage" id="stage">
+        <div class="frame" id="frame">
+          <hyperframes-player id="player" width="1080" height="1920"></hyperframes-player>
+          <div class="overlay" id="overlay">
+            <div class="safe" id="safe"><div class="center-line"></div></div>
+            <div class="sel" id="sel"><div class="handle tl"></div><div class="handle tr"></div><div class="handle bl"></div><div class="handle br"></div><div class="sel-tag" id="selTag"></div></div>
+          </div>
+          <div class="loading" id="loading">Đang cập nhật…</div>
+        </div>
+      </div>
+      <div class="transport">
+        <button class="ghost small" id="btnBack" title="Lùi 1 giây">−1s</button>
+        <button class="primary pill" id="btnPlay" title="Phát / dừng (Space)">Phát</button>
+        <button class="ghost small" id="btnFwd" title="Tới 1 giây">+1s</button>
+        <span class="time" id="time">0:00.0 / 0:00.0</span>
+        <button class="ghost small" id="btnLite" title="Xem nhẹ: cho máy yếu — khung xem trước dùng video 540p, bộ lọc và hiệu ứng vẫn hiện. Video xuất ra vẫn đầy đủ.">⚡ Xem nhẹ</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="timeline" id="timeline">
+    <div class="tl-resize" id="tlResize" title="Kéo hoặc dùng ↑ ↓ để đổi chiều cao timeline · Enter hoặc bấm đúp để trả về" role="separator" tabindex="0" aria-label="Chiều cao timeline" aria-controls="timeline" aria-orientation="horizontal"><i></i></div>
+    <div class="tl-toolbar">
+      <div class="tl-tools">
+        <div class="tl-toolset" role="group" aria-label="Công cụ con trỏ">
+          <button class="ghost small icon on" id="tlToolSelect" aria-pressed="true" title="Chọn (A)" aria-label="Công cụ chọn (A)">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 2.5l9 5-4 1-2 4z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></button>
+          <button class="ghost small icon" id="tlToolSplit" aria-pressed="false" title="Chế độ tách: bấm lên clip để tách tại điểm bấm (B)" aria-label="Chế độ tách (B)">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1.5v13M5 4.5h-2.5v7H5M11 4.5h2.5v7H11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+        <span class="tl-sep" aria-hidden="true"></span>
+        <button class="ghost small" id="tlSplit" title="Tách tại playhead (Ctrl+B)">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 1v14M3 4l5 4-5 4M13 4l-5 4 5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Tách</button>
+        <button class="ghost small icon" id="tlTrimLeft" title="Xoá phần bên trái playhead (Q)" aria-label="Xoá phần bên trái playhead (Q)">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M10 1.5v13M7 3.5H3v9h4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 6l3 4M6.5 6l-3 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></button>
+        <button class="ghost small icon" id="tlTrimRight" title="Xoá phần bên phải playhead (W)" aria-label="Xoá phần bên phải playhead (W)">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 1.5v13M9 3.5h4v9H9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 6l3 4M12.5 6l-3 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></button>
+        <span class="tl-sep tl-cliptools" aria-hidden="true"></span>
+        <div class="tl-toolset tl-cliptools" role="group" aria-label="Công cụ clip">
+          <button class="ghost small icon" id="tlFreeze" title="Đóng băng khung 1,5 giây tại playhead" aria-label="Đóng băng khung tại playhead"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1.5v13M2.4 4.75l11.2 6.5M2.4 11.25l11.2-6.5M6.5 2.5 8 4l1.5-1.5M6.5 13.5 8 12l1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="ghost small icon" id="tlFlip" title="Lật ngang đoạn video" aria-label="Lật ngang đoạn video"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1.5v13M6 4 2 12h4zM10 4l4 8h-4z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></button>
+          <button class="ghost small icon" id="tlRotate" title="Xoay đoạn video 90°" aria-label="Xoay đoạn video 90 độ"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 2.5v3h-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="ghost small icon" id="tlCrop" title="Cắt khung đoạn video" aria-label="Cắt khung đoạn video"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 1.5V12h10.5M1.5 4H12v10.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="ghost small icon" id="tlSpeed" title="Tốc độ đoạn video" aria-label="Tốc độ đoạn video"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M2 11a6 6 0 1 1 12 0M8 11l3-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+          <button class="ghost small icon" id="tlRecord" aria-pressed="false" title="Ghi âm thuyết minh tại playhead (bấm lại để dừng)" aria-label="Ghi âm thuyết minh"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect x="5.5" y="1.5" width="5" height="8" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3 7.5a5 5 0 0 0 10 0M8 12.5v2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        </div>
+        <button class="ghost small" id="tlDelete" title="Xoá / cắt mục đang chọn (Delete)">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 4.5h10M6.5 4.5V3h3v1.5M4.5 4.5l.6 8.5h5.8l.6-8.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Xoá</button>
+      </div>
+      <div class="tl-clock" id="tlClock">00:00.0 <span>/ 00:00.0</span></div>
+      <div class="tl-zoom">
+        <button class="ghost small on" id="tlSnap" aria-pressed="true" title="Tự hít khi kéo: bám playhead, mép clip, điểm cắt (N)">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 2.5v5a4 4 0 0 0 8 0v-5M4 5.5h2.5M9.5 5.5H12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Hít</button>
+        <button class="ghost icon" id="tlZoomOut" title="Thu nhỏ timeline">−</button>
+        <input type="range" id="tlZoom" min="0" max="100" value="0">
+        <button class="ghost icon" id="tlZoomIn" title="Phóng to timeline">+</button>
+        <button class="ghost small" id="tlFit" title="Vừa khung">Vừa khung</button>
+      </div>
+    </div>
+    <div class="tl-body">
+      <div class="tl-heads" id="tlHeads"></div>
+      <div class="tl-scroll" id="tlScroll">
+        <div class="tl-content" id="tlContent">
+          <div class="tl-ruler" id="ruler"></div>
+          <div class="tl-lanes" id="lanes"></div>
+          <div class="tl-head" id="playhead"><div class="knob" id="knob"></div></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="library" id="library"></div>
+  <div class="toast" id="toast"></div>
+  <div class="dropzone" id="dropzone"><div>Thả video, ảnh hoặc nhạc để thêm vào project</div></div>
+  <input type="file" id="fileInput" multiple accept="video/*,image/*,audio/*" hidden>
+  <script type="module" src="/ui/app.js"></script>
+
+  <script type="module" src="/ui/account.js"></script>
+  <script type="module" src="/ui/contentos-close-x.js"></script>
+<script>/* bản web (autosocial.topexpert.vn/app) nhúng phần mềm: báo trang ngoài là giao diện đã hiện */try{if(window.parent!==window)window.addEventListener("load",()=>parent.postMessage({app:"autosocial",ready:true},"*"))}catch(e){}</script>
+</body>
+</html>

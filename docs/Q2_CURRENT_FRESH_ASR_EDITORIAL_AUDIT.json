@@ -1,0 +1,234 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-7",
+  "status": "done",
+  "completion": "awaiting-review",
+  "duration": 104.24,
+  "counts": {
+    "segments": 3,
+    "brolls": 3,
+    "blocks": 5,
+    "texts": 10
+  },
+  "audio": {
+    "voice": 1,
+    "music": "kit:ambient-pad",
+    "musicVolume": 0.1,
+    "sfx": [],
+    "sfxVolume": 0.25,
+    "autoSfx": true,
+    "sfxLevel": "vua",
+    "duckSourceSpeech": true
+  },
+  "brolls": [
+    {
+      "id": "b-screen",
+      "src": "inputs/man.mp4",
+      "projectAt": 9.55,
+      "outputStart": 8.95,
+      "outputEnd": 11.95,
+      "mediaStart": 1,
+      "minhHoa": "sản phẩm",
+      "fixtureProduct": "màn hình",
+      "exactPhraseWindows": [
+        {
+          "from": 15.46,
+          "to": 16.21
+        }
+      ],
+      "overlapsExactPhrase": false,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "cái",
+            "outputStart": 8.95,
+            "outputEnd": 9.01
+          },
+          {
+            "text": "sản",
+            "outputStart": 9.01,
+            "outputEnd": 9.19
+          },
+          {
+            "text": "phẩm",
+            "outputStart": 9.19,
+            "outputEnd": 9.46
+          },
+          {
+            "text": "trước",
+            "outputStart": 9.46,
+            "outputEnd": 9.79
+          },
+          {
+            "text": "khi",
+            "outputStart": 9.79,
+            "outputEnd": 10.03
+          },
+          {
+            "text": "lắp",
+            "outputStart": 10.03,
+            "outputEnd": 10.17
+          },
+          {
+            "text": "đặt",
+            "outputStart": 10.17,
+            "outputEnd": 10.52
+          },
+          {
+            "text": "thì",
+            "outputStart": 10.52,
+            "outputEnd": 10.68
+          },
+          {
+            "text": "đều",
+            "outputStart": 10.68,
+            "outputEnd": 10.87
+          },
+          {
+            "text": "được",
+            "outputStart": 10.87,
+            "outputEnd": 11.03
+          },
+          {
+            "text": "bản",
+            "outputStart": 11.03,
+            "outputEnd": 11.19
+          },
+          {
+            "text": "thân",
+            "outputStart": 11.19,
+            "outputEnd": 11.39
+          },
+          {
+            "text": "mình",
+            "outputStart": 11.39,
+            "outputEnd": 11.66
+          },
+          {
+            "text": "nghiên",
+            "outputStart": 11.66,
+            "outputEnd": 11.97
+          }
+        ],
+        "truncated": false,
+        "totalWords": 14,
+        "nextWord": {
+          "text": "cứu",
+          "outputStart": 11.97,
+          "outputEnd": 12.12
+        },
+        "startsInsideWord": false,
+        "endsInsideWord": true
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    },
+    {
+      "id": "b-light",
+      "src": "inputs/den.mp4",
+      "projectAt": 14.56,
+      "outputStart": 13.96,
+      "outputEnd": 15.46,
+      "mediaStart": 3.5,
+      "minhHoa": "đèn",
+      "fixtureProduct": "đèn",
+      "exactPhraseWindows": [
+        {
+          "from": 14.71,
+          "to": 15.46
+        }
+      ],
+      "overlapsExactPhrase": true,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "Nên",
+            "outputStart": 13.66,
+            "outputEnd": 14.11
+          },
+          {
+            "text": "là",
+            "outputStart": 14.11,
+            "outputEnd": 14.65
+          },
+          {
+            "text": "từ",
+            "outputStart": 14.65,
+            "outputEnd": 14.71
+          },
+          {
+            "text": "đèn,",
+            "outputStart": 14.71,
+            "outputEnd": 15.46
+          }
+        ],
+        "truncated": false,
+        "totalWords": 4,
+        "nextWord": {
+          "text": "màn,",
+          "outputStart": 15.46,
+          "outputEnd": 16.21
+        },
+        "startsInsideWord": true,
+        "endsInsideWord": false
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    },
+    {
+      "id": "b-seat",
+      "src": "inputs/ghe.mp4",
+      "projectAt": 18.16,
+      "outputStart": 17.56,
+      "outputEnd": 19.06,
+      "mediaStart": 1.5,
+      "minhHoa": "bọc ghế da",
+      "fixtureProduct": "ghế da",
+      "exactPhraseWindows": [
+        {
+          "from": 18.01,
+          "to": 19.06
+        }
+      ],
+      "overlapsExactPhrase": true,
+      "insideExactPhrase": false,
+      "speechOverlap": {
+        "words": [
+          {
+            "text": "bọc",
+            "outputStart": 17.56,
+            "outputEnd": 18.01
+          },
+          {
+            "text": "ghế",
+            "outputStart": 18.01,
+            "outputEnd": 18.46
+          },
+          {
+            "text": "da,",
+            "outputStart": 18.46,
+            "outputEnd": 19.06
+          }
+        ],
+        "truncated": false,
+        "totalWords": 3,
+        "nextWord": {
+          "text": "sàn",
+          "outputStart": 19.06,
+          "outputEnd": 19.51
+        },
+        "startsInsideWord": false,
+        "endsInsideWord": false
+      },
+      "note": "Exact phrase placement is one editorial signal; a montage elsewhere may be valid after visual review. Does not prove footage matches product or is readable."
+    }
+  ],
+  "reportedTotalTokens": 208755,
+  "tokenLimits": "CLI total only; no billed/cached breakdown or controlled comparison. Not proof of token reduction.",
+  "helpersSeen": {
+    "timing": true,
+    "media": true,
+    "presets": true
+  },
+  "rendered": false,
+  "limits": "Saved first-build QA and caption word clocks only. No continuous visual listening, asset content verification, native UI, color/person/plate coverage or production throughput acceptance."
+}

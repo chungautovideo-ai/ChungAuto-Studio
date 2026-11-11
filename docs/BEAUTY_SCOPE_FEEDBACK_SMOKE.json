@@ -1,0 +1,18 @@
+{
+  "http": {
+    "status": 200,
+    "sha256": "96410506eb9c3136de6d95f1dc7be265896846f209156513d1edbddff1884434"
+  },
+  "package": {
+    "presets": 11,
+    "references": 5
+  },
+  "tests": {
+    "pass": 346,
+    "fail": 0,
+    "log": "workspace/logs/beauty-scope-feedback-suite.log"
+  },
+  "formHarness": "Production beautyForm evaluated in VM with fake DOM: first explicit zero, source/range reset visibility, range label, no renderList on input, reset preserves scope path.",
+  "browserVerified": false,
+  "renderVerified": false
+}

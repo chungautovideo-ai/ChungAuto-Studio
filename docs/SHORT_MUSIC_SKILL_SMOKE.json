@@ -1,0 +1,9 @@
+{
+  "file": "workspace/exports/chungauto-creative-v50-short-music.zip",
+  "sha256": "f8c9ed7882f6b301f76cd447f9a5de29d1bc6a1319ffdc9fd59c7f5111f17c4d",
+  "presets": 11,
+  "references": 5,
+  "zipParsed": true,
+  "shortMusicGuidance": true,
+  "realModelTested": false
+}

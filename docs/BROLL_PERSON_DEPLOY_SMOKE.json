@@ -1,0 +1,13 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "restarted": true,
+  "idleBefore": true,
+  "exactPidVerified": true,
+  "templateVersion": 19,
+  "suitePassed": 242,
+  "finalSeconds": 1,
+  "finalWidth": 1080,
+  "finalHeight": 1920,
+  "finalExitCode": 0,
+  "userProjectChanged": false
+}

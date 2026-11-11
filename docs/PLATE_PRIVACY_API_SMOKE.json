@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-04T14:35:34.522516+00:00",
+  "scope": "API tool loop with synthetic gateway, actual media JPEG and optical-flow tracker; not live provider/HTTP worker acceptance",
+  "suite": {
+    "tests": 214,
+    "passed": 214,
+    "log": "workspace/logs/automotive-api-suite.log"
+  },
+  "checks": [
+    "prior-turn source frame required",
+    "same-batch sample/mask rejected",
+    "derived candidate replaces B-roll only",
+    "original source unchanged",
+    "output mutation detected",
+    "speed string normalized"
+  ],
+  "deployment": {
+    "port": 5180,
+    "idleBeforeRestart": {
+      "dispatchActive": 0,
+      "dispatchQueued": 0,
+      "renderRunning": false,
+      "asrJob": null,
+      "remotionWorker": false
+    },
+    "template": "chungauto-factory-quang-cao-v7",
+    "version": 7,
+    "parent": "chungauto-factory-quang-cao-v6"
+  },
+  "limitations": [
+    "no A-roll privacy",
+    "no detector/multiple ROI",
+    "no auto-export privacy gate",
+    "no real model invocation",
+    "no full real-footage quality benchmark"
+  ]
+}

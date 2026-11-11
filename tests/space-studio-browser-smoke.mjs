@@ -1,0 +1,97 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {spawn} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const profile=fs.mkdtempSync(path.join(os.tmpdir(),'contentos-layout-'));
+const chrome=spawn('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',['--headless=new','--remote-debugging-port=0','--remote-debugging-address=127.0.0.1','--no-first-run','--user-data-dir='+profile,'about:blank'],{windowsHide:true,stdio:'ignore'});
+const delay=ms=>new Promise(r=>setTimeout(r,ms));let ws;
+try{
+ let port;for(let i=0;i<100;i++){try{port=Number(fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0]);break;}catch{await delay(100);}}
+ assert.ok(port,'Chrome CDP started');
+ const pages=await (await fetch(`http://127.0.0.1:${port}/json`)).json();
+ ws=new WebSocket(pages.find(p=>p.type==='page').webSocketDebuggerUrl);await new Promise((ok,no)=>{ws.onopen=ok;ws.onerror=no;});
+ let id=0;const pending=new Map(),errors=[];
+ ws.onmessage=event=>{const msg=JSON.parse(event.data);if(msg.id){const p=pending.get(msg.id);if(p){pending.delete(msg.id);msg.error?p.reject(new Error(JSON.stringify(msg.error))):p.resolve(msg.result);}}else if(msg.method==='Runtime.exceptionThrown')errors.push(msg.params.exceptionDetails.text+': '+(msg.params.exceptionDetails.exception?.description||''));};
+ const send=(method,params={})=>new Promise((resolve,reject)=>{const requestId=++id;pending.set(requestId,{resolve,reject});ws.send(JSON.stringify({id:requestId,method,params}));setTimeout(()=>{if(pending.delete(requestId))reject(new Error('CDP timeout '+method));},10000).unref();});
+ const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
+ await send('Runtime.enable');await send('Page.enable');await send('Emulation.setDeviceMetricsOverride',{width:1280,height:720,deviceScaleFactor:1,mobile:false});
+ await send('Page.navigate',{url:'http://127.0.0.1:5180/'});
+ let ready=false;for(let i=0;i<60;i++){ready=await evaluate("!!document.querySelector('#btnSpace') && !!document.querySelector('#list .card')");if(ready)break;await delay(100);}
+ assert.ok(await evaluate("!!document.querySelector('#btnSpace')"),'editor opened');await delay(800);
+ const before=await evaluate("document.querySelector('#projName').textContent");
+ await evaluate("document.querySelector('#btnSpace').click()");await delay(200);
+ assert.equal(await evaluate("document.body.classList.contains('cos-space')"),true);
+ assert.equal(await evaluate("getComputedStyle(document.querySelector('#timeline')).display"),'none');
+ assert.equal(await evaluate("document.querySelector('.layout').contains(document.querySelector('.ai-chat'))"),true);
+ await evaluate("(()=>{const s=document.querySelector('[aria-label=\"AI thực hiện\"]');s.value='session:codex';s.dispatchEvent(new Event('change',{bubbles:true}));})()");
+ assert.equal(await evaluate("document.querySelector('[aria-label=\"AI thực hiện\"]').value"),'session:codex');
+ await evaluate("(()=>{const s=document.querySelector('[aria-label=\"AI thực hiện\"]');s.value='cli:codex';s.dispatchEvent(new Event('change',{bubbles:true}));const m=document.querySelector('[aria-label=\"Model CLI\"]');m.value='qa-model-override';m.dispatchEvent(new Event('input',{bubbles:true}));})()");
+ const sourceText='B-roll: "'+fileURLToPath(new URL('./',import.meta.url)).replace(/[\\/]$/,'')+'"';
+ await evaluate(`(()=>{const t=document.querySelector('.ai-chat textarea');t.value=${JSON.stringify(sourceText)};t.dispatchEvent(new Event('input',{bubbles:true}));[...document.querySelectorAll('.ai-chat button')].find(b=>b.textContent==='Kiểm tra nguồn A-roll / B-roll').click();})()`);
+ for(let i=0;i<40;i++){if(await evaluate("!!document.querySelector('.cos-source-card')"))break;await delay(100);}
+ assert.match(await evaluate("document.querySelector('.cos-source-card').textContent"),/B-roll/);
+ assert.match(await evaluate("document.querySelector('.cos-source-card').textContent"),/media đã thấy/);
+ await evaluate("[...document.querySelectorAll('.ai-chat button')].find(b=>b.textContent.includes('Thêm tư liệu NAS')).click()");await delay(400);
+ assert.equal(await evaluate("!!document.querySelector('#contentosIntake[open]')"),true);
+ await evaluate("document.querySelector('#contentosIntake [data-close]').click()");
+ await evaluate("(()=>{const t=document.querySelector('.ai-chat textarea');t.value='QA draft not sent';t.dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('#btnStudio').click();document.querySelector('.ai-fab').click();})()");
+ assert.equal(await evaluate("document.querySelector('.ai-chat textarea').value"),'QA draft not sent');
+ assert.notEqual(await evaluate("getComputedStyle(document.querySelector('#timeline')).display"),'none');
+ await evaluate("document.querySelector('#btnSpace').click()");
+ const bounds=await evaluate("(()=>{const a=document.querySelector('.ai-chat').getBoundingClientRect(),b=document.querySelector('.preview').getBoundingClientRect();return {chatWidth:a.width,previewWidth:b.width,overlap:a.right>b.left+1,height:a.height}})()");
+ assert.ok(bounds.chatWidth>250&&bounds.previewWidth>250&&!bounds.overlap&&bounds.height>300,JSON.stringify(bounds));
+ await send('Page.reload');await delay(1500);
+ assert.equal(await evaluate("document.body.classList.contains('cos-space')"),true);
+ assert.equal(await evaluate("document.querySelector('.ai-chat textarea').value"),'QA draft not sent');
+ assert.equal(await evaluate("document.querySelector('#projName').textContent"),before);
+ assert.equal(await evaluate("document.querySelector('[aria-label=\"AI thực hiện\"]').value"),'cli:codex');
+ assert.equal(await evaluate("document.querySelector('[aria-label=\"Model CLI\"]').value"),'qa-model-override');
+ assert.ok(await evaluate("!!document.querySelector('[aria-label=\"Sau khi AI dựng xong\"]')"));
+ await evaluate("(()=>{const s=document.querySelector('[aria-label=\"AI thực hiện\"]');s.value='session:codex';s.dispatchEvent(new Event('change',{bubbles:true}));const c=document.querySelector('[aria-label=\"Sau khi AI dựng xong\"]');c.value='review';c.dispatchEvent(new Event('change',{bubbles:true}));const t=document.querySelector('.ai-chat textarea');t.value='QA recover waiting job only';t.dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('[aria-label=\"Gửi\"]').click();})()");
+ let waiting=false;for(let i=0;i<50;i++){waiting=await evaluate("!![...document.querySelectorAll('.ai-chat button')].find(b=>b.textContent==='Huỷ yêu cầu')");if(waiting)break;await delay(100);}
+ assert.ok(waiting,'accepted waiting job');await send('Page.reload');await delay(1800);
+ assert.equal(await evaluate("document.querySelector('[aria-label=\"Gửi\"]').disabled"),true);
+ assert.equal(await evaluate("document.querySelector('[aria-label=\"Sau khi AI dựng xong\"]').value"),'review');
+ assert.ok(await evaluate("!![...document.querySelectorAll('.ai-chat button')].find(b=>b.textContent==='Huỷ yêu cầu')"),'waiting job recovered');
+ await evaluate("[...document.querySelectorAll('.ai-chat button')].find(b=>b.textContent==='Huỷ yêu cầu').click()");await delay(2300);
+ assert.equal(await evaluate("document.querySelector('[aria-label=\"Gửi\"]').disabled"),false);
+ await evaluate("[...document.querySelectorAll('.ai-chat button')].find(b=>b.textContent==='Xem công việc AI của dự án').click()");await delay(250);
+ assert.match(await evaluate("document.querySelector('dialog[aria-label=\"Công việc AI của dự án\"]').textContent"),/Đã hủy/);
+ await evaluate("[...document.querySelectorAll('dialog button')].find(b=>b.textContent==='Đóng lịch sử AI').click()");
+ await evaluate("document.querySelector('#btnStudio').click();[...document.querySelectorAll('#tabs button')].find(b=>b.textContent.includes('Cảnh trám')).click()");
+ await evaluate("[...document.querySelectorAll('#listActions button')].find(b=>b.textContent==='Tạo ảnh AI').click()");await delay(400);
+ assert.ok(await evaluate("!!document.querySelector('dialog[aria-label=\"Tạo ảnh AI\"]')"));
+ assert.match(await evaluate("document.querySelector('dialog[aria-label=\"Tạo ảnh AI\"]').textContent"),/Chưa cấu hình gateway ảnh/);
+ assert.equal(await evaluate("document.querySelector('dialog[aria-label=\"Tạo ảnh AI\"] [data-generate]').disabled"),true);
+ await evaluate("[...document.querySelectorAll('dialog[aria-label=\"Tạo ảnh AI\"] button')].find(b=>b.textContent==='Kết nối ảnh').click()");await delay(300);
+ assert.ok(await evaluate("!!document.querySelector('dialog[aria-label=\"Kết nối ảnh\"]')"));
+ assert.equal(await evaluate("document.querySelector('dialog[aria-label=\"Kết nối ảnh\"] [data-key]').type"),'password');
+ assert.equal(await evaluate("document.querySelector('dialog[aria-label=\"Kết nối ảnh\"] [data-key]').value"),'');
+ await evaluate("document.querySelector('dialog[aria-label=\"Kết nối ảnh\"] [data-close]').click()");
+ await evaluate("document.querySelector('dialog[aria-label=\"Tạo ảnh AI\"] [data-close]').click()");
+ await evaluate("document.querySelector('#btnCover').click();[...document.querySelectorAll('.exp-pop button')].find(b=>b.textContent==='Chọn / Tạo ảnh AI').click()");await delay(400);
+ assert.ok(await evaluate("!!document.querySelector('dialog[aria-label=\"Tạo ảnh AI\"]')"));
+ await evaluate("document.querySelector('dialog[aria-label=\"Tạo ảnh AI\"] [data-close]').click();document.querySelector('.exp-pop').remove()");
+ await evaluate("[...document.querySelectorAll('#tabs button')].find(b=>b.textContent.includes('Âm thanh')).click();[...document.querySelectorAll('#list button')].find(b=>b.textContent==='Giọng nói AI').click()");await delay(1200);
+ assert.ok(await evaluate("!!document.querySelector('dialog[aria-label=\"Giọng nói AI\"]')"));
+ const voiceStatus=await (await fetch('http://127.0.0.1:5180/api/giong')).json();
+ if(!voiceStatus.allowed)assert.match(await evaluate("document.querySelector('dialog[aria-label=\"Giọng nói AI\"]').textContent"),/Premium/);
+ await evaluate("[...document.querySelectorAll('dialog[aria-label=\"Giọng nói AI\"] button')].find(b=>b.textContent==='Đóng giọng nói AI').click()");
+ const audioAvailable=await evaluate("!!document.querySelector('[aria-label=\"Audio thuyết minh\"] option')");
+ let narrationAdded=false;
+ if(audioAvailable){
+  await evaluate("[...document.querySelectorAll('#list button')].find(b=>b.textContent==='Thêm audio tại playhead').click()");await delay(1500);
+  assert.ok(await evaluate("document.querySelector('#list').textContent.includes('Xóa đoạn audio')"),await evaluate("document.querySelector('#toast').textContent"));
+  assert.match(await evaluate("document.querySelector('#tlHeads').textContent"),/Thuyết minh/);
+  await evaluate("document.querySelector('#btnSave').click()");await delay(1000);
+  await send('Page.reload');await delay(1800);
+  await evaluate("[...document.querySelectorAll('#tabs button')].find(b=>b.textContent.includes('Âm thanh')).click()");
+  assert.match(await evaluate("document.querySelector('#list').textContent"),/Xóa đoạn audio/);narrationAdded=true;
+ }
+ assert.deepEqual(errors,[]);
+ const evidence={spaceStudioSwitch:true,narrationAddedAndReloaded:narrationAdded,sharedVoiceToolEntry:true,voiceEntitlementPreserved:true,imageConnectionDialog:true,coverImageToolEntry:true,imageToolUnconfiguredState:true,waitingJobRecoveredAfterReload:true,cancelledJobInHistory:true,executionChoiceRestored:true,cliModelDraftRestored:true,chatSourceCard:true,sharedIntakeDialog:true,draftPreserved:true,reloadRestored:true,desktop1280:bounds,pageErrors:errors};
+ fs.writeFileSync(new URL('../docs/SPACE_STUDIO_BROWSER_SMOKE.json',import.meta.url),JSON.stringify(evidence,null,2)+'\n');console.log(evidence);
+ await send('Browser.close').catch(()=>{});
+}finally{ws?.close();chrome.kill();await delay(500);try{fs.rmSync(profile,{recursive:true,force:true});}catch{}}

@@ -1,0 +1,78 @@
+{
+  "project": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-smoke-real-car-plate",
+  "elapsedMs": 13544,
+  "result": {
+    "path": "inputs/privacy/04f90175-68ae-4a31-bd3c-e10d11acb683/masked.mp4",
+    "duration": 8,
+    "provenance": {
+      "kind": "plate-privacy",
+      "method": "user-roi-optical-flow",
+      "source": "inputs/raw.mp4",
+      "sourceSha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730",
+      "from": 0,
+      "duration": 8,
+      "roi": [
+        0.041666666666666664,
+        0.715625,
+        0.9222222222222223,
+        0.14218750000000002
+      ],
+      "rois": [
+        [
+          0.041666666666666664,
+          0.715625,
+          0.9222222222222223,
+          0.14218750000000002
+        ]
+      ],
+      "quads": [
+        [
+          [
+            0.041666666666666664,
+            0.7515625
+          ],
+          [
+            0.9583333333333334,
+            0.715625
+          ],
+          [
+            0.9638888888888889,
+            0.81875
+          ],
+          [
+            0.05,
+            0.8578125
+          ]
+        ]
+      ],
+      "sha256": "4adc6b4dbf238daaa531c5b7b9dfc27624188462b85838058bb3d6eac51390ed",
+      "frames": 240,
+      "requiresVisualReview": true
+    },
+    "mediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8,
+      "hasAudio": true
+    },
+    "sourceMediaInfo": {
+      "width": 1728,
+      "height": 3072,
+      "duration": 8.0247,
+      "hasAudio": true
+    }
+  },
+  "reviewed": false,
+  "seed": "Manual vertices from observed first source frame, not detector",
+  "final": {
+    "path": "renders/contentos-smoke-real-car-plate-final-2.mp4",
+    "exitCode": 0,
+    "launcher": "installed-cli",
+    "frames": 240,
+    "duration": 8,
+    "width": 1080,
+    "height": 1920,
+    "hasAudio": true,
+    "visualReview": "40 sampled frames at 5 fps; no full playback or user approval"
+  }
+}

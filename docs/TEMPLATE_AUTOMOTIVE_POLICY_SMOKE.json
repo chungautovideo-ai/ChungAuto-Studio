@@ -1,0 +1,26 @@
+{
+  "staticModules": [
+    {
+      "path": "editor/lib/template.js",
+      "status": 200,
+      "sha256": "ef98ebbc5858927189b1ea1347b9fbd5a384971844eb3ec3cef58fa9ccc56457"
+    },
+    {
+      "path": "editor/lib/automotive-options.js",
+      "status": 200,
+      "sha256": "6d296fc965600ee643ec59c6773039ed1888b248882fcf66cc7fdd401047090d"
+    }
+  ],
+  "package": {
+    "presets": 11,
+    "references": 5,
+    "bytes": 1632998
+  },
+  "tests": {
+    "pass": 344,
+    "fail": 0,
+    "log": "workspace/logs/template-automotive-policy-suite.log"
+  },
+  "browserVerified": false,
+  "renderVerified": false
+}

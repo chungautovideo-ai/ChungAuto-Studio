@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "method": "sam2.1-tiny-point-prompt",
+  "sourceSha256": "ce37e889d30a1532d72507e5072ff864cac1465a606e2346b6cabc8c3fc1b9fc",
+  "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+  "from": 0,
+  "fps": 8,
+  "w": 144,
+  "h": 256,
+  "elapsedSeconds": 3.5,
+  "gpuPeakBytes": 612740096,
+  "requiresVisualReview": true,
+  "limits": "Sample inspection only; one speaker, not multiple people or final render.",
+  "frames": 48,
+  "positivePoints": 4,
+  "negativePoints": 1
+}

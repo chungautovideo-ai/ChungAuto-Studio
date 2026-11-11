@@ -1,0 +1,17 @@
+{
+  "httpReference": true,
+  "unlistedReferenceRejected": true,
+  "zipDownload": true,
+  "presets": 11,
+  "references": 4,
+  "browserLazyTopic": true,
+  "retryAfterError": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "noHorizontalOverflow": true,
+  "componentMountedOnRealHome": true,
+  "noProjectWorkspaceChanges": true,
+  "pageErrors": []
+}

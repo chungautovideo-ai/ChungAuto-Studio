@@ -1,0 +1,41 @@
+{
+  "runtime": {
+    "command": "D:\\Edit tự động\\contentos\\tools\\sam2-python\\python.exe",
+    "source": "local",
+    "info": {
+      "ready": true,
+      "python": "3.12.10",
+      "torch": "2.6.0+cu124",
+      "transformersSam2": true,
+      "cuda": "12.4",
+      "device": "NVIDIA GeForce RTX 4070 Ti",
+      "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7"
+    }
+  },
+  "cases": [
+    {
+      "name": "continuous",
+      "result": "D:\\Edit tự động\\contentos\\workspace\\cache\\person-portable-guard-sGfRNq\\continuous-result.json",
+      "samples": 48,
+      "elapsedSeconds": 4.906,
+      "gpuPeakBytes": 612740096,
+      "sourceUnchanged": true,
+      "requiresVisualReview": true
+    },
+    {
+      "name": "moving-cover",
+      "rejected": true,
+      "outputAbsent": true,
+      "error": "Mask changed abruptly (area-change) at source time 3.000; split the range and select again. No mask committed.",
+      "sourceUnchanged": true
+    },
+    {
+      "name": "hard-cut",
+      "rejected": true,
+      "outputAbsent": true,
+      "error": "Possible scene cut at source time 0.500; split the shot and select again. No mask committed.",
+      "sourceUnchanged": true
+    }
+  ],
+  "limits": "Real CUDA inference on one six-second speaker proxy and synthetic moving cover/hard cut. Not independently filmed crossing people, identity recovery, full-video, UI or final acceptance."
+}

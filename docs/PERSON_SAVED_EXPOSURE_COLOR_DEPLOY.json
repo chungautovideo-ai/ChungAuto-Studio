@@ -1,0 +1,21 @@
+{
+  "file": "workspace/exports/chungauto-creative-v50-saved-exposure-color.zip",
+  "sha256": "c2e7e7af13ef5f15e0a630fd95b81497c8d828634f6e7b03acc34887fd318c51",
+  "presets": 11,
+  "references": 5,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "dispatcher": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "previousPid": 20940,
+  "browserVerified": false
+}

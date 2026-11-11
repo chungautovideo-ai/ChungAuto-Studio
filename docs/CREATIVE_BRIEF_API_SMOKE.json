@@ -1,0 +1,19 @@
+{
+  "workspaceId": "9dcd7fb1-9817-478c-abb6-4c9a2dc13cb4",
+  "project": "workspace/content/2026-11-03/contentos-smoke-creative-9",
+  "unknownSelectionRejected": true,
+  "styleId": "aiev:style:giay-gap-nhat:9e471dd4a9f4",
+  "promptId": "aiev:prompt:noti-tiktok-chuyen-nghiep:d5d0b4504600",
+  "snapshotMatchesCatalog": true,
+  "brandSnapshotStableAfterDefaultChange": true,
+  "brandCandidateFirstBuildAndRevise": true,
+  "brandInSessionInbox": true,
+  "firstBuildTemplateSnapshot": true,
+  "reviseTemplateSnapshot": true,
+  "inboxUsesPinnedRules": true,
+  "inboxIncludesSnapshot": true,
+  "reviseSnapshotAndInbox": true,
+  "executionAndCompletionUnchanged": true,
+  "noAgentDispatched": true,
+  "notTimelineEffectVerification": true
+}

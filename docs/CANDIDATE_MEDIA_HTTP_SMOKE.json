@@ -1,0 +1,119 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-candidate-media-2",
+  "actualCLI": true,
+  "actualFFprobe": true,
+  "report": {
+    "timing": {
+      "clock": "output",
+      "from": 0,
+      "to": 0.4,
+      "words": [],
+      "wordsTruncated": false,
+      "brolls": [],
+      "brollsTruncated": false,
+      "segments": [
+        {
+          "id": "s1",
+          "projectIn": 0,
+          "projectOut": 0.6,
+          "outputStart": 0,
+          "outputEnd": 0.6,
+          "rate": 1,
+          "src": "inputs/raw.mp4",
+          "mediaStart": 0
+        }
+      ],
+      "segmentsTruncated": false,
+      "notes": "projectStart/projectEnd là mốc gốc của từ trên timeline dự án trước cắt; có thể dùng projectStart làm at, không dùng outputStart. outputStart/outputEnd là mốc sau cắt/tốc độ; dur là giây phát đầu ra. mediaStart là clock riêng trong file B-roll. Lời lấy từ caption candidate, có thể sai/thiếu; không phải transcript đã duyệt hoặc kiểm hình khớp nghĩa."
+    },
+    "ok": true,
+    "candidateRevision": "d427aa5e2f8beadaf5f2b88674473f7c879e525b8c56ca88bda6598783278495",
+    "duration": 0.6,
+    "counts": {
+      "segments": 1,
+      "texts": 0,
+      "blocks": 0,
+      "brolls": 0,
+      "captions": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "timelineResolved": true,
+    "htmlBuilt": false,
+    "applied": false,
+    "rendered": false,
+    "visualReviewed": false,
+    "audioListened": false,
+    "limits": "Chỉ kiểm cấu trúc timeline/đồ họa theo lời; không chạy build HTML. Không xác minh media, hình khớp nội dung, chính tả ASR, bố cục, chuyển động, mix hoặc quyền tư liệu. Xem/nghe preview trước kết luận chất lượng. Có kiểm thời lượng file A-roll/B-roll thật, chưa xem/nghe.",
+    "media": {
+      "ok": true,
+      "scope": "active-segments-and-brolls",
+      "sources": [
+        {
+          "src": "inputs/raw.mp4",
+          "kind": "video",
+          "duration": 0.6,
+          "uses": 1,
+          "colorMetadata": {
+            "primaries": "unknown",
+            "transfer": "unknown",
+            "matrix": "unknown",
+            "range": "unknown",
+            "pixelFormat": "yuv420p",
+            "make": "",
+            "model": "",
+            "dolbyVision": false
+          }
+        }
+      ],
+      "activeItems": 1,
+      "errors": [],
+      "framesViewed": false,
+      "audioListened": false,
+      "limits": "Chỉ kiểm file và thời lượng A-roll/B-roll đang dùng theo metadata thật; không kiểm nội dung hình, audio/music/SFX, font/asset HTML hoặc quyền tư liệu."
+    }
+  },
+  "failure": {
+    "ok": false,
+    "scope": "active-segments-and-brolls",
+    "sources": [
+      {
+        "src": "inputs/raw.mp4",
+        "kind": "video",
+        "duration": 0.6,
+        "uses": 2,
+        "colorMetadata": {
+          "primaries": "unknown",
+          "transfer": "unknown",
+          "matrix": "unknown",
+          "range": "unknown",
+          "pixelFormat": "yuv420p",
+          "make": "",
+          "model": "",
+          "dolbyVision": false
+        }
+      }
+    ],
+    "activeItems": 2,
+    "errors": [
+      {
+        "group": "brolls",
+        "id": "overflow",
+        "src": "inputs/raw.mp4",
+        "code": "SOURCE_RANGE_EXCEEDED",
+        "sourceStart": 0.5,
+        "sourceEnd": 0.8,
+        "availableDuration": 0.6,
+        "message": "Khoảng phát vượt file nguồn; rút ngắn hoặc chọn lại đoạn, không kéo đứng hình."
+      }
+    ],
+    "framesViewed": false,
+    "audioListened": false,
+    "limits": "Chỉ kiểm file và thời lượng A-roll/B-roll đang dùng theo metadata thật; không kiểm nội dung hình, audio/music/SFX, font/asset HTML hoặc quyền tư liệu."
+  },
+  "allFilesUnchangedDuringRead": true,
+  "wrongClaimRejected": true,
+  "completionAwaitingReview": true,
+  "noRender": true,
+  "limits": "Short synthetic QA sources; no model worker, audiovisual, NAS or full-video acceptance."
+}

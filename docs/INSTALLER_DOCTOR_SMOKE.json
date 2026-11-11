@@ -1,0 +1,77 @@
+{
+  "app": "contentos",
+  "checkedAt": "2026-11-04T09:33:35.249Z",
+  "root": "D:\\Edit tự động\\contentos",
+  "ready": true,
+  "checks": [
+    {
+      "id": "node",
+      "ready": true,
+      "required": true,
+      "detail": "24.14.1"
+    },
+    {
+      "id": "ffmpeg",
+      "ready": true,
+      "required": true,
+      "detail": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    {
+      "id": "ffprobe",
+      "ready": true,
+      "required": true,
+      "detail": "ffprobe version 9.0.1-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    {
+      "id": "@anthropic-ai/sdk",
+      "ready": true,
+      "required": true,
+      "detail": "D:\\Edit tự động\\contentos\\editor\\node_modules\\@anthropic-ai\\sdk\\index.js"
+    },
+    {
+      "id": "qrcode",
+      "ready": true,
+      "required": true,
+      "detail": "D:\\Edit tự động\\contentos\\editor\\node_modules\\qrcode\\lib\\index.js"
+    },
+    {
+      "id": "render-browser",
+      "ready": true,
+      "required": true,
+      "detail": "C:\\Users\\Admin\\.cache\\hyperframes\\chrome\\chrome-headless-shell\\win64-152.0.7977.30\\chrome-headless-shell-win64\\chrome-headless-shell.exe"
+    },
+    {
+      "id": "remotion",
+      "ready": true,
+      "required": true,
+      "detail": {
+        "version": "4.0.538",
+        "modules": "D:\\Edit tự động\\contentos\\engines\\remotion\\node_modules",
+        "browser": "C:\\Users\\Admin\\.cache\\hyperframes\\chrome\\chrome-headless-shell\\win64-152.0.7977.30\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
+        "independent": true
+      }
+    },
+    {
+      "id": "whisper",
+      "ready": true,
+      "required": false,
+      "detail": {
+        "ready": true,
+        "bin": true,
+        "model": true,
+        "canInstallBin": true,
+        "downloadMB": 0
+      }
+    }
+  ],
+  "runtime": {
+    "running": true,
+    "port": 5180,
+    "conflict": false
+  },
+  "limitations": [
+    "Kiểm tra browser là sự tồn tại executable, chưa render thử.",
+    "Whisper là kiểm tra file, chưa nhận giọng thử.",
+    "Không kiểm NAS, provider AI hoặc đăng mạng xã hội."
+  ]
+}

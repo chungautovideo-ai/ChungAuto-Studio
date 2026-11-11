@@ -1,0 +1,71 @@
+{
+  "color": {
+    "brightness": 0.18,
+    "tint": 0.043
+  },
+  "warnings": [
+    "Phân tích ảnh nguồn SDR; chưa nhận diện Log/HDR, da người hoặc màu sơn chuẩn.",
+    "Cân trắng chỉ là gợi ý từ pixel gần trung tính; cần đối chiếu vật trắng/xám thật."
+  ],
+  "brightnessVariation": 0.178,
+  "method": "three-source-frame-histograms-v1",
+  "samples": [
+    {
+      "at": 19.3,
+      "stats": {
+        "median": 0.144,
+        "p10": 0.039,
+        "p90": 0.696,
+        "highlightFraction": 0.009,
+        "blackFraction": 0.043,
+        "meanSaturation": 0.38,
+        "neutralFraction": 0.122,
+        "neutralRgb": [
+          0.404,
+          0.413,
+          0.408
+        ]
+      }
+    },
+    {
+      "at": 20.5,
+      "stats": {
+        "median": 0.144,
+        "p10": 0.039,
+        "p90": 0.7,
+        "highlightFraction": 0.009,
+        "blackFraction": 0.039,
+        "meanSaturation": 0.387,
+        "neutralFraction": 0.136,
+        "neutralRgb": [
+          0.393,
+          0.399,
+          0.397
+        ]
+      }
+    },
+    {
+      "at": 21.7,
+      "stats": {
+        "median": 0.322,
+        "p10": 0.123,
+        "p90": 0.689,
+        "highlightFraction": 0.003,
+        "blackFraction": 0.008,
+        "meanSaturation": 0.305,
+        "neutralFraction": 0.477,
+        "neutralRgb": [
+          0.414,
+          0.415,
+          0.42
+        ]
+      }
+    }
+  ],
+  "source": {
+    "src": "master_che_bien_so.mp4",
+    "from": 19,
+    "duration": 3
+  },
+  "scope": "Finished reference video19–22s, not raw Q2 footage or full quality benchmark; read-only NAS"
+}

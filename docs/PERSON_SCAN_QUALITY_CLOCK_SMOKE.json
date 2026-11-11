@@ -1,0 +1,52 @@
+{
+  "actualWebGL": true,
+  "syntheticMasks": true,
+  "fps": 30,
+  "sourceTimes": [
+    0.001,
+    0.04,
+    0.07
+  ],
+  "denseSkin": [
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "denseGap": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "missingMaskUnchanged": true,
+  "thirdSampleLifted": true
+}

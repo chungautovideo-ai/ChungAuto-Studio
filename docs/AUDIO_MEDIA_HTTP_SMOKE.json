@@ -1,0 +1,81 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-audio-media-2",
+  "actualCLI": true,
+  "actualFFprobe": true,
+  "cliValid": {
+    "ok": true,
+    "scope": "audio-clips-and-background-music",
+    "sources": [
+      {
+        "src": "inputs/music.wav",
+        "duration": 2,
+        "hasAudio": true,
+        "uses": 2
+      }
+    ],
+    "clips": [
+      {
+        "id": "cue",
+        "src": "inputs/music.wav",
+        "projectAt": 0,
+        "outputStart": 0,
+        "outputEnd": 0.3,
+        "sourceStart": 0,
+        "sourceEnd": 0.3,
+        "volume": 1
+      }
+    ],
+    "errors": [],
+    "warnings": [],
+    "audioListened": false,
+    "limits": "Chỉ kiểm file/stream/khoảng phát nhạc và audio.clips; chưa nghe, đo loudness, kiểm SFX tự sinh, tiếng A-roll/B-roll, chất lượng mix hoặc quyền nhạc."
+  },
+  "cliInvalid": {
+    "ok": false,
+    "scope": "audio-clips-and-background-music",
+    "sources": [
+      {
+        "src": "inputs/music.wav",
+        "duration": 2,
+        "hasAudio": true,
+        "uses": 2
+      }
+    ],
+    "clips": [
+      {
+        "id": "cue",
+        "src": "inputs/music.wav",
+        "projectAt": 0,
+        "outputStart": 0,
+        "outputEnd": 0.10000000000000009,
+        "sourceStart": 1.9,
+        "sourceEnd": 2,
+        "volume": 1
+      }
+    ],
+    "errors": [
+      {
+        "group": "audio.clips",
+        "id": "cue",
+        "src": "inputs/music.wav",
+        "code": "AUDIO_RANGE_TRUNCATED",
+        "sourceStart": 1.9,
+        "sourceEnd": 2.1999999999999997,
+        "availableDuration": 2,
+        "message": "Clip yêu cầu vượt file; renderer sẽ rút ngắn. Chọn lại khoảng âm thanh."
+      }
+    ],
+    "warnings": [],
+    "audioListened": false,
+    "limits": "Chỉ kiểm file/stream/khoảng phát nhạc và audio.clips; chưa nghe, đo loudness, kiểm SFX tự sinh, tiếng A-roll/B-roll, chất lượng mix hoặc quyền nhạc."
+  },
+  "cliReadOnly": true,
+  "apiGatewayCalls": 5,
+  "checkedBad": true,
+  "checkedGood": true,
+  "onlyMusicSourceChanged": true,
+  "completion": "awaiting-review",
+  "noRender": true,
+  "noPaidProvider": true,
+  "limits": "Synthetic gateway and short sources; not real provider model, listening, mix, generated SFX or full-production acceptance."
+}

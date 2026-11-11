@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+import {auditCodexMediaImages,findCodexSession} from './helpers/codex-media-image-audit.mjs';
+test('media evidence rejects prompt echoes, failed calls and unrelated image outputs',t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'image-evidence-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));const samples=path.join(root,'media-sample-test');fs.mkdirSync(samples);fs.writeFileSync(path.join(samples,'a.jpg'),Buffer.from([255,216,1]));fs.writeFileSync(path.join(samples,'b.jpg'),Buffer.from([255,216,2]));const session=path.join(root,'session.jsonl');
+ const call={type:'custom_tool_call',call_id:'c',name:'exec',input:'tools.view_image({path:"media-sample-test/a.jpg"})'},image=n=>({type:'input_image',image_url:'data:image/jpeg;base64,'+Buffer.from([255,216,n]).toString('base64')}),write=events=>fs.writeFileSync(session,events.map(payload=>JSON.stringify({type:'response_item',payload})).join('\n'));
+ write([{type:'message',content:'view_image media-sample-test'},call,{type:'custom_tool_call_output',call_id:'c',output:[{type:'input_text',text:'failed'}]},{type:'custom_tool_call_output',call_id:'other',output:[image(1),image(2)]}]);assert.equal(auditCodexMediaImages(session,samples).allDelivered,false);
+ write([call,{type:'custom_tool_call_output',call_id:'c',output:[image(1),image(1)]}]);let result=auditCodexMediaImages(session,samples);assert.equal(result.allDelivered,false);assert.deepEqual(result.frames.map(f=>f.delivered),[true,false]);
+ write([call,{type:'custom_tool_call_output',call_id:'c',output:[image(1),image(2)]}]);result=auditCodexMediaImages(session,samples);assert.equal(result.allDelivered,true);assert.equal(result.imageBlocks,2);
+ const id='01a1aa1d-0697-71c0-95eb-5808aaa067ee',nested=path.join(root,'2026/11/05');fs.mkdirSync(nested,{recursive:true});const found=path.join(nested,'rollout-'+id+'.jsonl');fs.writeFileSync(found,'');assert.equal(findCodexSession(root,id),found);assert.equal(findCodexSession(root,'../bad'),null);
+});

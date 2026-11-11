@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "method": "sam2.1-tiny-point-prompt",
+  "sourceSha256": "ce37e889d30a1532d72507e5072ff864cac1465a606e2346b6cabc8c3fc1b9fc",
+  "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+  "from": 0,
+  "fps": 8,
+  "w": 144,
+  "h": 256,
+  "elapsedSeconds": 3.687,
+  "gpuPeakBytes": 612740096,
+  "requiresVisualReview": true,
+  "limits": "Contact sheet is sample inspection; not independent multiple people, full mask accuracy or final render.",
+  "frames": 48,
+  "areaMin": 0.044705,
+  "areaMax": 0.065131,
+  "shotCut": null,
+  "source": "6s QA proxy, original Q2 8-14s; one full-body speaker walking and gesturing"
+}

@@ -1,0 +1,48 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-ranges-2",
+  "realMediaPipeAndSAM2SavedData": true,
+  "cliEqualsService": true,
+  "apiModelMock": true,
+  "noPaidRequest": true,
+  "scope": {
+    "mode": "selected-ranges",
+    "usedRanges": [
+      {
+        "from": 0,
+        "to": 6
+      }
+    ],
+    "ranges": [
+      {
+        "from": 0,
+        "to": 2,
+        "fps": 8,
+        "samples": 16
+      },
+      {
+        "from": 3,
+        "to": 5,
+        "fps": 8,
+        "samples": 16
+      }
+    ],
+    "uncoveredUsedRanges": [
+      {
+        "from": 2,
+        "to": 3
+      },
+      {
+        "from": 5,
+        "to": 6
+      }
+    ],
+    "outsideRanges": "No personLight/bodyWhite/bodySmooth correction outside selected ranges. Face landmark effects are separate.",
+    "identityVerified": false
+  },
+  "measurementScope": "Semantic person/skin over this file, including all people; not remeasured for a selected individual or range.",
+  "reportBytes": 1504,
+  "faceBytes": 1735508,
+  "projectSha256": "605baf4b4f079684c06a7a2f94685b8d2260e899987e33f865fa4c4c930d8262",
+  "projectAndFaceUnchanged": true,
+  "limits": "Byte counts, not model-token or latency benchmark; no AI scan/apply or real worker acceptance"
+}

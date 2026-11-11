@@ -1,0 +1,17 @@
+/* Mẫu "Ngọc Chanh" — chữ gradient xanh ngọc / chanh rất đậm trên đầu người, chữ trắng nhỏ, danh sách viên kính có số tròn hiện dần, nhãn icon, ánh xanh lá dưới sàn. Tiền tố nc-. */
+.nc-tren{position:absolute;left:0;right:0;top:var(--nc-y,170px);text-align:center;font-family:"Be Vietnam Pro",sans-serif;line-height:1}
+.nc-tren .a{display:block;font-weight:500;font-size:46px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.65)}
+.nc-tren .b{display:block;font-weight:900;font-size:150px;letter-spacing:-.04em;padding-top:14px;background:linear-gradient(90deg,#19C8C0,#B8F23A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 4px 10px rgba(0,0,0,.55))}
+.nc-sau{position:absolute;left:0;right:0;top:var(--nc-y,150px);text-align:center;font-family:"Be Vietnam Pro",sans-serif;font-weight:900;font-size:170px;letter-spacing:-.04em;line-height:1;padding-top:16px;background:linear-gradient(90deg,#0FA8A0,#7FCB12);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap;filter:drop-shadow(0 4px 8px rgba(0,40,30,.55))}
+.nc-nguc{position:absolute;left:0;right:0;top:var(--nc-y,960px);text-align:center;font-family:"Be Vietnam Pro",sans-serif;color:#fff;text-shadow:0 3px 12px rgba(0,0,0,.7);line-height:1.05}
+.nc-nguc .a{display:block;font-weight:500;font-size:42px}
+.nc-nguc .b{display:block;font-weight:800;font-size:82px;letter-spacing:-.02em}
+.nc-ds{position:absolute;left:70px;top:var(--nc-y,1160px);display:flex;flex-direction:column;gap:18px}
+.nc-mu{display:flex;align-items:center;gap:20px;width:520px;padding:14px 26px 14px 16px;border-radius:18px;background:rgba(8,20,18,.72);border:2px solid rgba(120,240,190,.55);font-family:"Be Vietnam Pro",sans-serif;font-weight:700;font-size:44px;color:#fff}
+.nc-mu i{width:62px;height:62px;flex:none;border-radius:50%;background:#14B86E;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:38px;font-weight:800}
+.nc-nhan{position:absolute;left:0;right:0;top:var(--nc-y,1230px);display:flex;justify-content:center;align-items:center;gap:26px}
+.nc-ic{width:170px;height:170px;border-radius:30px;background:#2FC95A;display:flex;align-items:center;justify-content:center;font-size:104px;box-shadow:0 12px 26px rgba(0,0,0,.4)}
+.nc-tx{padding:14px 40px;border-radius:14px;background:rgba(8,12,10,.86);color:#fff;font-family:"Be Vietnam Pro",sans-serif;font-weight:800;font-size:52px;letter-spacing:.04em;text-transform:uppercase}
+.nc-san{position:absolute;left:0;right:0;bottom:0;height:560px;background:radial-gradient(60% 70% at 50% 100%,rgba(46,235,90,.75),rgba(46,235,90,0) 72%)}
+.nc-chop{position:absolute;inset:0;background:#E6FFD0}
+.nc-mo{position:absolute;inset:0;backdrop-filter:blur(36px);-webkit-backdrop-filter:blur(36px);background:rgba(200,255,230,.12)}

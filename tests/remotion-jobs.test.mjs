@@ -1,0 +1,19 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {EventEmitter} from 'node:events';
+import {createRemotionJobs} from '../src/services/remotion-jobs.mjs';import {projectRevision} from '../src/services/project-revisions.mjs';
+test('Remotion jobs isolate workspace/project, reject concurrent jobs and ignore result after cancellation or revision change',t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'cos-remotion-jobs-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));const project='workspace/content/day/fixture';fs.mkdirSync(path.join(root,project),{recursive:true});const file=path.join(root,project,'project.json');fs.writeFileSync(file,'{}');
+ const children=[],service=createRemotionJobs({root,runtimeCheck:()=>{},launch:()=>{const child=new EventEmitter();child.send=message=>{child.lastSent=message;};child.stderr=new EventEmitter();children.push(child);return child;}}),request={workspaceId:'w',project,revision:projectRevision(file),scene:{format:'9:16',title:'Scene'}};
+ const first=service.start(request);assert.equal(service.active(),1);assert.throws(()=>service.start(request),/đang có/);assert.throws(()=>service.get(first.id,'foreign',project));assert.throws(()=>service.get(first.id,'w','other'));
+ service.cancel(first.id,'w',project);assert.equal(children[0].lastSent.type,'cancel');children[0].emit('message',{type:'result',result:{path:'wrong'}});children[0].emit('close',0);assert.equal(service.get(first.id,'w',project).status,'cancelled');assert.equal(service.get(first.id,'w',project).result,null);
+ const second=service.start(request);children[1].emit('message',{type:'result',result:{path:'scene.mp4',props:{},sha256:'fixture'}});fs.writeFileSync(file,'{"changed":true}');children[1].emit('close',0);assert.equal(service.get(second.id,'w',project).status,'failed');assert.equal(service.active(),0);assert.equal(service.latest('foreign',project),null);
+});
+test('Remotion history survives service reopen without replaying or claiming old workers are active',t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'cos-remotion-history-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));const project='workspace/content/day/history';fs.mkdirSync(path.join(root,project),{recursive:true});const file=path.join(root,project,'project.json');fs.writeFileSync(file,'{}');
+ let launches=0,child;const options={root,runtimeCheck:()=>{},launch:()=>{launches++;child=new EventEmitter();child.send=()=>{};child.stderr=new EventEmitter();return child;}};
+ const first=createRemotionJobs(options),request={workspaceId:'w',project,revision:projectRevision(file),scene:{format:'9:16',title:'History'}};
+ const job=first.start(request);child.emit('message',{type:'progress',progress:{phase:'Đang chờ lượt render'}});
+ const reopened=createRemotionJobs(options);assert.equal(launches,1);assert.equal(reopened.active(),0);assert.equal(reopened.get(job.id,'w',project).status,'interrupted');assert.equal(reopened.list('w')[0].status,'interrupted');assert.match(reopened.get(job.id,'w',project).error,/chưa xác minh/);assert.throws(()=>reopened.start(request),/đang có/);assert.throws(()=>reopened.cancel(job.id,'w',project),/Chưa xác minh/);assert.deepEqual(reopened.list('foreign'),[]);
+ child.emit('message',{type:'result',result:{path:'inputs/scene.mp4',props:{title:'History'},sha256:'fixture'}});child.emit('close',0);
+ const after=createRemotionJobs(options);assert.equal(after.latest('w',project).status,'succeeded');assert.equal(after.latest('w',project).result.path,'inputs/scene.mp4');assert.equal(launches,1);
+ const journal=path.join(root,'workspace/contentos/remotion-jobs',job.id+'.json');fs.writeFileSync(journal,'{broken');const corrupt=createRemotionJobs(options);assert.throws(()=>corrupt.start(request));assert.equal(launches,1);
+});

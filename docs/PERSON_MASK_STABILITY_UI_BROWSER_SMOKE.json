@@ -1,0 +1,30 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-stability-2",
+  "detector": "Real MediaPipe on Q2 cropped720x960 source12–13s scaled360x480 and flipped copy",
+  "tracks": [
+    {
+      "src": "inputs/raw.mp4",
+      "fps": 30,
+      "samples": 31,
+      "found": 31,
+      "sha256": "6e89a31dde611cbede1782ec2fb3426717af4faf3119e038b006699b034e05b7"
+    },
+    {
+      "src": "inputs/second.mp4",
+      "fps": 30,
+      "samples": 31,
+      "found": 31,
+      "sha256": "6974d074e5e0e7fdd15276305d60843e84f4f94f9f032f8d2d4aed76cf480a76"
+    }
+  ],
+  "broll": true,
+  "sourceBound": true,
+  "scanDoesNotEnablePreset": true,
+  "whiteSaved": true,
+  "bodyMaskSaved": true,
+  "bodyWhiteSaved": 25,
+  "maskPreviewWithoutProjectMutation": true,
+  "reopen": true,
+  "pageErrors": [],
+  "scope": "Two real cropped Q2 sources, A-roll and flipped B-roll pip,1s each; not multi-person/full production benchmark."
+}

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-05T02:54:39.2740136+07:00",
+  "dir": "workspace/content/2026-11-04/contentos-smoke-exposure-2",
+  "reportBytes": 2472,
+  "faceBytes": 376463,
+  "sources": 2,
+  "sourceDarkSuggestion": {
+    "available": true,
+    "personLight": 0,
+    "bodyWhite": 25,
+    "bodySmooth": 0,
+    "samples": 31,
+    "reason": "Nguồn có vùng người/da tối; đề xuất nâng nhẹ, kiểm lại màu da trước khi giữ."
+  },
+  "projectUnchanged": true,
+  "readOnly": true,
+  "scope": "Real saved Q2 crop scans, read-only CLI report; no model call, token benchmark or autonomous editing acceptance"
+}

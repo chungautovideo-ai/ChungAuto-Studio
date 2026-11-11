@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+import path from 'node:path';import {fileURLToPath} from 'node:url';import {importLutDirectory} from '../../src/services/lut-library.mjs';
+try{if(!process.argv[2])throw new Error('Chỉ định thư mục LUT người dùng.');const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),r=importLutDirectory(root,process.argv[2]);console.log(JSON.stringify({examined:r.examined,unique:r.items.length,technical:r.items.filter(x=>x.kind==='technical').length,unclassified:r.items.filter(x=>x.kind==='unclassified').length,rejected:r.rejected},null,2));}catch(error){console.error(error.message);process.exitCode=1;}

@@ -1,0 +1,31 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "closeAbortsFetch": true,
+      "cancelAbortsFetchAndAllowsNextRun": true,
+      "projectPhotoImportPayloadAndSelection": true,
+      "localImportPayloadAndSelection": true,
+      "noAutoGeneration": true,
+      "selectedReferencePayload": true,
+      "multiVariantSelectionAndPayload": true,
+      "maxFourEnforced": true,
+      "unsupportedDisabled": true
+    },
+    {
+      "width": 1920,
+      "closeAbortsFetch": true,
+      "cancelAbortsFetchAndAllowsNextRun": true,
+      "projectPhotoImportPayloadAndSelection": true,
+      "localImportPayloadAndSelection": true,
+      "noAutoGeneration": true,
+      "selectedReferencePayload": true,
+      "multiVariantSelectionAndPayload": true,
+      "maxFourEnforced": true,
+      "unsupportedDisabled": true
+    }
+  ],
+  "syntheticFixtureOnly": true,
+  "noProviderCalls": true,
+  "pageErrors": []
+}

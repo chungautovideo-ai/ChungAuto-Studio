@@ -1,0 +1,55 @@
+{
+  "syntheticOnly": true,
+  "noProviderCalls": true,
+  "project": "workspace/content/2026-11-03/narration-0ab1dd99-c21a-4b0d-ab88-1f112e0ba5a3",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\narration-0ab1dd99-c21a-4b0d-ab88-1f112e0ba5a3\\renders\\news-assembly-qa.mp4",
+  "engine": "HyperFrames 0.9.6",
+  "lint": true,
+  "inspect": true,
+  "snapshotId": "65ffe3c9-b8da-485f-b0be-aad134565536",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  },
+  "pixels": [
+    {
+      "time": 0.75,
+      "expected": "blue",
+      "r": 1,
+      "g": 0,
+      "b": 255
+    },
+    {
+      "time": 2.25,
+      "expected": "red",
+      "r": 254,
+      "g": 0,
+      "b": 0
+    }
+  ],
+  "narrationFrequency": 440.01833409725407,
+  "narrationRms": 0.2164218490419178,
+  "brollSourceTone": 880,
+  "brollMuted": true,
+  "limits": "3-second synthetic draft. No real speech, semantic scene selection, entitled HTTP/provider transaction or production throughput validation.",
+  "narrationAmplitude": 0.305297772464393,
+  "brollAmplitude": 0.000004354359500333475,
+  "contactSheet": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\narration-0ab1dd99-c21a-4b0d-ab88-1f112e0ba5a3\\renders\\news-assembly-frames.png"
+}

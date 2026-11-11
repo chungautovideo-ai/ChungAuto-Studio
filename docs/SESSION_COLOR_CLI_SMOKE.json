@@ -1,0 +1,18 @@
+{
+  "project": "workspace\\cache\\session-color-cli-TyYKYF",
+  "syntheticFixture": true,
+  "noModelCalls": true,
+  "actualCLI": true,
+  "claimedFixture": true,
+  "wrongClaimRejected": true,
+  "logWithoutLutRejected": true,
+  "listLuts": true,
+  "primaryHlgTo709": true,
+  "brollHlgTo709AndFastStabilization": true,
+  "cpuEncoder": "libx264",
+  "audioPreserved": true,
+  "sourceSha256": "7b73ee92ce50ff9f1dbfcab546b20fccdfb293be6f8ba07ca23bf71680fc2c9f",
+  "sourceAndLiveProjectUnchanged": true,
+  "repeatRejected": true,
+  "scope": "Synthetic 0.5-second source conversion, not autonomous editing or visual-grade acceptance."
+}

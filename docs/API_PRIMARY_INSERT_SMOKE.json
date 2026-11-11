@@ -1,0 +1,54 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-api-append-3",
+  "actualReviseEndpoint": true,
+  "syntheticGatewayOnly": true,
+  "toolCalls": 1,
+  "autoExport": true,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-api-append-3\\renders\\contentos-smoke-api-append-3-final.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "2.000000"
+    }
+  },
+  "pixels": {
+    "first": [
+      0,
+      0,
+      254
+    ],
+    "second": [
+      253,
+      0,
+      0
+    ],
+    "tail": [
+      0,
+      0,
+      205
+    ]
+  },
+  "energies": {
+    "440": [
+      0.003587918341601583,
+      0.21473756114567555
+    ],
+    "880": [
+      0.21545114611318578,
+      0.0035734541426386446
+    ]
+  },
+  "oldAudioSettingsPreserved": true,
+  "limits": "Actual HTTP candidate/completion/render with synthetic local model; no real provider or browser chat submission."
+}

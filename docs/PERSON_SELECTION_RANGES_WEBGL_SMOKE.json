@@ -1,0 +1,37 @@
+{
+  "actualWebGL": true,
+  "sourceRate2": true,
+  "sameSemanticSample": true,
+  "distinctRangeFrameZeroCache": true,
+  "nearZeroLiftStable": true,
+  "rangeFirst": [
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "rangeSecond": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "gapUnchanged": true,
+  "seekBack": true
+}

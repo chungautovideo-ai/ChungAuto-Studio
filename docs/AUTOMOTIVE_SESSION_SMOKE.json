@@ -1,0 +1,11 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-automotivesession-3",
+  "syntheticCandidate": true,
+  "noModelCalls": true,
+  "actualClaimAndCompletion": true,
+  "offOverridesCandidate": true,
+  "beautyOffEnforced": true,
+  "brollGradeApplied": true,
+  "templateVersion": 5,
+  "repeatJobCanClaim": true
+}

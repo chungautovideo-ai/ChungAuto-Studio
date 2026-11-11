@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "idleChecks": {
+    "queued": 0,
+    "active": 0,
+    "asr": null,
+    "remotionWorker": false,
+    "render": null
+  },
+  "restarted": true,
+  "app": "contentos",
+  "catalog": "chungauto-factory-quang-cao-v16",
+  "faceScanUiHttp": 200,
+  "suitePassed": 230,
+  "paidProviderCalls": false,
+  "posting": false
+}

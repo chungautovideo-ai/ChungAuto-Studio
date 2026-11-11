@@ -1,0 +1,49 @@
+{
+  "project": "workspace/content/2026-11-05/qa-screen-phrase-preview-189112",
+  "sourceQA": "workspace/content/2026-11-05/qa-codex-screen-85251d",
+  "sourceProjectUnchanged": true,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-phrase-preview-189112\\renders\\qa-screen-phrase-preview-189112-nhap.mp4",
+  "contact": "docs/SCREEN_PHRASE_PREVIEW_CONTACT.jpg",
+  "frames": [
+    {
+      "name": "before",
+      "time": 0.5,
+      "path": "workspace\\content\\2026-11-05\\qa-screen-phrase-preview-189112\\work\\0.jpg"
+    },
+    {
+      "name": "screen-start",
+      "time": 0.6200000000000001,
+      "path": "workspace\\content\\2026-11-05\\qa-screen-phrase-preview-189112\\work\\1.jpg"
+    },
+    {
+      "name": "screen-end",
+      "time": 1.25,
+      "path": "workspace\\content\\2026-11-05\\qa-screen-phrase-preview-189112\\work\\2.jpg"
+    },
+    {
+      "name": "next-topic",
+      "time": 1.37,
+      "path": "workspace\\content\\2026-11-05\\qa-screen-phrase-preview-189112\\work\\3.jpg"
+    }
+  ],
+  "screenTiming": {
+    "id": "b-screen",
+    "src": "inputs/man.mp4",
+    "at": 16.06,
+    "dur": 0.75,
+    "mediaStart": 1,
+    "mode": "full",
+    "tIn": "none",
+    "tInDuration": 0,
+    "audioVol": 0,
+    "minhHoa": "màn",
+    "name": "Màn hình: thao tác camera; minh họa sản phẩm trước lắp đặt",
+    "start": 0.56
+  },
+  "integrityVerified": true,
+  "visualReviewed": false,
+  "audioListened": false,
+  "scope": "Two-second QA excerpt from project15.5–17.5 with prior B-roll tail clipped and earlier graphic cues omitted. Worker screen choice/timing intact; sparse transition frames only, not continuous readability or fullvideo quality.",
+  "invalidForWorkerVisualAcceptance": true,
+  "reason": "Earlier overlays not clipped in first two-second QA excerpt; corrected in later harness and new QA189112. Do not use first excerpt as worker output evidence."
+}

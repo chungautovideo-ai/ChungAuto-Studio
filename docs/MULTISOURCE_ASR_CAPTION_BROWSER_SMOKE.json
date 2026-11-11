@@ -1,0 +1,58 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-asr-5",
+  "words": 22,
+  "sizes": [
+    {
+      "width": 1280,
+      "captionLines": 8,
+      "saveReload": true
+    },
+    {
+      "width": 1920,
+      "captionLines": 8,
+      "saveReload": true
+    }
+  ],
+  "actualLocalWhisper": true,
+  "render": {
+    "running": false,
+    "byAi": true,
+    "quality": "final",
+    "progress": 100,
+    "ok": true,
+    "log": "tailwind ready (1901ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1904ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1904ms)\n  ██████░░░░░░░░░░░░░░░░░░░  27%  Capturing frame 13/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":13,\"total\":240,\"pct\":27}\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:screenshot] pollHfReady complete (2187ms)\n[initSession:screenshot] pollSubCompositionTimelines complete (ready) (2188ms)\n[initSession:screenshot] applyVideoMetadataHints complete (2190ms)\n[initSession:screenshot] media + fonts + tailwind ready (2192ms)\n[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (2195ms)\n[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (2195ms)\n  ███████░░░░░░░░░░░░░░░░░░  31%  Capturing frame 32/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":32,\"total\":240,\"pct\":31}\n  ████████░░░░░░░░░░░░░░░░░  35%  Capturing frame 54/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":54,\"total\":240,\"pct\":35}\n  ██████████░░░░░░░░░░░░░░░  40%  Capturing frame 79/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":79,\"total\":240,\"pct\":40}\n  ███████████░░░░░░░░░░░░░░  44%  Capturing frame 101/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":101,\"total\":240,\"pct\":44}\n  ████████████░░░░░░░░░░░░░  48%  Capturing frame 122/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":122,\"total\":240,\"pct\":48}\n  █████████████░░░░░░░░░░░░  52%  Capturing frame 145/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":145,\"total\":240,\"pct\":52}\n  ██████████████░░░░░░░░░░░  56%  Capturing frame 164/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":164,\"total\":240,\"pct\":56}\n  ██████████████░░░░░░░░░░░  58%  Capturing frame 176/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":176,\"total\":240,\"pct\":58}\n  ███████████████░░░░░░░░░░  60%  Capturing frame 185/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":185,\"total\":240,\"pct\":60}\n  ███████████████░░░░░░░░░░  62%  Capturing frame 197/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":197,\"total\":240,\"pct\":62}\n  ████████████████░░░░░░░░░  64%  Capturing frame 209/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":209,\"total\":240,\"pct\":64}\n  ████████████████░░░░░░░░░  67%  Capturing frame 226/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":226,\"total\":240,\"pct\":67}\n  █████████████████░░░░░░░░  69%  Capturing frame 235/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":235,\"total\":240,\"pct\":69}\n  █████████████████░░░░░░░░  70%  Capturing frame 240/240 (6 workers)\n@hf-progress {\"code\":\"capture\",\"done\":240,\"total\":240,\"pct\":70}\n[INFO] [Render:trace] {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"phase\":\"capture_disk\",\"status\":\"end\",\"elapsedMs\":14381,\"durationMs\":9164,\"stagePhase\":\"capturing\",\"needsAlpha\":false,\"workerCount\":6,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████░░░░░░░  75%  Encoding video\n@hf-progress {\"code\":\"encode\",\"done\":0,\"total\":240,\"pct\":75}\n[INFO] [Render:trace] {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"phase\":\"encode\",\"status\":\"start\",\"elapsedMs\":14382,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":6,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render] Encoded frames while capturing {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"framesFed\":240,\"totalFrames\":240}\n  ██████████████████████░░░  90%  Encoding frame 240/240\n@hf-progress {\"code\":\"encode\",\"done\":240,\"total\":240,\"pct\":90}\n[INFO] [Render:trace] {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"phase\":\"encode\",\"status\":\"end\",\"elapsedMs\":14526,\"durationMs\":144,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"isPngSequence\":false,\"isGif\":false,\"chunkedEncode\":false,\"workerCount\":6,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":14527,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":6,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n  ██████████████████████░░░  90%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":0,\"total\":7.983,\"pct\":90}\n  ████████████████████████░  99%  Assembling final video\n@hf-progress {\"code\":\"assemble\",\"done\":7.983,\"total\":7.983,\"pct\":99}\n[INFO] [Render:trace] {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":14793,\"durationMs\":266,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":6,\"forceScreenshot\":false,\"totalFrames\":240,\"framesCompleted\":240,\"captureMode\":\"screenshot\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"0b44aec6-b124-4353-a81b-6dc05d1ccf26\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":14852,\"message\":\"artifact validated\",\"totalElapsedMs\":14832}\n  █████████████████████████  100%  Render complete\n\n◇  D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-asr-5\\work\\render-snapshots\\220558fe-db45-4a78-8c18-e0e78ea27481\\renders\\contentos-smoke-asr-5-final.mp4\n   492.8 KB · 8.0s video · rendered in 15.0s\n   screenshot capture · hardware gpu · compile 0.9s · extract 0.4s · audio 1.2s · probe 0.2s · setup 3.9s · capture 9.2s · encode 0.1s · assemble 0.3s\n   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?os=windows&src=cli\n\n  1 HyperFrames skill out of date or missing.\n  Run: npx hyperframes skills update\n\n",
+    "pid": 28144,
+    "startedAt": 1793750783961,
+    "jobDir": null,
+    "channels": [],
+    "snapshotId": "220558fe-db45-4a78-8c18-e0e78ea27481",
+    "revision": "637c1ec12fd1d910e450c231e3b9bb4207adf1c7a5e873c7410f42bbdd909485",
+    "output": "renders/contentos-smoke-asr-5-final.mp4",
+    "saved": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-asr-5\\renders\\contentos-smoke-asr-5-final.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "loudnorm": true,
+    "finishedAt": 1793750803133
+  },
+  "pageErrors": [],
+  "limits": "Actual browser ASR/caption/save/reload and final render; synthetic English only, no all-word visual timing proof or Vietnamese footage benchmark."
+}

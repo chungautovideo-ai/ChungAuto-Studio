@@ -1,0 +1,47 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-colorplatechain-3",
+  "syntheticMovingPlate": true,
+  "results": [
+    {
+      "width": 1280,
+      "normalizationThenPlate": true,
+      "restoresNormalizedSource": true,
+      "actualHttpTracking": true,
+      "sourceFrame": true,
+      "resultPreview": true,
+      "explicitReplacement": true,
+      "saveAndUndo": true,
+      "reviewReceipt": true,
+      "primaryClock": true,
+      "speed": 2
+    },
+    {
+      "width": 1920,
+      "normalizationThenPlate": true,
+      "restoresNormalizedSource": true,
+      "actualHttpTracking": true,
+      "sourceFrame": true,
+      "resultPreview": true,
+      "explicitReplacement": true,
+      "saveAndUndo": true,
+      "reviewReceipt": true,
+      "primaryClock": true,
+      "speed": 2
+    },
+    {
+      "width": 390,
+      "normalizationThenPlate": true,
+      "restoresNormalizedSource": true,
+      "actualHttpTracking": true,
+      "sourceFrame": true,
+      "resultPreview": true,
+      "explicitReplacement": true,
+      "saveAndUndo": true,
+      "reviewReceipt": true,
+      "primaryClock": true,
+      "speed": 2
+    }
+  ],
+  "pageErrors": [],
+  "noProviderCalls": true
+}

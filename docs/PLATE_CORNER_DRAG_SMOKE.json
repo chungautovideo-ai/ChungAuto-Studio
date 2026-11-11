@@ -1,0 +1,22 @@
+{
+  "httpStatic": [
+    {
+      "name": "contentos-plate-privacy.js",
+      "status": 200,
+      "bytes": 15670
+    },
+    {
+      "name": "contentos-plate-corners.js",
+      "status": 200,
+      "bytes": 715
+    }
+  ],
+  "tests": "9/9 focused Node tests including production callbacks in VM; syntax passed",
+  "package": {
+    "file": "workspace/exports/chungauto-creative-v50-corner-drag.zip",
+    "presets": 11,
+    "references": 5
+  },
+  "nativeBrowserVerified": false,
+  "scope": "Static deployment, geometry and pointer callback behavior; no actual pointer device/browser, project Undo/Save or final-render check in this change."
+}

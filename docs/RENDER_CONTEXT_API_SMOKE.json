@@ -1,0 +1,34 @@
+{
+  "syntheticOnly": true,
+  "competingCliRejectedWithoutStatusChange": true,
+  "renderPinnedAcrossProjectSwitch": true,
+  "snapshotRevision": "2df2661a7809b508c9c4b85ed815e16d7661d38a80bd048c5e77e4a166050bbc",
+  "snapshotId": "f7a395e5-8f67-4d84-ae38-f6908ec530cb",
+  "liveCompositionChangeDidNotAffectRender": true,
+  "otherProjectStatusHidden": true,
+  "otherProjectRenderBusy": true,
+  "otherProjectCancelDidNotStopOriginal": true,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\contentos-smoke-narration-render\\renders\\contentos-smoke-narration-render-nhap-7.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  },
+  "limits": "Direct in-memory render using copied local assets; remote script/font dependencies remain external, durable restart recovery incomplete."
+}

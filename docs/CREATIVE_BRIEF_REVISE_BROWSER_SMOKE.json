@@ -1,0 +1,25 @@
+{
+  "project": "workspace/content/2026-11-03/contentos-smoke-creative-7",
+  "sizes": [
+    {
+      "width": 1280,
+      "selectionPreview": true,
+      "spaceStudioRetention": true,
+      "reloadRetention": true,
+      "submissionPayload": true,
+      "realHistoryTemplateSnapshot": true,
+      "historyFits": true
+    },
+    {
+      "width": 1920,
+      "selectionPreview": true,
+      "spaceStudioRetention": true,
+      "reloadRetention": true,
+      "submissionPayload": true,
+      "realHistoryTemplateSnapshot": true,
+      "historyFits": true
+    }
+  ],
+  "noAgentDispatched": true,
+  "pageErrors": []
+}

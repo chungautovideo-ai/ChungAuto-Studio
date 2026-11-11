@@ -1,0 +1,13 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "restarted": true,
+  "idleBefore": true,
+  "exactPidVerified": true,
+  "runtime": "tools/vision-embedded/python.exe",
+  "standalone": true,
+  "relocationProof": "VISION_EMBEDDED_RELOCATION_SMOKE.json",
+  "systemPythonRemovedFromTestPath": true,
+  "suitePassed": 241,
+  "cleanWindowsMachineTested": false,
+  "userProjectsChanged": false
+}

@@ -1,0 +1,19 @@
+{
+  "fonts": [
+    {
+      "family": "iCiel Panton",
+      "loaded": 1,
+      "status": [
+        "loaded"
+      ]
+    },
+    {
+      "family": "UTM Bebas",
+      "loaded": 1,
+      "status": [
+        "loaded"
+      ]
+    }
+  ],
+  "errors": []
+}

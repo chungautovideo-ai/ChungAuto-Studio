@@ -1,0 +1,13 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-api-media-ranges",
+  "calls": 4,
+  "syntheticLocalGateway": true,
+  "actualFFprobe": true,
+  "checkedBad": true,
+  "checkedGood": true,
+  "onlyMediaStartChanged": true,
+  "completion": "awaiting-review",
+  "noRender": true,
+  "noPaidProvider": true,
+  "limits": "Short fixture; not paid model, semantic/visual/audio or full-production acceptance."
+}

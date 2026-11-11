@@ -1,0 +1,9 @@
+{
+  "defaultSAM2ExplicitlyUnchecked": true,
+  "explicitMissingOverrideFails": true,
+  "noFallbackForInvalidOverride": true,
+  "missingRuntimeExit": 1,
+  "invalidArgumentRejected": true,
+  "readOnly": true,
+  "scope": "Doctor behavior on development machine, not clean installation or SAM2 inference."
+}

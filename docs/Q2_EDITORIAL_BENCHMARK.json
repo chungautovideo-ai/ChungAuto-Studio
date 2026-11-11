@@ -1,0 +1,96 @@
+{
+  "dir": "workspace/content/2026-11-05/contentos-q2-editorial-benchmark",
+  "sourceRange": [
+    14.22,
+    24.02
+  ],
+  "proxyOnly": true,
+  "words": 28,
+  "shots": [
+    {
+      "id": "den",
+      "file": "broll_den.mp4",
+      "from": 3,
+      "at": 1.04,
+      "dur": 1.1,
+      "label": "đèn",
+      "note": "Front headlights; visible license plate in original. Internal diagnostic only."
+    },
+    {
+      "id": "man",
+      "file": "broll_manhinh.mp4",
+      "from": 10,
+      "at": 2.16,
+      "dur": 0.52,
+      "label": "màn",
+      "note": "Hand using vehicle screen; short spoken item."
+    },
+    {
+      "id": "ghe",
+      "file": "broll_gheda.mp4",
+      "from": 1,
+      "at": 4.04,
+      "dur": 1.02,
+      "label": "bọc ghế da",
+      "note": "Static upholstered seat; does not prove electric movement."
+    },
+    {
+      "id": "mau",
+      "file": "broll_danphim.mp4",
+      "from": 6,
+      "at": 6.08,
+      "dur": 1.32,
+      "label": "đổi màu",
+      "note": "Body wrap application; NOT window tint."
+    }
+  ],
+  "unillustrated": [
+    "phim kính",
+    "sàn da"
+  ],
+  "music": "Built-in synthesized ambient-pad; listening approval pending",
+  "sfx": "Only one preset pop at content card; no blanket cut whooshes",
+  "scope": "Diagnostic excerpt; no posting; no full-production acceptance; plate masking off for this internal test",
+  "final": {
+    "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-q2-editorial-benchmark\\renders\\contentos-q2-editorial-benchmark-final-2.mp4",
+    "exitCode": 0,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "9.800000"
+      }
+    },
+    "splitBodyWrap": true
+  },
+  "priorRenderFailure": {
+    "snapshotId": "b1c11270-6904-432a-8bf6-27159dd96cf7",
+    "exitCode": 3221226505,
+    "note": "Artifact in snapshot was written but process failed; retry only after terminal confirmation."
+  },
+  "graphicAudit": {
+    "passed": true,
+    "anchor": "chất lượng",
+    "limit": "Lexical phrase only, not visual semantic proof"
+  },
+  "suitePassed": 234,
+  "deployment": {
+    "app": "contentos",
+    "idleBeforeRestart": true,
+    "templateAudioPortableFix": true
+  }
+}

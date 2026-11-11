@@ -1,0 +1,14 @@
+# Theo dõi một đối tượng bằng SAM2 — prototype local · 05/11/2026
+
+Yêu cầu còn thiếu là chọn riêng một người và giữ vùng đó qua chuyển động, kết hợp semantic skin hiện có. Không dùng tracker callout hoặc tô cọ cố định thay cho nhu cầu này. Máy khảo sát thực tế là RTX4070Ti12GB, PyTorch2.6.0+cu124/CUDA true, Transformers5.18.0 có Sam2VideoModel/Processor; không cài thêm thư viện. Bộ vision-embedded hiện chỉ OpenCV/NumPy, chưa thể coi chạy SAM2 trên máy mới.
+
+Đã tải facebook/sam2.1-hiera-tiny vào tools/models/sam2.1-hiera-tiny, pin revision de431c4043854a71d8101e17995dfe596bf101a5. model.safetensors155908064byte khớp SHA25648c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7 từ HF LFS metadata. Model card/metadata nêu Apache2.0; giữ README và provenance. Suy luận dùng local_files_only và HF/Transformers offline, không gửi media đi. Chưa đóng gói runtime/trọng số để phát hành hoặc kiểm sáu máy.
+
+editor/tools/person-track.py đọc config local: source,from,duration,fps,points[[x,y,label]],modelDir,output. Tối đa120frame/0.2–15giây/1–15fps; point chuẩn hóa positive/negative, có ít nhất một positive. FFmpeg autorotate và giảm cạnh dài640; model Tiny/CUDA bf16; outputmask cạnh dài256/RLE/sourcehash/modelhash/from/fps/quality. Lỗi/nguồn đổi/mask mất/diện tích bất thường không commit; output atomic. Model không phải detector người hoặc skin. Objectscore và bounds chỉ là guard, không chứng minh đúng danh tính khi giao cắt/che khuất/cut.
+
+Chạy Q2 crop1s/8fps thật tạo8mask, phần từ decode+nạp+suy luận sau import khoảng1.594s, đỉnh allocated477386752byte. Tổng process gồm import khoảng9s; không lấy số1.594 làm tốc độ app hoặc máy sạch. Một fixture nhân đôi cùng người cạnh nhau: positive thân trái/negative thân phải;8mask tạo,1.187s sau import. Bốn mốc0/2/4/7 có pixel vùng trái7660/7912/8046/7787, vùng phải0. PERSON_SAM2_TWO_PREVIEW.png đã xem, vùng người trái theo được tay/đầu, còn viền răng cưa và mẫu thấp. Đây cùng người nhân đôi, chưa phải hai người độc lập/occlusion/crossingbenchmark.
+
+Fixture Q2 nửa giây rồi cut đen: lỗi object lost tại0.500s/exit1, không tạo output. Logs workspace/logs/person-sam2-q2.log, person-sam2-two.log, person-sam2-cut.log; kết quả compact PERSON_SAM2_TWO_SMOKE.json. Checkpoint prototype lịch sử đã được nối UI/API/render/semantic intersection: xem PERSON_SELECTION_DIALOG_CURRENT.md và PERSON_SELECTION_RENDER_CURRENT.md. Có hủy/sourcehash/review/Apply/UndoSave và skillv35. Chưa kiểm nhiều người độc lập/che khuất/giao cắt. Dự án gốc người dùng không sửa.
+
+
+Bổ sung6giây Q2/48mẫu: một positive thân chỉ chọn áo;4positive đầu/thân/hai chân+negative nền cho mask toàn thân tại8mốc đã xem. PERSON_SAM2_MOTION6_BODY_CONTACT.png và _SMOKE.json. Guard cắt cảnh RGB từ chối cutđen.500s trước inference, không output; continuous không bị chặn. Không coi guard là nhận danh tính hoặc mọi cut. Xem PERSON_SHOT_GUARD_SMOKE.json.

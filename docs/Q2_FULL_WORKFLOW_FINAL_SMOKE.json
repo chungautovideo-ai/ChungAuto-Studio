@@ -1,0 +1,46 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-q2-full-workflow",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-q2-full-workflow\\renders\\contentos-q2-full-workflow-final.mp4",
+  "exitCode": 0,
+  "launcher": "installed-cli",
+  "elapsedMs": 146929,
+  "plannedDuration": 103.64,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "103.700000"
+    }
+  },
+  "decodedVideoFrames": 3110,
+  "decodedAacFrames": 4860,
+  "sha256": "8d47adf74c2752318f43d177d80ae88464487cceeef94ebbdaeea6c14190ef10",
+  "snapshotId": "f355cb8d-476b-4e90-994c-c97615694e81",
+  "revision": "e2731b5df5eb09ee25153b475b38cb90ef26b35818d948d8ad43197ca0baaf10",
+  "audio": {
+    "meanDb": -18.2,
+    "samplePeakDb": -1.3,
+    "listened": false
+  },
+  "review": {
+    "sampledOverviewFrames": 35,
+    "detailFrames": 8,
+    "fullPlayback": false,
+    "userApproval": false
+  },
+  "limits": "Proxy source540x960, existing imported ASR, explicit edits by current agent. Not autonomous worker latency, no6PC benchmark, no whole-source privacy approval."
+}

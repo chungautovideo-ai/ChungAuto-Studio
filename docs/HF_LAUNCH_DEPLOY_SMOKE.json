@@ -1,0 +1,16 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "restartedAfterIdle": true,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "statuses": {
+    "/ui/app.js": 200,
+    "/ui/face-scan.js": 200,
+    "/lib/plate-regions.js": 200
+  },
+  "templateAvailable": true
+}

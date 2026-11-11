@@ -1,0 +1,20 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-selected-html",
+  "job": "workspace/content/_sua-video/20261105020126-81e657e4-contentos-qa-selected-html",
+  "startedAt": "2026-11-05T02:01:26.734Z",
+  "finishedAt": "2026-11-05T02:02:16.917Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "actualCodex": true,
+  "selectedItem": {
+    "group": "blocks",
+    "id": "same",
+    "version": "11d153063fb242e12ef9bc844850d07a1dbf68612670927bd8e17f71ebc93824",
+    "supported": false,
+    "note": "CLI/phiên đang mở sửa đúng blocks và ID này; API chưa hỗ trợ patch riêng nhóm này."
+  },
+  "duplicateCrossArrayId": true,
+  "onlySelectedHTMLTextChanged": true,
+  "noRender": true,
+  "scope": "One selected HTML text revision on copied1sQA; not fullvideo/editor UI/paid API validation."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "chungauto-factory-quang-cao-v50",
+  "artifact": "workspace/exports/chungauto-creative-v50-editorial-presets.zip",
+  "sha256": "47f3831237b897db4349c21cc304906e62911294399d754b664ac6d95f950788",
+  "presets": 11,
+  "references": 5,
+  "snapshotRoundtrip": true,
+  "zipParsed": true,
+  "modelTestedNewEditorialRule": false
+}

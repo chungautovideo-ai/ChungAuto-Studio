@@ -1,0 +1,69 @@
+{
+  "source": "D:\\Edit tự động\\contentos\\workspace\\cache\\person-sam2-motion6.mp4",
+  "sha256": "ce37e889d30a1532d72507e5072ff864cac1465a606e2346b6cabc8c3fc1b9fc",
+  "sourceUnchanged": true,
+  "sequentialFrames": 180,
+  "comparisonResolution": {
+    "w": 72,
+    "h": 128
+  },
+  "samples": [
+    {
+      "requestedTime": 0.031,
+      "decodedFrameTime": 0,
+      "sequentialFrame": 0,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 0.25,
+      "decodedFrameTime": 0.233567,
+      "sequentialFrame": 7,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 0.74,
+      "decodedFrameTime": 0.734067,
+      "sequentialFrame": 22,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 1.123,
+      "decodedFrameTime": 1.1011,
+      "sequentialFrame": 33,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 2.05,
+      "decodedFrameTime": 2.035367,
+      "sequentialFrame": 61,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 3.79,
+      "decodedFrameTime": 3.770433,
+      "sequentialFrame": 113,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 5.95,
+      "decodedFrameTime": 5.939267,
+      "sequentialFrame": 178,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    },
+    {
+      "requestedTime": 0.12,
+      "decodedFrameTime": 0.1001,
+      "sequentialFrame": 3,
+      "bytesEqual": true,
+      "legacyNextSeekDiffers": true
+    }
+  ],
+  "scope": "Exact decoded RGBA comparison against sequential FFmpeg on one six-second real speaker proxy; includes backward query and near end. Not mask quality, identity, skin color, camera HDR, UI, or final render acceptance."
+}

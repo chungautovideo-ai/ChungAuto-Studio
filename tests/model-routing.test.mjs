@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import {createModelRoutingStore} from '../src/services/model-routing.mjs';
+test('API task routing pins chosen model, honors manual override and leaves session CLI unchanged',t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'cos-routing-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const store=createModelRoutingStore(root),api={mode:'api',agent:'gateway'};
+ assert.equal(store.resolve('one',api,'revise','default').routing.source,'connection-default');
+ store.save('one',{enabled:true,models:{'first-build':'build-model',revise:'edit-model'}});
+ const selected=store.resolve('one',api,'revise','default');assert.equal(selected.model,'edit-model');assert.equal(selected.routing.source,'workspace-rule');
+ assert.equal(store.resolve('one',api,'first-build','default').model,'build-model');assert.equal(store.resolve('two',api,'revise','default').model,'default');
+ assert.equal(store.resolve('one',{...api,model:'manual'},'revise','default').routing.source,'manual');
+ const cli={mode:'cli',agent:'codex'},session={mode:'session',agent:'claude'};assert.deepEqual(store.resolve('one',cli,'revise','default'),cli);assert.deepEqual(store.resolve('one',session,'revise','default'),session);
+ store.save('one',{enabled:false,models:{revise:'changed'}});assert.equal(selected.model,'edit-model');assert.equal(store.resolve('one',api,'revise','default').model,'default');
+ for(const model of ['x y','x;run','--help'])assert.throws(()=>store.save('one',{enabled:true,models:{revise:model}}));
+ assert.throws(()=>store.resolve('one',api,'revise',''));assert.throws(()=>store.status('../bad'));
+ assert.equal(createModelRoutingStore(root).status('one').enabled,false);
+});

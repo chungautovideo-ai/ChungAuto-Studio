@@ -1,0 +1,15 @@
+{
+  "catalogPreview": 52,
+  "firstImport": {
+    "imported": 52,
+    "skipped": 0,
+    "total": 52
+  },
+  "repeatImport": {
+    "imported": 0,
+    "skipped": 52,
+    "total": 52
+  },
+  "projectWorkspaceStamp": "preserved",
+  "timestamp": "2026-11-03T14:13:29.609Z"
+}

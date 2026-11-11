@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-06T04:08:14.771Z",
+        "reason": "ContentOS design system token --sans: Inter in editor/ui/app.css, used app-wide since before this session"
+      }
+    ]
+  }
+}

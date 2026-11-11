@@ -1,0 +1,25 @@
+{
+  "sizes": [
+    {
+      "width": 1280,
+      "settingsImport": true,
+      "sharedLibrary": true,
+      "reused": false,
+      "pagedImages": 206,
+      "latePageImport": true,
+      "previousResultRetained": true
+    },
+    {
+      "width": 1920,
+      "settingsImport": true,
+      "sharedLibrary": true,
+      "reused": true,
+      "pagedImages": 206,
+      "latePageImport": true,
+      "previousResultRetained": true
+    }
+  ],
+  "syntheticSource": true,
+  "sourceUnchanged": true,
+  "pageErrors": []
+}

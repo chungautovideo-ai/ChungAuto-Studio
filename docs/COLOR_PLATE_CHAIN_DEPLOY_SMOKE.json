@@ -1,0 +1,18 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "idleChecks": {
+    "dispatchActive": 0,
+    "asrLock": null,
+    "remotionWorker": false,
+    "renderLock": null,
+    "queued": 0
+  },
+  "restarted": true,
+  "catalog": "chungauto-factory-quang-cao-v15",
+  "colorUiHttp": 200,
+  "noDuplicateSkinLiftControl": true,
+  "faceMaskRendererSmoke": "BEAUTY_MASK_ISOLATION_SMOKE.json",
+  "suitePassed": 229,
+  "paidProviderCalls": false,
+  "posting": false
+}

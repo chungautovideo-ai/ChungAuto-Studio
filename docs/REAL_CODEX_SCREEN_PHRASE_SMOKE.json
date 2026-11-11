@@ -1,0 +1,190 @@
+{
+  "project": "workspace/content/2026-11-05/qa-codex-screen-85251d",
+  "job": "workspace/content/_sua-video/20261105075929-15fa940f-qa-codex-screen-85251d",
+  "startedAt": "2026-11-05T07:59:29.252Z",
+  "finishedAt": "2026-11-05T08:00:42.635Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "phraseSearchUsed": true,
+  "before": {
+    "id": "b-screen",
+    "src": "inputs/man.mp4",
+    "projectAt": 9.55,
+    "outputStart": 8.95,
+    "outputEnd": 11.95,
+    "outputDuration": 3,
+    "mediaStart": 1,
+    "entrance": {
+      "type": "fade",
+      "custom": true,
+      "animationDuration": 0.15,
+      "entranceWithinShot": 0.15,
+      "settledDuration": 2.85,
+      "settledStart": 9.1,
+      "settledEnd": 11.95
+    },
+    "speechOverlap": {
+      "words": [
+        {
+          "captionId": "c11",
+          "text": "cái",
+          "outputStart": 8.95,
+          "outputEnd": 9.01
+        },
+        {
+          "captionId": "c11",
+          "text": "sản",
+          "outputStart": 9.01,
+          "outputEnd": 9.19
+        },
+        {
+          "captionId": "c11",
+          "text": "phẩm",
+          "outputStart": 9.19,
+          "outputEnd": 9.46
+        },
+        {
+          "captionId": "c11",
+          "text": "trước",
+          "outputStart": 9.46,
+          "outputEnd": 9.79
+        },
+        {
+          "captionId": "c12",
+          "text": "khi",
+          "outputStart": 9.79,
+          "outputEnd": 10.03
+        },
+        {
+          "captionId": "c12",
+          "text": "lắp",
+          "outputStart": 10.03,
+          "outputEnd": 10.17
+        },
+        {
+          "captionId": "c12",
+          "text": "đặt",
+          "outputStart": 10.17,
+          "outputEnd": 10.52
+        },
+        {
+          "captionId": "c12",
+          "text": "thì",
+          "outputStart": 10.52,
+          "outputEnd": 10.68
+        },
+        {
+          "captionId": "c13",
+          "text": "đều",
+          "outputStart": 10.68,
+          "outputEnd": 10.87
+        },
+        {
+          "captionId": "c13",
+          "text": "được",
+          "outputStart": 10.87,
+          "outputEnd": 11.03
+        },
+        {
+          "captionId": "c13",
+          "text": "bản",
+          "outputStart": 11.03,
+          "outputEnd": 11.19
+        },
+        {
+          "captionId": "c13",
+          "text": "thân",
+          "outputStart": 11.19,
+          "outputEnd": 11.39
+        },
+        {
+          "captionId": "c14",
+          "text": "mình",
+          "outputStart": 11.39,
+          "outputEnd": 11.66
+        },
+        {
+          "captionId": "c14",
+          "text": "nghiên",
+          "outputStart": 11.66,
+          "outputEnd": 11.97
+        }
+      ],
+      "truncated": false,
+      "totalWords": 14,
+      "nextWord": {
+        "captionId": "c14",
+        "text": "cứu",
+        "outputStart": 11.97,
+        "outputEnd": 12.12
+      },
+      "startsInsideWord": false,
+      "endsInsideWord": true
+    },
+    "advisories": []
+  },
+  "after": {
+    "id": "b-screen",
+    "src": "inputs/man.mp4",
+    "projectAt": 16.06,
+    "outputStart": 15.46,
+    "outputEnd": 16.21,
+    "outputDuration": 0.75,
+    "mediaStart": 1,
+    "entrance": {
+      "type": "none",
+      "custom": true,
+      "animationDuration": 0,
+      "entranceWithinShot": 0,
+      "settledDuration": 0.75,
+      "settledStart": 15.46,
+      "settledEnd": 16.21
+    },
+    "speechOverlap": {
+      "words": [
+        {
+          "captionId": "c18",
+          "text": "màn,",
+          "outputStart": 15.46,
+          "outputEnd": 16.21
+        }
+      ],
+      "truncated": false,
+      "totalWords": 1,
+      "nextWord": {
+        "captionId": "c19",
+        "text": "phim",
+        "outputStart": 16.21,
+        "outputEnd": 16.81
+      },
+      "startsInsideWord": false,
+      "endsInsideWord": false
+    },
+    "advisories": []
+  },
+  "wordWindow": {
+    "outputStart": 15.46,
+    "outputEnd": 16.21,
+    "outputDuration": 0.75,
+    "words": [
+      {
+        "text": "màn,",
+        "outputStart": 15.46,
+        "outputEnd": 16.21
+      }
+    ],
+    "context": "là từ đèn, màn, phim hay là",
+    "brolls": []
+  },
+  "nextTopic": {
+    "text": "phim",
+    "outputStart": 16.21,
+    "outputEnd": 16.81
+  },
+  "onlyAllowedScreenFieldsChanged": true,
+  "sourceProjectAndWorkspaceUnchanged": true,
+  "rendered": false,
+  "visualReviewed": false,
+  "audioListened": false,
+  "scope": "Real Codex revision using literal caption search and prior visual source choice; not first-build source selection, semantic matching, continuous review or token benchmark."
+}

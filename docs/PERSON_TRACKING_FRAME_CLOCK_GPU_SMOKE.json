@@ -1,0 +1,29 @@
+{
+  "scratch": "D:\\Edit tự động\\contentos\\workspace\\cache\\person-clock-gpu-xVrrdJ",
+  "result": "D:\\Edit tự động\\contentos\\workspace\\cache\\person-clock-gpu-xVrrdJ\\result.json",
+  "sourceSHA256": "ce37e889d30a1532d72507e5072ff864cac1465a606e2346b6cabc8c3fc1b9fc",
+  "sourceUnchanged": true,
+  "from": 0.74,
+  "duration": 1,
+  "samples": 8,
+  "sampling": {
+    "method": "presentation-held-v1",
+    "requestedFrom": 0.74,
+    "firstSourceFrameTime": 0.734067,
+    "samplesRequested": 8,
+    "fps": 8
+  },
+  "elapsedSeconds": 10.375,
+  "gpuPeakBytes": 477386752,
+  "requiresVisualReview": true,
+  "scope": "Actual SAM2 local GPU on copied one-person proxy, unaligned source start; not semantic correctness, crossing people, occlusion, UI or final quality.",
+  "contactViewed": true,
+  "contact": "docs/PERSON_TRACKING_FRAME_CLOCK_CONTACT.png",
+  "visualNotes": "Eight frames show body, arms and legs followed in this short single-person range; finger edges and parts of the hat remain incomplete. Foreground only, no skin or identity acceptance.",
+  "skillPackage": {
+    "file": "workspace/exports/chungauto-creative-v50-person-tracking-clock.zip",
+    "bytes": 1635824,
+    "presets": 11,
+    "references": 5
+  }
+}

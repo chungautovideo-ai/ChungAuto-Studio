@@ -1,0 +1,72 @@
+{
+  "continuous": {
+    "cutFrame": null,
+    "samples": [
+      {
+        "frame": 1,
+        "pixelDelta": 0.018521,
+        "histogramDistance": 0.022054
+      },
+      {
+        "frame": 2,
+        "pixelDelta": 0.017221,
+        "histogramDistance": 0.018229
+      },
+      {
+        "frame": 3,
+        "pixelDelta": 0.015678,
+        "histogramDistance": 0.029378
+      },
+      {
+        "frame": 4,
+        "pixelDelta": 0.011807,
+        "histogramDistance": 0.024414
+      },
+      {
+        "frame": 5,
+        "pixelDelta": 0.016445,
+        "histogramDistance": 0.021159
+      },
+      {
+        "frame": 6,
+        "pixelDelta": 0.018814,
+        "histogramDistance": 0.020671
+      },
+      {
+        "frame": 7,
+        "pixelDelta": 0.022263,
+        "histogramDistance": 0.032959
+      }
+    ]
+  },
+  "blackCut": {
+    "cutFrame": 4,
+    "samples": [
+      {
+        "frame": 1,
+        "pixelDelta": 0.020382,
+        "histogramDistance": 0.018555
+      },
+      {
+        "frame": 2,
+        "pixelDelta": 0.019349,
+        "histogramDistance": 0.01766
+      },
+      {
+        "frame": 3,
+        "pixelDelta": 0.017038,
+        "histogramDistance": 0.022054
+      },
+      {
+        "frame": 4,
+        "pixelDelta": 0.496417,
+        "histogramDistance": 0.998372
+      }
+    ]
+  },
+  "syntheticColourCutFrame": 4,
+  "pipelineRejectsBeforeInference": true,
+  "noOutputOnCut": true,
+  "error": "Possible scene cut at source time 0.500; split the shot and select again. No mask committed.",
+  "limits": "Conservative RGB discontinuity heuristic; fast motion/flash may reject, similar cuts/identity changes may be missed."
+}

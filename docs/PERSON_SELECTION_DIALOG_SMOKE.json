@@ -1,0 +1,12 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-dialog-4",
+  "realMediaPipe": true,
+  "realSAM2": true,
+  "uiTrackApplyUndoRedoSave": true,
+  "clearAfterSeekRetracks": true,
+  "cancelRunningTaskNoWrite": true,
+  "reopen": true,
+  "selectionSamples": 8,
+  "pageErrors": [],
+  "scope": "1s duplicated person; not independent people or occlusion benchmark"
+}

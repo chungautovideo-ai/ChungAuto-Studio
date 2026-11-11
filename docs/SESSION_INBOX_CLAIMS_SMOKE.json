@@ -1,0 +1,13 @@
+{
+  "actualInbox": true,
+  "distinctSessionIdentity": true,
+  "projectGate": true,
+  "wrongFailRejected": true,
+  "ownedProgress": true,
+  "ownedCompletion": true,
+  "terminalReclaim": true,
+  "cancelledSessionWritesRejected": true,
+  "httpWrongBuildOwnerRejected": true,
+  "syntheticOnly": true,
+  "providerCalls": 0
+}

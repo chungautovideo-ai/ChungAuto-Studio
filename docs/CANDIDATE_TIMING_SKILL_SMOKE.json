@@ -1,0 +1,11 @@
+{
+  "id": "chungauto-factory-quang-cao-v50",
+  "artifact": "workspace/exports/chungauto-creative-v50-timing-window.zip",
+  "sha256": "3f1a953be5149e89d8d2e253524d48fb731a400a6c0aa65ecddc7e4f31392e47",
+  "presets": 11,
+  "references": 5,
+  "snapshotRoundtrip": true,
+  "zipParsed": true,
+  "modelUsePending": false,
+  "realModelEvidence": "REAL_CODEX_BROLL_TIMING_SMOKE.json"
+}

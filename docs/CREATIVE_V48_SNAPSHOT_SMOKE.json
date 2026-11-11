@@ -1,0 +1,35 @@
+{
+  "dir": "D:\\Edit tự động\\contentos\\workspace\\cache\\creative-v48-snapshot-UKhRYT",
+  "version": 48,
+  "presets": 11,
+  "stamp": {
+    "schema": 1,
+    "id": "chungauto-factory-quang-cao-v48",
+    "name": "ChungAuto · Creative v48 — Quảng cáo & Review",
+    "createdAt": "2026-11-04T23:00:43.699Z",
+    "templateHash": "a29e2f10411037583384298ef26a9aa128a4c86a74d81adac6215366ec5c2b8c",
+    "skillHash": "f69780efdfb36ac5af4887924347e512ce647c3ee51ccaeb4f2f47376f67f9d3",
+    "references": [
+      {
+        "path": "references/color.md",
+        "sha256": "950b380078ba31b98494be828f524637aa929dcfba93c9e1a40cf11ff474fc81",
+        "bytes": 2497
+      },
+      {
+        "path": "references/person.md",
+        "sha256": "774dda16d55b3661efa8b970669e790bf6ba93cc18aa4c623cc720250cdc6a60",
+        "bytes": 7104
+      },
+      {
+        "path": "references/plate.md",
+        "sha256": "ae4e191ff17943e6d9a6547ea4c8342dfb3ad9f889af783114caa760d90fa755",
+        "bytes": 1233
+      },
+      {
+        "path": "references/finishing.md",
+        "sha256": "3a4f7fe911fc62d2c4d04fa177a422596a265f2e9da22eef7ceecb1583c693d1",
+        "bytes": 3320
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "syntheticProject": "workspace/content/2026-11-03/contentos-smoke-firstsources-7",
+  "sizes": [
+    {
+      "width": 1280,
+      "arollBrollCards": true,
+      "setupSurveySixDecodedImages": true,
+      "skipSurveyExplicit": true,
+      "editingInvalidatesInspectionAndSurvey": true,
+      "bounds": {
+        "left": 483,
+        "right": 1131
+      }
+    },
+    {
+      "width": 1920,
+      "arollBrollCards": true,
+      "setupSurveySixDecodedImages": true,
+      "skipSurveyExplicit": true,
+      "editingInvalidatesInspectionAndSurvey": true,
+      "bounds": {
+        "left": 803,
+        "right": 1451
+      }
+    }
+  ],
+  "submittedJobs": false,
+  "pageErrors": []
+}

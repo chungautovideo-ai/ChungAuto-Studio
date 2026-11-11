@@ -1,0 +1,96 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-overlap",
+  "projectUnchanged": true,
+  "result": {
+    "ok": true,
+    "scope": "active-segments-and-brolls",
+    "sources": [
+      {
+        "src": "inputs/raw.mp4",
+        "kind": "video",
+        "duration": 111.544767,
+        "uses": 2,
+        "colorMetadata": {
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "matrix": "bt709",
+          "range": "tv",
+          "pixelFormat": "yuv420p",
+          "make": "",
+          "model": "",
+          "dolbyVision": false
+        }
+      },
+      {
+        "src": "inputs/den.mp4",
+        "kind": "video",
+        "duration": 8.0247,
+        "uses": 1,
+        "colorMetadata": {
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "matrix": "bt709",
+          "range": "tv",
+          "pixelFormat": "yuv420p10le",
+          "make": "",
+          "model": "",
+          "dolbyVision": false
+        }
+      },
+      {
+        "src": "inputs/man.mp4",
+        "kind": "video",
+        "duration": 43.093063,
+        "uses": 1,
+        "colorMetadata": {
+          "primaries": "unknown",
+          "transfer": "unknown",
+          "matrix": "unknown",
+          "range": "unknown",
+          "pixelFormat": "yuv420p",
+          "make": "",
+          "model": "",
+          "dolbyVision": false
+        }
+      },
+      {
+        "src": "inputs/ghe.mp4",
+        "kind": "video",
+        "duration": 5.162667,
+        "uses": 1,
+        "colorMetadata": {
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "matrix": "bt709",
+          "range": "tv",
+          "pixelFormat": "yuv420p10le",
+          "make": "",
+          "model": "",
+          "dolbyVision": false
+        }
+      },
+      {
+        "src": "inputs/mau.mp4",
+        "kind": "video",
+        "duration": 15.5155,
+        "uses": 1,
+        "colorMetadata": {
+          "primaries": "unknown",
+          "transfer": "unknown",
+          "matrix": "unknown",
+          "range": "pc",
+          "pixelFormat": "yuv422p10le",
+          "make": "",
+          "model": "",
+          "dolbyVision": false
+        }
+      }
+    ],
+    "activeItems": 6,
+    "errors": [],
+    "framesViewed": false,
+    "audioListened": false,
+    "limits": "Chỉ kiểm file và thời lượng A-roll/B-roll đang dùng theo metadata thật; không kiểm nội dung hình, audio/music/SFX, font/asset HTML hoặc quyền tư liệu."
+  },
+  "scope": "Read-only actual FFprobe on prior copied QA; not new model edit or audiovisual acceptance."
+}

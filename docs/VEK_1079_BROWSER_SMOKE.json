@@ -1,0 +1,178 @@
+{
+  "results": [
+    {
+      "width": 1280,
+      "templateSelectable": true,
+      "cuts": [
+        [
+          "none",
+          "Cắt thẳng"
+        ],
+        [
+          "fade",
+          "Mờ qua đen"
+        ],
+        [
+          "flash",
+          "Loé sáng"
+        ],
+        [
+          "zoom",
+          "Zoom giật"
+        ],
+        [
+          "blur",
+          "Nhoè"
+        ],
+        [
+          "slide",
+          "Trượt ngang"
+        ],
+        [
+          "smear",
+          "Vệt nhoè dọc"
+        ],
+        [
+          "dissolve",
+          "Hoà tan 2 cảnh"
+        ],
+        [
+          "leak",
+          "Vệt sáng (light leak)"
+        ],
+        [
+          "spin",
+          "Xoáy nhoè"
+        ],
+        [
+          "zoomblur",
+          "Phóng nhoè + tia sáng"
+        ],
+        [
+          "glare",
+          "Loé sáng quét ngang"
+        ]
+      ],
+      "effects": [
+        [
+          "shake",
+          "Rung",
+          "Shake"
+        ],
+        [
+          "rgb",
+          "Lệch màu RGB",
+          "RGB Split"
+        ],
+        [
+          "grain",
+          "Hạt nhiễu",
+          "Grain"
+        ],
+        [
+          "warp",
+          "Biến dạng",
+          "Displace"
+        ],
+        [
+          "freeze",
+          "Dừng hình",
+          "Freeze Frame"
+        ],
+        [
+          "pixel",
+          "Độ phân giải thấp",
+          "Pixelate"
+        ]
+      ]
+    },
+    {
+      "width": 1920,
+      "templateSelectable": true,
+      "cuts": [
+        [
+          "none",
+          "Cắt thẳng"
+        ],
+        [
+          "fade",
+          "Mờ qua đen"
+        ],
+        [
+          "flash",
+          "Loé sáng"
+        ],
+        [
+          "zoom",
+          "Zoom giật"
+        ],
+        [
+          "blur",
+          "Nhoè"
+        ],
+        [
+          "slide",
+          "Trượt ngang"
+        ],
+        [
+          "smear",
+          "Vệt nhoè dọc"
+        ],
+        [
+          "dissolve",
+          "Hoà tan 2 cảnh"
+        ],
+        [
+          "leak",
+          "Vệt sáng (light leak)"
+        ],
+        [
+          "spin",
+          "Xoáy nhoè"
+        ],
+        [
+          "zoomblur",
+          "Phóng nhoè + tia sáng"
+        ],
+        [
+          "glare",
+          "Loé sáng quét ngang"
+        ]
+      ],
+      "effects": [
+        [
+          "shake",
+          "Rung",
+          "Shake"
+        ],
+        [
+          "rgb",
+          "Lệch màu RGB",
+          "RGB Split"
+        ],
+        [
+          "grain",
+          "Hạt nhiễu",
+          "Grain"
+        ],
+        [
+          "warp",
+          "Biến dạng",
+          "Displace"
+        ],
+        [
+          "freeze",
+          "Dừng hình",
+          "Freeze Frame"
+        ],
+        [
+          "pixel",
+          "Độ phân giải thấp",
+          "Pixelate"
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "noProjectChanges": true
+}

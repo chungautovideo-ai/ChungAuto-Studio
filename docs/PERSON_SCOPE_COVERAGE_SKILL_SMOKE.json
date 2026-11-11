@@ -1,0 +1,36 @@
+{
+  "file": "workspace/exports/chungauto-creative-v50-person-coverage.zip",
+  "sha256": "d5864b994a11c966e3b9f82d918fec1fd3cc7d6042945f0c9e2c138700eceaeb",
+  "presets": 11,
+  "references": 5,
+  "staticChecks": [
+    {
+      "path": "ui/contentos-person-coverage.js",
+      "exactBytes": true
+    },
+    {
+      "path": "lib/person-selection-scope.js",
+      "exactBytes": true
+    },
+    {
+      "path": "ui/app.js",
+      "exactBytes": true
+    }
+  ],
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "dispatcher": {
+    "maxWorkers": 2,
+    "paused": false,
+    "active": 0,
+    "queued": 0,
+    "recoverable": 0
+  },
+  "browserVerified": false,
+  "modelWorkerTested": false,
+  "rendererChanged": false
+}

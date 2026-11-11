@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
+import {normalizeSourceTransform,sourceTransformStyle} from '../editor/lib/source-transform.js';import {convertAievProject} from '../src/services/aiev-project-adapter.mjs';import {makeTimemap,mergeContiguous} from '../editor/lib/timemap.js';import {buildHtml} from '../editor/lib/build.mjs';import {applyEditorFields} from '../src/services/api-editor.mjs';
+test('source transforms match AIEV translation units, rotation/scale/flip ordering and validate fields',()=>{
+ assert.equal(sourceTransformStyle({}), '');assert.equal(sourceTransformStyle({x:.25,y:-.1,scale:2,rotate:90,flipH:true}),'translate(25%, -10%) rotate(90deg) scale(-2, 2)');
+ for(const v of [{x:2},{scale:0},{rotate:181},{flipV:1},{x:'1'},{code:1},[]])assert.throws(()=>normalizeSourceTransform(v));
+ const p=convertAievProject({width:1080,height:1920,scenes:[{srcVideo:'source.mp4',from:0,to:1,transform:{flipH:true}},{srcVideo:'source.mp4',from:1,to:2}]});assert.equal(p.segments[0].transform.flipH,true);assert.equal(mergeContiguous(makeTimemap(p).segs,p).length,2);
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'cos-transform-'));try{assert.match(buildHtml(p,root),/transform:translate\(0%, 0%\) rotate\(0deg\) scale\(-1, 1\)/);const segments=structuredClone(p.segments);segments[0].transform={scale:.5};assert.equal(applyEditorFields(p,{segments}).segments[0].transform.scale,.5);segments[0].transform={scale:8};assert.throws(()=>applyEditorFields(p,{segments}));assert.throws(()=>buildHtml({...p,segments},root));}finally{fs.rmSync(root,{recursive:true,force:true});}
+});

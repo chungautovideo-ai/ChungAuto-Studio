@@ -1,0 +1,63 @@
+{
+  "project": "workspace\\content\\2026-11-04\\contentos-smoke-plateprivacy-6",
+  "syntheticOnly": true,
+  "output": "workspace\\content\\2026-11-04\\contentos-smoke-plateprivacy-6\\renders\\contentos-smoke-plateprivacy-6-final.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  },
+  "maskSampleChecks": [
+    {
+      "frame": 0,
+      "centerRgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 6,
+      "centerRgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 15,
+      "centerRgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 24,
+      "centerRgb": [
+        6,
+        12,
+        9
+      ]
+    },
+    {
+      "frame": 29,
+      "centerRgb": [
+        6,
+        12,
+        9
+      ]
+    }
+  ],
+  "allSourceFramesTestedByUnit": 30,
+  "notRealPlateRecallOrOcclusionValidation": true
+}

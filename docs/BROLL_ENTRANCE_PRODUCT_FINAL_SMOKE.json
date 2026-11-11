@@ -1,0 +1,66 @@
+{
+  "workerProject": "workspace/content/2026-11-05/qa-entrance-52d50c",
+  "outputs": [
+    {
+      "project": "workspace/content/2026-11-05/qa-screen-2d956a",
+      "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-2d956a\\renders\\qa-screen-2d956a-final.mp4",
+      "duration": 0.3,
+      "integrity": {
+        "bytes": 5700868,
+        "sha256": "6909481f7774bc42166b1ac3512afeff4079820cd61ddc5044eb6074aa389b60"
+      },
+      "frames": [
+        {
+          "time": 0.55,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-2d956a\\frame-0.55.jpg"
+        },
+        {
+          "time": 0.65,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-2d956a\\frame-0.65.jpg"
+        },
+        {
+          "time": 0.85,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-2d956a\\frame-0.85.jpg"
+        },
+        {
+          "time": 1.1,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-2d956a\\frame-1.1.jpg"
+        }
+      ]
+    },
+    {
+      "project": "workspace/content/2026-11-05/qa-screen-f58fb9",
+      "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-f58fb9\\renders\\qa-screen-f58fb9-final.mp4",
+      "duration": 0.1,
+      "integrity": {
+        "bytes": 5349589,
+        "sha256": "a1e02470a1d2cf585d3f5a6445cf75ceccbc6797e4e16d48317f72b0d4d121dd"
+      },
+      "frames": [
+        {
+          "time": 0.55,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-f58fb9\\frame-0.55.jpg"
+        },
+        {
+          "time": 0.65,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-f58fb9\\frame-0.65.jpg"
+        },
+        {
+          "time": 0.85,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-f58fb9\\frame-0.85.jpg"
+        },
+        {
+          "time": 1.1,
+          "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-screen-f58fb9\\frame-1.1.jpg"
+        }
+      ]
+    }
+  ],
+  "contact": "D:\\Edit tự động\\contentos\\docs\\BROLL_ENTRANCE_PRODUCT_CONTACT.jpg",
+  "workerProjectUnchanged": true,
+  "actualProductSources": true,
+  "secondsPerOutput": 2,
+  "scope": "Two isolated final2s excerpts using real copied Q2 screen/A-roll; no captions/graphics/music/SFX and voice volume0. Sparse frames do not establish screen readability, action comprehension, full timeline or audio quality.",
+  "contactViewed": true,
+  "visualNotes": "Top row fade0.3 retains presenter ghost over screen in first two samples; bottom row fade0.1 is visibly screen-dominant earlier. Later samples show same touchscreen content. Eight sparse frames only; no continuous action/readability/audio acceptance."
+}

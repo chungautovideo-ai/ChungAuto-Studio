@@ -1,0 +1,276 @@
+frame:10   pts:10176   pts_time:0.212
+lavfi.silence_start=0
+frame:146  pts:149440  pts_time:3.113333
+lavfi.silence_end=3.124396
+lavfi.silence_duration=3.124396
+frame:158  pts:161728  pts_time:3.369333
+lavfi.silence_start=3.167979
+frame:331  pts:338880  pts_time:7.06
+lavfi.silence_end=7.066833
+lavfi.silence_duration=3.898854
+frame:658  pts:673728  pts_time:14.036
+lavfi.silence_start=13.81775
+frame:661  pts:676800  pts_time:14.1
+lavfi.silence_end=14.120687
+lavfi.silence_duration=0.302937
+frame:673  pts:689088  pts_time:14.356
+lavfi.silence_start=14.157083
+frame:680  pts:696256  pts_time:14.505333
+lavfi.silence_end=14.5095
+lavfi.silence_duration=0.352417
+frame:757  pts:775104  pts_time:16.148
+lavfi.silence_start=15.940854
+frame:768  pts:786368  pts_time:16.382667
+lavfi.silence_end=16.386958
+lavfi.silence_duration=0.446104
+frame:945  pts:967616  pts_time:20.158667
+lavfi.silence_start=19.947979
+frame:954  pts:976832  pts_time:20.350667
+lavfi.silence_end=20.365833
+lavfi.silence_duration=0.417854
+frame:1031 pts:1055680 pts_time:21.993333
+lavfi.silence_start=21.787042
+frame:1047 pts:1072064 pts_time:22.334667
+lavfi.silence_end=22.352583
+lavfi.silence_duration=0.565542
+frame:1222 pts:1251264 pts_time:26.068
+lavfi.silence_start=25.854
+frame:1233 pts:1262528 pts_time:26.302667
+lavfi.silence_end=26.306042
+lavfi.silence_duration=0.452042
+frame:1306 pts:1337280 pts_time:27.86
+lavfi.silence_start=27.649875
+frame:1312 pts:1343424 pts_time:27.988
+lavfi.silence_end=27.998729
+lavfi.silence_duration=0.348854
+frame:1386 pts:1419200 pts_time:29.566667
+lavfi.silence_start=29.357354
+frame:1405 pts:1438656 pts_time:29.972
+lavfi.silence_end=29.992792
+lavfi.silence_duration=0.635437
+frame:1577 pts:1614784 pts_time:33.641333
+lavfi.silence_start=33.431729
+frame:1585 pts:1622976 pts_time:33.812
+lavfi.silence_end=33.831437
+lavfi.silence_duration=0.399708
+frame:1664 pts:1703872 pts_time:35.497333
+lavfi.silence_start=35.295687
+frame:1666 pts:1705920 pts_time:35.54
+lavfi.silence_end=35.550708
+lavfi.silence_duration=0.255021
+frame:1702 pts:1742784 pts_time:36.308
+lavfi.silence_start=36.103667
+frame:1703 pts:1743808 pts_time:36.329333
+lavfi.silence_end=36.335583
+lavfi.silence_duration=0.231917
+frame:1851 pts:1895360 pts_time:39.486667
+lavfi.silence_start=39.274229
+frame:1856 pts:1900480 pts_time:39.593333
+lavfi.silence_end=39.61425
+lavfi.silence_duration=0.340021
+frame:1923 pts:1969088 pts_time:41.022667
+lavfi.silence_start=40.819042
+frame:1931 pts:1977280 pts_time:41.193333
+lavfi.silence_end=41.202667
+lavfi.silence_duration=0.383625
+frame:2014 pts:2062272 pts_time:42.964
+lavfi.silence_start=42.757375
+frame:2016 pts:2064320 pts_time:43.006667
+lavfi.silence_end=43.016
+lavfi.silence_duration=0.258625
+frame:2146 pts:2197440 pts_time:45.78
+lavfi.silence_start=45.563375
+frame:2158 pts:2209728 pts_time:46.036
+lavfi.silence_end=46.044375
+lavfi.silence_duration=0.481
+frame:2259 pts:2313152 pts_time:48.190667
+lavfi.silence_start=47.991833
+frame:2263 pts:2317248 pts_time:48.276
+lavfi.silence_end=48.283021
+lavfi.silence_duration=0.291187
+frame:2441 pts:2499520 pts_time:52.073333
+lavfi.silence_start=51.864854
+frame:2452 pts:2510784 pts_time:52.308
+lavfi.silence_end=52.316417
+lavfi.silence_duration=0.451562
+frame:2527 pts:2587584 pts_time:53.908
+lavfi.silence_start=53.702854
+frame:2558 pts:2619328 pts_time:54.569333
+lavfi.silence_end=54.582271
+lavfi.silence_duration=0.879417
+frame:2669 pts:2732992 pts_time:56.937333
+lavfi.silence_start=56.726375
+frame:2678 pts:2742208 pts_time:57.129333
+lavfi.silence_end=57.139437
+lavfi.silence_duration=0.413062
+frame:2730 pts:2795456 pts_time:58.238667
+lavfi.silence_start=58.020854
+frame:2736 pts:2801600 pts_time:58.366667
+lavfi.silence_end=58.377042
+lavfi.silence_duration=0.356187
+frame:2786 pts:2852800 pts_time:59.433333
+lavfi.silence_start=59.222187
+frame:2794 pts:2860992 pts_time:59.604
+lavfi.silence_end=59.616583
+lavfi.silence_duration=0.394396
+frame:2898 pts:2967488 pts_time:61.822667
+lavfi.silence_start=61.612687
+frame:2902 pts:2971584 pts_time:61.908
+lavfi.silence_end=61.919958
+lavfi.silence_duration=0.307271
+frame:2996 pts:3067840 pts_time:63.913333
+lavfi.silence_start=63.706396
+frame:3021 pts:3093440 pts_time:64.446667
+lavfi.silence_end=64.464854
+lavfi.silence_duration=0.758458
+frame:3186 pts:3262400 pts_time:67.966667
+lavfi.silence_start=67.754
+frame:3191 pts:3267520 pts_time:68.073333
+lavfi.silence_end=68.079083
+lavfi.silence_duration=0.325083
+frame:3220 pts:3297216 pts_time:68.692
+lavfi.silence_start=68.48775
+frame:3221 pts:3298240 pts_time:68.713333
+lavfi.silence_end=68.725771
+lavfi.silence_duration=0.238021
+frame:3299 pts:3378112 pts_time:70.377333
+lavfi.silence_start=70.168833
+frame:3300 pts:3379136 pts_time:70.398667
+lavfi.silence_end=70.415292
+lavfi.silence_duration=0.246458
+frame:3347 pts:3427264 pts_time:71.401333
+lavfi.silence_start=71.184396
+frame:3350 pts:3430336 pts_time:71.465333
+lavfi.silence_end=71.478333
+lavfi.silence_duration=0.293937
+frame:3423 pts:3505088 pts_time:73.022667
+lavfi.silence_start=72.811083
+frame:3430 pts:3512256 pts_time:73.172
+lavfi.silence_end=73.178229
+lavfi.silence_duration=0.367146
+frame:3446 pts:3528640 pts_time:73.513333
+lavfi.silence_start=73.306187
+frame:3450 pts:3532736 pts_time:73.598667
+lavfi.silence_end=73.604667
+lavfi.silence_duration=0.298479
+frame:3515 pts:3599296 pts_time:74.985333
+lavfi.silence_start=74.769042
+frame:3541 pts:3625920 pts_time:75.54
+lavfi.silence_end=75.553375
+lavfi.silence_duration=0.784333
+frame:3765 pts:3855296 pts_time:80.318667
+lavfi.silence_start=80.103396
+frame:3778 pts:3868608 pts_time:80.596
+lavfi.silence_end=80.613854
+lavfi.silence_duration=0.510458
+frame:3873 pts:3965888 pts_time:82.622667
+lavfi.silence_start=82.407771
+frame:3882 pts:3975104 pts_time:82.814667
+lavfi.silence_end=82.826333
+lavfi.silence_duration=0.418563
+frame:3927 pts:4021184 pts_time:83.774667
+lavfi.silence_start=83.558188
+frame:3942 pts:4036544 pts_time:84.094667
+lavfi.silence_end=84.102167
+lavfi.silence_duration=0.543979
+frame:4066 pts:4163520 pts_time:86.74
+lavfi.silence_start=86.527312
+frame:4071 pts:4168640 pts_time:86.846667
+lavfi.silence_end=86.850687
+lavfi.silence_duration=0.323375
+frame:4209 pts:4309952 pts_time:89.790667
+lavfi.silence_start=89.591813
+frame:4210 pts:4310976 pts_time:89.812
+lavfi.silence_end=89.823687
+lavfi.silence_duration=0.231875
+frame:4285 pts:4387776 pts_time:91.412
+lavfi.silence_start=91.200083
+frame:4301 pts:4404160 pts_time:91.753333
+lavfi.silence_end=91.768833
+lavfi.silence_duration=0.56875
+frame:4331 pts:4434880 pts_time:92.393333
+lavfi.silence_start=92.185979
+frame:4334 pts:4437952 pts_time:92.457333
+lavfi.silence_end=92.458479
+lavfi.silence_duration=0.2725
+frame:4376 pts:4480960 pts_time:93.353333
+lavfi.silence_start=93.140229
+frame:4396 pts:4501440 pts_time:93.78
+lavfi.silence_end=93.796271
+lavfi.silence_duration=0.656042
+frame:4456 pts:4562880 pts_time:95.06
+lavfi.silence_start=94.855333
+frame:4464 pts:4571072 pts_time:95.230667
+lavfi.silence_end=95.247708
+lavfi.silence_duration=0.392375
+frame:4767 pts:4881344 pts_time:101.694667
+lavfi.silence_start=101.475271
+lavfi.silence_end=101.708771
+lavfi.silence_duration=0.2335
+frame:4899 pts:5016512 pts_time:104.510667
+lavfi.silence_start=104.291
+frame:4901 pts:5018560 pts_time:104.553333
+lavfi.silence_end=104.566187
+lavfi.silence_duration=0.275187
+frame:4958 pts:5076928 pts_time:105.769333
+lavfi.silence_start=105.569521
+frame:4970 pts:5089216 pts_time:106.025333
+lavfi.silence_end=106.027604
+lavfi.silence_duration=0.458083
+frame:5132 pts:5255104 pts_time:109.481333
+lavfi.silence_start=109.262854
+frame:5143 pts:5266368 pts_time:109.716
+lavfi.silence_end=109.716062
+lavfi.silence_duration=0.453208
+frame:5211 pts:5336000 pts_time:111.166667
+lavfi.silence_start=110.965958
+frame:5215 pts:5340096 pts_time:111.252
+lavfi.silence_end=111.256375
+lavfi.silence_duration=0.290417
+frame:5262 pts:5388224 pts_time:112.254667
+lavfi.silence_start=112.036375
+frame:5282 pts:5408704 pts_time:112.681333
+lavfi.silence_end=112.6885
+lavfi.silence_duration=0.652125
+frame:5418 pts:5547968 pts_time:115.582667
+lavfi.silence_start=115.366437
+frame:5426 pts:5556160 pts_time:115.753333
+lavfi.silence_end=115.773542
+lavfi.silence_duration=0.407104
+frame:5505 pts:5637056 pts_time:117.438667
+lavfi.silence_start=117.239063
+frame:5510 pts:5642176 pts_time:117.545333
+lavfi.silence_end=117.547604
+lavfi.silence_duration=0.308542
+frame:5543 pts:5675968 pts_time:118.249333
+lavfi.silence_start=118.046208
+frame:5548 pts:5681088 pts_time:118.356
+lavfi.silence_end=118.361229
+lavfi.silence_duration=0.315021
+frame:5591 pts:5725120 pts_time:119.273333
+lavfi.silence_start=119.072562
+frame:5604 pts:5738432 pts_time:119.550667
+lavfi.silence_end=119.558271
+lavfi.silence_duration=0.485708
+frame:5654 pts:5789632 pts_time:120.617333
+lavfi.silence_start=120.402312
+frame:5673 pts:5809088 pts_time:121.022667
+lavfi.silence_end=121.026438
+lavfi.silence_duration=0.624125
+frame:5832 pts:5971904 pts_time:124.414667
+lavfi.silence_start=124.200312
+frame:5836 pts:5976000 pts_time:124.5
+lavfi.silence_end=124.513
+lavfi.silence_duration=0.312688
+frame:6018 pts:6162368 pts_time:128.382667
+lavfi.silence_start=128.168312
+frame:6025 pts:6169536 pts_time:128.532
+lavfi.silence_end=128.551375
+lavfi.silence_duration=0.383062
+frame:6427 pts:6581184 pts_time:137.108
+lavfi.silence_start=136.908167
+frame:6440 pts:6594496 pts_time:137.385333
+lavfi.silence_end=137.389312
+lavfi.silence_duration=0.481146
+frame:6457 pts:6611904 pts_time:137.748
+lavfi.silence_start=137.536438

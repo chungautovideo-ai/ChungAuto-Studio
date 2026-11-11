@@ -1,0 +1,10 @@
+{
+  "actualHttpEndpoint": true,
+  "syntheticBytesOnly": true,
+  "downloadMatches": true,
+  "staleSnapshotRejected": true,
+  "corruptFileRejected": true,
+  "foreignWorkspaceRejected": true,
+  "traversalRejected": true,
+  "noProviderOrRender": true
+}

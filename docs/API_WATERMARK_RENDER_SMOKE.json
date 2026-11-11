@@ -1,0 +1,21 @@
+{
+  "syntheticGateway": true,
+  "actualReviseEndpoint": true,
+  "scopedLogoRead": true,
+  "writes": 1,
+  "autoExportFinal": true,
+  "sourceAndSiblingsPreserved": true,
+  "newPixel": [
+    252,
+    0,
+    0
+  ],
+  "oldPixel": [
+    61,
+    0,
+    0
+  ],
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-03\\contentos-smoke-logoapi-2\\renders\\contentos-smoke-logoapi-2-final.mp4",
+  "project": "workspace/content/2026-11-03/contentos-smoke-logoapi-2",
+  "limits": "Synthetic gateway and one inspected frame only; no real model/browser chat submission/whole-video visual proof."
+}

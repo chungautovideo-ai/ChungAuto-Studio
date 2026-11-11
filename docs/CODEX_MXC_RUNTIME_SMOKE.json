@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-04T23:44:00.206Z",
+  "bin": "C:/Users/Admin/AppData/Local/OpenAI/Codex/bin/22cfb1d302613eae/codex.exe",
+  "configArgs": [
+    "-c",
+    "windows.sandbox=\"mxc\""
+  ],
+  "implementation": "mxc",
+  "probe": {
+    "checked": true,
+    "ready": true
+  },
+  "scope": "Actual local sandbox startup; no model, no saved config change."
+}

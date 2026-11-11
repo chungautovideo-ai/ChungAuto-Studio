@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "file": "Poster.tsx",
+      "sha256": "1e23a3d6ad20098f338122bcc6cfb454bc75b4671de233a6989c8b7266d11d47"
+    },
+    {
+      "file": "Thumbnail.tsx",
+      "sha256": "05189302cbb202fbe9ce3026a17924d797060a7ec69cc7b700b5285f7a310f54"
+    },
+    {
+      "file": "brandFonts.ts",
+      "sha256": "a6b4eafe7c50ff4b5842c06741ff48b139cbe9e4df70c5ebc5c5dc66bd09d504"
+    },
+    {
+      "file": "posterManifest.ts",
+      "sha256": "30ee25e958ae084d4b7300b82c4dafb85fcc6d1a81348fbe69fe1b1f463aee9f"
+    },
+    {
+      "file": "thumbnailManifest.ts",
+      "sha256": "d551f045cd74ab2589b1f3870c0d7fcffdd7a3df4fb9fdef8beb808c78decc09"
+    }
+  ],
+  "copiedAt": "2026-11-04T09:36:33.8576447Z",
+  "source": "AIEVv2/engines/remotion/src"
+}

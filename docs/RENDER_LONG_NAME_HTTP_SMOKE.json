@@ -1,0 +1,16 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-broll-entrance-a941f26f-cf32-40ed-a511-06367a17e8af",
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-qa-broll-entrance-a941f26f-cf32-40ed-a511-06367a17e8af\\renders\\contentos-qa-broll-entrance-a941f26f-cf32-40ed-a511-06367a17e8af-final.mp4",
+  "temporary": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-qa-broll-entrance-a941f26f-cf32-40ed-a511-06367a17e8af\\work\\render-snapshots\\4b00ce51-ff3e-422a-b4d9-2547542fe2bb\\renders\\render.mp4",
+  "integrity": {
+    "bytes": 7541,
+    "sha256": "d99d9bed0b805210927fa2032fbf15b3c9b8a57685f08677ac09dd7a212ad94d"
+  },
+  "actualHTTPFinal": true,
+  "projectAndWorkspaceUnchanged": true,
+  "snapshotId": "4b00ce51-ff3e-422a-b4d9-2547542fe2bb",
+  "revision": "7b3cd53a6dd817e006895cd794bad59412a707646f9ddaf8574de11fd9c8d816",
+  "metadataError": null,
+  "browserVerified": false,
+  "scope": "Synthetic2s HTTP final validates shorter transaction path, user filename and sidecar/hash; not arbitrary path lengths, NAS or editor UX."
+}

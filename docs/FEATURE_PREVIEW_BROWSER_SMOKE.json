@@ -1,0 +1,86 @@
+{
+  "evidence": [
+    {
+      "width": 1280,
+      "kind": "social",
+      "tabs": 3,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1280,
+      "kind": "analysis",
+      "tabs": 2,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1280,
+      "kind": "integrations",
+      "tabs": 4,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1280,
+      "kind": "voice",
+      "tabs": 3,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1280,
+      "kind": "template",
+      "tabs": 2,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1920,
+      "kind": "social",
+      "tabs": 3,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1920,
+      "kind": "analysis",
+      "tabs": 2,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1920,
+      "kind": "integrations",
+      "tabs": 4,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1920,
+      "kind": "voice",
+      "tabs": 3,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    },
+    {
+      "width": 1920,
+      "kind": "template",
+      "tabs": 2,
+      "disabledActions": 1,
+      "inputValue": "ContentOS preview",
+      "note": "Xem trước giao diện · Chưa có quyền thực thi module VEK này. Có thể thử nhập thông tin; dữ liệu chỉ nằm trên màn hình, chưa lưu, chưa gửi AI hoặc đăng bài."
+    }
+  ],
+  "pageErrors": [],
+  "previewOnly": true
+}

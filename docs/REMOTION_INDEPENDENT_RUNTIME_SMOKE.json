@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-04T09:33:34.950Z",
+  "independent": true,
+  "modules": "D:\\Edit tự động\\contentos\\engines\\remotion\\node_modules",
+  "browser": "C:\\Users\\Admin\\.cache\\hyperframes\\chrome\\chrome-headless-shell\\win64-152.0.7977.30\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
+  "version": "4.0.538",
+  "lockSha256": "ff02afedd3b9fab6bf52532c09b1957ee36fd5dac53dac0a4e4b0c9cf58f1feb",
+  "noLegacyModuleConfiguration": true,
+  "apiEvidence": {
+    "project": "workspace/content/2026-11-04/contentos-smoke-remotionapi-6",
+    "workerRender": true,
+    "activityTracking": true,
+    "waitCancellation": true,
+    "unchangedProject": true,
+    "previewBytes": true,
+    "latestJob": true,
+    "staleRevisionRejected": true,
+    "sharedLockReleased": true,
+    "terminalHistoryAfterRestart": true,
+    "result": {
+      "path": "inputs/remotion/3461bd10143cba0ec852a2c5a7b3b98661502d6a4142b0c50027c417276d83c4/scene.mp4",
+      "props": {
+        "title": "Cảnh chữ ContentOS",
+        "subtitle": "Worker độc lập",
+        "background": "#101014",
+        "color": "#ffffff",
+        "accent": "#d3f53c",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "durationInFrames": 18
+      },
+      "cached": false,
+      "sha256": "8133c70872ee2d446360c29a60d41f921ac5e501c3b7a27b195ced38fc5be924"
+    }
+  },
+  "browserEvidence": {
+    "results": [
+      {
+        "width": 1280,
+        "actualEntry": true,
+        "actualWorkerCache": true,
+        "preview": true,
+        "explicitAddAndSave": true,
+        "reeditParameters": true,
+        "replaceWithoutDuplicate": true,
+        "undoReplacement": true
+      },
+      {
+        "width": 1920,
+        "actualEntry": true,
+        "actualWorkerCache": true,
+        "preview": true,
+        "explicitAddAndSave": true,
+        "reeditParameters": true,
+        "replaceWithoutDuplicate": true,
+        "undoReplacement": true
+      }
+    ],
+    "errors": [],
+    "fixtureProject": "workspace/content/2026-11-04/contentos-smoke-remotionapi-6"
+  },
+  "limits": "Windows development host installation only; no clean machine, offline bundle or crash-mid-install acceptance."
+}

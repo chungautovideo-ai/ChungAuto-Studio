@@ -1,0 +1,35 @@
+{
+  "project": "workspace/content/2026-11-03/contentos-smoke-voicetimeline-19",
+  "syntheticTone": true,
+  "sizes": [
+    {
+      "width": 1280,
+      "regionAddEditRejectDeleteReload": true,
+      "speechControlsAndSave": true,
+      "fadeInputsAndSave": true,
+      "musicLoopControlsAndSave": true,
+      "matchingScriptShown": true,
+      "duckControlAndSave": true,
+      "smoothDuckControlAndSave": true,
+      "overflowWarning": true,
+      "insertAndSaveProvenance": true
+    },
+    {
+      "width": 1920,
+      "regionAddEditRejectDeleteReload": true,
+      "speechControlsAndSave": true,
+      "fadeInputsAndSave": true,
+      "musicLoopControlsAndSave": true,
+      "matchingScriptShown": true,
+      "duckControlAndSave": true,
+      "smoothDuckControlAndSave": true,
+      "overflowWarning": true,
+      "insertAndSaveProvenance": true
+    }
+  ],
+  "noProviderCalls": true,
+  "existingClipMismatchOnRefresh": true,
+  "existingClipMismatchAfterReload": true,
+  "mismatchedScriptInsertionRejected": true,
+  "pageErrors": []
+}

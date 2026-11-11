@@ -1,0 +1,175 @@
+{
+  "project": "workspace/content/2026-11-05/qa-current-preview-0528814f",
+  "workerProject": "workspace/content/2026-11-05/contentos-qa-real-codex-q2-7",
+  "workerProjectUnchanged": true,
+  "sourceHashes": [
+    {
+      "src": "inputs/raw.mp4",
+      "sha256": "1cd0b69b9c9dcd82755432869a40bb4cbee492a2dc9e2e7ba27d6001cd667536"
+    },
+    {
+      "src": "inputs/man.mp4",
+      "sha256": "5b20e9c90c5552160857262d71b474afa0d517ea84764d83ee1a3396a6974bf0"
+    },
+    {
+      "src": "inputs/den.mp4",
+      "sha256": "e765ffd84392490b56681fcc55506236878e3c47eec695f826706d23563b7730"
+    },
+    {
+      "src": "inputs/ghe.mp4",
+      "sha256": "319d21e3e95132fbcd003a1143478381002acfedc618388999447cf9ca6e9302"
+    }
+  ],
+  "qaProjectUnchanged": true,
+  "output": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\renders\\qa-current-preview-0528814f-nhap.mp4",
+  "integrity": {
+    "bytes": 67268861,
+    "sha256": "33913fe533338070c2d30a89b93d6900014772ed7bbc9e5f4e29f9ac507cfaad"
+  },
+  "duration": "104.300000",
+  "audioLoudness": {
+    "readOnly": true,
+    "stream": "first-audio-stream",
+    "method": "FFmpeg loudnorm input measurements",
+    "integratedLufs": -15.16,
+    "truePeakDbtp": -1.74,
+    "loudnessRangeLu": 5.1,
+    "thresholdLufs": -25.5,
+    "silent": false,
+    "reference": {
+      "integratedLufs": -14,
+      "truePeakDbtp": -1.5
+    },
+    "warnings": [],
+    "listened": false,
+    "limits": "Không xác nhận chất lượng nhạc/SFX, độ rõ lời, sync, điểm cắt, quyền nhạc hoặc mọi audio stream. Không thay file nguồn."
+  },
+  "warnings": [],
+  "contact": "docs/Q2_CURRENT_PREVIEW_CONTACT.jpg",
+  "frames": [
+    {
+      "time": 0.5,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\00.jpg",
+      "brolls": []
+    },
+    {
+      "time": 4,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\01.jpg",
+      "brolls": []
+    },
+    {
+      "time": 8.9,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\02.jpg",
+      "brolls": []
+    },
+    {
+      "time": 9.3,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\03.jpg",
+      "brolls": [
+        "b-screen"
+      ]
+    },
+    {
+      "time": 10.5,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\04.jpg",
+      "brolls": [
+        "b-screen"
+      ]
+    },
+    {
+      "time": 11.9,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\05.jpg",
+      "brolls": [
+        "b-screen"
+      ]
+    },
+    {
+      "time": 13.9,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\06.jpg",
+      "brolls": []
+    },
+    {
+      "time": 14.3,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\07.jpg",
+      "brolls": [
+        "b-light"
+      ]
+    },
+    {
+      "time": 15.2,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\08.jpg",
+      "brolls": [
+        "b-light"
+      ]
+    },
+    {
+      "time": 15.5,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\09.jpg",
+      "brolls": []
+    },
+    {
+      "time": 16,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\10.jpg",
+      "brolls": []
+    },
+    {
+      "time": 17.5,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\11.jpg",
+      "brolls": []
+    },
+    {
+      "time": 18.2,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\12.jpg",
+      "brolls": [
+        "b-seat"
+      ]
+    },
+    {
+      "time": 19,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\13.jpg",
+      "brolls": [
+        "b-seat"
+      ]
+    },
+    {
+      "time": 19.2,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\14.jpg",
+      "brolls": []
+    },
+    {
+      "time": 35,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\15.jpg",
+      "brolls": []
+    },
+    {
+      "time": 55,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\16.jpg",
+      "brolls": []
+    },
+    {
+      "time": 80,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\17.jpg",
+      "brolls": []
+    },
+    {
+      "time": 100,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\18.jpg",
+      "brolls": []
+    },
+    {
+      "time": 103.8,
+      "path": "workspace\\content\\2026-11-05\\qa-current-preview-0528814f\\work\\preview-audit-qjn9jM\\19.jpg",
+      "brolls": []
+    }
+  ],
+  "visualReviewed": false,
+  "audioListened": false,
+  "scope": "Complete draft render of isolated QA copy; sparse frame audit and output audio metrics do not establish continuous audiovisual quality, semantic correctness, privacy or production throughput.",
+  "sparseFramesViewed": true,
+  "visualFindings": [
+    "Hook text clipped at right edge: worker set texts.x=540, which is horizontal displacement, not frame center.",
+    "Screen footage under generic product statement; named screen moment remains A-roll.",
+    "Light and seat inserts visible around corresponding list entries; plate visible in light clip because this job did not request masking.",
+    "Twenty sampled frames only; no continuous audiovisual acceptance."
+  ]
+}

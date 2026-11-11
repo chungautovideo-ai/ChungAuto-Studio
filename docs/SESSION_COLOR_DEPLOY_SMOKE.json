@@ -1,0 +1,11 @@
+{
+  "template28": true,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "restartRequired": false,
+  "scope": "New CLI service and inbox text; library resolves template dynamically"
+}

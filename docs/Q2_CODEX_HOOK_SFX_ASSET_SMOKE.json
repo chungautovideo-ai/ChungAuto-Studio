@@ -1,0 +1,110 @@
+{
+  "snapshot": "workspace/content/2026-11-05/qa-current-preview-0119f5a3/work/render-snapshots/221905a5-cfaa-4fad-a963-a231b10697be",
+  "cueCount": 17,
+  "allSlotsFit": true,
+  "renderAcceptance": false,
+  "cues": [
+    {
+      "id": "sfx0",
+      "start": 3.73,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx1",
+      "start": 5.67,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx2",
+      "start": 8.55,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx3",
+      "start": 11.41,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx4",
+      "start": 13.56,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx5",
+      "start": 17.16,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx6",
+      "start": 19.85,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx7",
+      "start": 27.43,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx8",
+      "start": 37.83,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx9",
+      "start": 41.69,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx10",
+      "start": 47.21,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx11",
+      "start": 58.29,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx12",
+      "start": 65.81,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx13",
+      "start": 73.58,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx14",
+      "start": 81.91,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx15",
+      "start": 85.88,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    },
+    {
+      "id": "sfx16",
+      "start": 97.49,
+      "duration": 1.0510204081632653,
+      "required": 1.05
+    }
+  ]
+}

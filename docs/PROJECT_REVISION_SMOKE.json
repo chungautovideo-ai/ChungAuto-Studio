@@ -1,0 +1,14 @@
+{
+  "dir": "workspace/content/2026-11-03/contentos-smoke-4",
+  "firstSave": 200,
+  "staleSave": 409,
+  "staleBuild": 409,
+  "missingIdentity": 409,
+  "currentBuild": 200,
+  "checks": [
+    "stale rejected",
+    "accepted revision header",
+    "stored latest preserved",
+    "current preview builds"
+  ]
+}

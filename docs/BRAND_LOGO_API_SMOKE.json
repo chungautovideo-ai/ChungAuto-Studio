@@ -1,0 +1,28 @@
+{
+  "workspace": "71b7d1d6-9870-4d9d-b0ab-ffd350969ab3",
+  "source": "workspace/content/2026-11-03/contentos-smoke-brandlogo-a",
+  "destination": "workspace/content/2026-11-03/contentos-smoke-brandlogo-b",
+  "storedLogo": {
+    "watermark": {
+      "position": "bottom-right",
+      "heightPercent": 3,
+      "marginPercent": 4,
+      "opacity": 0.9,
+      "file": "inputs/logo.png"
+    },
+    "sha256": "7a9d2bb4826cc17124eea669c8e2baded428386211321221061b4b2f0d5e31b2",
+    "bytes": 288,
+    "extension": ".png"
+  },
+  "appliedWatermark": {
+    "position": "bottom-right",
+    "heightPercent": 3,
+    "marginPercent": 4,
+    "opacity": 0.9,
+    "file": "inputs/brand-7a9d2bb4826cc17124eea669c8e2baded428386211321221061b4b2f0d5e31b2.png"
+  },
+  "sourceLogoRemovedBeforeApply": true,
+  "projectRequiresExplicitSave": true,
+  "staleVersionAndRevisionRejected": true,
+  "limits": "Real HTTP with synthetic local assets; no browser button path, AI job/render or production visual evidence."
+}

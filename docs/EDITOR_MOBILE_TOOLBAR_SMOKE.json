@@ -1,0 +1,28 @@
+{
+  "toolbarChecks": [
+    {
+      "width": 1280,
+      "headerAndPrimaryButtonsWithinViewport": true
+    },
+    {
+      "width": 760,
+      "headerAndPrimaryButtonsWithinViewport": true
+    },
+    {
+      "width": 600,
+      "headerAndPrimaryButtonsWithinViewport": true
+    },
+    {
+      "width": 390,
+      "headerAndPrimaryButtonsWithinViewport": true
+    },
+    {
+      "width": 320,
+      "headerAndPrimaryButtonsWithinViewport": true
+    }
+  ],
+  "railLastToolReachable": true,
+  "menuEscapeReturnsFocus": true,
+  "mobileLibraryAndCoverHandlers": true,
+  "scope": "Header and rail, not all dialogs/mobile flows."
+}

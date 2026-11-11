@@ -1,0 +1,1337 @@
+{
+  "id": "talking-head",
+  "name": "Chữ vàng & widget động",
+  "version": 1,
+  "tier": "free",
+  "order": 4,
+  "isNew": true,
+  "date": "2026-10-23",
+  "tags": [
+    "Talking head",
+    "Widget giao diện",
+    "Chữ khoá vàng"
+  ],
+  "industries": [
+    "Video talking head"
+  ],
+  "description": "Mỗi câu một nhịp: chữ sáng dần theo lời, từ khoá vàng cực to bật ra, widget tối (sao đánh giá, số đếm, nút tích, thẻ so sánh) chạy theo ý câu, xen thẻ vàng / xám toàn màn hình. Hợp video dịch vụ, chuyên gia, thương hiệu cá nhân.",
+  "skill": "SKILL.md",
+  "brand": {
+    "name": "Chữ vàng & widget động",
+    "fontTitle": "Be Vietnam Pro",
+    "fontSub": "Inter",
+    "fontLabel": "Inter",
+    "c1": "#E3C06F",
+    "c2": "#E3C06F",
+    "c3": "#E3C06F",
+    "sub": "#FFFFFF",
+    "fonts": [
+      "Be Vietnam Pro:wght@500;700;800;900"
+    ],
+    "caption": {
+      "style": "clean",
+      "size": 58,
+      "color": "#FFFFFF",
+      "active": "#E3C06F",
+      "uppercase": false
+    },
+    "css": ".th-beat{position:absolute;left:60px;right:60px;top:var(--th-y,915px);display:flex;flex-direction:column;align-items:center;text-align:center}\n.th-line{font-family:var(--f-sub);font-weight:500;font-size:62px;line-height:1.15;color:#fff;letter-spacing:-.01em;text-shadow:0 2px 14px rgba(0,0,0,.35)}\n.th-line .w{opacity:.32;display:inline-block}\n.th-key{font-family:var(--f-title);font-weight:900;font-size:200px;line-height:.92;letter-spacing:-.045em;color:#E3C06F;margin:2px 0 0;transform-origin:50% 70%;text-shadow:0 6px 30px rgba(0,0,0,.25);white-space:nowrap}\n.th-key.sm{font-size:140px}\n.th-panel{margin-top:50px;min-width:560px;padding:30px 44px;border-radius:40px;background:rgba(11,10,19,.92);border:2px solid rgba(255,255,255,.16);box-shadow:0 20px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;gap:26px;color:#fff;font-family:var(--f-label)}\n.th-panel.wide{width:740px}\n.th-stars{display:flex;gap:12px}\n.th-stars i{width:40px;height:40px;background:#3a3946;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}\n.th-stars i.on{background:#E3C06F}\n.th-num{font-weight:800;font-size:46px;font-variant-numeric:tabular-nums;min-width:90px;text-align:right}\n.th-lab{display:flex;flex-direction:column;align-items:flex-start;gap:4px}\n.th-lab small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#d8d8e0}\n.th-lab b{font-weight:800;font-size:44px;font-variant-numeric:tabular-nums}\n.th-wave{display:flex;align-items:center;gap:9px;height:70px}\n.th-wave i{width:8px;height:60px;border-radius:5px;background:#fff;transform-origin:50% 50%}\n.th-chips{display:flex;gap:16px;margin-top:38px}\n.th-chip{width:246px;padding:30px 10px 26px;border-radius:26px;background:rgba(11,10,19,.92);border:2px solid rgba(255,255,255,.16);display:flex;flex-direction:column;align-items:center;gap:10px;color:#fff;font-family:var(--f-label);font-weight:700;font-size:26px}\n.th-chip .ck{width:46px;height:46px;border-radius:50%;background:#E3C06F;display:grid;place-items:center}\n.th-chip .ck::after{content:\"\";width:18px;height:9px;border-left:5px solid #0b0a13;border-bottom:5px solid #0b0a13;transform:translateY(-3px) rotate(-45deg)}\n.th-chip small{font-size:20px;color:#bdbdc6;font-weight:600}\n.th-track{position:relative;width:560px;height:10px;border-radius:6px;background:#2e2d3a}\n.th-track b{position:absolute;left:0;top:0;bottom:0;width:30%;border-radius:6px;background:linear-gradient(90deg,#6b6bd6,#a9a9ff)}\n.th-track i{position:absolute;left:30%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;box-shadow:0 0 0 8px rgba(255,255,255,.18)}\n.th-people{display:flex;gap:14px}\n.th-people i{position:relative;width:42px;height:54px;display:block}\n.th-people i::before,.th-people i::after,.th-people b::before,.th-people b::after{content:\"\";position:absolute;left:50%;box-sizing:border-box}\n.th-people i::before{top:0;width:24px;height:24px;margin-left:-12px;border-radius:50%;border:4px solid #8a8a96}\n.th-people i::after{bottom:0;width:42px;height:26px;margin-left:-21px;border-radius:21px 21px 7px 7px;border:4px solid #8a8a96}\n.th-people b{position:absolute;inset:0;opacity:0}\n.th-people b::before{top:0;width:24px;height:24px;margin-left:-12px;border-radius:50%;background:#E3C06F}\n.th-people b::after{bottom:0;width:42px;height:26px;margin-left:-21px;border-radius:21px 21px 7px 7px;background:#E3C06F}\n.th-people i.on b{opacity:1}\n.th-cmp{display:flex;gap:22px;margin-top:70px}\n.th-cmp>div{width:372px;padding:30px 30px 34px;border-radius:30px;background:rgba(11,10,19,.92);border:2px solid rgba(255,255,255,.16);font-family:var(--f-label);color:#fff;text-align:left}\n.th-cmp small{display:block;font-weight:800;font-size:22px;letter-spacing:.12em;text-transform:uppercase}\n.th-cmp em{display:block;font-style:normal;font-weight:700;font-size:17px;letter-spacing:.12em;color:#bdbdc6;margin-top:6px}\n.th-cmp b{display:block;font-weight:900;font-size:70px;line-height:1.05;margin-top:6px;font-variant-numeric:tabular-nums}\n.th-cmp .bad b{color:#E3C06F}\n.th-card{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-family:var(--f-title)}\n.th-card.gold{background:#E3BE6E;color:#121014}\n.th-card.gray{background:#ADADAD;color:#121014}\n.th-card .big{font-weight:900;font-size:200px;letter-spacing:-.045em;line-height:.95}\n.th-card .sub{font-family:var(--f-sub);font-weight:500;font-size:62px}\n.th-bubble{width:140px;height:84px;border-radius:42px;background:#fff;display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px}\n.th-bubble i{width:16px;height:16px;border-radius:50%;background:#121014}\n.th-grid{display:grid;grid-template-columns:repeat(6,80px);gap:26px 46px;margin-bottom:60px}\n.th-grid i{position:relative;width:56px;height:76px;margin:0 auto;--gc:#121014}\n.th-grid i::before,.th-grid i::after{content:\"\";position:absolute;left:50%;background:var(--gc)}\n.th-grid i::before{top:0;width:32px;height:32px;margin-left:-16px;border-radius:50%}\n.th-grid i::after{bottom:0;width:56px;height:38px;margin-left:-28px;border-radius:28px 28px 9px 9px}\n.th-grid i.on{--gc:#E3BE6E}\n.th-pill{padding:16px 46px;border-radius:999px;background:#E3BE6E;color:#121014;font-weight:900;font-size:76px;letter-spacing:-.03em;box-shadow:0 10px 30px rgba(0,0,0,.18)}\n.th-card .note{font-family:var(--f-sub);font-weight:500;font-size:44px;color:#2a2a2e}"
+  },
+  "captions": {
+    "enabled": false,
+    "y": 1400,
+    "maxWords": 4,
+    "hideOnScenes": true
+  },
+  "transitions": {
+    "cut": "none"
+  },
+  "audio": {
+    "autoSfx": true,
+    "sfxVolume": 0.35,
+    "musicVolume": 0.04
+  },
+  "previewSafe": true,
+  "effects": [
+    {
+      "id": "chu-khoa",
+      "name": "Từ khoá vàng bật ra",
+      "desc": "Dòng nhỏ sáng dần từng từ, từ khoá Poppins Black vàng bật ra đúng lúc nói",
+      "img": "fx/chu-khoa.jpg",
+      "at": 1.9
+    },
+    {
+      "id": "chon-nghe",
+      "name": "Nút chọn tích theo lời",
+      "desc": "Từng thẻ dịch vụ bật ra đúng lúc nhắc tên",
+      "img": "fx/chon-nghe.jpg",
+      "at": 4.95
+    },
+    {
+      "id": "dem-nguoi",
+      "name": "Bộ đếm người tiếp cận",
+      "desc": "Biểu tượng người tô vàng dần, số đếm chạy",
+      "img": "fx/dem-nguoi.jpg",
+      "at": 19.4
+    },
+    {
+      "id": "sao",
+      "name": "Sao đánh giá",
+      "desc": "Sao tô vàng, điểm đếm lên 5.0",
+      "img": "fx/sao.jpg",
+      "at": 9
+    },
+    {
+      "id": "so-sanh",
+      "name": "So sánh 2 bên",
+      "desc": "Hai thẻ số đếm cùng lúc",
+      "img": "fx/so-sanh.jpg",
+      "at": 12.7
+    },
+    {
+      "id": "the-vang",
+      "name": "Thẻ vàng toàn màn hình",
+      "desc": "Phóng ra từ widget, chữ đen cực đậm",
+      "img": "fx/the-vang.jpg",
+      "at": 10.35
+    },
+    {
+      "id": "the-xam",
+      "name": "Thẻ xám lưới người",
+      "desc": "Vòng tròn mở ra, nhãn vàng, trượt lên khi ra",
+      "img": "fx/the-xam.jpg",
+      "at": 14
+    }
+  ],
+  "presets": [
+    {
+      "id": "k-b1",
+      "group": "dohoa",
+      "name": "Làm tốt chưa chắc đã",
+      "desc": "Làm tốt chưa chắc đã 0.0",
+      "dur": 1,
+      "html": "<div class=\"th-beat\"><div class=\"th-key sm\">Làm tốt</div><div class=\"th-line l1post\"><span class=\"w\">chưa</span> <span class=\"w\">chắc</span> <span class=\"w\">đã</span></div><div class=\"th-panel-wrap\"><div class=\"th-panel\"><div class=\"th-stars\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></div><div class=\"th-num\">0.0</div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 0.08
+        },
+        {
+          "sel": ".l1post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.38
+        },
+        {
+          "sel": ".l1post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.66
+        },
+        {
+          "sel": ".l1post .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.93
+        },
+        {
+          "sel": ".th-stars i:nth-child(-n+3)",
+          "to": {
+            "backgroundColor": "#E3C06F"
+          },
+          "dur": 0.3,
+          "stagger": 0.12,
+          "at": 0.17
+        },
+        {
+          "sel": ".th-num",
+          "count": [
+            0,
+            3.4
+          ],
+          "dec": 1,
+          "dur": 0.6,
+          "at": 0.17
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-b2",
+      "group": "dohoa",
+      "name": "tự nói lên điều gì",
+      "desc": "tự nói lên điều gì",
+      "dur": 1.5,
+      "html": "<div class=\"th-beat\"><div class=\"th-key sm\">tự nói</div><div class=\"th-line l1post\"><span class=\"w\">lên</span> <span class=\"w\">điều</span> <span class=\"w\">gì</span></div><div class=\"th-panel-wrap\"><div class=\"th-panel\"><div class=\"th-wave\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 0.08
+        },
+        {
+          "sel": ".l1post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.42
+        },
+        {
+          "sel": ".l1post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.63
+        },
+        {
+          "sel": ".l1post .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.9
+        },
+        {
+          "sel": ".th-wave i",
+          "from": {
+            "scaleY": 0.25
+          },
+          "to": {
+            "scaleY": 1
+          },
+          "at": 0.1,
+          "dur": 0.25,
+          "stagger": 0.04,
+          "ease": "sine.inOut"
+        },
+        {
+          "sel": ".th-wave i",
+          "to": {
+            "scaleY": 0.35
+          },
+          "at": 0.7,
+          "dur": 0.3,
+          "stagger": 0.03
+        },
+        {
+          "sel": ".th-wave i",
+          "to": {
+            "scaleY": 0.9
+          },
+          "at": 1.05,
+          "dur": 0.25,
+          "stagger": 0.03
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-b3",
+      "group": "dohoa",
+      "name": "Bạn có thể là giỏi",
+      "desc": "Bạn có thể là giỏi nhất Thợ nước ★ 5.0 Thợ điện ★ 5.0 Nhà…",
+      "dur": 2.5,
+      "html": "<div class=\"th-beat\"><div class=\"th-line l0pre\"><span class=\"w\">Bạn</span> <span class=\"w\">có</span> <span class=\"w\">thể</span> <span class=\"w\">là</span></div><div class=\"th-key sm\">giỏi nhất</div><div class=\"th-panel-wrap\"><div class=\"th-chips\"><div class=\"th-chip\"><span class=\"ck\"></span>Thợ nước<small>★ 5.0</small></div><div class=\"th-chip\"><span class=\"ck\"></span>Thợ điện<small>★ 5.0</small></div><div class=\"th-chip\"><span class=\"ck\"></span>Nhà thầu<small>★ 5.0</small></div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".l0pre .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.07
+        },
+        {
+          "sel": ".l0pre .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.07
+        },
+        {
+          "sel": ".l0pre .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.19
+        },
+        {
+          "sel": ".l0pre .w:nth-child(4)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.2
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 2.18
+        },
+        {
+          "sel": ".th-chip",
+          "from": {
+            "opacity": 0
+          },
+          "to": {
+            "opacity": 0
+          },
+          "at": 0,
+          "dur": 0.01
+        },
+        {
+          "sel": ".th-chip:nth-child(1)",
+          "from": {
+            "opacity": 0,
+            "scale": 0.7
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.25,
+          "ease": "back.out(2)",
+          "at": 0.36
+        },
+        {
+          "sel": ".th-chip:nth-child(2)",
+          "from": {
+            "opacity": 0,
+            "scale": 0.7
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.25,
+          "ease": "back.out(2)",
+          "at": 1.13
+        },
+        {
+          "sel": ".th-chip:nth-child(3)",
+          "from": {
+            "opacity": 0,
+            "scale": 0.7
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.25,
+          "ease": "back.out(2)",
+          "at": 1.85
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-b4",
+      "group": "dohoa",
+      "name": "trong khu vực",
+      "desc": "trong khu vực",
+      "dur": 1,
+      "html": "<div class=\"th-beat\"><div class=\"th-line l0pre\"><span class=\"w\">trong</span> <span class=\"w\">khu</span> <span class=\"w\">vực</span></div><div class=\"th-panel-wrap\"><div class=\"th-panel wide\"><div class=\"th-track\"><b></b><i></i></div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".l0pre .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.15
+        },
+        {
+          "sel": ".l0pre .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.29
+        },
+        {
+          "sel": ".l0pre .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.42
+        },
+        {
+          "sel": ".th-track i",
+          "from": {
+            "left": "8%"
+          },
+          "to": {
+            "left": "62%"
+          },
+          "at": 0.1,
+          "dur": 0.7,
+          "ease": "power2.inOut"
+        },
+        {
+          "sel": ".th-track b",
+          "from": {
+            "width": "8%"
+          },
+          "to": {
+            "width": "62%"
+          },
+          "at": 0.1,
+          "dur": 0.7,
+          "ease": "power2.inOut"
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-b5",
+      "group": "dohoa",
+      "name": "nhưng nếu không ai biết",
+      "desc": "nhưng nếu không ai biết đến bạn Người biết đến 0",
+      "dur": 1.6,
+      "html": "<div class=\"th-beat\"><div class=\"th-line l0pre\"><span class=\"w\">nhưng</span> <span class=\"w\">nếu</span></div><div class=\"th-key sm\">không ai</div><div class=\"th-line l3post\"><span class=\"w\">biết</span> <span class=\"w\">đến</span> <span class=\"w\">bạn</span></div><div class=\"th-panel-wrap\"><div class=\"th-panel wide\"><div class=\"th-people\"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div><div class=\"th-lab\"><small>Người biết đến</small><b class=\"\">0</b></div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".l0pre .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.05
+        },
+        {
+          "sel": ".l0pre .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.05
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 0.17
+        },
+        {
+          "sel": ".l3post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.64
+        },
+        {
+          "sel": ".l3post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.88
+        },
+        {
+          "sel": ".l3post .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.07
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-b6",
+      "group": "dohoa",
+      "name": "thì bạn làm tốt đến",
+      "desc": "thì bạn làm tốt đến đâu cũng vậy thôi 2.4",
+      "dur": 2,
+      "html": "<div class=\"th-beat\"><div class=\"th-line l0pre\"><span class=\"w\">thì</span> <span class=\"w\">bạn</span> <span class=\"w\">làm</span></div><div class=\"th-key \">tốt</div><div class=\"th-line l4post\"><span class=\"w\">đến</span> <span class=\"w\">đâu</span> <span class=\"w\">cũng</span> <span class=\"w\">vậy</span> <span class=\"w\">thôi</span></div><div class=\"th-panel-wrap\"><div class=\"th-panel\"><div class=\"th-stars\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></div><div class=\"th-num\">2.4</div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".l0pre .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.17
+        },
+        {
+          "sel": ".l0pre .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.33
+        },
+        {
+          "sel": ".l0pre .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.49
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 0.66
+        },
+        {
+          "sel": ".l4post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.82
+        },
+        {
+          "sel": ".l4post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.97
+        },
+        {
+          "sel": ".l4post .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.34
+        },
+        {
+          "sel": ".l4post .w:nth-child(4)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.37
+        },
+        {
+          "sel": ".l4post .w:nth-child(5)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.53
+        },
+        {
+          "sel": ".th-stars i",
+          "to": {
+            "backgroundColor": "#E3C06F"
+          },
+          "dur": 0.3,
+          "stagger": 0.08,
+          "at": 0.66
+        },
+        {
+          "sel": ".th-num",
+          "count": [
+            2.4,
+            5
+          ],
+          "dec": 1,
+          "dur": 0.6,
+          "at": 0.66
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-c1",
+      "group": "chu",
+      "name": "Thẻ vàng",
+      "desc": "Nghĩ mà xem",
+      "dur": 1.25,
+      "html": "<div class=\"th-card gold\"><div class=\"th-bubble\"><i></i><i></i><i></i></div><div class=\"big\">Nghĩ</div><div class=\"sub\"><span class=\"w\">mà</span> <span class=\"w\">xem</span></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-card",
+          "from": {
+            "clipPath": "inset(66% 14% 22% 14% round 40px)"
+          },
+          "to": {
+            "clipPath": "inset(0% 0% 0% 0% round 0px)"
+          },
+          "at": 0,
+          "dur": 0.38,
+          "ease": "power3.inOut"
+        },
+        {
+          "sel": ".big,.th-bubble",
+          "from": {
+            "opacity": 0,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.3,
+          "dur": 0.25
+        },
+        {
+          "sel": ".sub .w:nth-child(1)",
+          "from": {
+            "opacity": 0.3
+          },
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.1,
+          "at": 0.67
+        },
+        {
+          "sel": ".sub .w:nth-child(2)",
+          "from": {
+            "opacity": 0.3
+          },
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.1,
+          "at": 0.86
+        },
+        {
+          "sel": ".th-card",
+          "to": {
+            "y": 1920,
+            "filter": "blur(8px)"
+          },
+          "at": 1.06,
+          "dur": 0.17,
+          "ease": "power2.in"
+        }
+      ],
+      "fields": [],
+      "sfx": "whoosh",
+      "layer": "front",
+      "fx": "none",
+      "out": "none"
+    },
+    {
+      "id": "k-b7",
+      "group": "dohoa",
+      "name": "Một công ty kém hơn",
+      "desc": "Một công ty kém hơn nhiều việc hơn bạn Công ty kém ĐƠN NH…",
+      "dur": 2.3,
+      "html": "<div class=\"th-beat\"><div class=\"th-line l0pre\"><span class=\"w\">Một</span> <span class=\"w\">công</span> <span class=\"w\">ty</span> <span class=\"w\">kém</span> <span class=\"w\">hơn</span></div><div class=\"th-key sm\">nhiều việc</div><div class=\"th-line l6post\"><span class=\"w\">hơn</span> <span class=\"w\">bạn</span></div><div class=\"th-panel-wrap\"><div class=\"th-cmp\"><div class=\"bad\"><small>Công ty kém</small><em>ĐƠN NHẬN</em><b class=\"n1\">0</b></div><div><small>Bạn</small><em>ĐƠN NHẬN</em><b class=\"n2\">0</b></div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".l0pre .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.18
+        },
+        {
+          "sel": ".l0pre .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.37
+        },
+        {
+          "sel": ".l0pre .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.56
+        },
+        {
+          "sel": ".l0pre .w:nth-child(4)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.63
+        },
+        {
+          "sel": ".l0pre .w:nth-child(5)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.81
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 1.3
+        },
+        {
+          "sel": ".l6post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.88
+        },
+        {
+          "sel": ".l6post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.92
+        },
+        {
+          "sel": ".n1",
+          "count": [
+            0,
+            142
+          ],
+          "dur": 0.9,
+          "at": 1.3
+        },
+        {
+          "sel": ".n2",
+          "count": [
+            0,
+            23
+          ],
+          "dur": 0.9,
+          "at": 1.3
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-c2",
+      "group": "dohoa",
+      "name": "Thẻ xám",
+      "desc": "nhiều người biết đến dịch vụ của họ",
+      "dur": 1.8,
+      "html": "<div class=\"th-card gray\"><div class=\"th-grid\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></div><div class=\"th-pill\">nhiều người</div><div class=\"note\"><span class=\"w\">biết đến</span> <span class=\"w\">dịch vụ của họ</span></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-card",
+          "from": {
+            "clipPath": "circle(0% at 50% 50%)"
+          },
+          "to": {
+            "clipPath": "circle(75% at 50% 50%)"
+          },
+          "at": 0,
+          "dur": 0.4,
+          "ease": "power2.inOut"
+        },
+        {
+          "sel": ".th-grid i",
+          "from": {
+            "opacity": 0,
+            "y": 20
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0
+          },
+          "at": 0.25,
+          "dur": 0.2,
+          "stagger": 0.015
+        },
+        {
+          "sel": ".th-pill",
+          "from": {
+            "opacity": 0,
+            "scale": 0.7
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "dur": 0.25,
+          "ease": "back.out(2)",
+          "at": 0.22
+        },
+        {
+          "sel": ".note .w:nth-child(1)",
+          "from": {
+            "opacity": 0.3
+          },
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.1,
+          "at": 0.69
+        },
+        {
+          "sel": ".note .w:nth-child(2)",
+          "from": {
+            "opacity": 0.3
+          },
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.1,
+          "at": 0.97
+        },
+        {
+          "sel": ".th-card",
+          "to": {
+            "yPercent": -100
+          },
+          "at": 1.6,
+          "dur": 0.2,
+          "ease": "power2.in"
+        }
+      ],
+      "fields": [],
+      "sfx": "swish",
+      "layer": "front",
+      "fx": "none",
+      "out": "none"
+    },
+    {
+      "id": "k-b8",
+      "group": "dohoa",
+      "name": "Làm tốt rất quan trọng",
+      "desc": "Làm tốt rất quan trọng 0.0",
+      "dur": 1.5,
+      "html": "<div class=\"th-beat\"><div class=\"th-key sm\">Làm tốt</div><div class=\"th-line l1post\"><span class=\"w\">rất</span> <span class=\"w\">quan</span> <span class=\"w\">trọng</span></div><div class=\"th-panel-wrap\"><div class=\"th-panel\"><div class=\"th-stars\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></div><div class=\"th-num\">0.0</div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 0.22
+        },
+        {
+          "sel": ".l1post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.35
+        },
+        {
+          "sel": ".l1post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.57
+        },
+        {
+          "sel": ".l1post .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.01
+        },
+        {
+          "sel": ".th-stars i",
+          "to": {
+            "backgroundColor": "#E3C06F"
+          },
+          "dur": 0.3,
+          "stagger": 0.08,
+          "at": 0.22
+        },
+        {
+          "sel": ".th-num",
+          "count": [
+            0,
+            5
+          ],
+          "dec": 1,
+          "dur": 0.7,
+          "at": 0.22
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "k-b9",
+      "group": "dohoa",
+      "name": "nhưng trước hết ai cũng",
+      "desc": "nhưng trước hết ai cũng phải biết việc tốt của bạn tồn tạ…",
+      "dur": 3.56,
+      "html": "<div class=\"th-beat\"><div class=\"th-line l0pre\"><span class=\"w\">nhưng</span> <span class=\"w\">trước</span> <span class=\"w\">hết</span></div><div class=\"th-line l3post\"><span class=\"w\">ai</span> <span class=\"w\">cũng</span> <span class=\"w\">phải</span> <span class=\"w\">biết</span> <span class=\"w\">việc</span> <span class=\"w\">tốt</span> <span class=\"w\">của</span> <span class=\"w\">bạn</span></div><div class=\"th-key sm\">tồn tại</div><div class=\"th-panel-wrap\"><div class=\"th-panel wide\"><div class=\"th-people\"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div><div class=\"th-lab\"><small>Người biết đến</small><b class=\"n\">0</b></div></div></div></div>",
+      "css": "",
+      "anim": [
+        {
+          "sel": ".th-panel",
+          "from": {
+            "opacity": 0,
+            "y": 40,
+            "scale": 0.92
+          },
+          "to": {
+            "opacity": 1,
+            "y": 0,
+            "scale": 1
+          },
+          "at": 0.05,
+          "dur": 0.3,
+          "ease": "power3.out"
+        },
+        {
+          "sel": ".l0pre .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.12
+        },
+        {
+          "sel": ".l0pre .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.26
+        },
+        {
+          "sel": ".l0pre .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 0.41
+        },
+        {
+          "sel": ".l3post .w:nth-child(1)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.02
+        },
+        {
+          "sel": ".l3post .w:nth-child(2)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.13
+        },
+        {
+          "sel": ".l3post .w:nth-child(3)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.52
+        },
+        {
+          "sel": ".l3post .w:nth-child(4)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.59
+        },
+        {
+          "sel": ".l3post .w:nth-child(5)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 1.84
+        },
+        {
+          "sel": ".l3post .w:nth-child(6)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 2.04
+        },
+        {
+          "sel": ".l3post .w:nth-child(7)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 2.16
+        },
+        {
+          "sel": ".l3post .w:nth-child(8)",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.12,
+          "ease": "none",
+          "at": 2.3
+        },
+        {
+          "sel": ".th-key",
+          "from": {
+            "opacity": 0,
+            "scale": 0.55,
+            "y": 30
+          },
+          "to": {
+            "opacity": 1,
+            "scale": 1,
+            "y": 0
+          },
+          "dur": 0.32,
+          "ease": "back.out(2.2)",
+          "at": 2.63
+        },
+        {
+          "sel": ".th-people b",
+          "to": {
+            "opacity": 1
+          },
+          "dur": 0.2,
+          "stagger": 0.3,
+          "at": 1.02
+        },
+        {
+          "sel": ".n",
+          "count": [
+            0,
+            1284
+          ],
+          "sep": ",",
+          "dur": 1.9,
+          "ease": "power1.out",
+          "at": 1.02
+        }
+      ],
+      "fields": [],
+      "sfx": "none",
+      "layer": "front",
+      "fx": "fade",
+      "out": "fade"
+    },
+    {
+      "id": "ct-chia-doi",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Chia đôi mờ dần",
+      "mode": "split",
+      "frame": "",
+      "tIn": "fade"
+    },
+    {
+      "id": "ct-the-nghieng",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Thẻ nghiêng trượt lên",
+      "mode": "pip",
+      "frame": "tilt",
+      "tIn": "slide"
+    },
+    {
+      "id": "ct-toan-man",
+      "group": "canhtram",
+      "kind": "brolls",
+      "name": "Toàn màn hình",
+      "mode": "full",
+      "frame": "",
+      "tIn": "fade"
+    }
+  ]
+}

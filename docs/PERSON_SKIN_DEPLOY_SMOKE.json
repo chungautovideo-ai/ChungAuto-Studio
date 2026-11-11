@@ -1,0 +1,24 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "app": "contentos",
+  "idleBeforeRestart": {
+    "active": 0,
+    "queued": 0,
+    "render": null,
+    "asr": null
+  },
+  "restarted": true,
+  "helpers": {
+    "face-scan.js": 200,
+    "face-search.js": 200,
+    "person-skin-scan.js": 200
+  },
+  "modelMetadataHttp": 200,
+  "catalogV17": true,
+  "suitePassed": 234,
+  "paidProviderCalls": false,
+  "posting": false,
+  "catalogEndpoint": "/api/library?local=1",
+  "previewLiteBeautyGuardDeployed": true,
+  "at": "2026-11-04T16:57:21.259Z"
+}

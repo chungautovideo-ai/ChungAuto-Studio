@@ -1,0 +1,35 @@
+{
+  "project": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-05\\contentos-qa-html-api",
+  "preset": "ca-stat",
+  "before": [
+    {
+      "key": "0",
+      "label": "Chữ chính",
+      "value": "400m²",
+      "words": false
+    },
+    {
+      "key": "1",
+      "label": "Chữ phụ",
+      "value": "Không gian dịch vụ",
+      "words": false
+    }
+  ],
+  "after": [
+    {
+      "key": "0",
+      "label": "Chữ chính",
+      "value": "600m²",
+      "words": false
+    },
+    {
+      "key": "1",
+      "label": "Chữ phụ",
+      "value": "Xưởng nâng cấp xe",
+      "words": false
+    }
+  ],
+  "cssAndAnimationUnchanged": true,
+  "build": true,
+  "scope": "Direct adapter on QA, not paid API/model or final render."
+}

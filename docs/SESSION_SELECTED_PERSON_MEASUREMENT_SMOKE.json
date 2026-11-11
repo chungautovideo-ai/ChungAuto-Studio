@@ -1,0 +1,80 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-person-cli-5",
+  "job": "workspace/content/_sua-video/20261104223318-c4549562-contentos-smoke-person-cli-5",
+  "actualCLI": true,
+  "actualFFmpeg": true,
+  "readOnly": true,
+  "candidateBytesUnchanged": true,
+  "measurement": {
+    "readOnly": true,
+    "src": "inputs/raw.mp4",
+    "sha256": "ce37e889d30a1532d72507e5072ff864cac1465a606e2346b6cabc8c3fc1b9fc",
+    "measurementScope": "Semantic person/skin intersected with saved SAM2 selection over used source ranges; before brush/stability/color effects.",
+    "exposure": {
+      "version": 1,
+      "method": "display-luma-semantic-mask",
+      "person": {
+        "samples": 12,
+        "median": 0.4235294117647059,
+        "spread": 0.027450980392156876,
+        "highlight": 0.8392156862745098
+      },
+      "skin": {
+        "samples": 12,
+        "median": 0.5254901960784314,
+        "spread": 0.06666666666666665,
+        "highlight": 0.7803921568627451
+      }
+    },
+    "suggestion": {
+      "available": true,
+      "personLight": 0,
+      "bodyWhite": 0,
+      "bodySmooth": 0,
+      "samples": 12,
+      "reason": "Không đề xuất nâng thêm từ số đo hiện có."
+    },
+    "times": [
+      0.25,
+      0.75,
+      1.25,
+      1.75,
+      2.25,
+      2.75,
+      3.25,
+      3.75,
+      4.25,
+      4.75,
+      5.25,
+      5.75
+    ],
+    "selectionScope": {
+      "mode": "selected-ranges",
+      "usedRanges": [
+        {
+          "from": 0,
+          "to": 6.006
+        }
+      ],
+      "ranges": [
+        {
+          "from": 0,
+          "to": 6,
+          "fps": 8,
+          "samples": 48
+        }
+      ],
+      "uncoveredUsedRanges": [
+        {
+          "from": 6,
+          "to": 6.006
+        }
+      ],
+      "outsideRanges": "No personLight/bodyWhite/bodySmooth correction outside selected ranges. Face landmark effects are separate.",
+      "identityVerified": false
+    },
+    "limits": "Display luma samples, not skin tone, identity verification or HDR/Log normalization. Review preview before applying."
+  },
+  "noModelCalls": true,
+  "noRender": true
+}

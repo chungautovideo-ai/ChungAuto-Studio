@@ -1,0 +1,25 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import {previewMigration} from '../src/services/migration-preview.mjs';
+import {importStudioProject} from '../src/services/migration-import.mjs';
+test('Studio composition import preserves editable layers and pins both job and project versions',async t=>{
+ const base=fs.mkdtempSync(path.join(os.tmpdir(),'cos-studio-import-'));t.after(()=>fs.rmSync(base,{recursive:true,force:true}));
+ const root=path.join(base,'contentos'),jobs=path.join(base,'jobs'),job=path.join(jobs,'demo'),source=path.join(job,'05_plan/studio/composition');
+ fs.mkdirSync(path.join(root,'config'),{recursive:true});fs.mkdirSync(path.join(source,'inputs'),{recursive:true});
+ fs.writeFileSync(path.join(root,'config/sources.local.json'),JSON.stringify({studioJobsRoot:jobs}));
+ fs.writeFileSync(path.join(job,'job.json'),JSON.stringify({title:'Studio job',secret:'excluded'}));
+ fs.copyFileSync(new URL('./fixture.mp4',import.meta.url),path.join(source,'inputs/raw.mp4'));
+ const project={title:'ContentOS-Smoke-Studio',format:'9:16',source:{video:'inputs/raw.mp4',duration:3,width:360,height:640,hasAudio:false},segments:[{id:'one',in:0,out:3,keep:true}],texts:[{id:'title',title:'STUDIO',at:0,dur:1,size:70}],audio:{autoSfx:false,sfxLevel:'tat'},captions:{lines:[]}};
+ const projectFile=path.join(source,'project.json');fs.writeFileSync(projectFile,'\uFEFF'+JSON.stringify(project));
+ const store={active:()=>({id:'new'})},entry=previewMigration(root,'new').sources[2].entries[0];assert.equal(entry.canImport,true);assert.equal(entry.format,'studio-composition');
+ const body={workspaceId:'new',id:entry.id,metadataHash:entry.metadataHash,projectHash:entry.projectHash};
+ await assert.rejects(importStudioProject(root,store,{...body,projectHash:'stale'}),/đã đổi/);
+ const result=await importStudioProject(root,store,body),target=path.join(root,result.dir),copy=JSON.parse(fs.readFileSync(path.join(target,'project.json')));
+ assert.deepEqual(copy.texts,project.texts);assert.deepEqual(copy.segments,project.segments);assert.equal(copy.contentos.migration.app,'studio');assert.equal(copy.workspaceId,'new');assert.ok(fs.existsSync(path.join(target,'index.html')));assert.equal(fs.existsSync(path.join(target,'job.json')),false);
+ assert.equal(fs.readFileSync(projectFile,'utf8'),'\uFEFF'+JSON.stringify(project));
+ fs.writeFileSync(path.join(job,'job.json'),'{"title":"changed"}');await assert.rejects(importStudioProject(root,store,body),/đã đổi/);
+ fs.unlinkSync(projectFile);assert.equal(previewMigration(root,'new').sources[2].entries[0].canImport,false);
+});

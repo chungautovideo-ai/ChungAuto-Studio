@@ -1,0 +1,10 @@
+{
+  "id": "chungauto-factory-quang-cao-v50",
+  "artifact": "workspace/exports/chungauto-creative-v50-word-anchors.zip",
+  "sha256": "34afaea96ac2cc5113950b7ba572f124cd2393c9eccea55321f540c673e95982",
+  "presets": 11,
+  "references": 5,
+  "snapshotRoundtrip": true,
+  "zipParsed": true,
+  "modelTestedNewWordAnchors": false
+}

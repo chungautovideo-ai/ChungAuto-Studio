@@ -1,0 +1,15 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-sessioncolor",
+  "actualHttpStageClaimCommandCompletion": true,
+  "realFootage": "Q2 cropped 1-second A-roll",
+  "noModelCalls": true,
+  "profile": "rec709",
+  "stabilize": "fast",
+  "cpuEncoder": "libx264",
+  "derivedSourceAppliedAfterCompletion": true,
+  "liveProjectUnchangedUntilCompletion": true,
+  "sourcePreserved": true,
+  "beautyOffPreserved": true,
+  "noExport": true,
+  "scope": "Session command plumbing on a short real crop; not an autonomous model or stabilization quality benchmark."
+}

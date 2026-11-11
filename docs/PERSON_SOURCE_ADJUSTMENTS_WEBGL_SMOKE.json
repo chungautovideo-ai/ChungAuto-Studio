@@ -1,0 +1,23 @@
+{
+  "actualWebGL": true,
+  "syntheticMasks": true,
+  "explicitZero": [
+    157,
+    104,
+    80,
+    255
+  ],
+  "sourceLift": [
+    171,
+    119,
+    94,
+    255
+  ],
+  "staleHashFallback": [
+    176,
+    126,
+    100,
+    255
+  ],
+  "removeRestoresGlobal": true
+}

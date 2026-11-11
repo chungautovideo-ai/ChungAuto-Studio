@@ -1,0 +1,31 @@
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import assert from 'node:assert/strict';import {spawn,execFile,execFileSync} from 'node:child_process';import {promisify} from 'node:util';import {createHash} from 'node:crypto';
+const run=promisify(execFile),fixture=fs.mkdtempSync(path.join(os.tmpdir(),'cos-session-image-render-'));
+const base='http://127.0.0.1:5196',delay=ms=>new Promise(r=>setTimeout(r,ms)),hash=b=>createHash('sha256').update(b).digest('hex');
+// Dedicated server only; never claim or consume the user's pending inbox jobs.
+assert.ok(!await fetch(base+'/api/ping').then(r=>r.ok).catch(()=>false),'Smoke port already occupied');
+const server=spawn(process.execPath,['editor/server.mjs','--home','--port','5196'],{windowsHide:true,stdio:'ignore'});
+async function call(url,body,headers={}){const r=await fetch(base+url,body?{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)}:{headers});const data=await r.json();assert.ok(r.ok,JSON.stringify(data));return data;}
+const cli=(dir,...args)=>JSON.parse(execFileSync(process.execPath,['editor/tools/anh-workspace.mjs',dir,...args],{windowsHide:true,encoding:'utf8',env:{...process.env,EDITOR_PORT:'5196'}}));
+let previous,workspace,jobFile;
+try{
+ for(let i=0;i<100;i++){try{await call('/api/ping');break;}catch{await delay(100);}}
+ previous=(await call('/api/v1/workspaces')).activeId;await call('/api/v1/workspaces',{name:'ContentOS-Smoke-Session-Images-'+Date.now()});workspace=(await call('/api/v1/connections/llm')).workspaceId;
+ const png=path.join(fixture,'red.png');execFileSync('ffmpeg',['-v','error','-f','lavfi','-i','color=c=red:s=320x180','-frames:v','1',png],{windowsHide:true});const bytes=fs.readFileSync(png);
+ const imported=await fetch(base+'/api/v1/images/import',{method:'POST',headers:{'Content-Type':'application/octet-stream','X-ContentOS-Workspace':workspace,'X-ContentOS-Filename':encodeURIComponent('Session fixture.png')},body:bytes});assert.ok(imported.ok);const imageId=(await imported.json()).id;
+ const upload=await fetch(base+'/api/new-project?file=fixture.mp4&name=ContentOS-Smoke-Session-Images&noasr=1',{method:'POST',body:fs.readFileSync('tests/fixture.mp4')});assert.ok(upload.ok);const created=await upload.json(),projectFile=path.join(created.dir,'project.json');
+ const project=JSON.parse(fs.readFileSync(projectFile));project.texts=[];project.brolls=[];project.captions={enabled:false,lines:[]};project.audio={...project.audio,autoSfx:false,sfxLevel:'tat',music:'',sfx:[]};fs.writeFileSync(projectFile,JSON.stringify(project));const before=hash(fs.readFileSync(projectFile)),context=await call('/api/project');
+ const queued=await call('/api/ai-revise',{instruction:'Synthetic test: import workspace image only.',completionMode:'review',execution:{mode:'session',agent:'codex'}},{'X-ContentOS-Project':created.dir,'X-ContentOS-Revision':context.revision});
+ const dir=queued.job.dir;jobFile=path.join(dir,'work/ai-job.json');const job=JSON.parse(fs.readFileSync(jobFile));assert.equal(job.execution.mode,'session');
+ const list=cli(dir,'list','');assert.ok(list.images.some(i=>i.id===imageId));const attached=cli(dir,'attach',imageId);assert.deepEqual(fs.readFileSync(path.join(created.dir,attached.src)),bytes);assert.equal(cli(dir,'attach',imageId).duplicate,true);assert.equal(hash(fs.readFileSync(projectFile)),before);
+ assert.ok(!fs.readFileSync(path.join(dir,'work/workspace-image-selection.json'),'utf8').includes('Session fixture'));
+ const candidateFile=path.resolve(job.candidate),candidate=JSON.parse(fs.readFileSync(candidateFile));candidate.brolls=[{id:'b-session-image',src:attached.src,at:0,dur:1,mode:'full'}];fs.writeFileSync(candidateFile,JSON.stringify(candidate));assert.equal(hash(fs.readFileSync(projectFile)),before);
+ await run(process.execPath,['editor/tools/ai-inbox.mjs','--done',dir,'--tom-tat','Synthetic workspace image candidate'],{windowsHide:true,env:{...process.env,EDITOR_PORT:'5196'}});
+ const completed=JSON.parse(fs.readFileSync(jobFile));assert.equal(completed.status,'done');assert.equal(completed.completionState,'awaiting-review');assert.ok(!completed.exportOutput);assert.equal(fs.existsSync(path.join(created.dir,'work/render.json')),false);const saved=JSON.parse(fs.readFileSync(projectFile));assert.equal(saved.brolls[0].src,attached.src);assert.deepEqual(saved.segments,project.segments);
+ const terminal=await fetch(base+'/api/v1/images/job',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jobDir:dir,action:'attach',id:imageId})});assert.ok(!terminal.ok);
+ await run(process.execPath,['editor/tools/xuat-video.mjs',created.dir,'--quality','final','--revision',completed.appliedRevision],{windowsHide:true,timeout:180000,maxBuffer:4*1024*1024});
+ const render=JSON.parse(fs.readFileSync(path.join(created.dir,'work/render.json')));assert.equal(render.ok,true);assert.equal(render.revision,completed.appliedRevision);const pixel=[...execFileSync('ffmpeg',['-v','error','-ss','0.5','-i',render.saved,'-vf','format=rgb24,crop=1:1:540:960','-frames:v','1','-f','rawvideo','pipe:1'],{windowsHide:true})];assert.ok(pixel[0]>180&&pixel[1]<60&&pixel[2]<60,JSON.stringify(pixel));
+ const proof={actualReviseEndpoint:true,actualHelperCLI:true,actualInboxDoneCLI:true,workspace,imageId,project:created.dir,job:dir,src:attached.src,sha256:hash(bytes),duplicate:true,liveProjectUnchangedBeforeCompletion:true,candidateApplied:true,reviewDidNotAutoExport:true,sourceSegmentsUnchanged:true,terminalRejected:true,manualRender:render.saved,revision:render.revision,pixel,limits:'Synthetic local image and hand-authored candidate; no actual Codex/Claude execution, paid generation, browser chat submission or physical NAS.'};fs.writeFileSync('docs/SESSION_WORKSPACE_IMAGES_SMOKE.json',JSON.stringify(proof,null,2)+'\n');console.log(proof);
+}finally{
+ if(jobFile&&fs.existsSync(jobFile)){const job=JSON.parse(fs.readFileSync(jobFile));if(['waiting','working'].includes(job.status))fs.writeFileSync(jobFile,JSON.stringify({...job,status:'error',error:'Synthetic smoke cleanup'}));}
+ if(previous)await call('/api/v1/workspaces/active',{id:previous});server.kill();fs.rmSync(fixture,{recursive:true,force:true});
+}

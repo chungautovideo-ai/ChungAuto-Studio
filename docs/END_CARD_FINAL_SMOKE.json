@@ -1,0 +1,18 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-endcard",
+  "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-endcard\\renders\\contentos-smoke-endcard-final.mp4",
+  "contentDuration": 3,
+  "totalDuration": 5,
+  "actualDuration": 5,
+  "format": "9:16",
+  "outroDuration": 2,
+  "musicTailRms": 808.2488744192596,
+  "scope": "Synthetic source; rendered CTA frame and music tail, no production quality certification",
+  "landscape": {
+    "project": "workspace/content/2026-11-04/contentos-smoke-endcard-2",
+    "file": "D:\\Edit tự động\\contentos\\workspace\\content\\2026-11-04\\contentos-smoke-endcard-2\\renders\\contentos-smoke-endcard-2-final.mp4",
+    "actualDuration": 5,
+    "width": 1920,
+    "height": 1080
+  }
+}

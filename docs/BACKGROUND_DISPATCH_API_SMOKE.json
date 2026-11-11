@@ -1,0 +1,16 @@
+{
+  "syntheticGatewayOnly": true,
+  "threeDistinctProjects": true,
+  "twoRunningOneQueued": true,
+  "activityCapacityReason": true,
+  "thirdAutoDispatched": true,
+  "pauseDoesNotStopRunning": true,
+  "correctProjectOutputs": true,
+  "manualReviewNoRender": true,
+  "lateObsoleteClaimPreservesReplacement": true,
+  "lateResponseDoesNotApplyProject": true,
+  "activityCancel": true,
+  "staleCancelRejected": true,
+  "cancelLateResponsePreservesProject": true,
+  "requests": 8
+}

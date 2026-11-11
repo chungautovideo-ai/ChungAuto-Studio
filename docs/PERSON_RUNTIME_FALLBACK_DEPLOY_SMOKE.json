@@ -1,0 +1,27 @@
+{
+  "queued": 0,
+  "browserVerified": false,
+  "ping": {
+    "ok": true,
+    "app": "contentos",
+    "version": "0.1.0",
+    "ai": null
+  },
+  "afterPid": 7124,
+  "exactCommand": true,
+  "workers": 0,
+  "beforePid": 63880,
+  "active": 0,
+  "resources": {
+    "render": {
+      "state": "idle",
+      "projectTitle": null
+    },
+    "asr": {
+      "state": "idle"
+    },
+    "personTracking": {
+      "state": "idle"
+    }
+  }
+}

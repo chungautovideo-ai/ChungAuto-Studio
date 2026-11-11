@@ -1,0 +1,47 @@
+{
+  "actualWebGL": true,
+  "syntheticMask": true,
+  "unshrunk": [
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "shrunk": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "resetRestores": true,
+  "interiorPreserved": true,
+  "backgroundUnchanged": true
+}

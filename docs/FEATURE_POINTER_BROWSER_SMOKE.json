@@ -1,0 +1,23 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-pointer-6",
+  "insert": true,
+  "coordinates": true,
+  "color": true,
+  "textPreserved": true,
+  "invalidRejected": true,
+  "undo": true,
+  "saveReopen": true,
+  "runtime": {
+    "x1": "42",
+    "pathLength": "1",
+    "normalizedLength": 1,
+    "dash": "1, 1.05",
+    "label": "Màn hìnhĐiền theo lời nói",
+    "opacity": "1"
+  },
+  "responsiveScreens": [
+    1280,
+    390
+  ],
+  "pageErrors": []
+}

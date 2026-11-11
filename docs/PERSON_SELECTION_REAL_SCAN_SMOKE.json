@@ -1,0 +1,13 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-smoke-selected-person-2",
+  "realMediaPipe": true,
+  "realSAM2": true,
+  "sameSourceHash": true,
+  "skinMask": "256x171",
+  "selectedMask": "256x171",
+  "selectionSamples": 8,
+  "outputHelperEmbedded": true,
+  "uiRemoveUndoSave": true,
+  "pageErrors": [],
+  "scope": "Duplicated Q2 person,1s, masks intersected; not independent multi-person or occlusion benchmark"
+}

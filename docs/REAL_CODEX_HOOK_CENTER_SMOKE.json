@@ -1,0 +1,17 @@
+{
+  "project": "workspace/content/2026-11-05/qa-codex-hook-2d7c43",
+  "job": "workspace/content/_sua-video/20261105074837-6ba50e35-qa-codex-hook-2d7c43",
+  "startedAt": "2026-11-05T07:48:37.553Z",
+  "finishedAt": "2026-11-05T07:49:24.593Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "catalogRead": true,
+  "onlyHookXChanged": true,
+  "hookBefore": 540,
+  "hookAfter": 0,
+  "sourceProjectAndWorkspaceUnchanged": true,
+  "rendered": false,
+  "visualReviewed": false,
+  "audioListened": false,
+  "scope": "Real Codex revision from catalog coordinate guidance on QA copy; not first-build layout, full audiovisual review, token benchmark or render acceptance."
+}

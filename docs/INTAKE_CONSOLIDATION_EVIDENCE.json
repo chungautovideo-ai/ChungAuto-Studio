@@ -1,0 +1,208 @@
+[
+  {
+    "screen": "intake_consolidation_home",
+    "id": "ev_e0122a003d5831cd7e87acf4e5ec06152487b91295aee02a20a386eaedd25a87",
+    "steps": [
+      {
+        "id": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "intake",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "mobile",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "close",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "workspace",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "finalAccessibility": "- document:\n  - complementary:\n    - text: ContentOS\n    - button \"Ẩn cột\":\n      - img\n    - navigation:\n      - button \"Trang chủ\":\n        - img\n        - text: Trang chủ\n      - button \"Không gian làm việc\"\n      - button \"Kho hiệu ứng của tôi\":\n        - img\n        - text: Kho hiệu ứng của tôi\n      - button \"Mạng xã hội PRO\":\n        - img\n        - text: Mạng xã hội PRO\n      - button \"Phân tích kênh PRO\":\n        - img\n        - text: Phân tích kênh PRO\n      - button \"Tích hợp PRO\":\n        - img\n        - text: Tích hợp PRO\n      - button \"Kết nối AI\":\n        - img\n        - text: Kết nối AI\n      - button \"Giọng nói AI PREMIUM\":\n        - img\n        - text: Giọng nói AI PREMIUM\n      - button \"Tạo mẫu từ video PRO\":\n        - img\n        - text: Tạo mẫu từ video PRO\n    - img\n    - textbox \"Tìm video\":\n      - /placeholder: Tìm video…\n    - text: Video của bạn Chưa có video nào.\n    - button \"Ổ đĩa còn 3384,8 GB\"\n    - text: Luôn chạy nền\n    - button \"Đăng nhập\"\n  - main"
+  },
+  {
+    "screen": "intake_consolidation_qa",
+    "id": "ev_daa06800ae190e09454b4e4a5db91ffecd3132bc22767f412e3ce09de9a2bcf8",
+    "steps": [
+      {
+        "id": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "setup",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "intake",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "phone",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "pair",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "paired",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "close",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "editor",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "broll",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "editor_intake",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "settled",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "finalAccessibility": "- document:\n  - banner:\n    - link \"Về màn Dự án (mở / tạo dự án khác)\":\n      - /url: /home\n      - img\n    - heading \"contentos-smoke-3\" [level=1]\n    - text: Đã lưu · 0:03.0 sau khi cắt · 0 nhịp chữ · 0 cảnh minh hoạ\n    - button \"Bản sửa CapCut\"\n    - button \"Thư viện\":\n      - img\n      - text: Thư viện\n    - button \"Hoàn tác (Ctrl+Z)\" [disabled]:\n      - img\n    - button \"Làm lại (Ctrl+Y)\" [disabled]:\n      - img\n    - button \"Chỉ xem video (phím F)\":\n      - img\n    - button \"Ảnh bìa\"\n    - button \"Dựng nháp\"\n    - button \"Xuất video\":\n      - img\n      - text: Xuất video\n    - button \"⋯\"\n  - main:\n    - navigation \"Công cụ chỉnh sửa\":\n      - button \"Văn bản\":\n        - img\n        - text: Văn bản\n      - button \"Zoom\":\n        - img\n        - text: Zoom\n      - button \"Cảnh trám\":\n        - img\n        - text: Cảnh trám\n      - button \"Đồ hoạ\":\n        - img\n        - text: Đồ hoạ\n      - button \"Âm thanh\":\n        - img\n        - text: Âm thanh\n      - button \"Bộ lọc\":\n        - img\n        - text: Bộ lọc\n      - button \"Thương hiệu\":\n        - img\n        - text: Thương hiệu\n      - button \"Kho của tôi\":\n        - img\n        - text: Kho của tôi\n    - textbox \"Tìm…\"\n    - button \"Từ máy tính\"\n    - button \"Từ kho (Drive)\"\n    - button \"NAS / Điện thoại\"\n    - text: Cảnh trám · bấm để chọn hiệu ứng · kéo thả xuống timeline để thêm 0e55eb0f-84e0-4349-b1b9-0c6245c8eb5f.mp4 Video · chưa dùng 8b85b755-b444-4570-98f5-b5b41df9f817.mp4 Video · chưa dùng\n    - iframe\n    - button \"−1s\"\n    - button \"Phát\"\n    - button \"+1s\"\n    - text: 0:00.0 / 0:03.0\n    - button \"⚡ Xem nhẹ\"\n  - contentinfo:\n    - separator \"Kéo lên / xuống để phóng to / thu nhỏ timeline · bấm đúp để trả về\"\n    - button \"Tách\":\n      - img\n      - text: Tách\n    - button \"Xoá\":\n      - img\n      - text: Xoá\n    - text: 00:00.0 / 00:03.0\n    - button \"−\"\n    - slider: \"0\"\n    - button \"+\"\n    - button \"Vừa khung\"\n    - img\n    - text: Chữ\n    - img\n    - text: Phụ đề\n    - img\n    - text: Cảnh trám\n    - img\n    - text: Đồ hoạ\n    - img\n    - text: Zoom\n    - img\n    - text: Video\n    - img\n    - text: Giọng nói\n    - img\n    - text: Hiệu ứng 00:00 00:00.5 00:01 00:01.5 00:02 00:02.5 00:03 3.0s\n  - button \"Nhờ AI sửa\":\n    - img\n  - dialog:\n    - banner:\n      - heading \"Thêm tư liệu\" [level=2]\n      - button \"Đóng thêm tư liệu\": ✕\n    - paragraph: Nhận file vào dự án từ kho dùng chung hoặc điện thoại.\n    - navigation \"Nguồn tư liệu\":\n      - button \"NAS / Thư mục chung\" [pressed]\n      - button \"Điện thoại\"\n    - heading \"Kho nguồn NAS / thư mục chung\" [level=1]\n    - paragraph: Kho theo workspace đang chọn. Chọn media cần dùng để sao chép vào SSD của dự án; nguồn giữ nguyên.\n    - text: Dự án nhận tư liệu\n    - combobox \"Dự án nhận tư liệu\" [disabled]:\n      - option \"ContentOS · kiểm thử sửa và lưu\" [selected]\n    - paragraph: \"Chưa có dự án: thêm video ở Trang chủ trước.\"\n    - button \"Thư mục cha\"\n    - button \"Tải lại\"\n    - paragraph\n    - status: Chưa cấu hình kho NAS / thư mục dùng chung ở Workspace & Tích hợp."
+  },
+  {
+    "screen": "intake_new_media",
+    "id": "ev_d4f85a14ebf472e4049f73e9961d8e463b7c168255ad778bd499d00fb39a5946",
+    "steps": [
+      {
+        "id": "scenario_start",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "load",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "setup",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "editor",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "ready",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "broll",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "intake",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "loaded",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "copy",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "copied",
+        "status": "completed",
+        "error": null
+      },
+      {
+        "id": "close",
+        "status": "completed",
+        "error": null
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": [],
+      "omissions": {
+        "by_kind": [],
+        "network_transactions": [],
+        "network_transaction_range": null
+      }
+    },
+    "finalAccessibility": "- document:\n  - banner:\n    - link \"Về màn Dự án (mở / tạo dự án khác)\":\n      - /url: /home\n      - img\n    - heading \"contentos-smoke-3\" [level=1]\n    - text: Đã lưu · 0:03.0 sau khi cắt · 0 nhịp chữ · 0 cảnh minh hoạ\n    - button \"Bản sửa CapCut\"\n    - button \"Thư viện\":\n      - img\n      - text: Thư viện\n    - button \"Hoàn tác (Ctrl+Z)\" [disabled]:\n      - img\n    - button \"Làm lại (Ctrl+Y)\" [disabled]:\n      - img\n    - button \"Chỉ xem video (phím F)\":\n      - img\n    - button \"Ảnh bìa\"\n    - button \"Dựng nháp\"\n    - button \"Xuất video\":\n      - img\n      - text: Xuất video\n    - button \"⋯\"\n  - main:\n    - navigation \"Công cụ chỉnh sửa\":\n      - button \"Văn bản\":\n        - img\n        - text: Văn bản\n      - button \"Zoom\":\n        - img\n        - text: Zoom\n      - button \"Cảnh trám\":\n        - img\n        - text: Cảnh trám\n      - button \"Đồ hoạ\":\n        - img\n        - text: Đồ hoạ\n      - button \"Âm thanh\":\n        - img\n        - text: Âm thanh\n      - button \"Bộ lọc\":\n        - img\n        - text: Bộ lọc\n      - button \"Thương hiệu\":\n        - img\n        - text: Thương hiệu\n      - button \"Kho của tôi\":\n        - img\n        - text: Kho của tôi\n    - textbox \"Tìm…\"\n    - button \"Từ máy tính\"\n    - button \"Từ kho (Drive)\"\n    - button \"NAS / Điện thoại\"\n    - text: Cảnh trám · bấm để chọn hiệu ứng · kéo thả xuống timeline để thêm 0e55eb0f-84e0-4349-b1b9-0c6245c8eb5f.mp4 Video · chưa dùng 6b6706c0-79d1-4d33-b4e3-6afe0c51b81b.png Ảnh · chưa dùng 8b85b755-b444-4570-98f5-b5b41df9f817.mp4 Video · chưa dùng\n    - iframe\n    - button \"−1s\"\n    - button \"Phát\"\n    - button \"+1s\"\n    - text: 0:00.0 / 0:03.0\n    - button \"⚡ Xem nhẹ\"\n  - contentinfo:\n    - separator \"Kéo lên / xuống để phóng to / thu nhỏ timeline · bấm đúp để trả về\"\n    - button \"Tách\":\n      - img\n      - text: Tách\n    - button \"Xoá\":\n      - img\n      - text: Xoá\n    - text: 00:00.0 / 00:03.0\n    - button \"−\"\n    - slider: \"0\"\n    - button \"+\"\n    - button \"Vừa khung\"\n    - img\n    - text: Chữ\n    - img\n    - text: Phụ đề\n    - img\n    - text: Cảnh trám\n    - img\n    - text: Đồ hoạ\n    - img\n    - text: Zoom\n    - img\n    - text: Video\n    - img\n    - text: Giọng nói\n    - img\n    - text: Hiệu ứng 00:00 00:00.5 00:01 00:01.5 00:02 00:02.5 00:03 3.0s\n  - text: Đã nhận tư liệu vào kho của dự án.\n  - button \"Nhờ AI sửa\":\n    - img"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "syntheticSpeech": "Windows System.Speech en, local",
+  "engine": "whisper.cpp-multisource",
+  "language": "en",
+  "first": "Welcome to our video studio. We create great videos every day.",
+  "second": "This is a new production. The camera is ready for action.",
+  "words": 33,
+  "repeatWords": 11,
+  "sourceDurations": [
+    5.788707,
+    5.088753
+  ],
+  "outputDuration": 7.9831065,
+  "secondFirstOutput": 3.0243534999999997,
+  "noPaidProvider": true,
+  "limits": "Local CLI/service with actual Whisper; no browser button/captions render or Vietnamese human transcription accuracy benchmark."
+}

@@ -1,0 +1,14 @@
+{
+  "syntheticOnly": true,
+  "project": "workspace/content/2026-11-03/nas-5f001fc2-30d3-40b6-9b97-222286601ddb",
+  "previewToProjectToJob": true,
+  "sixJobLocalImages": true,
+  "inboxListsImagesAndLimits": true,
+  "wrongWorkspaceSurveyRejected": true,
+  "failedEnqueuePreservesPriorJob": true,
+  "explicitRefreshedSurveyOverridesSaved": true,
+  "explicitSkipSurvey": true,
+  "invalidSurveyRejected": true,
+  "noAgentDispatched": true,
+  "noPaidCalls": true
+}

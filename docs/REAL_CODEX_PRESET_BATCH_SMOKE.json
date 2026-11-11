@@ -1,0 +1,28 @@
+{
+  "project": "workspace/content/2026-11-05/contentos-qa-real-codex-preset-batch-3",
+  "job": "workspace/content/_sua-video/20261105013652-5aafb598-contentos-qa-real-codex-preset-batch-3",
+  "startedAt": "2026-11-05T01:36:51.849Z",
+  "finishedAt": "2026-11-05T01:38:01.097Z",
+  "status": "done",
+  "completion": "awaiting-review",
+  "modelTested": true,
+  "helperUsed": true,
+  "batchCount": 3,
+  "twoTextsOneBlockAdded": true,
+  "existingFieldsUnchanged": true,
+  "added": {
+    "id": "t-f5bb378e-4f16-4270-b064-78afcced7b08",
+    "title": "NÂNG CẤP XE",
+    "sub": "Chọn đúng nhu cầu",
+    "at": 3,
+    "dur": 2,
+    "apiPreset": {
+      "templateId": "chungauto-factory-quang-cao-v50",
+      "presetId": "ca-hook",
+      "templateHash": "7cdbca304997f5ac3f652d5dcdd11147b19c07bb2958110e18985088a80eb35e"
+    }
+  },
+  "rendered": false,
+  "limits": "Targeted real Codex batch insertion only; request file verified3items. No measured token benchmark, continuous video/audio review or final render acceptance.",
+  "batchRequestVerified": true
+}

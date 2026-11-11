@@ -1,0 +1,28 @@
+{
+  "http": [
+    {
+      "file": "editor/ui/contentos-person-selection.js",
+      "sha256": "c36c0ae07dcad7729b3456eb86413df76ca72f79e9d4b4202b599b22a8602b77",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "file": "editor/ui/contentos-person-prompt-points.js",
+      "sha256": "7ec52cf608b4b08f25918fef5839f424ddfd3ddbd4a2e5833d8256c0a6603dc9",
+      "status": 200,
+      "bytesMatch": true
+    }
+  ],
+  "skill": {
+    "file": "workspace/exports/chungauto-creative-v50-person-prompt-merge.zip",
+    "bytes": 1635769,
+    "presets": 11,
+    "references": 5
+  },
+  "productionCallbackVM": true,
+  "manualPromptsPreserved": true,
+  "sourceAndProjectWrites": false,
+  "browserVerified": false,
+  "trackingRun": false,
+  "scope": "Static HTTP parity and production callback VM; no browser, inference or renderer change."
+}

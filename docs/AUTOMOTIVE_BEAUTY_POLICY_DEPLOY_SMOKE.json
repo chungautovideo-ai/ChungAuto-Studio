@@ -1,0 +1,16 @@
+{
+  "base": "http://127.0.0.1:5180",
+  "restarted": true,
+  "dispatcherBefore": {
+    "active": 0,
+    "queued": 0
+  },
+  "renderBefore": null,
+  "asrBefore": null,
+  "noRemotionWorkers": true,
+  "exactServerPidVerified": true,
+  "uiHttp": 200,
+  "policyHttp": 200,
+  "suitePassed": 238,
+  "userProjectModified": false
+}

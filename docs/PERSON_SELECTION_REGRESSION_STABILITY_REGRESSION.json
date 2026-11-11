@@ -1,0 +1,49 @@
+{
+  "actualWebGL": true,
+  "syntheticMasks": true,
+  "uncertainOriginal": [
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "uncertainReduced": [
+    [
+      167,
+      115,
+      90,
+      255
+    ],
+    [
+      167,
+      115,
+      90,
+      255
+    ],
+    [
+      167,
+      115,
+      90,
+      255
+    ]
+  ],
+  "consistentInteriorPreserved": true,
+  "noBackgroundGrowth": true,
+  "seekingDeterministic": true,
+  "offRestores": true,
+  "scope": "Consensus attenuation, not motion-compensated tracking or full-video quality acceptance."
+}

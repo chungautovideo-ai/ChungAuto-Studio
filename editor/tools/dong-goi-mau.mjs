@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {packageTemplate} from '../../src/services/template-package.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),[id,output]=process.argv.slice(2);
+try{if(!id||!output)throw new Error('Dùng: node editor/tools/dong-goi-mau.mjs <id> <file.zip>');const result=packageTemplate(path.join(root,'editor/templates'),id),file=path.resolve(output);if(!file.toLowerCase().endsWith('.zip'))throw new Error('Đường dẫn xuất phải là .zip.');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,result.buffer,{flag:'wx'});console.log(JSON.stringify({...result.manifest,output:file,bytes:result.buffer.length},null,2));}catch(error){console.error(error.message);process.exitCode=1;}

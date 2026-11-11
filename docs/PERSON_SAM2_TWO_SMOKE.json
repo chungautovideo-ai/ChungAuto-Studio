@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "method": "sam2.1-tiny-point-prompt",
+  "sourceSha256": "de9a177947f05f1cbc7ee4c8285dce2a87cafd5f676d55d40fca142fe81e3326",
+  "modelSha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+  "from": 0,
+  "fps": 8,
+  "w": 256,
+  "h": 171,
+  "elapsedSeconds": 1.187,
+  "gpuPeakBytes": 477386752,
+  "requiresVisualReview": true,
+  "limits": "Object foreground only, not skin or human identity; short continuous shot, no cut/occlusion recovery guarantee.",
+  "selectedFrames": [
+    {
+      "frame": 0,
+      "leftPixels": 7660,
+      "rightPixels": 0
+    },
+    {
+      "frame": 2,
+      "leftPixels": 7912,
+      "rightPixels": 0
+    },
+    {
+      "frame": 4,
+      "leftPixels": 8046,
+      "rightPixels": 0
+    },
+    {
+      "frame": 7,
+      "leftPixels": 7787,
+      "rightPixels": 0
+    }
+  ],
+  "fixture": "Same Q2 person duplicated side by side; positive left torso and negative right torso. Not two independent people or full identity/cut benchmark."
+}

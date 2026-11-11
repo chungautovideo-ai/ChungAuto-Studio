@@ -1,0 +1,29 @@
+{
+  "workspaceId": "bd2a79e5-9dcb-4132-8a68-fbe11608a3d6",
+  "sizes": [
+    {
+      "width": 1280,
+      "exactScriptPrefill": true,
+      "noAutomaticGeneration": true,
+      "approvedProvenancePayload": true,
+      "editedTextDropsApprovedReference": true,
+      "narrationProjectPayload": true,
+      "unrelatedProjectVoiceDisabled": true
+    },
+    {
+      "width": 1920,
+      "exactScriptPrefill": true,
+      "noAutomaticGeneration": true,
+      "approvedProvenancePayload": true,
+      "editedTextDropsApprovedReference": true,
+      "narrationProjectPayload": true,
+      "unrelatedProjectVoiceDisabled": true
+    }
+  ],
+  "browserProviderMockOnly": true,
+  "noPaidCalls": true,
+  "projectVoiceIntakePayload": true,
+  "unrelatedNarrationDisabled": true,
+  "projectRevisionHeaders": true,
+  "pageErrors": []
+}

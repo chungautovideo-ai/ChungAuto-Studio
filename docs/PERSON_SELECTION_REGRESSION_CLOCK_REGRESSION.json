@@ -1,0 +1,120 @@
+{
+  "renderer": "actual WebGL",
+  "syntheticLandmarks": true,
+  "twoSources": true,
+  "speed2SourceClock": true,
+  "missingSampleUnchanged": true,
+  "unscannedSourceUnchanged": true,
+  "canvasMovesWithSourceWrapper": true,
+  "before": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "left": [
+    [
+      174,
+      126,
+      102,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ]
+  ],
+  "speed": [
+    174,
+    126,
+    102,
+    255
+  ],
+  "rightPixel": [
+    174,
+    126,
+    102,
+    255
+  ],
+  "body": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      176,
+      126,
+      100,
+      255
+    ]
+  ],
+  "person": [
+    [
+      157,
+      104,
+      80,
+      255
+    ],
+    [
+      200,
+      133,
+      102,
+      255
+    ],
+    [
+      200,
+      132,
+      102,
+      255
+    ]
+  ],
+  "brollLift": {
+    "pixel": [
+      176,
+      126,
+      100,
+      255
+    ],
+    "left": "100px",
+    "top": "30px",
+    "width": "240px",
+    "opacity": "0.4",
+    "zIndex": "30",
+    "visibility": "visible",
+    "covered": true
+  },
+  "brollMediaClock": true,
+  "brollEndsHidden": true,
+  "bodyWithoutFace": true,
+  "backgroundAndClothesProtectedForSkin": true
+}

@@ -1,0 +1,57 @@
+{
+  "project": "workspace/content/2026-11-04/contentos-selected-exposure-qa-4",
+  "darkSyntheticSource": true,
+  "applyUndoRedoSaveReopen": true,
+  "bodySmooth17Preserved": true,
+  "realSavedSAM2AndSemanticMasks": true,
+  "actualFFmpegHTTP": true,
+  "measuredFrames": 12,
+  "times": [
+    0.25,
+    0.75,
+    1.25,
+    1.75,
+    2.25,
+    2.75,
+    3.25,
+    3.75,
+    4.25,
+    4.75,
+    5.25,
+    5.75
+  ],
+  "exposure": {
+    "version": 1,
+    "method": "display-luma-semantic-mask",
+    "person": {
+      "samples": 12,
+      "median": 0.12549019607843137,
+      "spread": 0.027450980392156876,
+      "highlight": 0.5450980392156862
+    },
+    "skin": {
+      "samples": 12,
+      "median": 0.23137254901960785,
+      "spread": 0.06666666666666665,
+      "highlight": 0.4823529411764706
+    }
+  },
+  "suggestion": {
+    "available": true,
+    "personLight": 30,
+    "bodyWhite": 0,
+    "bodySmooth": 0,
+    "samples": 12,
+    "reason": "Nguồn có vùng người/da tối; đề xuất nâng nhẹ, kiểm lại màu da trước khi giữ."
+  },
+  "staleRevisionRejected": true,
+  "browserMeasure": true,
+  "unscopedSuggestionHidden": true,
+  "readOnlyProjectFace": true,
+  "widths": [
+    1280,
+    390
+  ],
+  "pageErrors": [],
+  "limits": "Saved short QA masks; not independent people/crossing or color quality acceptance. No model/render."
+}
